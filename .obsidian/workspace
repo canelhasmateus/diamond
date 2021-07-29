@@ -1,0 +1,91 @@
+{
+  "main": {
+    "id": "3f4f2e9f4334fe11",
+    "type": "split",
+    "children": [
+      {
+        "id": "8393271e548073c8",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2357749b641a61b2",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a2b8ff296483893",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "419c0b8f59e5e2f9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a6d35a83feaf68b9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0853439a931fb137",
+    "type": "split",
+    "children": [
+      {
+        "id": "4ee3e49cd11986aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5c30ae6cf217020b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "8393271e548073c8",
+  "lastOpenFiles": [
+    "And this is another note..md",
+    "This a note.md",
+    "Untitled.md"
+  ]
+}
