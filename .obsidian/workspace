@@ -7,8 +7,11 @@
         "id": "8393271e548073c8",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "This a note.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "This a note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,8 +88,8 @@
   },
   "active": "8393271e548073c8",
   "lastOpenFiles": [
-    "And this is another note..md",
     "This a note.md",
-    "Untitled.md"
+    "Untitled.md",
+    "And this is another note..md"
   ]
 }
