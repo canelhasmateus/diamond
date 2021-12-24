@@ -2317,3 +2317,203 @@ question 53 is ?????
 
 AWS Inspector is used for EC2 and cannot be used to inspect API Gateway
 
+...
+
+
+
+What is a NAT gateway , even?
+
+dns record types
+
+
+...
+
+a securtity group cannot filter requests based on url and you cannot specify deny ruls. Security groups are used only for IP's and Not for static DNS names.
+
+Routing Tables inside a subnet can provide filtering logic.
+
+https://aws.amazon.com/articles/using-squid-proxy-instances-for-web-service-access-in-amazon-vpc-another-example-with-aws-codedeploy-and-amazon-cloudwatch/
+https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html
+
+...
+
+AWS Nitro Enclaves exist.
+
+...
+
+When moving Applications to cloud. Its necessary to configure toute 53 resolver to forward queries via VPN / Direct Connect to the On-Prem DNS Server.
+
+...
+
+https://aws.amazon.com/identity/federation/
+Identity Federation is a system of trust between two parties for the purpose of authenticating users and conveying information needed to authorize their access to resources. In this system, an identity provider is responsible for user authentication, and a service provider controls access to resources. By agreement and configutarion the SP trusts the IdP to authenticate users . After authenticating a user, the idp sends the sp a message ( called an ssertion ) containing the uyser's sign-in name and other attributes that the SP needs to stablish a session with the user and to determine the scope of resource access that the SP should grant. 
+
+...
+
+Client side certificates
+
+https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/https-tcp-passthrough.html
+
+...
+
+IpSec is not E2E security:
+	It requires that both source and destination be IPSecAware
+Also it operates at network layer, thus it does not provide identity authentication
+
+https://techgenix.com/securing_data_in_transit_with_ipsec/
+https://www.firewall.cx/networking-topics/protocols/870-ipsec-modes.html
+
+...
+
+IDS 
+	is an appliance that is installed on the ec2 instance that continuously monitors the vpc environment to see if any malicious activity is happening and alerts the system administrator if such activity is detected
+IPS 
+	appliance installed on the ec2 instances that monitors and analyzes the incoming and outgoing network traffic for any malicious activities and prevents the malicious requests from reaching the instances in the VPC.
+
+
+...
+
+
+On ROles
+https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html
+
+...
+
+Elastic Network Interfaces does not help in increasing the network bandwidth
+
+
+...
+
+On DDos
+
+https://d0.awsstatic.com/whitepapers/Security/DDoS_White_Paper.pdf
+
+...
+
+Remember that Security Groups and NACL:
+	groups operate at the individual instance level,
+	NACL operates at the submet level
+
+	NACL by default allow traffic.
+	Groups by default deny traffic.
+
+	Groups cannot deny port access. You can open access for a particular IP address or range.
+
+	You cannoy deny access to particular IP Addresses using security groups.
+
+...
+
+Ebs volumes are NOT encrypted by default.
+
+There exists nativa data encryption drivers at the file system level
+
+...
+
+elastic load balancer and tcp / proxy
+
+https://aws.amazon.com/blogs/aws/elastic-load-balancing-adds-support-for-proxy-protocol/
+
+https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/enable-proxy-protocol.html
+
+...
+
+EBS Volumes can only be shared between ( up to 16 ) aws nitro system based ec2 within the SAME availability zone
+
+...
+
+There exists several ids / ips solutions offered in the aws market place.
+
+
+...
+
+
+On Database Migration
+
+https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.CustomizingTasks.TableMapping.html
+
+It supports s3 as a source for database migration.
+...
+
+In order to remove a member account from an organization , 
+    .. Enable IAM user access to billing in the member account
+    .. Make sure it has the required information to operate as a standaolne account.
+
+...
+
+More information on ELB Sticky Sessions:
+
+	The load balancer uses a special cookie to track the  instace fro each request oto each listener. When the load balancer receives a request, it first check to see if this cookie
+	is present int the request. If so, the request is sent to the instance specified in the cookie. If there is no cookie, the load balancer chooses an instance based on the exisitng load
+	balancer algo. A cookie is inserted into the response for binding subsequent requests from the same user to that instance. 
+
+
+
+
+
+
+
+...
+
+Load balancer Listener
+
+http 
+https ( secure Http )
+TCP
+SSL ( secure tcp )
+
+
+https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-listener-config.html
+
+...
+
+NAT gateway is IPv4 only. For iPv6, egress-only internet gateway shhould be used.
+
+https://docs.aws.amazon.com/vpc/latest/userguide/egress-only-internet-gateway.html
+
+...
+
+https://aws.amazon.com/blogs/aws/ec2-vm-import-connector/
+
+...
+
+dynamodb time series : https://aws.amazon.com/blogs/database/design-patterns-for-high-volume-time-series-data-in-amazon-dynamodb/
+
+
+...
+
+Cognito : Identity Pools vs User pools
+
+...
+
+CIDR addresses
+
+... 
+
+Ami uses Packer to create the images
+
+...
+
+Elastic beanstalk web vs worker environment
+
+...
+
+
+EMR for dynamo and s3:
+
+https://aws.amazon.com/articles/using-dynamodb-with-amazon-elastic-mapreduce/?tag=articles%23keywords%23elastic-mapreduce
+
+...
+
+Amazon DLM ( data lifecycle manager ) exists.
+
+...
+
+Data Pipelines canno support hydbrid approaches, with human intervention. For those, prefer using SWF.
+
+
+...
+
+Need to better understand storage gateway , POSIX based block storage
+
+...
+
