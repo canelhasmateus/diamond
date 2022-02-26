@@ -96,7 +96,7 @@ var LeaderHotkeysPlugin = /** @class */ (function (_super) {
             }
             if (event.key === 'Shift' || event.key === 'Meta') {
                 // Don't clear leaderPending for a meta key
-                console.debug('skipping a meta key');
+                console.log('skipping a meta key');
                 return;
             }
             var commandFound = false;
@@ -117,7 +117,7 @@ var LeaderHotkeysPlugin = /** @class */ (function (_super) {
                 }
             }
             if (!commandFound) {
-                console.debug('cancelling leader');
+                console.log('cancelling leader');
             }
             _this.leaderPending = false;
         };
@@ -144,7 +144,7 @@ var LeaderHotkeysPlugin = /** @class */ (function (_super) {
                             id: 'leader',
                             name: 'Leader key',
                             callback: function () {
-                                console.debug('Leader pressed...');
+                                console.log('Leader pressed...');
                                 _this.leaderPending = true;
                             },
                         });
@@ -237,7 +237,7 @@ var LeaderPluginSettingsTab = /** @class */ (function (_super) {
                     hotkey.shift !== existingHotkey.shift) {
                     continue;
                 }
-                console.debug("Removing leader-hotkey " + hotkeyToName(existingHotkey) + " at index " + i);
+                console.log("Removing leader-hotkey " + hotkeyToName(existingHotkey) + " at index " + i);
                 _this.plugin.settings.hotkeys.splice(i, 1);
             }
             _this.plugin.saveData(_this.plugin.settings);
@@ -250,7 +250,7 @@ var LeaderPluginSettingsTab = /** @class */ (function (_super) {
                     hotkey.shift !== existingHotkey.shift) {
                     continue;
                 }
-                console.debug("Updating leader-hotkey " + hotkeyToName(existingHotkey) + " at index " + i + " to " + newKey);
+                console.log("Updating leader-hotkey " + hotkeyToName(existingHotkey) + " at index " + i + " to " + newKey);
                 hotkey.key = newKey;
                 hotkey.meta = meta;
                 hotkey.shift = shift;
@@ -266,14 +266,14 @@ var LeaderPluginSettingsTab = /** @class */ (function (_super) {
                     hotkey.shift !== existingHotkey.shift) {
                     continue;
                 }
-                console.debug("Updating leader-hotkey command " + hotkeyToName(existingHotkey) + " at index " + i + " to " + newCommand);
+                console.log("Updating leader-hotkey command " + hotkeyToName(existingHotkey) + " at index " + i + " to " + newCommand);
                 hotkey.commandID = newCommand;
                 break;
             }
             _this.plugin.saveData(_this.plugin.settings);
         };
         _this.storeNewHotkeyInSettings = function () {
-            console.debug("Adding leader-hotkey command " + _this.tempNewHotkey + " to " + _this.tempNewHotkey.commandID);
+            console.log("Adding leader-hotkey command " + _this.tempNewHotkey + " to " + _this.tempNewHotkey.commandID);
             _this.plugin.settings.hotkeys.push(_this.tempNewHotkey);
             _this.plugin.saveData(_this.plugin.settings);
             _this.tempNewHotkey = newEmptyHotkey();
