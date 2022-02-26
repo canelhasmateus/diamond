@@ -2517,3 +2517,121 @@ Need to better understand storage gateway , POSIX based block storage
 
 ...
 
+
+
+Is it possible to trigger the dynamodb export as csv from an api endpoint? it should , right?
+
+....
+
+
+What exactly is an AMI
+
+PAM-allocated IPv4 CIDR block - new
+
+
+....
+
+
+
+
+Amazon Batch
+
+...
+
+
+
+VPC Gateway endpoints are only accessible form ec2 instances inside a vpc. In csae you are running it from your local on0promise, you will have to run it via a proxy that redirects to vpc based resource and then toward the endpoint.
+
+...
+
+gateway endpoint vs interface endpoint ????
+
+...
+
+for amazon rds on vmware, you can only create a read replica in the same region as the source db instance
+
+...
+
+The most straightforward way to view or live playback the bideo in kensis video streams is by using HLS. HttpLiveStreaming ( HLS ) Is an industry standart HTTP-Bsaed Media streaming communicatoin sprotoocl. 
+
+... 
+
+The snapshot lifecycle policy can reduce storage costs by deleting outdated backups, however, the snapshots themselves still have costs.
+
+There is a limit of 100 lifecycle policies per region.
+
+
+...
+
+EFS Encryption does not need the rule from the security group.
+
+...
+
+To benefit from reserved rds instances, all of the attributes of the rds instances in another account shouldmatch the attributes of the reserved db instances.
+
+( DBEngine, DB Instane class, Deployment Type, License Model )
+
+...
+
+
+As an architect you need to use the database change ( trasaction ) longs, along with the backups to restore your database to a point in time. . 
+If you keep taking backups every 15 mins, the database users will face a lot of outages durings the backup ( due to i/o suspension especially in a non-az deployment )
+
+
+....
+
+DocumentDB exists 
+
+...
+
+
+CloudTrail only logs tokens when assumeRole is used. TO Fully Identify a person, the logs from the assuming account are also needed.
+
+....
+
+You can further secure the assume role with an ExternalId, that is not available in the console.
+
+...
+
+
+When using an network load balancer, you can keep the source ip address if specifying targets by instance id. 
+
+
+...
+
+
+the billing console data can not be sent to sns.
+It can be sent to redshift.
+
+...
+
+
+By default, ebs deletes the volume on instance termination.
+
+...
+
+
+IAM users are global.
+
+...
+
+
+
+
+Ec2 Image Builder
+	Users can choose to install Amazon managed components such as the  cloudwatch agent and the codedeploy agent.
+	AMIS can be automatically distributed to multiple aws regions or shared with other aws accounts
+	Os versions can be customized.
+	AMI cannot be automatically deployed on ec3 instances. Th einmage pipeline provide an automation framework for building secure ami and ocontainer images on aws
+	EC2 Image builder utilizes image reciped, and packer templates cannot be used by ec2 image builder.
+To share resources and other organizational units inside the aws organization, utse the AWS resource Access Manager.
+	. Add the shared components, images or recipes in the resoucre shares and coigure the pirincipals which are allowed to access the shared resources.
+
+
+VM Import / Export
+	
+	Server Migration Connector is a component of aws server migratoin server and is not used by the bm import exxport tool
+	AWS Discovery tools are used by aws migration hub to plan the migration from data centers to aws.
+	During the export, an ova file is crated in an s3 bucket.
+	You can export a vm directly from an ami, using aws ec2 export-image
+	

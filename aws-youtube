@@ -1,0 +1,217 @@
+
+Aws Cloud
+    REgions
+        . Very Large Geographical Area
+        . Many Datacenters, called an Availability Zone
+        AZ
+        Local Zones:
+            Not all applications can tolerate latency. Thats what Local Zones are for.
+            Inside a region, they extend the region to your geographic metro-area network 
+            ( Opt-in to a local zone. Inside it you can create your vpc and resources )
+        Edge Locations
+
+    
+
+
+Local Zone
+    . Enable Local Zone
+    . Extend your VPC to the local zone
+    . Build and Run Low-Latency applications
+
+    . Use for edge computing
+
+Edge Locations
+    . Access cloudfront
+
+
+"
+A local zone is where you place your computers ( designed for computing ).
+A Edge Locations is where you access your CDN.
+"
+
+
+
+
+VPC
+    . A Virtualized Datacenter.
+
+
+
+Types of CLoud ARch
+    Private CLoud
+        . Running Independently
+        . OpenStack Ansible 
+        .. You have the benefits of the cloud inside your own data center
+        .. You gotta manage your own cloud
+
+    Hybrid Cloud
+        . Data Center + cloud
+        . Ideal for migratoin
+        . great for permance
+        . good for Disaster Recovery
+        ..  Data Center > AWS Direct Connect > Customer VPC Gateway > Cloud VPC.
+    
+    Pure Cloud
+        . Great for startups
+        . Highly scalable
+        . Very agile
+        .. Organization > AWS Direct Connect > Customer VPC  > VPC
+    Public CLoud
+    
+Why extend private cloud to the public?
+    . Our data center cannot handle peak loads such as christmas
+    . Offload some of those things
+    . Then you have a hybrid cloud.
+
+Public cloud:
+    . Everything inside a provider ( GCP , AWS , Azure  , ... )
+
+
+OSI Model
+    Every Network provider uses the same system, which helps troubleshooting.
+
+    Layers
+        1 - Physical Layer ( Electrons / Photons over copper / Optical ) - Bits 
+        2 - Datalink ( Hardware : Network cards , Addresses ) - Frames
+        3 - Network  ( Logical Address : Ip Address ) - Packets
+        4 - Transport ( Protocol Selectrion : TCP , UDP) - Segments 
+        ## Networking ends here 
+        5 - Session ( Controls Connection : Sockets ) - Data
+        6 - Presentation ( Presentation and Data : TLS ) - Data 
+        7 - Application ( User Interface : HTTP , DNS , SSH ) - Data
+    
+    Ip Address:
+        Needed for every device that wants to communicate in an network.
+
+        IPV4 / IPV6 : Mostly PCs vs Mostly Mobiles
+            . IPV4  have very few addresses. Which is why private ip addresses were created. 
+            They occur at the 10.0.0/8 ;  140~172.0.0.0/16; 192.168.0.0/16 
+                > Not Routable. Can use internally but not externally
+        We used to have a idea of these Class address.
+            A: Each subnet would handle 16M.
+            B: 65k hosts
+            C: 253 hosts
+            D: Multicast reserved
+            
+Subnetting:
+    Breaking down networks into smaller ones or group smaller network
+    CIDR: We can't make inefficient use of ip addresses because they're few.
+    AWS only have 100 routes.
+AWS takes 5 addresses for each subnet ( instead of 2 that every else would do.)
+    . You might run out of ip addresses when designing small networks when using autoscaling
+
+    
+What if we wanted  to create greater subnets (aggregating small ones) ? 
+    This is called supernetting
+    Can be used to do network summarization
+        Good to create smaller routes
+    
+
+IPV4: 32bit.
+IPV6: 128bit  -> All interfaces in AWS are automatically assigned an ipv6 global address.
+
+
+
+Connectivity
+    Over the Internet with a VPN
+        Providing a private network over  a public network
+        Why
+            Internet is not secure.
+                . You'll get hacked
+            Take care of routing
+                . 
+            Internet routing is *very* complex
+                . 
+            Can't take Private ip addresses and connect them via public internet . They are non-routable.
+        Why not?
+            VPN's depend on the internet.
+                Internet is not consistent ( Best Effort Connectivity).
+        Tools
+            . Frame Relay
+            . GRE Tunnels
+            . BGP
+            * IPSEc
+                . Encrypts the data
+                . Provides authentication of users on both sides.
+                    .. Ok to give critical information to authorized people.
+                . Ensure messages have not been modified ( Message Integrity ).
+                . Non-Repitiation ( Senders can't say they didn't send the message )
+                . So valuable that you can use them in public connections.
+            Logical
+                Data Center > VPN ( IPSEC ) > Cloud
+        
+    Pseudo-Wire to the cloud
+        
+
+WHen you set a vpn between your data center and your vpc, its usually a site-to-site vpn.
+There also exists a Multi-Site VPN.
+    Both sites terminate the vpn connection
+
+    Can use Dynamic or Static routing.
+
+AWS says their vpns are Highly Available.
+    They're using a virtual router with somewhat redundancy.
+        . If the router in YOUR end fails, everything fails.
+        . Still a single point of failure
+        Recommended by AWS:
+            Set up one active and one passive.
+    
+    When using Multiple Links:
+        You must always have at least 2. And 3 is better than 2.
+        You can Load Share.
+            What if we decide to do it?
+                use BGP tunning.
+                    Set a most specific route in one, and a most specific and other, send a summary route to both.
+
+        
+    
+
+    Not good enough.
+    
+
+
+
+VPN in cloud 
+    Determine the aws virtugla Gateway
+    Take your method   ( Static / BGP )
+    Choose your tunnels ( default or custom )
+    VPN Concentrator via market place
+
+Remote Access VPN
+    Market Placefssqq
+    
+
+What if We use a Multi-Site  vpn connection?
+    AWS assumes you do not have the knowledge to control transitive networks
+    You can link everyone with everyone else ( Very Inelegant, O[ N * ( N - 1 ) ] )
+    Need to use another solution: Cloud Hub.
+
+
+
+Internet is not a given
+    . Use Direct Connection ( Garanteed bandwitdh )
+    . Options ( 1gbps , 10gpbs, 100gbps )
+
+    . Can Also do Link Aggregation
+        . Take Multiple Links in a bundle, so they feel like a single link.
+        . Take 4 10gbps and have a 40gbps.
+
+
+
+
+
+
+
+
+
+
+https://www.amazon.com/Enterprise-ENCOR-350-401-Official-Guide/dp/1587145235/ref=sr_1_3?crid=3ARNFDY2VCDW4&dchild=1&keywords=ccnp+enterprise&qid=1623776612&sprefix=CCNP+enter%2Caps%2C156&sr=8-3
+
+
+CISP
+Certified Ethical Hacking
+Advanced Offensive Professional
+
+
+https://www.gocloudarchitects.com/free-cloud-webinar/
+https://www.gocloudarchitects.com/cloud-architect-experience-program/
