@@ -9,8 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "This a note.md",
-            "mode": "source"
+            "file": "Untitled.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "This a note.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,8 +89,8 @@
   },
   "active": "8393271e548073c8",
   "lastOpenFiles": [
-    "This a note.md",
     "Untitled.md",
+    "This a note.md",
     "And this is another note..md"
   ]
 }
