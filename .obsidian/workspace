@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0853439a931fb137",
@@ -90,7 +91,7 @@
   "active": "8393271e548073c8",
   "lastOpenFiles": [
     "Untitled.md",
-    "This a note.md",
-    "And this is another note..md"
+    "And this is another note..md",
+    "This a note.md"
   ]
 }
