@@ -28,7 +28,7 @@
       "key": "q",
       "shift": false,
       "meta": false,
-      "commandID": ""
+      "commandID": "workspace:toggle-pin"
     }
   ]
 }
