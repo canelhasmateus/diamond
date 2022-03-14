@@ -31,7 +31,15 @@
   "app:go-forward": [],
   "app:open-help": [],
   "editor:open-link-in-new-leaf": [],
-  "switcher:open": [],
+  "switcher:open": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "O"
+    }
+  ],
   "editor:open-search-replace": [],
   "editor:open-search": [],
   "global-search:open": [],

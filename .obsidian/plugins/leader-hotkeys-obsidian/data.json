@@ -3,77 +3,6 @@
     {
       "sequence": [
         {
-          "key": "q",
-          "shift": false,
-          "alt": true,
-          "ctrl": false,
-          "meta": false
-        },
-        {
-          "key": "p",
-          "shift": false,
-          "alt": false,
-          "ctrl": false,
-          "meta": false
-        },
-        {
-          "key": "e",
-          "shift": false,
-          "alt": false,
-          "ctrl": false,
-          "meta": false
-        },
-        {
-          "key": "n",
-          "shift": false,
-          "alt": false,
-          "ctrl": false,
-          "meta": false
-        }
-      ],
-      "commandID": "command-palette:open"
-    },
-    {
-      "sequence": [
-        {
-          "key": "n",
-          "shift": false,
-          "alt": true,
-          "ctrl": false,
-          "meta": false
-        },
-        {
-          "key": "n",
-          "shift": false,
-          "alt": false,
-          "ctrl": true,
-          "meta": false
-        }
-      ],
-      "commandID": "daily-notes"
-    },
-    {
-      "sequence": [
-        {
-          "key": "m",
-          "shift": false,
-          "alt": true,
-          "ctrl": false,
-          "meta": false
-        },
-        {
-          "key": "x",
-          "shift": false,
-          "alt": false,
-          "ctrl": false,
-          "meta": false
-        }
-      ],
-      "commandID": "leader-hotkeys-obsidian:register-modal"
-    },
-    {
-      "sequence": [
-        {
           "key": "w",
           "shift": false,
           "alt": true,
@@ -100,14 +29,66 @@
           "meta": false
         },
         {
-          "key": "p",
+          "key": "n",
           "shift": false,
           "alt": false,
           "ctrl": false,
           "meta": false
         },
         {
-          "key": "p",
+          "key": "x",
+          "shift": false,
+          "alt": false,
+          "ctrl": false,
+          "meta": false
+        }
+      ],
+      "commandID": "leader-hotkeys-obsidian:register-modal"
+    },
+    {
+      "sequence": [
+        {
+          "key": "w",
+          "shift": false,
+          "alt": true,
+          "ctrl": false,
+          "meta": false
+        },
+        {
+          "key": "d",
+          "shift": false,
+          "alt": false,
+          "ctrl": false,
+          "meta": false
+        },
+        {
+          "key": "n",
+          "shift": false,
+          "alt": false,
+          "ctrl": false,
+          "meta": false
+        }
+      ],
+      "commandID": "daily-notes"
+    },
+    {
+      "sequence": [
+        {
+          "key": "w",
+          "shift": false,
+          "alt": true,
+          "ctrl": false,
+          "meta": false
+        },
+        {
+          "key": "t",
+          "shift": false,
+          "alt": false,
+          "ctrl": false,
+          "meta": false
+        },
+        {
+          "key": "b",
           "shift": false,
           "alt": false,
           "ctrl": false,
@@ -115,6 +96,32 @@
         }
       ],
       "commandID": "backlink:toggle-backlinks-in-document"
+    },
+    {
+      "sequence": [
+        {
+          "key": "w",
+          "shift": false,
+          "alt": true,
+          "ctrl": false,
+          "meta": false
+        },
+        {
+          "key": "o",
+          "shift": false,
+          "alt": false,
+          "ctrl": false,
+          "meta": false
+        },
+        {
+          "key": "r",
+          "shift": false,
+          "alt": false,
+          "ctrl": false,
+          "meta": false
+        }
+      ],
+      "commandID": "switcher:open"
     }
   ]
 }
