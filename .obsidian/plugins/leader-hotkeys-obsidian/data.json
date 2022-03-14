@@ -179,6 +179,25 @@
         }
       ],
       "commandID": "app:reload"
+    },
+    {
+      "sequence": [
+        {
+          "key": "w",
+          "shift": false,
+          "alt": true,
+          "ctrl": false,
+          "meta": false
+        },
+        {
+          "key": "p",
+          "shift": false,
+          "alt": true,
+          "ctrl": false,
+          "meta": false
+        }
+      ],
+      "commandID": "file-explorer:reveal-active-file"
     }
   ]
 }
