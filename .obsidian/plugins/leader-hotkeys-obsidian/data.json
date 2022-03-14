@@ -1,0 +1,37 @@
+{
+  "hotkeys": [
+    {
+      "sequence": [
+        {
+          "key": "q",
+          "shift": false,
+          "alt": true,
+          "ctrl": false,
+          "meta": false
+        },
+        {
+          "key": "p",
+          "shift": false,
+          "alt": false,
+          "ctrl": false,
+          "meta": false
+        },
+        {
+          "key": "e",
+          "shift": false,
+          "alt": false,
+          "ctrl": false,
+          "meta": false
+        },
+        {
+          "key": "n",
+          "shift": false,
+          "alt": false,
+          "ctrl": false,
+          "meta": false
+        }
+      ],
+      "commandID": "command-palette:open"
+    }
+  ]
+}

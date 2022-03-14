@@ -27,7 +27,17 @@
   "leader-hotkeys-obsidian:leader": [
     {
       "modifiers": [
-        "Alt"
+        "Mod"
+      ],
+      "key": "Q"
+    }
+  ],
+  "leader-hotkeys-obsidian:leader1": [],
+  "editor:toggle-bold": [],
+  "leader-hotkeys-obsidian:register-modal": [
+    {
+      "modifiers": [
+        "Mod"
       ],
       "key": "Q"
     }

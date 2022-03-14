@@ -117,7 +117,7 @@ Whitepapers
 
 
 # Video 2
-
+s
 Recap of the IAM:
 
 Identifity and acces management
