@@ -122,6 +122,63 @@
         }
       ],
       "commandID": "switcher:open"
+    },
+    {
+      "sequence": [
+        {
+          "key": "q",
+          "shift": false,
+          "alt": true,
+          "ctrl": false,
+          "meta": false
+        },
+        {
+          "key": "j",
+          "shift": false,
+          "alt": true,
+          "ctrl": false,
+          "meta": false
+        }
+      ],
+      "commandID": "app:go-back"
+    },
+    {
+      "sequence": [
+        {
+          "key": "q",
+          "shift": false,
+          "alt": true,
+          "ctrl": false,
+          "meta": false
+        },
+        {
+          "key": "l",
+          "shift": false,
+          "alt": true,
+          "ctrl": false,
+          "meta": false
+        }
+      ],
+      "commandID": "app:go-forward"
+    },
+    {
+      "sequence": [
+        {
+          "key": "w",
+          "shift": false,
+          "alt": true,
+          "ctrl": false,
+          "meta": false
+        },
+        {
+          "key": "r",
+          "shift": false,
+          "alt": false,
+          "ctrl": true,
+          "meta": false
+        }
+      ],
+      "commandID": "app:reload"
     }
   ]
 }
