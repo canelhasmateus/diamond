@@ -32,6 +32,89 @@
         }
       ],
       "commandID": "command-palette:open"
+    },
+    {
+      "sequence": [
+        {
+          "key": "n",
+          "shift": false,
+          "alt": true,
+          "ctrl": false,
+          "meta": false
+        },
+        {
+          "key": "n",
+          "shift": false,
+          "alt": false,
+          "ctrl": true,
+          "meta": false
+        }
+      ],
+      "commandID": "daily-notes"
+    },
+    {
+      "sequence": [
+        {
+          "key": "m",
+          "shift": false,
+          "alt": true,
+          "ctrl": false,
+          "meta": false
+        },
+        {
+          "key": "x",
+          "shift": false,
+          "alt": false,
+          "ctrl": false,
+          "meta": false
+        }
+      ],
+      "commandID": "leader-hotkeys-obsidian:register-modal"
+    },
+    {
+      "sequence": [
+        {
+          "key": "w",
+          "shift": false,
+          "alt": true,
+          "ctrl": false,
+          "meta": false
+        },
+        {
+          "key": "e",
+          "shift": false,
+          "alt": false,
+          "ctrl": false,
+          "meta": false
+        }
+      ],
+      "commandID": "editor:focus"
+    },
+    {
+      "sequence": [
+        {
+          "key": "w",
+          "shift": false,
+          "alt": true,
+          "ctrl": false,
+          "meta": false
+        },
+        {
+          "key": "p",
+          "shift": false,
+          "alt": false,
+          "ctrl": false,
+          "meta": false
+        },
+        {
+          "key": "p",
+          "shift": false,
+          "alt": false,
+          "ctrl": false,
+          "meta": false
+        }
+      ],
+      "commandID": "backlink:toggle-backlinks-in-document"
     }
   ]
 }
