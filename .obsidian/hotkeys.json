@@ -1,20 +1,6 @@
 {
-  "file-explorer:open": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "J"
-    }
-  ],
-  "app:open-settings": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "X"
-    }
-  ],
+  "file-explorer:open": [],
+  "app:open-settings": [],
   "app:toggle-left-sidebar": [
     {
       "modifiers": [
@@ -34,13 +20,30 @@
   ],
   "leader-hotkeys-obsidian:leader1": [],
   "editor:toggle-bold": [],
-  "leader-hotkeys-obsidian:register-modal": [
+  "leader-hotkeys-obsidian:register-modal": [],
+  "file-explorer:new-file": [],
+  "editor:delete-paragraph": [],
+  "workspace:edit-file-title": [],
+  "editor:follow-link": [],
+  "graph:open": [],
+  "editor:insert-link": [],
+  "app:go-back": [],
+  "app:go-forward": [],
+  "app:open-help": [],
+  "editor:open-link-in-new-leaf": [],
+  "switcher:open": [],
+  "editor:open-search-replace": [],
+  "editor:open-search": [],
+  "global-search:open": [],
+  "editor:toggle-checklist-status": [],
+  "editor:toggle-italics": [],
+  "markdown:toggle-preview": [],
+  "daily-notes": [
     {
       "modifiers": [
         "Mod"
       ],
-      "key": "Q"
+      "key": "N"
     }
-  ],
-  "file-explorer:new-file": []
+  ]
 }
