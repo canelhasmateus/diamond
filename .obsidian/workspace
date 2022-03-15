@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/2022-03-14.md",
+            "file": "daily/2022-03-15.md",
             "mode": "source",
             "backlinks": true
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/2022-03-14.md",
+                "file": "daily/2022-03-15.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,6 +100,7 @@
   },
   "active": "c743f37712a9118d",
   "lastOpenFiles": [
+    "daily/2022-03-15.md",
     "daily/2022-03-14.md",
     "fleeting/teste.md",
     "new.md",
@@ -108,7 +109,6 @@
     "Untitled 1.md",
     "hey you.md",
     "Teste 2.md",
-    "This a note.md",
-    "And this is another note..md"
+    "This a note.md"
   ]
 }
