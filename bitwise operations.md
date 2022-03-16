@@ -14,6 +14,7 @@ when working with numbers, we can assign a maximum and
         if x = y ^ z then
         z = x ^ y and y = x ^ z
         
+        #Todo WHAT IS THIS PROPERTY CALLED?
     
     . Note that the maximum possible XOR result is always 2^(maximumBit) - 1.
     to achieve the highest number, we find the bitwise difference between the number and the maximum.
