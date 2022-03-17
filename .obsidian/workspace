@@ -85,6 +85,14 @@
                 "useHierarchy": false
               }
             }
+          },
+          {
+            "id": "67e778584b4ed87c",
+            "type": "leaf",
+            "state": {
+              "type": "RSS_FEED",
+              "state": {}
+            }
           }
         ]
       }
