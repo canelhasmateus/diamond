@@ -1,6 +1,6 @@
 # bitwise operations
 
-
+ 
 when working with numbers, we can assign a maximum and 
 
 # XOR
@@ -10,7 +10,7 @@ when working with numbers, we can assign a maximum and
         1 ^ 2 ^ 1  ^ 1 ^ 1 ... 
         1 -> 3 -> 2 -> 3 -> 2 ...
     . This happens because
-    
+     
         if x = y ^ z then
         z = x ^ y and y = x ^ z
         
