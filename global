@@ -4,12 +4,27 @@ Terms
     goal programming
     operations research
     set covering
-
+    eigen values
+    Linear transformations
+    Sampling
+        Rejection Sampling
+        Importance Sampling
+    Monte Carlo
+    Bayesian stats
+    duality
+    Category Theory
+    Propensity Score 
+    particle filtering
+    statistical test
+    Sat Solver
+    State Machines
+    
+    
 projects
     Knowledge Management
         RSS Feeds
         Zettelkasten
-        
+
     Powershell Terminal
     Alacrity Terminal
     Linux environment 
