@@ -18,11 +18,12 @@ Terms
     statistical test
     Sat Solver
     State Machines
-    
+
     
 projects
     Knowledge Management
         RSS Feeds
+            . Finish going over the youtube 
         Zettelkasten
 
     Powershell Terminal
@@ -39,7 +40,11 @@ Todo
 
     Need to consolidate my quick lists and macros:
     pre-order the kinesis advantage 360
-
+     
+     Keylogging
+        https://github.com/t184256/ngram-keylogger
+        https://github.com/GiacomoLaw/Keylogger
+        https://github.com/calebfergie/keylogger-parsing
      IntelliJ 
         Version and hard-link my  current configurations
         https://github.com/dkandalov/live-plugin
@@ -71,7 +76,10 @@ Log
 
         current points of paint are:
             shift + c; ctrl + c
-
+        
+        keylogger stats maybe?
+        Maybe i could expand this concept to not only typing.A Quantified Self
+    
             
 
 
