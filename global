@@ -1,5 +1,7 @@
 
 Terms     
+    hdr histogram
+    queueing theory
     quasi experiments
     data mining
     a/b testing
@@ -50,7 +52,7 @@ Todo
      IntelliJ 
         Version and hard-link my  current configurations
         https://github.com/dkandalov/live-plugin
-        
+
         https://plugins.jetbrains.com/plugin/17669-flora-beta-/
         https://youtrack.jetbrains.com/issue/IDEA-138252
         https://plugins.jetbrains.com/docs/intellij/fundamentals.html
