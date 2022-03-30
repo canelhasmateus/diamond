@@ -35,4 +35,14 @@
 # Incremental Improvement
     . Can we start with a baseline, and improve from there?
     
+
+# Swap the constraints
+
+    . Very common when, given an constraint, we try to maximize a utility function. If we know that this utility is bounded by some quantity, we can solve the problem by fixing the utility functions, and reverse calculate the input that would have produced it. 
+
+
+# Think in complements
+
+    
+    Sometimes, we can think in terms of complemets. Usual applications are probability theory. This is possible because we know all the enumerable states and their sum ( 1 ).
     

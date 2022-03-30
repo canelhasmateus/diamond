@@ -1,39 +1,15 @@
     File Menu
+
         Open Recent
-        Manage IDE Settings (Sync)
-
-    Tabs
-
-        Soft wrap
-        Toggle Change Only Files
-        Show Whitespace
-        Show Line Numbers
-        Show Gutter Icons
-        Ident Guides
-        Breadcrumbs
 
 
-        Split window
-            Split Right
-            Split Down
-            Strech Editor
-            Change Orientation
-            Maximize / Normalize
-            Unsplit
-            Unsplit All
-            Goto Next
-        Configure Tabs
-
-
-
-
-
+            
     Copy / Paste ( ? )
-        Cut
+        Cut 
         Copy
         Copy Path
             Absolute Path
-            File Name
+            File Name 
         Copy Reference (  ? )
         Paste
         Paste From History
@@ -42,26 +18,16 @@
         Convert to curl and copy ( ? )
 
 
-    Meta
-        Column Selection Mode
-        Edit as Table
-        Toggle Sticky Selection
-        Change Font Size
-        Insert / Overwrite
-        Swap Selection Bondaries
-        Macros
-        Auto Ident
-
-
-    Refactoring
-        Refactor
+    
+    Refactoring    
+        Refactor 
         Rename
         Change Signature
-        Toggle Case
+        Toggle Case 
         Join Line
-        Duplicate
+        Duplicate 
         Fill Paragraph ( ? )
-        Sort Line
+        Sort Line 
         Revert Line
         Transpose ( ? )
         Convert Idents ( ? )
@@ -69,11 +35,11 @@
         Kill ( ? )
         Reformat File
         Reformat Code
-        Optimize Imports
+        Optimize Imports 
         Rearragne code
 
         Move Statement Up Down
-
+        
         Move Element Right Left
         Move Line Right Left
 
@@ -89,10 +55,10 @@
             Function to scope
             Type Parameter
             Type Alias
-            Extract Delegate
-            Include File
+            Extract Delegate 
+            Include File 
             Introduce Type
-            Extract Superclass
+            Extract Superclass 
             Extract Module
             Extract Component
             Extract CTE
@@ -111,48 +77,23 @@
         Insert Template
         Save as Live Template
         Surround With
-        Unwrap
+        Unwrap 
         Folding
-        Generate .. .
-        File Properties
-        Template Language
-???
-        Quick Definition
-        Show Siblings
-        Quick Type Definition
-        Quick Documentation
-        Parameter Info
-        Type Info
-        Context Info
-        Error Description
-
-        Open In Browser
-        File Properties
-        Template Language
-
-        Quick Switch Scheme
-        Show Source
-        Jump to cursor
-        Tasks and Contexts
-        View PSI Structure
-        Create Command Line Launcher
-        Create setup.py
-
-
-
+        Generate .. . 
+        
     Selection
         Create Retangular Selection
         Select All
         Add Carets to end of selected lines
         Extend and SHrink Selection
-
-    Navigation
+    
+    Navigation 
         Recent Files
         Iterate Files
         Jump to Source
         Recent Locations
         Recent Changes
-        Back
+        Back 
         Forward
         Go to Class
         Go to File
@@ -160,20 +101,20 @@
         Go to Row
         Related Lines ( ? )
         Go to URL Mapping ( ? )
-
-        Next  Highlighted Error
-        Previous Highlighted Error
+        
+        Next  Highlighted Error 
+        Previous Highlighted Error 
 
         Emmet Edit Point ( ? )
 
         Next  Edit Location
         Previous Edit Location
-
-        Next Method
+        
+        Next Method 
         Previous Method
         Move Caret to Matching Brace
         Custom Folding
-        Jump To navigation Bar
+        Jump To navigation Bar 
         Go TO Declaration or Usages
         Go to Implementation
         Go to Type Declaration
@@ -181,20 +122,18 @@
         Test
         Related Symbol
         File Structure
-        File Path
+        File Path 
         Type Hierarchy
         Method Hierarchy
         Call Hierarchy
         Previos / Next Occurence
-
+    
     Code
-
-        Show Bytecode
         Override Method
-        Implement Methods
+        Implement Methods 
         Delegate Method
-
-        Inspect
+        
+        Inspect 
         Code Cleanup
         Analyze Code
             Silent Code Cleanup
@@ -214,14 +153,14 @@
             Analayze DataFlow
             Analyze StackTrace
         Desugar
+        
 
-
-
+        
 
     Marks
         Toggle Breakpoint
         Toggle Temporary Breakpoint
-        Toggle Breakpoint Enabled
+        Toggle Breakpoint Enabled 
         View Breakpoints
         Add to watches
         Add to inline watches
@@ -229,25 +168,24 @@
         Add Bookmark Mnemonic
 
         Go To Bookmarmk
-        create book mark list
+        create book mark list 
         Show Preview
         Enable Preview Tab
+        
 
-
-
+    
     AutoCompletion
         Choose Lookup Item
         Complete Current Statement
-        Basic
-        Type Matching
-        cyclic expand Word
+        Basic 
+        Type Matching 
+        cyclic expand Word 
         cyclic expand Word Backward
 
 
-
-
+        
+    
     Window
-        Toggle Change Only Files
         Appearance
         Import popups
         Scientific Mode
@@ -257,14 +195,14 @@
             Jump to last
             Maximize window
             Move to
-            Show list of tabs
+            Show list of tabs 
         Close Notification
         Background Tasks
-        Next Project Window
-        Previous Project Window
+        Next Project Window 
+        Previous Project Window 
         Database
-        Database Changes
-        Event Log
+        Database Changes 
+        Event Log 
         File Transfer
         Find
         Copilot
@@ -277,13 +215,31 @@
         Terminal
         Todo
         Git
+        
+        
+    ???
+        Quick Definition
+        Show Siblings 
+        Quick Type Definition
+        Quick Documentation
+        Parameter Info
+        Type Info
+        Context Info 
+        Error Description
+        
+        Open In Browser
+
+        Quick Switch Scheme
+        Show Source
+        Jump to cursor
+        Tasks and Contexts
+        View PSI Structure
+        Create Command Line Launcher
+        Create setup.py
 
 
-
-    Version Control
-        Show Local History
-        Put Label
-
+    
+    Version
         Compare FIles
         COmpare with editor
         compare with clipboard
@@ -296,66 +252,66 @@
         show history for selection
         Rollback
         Push
-        Pull
+        Pull 
         Fetch
         Merge
         Rebase
         Branches
         Reset Head
-        Stash Changes
-        Create PR
-        Shelve Changes
-        Show Shelve
+        Stash Changes  
+        Create PR 
+        Shelve Changes 
+        Show Shelve 
 
 
     Tooling
         Convert curl to http request
 
 
-
+    
     Execution
-        Build Project
+        Build Project 
         Build Module
         Rebuild Module
         Run
-        Apply Code Changes
+        Apply Code Changes 
         Debug
-        Run ...
-        Debug ...
+        Run ... 
+        Debug ... 
         Edit Configurations
-        Manage Targets
+        Manage Targets 
         Stop
         Update Running Application
         Step Over
-        Force Step Over
+        Force Step Over 
         Step Into
-        Step Into My Code
+        Step Into My Code 
         Force Step Into
-        Smar Step Into
-        Step Out
-        Step out of code block
+        Smar Step Into 
+        Step Out 
+        Step out of code block 
         Run to cursor
         Force run to cursor
         Force Return
         Pause Program
         Evaluate Expression
         Quick Evaluate Expression
-        Show Execution Point
+        Show Execution Point 
         IDE Scripting Console
-        External Tools
-        Deployments
-            ...
+        External Tools 
+        Deployments 
+            ... 
         Run Grunt / ... / npm task
-        Scala Repl
+        Scala Repl 
         Set Value
         Copy Value
         Inspect
         Remove Watch
         Show Evaluate Expression Field
-        Remove All Watches
-        Mute Breakpoints
-        Sort Variables
-        Mark Object
+        Remove All Watches 
+        Mute Breakpoints 
+        Sort Variables 
+        Mark Object 
         Focus on Breakpoint
         Remove All Breakpoints
         Remove All Breakpoints In Current File
@@ -368,6 +324,7 @@
         Copilot
         File Chooser
         Popup Menu?
-    Activate Navigation Bar
+    Activate Navigation Bar 
     Analyze
     Arc
+

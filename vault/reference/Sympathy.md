@@ -8,3 +8,13 @@ The act of seeing at things from a different perspective.
 
 
 # Psychological
+
+
+
+
+
+# Expectations
+
+
+
+
