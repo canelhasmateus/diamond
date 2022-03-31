@@ -1,3 +1,10 @@
+# Memory Management
+
+
+
+
+#...
+
 https://blog.heroku.com/tidying-ruby-object-allocations
 
 
@@ -34,14 +41,4 @@ https://blog.heroku.com/tidying-ruby-object-allocations
 
 https://www.sitepoint.com/ruby-uses-memory/
     Minimize object allocation. 
-
-### 
-
-
-How Java immutables deal with memory allocation and gc pressure?
-
-In most cases, when a holder object is updated to reference a different object, the new referent is a young object. If we update a MutableHolder by calling setValue(), we have created a situation where an older object references a younger one. On the other hand, by creating a new ImmutableHolder object instead, a younger object is referencing an older one.
-
-The latter situation, where most objects point to older objects, is much more gentle on a generational garbage collector. If a MutableHolder that lives in the old generation is mutated, all the objects on the card that contain the MutableHolder must be scanned for old-to-young references at the next minor collection.
-
 
