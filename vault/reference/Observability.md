@@ -50,8 +50,8 @@ ___
 
 . Looking at it hides the fact that, for a given threshold to be reached, there are other 5% of responses that had to be worse. 
 
-. Worse still is the monitoring and reporting of averages, [[Human Phenomena#Implicit Assumption|which are non-sensical in the context of highly skewed distributions that latencies follow.]] 
-    .. its common to have your 99.999% be 1000x greater than your 99%
+. Worse still is the monitoring and reporting of averages, which are [[Implicit Assumptions|non-sensical]] in the context of highly skewed distributions that latencies follow.
+    .. its common to have your 99.999% be 1000x greater than your 99%. 
             
     
 
@@ -112,7 +112,7 @@ ___
 Latency does not lives in isolation, we need to look at it in the context of load.
 
 When comparing systems by the means of tools such as load charts, looking at how systems behave when pushed past the saturation point is useless: you already crashed your car. 
-    . This can be seen as an [[Human Phenomena#Implicit Assumption]] that your normal operation load is past the point of saturation ( 100% load ).
+    . This can be seen as an [[Implicit Assumptions]] that your normal operation load is past the point of saturation ( 100% load ).
 
 
 # References

@@ -42,8 +42,9 @@ Minimax Theorem
     When Both players play a minimax strategy, the expected utility for player 1 is called "value of the game"
         . Its an unique number 
         
-    
+        . So what? [[expand]]
 
+        
 
 
 
