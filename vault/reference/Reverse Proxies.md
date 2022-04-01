@@ -49,7 +49,7 @@ sequenceDiagram
     Proxy->>Server: Request Packet 3
     Proxy->>Server: Request Packet 4
     Proxy->>Server: Request Packet 5
-    Note right of Server: <br/> Processing <br/>
+    Note right of Server: Processing
     Server->>Proxy: Response Packet 1
     Server->>Proxy: Response Packet 2
     Server->>Proxy: Response Packet 3    

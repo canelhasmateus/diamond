@@ -13,3 +13,23 @@
 
 2022-04-01 https://www.producthunt.com
 2022-04-01 https://feedreader.com
+2022-04-01 https://kroki.io
+2022-04-01 https://mermaid-js.github.io/mermaid/#/
+2022-04-01 https://dvc.org
+2022-04-01 https://explosion.ai
+2022-04-01 https://blog.jetbrains.com
+2022-04-01 https://svelte.dev
+2022-04-01 https://code.visualstudio.com
+2022-04-01 https://2020.stateofcss.com/en-US/
+2022-04-01 https://advancedsqlpuzzles.com
+2022-04-01 http://alloytools.org
+2022-04-01 https://alpaca.markets
+2022-04-01 https://www.alphavantage.co
+2022-04-01 https://ankiweb.net/about
+2022-04-01 https://antv.vision/en
+2022-04-01 https://github.com/arviz-devs/arviz
+2022-04-01 https://ax.dev
+2022-04-01 https://www.azul.com
+2022-04-01 https://backtrader.com
+2022-04-01 https://bandit.readthedocs.io/en/latest/
+2022-04-01 https://en.bem.info

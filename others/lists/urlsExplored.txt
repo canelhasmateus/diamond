@@ -1,193 +1,212 @@
-https://webkit.org/blog/
-pgaleone.eu
-https://www.tibiabosses.com/
-https://www.stochasticlifestyle.com/
-https://www.jeremyjordan.me/
-https://www.foonathan.net/post/
-https://www.burnison.ca/
-https://willwolf.io/
-https://tibiasecrets.com/
-https://oneraynyday.github.io/
-https://mikiobraun.wordpress.com/
-https://lilianweng.github.io/
-https://francisbach.com/
-https://dataskeptic.com/
-https://casualinfer.libsyn.com/website
-https://crystal-lang.org/
-https://blog.heaphero.io/
-https://acko.net/
-https://floooh.github.io/archive/
-https://ponyfoo.com/articles
-https://shortscience.org/
-https://parameterfree.com/
-https://erikbern.com/
-https://www.yulingyao.com/blog/
-http://www.benfrederickson.com/blog/
-https://agustinus.kristia.de/
-https://justindomke.wordpress.com/
-https://www.snoyman.com/
-https://blog.evjang.com/
-https://www.pydata-podcast.com
-https://twiecki.io/
-http://trevorjim.com/
-https://tmramalho.github.io/
-http://stillbreeze.github.io/
-https://simple-complexities.github.io/
-https://www.atomiccommits.io/everything
-https://www.kimonote.com/@mildbyte/
-https://abidlabs.github.io/
-https://aerotwist.com/blog/
-https://lexi-lambda.github.io/
-https://anotherdatum.com/
-https://banditalgs.com/
-https://www.chrisstucchio.com/
-https://www.davidsbatista.net/posts/
-http://mccormickml.com/
-http://www.cleverhans.io/
-https://codecraft.co/
-https://www.evanmiller.org/
-https://distill.pub/
-http://nadbordrozd.github.io/
-https://blog.floydhub.com/
-https://causalinference.gitlab.io/
-https://timvieira.github.io/blog/
-https://blogs.princeton.edu/imabandit/
-https://kevinzakka.github.io/
-https://www.pragmatic.ml/
-https://machinethoughts.wordpress.com/
-https://idontgetoutmuch.wordpress.com/
-https://medium.engineering/
-https://minimizingregret.wordpress.com/blog/
-https://mpatacchiola.github.io/blog/
-https://mrale.ph/
-http://oysteing.blogspot.com/
-http://jakevdp.github.io/
-https://rpsychologist.com/
-https://sanyambhutani.com/
-https://sebastiancallh.github.io/
+2022-03-01 https://webkit.org/blog/
+2022-03-01 https://pgaleone.eu/
+2022-03-01 https://www.tibiabosses.com/
+2022-03-01 https://www.stochasticlifestyle.com/
+2022-03-01 https://www.jeremyjordan.me/
+2022-03-01 https://www.foonathan.net/post/
+2022-03-01 https://www.burnison.ca/
+2022-03-01 https://willwolf.io/
+2022-03-01 https://tibiasecrets.com/
+2022-03-01 https://oneraynyday.github.io/
+2022-03-01 https://mikiobraun.wordpress.com/
+2022-03-01 https://lilianweng.github.io/
+2022-03-01 https://francisbach.com/
+2022-03-01 https://dataskeptic.com/
+2022-03-01 https://casualinfer.libsyn.com/website
+2022-03-01 https://crystal-lang.org/
+2022-03-01 https://blog.heaphero.io/
+2022-03-01 https://acko.net/
+2022-03-01 https://floooh.github.io/archive/
+2022-03-01 https://ponyfoo.com/articles
+2022-03-01 https://shortscience.org/
+2022-03-01 https://parameterfree.com/
+2022-03-01 https://erikbern.com/
+2022-03-01 https://www.yulingyao.com/blog/
+2022-03-01 http://www.benfrederickson.com/blog/
+2022-03-01 https://agustinus.kristia.de/
+2022-03-01 https://justindomke.wordpress.com/
+2022-03-01 https://www.snoyman.com/
+2022-03-01 https://blog.evjang.com/
+2022-03-01 https://www.pydata-podcast.com
+2022-03-01 https://twiecki.io/
+2022-03-01 http://trevorjim.com/
+2022-03-01 https://tmramalho.github.io/
+2022-03-01 http://stillbreeze.github.io/
+2022-03-01 https://simple-complexities.github.io/
+2022-03-01 https://www.atomiccommits.io/everything
+2022-03-01 https://www.kimonote.com/@mildbyte/
+2022-03-01 https://abidlabs.github.io/
+2022-03-01 https://aerotwist.com/blog/
+2022-03-01 https://lexi-lambda.github.io/
+2022-03-01 https://anotherdatum.com/
+2022-03-01 https://banditalgs.com/
+2022-03-01 https://www.chrisstucchio.com/
+2022-03-01 https://www.davidsbatista.net/posts/
+2022-03-01 http://mccormickml.com/
+2022-03-01 http://www.cleverhans.io/
+2022-03-01 https://codecraft.co/
+2022-03-01 https://www.evanmiller.org/
+2022-03-01 https://distill.pub/
+2022-03-01 http://nadbordrozd.github.io/
+2022-03-01 https://blog.floydhub.com/
+2022-03-01 https://causalinference.gitlab.io/
+2022-03-01 https://timvieira.github.io/blog/
+2022-03-01 https://blogs.princeton.edu/imabandit/
+2022-03-01 https://kevinzakka.github.io/
+2022-03-01 https://www.pragmatic.ml/
+2022-03-01 https://machinethoughts.wordpress.com/
+2022-03-01 https://idontgetoutmuch.wordpress.com/
+2022-03-01 https://medium.engineering/
+2022-03-01 https://minimizingregret.wordpress.com/blog/
+2022-03-01 https://mpatacchiola.github.io/blog/
+2022-03-01 https://mrale.ph/
+2022-03-01 http://oysteing.blogspot.com/
+2022-03-01 http://jakevdp.github.io/
+2022-03-01 https://rpsychologist.com/
+2022-03-01 https://sanyambhutani.com/
+2022-03-01 https://sebastiancallh.github.io/
+2022-03-01 
+2022-03-01 
+2022-03-01 https://www.youtube.com/user/joshstarmer
+2022-03-01 https://www.youtube.com/channel/UC_QIfHvN9auy2CoOdSfMWDw
+2022-03-01 https://www.youtube.com/channel/UCEo_JfTH_9FK-7k9-mAWJkQ
+2022-03-01 https://www.youtube.com/channel/UCM7Fwxag0JVnzIgZGBwLQgw
+2022-03-01 https://www.youtube.com/channel/UCv0nF8zWevEsSVcmz6mlw6A    
+2022-03-01 https://www.youtube.com/user/JuliaLanguage
+2022-03-01 https://www.youtube.com/channel/UC8ENHE5xdFSwx71u3fDH5Xw
+2022-03-01 https://aperiodical.com/    
+2022-03-01 http://lkozma.net/blog/
+2022-03-01 https://regularize.wordpress.com/
+2022-03-01 https://tcsmath.wordpress.com/
+2022-03-01 http://informationtransfereconomics.blogspot.com/
+2022-03-01 https://danielwalsh.tumblr.com/
+2022-03-01 https://statmodeling.stat.columbia.edu/
+2022-03-01 https://dustingmixon.wordpress.com/
+2022-03-01 http://nicolas.kruchten.com/
+2022-03-01 
+2022-03-01 
+2022-03-01 
+2022-03-01 https://news.ycombinator.com/
+2022-03-01 https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw
+2022-03-01 https://www.youtube.com/user/academyofideas
+2022-03-01 https://www.youtube.com/channel/UCzBjutX2PmitNF4avysL-vg
+2022-03-01 https://www.youtube.com/channel/UCIxertsVDip8QHpnhinkAow
+2022-03-01 https://www.youtube.com/channel/UCNIkB2IeJ-6AmZv7bQ1oBYg
+2022-03-01 https://www.youtube.com/user/ayasdi
+2022-03-01 https://www.youtube.com/user/SpartacanUsuals
+2022-03-01 https://www.youtube.com/user/berty38
+2022-03-01 https://www.youtube.com/user/BCFoltz
+2022-03-01 https://www.youtube.com/user/ControlLectures
+2022-03-01 https://www.youtube.com/channel/UC5yS6v2umoIXx8TSJsUEBKg
+2022-03-01 https://www.youtube.com/channel/UCS97tchJDq17Qms3cux8wcA
+2022-03-01 https://www.youtube.com/channel/UC1kBxkk2bcG78YBX7LMl9pQ
+2022-03-01 https://www.youtube.com/user/WhatsACreel
+2022-03-01 https://www.youtube.com/user/ddorran
+2022-03-01 https://www.youtube.com/channel/UC4UJ26WkceqONNF5S26OiVw
+2022-03-01 https://www.youtube.com/channel/UCipYk6snJe0IaOvzSCWwTrw
+2022-03-01 https://www.youtube.com/channel/UC3VY6RTXegnoSD_q446oBdg
+2022-03-01 https://www.youtube.com/user/apf99
+2022-03-01 https://www.youtube.com/user/GoogleDevelopers
+2022-03-01 https://www.youtube.com/user/jms36086
+2022-03-01 https://www.youtube.com/user/jdlshore
+2022-03-01 https://www.youtube.com/user/jmann277
+2022-03-01 https://www.youtube.com/channel/UCEBcDOjv-bhAmLavY71RMHA
+2022-03-01 https://www.youtube.com/channel/UCMLtBahI5DMrt0NPvDSoIRQ
+2022-03-01 https://www.youtube.com/channel/UC_sfvZvvPUbOQhDs_cqlx_A
+2022-03-01 https://www.youtube.com/channel/UCrlZs71h3mTR45FgQNINfrg
+2022-03-01 https://www.youtube.com/user/mathematicalmonk
+2022-03-01 https://www.youtube.com/user/MathProofsable
+2022-03-01 https://www.youtube.com/user/NCRMUK
+2022-03-01 https://www.youtube.com/channel/UCtJPeNYnAXhB1-_h8xbIX_Q
+2022-03-01 https://www.youtube.com/channel/UCDS20hpBFiv_Kdp5Ibh0vew
+2022-03-01 https://www.youtube.com/channel/UCs4aHmggTfFrpkPcWSaBN9g
+2022-03-01 https://www.youtube.com/channel/UCW6MNdOsqv2E9AjQkv9we7A
+2022-03-01 https://www.youtube.com/channel/UCK8XIGR5kRidIw2fWqwyHRA
+2022-03-01 https://www.youtube.com/channel/UCNJK6_DZvcMqNSzQdEkzvzA
+2022-03-01 https://www.youtube.com/channel/UCRS4DvO9X7qaqVYUW2_dwOw
+2022-03-01 https://www.youtube.com/user/Cercopithecan
+2022-03-01 https://www.youtube.com/channel/UCEwhtpXrg5MmwlH04ANpL8A
+2022-03-01 https://www.youtube.com/user/YOWAustralia
+2022-03-01 https://www.youtube.com/channel/UCwgN5srGpBH4M-Zc2cAluOA
+2022-03-01 https://www.youtube.com/c/LiveOverflow
+2022-03-01 https://www.youtube.com/user/GISIGeometry
+2022-03-01 https://deepsource.io/blog
+2022-03-01 https://blog.paralleldots.com/
+2022-03-01 
+2022-03-01 
+2022-03-01 https://www.depesz.com/
+2022-03-01 https://dennybritz.com/
+2022-03-01 https://www.deepmind.com/
+2022-03-01 https://blog.heroku.com/ 
+2022-03-01 https://www.fast.ai/
+2022-03-01 https://automata88.medium.com/    
+2022-03-01 https://lakefs.io/
+2022-03-01 https://eng.uber.com/
+2022-03-01 https://stackoverflow.blog/
+2022-03-01 https://medium.com/paypal-tech
+2022-03-01 https://blog.quantinsti.com/
+2022-03-01 https://dm13450.github.io/
+2022-03-01 https://serokell.io/
+2022-03-01 
+2022-03-01 http://insights.factorresearch.com
+2022-03-01 http://www.datascience.salon
+2022-03-01 http://tomassetti.me
+2022-03-01 http://acloudguru.com
+2022-03-01 http://explosion.ai
+2022-03-01 http://engineering.atspotify.com
+2022-03-01 http://reddit.com/r/DeepLearningPapers    
+2022-03-01 http://bjlkeng.github.io
+2022-03-01 http://engineering.fb.com
+2022-03-01 
+2022-03-01 http://v8.dev
+2022-03-01 http://svelte.dev
+2022-03-01 http://jasmcole.com
+2022-03-01 http://sebastianraschka.com
+2022-03-01 http://dvc.org
+2022-03-01 http://blog.jetbrains.com    
+2022-03-01 http://candost.blog
+2022-03-01 http://pythoninsider.blogspot.com
+2022-03-01 http://code.visualstudio.com
+2022-03-01 http://blog.openai.com
+2022-03-01 http://statmodeling.stat.columbia.edu
+2022-03-01 http://mysqlserverteam.com
+2022-03-01 http://changelog.com
+2022-03-01 http://residentmar.io
+2022-03-01 http://tryolabs.com
+2022-03-01 http://benanne.github.io
+2022-03-01 http://github.blog
+2022-03-01 http://huyenchip.com
+2022-03-01 http://math3ma.com
+2022-03-01 http://akosiorek.github.io
+2022-03-01 http://allendowney.com
+2022-03-01 http://beyondjava.net
+2022-03-01 http://calendar.perfplanet.com
+2022-03-01 http://danieltakeshi.github.io
+2022-03-01 http://deeplearning.ai
+2022-03-01 http://engineering.linkedin.com
+2022-03-01 http://fharrell.com/post
+2022-03-01 https://eng.lyft.com/
+2022-03-01 http://engineering.shopify.com/blogs/engineering
+2022-03-01 http://engineeringblog.yelp.com
+2022-03-01 http://flowtale.ai
+2022-03-01 https://williamkoehrsen.medium.com/
+2022-03-01 https://netflixtechblog.com/
+2022-03-01 http://hudsonthames.org
+2022-03-01 http://offconvex.github.io
+2022-03-01 http://slack.engineering    
+2022-03-01 http://quantstart.com
+2022-03-01 aerinykim.medium.com
 
-
-https://www.youtube.com/user/joshstarmer
-https://www.youtube.com/channel/UC_QIfHvN9auy2CoOdSfMWDw
-https://www.youtube.com/channel/UCEo_JfTH_9FK-7k9-mAWJkQ
-https://www.youtube.com/channel/UCM7Fwxag0JVnzIgZGBwLQgw
-https://www.youtube.com/channel/UCv0nF8zWevEsSVcmz6mlw6A    
-https://www.youtube.com/user/JuliaLanguage
-https://www.youtube.com/channel/UC8ENHE5xdFSwx71u3fDH5Xw
-https://aperiodical.com/    
-http://lkozma.net/blog/
-https://regularize.wordpress.com/
-https://tcsmath.wordpress.com/
-http://informationtransfereconomics.blogspot.com/
-https://danielwalsh.tumblr.com/
-https://statmodeling.stat.columbia.edu/
-https://dustingmixon.wordpress.com/
-http://nicolas.kruchten.com/
-
-
-deepsource.io/blog/index.xml
-blog.paralleldots.com
-depesz.com
-dennybritz.com
-deepmind.com
-blog.heroku.com
-fast.ai
-https://automata88.medium.com/    
-lakefs.io
-eng.uber.com
-stackoverflow.blog
-medium.com/paypal-tech?source=rss----6423323524ba---4
-blog.quantinsti.com
-dm13450.github.io    
-serokell.io
-insights.factorresearch.com
-datascience.salon
-tomassetti.me
-acloudguru.com
-explosion.ai
-engineering.atspotify.com
-reddit.com/r/DeepLearningPapers    
-bjlkeng.github.io
-engineering.fb.com
-quantpedia.com ( not all )
-v8.dev
-svelte.dev
-jasmcole.com
-sebastianraschka.com
-dvc.org
-blog.jetbrains.com    
-candost.blog
-pythoninsider.blogspot.com
-code.visualstudio.com
-blog.openai.com
-statmodeling.stat.columbia.edu
-mysqlserverteam.com
-changelog.com
-residentmar.io
-tryolabs.com
-benanne.github.io
-github.blog
-huyenchip.com
-math3ma.com
-akosiorek.github.io
-allendowney.com
-beyondjava.net
-calendar.perfplanet.com
-danieltakeshi.github.io
-deeplearning.ai
-engineering.linkedin.com/blog.rss.html
-fharrell.com/post
-eng.lyft.com?source=rss----25cd379abb8---4
-engineering.shopify.com/blogs/engineering
-engineeringblog.yelp.com
-flowtale.ai
-medium.com/@williamkoehrsen?source=rss-e2f299e30cb9------2    
-netflixtechblog.com?source=rss----2615bd06b42e---4
-hudsonthames.org
-offconvex.github.io
-slack.engineering    
-quantstart.com
-https://news.ycombinator.com/
-https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw
-https://www.youtube.com/user/academyofideas
-https://www.youtube.com/channel/UCzBjutX2PmitNF4avysL-vg
-https://www.youtube.com/channel/UCIxertsVDip8QHpnhinkAow
-https://www.youtube.com/channel/UCNIkB2IeJ-6AmZv7bQ1oBYg
-https://www.youtube.com/user/ayasdi
-https://www.youtube.com/user/SpartacanUsuals
-https://www.youtube.com/user/berty38
-https://www.youtube.com/user/BCFoltz
-https://www.youtube.com/user/ControlLectures
-https://www.youtube.com/channel/UC5yS6v2umoIXx8TSJsUEBKg
-https://www.youtube.com/channel/UCS97tchJDq17Qms3cux8wcA
-https://www.youtube.com/channel/UC1kBxkk2bcG78YBX7LMl9pQ
-https://www.youtube.com/user/WhatsACreel
-https://www.youtube.com/user/ddorran
-https://www.youtube.com/channel/UC4UJ26WkceqONNF5S26OiVw
-https://www.youtube.com/channel/UCipYk6snJe0IaOvzSCWwTrw
-https://www.youtube.com/channel/UC3VY6RTXegnoSD_q446oBdg
-https://www.youtube.com/user/apf99
-https://www.youtube.com/user/GoogleDevelopers
-https://www.youtube.com/user/jms36086
-https://www.youtube.com/user/jdlshore
-https://www.youtube.com/user/jmann277
-https://www.youtube.com/channel/UCEBcDOjv-bhAmLavY71RMHA
-https://www.youtube.com/channel/UCMLtBahI5DMrt0NPvDSoIRQ
-https://www.youtube.com/channel/UC_sfvZvvPUbOQhDs_cqlx_A
-https://www.youtube.com/channel/UCrlZs71h3mTR45FgQNINfrg
-https://www.youtube.com/user/mathematicalmonk
-https://www.youtube.com/user/MathProofsable
-https://www.youtube.com/user/NCRMUK
-https://www.youtube.com/channel/UCtJPeNYnAXhB1-_h8xbIX_Q
-https://www.youtube.com/channel/UCDS20hpBFiv_Kdp5Ibh0vew
-https://www.youtube.com/channel/UCs4aHmggTfFrpkPcWSaBN9g
-https://www.youtube.com/channel/UCW6MNdOsqv2E9AjQkv9we7A
-https://www.youtube.com/channel/UCK8XIGR5kRidIw2fWqwyHRA
-https://www.youtube.com/channel/UCNJK6_DZvcMqNSzQdEkzvzA
-https://www.youtube.com/channel/UCRS4DvO9X7qaqVYUW2_dwOw
-https://www.youtube.com/user/Cercopithecan
-https://www.youtube.com/channel/UCEwhtpXrg5MmwlH04ANpL8A
-https://www.youtube.com/user/YOWAustralia
-https://www.youtube.com/channel/UCwgN5srGpBH4M-Zc2cAluOA
-https://www.youtube.com/c/LiveOverflow
-https://www.youtube.com/user/GISIGeometry
+2022-04-01 https://medium.com/@alex-ber
+2022-04-01 https://alexchinco.com
+2022-04-01 https://alexrachnog.medium.com
+2022-04-01 https://algobeans.com
+2022-04-01 https://alphaarchitect.com/blog/
+2022-04-01 https://anujloomba.medium.com
+2022-04-01 https://appsilon.com/blog/
+2022-04-01 https://austingil.com
+2022-04-01 https://betanalpha.github.io/writing/
+2022-04-01 https://biot.com/blog/
+2022-04-01 https://blog.espenberntsen.net/page/2/
+2022-04-01 https://blog.jooq.org
+2022-04-01 https://blog.jooq.org
