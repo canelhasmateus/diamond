@@ -10,3 +10,6 @@
 2022-04-01 https://9elements.github.io/fancy-border-radius/
 2022-04-01 https://border-image.com/
 2022-04-01 https://gogs.io
+
+2022-04-01 https://www.producthunt.com
+2022-04-01 https://feedreader.com

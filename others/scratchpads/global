@@ -1,91 +1,32 @@
-
-Terms     
-    hdr histogram
-    queueing theory
-    quasi experiments
-    data mining
-    a/b testing
-    goal programming
-    operations research
-    set covering
-    eigen values
-    Linear transformations
-    Sampling
-        Rejection Sampling
-        Importance Sampling
-    Monte Carlo
-    Bayesian stats
-    duality
-    Category Theory
-    Propensity Score 
-    particle filtering
-    statistical test
-    Sat Solver
-    State Machines
-
-    
 projects
     Knowledge Management
-        RSS Feeds
-            . Need to re-follow people, and re-categorize them.
-        Zettelkasten
-
+    Zettelkasten
     Powershell Terminal
     Alacrity Terminal
     Linux environment 
     Vim Environment
-    Segunda Via Identidade
-        . pretendo ir tirar foto hoje
         
+ 
+Keylogging Stats / Quantified Self
 
-    
-Todo 
-    create a dead key that captures the current modifiers, and sends them alongside the next keypress.
-    Maybe add Reddit to my rss feeds;
-        https://www.reddit.com/r/pathogendavid/comments/tv8m9/pathogendavids_guide_to_rss_and_reddit/
+    https://github.com/t184256/ngram-keylogger
+    https://github.com/GiacomoLaw/Keylogger
+    https://github.com/calebfergie/keylogger-parsing
 
+IntelliJ 
+    Version and hard-link my  current configurations
     Need to consolidate my quick lists and macros:
-    pre-order the kinesis advantage 360
-     
-     Keylogging
-        https://github.com/t184256/ngram-keylogger
-        https://github.com/GiacomoLaw/Keylogger
-        https://github.com/calebfergie/keylogger-parsing
-     IntelliJ 
-        Version and hard-link my  current configurations
-        https://github.com/dkandalov/live-plugin
-        https://danidiaz.medium.com/configuring-ideavimrc-de16a4da0715
-        https://plugins.jetbrains.com/plugin/17669-flora-beta-/
-        https://youtrack.jetbrains.com/issue/IDEA-138252
-        https://plugins.jetbrains.com/docs/intellij/fundamentals.html
-    
-    Check OUt 
-        https://www.producthunt.com/
-        http://mkweb.bcgsc.ca/carpalx/
-        https://feedreader.com/online/#/reader/category/all/?action=subscribe
+    https://github.com/dkandalov/live-plugin
+    https://danidiaz.medium.com/configuring-ideavimrc-de16a4da0715
+    https://plugins.jetbrains.com/plugin/17669-flora-beta-/
+    https://youtrack.jetbrains.com/issue/IDEA-138252
+    https://plugins.jetbrains.com/docs/intellij/fundamentals.html
+
         
-        
-    Keyboard
-        https://github.com/DreymaR/BigBagKbdTrixPKL
-        https://dreymar.colemak.org/
-        https://github.com/Portable-Keyboard-Layout/Portable-Keyboard-Layout
-        https://www.youtube.com/watch?v=P3TxloTNHPw
-
-Log
-
-
-        i certainly feel like my keyboard layout could be more ergonomic. 
-        .. Angle Mod seems great
-        .. Wide Mod seems great too.
-
-        I certainly feel like alt+gr could be better used in my layout.
-
-        current points of paint are:
-            shift + c; ctrl + c
-        
-        keylogger stats maybe?
-        Maybe i could expand this concept to not only typing.A Quantified Self
-    
-            
-
-
+Keyboard
+    create a dead key that captures the current modifiers, and sends them alongside the next keypress.
+    pre-order the kinesis advantage 360    
+    https://github.com/DreymaR/BigBagKbdTrixPKL
+    https://dreymar.colemak.org/
+    https://github.com/Portable-Keyboard-Layout/Portable-Keyboard-Layout
+    https://www.youtube.com/watch?v=P3TxloTNHPw

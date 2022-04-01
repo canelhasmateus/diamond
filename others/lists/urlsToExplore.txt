@@ -1,3 +1,1022 @@
+2020.stateofcss.com
+2ndquadrant.com
+aalto.fi
+abidlabs.github.io
+acko.net
+acloudguru.com
+acm.org
+adelarue.github.io
+advancedsqlpuzzles.com
+aerinykim.medium.com
+aerotwist.com
+agustinus.kristia.de
+ai.facebook.com
+akira.ruc.dk
+akosiorek.github.io
+alex-ber.medium.com
+alexchinco.com
+alexrachnog.medium.com
+algobeans.com
+allendowney.com
+alloytools.org
+alpaca.markets
+alphaarchitect.com
+alphavantage.co
+amazon.com
+amazon.com.br
+amazonaws.com
+amperity.com
+angelikalanger.com
+ankiweb.net
+anotherdatum.com
+antv.vision
+anujloomba.medium.com
+apache.org
+app.alpaca.markets
+app.element.io
+apps.ankiweb.net
+apps.dtic.mil
+appsilon.com
+archive.ics.uci.edu
+arl.human.cornell.edu
+artfulsoftware.com
+arviz-devs.github.io
+arxiv.org
+atomiccommits.io
+atspotify.com
+austingil.com
+automata88.medium.com
+automl.github.io
+aws.amazon.com
+ax.dev
+azul.com
+b-thi.github.io
+backtrader.com
+bair.berkeley.edu
+bairblog.github.io
+bandit.readthedocs.io
+banditalgs.com
+bartoszmilewski.com
+bayesiancomputationbook.com
+bayesoptbook.com
+bem.info
+ben18785.shinyapps.io
+benanne.github.io
+benfrederickson.com
+berkeley.edu
+betanalpha.github.io
+beyondjava.net
+bianp.net
+biot.com
+bjlkeng.github.io
+blog.cloudflare.com
+blog.espenberntsen.net
+blog.evjang.com
+blog.floydhub.com
+blog.heaphero.io
+blog.heroku.com
+blog.jetbrains.com
+blog.jooq.org
+blog.paralleldots.com
+blog.ploeh.dk
+blog.plover.com
+blog.quantinsti.com
+blog.rosetta.ai
+blog.shakirm.com
+blog.timescale.com
+blog.wolfram.com
+blogs.princeton.edu
+blogspot.com
+bluethl.net
+bokeh.org
+bookdown.org
+botorch.org
+brentozar.com
+brilliant.org
+brucehardie.com
+bundlers.tooling.report
+burnison.ca
+buttondown.email
+bytebuddy.net
+c2.com
+calcite.apache.org
+calendar.perfplanet.com
+caltech.edu
+calteches.library.caltech.edu
+cam.ac.uk
+cambridge.org
+candost.blog
+carlosbecker.com
+carolchen.me
+casualinfer.libsyn.com
+causalflows.com
+causalinference.gitlab.io
+celeryproject.org
+cfallin.org
+changelog.com
+chartio.com
+checkerframework.org
+chemrxiv.org
+chmodcommand.com
+chrisstucchio.com
+christof-schramm.net
+chrome.com
+chromium.org
+chuxuzhang.github.io
+citeseerx.ist.psu.edu
+clauswilke.com
+clear.ml
+cleverhans.io
+cloudflare.com
+cloudfo.rest
+cloudsecdocs.com
+cms.gov
+cmu.edu
+cobbl.io
+cockroachlabs.com
+code.visualstudio.com
+codecraft.co
+cogprints.org
+colab.research.google.com
+columbia.edu
+comet.ml
+commoncrawl.org
+compilers.iecc.com
+confluent.io
+contrib.scikit-learn.org
+cornell.edu
+corpusdoportugues.org
+cosette.cs.washington.edu
+counterexamples.org
+course.fast.ai
+course19.fast.ai
+coursera.org
+cr.openjdk.java.net
+cran.r-project.org
+crcns.org
+credera.com
+cryptopals.com
+cs.cmu.edu
+cs.hmc.edu
+cs.kent.ac.uk
+cs.ox.ac.uk
+cs.princeton.edu
+cs.toronto.edu
+cs.uccs.edu
+cs.ucr.edu
+csstracking.dev
+csstriggers.com
+dabeaz.com
+dagshub.com
+dai.lids.mit.edu
+danieltakeshi.github.io
+danielwalsh.tumblr.com
+danjou.info
+dansblog.netlify.app
+darksi.de
+dask.org
+data.gov
+databaseanswers.org
+datacamp.com
+dataorienteddesign.com
+datarobot.com
+datascienceathome.com
+datasetsearch.research.google.com
+dataskeptic.com
+datavizcatalogue.com
+datavizproject.com
+daveceddia.com
+davidsbatista.net
+db.cs.cmu.edu
+dbis-uibk.github.io
+dcos.io
+deep.bi
+deepchecks.com
+deeplearning.ai
+deepmind.com
+deepsource.io
+degruyter.com
+dennybritz.com
+depesz.com
+dev.mysql.com
+developer.chrome.com
+developer.mozilla.org
+developers.google.com
+developers.redhat.com
+devhints.io
+devtoys.app
+distill.pub
+distribution-explorer.github.io
+dl.acm.org
+dm13450.github.io
+doar-e.github.io
+docs.bokeh.org
+docs.celeryproject.org
+docs.featuretools.com
+docs.google.com
+docs.jboss.org
+docs.meilisearch.com
+docs.microsoft.com
+docs.oracle.com
+docs.pymc.io
+docs.ray.io
+docs.spring.io
+docs.stackify.com
+donellameadows.org
+dropbox.com
+druid.apache.org
+dtic.mil
+dustingmixon.wordpress.com
+duvenaud.github.io
+dvc.org
+dynamicyield.com
+eclipse.org
+ed.ac.uk
+egraphs-good.github.io
+eicu-crd.mit.edu
+ej-technologies.com
+elastic.co
+element.io
+eli.thegreenplace.net
+eli5.readthedocs.io
+emojipedia.org
+en.bem.info
+en.m.wikipedia.org
+en.wikipedia.org
+eng.amperity.com
+eng.lyft.com
+eng.uber.com
+engineering.atspotify.com
+engineering.fb.com
+engineering.linkedin.com
+engineering.wingify.com
+engineering.zalando.com
+engineeringblog.yelp.com
+envoyproxy.io
+epchan.blogspot.com
+epistasislab.github.io
+eranraviv.com
+eric-kim.net
+erikbern.com
+escholarship.org
+espenberntsen.net
+estimator.dev
+ethz.ch
+evanmiller.org
+evjang.com
+exercism.org
+explosion.ai
+fa.bianp.net
+facebook
+facebook.com
+factorresearch.com
+fast.ai
+fauna.com
+fb.com
+fbinfer.com
+featuretools.com
+feedly.com
+fharrell.com
+fivethirtyeight.com
+flexboxfroggy.com
+flickr.com
+floitsch.blogspot.com
+floooh.github.io
+flowtale.ai
+foonathan.net
+former2.com
+forrestthewoods.com
+forum.numer.ai
+francisbach.com
+frankc.net
+fs.fed.us
+gaussianprocess.org
+gavpugh.com
+gceasy.io
+gdcvault.com
+geopandas.org
+getvero.com
+gevent.org
+github.blog
+github.com
+gitmoji.dev
+gocd.org
+golem.ph.utexas.edu
+google.com
+google.github.io
+googleusercontent.com
+grafana.com
+graph-tool.skewed.de
+graphistry.com
+greatexpectations.io
+greenteapress.com
+growingagile.co.za
+guild.ai
+gwu.edu
+hackage.haskell.org
+hamberg.no
+handmade-seattle.com
+harmonia.cs.berkeley.edu
+haskell.org
+heaphero.io
+help.medium.com
+helpmanual.io
+heroku.com
+hey.com
+hmc.edu
+homepage.divms.uiowa.edu
+hubot.github.com
+hudsonthames.org
+hunch.net
+huyenchip.com
+hydra.cc
+hyperlearn.readthedocs.io
+icourse.club
+idontgetoutmuch.wordpress.com
+iecc.com
+ijcai.org
+ilikebigbits.com
+illimitablemen.com
+im.ufrj.br
+ime.unicamp.br
+inference.org.uk
+inference.vc
+influxdata.com
+informationtransfereconomics.blogspot.com
+insights.factorresearch.com
+interdb.jp
+intoli.com
+investopedia.com
+jacksonworkbench.co.uk
+jacobitemag.com
+jakevdp.github.io
+jakobgreenfeld.com
+jalammar.github.io
+jamesclear.com
+jasmcole.com
+java.net
+javacodegeeks.com
+javassist.org
+jboss.org
+jeremyjordan.me
+jeremykun.com
+jetbrains.com
+jmlr.org
+jonasboner.com
+jooq.org
+jrebel.com
+jsonlint.com
+julien.danjou.info
+justindomke.wordpress.com
+kafka.apache.org
+kaggle.com
+karateclub.readthedocs.io
+kataskeue.com
+katbailey.github.io
+kedro.readthedocs.io
+kent.ac.uk
+kevinzakka.github.io
+kimonote.com
+knowledgeisle.com
+koaning.io
+kolaente.dev
+kristia.de
+kroki.io
+kruchten.com
+kylin.apache.org
+lakefs.io
+langsec.org
+leadingagile.com
+leancrew.com
+learningtopredict.github.io
+learnopengl.com
+lecun.com
+leetcode.com
+levels.fyi
+lexi-lambda.github.io
+lfd.uci.edu
+libsyn.com
+lighthouse-metrics.com
+lilianweng.github.io
+lindeloev.github.io
+link.springer.com
+linkedin.com
+linkedin.github.io
+liquibase.org
+livebook.manning.com
+lkozma.net
+lyft.com
+machinethoughts.wordpress.com
+mahito.info
+manning.com
+martinheinz.dev
+math.hmc.edu
+math.unipd.it
+math3ma.com
+matheusfacure.github.io
+mathiasbynens.be
+maths.ed.ac.uk
+mathworld.wolfram.com
+matuzo.at
+mbmlbook.com
+mc-stan.org
+mcallester.github.io
+mccormickml.com
+mcgill.ca
+media.handmade-seattle.com
+media.oiipdf.com
+medium.com
+medium.engineering
+meilisearch.com
+metaflow.org
+microsoft&track=software%20engineer
+microsoft.com
+mikiobraun.wordpress.com
+mimic.mit.edu
+minimizingregret.wordpress.com
+minizinc.org
+mit.edu
+mlcontests.com
+mlcourse.ai
+mlflow.org
+mlg.eng.cam.ac.uk
+mlr.press
+mml-book.github.io
+mobiliardbblog.wordpress.com
+mockaroo.com
+momjian.us
+mondrian.pentaho.com
+mozilla.org
+mpatacchiola.github.io
+mrale.ph
+mrjbq7.github.io
+multithreaded.stitchfix.com
+mypy-lang.org
+mysql.com
+mysql.rjweb.org
+nadbordrozd.github.io
+nasa.gov
+nature.com
+neptune.ai
+netflixtechblog.com
+netflixtechblog.medium.com
+netlify.app
+networkingnerd.net
+neurips.cc
+newmarkrisk.com
+nginx.com
+nicolas.kruchten.com
+nlab-pages.s3.us-east-2.amazonaws.com
+nlopt.readthedocs.io
+nodesource.com
+nsmn1.uh.edu
+nuclearphynance.com
+nuit-blanche.blogspot.com
+numer.ai
+nyckel.com
+oecd.org
+offconvex.github.io
+offconvex.org
+oiipdf.com
+oneraynyday.github.io
+online.stat.psu.edu
+onlinedatagenerator.com
+openai.com
+openpaymentsdata.cms.gov
+opensource.com
+optimove.com
+optuna.readthedocs.io
+oracle.com
+oreilly.com
+osmnx.readthedocs.io
+otexts.com
+ox.ac.uk
+oysteing.blogspot.com
+pachyderm.com
+pagespeed.web.dev
+paperswithcode.com
+paralleldots.com
+parameterfree.com
+parsonsmatt.org
+patorjk.com
+pbpython.com
+pentaho.com
+people.eecs.berkeley.edu
+people.inf.ethz.ch
+percona.com
+perfplanet.com
+peter.sh
+pgaleone.eu
+pgmpy.org
+pgxn.org
+philipzucker.com
+plaintext-productivity.net
+ploeh.dk
+plotly.com
+plover.com
+pmetras.gitlab.io
+pmihaylov.com
+pnas.org
+ponyfoo.com
+portfoliooptimizer.io
+postgrespro.com
+postgresql.org
+pragmatic.ml
+princeton.edu
+probml.github.io
+proceedings.mlr.press
+proceedings.neurips.cc
+projectlearn.io
+prometheus.io
+psu.edu
+psych.mcgill.ca
+pub.towardsai.net
+puc-rio.br
+pycaret.org
+pydantic-docs.helpmanual.io
+pydata-podcast.com
+pygam.readthedocs.io
+pygsp.readthedocs.io
+pymc.io
+pyod.readthedocs.io
+pyro.ai
+python-visualization.github.io
+pyupdater.org
+qoppac.blogspot.com
+quantconnect.com
+quantdare.com
+quantinsti.com
+quantocracy.com
+quantpedia.com
+quantstart.com
+quarkus.io
+quartz-scheduler.org
+r-project.org
+r.bluethl.net
+rabbitmq.com
+raku-advent.blog
+randoop.github.io
+randsinrepose.com
+rapidminer.com
+rapids.ai
+raumet.com
+ray.io
+rdrr.io
+readthedocs.io
+realpython.com
+reasonablypolymorphic.com
+reddit.com
+redhat.com
+refactoring.guru
+reflectoring.io
+regex101.com
+regularize.wordpress.com
+repath.in
+replit.com
+researchgate.net
+residentmar.io
+rjweb.org
+rkevingibson.github.io
+rmgsc.cr.usgs.gov
+robcasloz.github.io
+robjhyndman.com
+rosetta.ai
+rpsychologist.com
+ruc.dk
+rutgers.edu
+sanyambhutani.com
+sciencedirect.com
+scikit-learn.org
+sebastiancallh.github.io
+sebastianraschka.com
+see.stanford.edu
+seekingalpha.com
+serokell.io
+setosa.io
+shakirm.com
+shayon.dev
+shinyapps.io
+shopify.engineering
+shortscience.org
+simple-complexities.github.io
+simplify.us
+singlestore.com
+sites.google.com
+skewed.de
+slack.engineering
+smallcultfollowing.com
+smallrye.io
+smashingmagazine.com
+snoyman.com
+softwareengineering.stackexchange.com
+sonic-pi.net
+sparkol.com
+spinnaker.io
+splitgraph.com
+spring.io
+springer.com
+springframework.guru
+sr-sv.com
+sre.google
+stackexchange.com
+stackify.com
+stackoverflow.blog
+stackoverflow.com
+stanford.edu
+stat.rutgers.edu
+stat.yale.edu
+stateofcss.com
+static.googleusercontent.com
+statmodeling.stat.columbia.edu
+stats.ox.ac.uk
+steve-yegge.blogspot.com
+stillbreeze.github.io
+stitchfix.com
+stochasticlifestyle.com
+streamlit.io
+sttp.site
+stumpy.readthedocs.io
+support.google.com
+svelte.dev
+tailwind-nextjs-starter-blog.vercel.app
+tanzu.vmware.com
+tcsmath.wordpress.com
+terraform.io
+terrytao.files.wordpress.com
+thegreenplace.net
+themlbook.com
+thenewstack.io
+ti.arc.nasa.gov
+tiangolo.com
+tigercosmos.github.io
+timescale.com
+timeseriesclassification.com
+timgolden.me.uk
+timvieira.github.io
+tmramalho.github.io
+tomassetti.me
+tomstu.art
+tonyohagan.co.uk
+tooling.report
+toptal.com
+toronto.edu
+towardsai.net
+towardsdatascience.com
+towardsdatascience.medium.com
+towardsdev.com
+traildb.io
+trailofbits.github.io
+trevorjim.com
+trickster.dev
+tryolabs.com
+tsfresh.readthedocs.io
+tumblr.com
+twiecki.io
+typer.tiangolo.com
+uber.com
+ubu.com
+uccs.edu
+uci.edu
+ucr.edu
+ufrj.br
+uh.edu
+uiowa.edu
+ukbiobank.ac.uk
+uky.edu
+umn.edu
+unicamp.br
+unifiedjs.com
+unipd.it
+unix.stackexchange.com
+unofficialmysqlguide.com
+upc.edu
+upcommons.upc.edu
+use-the-index-luke.com
+users.aalto.fi
+usgs.gov
+utexas.edu
+uxdesign.cc
+v8.dev
+vercel.app
+veronising.blogspot.com
+vertx.io
+videolectures.net
+virgili0.github.io
+visualstudio.com
+vitalflux.com
+vmware.com
+vwo.com
+wandb.ai
+washington.edu
+wealth-lab.com
+web.dev
+web.stanford.edu
+webkit.org
+webpagetest.org
+webserver2.tecgraf.puc-rio.br
+westus.dev.cognitive.microsoft.com
+what-when-how.com
+whizlabs.com
+wiki.c2.com
+wiki.postgresql.org
+wikipedia.org
+wikishark.com
+willcrichton.net
+williamkoehrsen.medium.com
+willieneis.github.io
+willwolf.io
+wizardmac-blog.tumblr.com
+wl6.wealth-lab.com
+wolfram.com
+wordpress.com
+world.hey.com
+wrd.as.uky.edu
+www-cs.stanford.edu
+www-users.cse.umn.edu
+www2.eecs.berkeley.edu
+www2.seas.gwu.edu
+xaprb.com
+xi-editor.io
+yale.edu
+yann.lecun.com
+yelp.com
+yourkit.com
+youtube.com
+yulingyao.com
+zalando.com
+zecong.hu
+zed.dev
+
+
+
+
+#  news
+
+https://www.youtube.com/watch?v=DbxddGtHl70
+    https://blog.johanneslink.net/2018/03/24/property-based-testing-in-java-introduction/
+
+    levreyzin.blogspot.com
+    http://levreyzin.blogspot.com/
+    https://theorydish.blog/
+    https://ergodicity.net/
+    https://infostructuralist.wordpress.com/
+    https://nhigham.com/
+    https://eventuallyalmosteverywhere.wordpress.com/
+    https://ptreview.sublinear.info/
+    https://nisheethvishnoi.wordpress.com/
+    http://haris-aziz.blogspot.com/
+    https://kintali.wordpress.com/
+    https://gilkalai.wordpress.com/
+    https://yufeizhao.com/
+    https://www.probabilistic-numerics.org/www.probabilistic-numerics.org/
+    https://www.datarevelations.com/
+    https://www.georgeho.org/
+    http://mimno.infosci.cornell.edu/b
+    http://gregoryszorc.com/blog
+    http://neugierig.org/software/blog/
+    http://www.endtoend.ai/
+    https://www.jeremyjordan.me/
+
+    https://keunwoochoi.wordpress.com/
+    http://benjamin-recht.github.io/
+    https://severelytheoretical.wordpress.com/
+    https://parameterfree.com/
+    https://gradientscience.org/
+    https://agustinus.kristia.de/
+    https://ehudreiter.com/
+    https://blog.roboflow.com/
+    http://veredshwartz.blogspot.com/
+    https://calculatedcontent.com/
+    http://fa.bianp.net/
+    https://medium.com/data-from-the-trenches?source=rss----853867ec3a23---4
+    https://www.littlemissdata.com/blog/
+    https://lerner.co.il/
+    http://lucumr.pocoo.org/
+    https://bartoszmilewski.com/
+    https://bobsteagall.com/
+    https://superhedral.com/
+    https://schneide.blog/
+    https://hownot2code.com/
+    http://www.benfrederickson.com/%60
+    http://blog.echen.me/
+    http://www.countbayesie.com/
+    https://erogol.com/
+    https://walkingrandomly.com/
+    https://www.shanelynn.ie/
+    https://tullo.ch/
+    https://lemire.me/blog
+    https://www.georgeho.org/
+    http://appliedpredictivemodeling.com/blog/
+    https://cartesianfaith.com/
+    http://doingbayesiandataanalysis.blogspot.com/
+
+    http://gael-varoquaux.info/
+    https://medium.com/@alexrachnog?source=rss-1b1fb9c5ea70------2
+    https://justindomke.wordpress.com/
+    http://blog.pamelafox.org/
+    https://addyosmani.com/
+    https://glebbahmutov.com/blog/
+    https://chenhuijing.com/
+    https://evilmartians.com/chronicles
+    https://meowni.ca/
+    https://erikrunyon.com/
+    https://tech.trivago.com/
+    http://raganwald.com/
+    https://developer.okta.com/
+    https://www.amitmerchant.com/
+    https://www.taniarascia.com/
+    https://philipwalton.com/
+    http://bastian.rieck.me/blog/
+    https://mattkeeter.com/
+    https://oliora.github.io/
+    https://bkamins.github.io/
+    https://gustedt.wordpress.com/
+    https://semantic-domain.blogspot.com/
+    https://florian.github.io//
+    https://austingwalters.com/
+    https://www.naftaliharris.com/
+    https://shape-of-code.com/
+    https://tenthousandmeters.com/
+    http://gergo.erdi.hu/blog/tags/all
+    http://lucteo.ro/
+    https://waterprogramming.wordpress.com/
+    https://ssodelta.wordpress.com/
+    https://probablydance.com/
+    https://www.humprog.org/~stephen/blog/
+    http://theorangeduck.com/
+    https://jrms-random-blog.blogspot.com/
+    http://mazzo.li/
+    https://tullo.ch/
+    https://hameddaily.blogspot.com/
+    https://www.nayuki.io/
+    https://gieseanw.wordpress.com/
+    http://lucteo.ro/
+    https://nibblestew.blogspot.com/
+    https://ruudvanasseldonk.com/writing
+    https://www.yodaiken.com/
+    http://cliffle.com/
+    https://fasterthanli.me/
+    https://pkolaczk.github.io/
+    https://blog.yoshuawuyts.com/
+    https://ddanilov.me/
+    https://www.ralfj.de/blog/
+    https://jayconrod.com/
+    http://concurrencyfreaks.blogspot.com/
+    https://easyperf.net/
+    https://kristerw.github.io/
+    https://www.youtube.com/channel/UCaTznQhurW5AaiYPbhEA-KA
+    https://github.com/scikit-learn/scikit-learn/releases
+    https://www.youtube.com/channel/UCSNeZleDn9c74yQc-EKnVTA
+    http://practicalquant.blogspot.com/
+    https://eranraviv.com/
+    http://dekalogblog.blogspot.com/
+    https://alexchinco.com/
+    https://financial-hacker.com/
+    https://chrisvoncsefalvay.com/
+    https://qoppac.blogspot.com/
+    http://epchan.blogspot.com/
+    https://robjhyndman.com/
+    http://sandymaguire.me/
+    https://www.anishathalye.com/
+    https://semantic-domain.blogspot.com/
+    https://www.youtube.com/watch?v=wdgULBpRoXk
+    http://nssdeviations.com/
+    https://www.superdatascience.com/podcast
+    http://www.storytellingwithdata.com/
+    https://glebbahmutov.com/blog/
+        http://jalammar.github.io/
+        https://tomasz.janczuk.org/
+        https://theburningmonk.com/
+
+        https://thevaluable.dev/
+        https://www.jeremydaly.com/
+        https://nickjanetakis.com/
+        https://zendesk.engineering/?source=rss----a88376ea904a---4
+        https://engineering.indeedblog.com/
+
+        https://tech.ebayinc.com/rss
+        https://engineering.squarespace.com/
+        https://tech.olx.com/?source=rss----761b019b483f---4
+        https://developers.soundcloud.com/blog
+        https://deliveroo.engineering/
+
+    https://databricks.com/
+        https://streamsets.com/
+        https://www.dataengineeringweekly.com/
+        https://www.startdataengineering.com/
+        https://blog.cloudera.com/
+        https://www.snowflake.com/
+        https://www.qubole.com/
+        https://www.jeremyjordan.me/
+        https://allocatesmartly.com/
+        https://artursepp.com/
+        https://robotwealth.com/
+
+        https://alvarezquanttrading.com/
+        https://www.quantifiedstrategies.com/
+        http://dekalogblog.blogspot.com/
+
+        https://www.parsonsmatt.org/
+        https://investingforaliving.us/
+        https://www.simplify.us/
+        https://blog.thinknewfound.com/
+        https://breakingthemarket.com/
+        https://dualmomentum.net/
+        https://www.evanjones.ca/
+        https://nullprogram.com/
+        https://blog.reverberate.org/
+        https://darkcoding.net/
+        https://blog.robertelder.org/
+        https://huonw.github.io/blog/
+        https://understandlegacycode.com/
+        http://raganwald.com/
+        https://tia.mat.br/
+        https://www.quastor.org/
+        https://blog.scottnonnenberg.com/
+        http://lucasfcosta.com/
+        https://www.arp242.net/
+
+        http://philippe.bourgau.net/
+        https://blog.ml.cmu.edu/
+
+
+        http://notstatschat.netlify.com/
+        https://elevanth.org/blog
+        http://econometricsense.blogspot.com/
+        https://ryxcommar.com/
+        https://m-clark.github.io/
+        https://engineering.ziffmedia.com/?source=rss----d6bb34696ef5---4
+        https://dropboxtechblog.wordpress.com/
+        https://engineering.indeedblog.com/
+        https://alphascientist.com/
+        https://qoppac.blogspot.com/
+        https://www.optionstocksmachines.com/
+        https://gmarti.gitlab.io//
+        https://artursepp.com/
+        https://quantdare.com/
+        https://opensourcequant.wordpress.com/
+        https://miltonfmr.com/
+        https://solomonkurz.netlify.app/
+        https://fabiandablander.com/
+        https://david-salazar.github.io/
+        https://blog.ephorie.de/
+        https://johnmackintosh.net/
+        https://tjmahr.github.io/
+        https://statgirlblog.wordpress.com/
+        https://medium.com/teads-engineering?source=rss----3aab18f692b6---4
+        https://engineering.zalando.com/
+        https://medium.com/groupon-eng?source=rss----5c13a88f9872---4
+        https://robinhood.engineering/?source=rss----6623170cc54---4
+        http://gregorygundersen.com/
+        https://marksaroufim.substack.com/
+        https://eugeneyan.com/
+        http://hyperparameter.space/
+        http://softwareengineeringdaily.com/
+        https://effectivesoftwaredesign.com/
+        http://chrisrichardson.net/
+        https://martinfowler.com/
+        https://blog.thecodewhisperer.com/
+        https://ben.bolte.cc/
+        https://medium.com/@Pinterest_Engineering?source=rss-ef81ef829bcb------2
+        http://okbob.blogspot.com/
+        http://rhaas.blogspot.com/
+
+        https://momjian.us/main/blogs/pgblog.html
+        http://bonesmoses.org/
+        http://databasearchitects.blogspot.com/
+        http://chris-granger.com/
+        http://robotlolita.me/
+        https://eev.ee/
+        http://akkartik.name/
+        http://theprogrammersparadox.blogspot.com/
+        https://mccormick.cx/news/
+        https://nelsonslog.wordpress.com/
+        https://blog.baturin.org/
+        https://oleg.fi/gists
+        https://degoes.net/
+        https://www.nayuki.io/
+        https://theartofmachinery.com/
+        https://blog.functorial.com/feed.rss
+        http://concurrencyfreaks.blogspot.com/
+        https://gieseanw.wordpress.com/
+        https://johnysswlab.com/
+        https://izzys.casa/
+        https://gustedt.wordpress.com/
+        https://probablydance.com/
+        https://medium.com/intuitionmachine?source=rss----d777623c68cf---4
+        http://mysqlentomologist.blogspot.com/
+
+        https://www.youtube.com/channel/UCcf4LQogGFtYzPhq05uHE4g
+        https://www.youtube.com/channel/UCz9mH-PsyV4ZuMGAQqeS8IQ
+    https://www.atomiccommits.io/everything
+https://www.youtube.com/c/aerotwist/videos
+
+
+
+# 
+
+
+
 # todo    
     
 2020.stateofcss.com
@@ -1276,5 +2295,6 @@ Set(521) {
 }
 
 Process finished with exit code 0
+
 
 
