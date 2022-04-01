@@ -21,4 +21,4 @@
 2022-03-31 https://www.google.com/search?q=windows+.wav+sounds&sxsrf=APq-WBsl7Kpmsdqo3cTV58rDQGLKcQadEQ%3A1648772304958&ei=0ERGYoiSOunN5OUPo4WJkAg&ved=0ahUKEwiIurW8y_H2AhXpJrkGHaNCAoIQ4dUDCA4&uact=5&oq=windows+.wav+sounds&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeOggIABAWEAoQHjoECAAQDToGCAAQDRAeOggIABAIEA0QHkoECEEYAEoECEYYAFAAWLUjYIslaARwAHgAgAGWAYgB9wiSAQQwLjEwmAEAoAEBwAEB&sclient=gws-wiz
 2022-03-31 https://www.google.com/search?q=windows+.wav+sounds&sxsrf=APq-WBsl7Kpmsdqo3cTV58rDQGLKcQadEQ%3A1648772304958&ei=0ERGYoiSOunN5OUPo4WJkAg&ved=0ahUKEwiIurW8y_H2AhXpJrkGHaNCAoIQ4dUDCA4&uact=5&oq=windows+.wav+sounds&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeOggIABAWEAoQHjoECAAQDToGCAAQDRAeOggIABAIEA0QHkoECEEYAEoECEYYAFAAWLUjYIslaARwAHgAgAGWAYgB9wiSAQQwLjEwmAEAoAEBwAEB&sclient=gws-wiz
 2022-03-31 https://www.autohotkey.com/boards/viewtopic.php?t=62014
-2022-03-31 https://www.jeremyjordan.me/random-forests/
+https://towardsdatascience.com/applications-for-machine-learning-in-modern-business-1cd4c1ea1f1d

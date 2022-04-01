@@ -34,3 +34,12 @@
 2022-03-31 https://www.trickster.dev/post/decrypting-your-own-https-traffic-with-wireshark/
 2022-03-31 https://www.youtube.com/watch?v=W9F4pn9Lngc
 2022-04-01 https://www.youtube.com/watch?v=Ekcseve-mOg
+2022-03-31 https://www.jeremyjordan.me/random-forests/
+2022-04-01 https://queue.acm.org/detail.cfm?id=3068754
+2022-04-01 https://blog.acolyer.org/2015/03/20/out-of-the-tar-pit/
+2022-04-01 https://blog.acolyer.org/2016/09/12/on-designing-and-deploying-internet-scale-services/
+2022-04-01 https://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html
+2022-04-01 https://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html
+2022-04-01 https://adit.io/posts/2013-06-10-three-useful-monads.html
+2022-04-01 https://docs.google.com/spreadsheets/d/1sWS_aX4vcBNdHi5hCeBLy7C4sOBwXHzegaXXMM-t84I/edit#gid=926240787
+2022-04-01 https://docs.google.com/spreadsheets/d/1sWS_aX4vcBNdHi5hCeBLy7C4sOBwXHzegaXXMM-t84I/edit#gid=143352549

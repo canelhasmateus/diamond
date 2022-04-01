@@ -8,3 +8,6 @@
 2022-03-31 https://www.youtube.com/watch?v=CRvVDoQJjYI
 2022-03-31 https://anvil.works/blog/xkcd-style-apps
 2022-03-31 http://thenewcode.com/438/CSS-Border-Image-Explained
+
+2022-04-01 https://www.youtube.com/watch?v=JAgGUfgNrLk
+2022-04-01 http://web.mit.edu/Saltzer/www/publications/endtoend/endtoend.pdf
