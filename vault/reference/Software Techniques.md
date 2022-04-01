@@ -1,5 +1,5 @@
-
-
+# Canary Deployments
+    Try out new versions by sending small amounts of traffic to them. 
 # Circuit Breakers
 
 An idea brought from electrical engineering, where circuit breakers are used to completely shut down currents when the  characteristics such as voltage reach outside of the operating thresholds.
