@@ -55,3 +55,4 @@
 2022-04-02 https://cloudsecdocs.com/#the-rationale
 2022-04-02 https://cryptopals.com
 2022-04-02 https://csstracking.dev
+2022-03-31 https://www.shakirm.com/papers/VITutorial.pdf

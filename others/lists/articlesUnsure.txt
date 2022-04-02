@@ -10,5 +10,14 @@
 2022-03-31 http://thenewcode.com/438/CSS-Border-Image-Explained
 2022-04-01 https://www.youtube.com/watch?v=JAgGUfgNrLk
 2022-04-01 http://web.mit.edu/Saltzer/www/publications/endtoend/endtoend.pdf
-
 2022-04-01 https://engineeringblog.yelp.com/2016/09/great-https-migration.html
+2022-03-31 https://www.foonathan.net/2022/03/behavior-function-type/
+2022-03-31 https://blog.heroku.com/tidying-ruby-object-allocations
+2022-03-31 https://www.schneems.com/2019/11/07/why-does-my-apps-memory-usage-grow-asymptotically-over-time/
+2022-03-31 https://www.sitepoint.com/ruby-uses-memory/
+2022-03-31 https://www.youtube.com/watch?v=kVYgN1D2FlA
+2022-03-31 https://www.youtube.com/watch?v=UroWECETMEw
+2022-03-31 https://www.youtube.com/watch?v=XrlfX0duLKQ
+2022-03-31 https://www.youtube.com/watch?v=rKVCTVAHK7k
+2022-03-31 https://www.youtube.com/watch?v=W9F4pn9Lngc
+2022-04-01 https://eng.lyft.com/awesome-tech-specs-86eea8e45bb9
