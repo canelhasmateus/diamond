@@ -1673,3 +1673,7 @@
 2022-04-02 https://ehudreiter.com/2021/06/21/pain-points-in-health-nlg/
 2022-04-02 https://ehudreiter.com/2018/05/30/learning-does-not-require-metrics/
 2022-04-02 https://ehudreiter.com/2017/10/27/testing-multiple-hypotheses/
+
+2022-04-02 https://artursepp.com/2018/05/29/machine-learning-for-volatility-trading/
+2022-04-02 https://artursepp.com/2018/04/24/trend-following-strategies-for-tail-risk-hedging-and-alpha-generation/
+2022-04-02 https://artursepp.com/2018/04/24/trend-following-strategies-for-tail-risk-hedging-and-alpha-generation/
