@@ -39,3 +39,6 @@
 2022-04-01 https://adit.io/posts/2013-06-10-three-useful-monads.html
 2022-04-01 https://docs.google.com/spreadsheets/d/1sWS_aX4vcBNdHi5hCeBLy7C4sOBwXHzegaXXMM-t84I/edit#gid=143352549
 
+
+2022-04-02 https://candost.blog/bias-towards-action/
+2022-04-02 https://candost.blog/the-decision-making-pendulum/

@@ -25,3 +25,9 @@
 2022-04-01 https://stackoverflow.blog/2022/03/08/the-new-stack-overflow-podcast-ep-421/
 2022-04-01 https://blog.heroku.com/learn_from_your_data_with_dataclips_20
 2022-04-01 https://eng.uber.com/developer-dashboard-part-1/
+
+2022-04-02 https://blog.heroku.com/deploying-react-with-zero-configuration
+2022-04-02 https://mccormickml.com/2019/03/12/the-inner-workings-of-word2vec/
+2022-04-02 https://deepsource.io/blog/how-deepsource-ensures-less-false-positives/
+2022-04-02 https://dataskeptic.com/blog/episodes/2015/sample-sizes
+2022-04-02 https://engineering.atspotify.com/2019/04/whacking-a-million-moles-automated-incident-response-infrastructure-in-gcp/
