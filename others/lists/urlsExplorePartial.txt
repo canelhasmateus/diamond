@@ -1,5 +1,3 @@
-
-    
 # Partial
     quantpedia.com ( not all )
     nuit-blanche.blogspot.com
@@ -12,7 +10,6 @@
     https://flowingdata.com/
     https://www.youtube.com/user/victorlavrenko
     https://www.youtube.com/user/StanfordUniversity
-
 bartoszmilewski.com
 blog.cloudflare.com
 http://wl6.wealth-lab.com/Forum/WealthLab/1

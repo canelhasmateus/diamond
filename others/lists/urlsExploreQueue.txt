@@ -264,3 +264,5 @@ blog.cloudera.com
 blog.ml.cmu.edu
 blog.robertelder.org
 https://philippe.kruchten.com/
+https://portfoliooptimizer.io
+https://datavizproject.com

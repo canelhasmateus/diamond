@@ -196,7 +196,6 @@
 2022-03-01 http://slack.engineering    
 2022-03-01 http://quantstart.com
 2022-03-01 aerinykim.medium.com
-
 2022-04-01 https://medium.com/@alex-ber
 2022-04-01 https://alexchinco.com
 2022-04-01 https://alexrachnog.medium.com
@@ -248,7 +247,6 @@
 2022-04-02 https://chris-granger.com/archive/
 2022-04-02 http://chrisrichardson.net/blog.html
 2022-04-02 http://cliffle.com/blog/
-
 2022-04-02 http://databasearchitects.blogspot.com
 2022-04-02 http://gregorygundersen.com/blog/
 2022-04-02 http://gael-varoquaux.info

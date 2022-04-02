@@ -91,7 +91,6 @@
 2022-04-01 https://www.equalexperts.com/wp-content/uploads/2022/03/YBIYRI_Playbook-4.pdf
 2022-04-01 https://thomasjbevan.substack.com/p/all-news-is-bad-news?s=r
 2022-04-01 https://thomasjbevan.substack.com/p/attention-addiction-algorithms
-
 2022-04-01 https://www.youtube.com/watch?v=qpC1YH0FhuY
 2022-04-01 https://medium.com/geekculture/full-stack-the-deepening-division-of-labor-labor-5ff8b716c636
 2022-04-01 https://medium.com/geekculture/java-typesafe-enum-history-20053e8d0ea6
@@ -193,7 +192,6 @@
 2022-04-01 https://biot.com/blog/posts/in-through-the-out-door/
 2022-04-01 https://biot.com/blog/posts/emulate-your-way-to-success/
 2022-04-01 https://biot.com/blog/posts/hal-of-horrors/
-
 2022-04-01 https://blog.jooq.org/use-multiset-predicates-to-compare-data-sets/
 2022-04-01 https://blog.jooq.org/detect-accidental-blocking-calls-when-using-r2dbc/
 2022-04-01 https://blog.jooq.org/a-rarely-seen-but-useful-sql-feature-corresponding/
@@ -231,7 +229,6 @@
 2022-04-01 https://blog.jooq.org/how-to-execute-a-sql-query-only-if-another-sql-query-has-no-results/
 2022-04-01 https://blog.jooq.org/when-to-use-bind-values-and-when-to-use-inline-values-in-sql/
 2022-04-01 https://blog.jooq.org/10-tips-on-how-to-be-a-great-programmer/
-
 2022-04-01 http://zecong.hu/2019/08/10/inheritance-for-namedtuples/
 2022-04-01 https://feedly.com/i/my
 2022-04-01 http://brucehardie.com/notes/040/
@@ -315,7 +312,6 @@
 2022-04-01 https://carolchen.me/blog/optimizing-laziness-in-truffleruby-with-deoptimization/
 2022-04-01 https://carolchen.me/blog/patience-humour-empathy/
 2022-04-01 https://carolchen.me/blog/group-hugging-theory/
-
 2022-04-01 https://www.causalflows.com/causal-tree-learning/
 2022-04-01 https://www.causalflows.com/heterogeneous-treatment-effects/
 2022-04-01 https://www.causalflows.com/propensity-score-matching-threats/
@@ -349,7 +345,6 @@
 2022-04-01 https://clauswilke.com/blog/2013/10/08/to-write-well-learn-how-to-read/
 2022-04-01 https://clauswilke.com/blog/2013/10/01/articles/
 2022-04-01 https://clauswilke.com/blog/2013/09/10/how-good-is-good-enough/
-
 2022-04-01 https://cloudfo.rest/dynamic-speed-optimization-bcd9810900a
 2022-04-01 https://cloudfo.rest/two-cruise-passenger-personas-44fc769ee91b
 2022-04-01 https://cloudfo.rest/data-driven-scenario-stories-bcd5bd39b3ee
@@ -391,7 +386,6 @@
 2022-04-01 https://www.cockroachlabs.com/blog/why-do-database-outages-happen/
 2022-04-01 https://www.cockroachlabs.com/blog/from-batch-to-streaming-data-real-time-monitoring-with-snowflake-looker-and-cockroachdb/
 2022-04-01 https://www.cockroachlabs.com/blog/performance-monitoring/
-
 2022-04-01 https://counterexamples.org
 2022-04-01 https://csstracking.dev
 2022-04-01 https://dansblog.netlify.app/posts/2022-03-23-getting-jax-to-love-sparse-matrices/
@@ -586,7 +580,6 @@
 2022-04-02 https://eranraviv.com/pairs-trading-issues/
 2022-04-02 https://eranraviv.com/ols-beta-robust-beta/
 2022-04-02 https://eranraviv.com/intra-day-volatility-pattern/
-
 2022-04-02 http://eric-kim.net/eric-kim-net/posts/1/kernel_trick.html
 2022-04-02 https://evjang.com/2021/10/23/generalization.html
 2022-04-02 https://evjang.com/2021/09/20/ephemeralization.html
@@ -608,7 +601,6 @@
 2022-04-02 https://blog.evjang.com/2016/08/variational-bayes.html
 2022-04-02 https://blog.evjang.com/2016/06/adversarial-exploration-policies-for.html
 2022-04-02 https://ericjang.quora.com/Reverse-Engineering-Apps-a-Step-by-Step-Beginners-Guide
-
 2022-04-02 https://fa.bianp.net/blog/2022/implicit-bias-regression/
 2022-04-02 https://fa.bianp.net/blog/2021/exponential-sgd/
 2022-04-02 https://fa.bianp.net/blog/2020/polyopt/
@@ -820,8 +812,6 @@
 2022-04-02 https://quantpedia.com/nuclear-threats-and-factor-performance-takeaway-for-russia-ukraine-conflict/
 2022-04-02 https://home.robusta.dev/blog/kubernetes-is-the-new-posix/?from=twitter
 2022-04-02 https://eng.lyft.com/how-lyftlearn-democratizes-distributed-compute-through-kubernetes-spark-and-fugue-c0875b97c3d9
-
-
 2022-04-02 http://blog.pamelafox.org/2020/12/what-is-creative-coding-anyway.html
 2022-04-02 http://blog.pamelafox.org/2020/12/the-harms-of-assuming-cultural.html
 2022-04-02 http://blog.pamelafox.org/2018/02/sleep-strategies-for-racing-mind.html
@@ -864,7 +854,6 @@
 2022-04-02 http://chrisrichardson.net/post/antipatterns/2019/01/14/antipattern-microservices-are-the-goal.html
 2022-04-02 http://chrisrichardson.net/post/antipatterns/2019/01/07/microservices-are-a-magic-pixie-dust.html
 2022-04-02 http://chrisrichardson.net/post/microservices/general/2018/12/31/microservices-assessment.html
-
 2022-04-02 http://cliffle.com/blog/rust-mutexes/
 2022-04-02 http://cliffle.com/blog/rust-first-mover/
 2022-04-02 http://cliffle.com/blog/rust-typestate/
@@ -999,7 +988,6 @@
 2022-04-02 http://gregorygundersen.com/blog/2018/12/10/svd/
 2022-04-02 http://gregorygundersen.com/blog/2018/12/20/svd-proof/
 2022-04-02 http://gregorygundersen.com/blog/2019/01/11/bessel/
-
 2022-04-02 https://gergo.erdi.hu/blog/2016-02-21-stack_reification_via_trampolines/
 2022-04-02 https://gergo.erdi.hu/blog/2013-10-05-yo_dawg_i_heard_you_like_esoteric_programming_languages.../
 2022-04-02 https://gergo.erdi.hu/blog/2012-12-01-static_analysis_with_applicatives/
@@ -1190,7 +1178,6 @@
 2022-04-02 https://notstatschat.rbind.io/2013/07/08/big-data-linear-models/
 2022-04-02 https://notstatschat.rbind.io/2013/07/02/problems-with-faithfulness-and-the-causal-markov-property-i/
 2022-04-02 https://notstatschat.rbind.io/2013/06/27/when-is-bayesian-introductory-statistics-better/
-
 2022-04-02 https://philippe.bourgau.net/how-to-handle-tdd-does-not-work-in-real-life-during-code-katas/
 2022-04-02 https://philippe.bourgau.net/7-collaboration-ideas-to-make-remote-pair-programming-more-fun/
 2022-04-02 https://philippe.bourgau.net/5-pair-programming-tips-and-tricks-for-coaching-a-remote-team/
@@ -1271,7 +1258,6 @@
 2022-04-02 http://raganwald.com/2009/03/07/elegance-and-the-surreals.html
 2022-04-02 http://raganwald.com/2012/01/08/duck-programming.html
 2022-04-02 http://raganwald.com/2013/01/01/this.html
-
 2022-04-02 https://robotlolita.me/articles/2016/no-i-dont-want-to-configure-your-app/
 2022-04-02 https://robotlolita.me/articles/2015/how-do-promises-work/
 2022-04-02 https://robotlolita.me/articles/2014/a-monad-in-practicality-controlling-time/
@@ -1401,7 +1387,6 @@
 2022-04-02 https://blog.johanneslink.net/2006/04/27/farewell-my-lovely/
 2022-04-02 https://blog.johanneslink.net/2006/03/15/on-broken-windows-garbage-and-everything/
 2022-04-02 https://blog.johanneslink.net/2006/03/14/overcoming-tech-boredom/
-
 2022-04-02 https://www.patterns.dev/posts/import-on-interaction/
 2022-04-02 https://addyosmani.com/blog/incremental-migrations/
 2022-04-02 https://addyosmani.com/blog/visualize-data-structures-vscode/
@@ -1688,5 +1673,3 @@
 2022-04-02 https://ehudreiter.com/2021/06/21/pain-points-in-health-nlg/
 2022-04-02 https://ehudreiter.com/2018/05/30/learning-does-not-require-metrics/
 2022-04-02 https://ehudreiter.com/2017/10/27/testing-multiple-hypotheses/
-
-
