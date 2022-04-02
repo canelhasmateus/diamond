@@ -277,3 +277,16 @@
 2022-04-02 https://addyosmani.com/blog/
 2022-04-02 https://agustinus.kristia.de
 2022-04-02 https://alphascientist.com/index.html
+2022-04-02 https://bkamins.github.io
+2022-04-02 https://baturin.org/blog/
+2022-04-02 https://blog.functorial.com
+2022-04-02 https://blog.johanneslink.net/year-archive/
+2022-04-02 https://blog.johanneslink.net/year-archive/
+2022-04-02 https://blog.reverberate.org
+2022-04-02 https://blog.scottnonnenberg.com
+2022-04-02 https://blog.scottnonnenberg.com
+2022-04-02 https://blog.thecodewhisperer.com/archive
+2022-04-02 https://easyperf.net/notes/
+2022-04-02 https://ehudreiter.com/blog-index/
+2022-04-02 https://www.quantinsti.com
+2022-04-02 https://www.trickster.dev
