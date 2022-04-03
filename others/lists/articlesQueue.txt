@@ -4535,7 +4535,6 @@ https://shopify.engineering/great-code-reviews
 https://shopify.engineering/handling-addresses-from-all-around-the-world
 https://shopify.engineering/high-availability-background-jobs
 https://shopify.engineering/how-17-lines-of-code-improved-shopify-com-loading-by-50
-https://shopify.engineering/how-an-intern-released-3-terabytes-worth-of-storage-before-bfcm
 https://shopify.engineering/how-shopify-reduced-storefront-response-times-rewrite
 https://shopify.engineering/how-shopify-uses-machine-learning-to-help-our-merchants-grow-their-business
 https://shopify.engineering/how-shopify-uses-recommender-systems-to-empower-entrepreneurs
@@ -5895,7 +5894,6 @@ https://www.chrisstucchio.com/blog/2020/isotonic_python_package.html
 https://www.chrisstucchio.com/blog/2020/why_lambda_school_should_have_a_50_percent_success_rate.html
 https://www.chrisstucchio.com/blog/index10.html
 https://www.chrisstucchio.com/blog/index15.html
-https://www.chrisstucchio.com/blog/index17.html
 https://www.chrisstucchio.com/blog/index20.html
 https://www.chrisstucchio.com/pubs/slides/crunch_conf_2015/slides.html#1
 https://www.chrisstucchio.com/pubs/slides/fifth_elephant_2018/slides2.html#1
@@ -7050,7 +7048,6 @@ https://www.youtube.com/watch?v=4uPRlnTUlMY
 https://www.youtube.com/watch?v=4VC9hAB-ujQ
 https://www.youtube.com/watch?v=4Wo2jiWXH2o
 https://www.youtube.com/watch?v=4wwoAzkEBmE
-https://www.youtube.com/watch?v=4xGQS8Pv4io
 https://www.youtube.com/watch?v=4xni8HBmalE
 https://www.youtube.com/watch?v=4Z3MAsdrEi8
 https://www.youtube.com/watch?v=5_nSSFy_YsY
@@ -7250,7 +7247,6 @@ https://www.youtube.com/watch?v=9_3dFsjY2ks
 https://www.youtube.com/watch?v=9_jKCEDOTRI
 https://www.youtube.com/watch?v=90xMTKml9O0
 https://www.youtube.com/watch?v=90xMTKml9O0&t=654s
-https://www.youtube.com/watch?v=92b-jjBURkw
 https://www.youtube.com/watch?v=93_3CxCl_eI
 https://www.youtube.com/watch?v=93Vz2HfUnTw
 https://www.youtube.com/watch?v=97n6IhxMYvo
@@ -8183,7 +8179,6 @@ https://www.youtube.com/watch?v=iQU39VQfy3s
 https://www.youtube.com/watch?v=Iqx90bjsV34
 https://www.youtube.com/watch?v=IQxDcdpW0uk
 https://www.youtube.com/watch?v=ir0Qq8n6E3I
-https://www.youtube.com/watch?v=iR4jLbG9KXw
 https://www.youtube.com/watch?v=IrbJYsep45E
 https://www.youtube.com/watch?v=irheiVXJRm8
 https://www.youtube.com/watch?v=irHKXi88ra4
@@ -8562,7 +8557,6 @@ https://www.youtube.com/watch?v=MPc6zKwoKyk
 https://www.youtube.com/watch?v=MpeaSNERwQA
 https://www.youtube.com/watch?v=MPmrFu4jFk4
 https://www.youtube.com/watch?v=mqKItnONiFY
-https://www.youtube.com/watch?v=mqWEWye-8m8
 https://www.youtube.com/watch?v=mrp1F2rezdw
 https://www.youtube.com/watch?v=ms2OU3noTOo
 https://www.youtube.com/watch?v=ms6trqirc9Y
@@ -9032,7 +9026,6 @@ https://www.youtube.com/watch?v=ReTetN51r7A
 https://www.youtube.com/watch?v=Rf6AfhqJKxg
 https://www.youtube.com/watch?v=rfG8ce4nNh0
 https://www.youtube.com/watch?v=RfolgB-rVe8
-https://www.youtube.com/watch?v=RG97rvw1eUo
 https://www.youtube.com/watch?v=RG9fBbQrVOM
 https://www.youtube.com/watch?v=RGknqvbhFCY
 https://www.youtube.com/watch?v=rGOOLC8cIO4
@@ -9428,7 +9421,6 @@ https://www.youtube.com/watch?v=usOAbG9kJG4
 https://www.youtube.com/watch?v=USXi6Ysnw3M
 https://www.youtube.com/watch?v=utJFa9Rl90o
 https://www.youtube.com/watch?v=uuiFew1wM30
-https://www.youtube.com/watch?v=uuWzk8U4dJE
 https://www.youtube.com/watch?v=UvUkpduo6uE
 https://www.youtube.com/watch?v=UVYt2EroxRA
 https://www.youtube.com/watch?v=UWnG5AOdmMg

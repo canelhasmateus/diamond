@@ -32,3 +32,4 @@
 2022-04-02 https://dataskeptic.com/blog/episodes/2015/sample-sizes
 2022-04-02 https://engineering.atspotify.com/2019/04/whacking-a-million-moles-automated-incident-response-infrastructure-in-gcp/
 2022-04-03 https://shopify.engineering/how-an-intern-released-3-terabytes-worth-of-storage-before-bfcm
+2022-04-03 https://www.chrisstucchio.com/blog/index17.html
