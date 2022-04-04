@@ -66,8 +66,8 @@ Caddy
 
 
 
-
-# References
+___ 
+References
 
 https://www.youtube.com/watch?v=iLHhL-vAPqo
 https://www.youtube.com/watch?v=SqqrOspasag
@@ -75,10 +75,7 @@ https://www.youtube.com/watch?v=ylkAc9wmKhc
 
 
 
-
-
-# ... 
-
+___
 
 
 How about TLS?

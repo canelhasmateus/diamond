@@ -13,9 +13,8 @@
 
 
 
-
-# 
-# References
+___
+References
 
     ( 1. )[https://www.youtube.com/watch?v=m64SWl9bfvk]
         .. Implements Rate limits by means of Little's Law. It shows that Limiting concurrent requests acts the same as limiting requests per period when the load is reasonable, but introduces backpressure when the service is overwhelming. 
@@ -25,7 +24,7 @@
 
 
 
-# ...
+___
 
 Response time and service time
 

@@ -1,4 +1,4 @@
-# ... 
+
 hat recruiters really look for in a backend engineer
 
 

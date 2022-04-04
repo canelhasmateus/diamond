@@ -1,4 +1,5 @@
-# ... 
+___
+ 
 
 How exactly does the whole 'core, process, variable, registers , slots and stacks' work?
     

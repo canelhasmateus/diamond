@@ -18,7 +18,6 @@ Root Locus
 
 
 
-# ... 
 
 Control Theory
 

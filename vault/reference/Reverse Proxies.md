@@ -98,8 +98,9 @@ sequenceDiagram
 * Linkerd
 * Caddy
 
+___
 
-# References
+References
 
 * https://www.youtube.com/watch?v=iLHhL-vAPqo
 * https://www.youtube.com/watch?v=SqqrOspasag 

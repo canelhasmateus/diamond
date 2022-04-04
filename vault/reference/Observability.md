@@ -101,8 +101,8 @@ Latency does not lives in [[isolation]], we need to look at it in the context of
 When comparing systems by the means of tools such as [[load charts]], looking at how systems behave when pushed past the [[saturation point]] is useless: you already crashed your car. 
     . This can be seen as an [[Implicit Assumptions]] that your normal operation load is past the point of saturation ( 100% load ).
 
-
-# References
+___ 
+References
     
 (1)[https://www.youtube.com/watch?v=lJ8ydIuPFeU]
 (2)[https://www.youtube.com/watch?v=nS0QgxgUYSA]

@@ -4,18 +4,19 @@ This is usually an irreversible process, which means it is well suited for vario
 
 
 
-
-# Applications:
+___ 
+Applications:
 
 [[HashTables]]
 [[Sharding]]    
 [[Partitioning]]
 
 
+___
+Consistent Hashing
 
-# Consistent Hashing
 
+___
 
-# ...
 Use hash ids to provide unguessable ids in your apis
 https://www.youtube.com/watch?utm_source=pocket_mylist&v=tSuwe7FowzE

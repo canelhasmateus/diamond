@@ -43,15 +43,16 @@ Each received packet has to be acknowledged by the server. If this doesn't happe
 Since each packet already has an monotonically increasing identifier, we can use it to provide proper re-ordering of packets. 
 
 
-
-# Ack
+___ 
+Ack
 
 Each packet contains a sequence number. 
 It also has a length. 
 
 An Ack response contains the sum of the sequence number and the length of the acknowledge packet. 
 
-# References
+___ 
+References
 
     https://www.youtube.com/watch?v=bW_BILl7n0Y
 
