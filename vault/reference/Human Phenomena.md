@@ -1,18 +1,10 @@
 
 # Wishful Thinking
 
-# Implicit Assumption
-
-One such examples is to blindly look at averages, without the explicit realization that an average is supposed to be an representative value of an population. 
-However, the average is only a expected value of an normal distribution, that is: 
-    . thinking of the average as a representative value implies that the distribution is normal.
     
 
 # Oversimplifying assumptions 
     
-    
-
-
 
 # Confirmation Bias
 
@@ -20,13 +12,18 @@ However, the average is only a expected value of an normal distribution, that is
 
 # Map is not the territory
     
-    Can be seen as a case of [[Oversimplifications]].
+Can be seen as a case of [[Oversimplifications]].
 
 
 
 # Expectations
 
 
+As humans, we suffer from various psychological and [[Human Phenomena]]. 
 
+When dealing with the future, its very often the case [[Implicit Assumptions| we assume]] facts and imagine how things will play out. 
 
+Can this be seen as some sort of primal protection mechanism? this can be seen as a form of prepartion for an possible the future [[expand]]
+
+Not everything is great though. We frequently make wrong assumptions, which lead to [[frustration]] when our expectations don't come to fruition. 
 

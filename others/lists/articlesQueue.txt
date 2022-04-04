@@ -12117,3 +12117,10 @@ https://fabiandablander.com/r/Spike-and-Slab.html
 https://fabiandablander.com/statistics/Two-Properties.html
 https://fabiandablander.com/r/Curve-Fitting-Gaussian.html
 https://fabiandablander.com/statistics/Ten-Great-Ideas.html
+
+2022-04-03 https://en.wikipedia.org/wiki/Representer_theorem
+2022-04-03 https://en.wikipedia.org/wiki/Bayesian_interpretation_of_kernel_regularization
+2022-04-03 https://en.wikipedia.org/wiki/Kernel_density_estimation
+2022-04-03 https://en.wikipedia.org/wiki/Similarity_learning
+2022-04-03 https://en.wikipedia.org/wiki/Cover%27s_theorem
+2022-04-03 https://www.youtube.com/watch?v=-DOo-5Eb0bI

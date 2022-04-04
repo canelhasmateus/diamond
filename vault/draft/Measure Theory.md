@@ -2,20 +2,21 @@ The study of measures.
 Measures provide an generalization to the intuition of Length, Area, , volume, [[probability]].
 These seemingly distinct concepts have many similarities and can often be treated together in a single mathematical context.
 
-Kolmogorov can be considered the father of modern  probabilty theory .
+[[Kolmogorov]] can be considered the father of modern  probabilty theory .
 
-Lebesgue can be considered the father of modern measure theory.
+[[Lebesgue]] can be considered the father of modern measure theory.
 
 As a motivation, consider the banachi-tarksi paradox:
-    . By assuming only the ZFC axioms, it can prove that , by dividing a sphere in some pieces, it can, after only rigid transformations, assemble two of them
-    . This leads us to two choices:
-        .. Reject the Choice Axiom  ( why should we not do this?[[expand]])        
-        .. Formalize the ( until now implict ) assumption of what a "measure" is, and the way that it can and can't be combined and what can and can't be preserved under operations.
+. By assuming only the ZFC axioms, it can prove that , by dividing a sphere in some pieces, it can, after only rigid transformations, assemble two of them
+. This leads us to two choices:
+.. Reject the [[Axiom of Choice]]  ( why should we not do this?[[expand]])        
+
+.. Formalize the ( until now implict ) assumption of what a "[[Measure]]" is, and the way that it can and can't be combined and what can and can't be preserved under operations.
 
 
 There exists some fundamental concepts in measure theory, for example:
 
-A Sigma Algebra 
+A [[Sigma Algebra]]
     . A sigma algebra on a set X is a collection of subsets of X, such that:
     . Closed under complements : if E in A => E^c is in A
     . Closed under countable unions: E1 , E2, ... in A => Union< E1, E2, ... En> in A.
@@ -72,6 +73,6 @@ Examples of measures:
     complex measure
     haar measure
     borel measure
-
+    count measure
 
 Integration with respect to a measure [[todo]]??

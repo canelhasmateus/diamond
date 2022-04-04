@@ -28,3 +28,7 @@
 2022-04-03 https://www.youtube.com/watch?v=RG97rvw1eUo
 2022-04-03 https://www.youtube.com/watch?v=RG97rvw1eUo
 2022-04-03 https://www.youtube.com/watch?v=iR4jLbG9KXw
+2022-04-03 https://wiki.wireshark.org/CaptureSetup/Loopback
+2022-04-03 https://web.archive.org/web/20171012161338/http://www.hsc.fr/ressources/articles/win_net_srv/missing_loopback.html
+2022-04-03 https://www.youtube.com/watch?v=nfBNOWv1pgE
+2022-04-03 https://en.wikipedia.org/wiki/Kernel_methods_for_vector_output
