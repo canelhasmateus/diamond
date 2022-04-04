@@ -16,7 +16,7 @@ Tcp also provides [[Congestion Control]].
 It suffers from some vulnerabilities, such as [[DDOS]], [[Connection Hijacking]] , [[TCP Veto ]] and [[Reset Attack]]
 
 
-# [[Handshake]]
+[[Handshake]]
 
 
 To Provide its features, both client and server [coordination|must agree ]to a initial [[sequence number]]. 

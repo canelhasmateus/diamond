@@ -1,10 +1,9 @@
 
-# About 
 
 Http is a [[Software Protocols]]. 
 It is [[stateless]] , that is, it does not store anything anywhere.
 
-# Http 1
+[[Http 1]]
 
 
 To implement the stateless protocol, the original creators of the http protocol implemented a rule, so called the "One outstanding request". Only one http [[request]] must be in flight for each underlying transport connection.
@@ -25,11 +24,9 @@ Browsers try to work around  the "One Outstanding Request" rule, by creating a [
 
 The [[Head of line Blocking]], alongside the 6 maximum per-host connections, resulted in a form of [[Cooperative Throttling]]
 
-# Http 1.1
+[[Http 1.1]]
 
 
-
-# Http 2
 
 [[Http 2]] offers various improvements over the previous generations. 
 
@@ -86,7 +83,7 @@ we tried to solve the streams with "[[pipeling]]", but what the hell is that?[[e
     can be slower when in mixed mode ( backed is h2 but lb is h1 and vice versa => Can use a L4 lb to circunvent)
 
 
-# Http 3
+[[Http 3]]
 
 
 [[Software Phenomena#Head of line blocking]] is a fundamental limitation of the TCP Protocol. 

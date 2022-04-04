@@ -23,7 +23,7 @@ It can continue routing [[encrypted]] requests by means of [[Server Name Indicat
 
 
 
-# Reverse Proxy Layers
+
 
 Since a Layer 7 proxy needs to understand the request, it cannot forward the packets as they come. It has to receive and acknowledging each one, and internally assemble the request in order to be able to do its decisions. 
 

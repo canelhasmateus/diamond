@@ -2,7 +2,6 @@
 Hash Tables , also known as  HashMaps, dictionaries and Associative Arrays, are a kind of [[ Data Structure ]].
 
 
-# Basics
 
 It works by doing a [[Hashing|Hash]] of a key. 
 It transform such hash into a array index, usually my the means of [[Mod operation|modular arithmetic]] against the array size. 

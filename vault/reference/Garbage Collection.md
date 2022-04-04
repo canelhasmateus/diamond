@@ -14,7 +14,7 @@ The garbage collection process is usually done in [[discrete processes]]. This m
 There are several schemes and [[heuristics]] devised to make garbage collection better and faster. 
 
 
-# Generational Garbage Collection
+Generational Garbage Collection
 
 It is empirical knowledge that the lifetime of objects in the system varies. That is , there are some objects that are *never* deallocated, while some become useless pretty quickly.  
 

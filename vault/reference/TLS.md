@@ -33,7 +33,7 @@ The client and server then agree to a session secret. This can be done by:
 
 
 
-# Considerations 
+Considerations 
 
 It does not fit cleanly in the [[OSI Model]] Layers. 
 
