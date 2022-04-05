@@ -33,3 +33,5 @@
 2022-04-02 https://engineering.atspotify.com/2019/04/whacking-a-million-moles-automated-incident-response-infrastructure-in-gcp/
 2022-04-03 https://shopify.engineering/how-an-intern-released-3-terabytes-worth-of-storage-before-bfcm
 2022-04-03 https://www.chrisstucchio.com/blog/index17.html
+2022-04-04 https://squeaky.ai/blog/development/why-we-dont-use-a-staging-environment
+2022-04-04 https://blog.plover.com/2022/04/04/#one-level-up

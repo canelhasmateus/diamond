@@ -72,3 +72,6 @@
 2022-04-02 https://www.evanjones.ca/chronological.html
 2022-04-02 https://evilmartians.com/chronicles
 2022-04-02 https://fabiandablander.com
+
+2022-04-03 https://biot.com/capstats/bpf.html
+2022-04-04 https://floitsch.blogspot.com/2012/03/optimizing-for-v8-introduction.html

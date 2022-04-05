@@ -176,3 +176,9 @@
 2022-04-02 http://timeseriesclassification.com
 2022-04-02 https://www.ukbiobank.ac.uk
 2022-04-02 https://eicu-crd.mit.edu
+
+2022-04-04 https://github.com/prabhatsharma/zinc
+2022-04-04 https://app.alpaca.markets/login
+2022-04-04 https://github.com/bottler/iisignature
+2022-04-04 https://github.com/bottler/iisignature
+2022-04-04 https://www.levels.fyi/?compare=Google

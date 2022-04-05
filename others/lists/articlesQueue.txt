@@ -465,7 +465,6 @@ https://anotherdatum.com/vae.html
 https://anotherdatum.com/vae2.html
 https://anotherdatum.com/word-morph.html
 https://anujloomba.medium.com/unsupervised-learning-a-road-to-customer-segmentation-17fa2ff09d3d
-https://app.alpaca.markets/login
 https://app.element.io/#/room/!LQFERJiyFQFvMYJMGi:matrix.org
 https://apps.ankiweb.net
 https://apps.dtic.mil/sti/pdfs/ADA043470.pdf
@@ -576,7 +575,6 @@ https://benanne.github.io/2020/03/24/audio-generation.html
 https://benanne.github.io/2020/09/01/typicality.html
 https://benanne.github.io/2022/01/31/diffusion.html
 https://betanalpha.github.io/assets/case_studies/bayes_sparse_regression.html
-https://biot.com/capstats/bpf.html
 https://bjlkeng.github.io/posts/a-note-on-using-log-likelihood-for-generative-models
 https://bjlkeng.github.io/posts/a-probabilistic-view-of-regression
 https://bjlkeng.github.io/posts/a-variational-autoencoder-on-the-svnh-dataset
@@ -1614,7 +1612,6 @@ https://en.wikipedia.org/wiki/Dimensional_modeling
 https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form
 https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm
 https://en.wikipedia.org/wiki/Geometric_algebra
-https://en.wikipedia.org/wiki/Kernel_method
 https://en.wikipedia.org/wiki/Lagrange_multiplier
 https://en.wikipedia.org/wiki/Laplacian_matrix
 https://en.wikipedia.org/wiki/Linear_programming
@@ -2761,7 +2758,6 @@ https://fbinfer.com/docs/about-Infer
 https://feedly.com/i/my
 https://fivethirtyeight.com/methodology/how-our-nba-predictions-work
 https://flexboxfroggy.com
-https://floitsch.blogspot.com/2012/03/optimizing-for-v8-introduction.html
 https://floooh.github.io/2007/02/11/getting-rid-of-virtual-method-calls.html
 https://floooh.github.io/2007/05/05/templated-methods.html
 https://floooh.github.io/2007/08/25/fun-with-http.html
@@ -2859,7 +2855,6 @@ https://github.com/beringresearch/ivis
 https://github.com/bharathgs/Awesome-pytorch-list
 https://github.com/blue-yonder/tsfresh
 https://github.com/bmabey/pyLDAvis
-https://github.com/bottler/iisignature
 https://github.com/breandan/lagrangian_nns
 https://github.com/bukosabino/ta
 https://github.com/cair/TsetlinMachine
@@ -2926,7 +2921,6 @@ https://github.com/patrick-kidger/signatory
 https://github.com/plasma-umass/coz
 https://github.com/plasma-umass/scalene
 https://github.com/plotly/Dash.jl
-https://github.com/prabhatsharma/zinc
 https://github.com/prefecthq/prefect
 https://github.com/probcomp/PClean
 https://github.com/PyGithub/PyGithub
@@ -6410,7 +6404,6 @@ https://www.kimonote.com/@mildbyte/travelling-murderer-problem-planning-a-morrow
 https://www.kimonote.com/@mildbyte/travelling-murderer-problem-planning-a-morrowind-all-faction-speedrun-with-simulated-annealing-part-3-46455
 https://www.knowledgeisle.com/wp-content/uploads/2019/12/2-Aur%C3%A9lien-G%C3%A9ron-Hands-On-Machine-Learning-with-Scikit-Learn-Keras-and-Tensorflow_-Concepts-Tools-and-Techniques-to-Build-Intelligent-Systems-O%E2%80%99Reilly-Media-2019.pdf
 https://www.leadingagile.com/2018/04/step-by-step-toward-property-based-testing
-https://www.levels.fyi/?compare=Google
 https://www.lfd.uci.edu/~gohlke/pythonlibs
 https://www.linkedin.com/pulse/how-we-designed-inter-region-aws-load-balancer-felix-stepski
 https://www.math.unipd.it/~aiolli/corsi/0910/IR/irbookprint.pdf
@@ -8600,7 +8593,6 @@ https://www.youtube.com/watch?v=nE0Imiusbso
 https://www.youtube.com/watch?v=NEKImNnYB70
 https://www.youtube.com/watch?v=NelWGTecwnw
 https://www.youtube.com/watch?v=NeNJd3NbRuc
-https://www.youtube.com/watch?v=nfBNOWv1pgE
 https://www.youtube.com/watch?v=nFfO9bOrp88
 https://www.youtube.com/watch?v=nFPzI_Qg3FU
 https://www.youtube.com/watch?v=nFX-U65IU80
@@ -12117,10 +12109,15 @@ https://fabiandablander.com/r/Spike-and-Slab.html
 https://fabiandablander.com/statistics/Two-Properties.html
 https://fabiandablander.com/r/Curve-Fitting-Gaussian.html
 https://fabiandablander.com/statistics/Ten-Great-Ideas.html
-
-2022-04-03 https://en.wikipedia.org/wiki/Representer_theorem
-2022-04-03 https://en.wikipedia.org/wiki/Bayesian_interpretation_of_kernel_regularization
-2022-04-03 https://en.wikipedia.org/wiki/Kernel_density_estimation
-2022-04-03 https://en.wikipedia.org/wiki/Similarity_learning
-2022-04-03 https://en.wikipedia.org/wiki/Cover%27s_theorem
-2022-04-03 https://www.youtube.com/watch?v=-DOo-5Eb0bI
+https://en.wikipedia.org/wiki/Representer_theorem
+https://en.wikipedia.org/wiki/Bayesian_interpretation_of_kernel_regularization
+https://en.wikipedia.org/wiki/Kernel_density_estimation
+https://en.wikipedia.org/wiki/Similarity_learning
+https://en.wikipedia.org/wiki/Cover%27s_theorem
+https://www.youtube.com/watch?v=-DOo-5Eb0bI
+https://blog.plover.com/2022/04/03/#olafs-report
+https://francisbach.com/information-theory-with-kernel-methods
+https://www.smbc-comics.com/comic/prescriptive
+https://sebastianraschka.com/blog/2022/losses-learned-part1.html
+https://stackoverflow.blog/2022/04/04/comparing-go-vs-c-in-embedded-applications
+https://insights.factorresearch.com/research-factor-olympics-q1-2022
