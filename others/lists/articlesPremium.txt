@@ -1,5 +1,0 @@
-2022-03-31 https://calendar.perfplanet.com/2018/http2-hol-waterfall/
-2022-03-31 https://www.chrisstucchio.com/blog/2014/why_xkcd_style_graphs_are_important.html
-2022-04-01 https://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html
-
-2022-04-02 https://www.youtube.com/watch?v=O85OWBJ2ayo
