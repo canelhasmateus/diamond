@@ -1,0 +1,8 @@
+
+2022-04-05 https://v8.dev/blog/background-compilation
+2022-04-05 https://www.evanjones.ca/durability-nvme.html
+2022-04-05 https://dataorienteddesign.com/site.php?postid=126
+2022-04-05 https://www.depesz.com/2022/03/01/how-to-index-data-with-tsearch/
+2022-04-05 https://www.azul.com/blog/cloud-native-compilation-bringing-jvms-into-the-modern-cloud-world/
+2022-04-05 https://www.youtube.com/watch?v=6dDtN1wk5Qc
+2022-04-05 https://www.depesz.com/2016/06/29/whats-happening-in-my-database/

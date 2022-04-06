@@ -1,0 +1,55 @@
+
+2022-03-31 https://www.youtube.com/shorts/Fbmru6iSee8
+2022-03-31 https://www.youtube.com/watch?v=6cncmSaRqzQ
+
+
+2022-03-31 https://headrush.typepad.com/creating_passionate_users/2006/12/dont_make_the_d.html
+2022-03-31 https://www.parsonsmatt.org/2017/10/11/type_safety_back_and_forth.html
+2022-03-31 https://www.youtube.com/watch?v=hxdT_QgHUSg
+
+2022-03-31 https://www.youtube.com/watch?v=fVKPrDrEwTI
+
+2022-03-31 https://www.youtube.com/watch?v=GriONb4EfPY
+
+2022-03-31 https://www.youtube.com/watch?v=U_RKc2UoMTY
+2022-03-31 https://www.youtube.com/watch?v=lJ8ydIuPFeU
+2022-03-31 https://www.youtube.com/watch?v=nS0QgxgUYSA
+2022-03-31 https://www.youtube.com/watch?v=m64SWl9bfvk
+2022-03-31 https://www.youtube.com/watch?v=iLHhL-vAPqo
+2022-03-31 https://www.youtube.com/watch?v=SqqrOspasag
+2022-03-31 https://www.youtube.com/watch?v=ylkAc9wmKhc
+2022-03-31 https://www.youtube.com/watch?v=bW_BILl7n0Y
+2022-03-31 https://www.youtube.com/watch?v=IE0QLCcOr0I
+
+
+2022-03-31 https://www.youtube.com/watch?v=JIA4ca0afnY
+
+2022-03-31 https://www.youtube.com/watch?v=43g3PF-e4ik
+2022-03-31 https://mpatacchiola.github.io/blog/2021/01/25/intro-variational-inference.html
+
+2022-03-31 https://www.trickster.dev/post/decrypting-your-own-https-traffic-with-wireshark/
+
+2022-04-01 https://www.youtube.com/watch?v=Ekcseve-mOg
+2022-03-31 https://www.jeremyjordan.me/random-forests/
+2022-04-01 https://queue.acm.org/detail.cfm?id=3068754
+2022-04-01 https://blog.acolyer.org/2015/03/20/out-of-the-tar-pit/
+2022-04-01 https://blog.acolyer.org/2016/09/12/on-designing-and-deploying-internet-scale-services/
+
+2022-04-01 https://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html
+2022-04-01 https://adit.io/posts/2013-06-10-three-useful-monads.html
+2022-04-01 https://docs.google.com/spreadsheets/d/1sWS_aX4vcBNdHi5hCeBLy7C4sOBwXHzegaXXMM-t84I/edit#gid=143352549
+
+
+2022-04-02 https://candost.blog/bias-towards-action/
+2022-04-02 https://candost.blog/the-decision-making-pendulum/
+2022-04-03 https://www.youtube.com/watch?v=mqWEWye-8m8
+2022-04-03 https://www.youtube.com/watch?v=4xGQS8Pv4io
+2022-04-03 https://williamboles.me/discovering-whats-out-there-with-ssdp/
+2022-04-03 https://www.howtouselinux.com/post/psh-ack-tcp-flags#:~:text=PSH%20(push)%20flag%20indicates%20that,request%20and%20tear%20down%20requests.
+2022-04-03 https://en.wikipedia.org/wiki/Universal_Plug_and_Play
+2022-04-03 https://www.google.com/search?q=is+http+xml&oq=is+http+xml+&aqs=edge..69i57j0i22i30l6j0i390j69i60.2597j0j4&sourceid=chrome&ie=UTF-8
+2022-04-03 https://en.wikipedia.org/wiki/Universal_Plug_and_Play
+2022-04-03 https://en.wikipedia.org/wiki/Multicast_DNS
+2022-04-03 https://www.amazon.com/dp/B00FS83U42?tag=zd-buy-button-20&ascsubtag=3a22c06bbd4b48b1a7b4586e1f0096b4%7C__VIEW_GUID__%7Cdtp&c_correlation_id=563dea6b85ac4533acd10de9bc078292&c_instance_id=undefined&c_tenant_id=undefined&c_anonymous_id=undefined&c_session_id=undefined&c_correlation_id=3a22c06bbd4b48b1a7b4586e1f0096b4&c_instance_id=undefined&c_tenant_id=undefined&c_anonymous_id=undefined&c_session_id=undefined
+2022-04-03 https://en.wikipedia.org/wiki/Kernel_method
+

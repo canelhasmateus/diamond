@@ -6,10 +6,6 @@
     
 # Head of line blocking
 
-"Happens when unrelated requests get unnecessarily blocked because of underlying protocol dependencies". 
-
-
-
 Head of line Blocking is a fundamental limitation of the TCP Protocol. 
 
 It happens because of the retransmission mechanism implemented by tcp.
@@ -27,11 +23,6 @@ When using Http2 Multiplexing, the underlying TCP connection cannot differentiat
 
     . Since the underlying tcp connection can't differentiate between these two packets, the second request gets stalled until the lost packet from the first, unrelated request gets acknowledged. 
     
-
-Suffered by 
-    ?? Http Pipelining
-    http2 at the stream level on the tcp layer
-    apache [[kafka]] , at the partition level
 
 
 
