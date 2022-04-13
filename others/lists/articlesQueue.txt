@@ -12121,3 +12121,67 @@ https://www.smbc-comics.com/comic/prescriptive
 https://sebastianraschka.com/blog/2022/losses-learned-part1.html
 https://stackoverflow.blog/2022/04/04/comparing-go-vs-c-in-embedded-applications
 https://insights.factorresearch.com/research-factor-olympics-q1-2022
+
+2022-04-12 https://engineering.linkedin.com/blog/2022/open-sourcing-feathr---linkedin-s-feature-store-for-productive-m
+2022-04-12 https://engineering.linkedin.com/blog/2022/open-sourcing-feathr---linkedin-s-feature-store-for-productive-m
+2022-04-12 https://engineering.linkedin.com/blog/2022/open-sourcing-feathr---linkedin-s-feature-store-for-productive-m
+2022-04-12 https://engineering.linkedin.com/blog/2022/open-sourcing-feathr---linkedin-s-feature-store-for-productive-m
+2022-04-12 https://engineering.linkedin.com/blog/2022/open-sourcing-feathr---linkedin-s-feature-store-for-productive-m
+2022-04-12 https://github.blog/2022-04-12-git-security-vulnerability-announced/
+2022-04-12 https://netflixtechblog.com/how-netflix-content-engineering-makes-a-federated-graph-searchable-5c0c1c7d7eaf
+2022-04-12 https://serokell.io/blog/whats-that-typeclass-monoid
+2022-04-12 https://hiddedevries.nl/en/blog/2022-04-12-common-accessibility-issues-that-you-can-fix-today
+2022-04-12 https://towardsdatascience.com/how-to-structure-a-data-science-project-for-readability-and-transparency-360c6716800
+2022-04-12 https://towardsdatascience.com/fleet-and-workforce-planning-with-linear-programming-16db08c7f91d
+2022-04-12 https://insights.factorresearch.com/research-trend-following-factor-investing-unexpected-cousins/
+2022-04-12 https://www.fharrell.com/post/addmarkerdca
+2022-04-12 https://www.stochasticlifestyle.com/composing-modeling-and-simulation-with-julia-2021-modelica-conference/
+https://github.blog/2022-04-11-performance-at-github-deferring-stats-with-rack-after_reply/
+https://engineering.linkedin.com/blog/2022/load-balanced-brooklin-mirror-maker--replicating-large-scale-kaf
+https://nilsnh.no/2022/04/09/innovating-beyond-libraries-and-frameworks/
+https://www.youtube.com/watch?v=1pQJkt7-R4Q
+https://quantpedia.com/whats-the-best-factor-for-high-inflation-periods-part-i/
+https://towardsdatascience.com/hands-on-tutorial-how-to-improve-your-problem-solving-skills-as-a-programmer-83f0a8d1082f
+https://towardsdatascience.com/scrutinising-airline-efficiency-by-visualising-public-aviation-data-f736112571f7
+https://blog.plover.com/2022/04/11/#unique
+https://www.youtube.com/watch?v=Q24ZS7A5n1w
+https://www.youtube.com/watch?v=CjUdp1UY3uM
+https://www.smashingmagazine.com/2022/03/html-attributes-you-never-use/
+https://statmodeling.stat.columbia.edu/2022/04/08/reading-practicing-talking-and-questioning/
+https://towardsdatascience.com/modeling-urban-heat-wave-risk-with-satellite-imagery-and-lidar-data-3c00c63ea2db
+https://github.blog/2022-04-06-prevent-introduction-known-vulnerabilities-into-your-code/
+https://engineering.linkedin.com/blog/2022/the-journey-to-build-an-explainable-ai-driven-recommendation-sys
+https://stackoverflow.blog/2022/04/11/the-complete-guide-to-protecting-your-apis-with-oauth2/
+https://schroer.ca/2022/04/10/the-joy-of-small-projects/
+https://empty.coffee/an-ode-to-apples-hide-my-email/
+https://statmodeling.stat.columbia.edu/2022/04/11/does-ben-lerner-play-poker/
+https://towardsdatascience.com/principal-component-regression-clearly-explained-and-implemented-608471530a2f
+https://statmodeling.stat.columbia.edu/2022/04/06/teaching-visualization/
+https://danluu.com/simple-architectures/
+https://statmodeling.stat.columbia.edu/2022/04/09/hey-check-out-this-post-from-2006-when-i-was-mellow-actually-too-mellow-too-nice-and-too-understanding/
+https://stackoverflow.blog/2022/04/07/you-should-be-reading-academic-computer-science-papers/
+https://dkb.io/post/the-next-google
+https://mikiobraun.wordpress.com/2022/04/08/what-is-data-science-problem-fit-and-why-you-need-it/
+https://www.reddit.com/r/DeepLearningPapers/comments/ty02pf/five_google_chrome_extensions_that_every_machine/
+https://stackoverflow.blog/2022/04/06/use-git-tactically/
+https://thenewstack.io/why-literate-programming-might-help-you-write-better-code/
+https://shopify.engineering/merlin-shopify-machine-learning-platform
+https://jinyuz.dev/posts/tips-and-tricks/Switching-from-pyenv,-rbenv,-goenv-and-nvm-to-asdf
+https://statmodeling.stat.columbia.edu/2022/04/06/what-should-he-read-to-pivot-into-research-with-a-bayesian-focus/
+
+2022-04-12 https://www.youtube.com/watch?v=eTcVLqKpZJc
+2022-04-12 https://www.youtube.com/watch?v=68-nF_WGD4E
+2022-04-12 https://www.youtube.com/watch?v=CjUdp1UY3uM
+2022-04-12 https://www.youtube.com/watch?v=vqs_0W-MSB0
+2022-04-12 https://www.youtube.com/watch?v=L2p_fGuldt0
+2022-04-12 https://www.youtube.com/watch?v=p0eVyhv2rbk
+2022-04-12 https://www.youtube.com/watch?v=AVXYq8aL47Q
+2022-04-12 https://www.youtube.com/watch?v=2FZ2AGo6Kec
+2022-04-12 https://www.youtube.com/watch?v=nw_FKdaZAl8
+2022-04-12 https://www.youtube.com/watch?v=EFUYNoFRHQI
+2022-04-13 https://stackoverflow.blog/2022/04/13/will-chatbots-ever-live-up-to-the-hype/
+2022-04-13 https://blog.jetbrains.com/idea/2022/04/intellij-idea-2022-1/
+2022-04-13 https://statmodeling.stat.columbia.edu/2022/04/13/the-accidental-experiment-that-saved-700-lives/
+2022-04-13 https://quantpedia.com/whats-the-best-factor-for-high-inflation-periods-part-ii/
+2022-04-13 https://lipanski.com/posts/smallest-docker-image-static-website
+2022-04-13 https://eng.lyft.com/monitoring-cpu-performance-of-lyfts-android-applications-4e36fafffe12

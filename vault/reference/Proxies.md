@@ -55,7 +55,7 @@ Can i proxy traffic other than [[HTTP]]?
     * Yes , There are multiple types of proxy, like socks proxy, used for tunnelings, there are http proxy, that only tunnels for https;.
     * [[expand]]
 
-    
+
 [[HAProxy]]
 [[Envoy]]
 [[Nginx]]
