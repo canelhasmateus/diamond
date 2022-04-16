@@ -145,7 +145,6 @@ http://steve-yegge.blogspot.com/2006/03/execution-in-kingdom-of-nouns.html
 http://stillbreeze.github.io/Deep-Learning-and-the-Demand-For-Interpretability
 http://stillbreeze.github.io/Dual-Process-Theory-and-Machine-Learning
 http://stillbreeze.github.io/Ingredients-For-Closing-the-Gap-Between-Machines-and-Humans
-http://stillbreeze.github.io/Joining-a-Startup-Vs-a-Big-Company
 http://stillbreeze.github.io/Optimization-On-a-Manifold
 http://stillbreeze.github.io/REINFORCE-vs-Reparameterization-trick
 http://stillbreeze.github.io/Uncertainty-Estimation-in-Deep-Learning
@@ -780,7 +779,6 @@ https://blog.heroku.com/static-typing-ruby-with-sorbet
 https://blog.heroku.com/ten-ways-to-secure-your-apps
 https://blog.heroku.com/terrier-open-source-identifying-analyzing-containers
 https://blog.heroku.com/the_next_level
-https://blog.heroku.com/the_next_twenty_years_of_java_where_we_ve_been_and_where_we_re_going
 https://blog.heroku.com/timeout-quickly
 https://blog.heroku.com/transform-a-heavy-industry
 https://blog.heroku.com/tuesday_postmortem
@@ -1171,8 +1169,6 @@ https://codecraft.co/2012/10/12/coping-with-organizational-alzheimers
 https://codecraft.co/2012/10/12/hair-raising-words
 https://codecraft.co/2012/10/14/paying-off-technical-debt
 https://codecraft.co/2012/10/17/flexibility-is-no-virtue
-https://codecraft.co/2012/10/22/unencapsulate-yourself
-https://codecraft.co/2012/10/23/on-seps-squirrels-and-meta-questions
 https://codecraft.co/2012/10/24/baby-steps
 https://codecraft.co/2012/10/29/how-enums-spread-disease-and-how-to-cure-it
 https://codecraft.co/2012/10/30/tech-debt-leverage-and-grandmas-envelope
@@ -1194,7 +1190,6 @@ https://codecraft.co/2013/02/05/smart-geeks-think-like-cheerleaders
 https://codecraft.co/2013/02/07/why-software-artisans-should-manage-their-influence
 https://codecraft.co/2013/02/15/the-power-of-simplicity
 https://codecraft.co/2013/02/21/architects-manage-risk-like-a-vegas-bookie
-https://codecraft.co/2013/03/05/are-you-losing-enough-battles
 https://codecraft.co/2013/03/08/3-reasons-to-prefer-references-over-pointers
 https://codecraft.co/2013/03/12/6-strategies-to-simplify-software
 https://codecraft.co/2013/03/21/small-files-are-your-friends
@@ -1545,7 +1540,6 @@ https://dm13450.github.io/2020/01/11/Dirichlet-Convergence.html
 https://dm13450.github.io/2020/05/26/HawkesProcessesPackage.html
 https://dm13450.github.io/2020/06/03/State-of-the-Market.html
 https://dm13450.github.io/2020/08/26/Hawkes-and-DIC.html
-https://dm13450.github.io/2020/09/11/ExpGoals.html
 https://dm13450.github.io/2020/09/28/PriorToPosterior.html
 https://dm13450.github.io/2020/11/03/BayesPointProcess.html
 https://dm13450.github.io/2020/12/19/EdwardAndFlux.html
@@ -1574,7 +1568,6 @@ https://docs.meilisearch.com
 https://docs.microsoft.com/en-us/azure/architecture/patterns
 https://docs.microsoft.com/en-us/learn/browse
 https://docs.microsoft.com/pt-br/archive/blogs/machinelearning/big-learning-made-easy-with-counts
-https://docs.oracle.com/cd/E17952_01/mysql-5.6-en/choosing-types.html
 https://docs.pymc.io/en/v3/api.html
 https://docs.ray.io/en/latest/index.html
 https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html
@@ -2153,7 +2146,6 @@ https://engineering.fb.com/2021/02/09/developer-tools/minesweeper
 https://engineering.fb.com/2021/02/17/developer-tools/fix-fast
 https://engineering.fb.com/2021/02/23/data-infrastructure/silent-data-corruption
 https://engineering.fb.com/2021/03/03/developer-tools/hhvm-jump-start
-https://engineering.fb.com/2021/04/27/developer-tools/reverse-debugging
 https://engineering.fb.com/2021/04/29/developer-tools/rust
 https://engineering.fb.com/2021/05/13/data-center-engineering/bgp
 https://engineering.fb.com/2021/05/20/networking-traffic/peering-automation
@@ -2596,7 +2588,6 @@ https://erikbern.com/2013/01/13/momentum-and-mean-reversion-might-just-be-volati
 https://erikbern.com/2013/02/06/im-featured-in-mashable.html
 https://erikbern.com/2013/02/27/ml-at-twitter.html
 https://erikbern.com/2013/04/12/annoy.html
-https://erikbern.com/2013/04/13/being-data-driven.html
 https://erikbern.com/2013/04/27/stuff-that-bothers-me-100x-faster-than-hadoop.html
 https://erikbern.com/2013/05/07/snakebite.html
 https://erikbern.com/2013/05/21/fermats-principle.html
@@ -2726,7 +2717,6 @@ https://fa.bianp.net/blog/2012/learning-to-rank-with-scikit-learn-the-pairwise-t
 https://fa.bianp.net/blog/2012/line-by-line-report-of-memory-usage
 https://fa.bianp.net/blog/2012/singular-value-decomposition-in-scipy
 https://fa.bianp.net/blog/2013/different-ways-to-get-memory-consumption-or-lessons-learned-from-memory_profiler
-https://fa.bianp.net/blog/2013/householder-matrices
 https://fa.bianp.net/blog/2013/isotonic-regression
 https://fa.bianp.net/blog/2013/logistic-ordinal-regression
 https://fa.bianp.net/blog/2013/loss-functions-for-ordinal-regression
@@ -2915,7 +2905,6 @@ https://github.com/mmp2/megaman
 https://github.com/mukulhase/WebWhatsapp-Wrapper
 https://github.com/nmslib/nmslib
 https://github.com/numerai/example-scripts/blob/master/analysis_and_tips.ipynb
-https://github.com/openark/orchestrator
 https://github.com/optuna/optuna
 https://github.com/patrick-kidger/signatory
 https://github.com/plasma-umass/coz
@@ -3466,7 +3455,6 @@ https://justindomke.wordpress.com/2009/06/10/what-gauss-seidel-is-really-doing
 https://justindomke.wordpress.com/2009/06/21/bird
 https://justindomke.wordpress.com/2009/08/18/fitting-an-inference-algorithm-instead-of-a-model
 https://justindomke.wordpress.com/2009/10/28/notation-is-evil
-https://justindomke.wordpress.com/2009/11/30/automatic-differentiation-without-compromises
 https://justindomke.wordpress.com/2011/03/24/matrix-calculus
 https://justindomke.wordpress.com/2011/07/21/quotients
 https://justindomke.wordpress.com/2011/10/19/functions
@@ -3543,11 +3531,8 @@ https://lexi-lambda.github.io/blog/2016/08/11/climbing-the-infinite-ladder-of-ab
 https://lexi-lambda.github.io/blog/2018/02/10/an-opinionated-guide-to-haskell-in-2018
 https://lexi-lambda.github.io/blog/2019/09/07/demystifying-monadbasecontrol
 https://lexi-lambda.github.io/blog/2019/10/19/empathy-and-subjective-experience-in-programming-languages
-https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate
 https://lexi-lambda.github.io/blog/2020/01/19/no-dynamic-type-systems-are-not-inherently-more-open
 https://lexi-lambda.github.io/blog/2020/01/19/no-dynamic-type-systems-are-not-inherently-more-open/#footnote-ref-2-1
-https://lexi-lambda.github.io/blog/2020/08/13/types-as-axioms-or-playing-god-with-static-types
-https://lexi-lambda.github.io/blog/2020/11/01/names-are-not-type-safety
 https://lexi-lambda.github.io/blog/2021/03/25/an-introduction-to-typeclass-metaprogramming
 https://lilianweng.github.io/lil-log/2019/09/05/evolution-strategies.html
 https://lilianweng.github.io/lil-log/2021/12/05/semi-supervised-learning.html
@@ -3733,7 +3718,6 @@ https://medium.engineering/the-unluckiest-paragraphs-751dd36d2d30
 https://medium.engineering/the-way-we-work-dan-pupius-2aa147c1bae3
 https://medium.engineering/too-much-rope-406af0a03d4e
 https://medium.engineering/use-a-dev-domain-not-anymore-95219778e6fd
-https://medium.engineering/why-passwords-suck-d1d1f38c1bb4
 https://mikiobraun.wordpress.com/2017/08/06/what-is-hardcore-data-science-in-practice
 https://mikiobraun.wordpress.com/2017/09/03/how-python-became-the-language-of-choice-for-data-science
 https://mikiobraun.wordpress.com/2017/09/06/three-things-about-data-science-you-wont-find-in-the-books
@@ -3749,7 +3733,6 @@ https://mikiobraun.wordpress.com/2021/04/05/creating-software-at-scale
 https://mikiobraun.wordpress.com/2022/02/08/why-recipes-for-machine-learning-solutions-dont-work
 https://minimizingregret.wordpress.com/2011/02/03/duality-for-undergrads
 https://minimizingregret.wordpress.com/2011/02/21/worst-case-vs-average-case-learning
-https://minimizingregret.wordpress.com/2016/03/02/making-second-order-methods-practical-for-machine-learning
 https://minimizingregret.wordpress.com/2016/03/03/the-two-cultures-of-optimization
 https://minimizingregret.wordpress.com/2016/05/26/the-complexity-zoo-and-reductions-in-optimization
 https://minimizingregret.wordpress.com/2016/07/07/more-than-a-decade-of-online-convex-optimization
@@ -4511,7 +4494,6 @@ https://shopify.engineering/capturing-every-change-shopify-sharded-monolith
 https://shopify.engineering/categorizing-products-at-scale
 https://shopify.engineering/circuit-breaker-misconfigured
 https://shopify.engineering/code-style-consistency-for-shopify-s-decade-old-codebase
-https://shopify.engineering/conducting-exploratory-data-analysis
 https://shopify.engineering/creating-locale-aware-number-and-currency-condensing
 https://shopify.engineering/debugging-systems-cloud-mysql-kubernetes-cgroups
 https://shopify.engineering/deconstructing-monolith-designing-software-maximizes-developer-productivity
@@ -4704,7 +4686,6 @@ https://stackoverflow.blog/2019/07/18/building-community-inclusivity-stack-overf
 https://stackoverflow.blog/2019/07/23/power-of-babble-how-primer-ai-is-mining-valuable-insights-from-a-deluge-of-documentation
 https://stackoverflow.blog/2019/07/24/making-sense-of-the-metadata-clustering-4000-stack-overflow-tags-with-bigquery-k-means
 https://stackoverflow.blog/2019/07/30/find-help-online-mindfully-and-effectively
-https://stackoverflow.blog/2019/07/31/the-next-generation-sql-explore-a-new-way-to-analyze-visualize-and-share-data
 https://stackoverflow.blog/2019/08/07/what-every-developer-should-learn-early-on
 https://stackoverflow.blog/2019/09/10/developer-story-career-jobs-search-success
 https://stackoverflow.blog/2019/09/12/practical-ways-to-write-better-javascript
@@ -5012,7 +4993,6 @@ https://towardsdatascience.com/can-you-have-your-groceries-delivered-in-under-15
 https://towardsdatascience.com/combinatorial-optimization-from-theory-to-code-using-googles-or-tools-2e55da55f028
 https://towardsdatascience.com/conditional-independence-the-backbone-of-bayesian-networks-85710f1b35b
 https://towardsdatascience.com/conjugate-prior-explained-75957dc80bfb
-https://towardsdatascience.com/controlling-the-web-with-python-6fceb22c5f08
 https://towardsdatascience.com/correlation-is-not-causation-or-is-it-487d842dff23
 https://towardsdatascience.com/correlation-vs-causation-a-real-world-example-9e939c85581e
 https://towardsdatascience.com/counterfactuals-for-reinforcement-learning-ii-improving-reward-learning-4c59d9c0429d?source=rss----7f60cf5620c9--editors_pick
@@ -5088,7 +5068,6 @@ https://towardsdatascience.com/introduction-to-interactive-time-series-visualiza
 https://towardsdatascience.com/introduction-to-latent-matrix-factorization-recommender-systems-8dfc63b94875
 https://towardsdatascience.com/introduction-to-probabilistic-classification-a-machine-learning-perspective-b4776b469453
 https://towardsdatascience.com/introduction-to-probabilistic-classification-a-machine-learning-perspective-b4776b469453?source=rss----7f60cf5620c9--editors_pick
-https://towardsdatascience.com/julia-speed-battle-syntactual-recursive-and-iterative-loops-ff5f719867c1
 https://towardsdatascience.com/jump-with-deep-learning-4d2fedb4a61
 https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231
 https://towardsdatascience.com/lagrange-multipliers-with-pictures-and-code-ace8018dac5e
@@ -5298,7 +5277,6 @@ https://users.aalto.fi/~ave/ROS.pdf
 https://uxdesign.cc/design-of-everyday-things-chapter-01-summary-and-keypoints-664d426a11e0
 https://v8.dev/blog/adaptor-frame
 https://v8.dev/blog/array-sort
-https://v8.dev/blog/background-compilation
 https://v8.dev/blog/code-caching
 https://v8.dev/blog/code-caching-for-devs
 https://v8.dev/blog/concurrent-marking
@@ -5614,7 +5592,6 @@ https://www.atomiccommits.io/sensible-schema-evolution
 https://www.atomiccommits.io/socket-hang-up
 https://www.atomiccommits.io/topological-ordering
 https://www.azul.com/blog/a-matter-of-interpretation-from-bytecodes-to-machine-code-in-the-jvm
-https://www.azul.com/blog/cloud-native-compilation-bringing-jvms-into-the-modern-cloud-world
 https://www.azul.com/blog/more-java-performance-with-less-administration
 https://www.azul.com/blog/understanding-java-compilation-from-bytecodes-to-machine-code
 https://www.backtrader.com
@@ -5884,7 +5861,6 @@ https://www.chrisstucchio.com/blog/2019/p_a_statistical_myth.html
 https://www.chrisstucchio.com/blog/2019/sql_queries_are_data_science_models.html
 https://www.chrisstucchio.com/blog/2020/calibrated_classifier_base_rates.html
 https://www.chrisstucchio.com/blog/2020/detecting_funny_histograms.html
-https://www.chrisstucchio.com/blog/2020/isotonic_python_package.html
 https://www.chrisstucchio.com/blog/2020/why_lambda_school_should_have_a_50_percent_success_rate.html
 https://www.chrisstucchio.com/blog/index10.html
 https://www.chrisstucchio.com/blog/index15.html
@@ -6111,7 +6087,6 @@ https://www.depesz.com/2015/10/30/is-c-faster-for-instagram-style-id-generation
 https://www.depesz.com/2015/12/08/grouping-data-by-timestamp-and-interval
 https://www.depesz.com/2016/05/04/picking-task-from-queue-revisit
 https://www.depesz.com/2016/06/14/incrementing-counters-in-database
-https://www.depesz.com/2016/06/29/whats-happening-in-my-database
 https://www.depesz.com/2016/07/12/getting-list-of-unique-elements-in-table-per-group
 https://www.depesz.com/2016/11/08/major-version-upgrading-with-minimal-downtime
 https://www.depesz.com/2017/02/06/generate-short-random-textual-ids
@@ -6153,7 +6128,6 @@ https://www.depesz.com/2021/10/22/why-is-it-hard-to-automatically-suggest-what-i
 https://www.depesz.com/2021/11/19/does-varcharn-use-less-disk-space-than-varchar-or-text
 https://www.depesz.com/2022/02/13/how-much-disk-space-you-can-save-by-using-int4-int-instead-of-int8-bigint
 https://www.depesz.com/2022/02/16/explain-depesz-com-now-with-hints
-https://www.depesz.com/2022/03/01/how-to-index-data-with-tsearch
 https://www.depesz.com/2022/03/13/is-my-autovacuum-configured-properly
 https://www.depesz.com/tag/design
 https://www.depesz.com/tag/field
@@ -7100,7 +7074,6 @@ https://www.youtube.com/watch?v=64geP_LAZ5U
 https://www.youtube.com/watch?v=67jhXvAyAbE
 https://www.youtube.com/watch?v=685Wn0xFCrs
 https://www.youtube.com/watch?v=68kE96zRfSM
-https://www.youtube.com/watch?v=6dDtN1wk5Qc
 https://www.youtube.com/watch?v=6F3ONwrCxMg
 https://www.youtube.com/watch?v=6F3ONwrCxMg&t=124s
 https://www.youtube.com/watch?v=6fUI-hQAmZo
@@ -7334,7 +7307,6 @@ https://www.youtube.com/watch?v=AjNIlebLMRw
 https://www.youtube.com/watch?v=ajv46BSqcK4
 https://www.youtube.com/watch?v=ajy1PHWYeyQ
 https://www.youtube.com/watch?v=akCce7vSSfw
-https://www.youtube.com/watch?v=aKMLgFVxZYk
 https://www.youtube.com/watch?v=AL80p3OeNqw
 https://www.youtube.com/watch?v=AlE5X1NlHgg
 https://www.youtube.com/watch?v=aLlbwk68-tw
@@ -7396,7 +7368,6 @@ https://www.youtube.com/watch?v=B3y0RsVCyrw
 https://www.youtube.com/watch?v=B48Exq57Zg8
 https://www.youtube.com/watch?v=B4IyRw1zvvA
 https://www.youtube.com/watch?v=B5UhtNyWV_E
-https://www.youtube.com/watch?v=B5Vw6H3oSD8
 https://www.youtube.com/watch?v=b7FxPsqfkOY
 https://www.youtube.com/watch?v=b7OguLuaYvE
 https://www.youtube.com/watch?v=B9P4d818rlI
@@ -8833,7 +8804,6 @@ https://www.youtube.com/watch?v=pk1fmvRBgcw
 https://www.youtube.com/watch?v=PKbxK2JH23Y
 https://www.youtube.com/watch?v=PlcVOBqVUr4
 https://www.youtube.com/watch?v=PlehWW6HBhU
-https://www.youtube.com/watch?v=pLRztKYvMLk
 https://www.youtube.com/watch?v=PlvMGpQnqOM
 https://www.youtube.com/watch?v=PM1qRKj3fh0
 https://www.youtube.com/watch?v=pMGDuIPDSgU
@@ -9347,7 +9317,6 @@ https://www.youtube.com/watch?v=UDHcn_1XneI&t=7s
 https://www.youtube.com/watch?v=UDVNyAp3T38
 https://www.youtube.com/watch?v=ueAef9tNUck
 https://www.youtube.com/watch?v=uEFrE6cgVNY
-https://www.youtube.com/watch?v=uekdj1MxNAg
 https://www.youtube.com/watch?v=UerS3uXNAng
 https://www.youtube.com/watch?v=uesa6_7B__Y
 https://www.youtube.com/watch?v=UeVGOXvQyMo
@@ -9705,7 +9674,6 @@ https://www.youtube.com/watch?v=xKUzN-McZUk
 https://www.youtube.com/watch?v=XkY2DOUCWMU
 https://www.youtube.com/watch?v=XkY2DOUCWMU&t=3s
 https://www.youtube.com/watch?v=xLEE3KrGTps
-https://www.youtube.com/watch?v=xlfH6Rk2GCM
 https://www.youtube.com/watch?v=xLhvil5sDcU
 https://www.youtube.com/watch?v=xlVX7dXLS64
 https://www.youtube.com/watch?v=Xly-AoVJ-AU
@@ -9789,7 +9757,6 @@ https://www.youtube.com/watch?v=yEwa41dgzjg
 https://www.youtube.com/watch?v=YeYIxbiupoo
 https://www.youtube.com/watch?v=yf09OrHa520
 https://www.youtube.com/watch?v=yFIaP1YCcxQ
-https://www.youtube.com/watch?v=Yfsmc0b8o78
 https://www.youtube.com/watch?v=YG15m2VwSjA
 https://www.youtube.com/watch?v=YgVha7Vvfes
 https://www.youtube.com/watch?v=yhguOt863nw
@@ -10356,7 +10323,6 @@ https://dataorienteddesign.com/site.php?postid=130
 https://dataorienteddesign.com/site.php?postid=129
 https://dataorienteddesign.com/site.php?postid=128
 https://dataorienteddesign.com/site.php?postid=127
-https://dataorienteddesign.com/site.php?postid=126
 https://dataorienteddesign.com/site.php?postid=125
 https://dataorienteddesign.com/site.php?postid=124
 https://dataorienteddesign.com/site.php?postid=123
@@ -10659,7 +10625,6 @@ https://abdulapopoola.com/2022/03/08/when-sleeping-dogs-bite-unmaintained-system
 https://statmodeling.stat.columbia.edu/2022/03/29/we-should-only-let-data-speak-for-themselves-when-they-have-learned-to-clean-themselves
 https://github.com/megaease/easeprobe
 https://stackoverflow.blog/2022/03/29/give-us-23-minutes-well-give-you-some-flow-state-ep-428
-https://www.youtube.com/watch?v=EFUYNoFRHQI
 https://www.youtube.com/watch?v=PWaXpM-SGj8
 https://www.youtube.com/watch?v=S7QIU0i1qLE
 https://www.youtube.com/watch?v=1MnkDLHzzvQ
@@ -10692,7 +10657,6 @@ https://towardsdatascience.com/if-your-models-are-underperforming-build-better-d
 https://eng.uber.com/ubers-emergency-button-and-the-technologies-behind-it
 https://github.blog/2022-03-31-how-github-does-take-home-technical-interviews
 https://engineering.linkedin.com/blog/2022/building-a-next-generation-forms-framework-at-linkedin
-https://css-tricks.com/web-development-bookmarklets
 https://quantpedia.com/nuclear-threats-and-factor-performance-takeaway-for-russia-ukraine-conflict
 https://home.robusta.dev/blog/kubernetes-is-the-new-posix/?from=twitter
 https://eng.lyft.com/how-lyftlearn-democratizes-distributed-compute-through-kubernetes-spark-and-fugue-c0875b97c3d9
@@ -10848,7 +10812,6 @@ http://gregorygundersen.com/blog/2021/09/09/ols-hypothesis-testing
 http://gregorygundersen.com/blog/2022/01/06/autoregressive-model
 http://gregorygundersen.com/blog/2021/09/19/blockchain
 http://gregorygundersen.com/blog/2022/01/09/geometry-efficient-frontier
-http://gregorygundersen.com/blog/2022/01/16/linear-combination-as-line
 http://gregorygundersen.com/blog/2022/01/29/ols-consistency
 http://gregorygundersen.com/blog/2022/01/30/ols-heteroscedasticity
 http://gregorygundersen.com/blog/2022/02/06/log-returns
@@ -12054,7 +12017,6 @@ https://www.evanjones.ca/grpc-is-tricky.html
 https://www.evanjones.ca/durability-cloud.html
 https://www.evanjones.ca/kinesis-outage.html
 https://www.evanjones.ca/durability-filesystem.html
-https://www.evanjones.ca/durability-nvme.html
 https://www.evanjones.ca/saving-memory-dense-integers.html
 https://www.evanjones.ca/grpc-load-balancing.html
 https://www.evanjones.ca/ordered-vs-unordered-indexes.html
@@ -12121,67 +12083,91 @@ https://www.smbc-comics.com/comic/prescriptive
 https://sebastianraschka.com/blog/2022/losses-learned-part1.html
 https://stackoverflow.blog/2022/04/04/comparing-go-vs-c-in-embedded-applications
 https://insights.factorresearch.com/research-factor-olympics-q1-2022
-
-2022-04-12 https://engineering.linkedin.com/blog/2022/open-sourcing-feathr---linkedin-s-feature-store-for-productive-m
-2022-04-12 https://engineering.linkedin.com/blog/2022/open-sourcing-feathr---linkedin-s-feature-store-for-productive-m
-2022-04-12 https://engineering.linkedin.com/blog/2022/open-sourcing-feathr---linkedin-s-feature-store-for-productive-m
-2022-04-12 https://engineering.linkedin.com/blog/2022/open-sourcing-feathr---linkedin-s-feature-store-for-productive-m
-2022-04-12 https://engineering.linkedin.com/blog/2022/open-sourcing-feathr---linkedin-s-feature-store-for-productive-m
-2022-04-12 https://github.blog/2022-04-12-git-security-vulnerability-announced/
-2022-04-12 https://netflixtechblog.com/how-netflix-content-engineering-makes-a-federated-graph-searchable-5c0c1c7d7eaf
-2022-04-12 https://serokell.io/blog/whats-that-typeclass-monoid
-2022-04-12 https://hiddedevries.nl/en/blog/2022-04-12-common-accessibility-issues-that-you-can-fix-today
-2022-04-12 https://towardsdatascience.com/how-to-structure-a-data-science-project-for-readability-and-transparency-360c6716800
-2022-04-12 https://towardsdatascience.com/fleet-and-workforce-planning-with-linear-programming-16db08c7f91d
-2022-04-12 https://insights.factorresearch.com/research-trend-following-factor-investing-unexpected-cousins/
-2022-04-12 https://www.fharrell.com/post/addmarkerdca
-2022-04-12 https://www.stochasticlifestyle.com/composing-modeling-and-simulation-with-julia-2021-modelica-conference/
-https://github.blog/2022-04-11-performance-at-github-deferring-stats-with-rack-after_reply/
+https://engineering.linkedin.com/blog/2022/open-sourcing-feathr---linkedin-s-feature-store-for-productive-m
+https://github.blog/2022-04-12-git-security-vulnerability-announced
+https://netflixtechblog.com/how-netflix-content-engineering-makes-a-federated-graph-searchable-5c0c1c7d7eaf
+https://serokell.io/blog/whats-that-typeclass-monoid
+https://hiddedevries.nl/en/blog/2022-04-12-common-accessibility-issues-that-you-can-fix-today
+https://towardsdatascience.com/how-to-structure-a-data-science-project-for-readability-and-transparency-360c6716800
+https://towardsdatascience.com/fleet-and-workforce-planning-with-linear-programming-16db08c7f91d
+https://insights.factorresearch.com/research-trend-following-factor-investing-unexpected-cousins
+https://www.fharrell.com/post/addmarkerdca
+https://www.stochasticlifestyle.com/composing-modeling-and-simulation-with-julia-2021-modelica-conference
+https://github.blog/2022-04-11-performance-at-github-deferring-stats-with-rack-after_reply
 https://engineering.linkedin.com/blog/2022/load-balanced-brooklin-mirror-maker--replicating-large-scale-kaf
-https://nilsnh.no/2022/04/09/innovating-beyond-libraries-and-frameworks/
+https://nilsnh.no/2022/04/09/innovating-beyond-libraries-and-frameworks
 https://www.youtube.com/watch?v=1pQJkt7-R4Q
-https://quantpedia.com/whats-the-best-factor-for-high-inflation-periods-part-i/
+https://quantpedia.com/whats-the-best-factor-for-high-inflation-periods-part-i
 https://towardsdatascience.com/hands-on-tutorial-how-to-improve-your-problem-solving-skills-as-a-programmer-83f0a8d1082f
 https://towardsdatascience.com/scrutinising-airline-efficiency-by-visualising-public-aviation-data-f736112571f7
 https://blog.plover.com/2022/04/11/#unique
 https://www.youtube.com/watch?v=Q24ZS7A5n1w
 https://www.youtube.com/watch?v=CjUdp1UY3uM
-https://www.smashingmagazine.com/2022/03/html-attributes-you-never-use/
-https://statmodeling.stat.columbia.edu/2022/04/08/reading-practicing-talking-and-questioning/
+https://www.smashingmagazine.com/2022/03/html-attributes-you-never-use
+https://statmodeling.stat.columbia.edu/2022/04/08/reading-practicing-talking-and-questioning
 https://towardsdatascience.com/modeling-urban-heat-wave-risk-with-satellite-imagery-and-lidar-data-3c00c63ea2db
-https://github.blog/2022-04-06-prevent-introduction-known-vulnerabilities-into-your-code/
+https://github.blog/2022-04-06-prevent-introduction-known-vulnerabilities-into-your-code
 https://engineering.linkedin.com/blog/2022/the-journey-to-build-an-explainable-ai-driven-recommendation-sys
-https://stackoverflow.blog/2022/04/11/the-complete-guide-to-protecting-your-apis-with-oauth2/
-https://schroer.ca/2022/04/10/the-joy-of-small-projects/
-https://empty.coffee/an-ode-to-apples-hide-my-email/
-https://statmodeling.stat.columbia.edu/2022/04/11/does-ben-lerner-play-poker/
+https://stackoverflow.blog/2022/04/11/the-complete-guide-to-protecting-your-apis-with-oauth2
+https://schroer.ca/2022/04/10/the-joy-of-small-projects
+https://empty.coffee/an-ode-to-apples-hide-my-email
+https://statmodeling.stat.columbia.edu/2022/04/11/does-ben-lerner-play-poker
 https://towardsdatascience.com/principal-component-regression-clearly-explained-and-implemented-608471530a2f
-https://statmodeling.stat.columbia.edu/2022/04/06/teaching-visualization/
-https://danluu.com/simple-architectures/
-https://statmodeling.stat.columbia.edu/2022/04/09/hey-check-out-this-post-from-2006-when-i-was-mellow-actually-too-mellow-too-nice-and-too-understanding/
-https://stackoverflow.blog/2022/04/07/you-should-be-reading-academic-computer-science-papers/
+https://statmodeling.stat.columbia.edu/2022/04/06/teaching-visualization
+https://danluu.com/simple-architectures
+https://statmodeling.stat.columbia.edu/2022/04/09/hey-check-out-this-post-from-2006-when-i-was-mellow-actually-too-mellow-too-nice-and-too-understanding
+https://stackoverflow.blog/2022/04/07/you-should-be-reading-academic-computer-science-papers
 https://dkb.io/post/the-next-google
-https://mikiobraun.wordpress.com/2022/04/08/what-is-data-science-problem-fit-and-why-you-need-it/
-https://www.reddit.com/r/DeepLearningPapers/comments/ty02pf/five_google_chrome_extensions_that_every_machine/
-https://stackoverflow.blog/2022/04/06/use-git-tactically/
-https://thenewstack.io/why-literate-programming-might-help-you-write-better-code/
+https://mikiobraun.wordpress.com/2022/04/08/what-is-data-science-problem-fit-and-why-you-need-it
+https://www.reddit.com/r/DeepLearningPapers/comments/ty02pf/five_google_chrome_extensions_that_every_machine
+https://stackoverflow.blog/2022/04/06/use-git-tactically
+https://thenewstack.io/why-literate-programming-might-help-you-write-better-code
 https://shopify.engineering/merlin-shopify-machine-learning-platform
 https://jinyuz.dev/posts/tips-and-tricks/Switching-from-pyenv,-rbenv,-goenv-and-nvm-to-asdf
-https://statmodeling.stat.columbia.edu/2022/04/06/what-should-he-read-to-pivot-into-research-with-a-bayesian-focus/
-
-2022-04-12 https://www.youtube.com/watch?v=eTcVLqKpZJc
-2022-04-12 https://www.youtube.com/watch?v=68-nF_WGD4E
-2022-04-12 https://www.youtube.com/watch?v=CjUdp1UY3uM
-2022-04-12 https://www.youtube.com/watch?v=vqs_0W-MSB0
-2022-04-12 https://www.youtube.com/watch?v=L2p_fGuldt0
-2022-04-12 https://www.youtube.com/watch?v=p0eVyhv2rbk
-2022-04-12 https://www.youtube.com/watch?v=AVXYq8aL47Q
-2022-04-12 https://www.youtube.com/watch?v=2FZ2AGo6Kec
-2022-04-12 https://www.youtube.com/watch?v=nw_FKdaZAl8
-2022-04-12 https://www.youtube.com/watch?v=EFUYNoFRHQI
-2022-04-13 https://stackoverflow.blog/2022/04/13/will-chatbots-ever-live-up-to-the-hype/
-2022-04-13 https://blog.jetbrains.com/idea/2022/04/intellij-idea-2022-1/
-2022-04-13 https://statmodeling.stat.columbia.edu/2022/04/13/the-accidental-experiment-that-saved-700-lives/
-2022-04-13 https://quantpedia.com/whats-the-best-factor-for-high-inflation-periods-part-ii/
-2022-04-13 https://lipanski.com/posts/smallest-docker-image-static-website
-2022-04-13 https://eng.lyft.com/monitoring-cpu-performance-of-lyfts-android-applications-4e36fafffe12
+https://statmodeling.stat.columbia.edu/2022/04/06/what-should-he-read-to-pivot-into-research-with-a-bayesian-focus
+https://www.youtube.com/watch?v=eTcVLqKpZJc
+https://www.youtube.com/watch?v=68-nF_WGD4E
+https://www.youtube.com/watch?v=vqs_0W-MSB0
+https://www.youtube.com/watch?v=L2p_fGuldt0
+https://www.youtube.com/watch?v=p0eVyhv2rbk
+https://www.youtube.com/watch?v=AVXYq8aL47Q
+https://www.youtube.com/watch?v=2FZ2AGo6Kec
+https://www.youtube.com/watch?v=nw_FKdaZAl8
+https://stackoverflow.blog/2022/04/13/will-chatbots-ever-live-up-to-the-hype
+https://blog.jetbrains.com/idea/2022/04/intellij-idea-2022-1
+https://statmodeling.stat.columbia.edu/2022/04/13/the-accidental-experiment-that-saved-700-lives
+https://quantpedia.com/whats-the-best-factor-for-high-inflation-periods-part-ii
+https://lipanski.com/posts/smallest-docker-image-static-website
+https://eng.lyft.com/monitoring-cpu-performance-of-lyfts-android-applications-4e36fafffe12
+https://alemorales.info/post/automatic-differentiation-with-dual-numbers
+https://www.joelonsoftware.com/2001/10/14/in-defense-of-not-invented-here-syndrome
+https://eli.thegreenplace.net/2014/01/07/getting-started-with-libjit-part-3
+http://dailyjs.com/2012/09/17/encapsulation-breaking
+https://www.toptal.com/r/social-network-analysis-in-r-gephi-2?utm_campaign=%5BPubs%5D%20Engineering_Newsletter_2022&utm_medium=email&_hsmi=209669450&_hsenc=p2ANqtz--OrctVcDnlSfqNud47-6NBVSMOlnKzM4FXfAv0VbN2985vjukmPjYHlRb2_7f0ealnMxuGLZxwqMMeSnAjMTS9Wm083fmehsZXfHNu7qkO_K6zSBE&utm_content=209669450&utm_source=hs_email
+https://danluu.com/startup-tradeoffs
+https://scicomp.stackexchange.com/questions/26423/practical-example-of-why-it-is-not-good-to-invert-a-matrix
+https://github.com/twitter/BreakoutDetection
+https://github.com/twitter/AnomalyDetection
+https://github.com/twitter/iago2
+http://twitter.github.io/second-control-probability-distributions
+https://github.com/twitter/SentenTree
+https://www.microsoft.com/en-us/research/wp-content/uploads/2016/08/algeff-tr-2016-v2.pdf
+https://overreacted.io/algebraic-effects-for-the-rest-of-us
+https://dev.to/devteam/the-three-caches-of-forem-492p
+https://engineering.linkedin.com/blog/2022/client-zero-protocol--taking-intelligent-risks-to-go-beyond-the-
+https://eng.uber.com/presto-on-apache-kafka-at-uber-scale
+https://acloudguru.com/blog/engineering/5-tips-for-starting-your-organization-with-multiple-aws-accounts
+https://newsletter.pragmaticengineer.com/p/scoop-atlassian?s=r
+https://statmodeling.stat.columbia.edu/2022/04/16/spam-is-so-much-fun-but-sometimes-its-baffling
+https://lilianweng.github.io/posts/2022-04-15-data-gen
+https://towardsdatascience.com/becoming-a-real-data-analyst-dcaf5f48bc34
+https://towardsdatascience.com/analyze-and-visualize-urls-with-network-graph-ee3ad5338b69
+https://httpie.io/blog/stardust
+https://changelog.com/posts/automation-is-the-serialization-of-understanding
+https://blog.adamchalmers.com/making-a-dns-client
+https://jvns.ca
+https://beej.us/guide/bgnet
+https://tech.freckle.com/2020/10/26/tagged-is-not-a-newtype
+http://langsec.org/papers/langsec-cwes-secdev2016.pdf
+https://towardsdatascience.com/is-interpreting-ml-models-a-dead-end-f5b9dd78ba77
+https://towardsdatascience.com/when-accuracy-isnt-enough-visualization-and-game-design-48b95425130a

@@ -3,3 +3,11 @@
 2022-04-01 https://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html
 
 2022-04-02 https://www.youtube.com/watch?v=O85OWBJ2ayo
+2022-04-14 https://www.youtube.com/watch?v=JcJSW7Rprio
+2022-04-14 https://www.youtube.com/watch?v=EFUYNoFRHQI
+2022-04-16 https://lexi-lambda.github.io/blog/2020/11/01/names-are-not-type-safety/
+2022-04-16 https://lexi-lambda.github.io/blog/2020/11/01/names-are-not-type-safety/
+2022-04-16 https://lexi-lambda.github.io/blog/2020/11/01/names-are-not-type-safety/
+2022-04-16 https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/
+2022-04-16 https://www.parsonsmatt.org/2017/10/11/type_safety_back_and_forth.html
+2022-04-16 https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/

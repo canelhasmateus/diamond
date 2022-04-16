@@ -75,3 +75,4 @@
 
 2022-04-03 https://biot.com/capstats/bpf.html
 2022-04-04 https://floitsch.blogspot.com/2012/03/optimizing-for-v8-introduction.html
+2022-04-13 https://www.dropbox.com/s/72rqlrecb7fn7k2/data_science_notes.pdf?dl=0

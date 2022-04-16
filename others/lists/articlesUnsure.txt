@@ -32,3 +32,9 @@
 2022-04-03 https://web.archive.org/web/20171012161338/http://www.hsc.fr/ressources/articles/win_net_srv/missing_loopback.html
 2022-04-03 https://www.youtube.com/watch?v=nfBNOWv1pgE
 2022-04-03 https://en.wikipedia.org/wiki/Kernel_methods_for_vector_output
+2022-04-13 https://www.chrisstucchio.com/blog/2020/isotonic_python_package.html
+2022-04-13 https://erikbern.com/2013/04/13/being-data-driven.html
+
+2022-04-15 https://bair.berkeley.edu/blog/2021/12/15/unsupervised-rl/
+2022-04-15 https://dm13450.github.io/2020/09/11/ExpGoals.html
+2022-04-16 https://lexi-lambda.github.io/blog/2020/08/13/types-as-axioms-or-playing-god-with-static-types/
