@@ -230,4 +230,3 @@ blog.robertelder.org
 https://philippe.kruchten.com/
 https://portfoliooptimizer.io
 https://datavizproject.com
-
