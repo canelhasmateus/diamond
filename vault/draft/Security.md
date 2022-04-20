@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=Yfsmc0b8o78
+
+The compiler serves two masters , and carries some authority from each to perform its duties; it has no way to set them apart. 
+    Confused deputy
+
+The browser is a confused deputy. 
+    . It  has authorization to call an authenticated request ; but this can me misused by making a xss 
+
+ this can be seem as a way to developing Capability-base security ( ??? )

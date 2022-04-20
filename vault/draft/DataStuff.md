@@ -1,3 +1,90 @@
+HIve
+    
+    Query Interface to hadoop ( HDFS)
+        . Query ENgine
+        . Metastore
+
+
+    With time, other technologies dismantled there
+
+    HDFS -> Object Storage ( AWS S3)
+    Map Reduce -> Spark 
+    Yarn -> Kubernetes
+    Query Engine -> Presto / Trino
+
+
+When saving new data, we register it into hive metastore
+    . Maps a set of objects in the objsect store to a table exposed by hive
+        .. Schema of the table held in the file, with metadata
+    . Leads to 
+        .. Virtualization
+        When using sql, not interested in the detail of object stora. 
+
+        .. Discoverability
+        Becomes a catalog of all the collections held in object storage 
+        Can also add supplemental: Update frequency, owners
+        .. Schema Evolution
+        Mutability is a challenge of managing data sets ; 
+            Records may change over time with respect to the existing columns describing their attributes 
+            The set attributes itself changes, resulting in a change to the schema
+        
+
+
+        .. Performance
+            . Parition prunning? 
+
+POssible replacements
+    . Difficult to install and maintain
+    . Not architected cloud-native, complicating managed service implementations
+    . Scalability 5restrictions from relational db relianceow
+    . No direct, but  . .. | specially because the metastore is a general interface supported by all applications. 
+    
+
+Open Table Formats
+    . Iceberg
+        efficiency in large tables
+    . Hudi
+        mutability
+    . delta lkae
+        mutability
+        schema enforcement and evolution
+    
+Data Catalogs
+    Many open source discovery tools
+        acryl
+        data portal
+        amundsen
+        apache atlas
+        atlan
+        azure purview
+        castordoc
+        collibra
+        data galaxy
+        data world
+        databricks unity catalog
+        datahub
+        facebook nemo
+        google data catalog
+        metaphor
+        netflix metacat
+        secode
+        select start
+        shopify artifact
+        spotryify lexicon
+        stemma
+        uber databook
+        zeenea
+Observability
+    monitoring the quality of the data pipelines oeprationally, or the data itself
+        . Databand 
+        
+        . great expectations
+        . monte carlo ( https://www.montecarlodata.com/ )
+
+
+___
+
+
 Windowing Model
 
 	Splits dataset into smaller groups for processing
@@ -171,4 +258,23 @@ Programming Model
 	Windowing
 	Triggers
 	Metrics
+
+___
+
+
+Question Categories
+
+    . Unknown => Why is chocolate so awesome
+    .  Known => What is the popluation of bangladesh
+    . Discoverable => How can i sell more widgets to housewives between the ages of 25 and 40. 
+
+
+"The Central value proposition of big data is inseparably connected to *discoverable* answers. These gems are fundamentally different from facts waiting to be sliced, they're rational guesses based on deduction and supported by rigorous data analysis
+    . Thats wyhy its called data science
+    . If we're not building big data solutions that hypothesize rather than report, we're underdelivering. 
+
+
+
+"Enterprise search struggles, as an industry because its trrying to sell drill bits to customers who want holes, and it's forgotten that it's the hole, not the bit, that makes the customer passionate"
+    . I feel like this is deep and i'm not understanding it still. 
 
