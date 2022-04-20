@@ -293,3 +293,24 @@ Systems Leadership ( Ian Macdonald, Catherine Burke and Karl Stewart)
 
 If it hurts, do it more often
 
+
+___
+
+
+
+
+Question Categories
+
+    . Unknown => Why is chocolate so awesome
+    .  Known => What is the popluation of bangladesh
+    . Discoverable => How can i sell more widgets to housewives between the ages of 25 and 40. 
+
+
+"The Central value proposition of big data is inseparably connected to *discoverable* answers. These gems are fundamentally different from facts waiting to be sliced, they're rational guesses based on deduction and supported by rigorous data analysis
+    . Thats wyhy its called data science
+    . If we're not building big data solutions that hypothesize rather than report, we're underdelivering. 
+
+
+
+"Enterprise search struggles, as an industry because its trrying to sell drill bits to customers who want holes, and it's forgotten that it's the hole, not the bit, that makes the customer passionate"
+    . I feel like this is deep and i'm not understanding it still. 

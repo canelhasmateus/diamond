@@ -1,3 +1,0 @@
-
-
-# Additive Increase, Multiplicative Decrease

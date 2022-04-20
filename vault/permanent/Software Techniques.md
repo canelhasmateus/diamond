@@ -10,7 +10,7 @@ It prevents meltdown by simply stopping everything just before hitting [[critica
 Implemented by tools such as [[Hystrix]], [[istio]], [[conduit]], [[linkerd]] , [[consul]]. 
 
 
-# [[Backpressure Mechanisms]]
+# [[Backpressure]] Mechanisms
 
 
 # [[Rate Limiting]]
@@ -23,9 +23,9 @@ However, the naive implementation leads to some interesting [[ramifications]].
 
 If the origin services is overloaded, even following the allowed quota can be too much to handle.
 
-If the rate limit is aggresive, we end up [[wasting resources]]: We could have handled the request, but pre-emptively refused to. 
+If the rate limit is aggresive, we end up wasting [[resources]]: We could have handled the request, but pre-emptively refused to. 
  
-This comes from the [[static nature]] of such rate limiting. Better implementations can be devised by aplication of [[Queueing Theory]] and capacity planning.
+This comes from the [[static]] nature of such rate limiting. Better implementations can be devised by aplication of [[Queueing Theory]] and capacity planning.
 
 
 

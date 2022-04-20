@@ -1,5 +1,8 @@
 
 
+# Additive Increase, Multiplicative Decrease
+
+
 # Cooperative Throttling
 
 # Head of Line
