@@ -1,3 +1,5 @@
+# Garbage Collection
+
 Garbage Collection is a [[technique]] for [[Memory Management]]. 
 
 It sits in contrast with [[Manual Memory Management]], usually implemented by closer-to-metal languages, such as [[C]].

@@ -8,7 +8,7 @@ Proxies have a variety of use cases:
 
 * [[Anonymity]]: The final destination does not known the originating client. Mind that proxying just transfer anonimity - the proxy is now the one who knows the identity of the real client. 
 
-* [[Logging]]:  Being a funneling channel , the proxy can log  requests. This can be useful in the context of [[Microservices]], to provide [[Observability]], [[Circuit Breakers]] and [[define.http]] upgrading.
+* [[Logging]]:  Being a funneling channel , the proxy can log  requests. This can be useful in the context of [[Microservices]], to provide [[software.architecture.observability]], [[Circuit Breakers]] and [[networking.http]] upgrading.
     .. This can be seen as a form of [[ segregation]] and [[modularity]]. A [[separation of concerns]]
 
 ___ 
@@ -30,7 +30,7 @@ Being restricted to use only [[OSI Model|Layer 4]] information, the proxy has on
 . [[Ip Address]]
 . [[Port]]
 
-This can happen by design, or because the application layer content is [[encryption|encrypted]], thanks to use of techniques such as [[TLS]].
+This can happen by design, or because the application layer content is [[encryption|encrypted]], thanks to use of techniques such as [[networking.tls]].
 
 
 ___ 
@@ -51,7 +51,7 @@ Yes, but usually vpns are more secure since they operate at a [[IPSEC|lower leve
     * VPNS just transfer your anonimity from the isp to the vpn. 
 
 
-Can i proxy traffic other than [[define.http]]?
+Can i proxy traffic other than [[networking.http]]?
     * Yes , There are multiple types of proxy, like socks proxy, used for tunnelings, there are http proxy, that only tunnels for https;.
     * [[expand]]
 

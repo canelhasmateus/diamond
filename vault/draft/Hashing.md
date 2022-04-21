@@ -7,7 +7,7 @@ This is usually an irreversible process, which means it is well suited for vario
 ___ 
 Applications:
 
-[[define.hashtables]]
+[[software.implementation.hashtables]]
 [[Sharding]]    
 [[Partitioning]]
 

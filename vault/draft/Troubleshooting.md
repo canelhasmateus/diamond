@@ -25,7 +25,7 @@ Sometimes a solution must be applied very quickly. Without enough time ( or disp
 
 
 
-A form of [[Problem Solving#Question the Premises]]
+A form of [[psy.problemSolving#Question the Premises]]
 
 
 ___

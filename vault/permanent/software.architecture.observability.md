@@ -39,16 +39,16 @@ ___
 
     Consider the usual practice of looking at the 95% for [[response]] latencies. 
 
-. Why would the 95 percentile be important? [[Problem Solving#Question the Premises| They aren't , inherently.]]
+. Why would the 95 percentile be important? [[psy.problemSolving#Question the Premises| They aren't , inherently.]]
 
 . Looking at it hides the fact that, for a given threshold to be reached, there are other 5% of responses that had to be worse. 
 
-. Worse still is the monitoring and reporting of averages, which are [[Implicit Assumptions|non-sensical]] in the context of highly [[skewed distributions]] that [[latencies]] follow.
+. Worse still is the monitoring and reporting of averages, which are [[psy.implicitAssumptions|non-sensical]] in the context of highly [[skewed distributions]] that [[latencies]] follow.
     .. its common to have your 99.999% be 1000x greater than your 99%. 
             
     
     
-Metrics are an [[Human Phenomena#Map is not the territory|proxy]] of the software health.
+Metrics are an [[psy.phenomena#Map is not the territory|proxy]] of the software health.
 
 [[Service time]] vs resonse time
 . Think of a queue
@@ -71,7 +71,7 @@ There will be 40*5 = 200 total resources loaded.
 Each of these have a 0.95 chance of being 'ok'.
 The chance of none of this being bad is 0.95^200 = 0.00035</details>
 
-In this light, it makes more sense to [[Problem Solving#Swap the constraints|set the necessary metric levels accordingly to the wanted customer experience]]:
+In this light, it makes more sense to [[psy.problemSolving#Swap the constraints|set the necessary metric levels accordingly to the wanted customer experience]]:
 
 <details
 class=blue>
@@ -88,7 +88,7 @@ and the 99%?
 details>
 
 
-> The usual way of setting thresholds is just [[Human Phenomena#Wishful Thinking]].
+> The usual way of setting thresholds is just [[psy.phenomena#Wishful Thinking]].
 
 
 ___
@@ -99,7 +99,7 @@ ___
 Latency does not lives in [[isolation]], we need to look at it in the context of load.
 
 When comparing systems by the means of tools such as [[load charts]], looking at how systems behave when pushed past the [[saturation point]] is useless: you already crashed your car. 
-    . This can be seen as an [[Implicit Assumptions]] that your normal operation load is past the point of saturation ( 100% load ).
+    . This can be seen as an [[psy.implicitAssumptions]] that your normal operation load is past the point of saturation ( 100% load ).
 
 ___ 
 References

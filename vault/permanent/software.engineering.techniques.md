@@ -1,7 +1,14 @@
-# [[Canary]] Deployments
+# Software Techniques
+
+
+[[Canary]] Deployments
     . Try out new versions by sending small amounts of traffic to them. 
     . Can be seen as a [[Incremental change]] or [[incremental improvement]]
-# [[Circuit Breakers]]
+
+
+___
+
+[[Circuit Breakers]]
 
 An idea brought from electrical engineering, where circuit breakers are used to completely shut down currents when the  characteristics such as voltage reach outside of the operating thresholds.
 
@@ -9,11 +16,13 @@ It prevents meltdown by simply stopping everything just before hitting [[critica
 
 Implemented by tools such as [[Hystrix]], [[istio]], [[conduit]], [[linkerd]] , [[consul]]. 
 
+___
 
-# [[Backpressure]] Mechanisms
+[[Backpressure]] Mechanisms
 
+___
 
-# [[Rate Limiting]]
+[[Rate Limiting]]
     
 A simple premisse: avoid having one client starve the others. ( [[competition]] )
 

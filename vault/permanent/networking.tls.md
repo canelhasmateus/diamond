@@ -6,7 +6,7 @@ It prevents [[Eavesdropping]] and [[Tampering]] by using [[Certificates]] betwee
 
 Since a communication can be done without TLS, It is necessary for the client to request that the server set up a secure connection. 
 
-Usually this is achieved by using a different [[port]] number for TLS connections, usually Port 80 for [[define.http]] and 443 for [[HTTPS]]. 
+Usually this is achieved by using a different [[port]] number for TLS connections, usually Port 80 for [[networking.http]] and 443 for [[HTTPS]]. 
 
 
 [[Handshake ]]

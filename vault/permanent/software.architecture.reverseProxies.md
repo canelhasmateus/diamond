@@ -1,9 +1,9 @@
-In a common [[define.proxies|proxy]], the server ends up not knowing the originating client. We can  however, reverse this situation, and make the [[client]] unaware of the destination [[server]]. This has several use cases, many prevalent in [[Microservices]] architectures, such as:
+In a common [[software.architecture.proxies|proxy]], the server ends up not knowing the originating client. We can  however, reverse this situation, and make the [[client]] unaware of the destination [[server]]. This has several use cases, many prevalent in [[Microservices]] architectures, such as:
 
 * Caching    
 * [[Load Balancing]]
 * [[Ingress]]
-* [[Software Techniques#Canary Deployments]]
+* [[software.engineering.techniques#Canary Deployments]]
 
     Ingress:
         Hey, you talk to me sir,  and if you wanna access the pictures api, it can route requests. 
@@ -11,7 +11,7 @@ In a common [[define.proxies|proxy]], the server ends up not knowing the origina
 
 
 
-As a reverse proxy , when receiving a [[TLS]] handshake request, we can choose to act in several ways. 
+As a reverse proxy , when receiving a [[networking.tls]] handshake request, we can choose to act in several ways. 
 
 The first one is to respond to the client with the proxy's own [[certificate]] and TLS Parameters. This is called [[TLS Termination]].
 This necessitates, however, that the [[private key]] and certificate be in the reverse proxy. This has some major concerns , since it gives the proxy the ability to crack the underlying contents, and enables it to act as a representative of the certificate holder. 

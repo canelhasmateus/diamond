@@ -1,5 +1,5 @@
     
-Immutable Objects can be gentler to generational [[define.garbagecollection]]. 
+Immutable Objects can be gentler to generational [[software.implementation.gc]]. 
 
 Usually,  when a holder object is updated to reference a different object, the new referent is a young object. 
 If we update a "MutableHolder" , we have created a situation where an older object references a younger one. 

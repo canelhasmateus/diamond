@@ -5,7 +5,7 @@ An important realization to improve [[productivity]] is to understand that not a
 
 Its possible to take advantage of this fact to increase our productivity. We  usually have a set  of - not one - goals. Instead of picking a task and forcing our brain into the required state to do it we can pick the task accordingly to the current state.
 
-. This can be seen as a way of [[Problem Solving#Question the Premises | Questioning your premises]]
+. This can be seen as a way of [[psy.problemSolving#Question the Premises | Questioning your premises]]
 . By embracing the monkey brain we practice [[Psychological Sympathy]] towards our very nature.
 
 By working in some activity, its possible we our minds get tired of being into that state. We usually notice that by the distinct lack of productivity and [[motivation]]. So, by layering  different kinds of activity its possible to achieve better utilization of our time, and thus, better [[productivity]] [[theory.md]]

@@ -12,12 +12,12 @@ To implement the stateless protocol, the original creators of the http protocol 
 
 This was necessary to abstract away the underlying transport protocol, since it doesn't necessarily supports  multiple requests at the  same time.
 
-[[theory]] This Was  also done to save [[memory]], since long running [[tcp]] connections take up memory
+[[theory]] This Was  also done to save [[memory]], since long running [[networking.tcp]] connections take up memory
     . . Is this true?
     .. only long runningw? why? [[expand]]
 
 
-This is inneficient, since the usual transport protocol , [[TCP]], offers big amounts of [[bandwidth]] , but ends up underutilized. 
+This is inneficient, since the usual transport protocol , [[networking.tcp]], offers big amounts of [[bandwidth]] , but ends up underutilized. 
 
 
 Browsers try to work around  the "One Outstanding Request" rule, by creating a [[pool]] of usually 6 to 10 tcp connections. This allows some degree of [[concurrency]], speeding up the loading of pages. However, any more additional requests must be [[queued]] at the client side, leading to the classical waterfall look at dev tools network. 
@@ -30,10 +30,10 @@ The [[Head of line Blocking]], alongside the 6 maximum per-host connections, res
 
 [[Http 2]] offers various improvements over the previous generations. 
 
-First, its safe by default, thanks to the use of [[TLS]]. 
+First, its safe by default, thanks to the use of [[networking.tls]]. 
 
 
-Another big improvement comes in the form of Multiplexing [[TCP]] Connections. This allows multiple requests to be done using the same tcp connection, bypassing the "[[One Outstanding request]]" rule. 
+Another big improvement comes in the form of Multiplexing [[networking.tcp]] Connections. This allows multiple requests to be done using the same tcp connection, bypassing the "[[One Outstanding request]]" rule. 
 
 This decreases [[latency]], since the usual overheads of stablishing tcp connections, such as [[handshakes]] and [[tls negotiation]] are not necessary to be done multiple times. 
     .. Does this mean that http2 is not stateless anymore? [[expand]]

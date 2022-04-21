@@ -11,7 +11,7 @@ MITM
 Examples
 
 
-[[define.hsts]]
+[[security.hsts]]
 
 
 

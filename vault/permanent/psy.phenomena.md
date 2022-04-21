@@ -21,7 +21,7 @@ Can be seen as a case of [[Oversimplifications]].
 
 As humans, we suffer from various psychological and [[Human Phenomena]]. 
 
-When dealing with the future, its very often the case [[Implicit Assumptions| we assume]] facts and imagine how things will play out. 
+When dealing with the future, its very often the case [[psy.implicitAssumptions| we assume]] facts and imagine how things will play out. 
 
 Can this be seen as some sort of primal protection mechanism? this can be seen as a form of prepartion for an possible the future [[expand]]
 
