@@ -2,7 +2,7 @@ Http Strict Transport [[Security]] is a policy mechanism that helps protect agai
 
 It allows web-servers, browsers and other complying user-agents to automatically interact with some domain in a secure-only manner. 
 
-A server implements HSTS policy by supplying a [[header]] over an [[HTTP|Https]]connection, which specifies that future requests to that domain must be made via [[https]], for a period of time. 
+A server implements HSTS policy by supplying a [[header]] over an [[define.http|Https]]connection, which specifies that future requests to that domain must be made via [[https]], for a period of time. 
     Strict-Transport-Security: max-age=31536000.
 
 An user agent, when receiving such header, does the following:

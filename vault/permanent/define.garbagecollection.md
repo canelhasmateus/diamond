@@ -36,3 +36,6 @@ If the system follows the Generational Hypothesis, this mean we can scan a compa
 
 Objects that reamin not-collected are moved into older areas of memory, that are increasingly-seldomly checked, in a so-called "Major" garbage collection.
 
+
+
+___

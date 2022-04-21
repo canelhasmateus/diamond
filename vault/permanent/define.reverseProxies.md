@@ -1,4 +1,4 @@
-In a common [[proxies|proxy]], the server ends up not knowing the originating client. We can  however, reverse this situation, and make the [[client]] unaware of the destination [[server]]. This has several use cases, many prevalent in [[Microservices]] architectures, such as:
+In a common [[define.proxies|proxy]], the server ends up not knowing the originating client. We can  however, reverse this situation, and make the [[client]] unaware of the destination [[server]]. This has several use cases, many prevalent in [[Microservices]] architectures, such as:
 
 * Caching    
 * [[Load Balancing]]

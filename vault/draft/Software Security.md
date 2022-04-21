@@ -11,7 +11,7 @@ MITM
 Examples
 
 
-[[HSTS]]
+[[define.hsts]]
 
 
 
