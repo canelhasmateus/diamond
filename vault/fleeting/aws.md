@@ -7,7 +7,7 @@ whizlabs
 cloudgurus
 
 
-aws whitepapers
+
 
 
 

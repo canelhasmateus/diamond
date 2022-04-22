@@ -87,3 +87,25 @@ For a time now, i've been thinking about what would an ideal learning workflow b
 
 Up until now i was able to structure only the first one. I feel like zettelkasten has been a good way of implementing the second one. I plan to implement some kind of active-recall or spaced-repetition routines to re-learn what i wrote down. 
 And i kinda get excited about other possibilites - Can i integrate this with technologies such as GPT3, as to have a *very* personal assistant? 
+
+
+___
+
+
+
+https://blog.plover.com/math/se/notation.html
+        . Notation is indeed a very powerful / important and often undervalued concept.
+        . It's not sufficient for a system of notation to have a way of expressing every result; it has to be able to express every possible computation.
+            .. This seems very profound, but i have yet to fully digest  its meaning
+            .. It seems to imply that a result is not simply the value of following its computations
+            .. But what are computations, even? Or results. This question arrives even if we're not distinguisuing these two concepts.
+            .. Interesting to note that even today we do not have the proper tools to denote every single computation.
+            .. Is a computation tied down to a 'Perspective'?  are there ways to convert between 'Pespectives' purelly mecanichally, by meana of transforming their notations?
+        . On a tangent, notation is just a form of representing the problem
+            .. Relate with domain modeling?
+
+    On Sucess:
+        Atlas struggle becomes everyday more real.
+        Our real goal and fulfilment doesn't come from reach the summit, but from the pain of rolling the ball. Thus, suffering / struggle not only is necessary to reach our potential, it is the actual goal.
+
+    You're not   stuck in traffic, you're traffic.

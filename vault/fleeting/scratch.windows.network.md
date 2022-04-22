@@ -1,8 +1,5 @@
 
 
-___
-
-
 AllJoynRouter?
 App Installer?
 CAptive Portal Flow
@@ -65,8 +62,6 @@ work or school account
 xbox game ui
 your account
 
-
-
 source 0.0.0.0 to 255.255.255.255 ( dhcp discover )
 
 source desktop-05AI9DR.local to ff02::16 
@@ -122,18 +117,3 @@ more multicasts via icmpv6
 who is investus_3b:b7:d0
 
 why am i asking so much for 192.168.15.2?
-
-___
-
-
-wireshark only use the profile "hosts" file?
-resolve vlan ids?
-resolve ss7 pcs?
-enable oid resolution?
-suppress smi errors?
-maxmind database?
-
-
-wireshark statistics
-big ip system?
-
