@@ -5,6 +5,8 @@ Check RSS
 
 # Quests 
 
+By the way, i need to disable my own infrastructure on aws.
+
 [IntelliJ Live Plugin ](https://github.com/dkandalov/live-plugin)
 * Is the scripting console *any* better? 
 * How does it compare to [ Flora ]( https://plugins.jetbrains.com/plugin/17669-flora-beta-/)?
@@ -36,16 +38,3 @@ Dissections
 )
 * [ Hussein Nasser's Udemy course ] (https://www.udemy.com/course/fundamentals-of-networking-for-effective-backend-design)
 
-
-___
-
-
-https://andersource.dev/2022/04/19/dk-autocorrelation.html
-
-"For year i thought myself relatively immune to this. Of course, i'm not - All it tookk was the right trigger."
-
-Why is statistics the "stamp of quality " of a lot of scientific research?
-
-Statistics is an attemp to objectively quantify surprise
-    .if iam surprised, it indicates a conflict between my model of reality and reality. Thus, i ought to update my model 
-    

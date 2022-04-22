@@ -24,3 +24,13 @@ wireshark statistics
 ]~> Do parametric types beats virtual types? 
     . wtf does this even mean. 
 
+Intellij
+* Intentions -> Grok into where / how intentions are made.
+* Language Injections -> Grok
+* TextMate Bundles
+* Run Targets
+* WHat is Code Cleanup?
+* Startup Tasks
+
+
+Git force-with-lease?
