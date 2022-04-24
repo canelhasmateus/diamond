@@ -63,3 +63,14 @@ Network
 Billing and Cost Management
     . Better Understand
     . Cost Allocation Tags?
+
+
+
+
+Need to cross-verify the subjects
+    . The What's the Who's and the How's
+    . Be mindful of adjectives attached to such entities. 
+    . Be *very, very* literal.
+
+Does EBS data passees through the network or not?
+
