@@ -1,10 +1,15 @@
 # Projects
 
-Zettelkasten
-Knowledge Management
-Powershell Terminal
-Alacrity Terminal
-Linux environment 
-Vim Environment
-Quantified Self
-AWS cert
+
+Terminal    
+    Powershell
+    Alacrity
+
+Environment
+    Linux 
+    Vim
+
+Self
+    Quantified
+    AWS
+    Zettelkasten

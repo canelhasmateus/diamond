@@ -34,62 +34,8 @@ Incorrect
 -   Marked for review
     
 
-# Question 3: Incorrect
 
-A company has a large Microsoft Windows Server running on a public subnet. There are EC2 instances hosted on a private subnet that allows Remote Desktop Protocol (RDP) connections to the Windows Server via port 3389. These instances enable the Microsoft Administrators to connect to the public servers and troubleshoot any server failures.
 
-The server must always have the latest operating system upgrades to improve security and it must be accessible at any given point in time. The administrators are tasked to refactor the existing solution and manage the server patching activities effectively, even outside the regular maintenance window.
-
-Which of the following provides the LEAST amount of administrative overhead in managing the server?
-
--   Launch an AWS AppSync environment with a single EC2 instance that runs the Windows Server. Set up the environment with a custom AMI to utilize a hardened machine image that can be downloaded from AWS Marketplace. Configure the AWS Systems Manager Patch Manager to automatically apply the OS updates.
-    
-    (Incorrect)
-    
--   Launch the Windows Server on Amazon WorkSpaces. Use Amazon WorkSpaces Application Manager (WAM) to harden the server and configure the Windows automatic updates to occur every day.
-    
-    (Correct)
-    
--   Launch a hardened machine image from the AWS Marketplace and host the server in AWS Cloud9. Set up the AWS Systems Manager Patch Manager to automatically apply system updates. Use Amazon AppStream 2.0 to act as a bastion host.
-    
--   Launch the server using AWS OpsWorks Stacks and implement a Chef recipe to harden the AMI automatically during instance launch. Set up a combination of Amazon EventBridge and AWS Lambda scheduled event to run the `Upgrade Operating System` stack command to apply system updates.
-    
-
-Explanation
-
-Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as WorkSpaces. WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.
-
-Amazon WorkSpaces Application Manager (Amazon WAM) offers a fast, flexible, and secure way for you to deploy and manage applications for Amazon WorkSpaces with Windows. Amazon WAM accelerates software deployment, updates, patching, and retirement by packaging Microsoft Windows desktop applications into virtual containers that run as though they are installed natively.
-
-![](https://media.tutorialsdojo.com/amazon%20workspaces%20application%20manager.png)
-
-Amazon WAM is fully integrated with the AWS Management Console, and allows you to build an application catalog from your line-of-business applications, third-party applications that you own the license for, and applications purchased through the AWS Marketplace.
-
-It is recommended that you regularly patch, update, and secure the operating system and applications on your WorkSpaces. You can configure your WorkSpaces to be updated by WorkSpaces during a regular maintenance window or you can update them yourself. For applications on your WorkSpaces, you can use any automatic update services provided or follow the recommendations for installing updates provided by the application vendor.
-
-During the maintenance window, the WorkSpace installs important updates from Amazon WorkSpaces and reboots as necessary. If available, operating system updates are also installed from the OS update server that the WorkSpace is configured to use. During maintenance, your WorkSpaces might be unavailable. By default, your Windows WorkSpaces are configured to receive updates from Windows Update.
-
-Hence, the option that says: **Launch the Windows Server on Amazon WorkSpaces. Use Amazon WorkSpaces Application Manager (WAM) to harden the server and configure the Windows automatic updates to occur every day** is correct.
-
-The option that says: **Launch an AWS AppSync environment with a single EC2 instance that runs the Windows Server. Set up the environment with a custom AMI to utilize a hardened machine image that can be downloaded from AWS Marketplace. Configure the AWS Systems Manager Patch Manager to automatically apply the OS updates** is incorrect because the AWS AppSync service is a fully managed service for developing GraphQL APIs, and not for creating an environment with a single Window Server instance.
-
-The option that says: **Launch a hardened machine image from the AWS Marketplace and host the server in AWS Cloud9. Set up the AWS Systems Manager Patch Manager to automatically apply system updates. Use Amazon AppStream 2.0 to act as a bastion host** is incorrect because you cannot serve any machine image using AWS Cloud9. You can use Amazon WorkSpaces for this particular use case.
-
-The option that says: **Launch the server using AWS OpsWorks Stacks and implement a Chef recipe to harden the AMI automatically during instance launch. Set up a combination of Amazon EventBridge and AWS Lambda scheduled event to run the** `**Upgrade Operating System**` **stack command to apply system updates** is incorrect. Although this option is possible, the solution entails a lot of issues and management overhead along the way.
-
-  
-
-**References**:
-
-[https://docs.aws.amazon.com/wam/latest/adminguide/what\_is.html](https://docs.aws.amazon.com/wam/latest/adminguide/what_is.html)
-
-[https://docs.aws.amazon.com/workspaces/latest/adminguide/workspace-maintenance.html](https://docs.aws.amazon.com/workspaces/latest/adminguide/workspace-maintenance.html)
-
-  
-
-**Check out this Amazon Workspaces Cheat Sheet:**
-
-[https://tutorialsdojo.com/amazon-workspaces/](https://tutorialsdojo.com/amazon-workspaces/?src=udemy)
 
 # Question 4: Incorrect
 

@@ -1,13 +1,13 @@
 # Minis
 
-check aws whitepapers
-check https://haxe.org/
-check scratch.io
-go over the windows default firewall rules and understand them.
 
 ASLR? Address Space Layout Randomization
 big ip system?
+check aws whitepapers
+check https://haxe.org/
+check scratch.io
 enable oid resolution?
+go over the windows default firewall rules and understand them.
 Https Meta Referrer tag??
 maxmind database?
 resolve ss7 pcs?
@@ -27,10 +27,7 @@ wireshark statistics
 Intellij
 * Intentions -> Grok into where / how intentions are made.
 * Language Injections -> Grok
-* TextMate Bundles
 * Run Targets
-* WHat is Code Cleanup?
 * Startup Tasks
-
-
-Git force-with-lease?
+* TextMate Bundles
+* WHat is Code Cleanup?

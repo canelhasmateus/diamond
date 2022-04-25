@@ -1,5 +1,3 @@
-
-
 AllJoynRouter?
 App Installer?
 CAptive Portal Flow
