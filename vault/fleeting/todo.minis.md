@@ -1,6 +1,8 @@
 # Minis
 
 
+markdown autocomplete 
+https://franklinjl.org/workflow/
 ASLR? Address Space Layout Randomization
 big ip system?
 check aws whitepapers
