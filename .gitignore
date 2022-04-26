@@ -3,3 +3,6 @@
 .trash/
 .DS_Store
 
+
+**/__pycache__
+**/aggregate

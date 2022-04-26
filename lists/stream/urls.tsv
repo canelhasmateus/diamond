@@ -171,7 +171,7 @@ date	time	kind	url
 2022-04-01	00:00:00	Queue	quantdare.com
 2022-04-01	00:00:00	Queue	quantifiedstrategies.com
 2022-04-01	00:00:00	Queue	quantocracy.com
-2022-04-01	00:00:00	Queue	quantpedia.com ( not all )
+2022-04-01	00:00:00	Queue	quantpedia.com
 2022-04-01	00:00:00	Queue	quastor.org
 2022-04-01	00:00:00	Queue	r.bluethl.net
 2022-04-01	00:00:00	Queue	ralfj.de/blog
@@ -271,7 +271,7 @@ date	time	kind	url
 2022-03-01	00:00:00	explored	http://benanne.github.io
 2022-03-01	00:00:00	explored	http://beyondjava.net
 2022-03-01	00:00:00	explored	http://bjlkeng.github.io
-2022-03-01	00:00:00	explored	http://blog.jetbrains.com				
+2022-03-01	00:00:00	explored	http://blog.jetbrains.com
 2022-03-01	00:00:00	explored	http://blog.openai.com
 2022-03-01	00:00:00	explored	http://calendar.perfplanet.com
 2022-03-01	00:00:00	explored	http://candost.blog
@@ -305,10 +305,10 @@ date	time	kind	url
 2022-03-01	00:00:00	explored	http://oysteing.blogspot.com/
 2022-03-01	00:00:00	explored	http://pythoninsider.blogspot.com
 2022-03-01	00:00:00	explored	http://quantstart.com
-2022-03-01	00:00:00	explored	http://reddit.com/r/DeepLearningPapers				
+2022-03-01	00:00:00	explored	http://reddit.com/r/DeepLearningPapers
 2022-03-01	00:00:00	explored	http://residentmar.io
 2022-03-01	00:00:00	explored	http://sebastianraschka.com
-2022-03-01	00:00:00	explored	http://slack.engineering				
+2022-03-01	00:00:00	explored	http://slack.engineering
 2022-03-01	00:00:00	explored	http://statmodeling.stat.columbia.edu
 2022-03-01	00:00:00	explored	http://stillbreeze.github.io/
 2022-03-01	00:00:00	explored	http://svelte.dev
@@ -324,13 +324,13 @@ date	time	kind	url
 2022-03-01	00:00:00	explored	https://aerotwist.com/blog/
 2022-03-01	00:00:00	explored	https://agustinus.kristia.de/
 2022-03-01	00:00:00	explored	https://anotherdatum.com/
-2022-03-01	00:00:00	explored	https://aperiodical.com/				
-2022-03-01	00:00:00	explored	https://automata88.medium.com/				
+2022-03-01	00:00:00	explored	https://aperiodical.com/
+2022-03-01	00:00:00	explored	https://automata88.medium.com/
 2022-03-01	00:00:00	explored	https://banditalgs.com/
 2022-03-01	00:00:00	explored	https://blog.evjang.com/
 2022-03-01	00:00:00	explored	https://blog.floydhub.com/
 2022-03-01	00:00:00	explored	https://blog.heaphero.io/
-2022-03-01	00:00:00	explored	https://blog.heroku.com/	
+2022-03-01	00:00:00	explored	https://blog.heroku.com/
 2022-03-01	00:00:00	explored	https://blog.paralleldots.com/
 2022-03-01	00:00:00	explored	https://blog.quantinsti.com/
 2022-03-01	00:00:00	explored	https://blogs.princeton.edu/imabandit/
@@ -426,7 +426,7 @@ date	time	kind	url
 2022-03-01	00:00:00	explored	https://www.youtube.com/channel/UCs4aHmggTfFrpkPcWSaBN9g
 2022-03-01	00:00:00	explored	https://www.youtube.com/channel/UCS97tchJDq17Qms3cux8wcA
 2022-03-01	00:00:00	explored	https://www.youtube.com/channel/UCtJPeNYnAXhB1-_h8xbIX_Q
-2022-03-01	00:00:00	explored	https://www.youtube.com/channel/UCv0nF8zWevEsSVcmz6mlw6A				
+2022-03-01	00:00:00	explored	https://www.youtube.com/channel/UCv0nF8zWevEsSVcmz6mlw6A
 2022-03-01	00:00:00	explored	https://www.youtube.com/channel/UCW6MNdOsqv2E9AjQkv9we7A
 2022-03-01	00:00:00	explored	https://www.youtube.com/channel/UCwgN5srGpBH4M-Zc2cAluOA
 2022-03-01	00:00:00	explored	https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw

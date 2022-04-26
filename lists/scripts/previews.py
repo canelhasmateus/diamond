@@ -10,6 +10,11 @@ import requests
 from lxml import etree
 from tqdm import tqdm
 
+RESULT_PATH = pathlib.Path( __file__ ).parent.joinpath( "content.json" )
+
+myList = [
+"https://blog.acolyer.org/2015/03/20/out-of-the-tar-pit/"
+		]
 String = str
 regex = re.compile( r"(.+?)(?=/|$)" )
 
@@ -19,7 +24,7 @@ def toText( e ):
 
 
 def toAttrib( attr, e ):
-	return map( lambda x: x.get(attr), e )
+	return map( lambda x: x.get( attr ), e )
 
 
 def first( *args ):
@@ -27,6 +32,14 @@ def first( *args ):
 		if i:
 			return i
 	return ""
+
+
+def getDuration(html : etree._Element):
+	duration = toAttrib( "content",
+	                      html.xpath( "//meta[@name='duration']" ) )
+
+
+	return first( duration )
 
 def getTitle( html: etree._Element ) -> String:
 	ogTitle = toAttrib( "content",
@@ -43,6 +56,7 @@ def getTitle( html: etree._Element ) -> String:
 	return first(
 			ogTitle, twitterTitle, itemProp,
 			articleTitle, titleFromHead, titleFromAnywhere )
+
 
 def getDescription( html: etree._Element ) -> String:
 	metaDescr = toAttrib( "content",
@@ -81,12 +95,14 @@ def getImage( html: etree._Element ) -> String:
 
 	return first( ogImage, twitterImage, itemProp, headIcon, anyImage )
 
+
 def getDomain( response, html ):
 	url = response.url
 	for pattern in [ r"http://", r"https://", r"www\." ]:
 		url = re.sub( pattern, "", url )
 
 	return re.search( regex, url ).group( 0 )
+
 
 def getHtmlPreview( response ) -> Mapping[ String, String ]:
 	html: etree._Element = etree.HTML( response.content )
@@ -99,12 +115,14 @@ def getHtmlPreview( response ) -> Mapping[ String, String ]:
 			}
 	return preview
 
+
 def retry( f, n ):
 	for i in range( n ):
 		try:
 			return f()
 		except Exception as e:
 			print( e )
+
 
 def isEqual( a: Mapping[ String, String ], b: Mapping[ String, String ] ) -> bool:
 	for aKey, aItem in a.items():
@@ -118,6 +136,7 @@ def isEqual( a: Mapping[ String, String ], b: Mapping[ String, String ] ) -> boo
 		...
 
 	return True
+
 
 def testPreview( url, preview ):
 	expected = None
@@ -142,6 +161,7 @@ def testPreview( url, preview ):
 	if expected:
 		assert isEqual( preview, expected )
 
+
 def getPreview( response ):
 	headers = response.headers
 	content = headers[ "content-type" ]
@@ -152,6 +172,7 @@ def getPreview( response ):
 		return {
 				"url": response.url
 				}
+
 
 def getPreviewFromUrl( url ):
 	doIt = lambda: requests.get( url, headers = {
@@ -165,4 +186,3 @@ def getPreviewFromUrl( url ):
 	if response:
 		res = getPreview( response )
 	return res
-
