@@ -873,3 +873,18 @@ Fast grep for filtering events
 Start-time, end-time, metadata 
     
 
+
+
+____
+
+
+https://towardsdatascience.com/data-analysts-primer-to-slowly-changing-dimensions-d087c8327e08
+
+Slowly changing dimensions
+
+Data warehouusing concept 
+Type 0 : Never Changes
+Type 1 : Only the latest snapshot is recorded, without historical records
+Type 2 : Entire Change history is recorded, through adding rows
+Type 3 : Changes are recorded through adding column ( Rare )
+Type 4 : Current record and history are in separated tables ( )

@@ -570,3 +570,16 @@ ___
 
 
 
+___
+
+
+https://www.youtube.com/watch?v=o5S0-_vniiM
+
+ip has a protocol header, added after the fact as metadata  for better performance / blocking ; 
+
+
+there are multiple path from a source to another destination
+    . its possible a packet takes one route, and another takes a second path
+
+the ip 
+
