@@ -17,3 +17,5 @@ IPSec is easily identifiable.
 
 
 why we can't use mac addresses? because mac addreses are random, that is: there are no routability to them. To send a request to a mac address you'd need to scan the entire internet. 
+
+

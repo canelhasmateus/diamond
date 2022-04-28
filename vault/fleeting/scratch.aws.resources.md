@@ -223,3 +223,17 @@ https://youtu.be/-1S-RdeAmMo
 https://youtu.be/5QBgDX7O7pw
 https://youtu.be/AIdUw0i8rr0
 https://youtu.be/yqNBkFMnsL8
+
+
+
+
+
+https://training.gocloudarchitects.com/courses/cloud-architect-experience-program
+https://www.amazon.com/Enterprise-ENCOR-350-401-Official-Guide/dp/1587145235/ref=sr_1_3?crid=3ARNFDY2VCDW4&dchild=1&keywords=ccnp+enterprise&qid=1623776612&sprefix=CCNP+enter%2Caps%2C156&sr=8-3
+https://www.gocloudarchitects.com/cloud-architect-experience-program/
+https://www.gocloudarchitects.com/free-cloud-webinar/
+https://www.youtube.com/watch?v=-ROt92cKX5c&list=PL0azhNeBK66KNs2TO3D57agMkjG9Vj_qc
+https://www.youtube.com/watch?v=gXca5faMp0o&list=PL0azhNeBK66LMfLE995Bi5-1IMZ524n2f
+https://www.youtube.com/watch?v=Kkq0j9l_flQ&list=PL0azhNeBK66JCgFKbvsJpE4nMkwD1rnsb
+https://www.youtube.com/watch?v=uhvyThRqwVo&list=PL0azhNeBK66LPVPS-fz2-VOK8Re7qKqkU
+https://www.youtube.com/watch?v=ujPJuF_GZso&list=PL0azhNeBK66KSDh_CkEZldot8wq912TFV

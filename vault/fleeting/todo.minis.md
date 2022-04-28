@@ -1,6 +1,15 @@
 # Minis
 
 
+
+vpn concentrations
+internet routing architectures
+server virtualization
+storage
+networkings
+    dns, bgp, routers, switches, 
+dns record types
+Need to better understand storage gateway , POSIX based block storage
 markdown autocomplete 
 https://franklinjl.org/workflow/
 ASLR? Address Space Layout Randomization
