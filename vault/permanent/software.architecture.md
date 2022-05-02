@@ -36,3 +36,10 @@ Another common point of friction for microservices is the challenge of [[ Observ
 
 The sensisitivity of the whole system as a whole increases when moving to microservices. This leads to the creation of techniques such as [[Circuit Breakers]] , [[Breakpressure Mechanisms]] and  [[Load Balancing]], that are often related to such architectures. 
 
+
+
+
+___
+
+Using only 1 Availability Zone , its possible to achieve 99.9% Availability. With 2 Availability Zones, 99.99% is achievable, and for more availability, even more are necessary. 
+Always use at least 2 Availability Zones

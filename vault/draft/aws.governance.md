@@ -63,6 +63,29 @@ Tagging
 		Watchout for tamification of future-changes when editing tags.
 
 
+AWS Config
+    . Watches the account configuration
+    . Does not impede anything, just notifies.  
+
+AWS Organization 
+    SCP
+        . Determine what services and actions can be delegated by administrators to the users and roles in the applied accounts.
+        . Blocks every access that is not explictly allowed or that is explictly denied
+    
+
+Tags
+    . Aws offers a varierty of tools to help you implement proactive tag governance by ensuring that tags are consistently applied when resources are created
+
+    . Cloudformation has the Resource Tags Properties.
+
+    . Aws Service Catalog 
+
+
+AWS Service Catalog
+    . Creates and manage catalogs of services ; 
+    .. Enables self-service capability for users
+
+
 
 # Cost
 
@@ -125,5 +148,7 @@ Cost Considerations
         .. Completely Managed
         .. Use it alongside KMS
 ___
+
+
 
 

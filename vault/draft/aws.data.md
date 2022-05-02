@@ -51,23 +51,3 @@ QuickSight
 ...
 
 
-
-Redshift
-
-	. What is Amazon Redshift
-		. Fully managed petabyte-scale data warehousing service
-		. Create a cluster ( consists of node , one of which is a leader, and one or more compute )
-			. Use SQL Tools to connect to the Leader Node.
-			. Compute Node execute queries
-
-	. What are the features
-		. Enhanced VPC Routing
-			.. Ensure all COPY and UNLOAD traffic between the cluster and data repositories via VPC.
-
-		. VPC Security groups, NACL, VPC Endpoints
-		. Make use of Reserved Node offerings for redshift -> Like reserved instances.
-		. Point in time snapshots
-		. Automated snapshots are stored in S3.
-		. Retained till the retained period. Manual ones are allowed to be older.
-		. Snapshots incur additional storage costs.
-

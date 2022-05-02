@@ -11,7 +11,7 @@ To implement the stateless protocol, the original creators of the http protocol 
 
 
 This was necessary to abstract away the underlying transport protocol, since it doesn't necessarily supports  multiple requests at the  same time.
-
+	
 [[theory]] This Was  also done to save [[memory]], since long running [[networking.tcp]] connections take up memory
     . . Is this true?
     .. only long runningw? why? [[expand]]

@@ -306,3 +306,8 @@ S3
     ![](2022-04-17-18-16-46.png)
 
 
+
+
+S3
+    . Tied to S# BLock Public Access -> In conflicts, applies the most restrictive one.
+

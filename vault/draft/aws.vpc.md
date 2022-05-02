@@ -894,3 +894,8 @@ Routing Strategies
 	### What are all the routing policies inside the route53?
 
 ___
+
+
+Network
+    . Traffic Monitoring is a thing. 
+    . VPC Flow logs only contain layer 4 information.

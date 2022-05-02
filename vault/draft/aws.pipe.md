@@ -189,3 +189,9 @@ SQS
 
 
 
+
+___
+
+        . ETL
+            .. Needed to exchange data between the various storages 
+            .. AWS Glue

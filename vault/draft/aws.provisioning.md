@@ -72,3 +72,11 @@ AWS Nitro Enclaves exist.
 
 
 AppStream supports federated sign-in using SAML 2.0
+
+
+
+
+Amazon Workspaces
+    . Managed Desktop
+    . Can be Automated by the Amazon Workspace Manager
+

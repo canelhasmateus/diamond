@@ -1,10 +1,9 @@
-Identifity and acces management
+IAM
 
-Manage the acces to the different resources and services in a secure manager
-describe who is authorized to access well
+Manage the access to the different resources and services in a secure manner
 Integrates to all services
 
-Pricipals and Entities
+Principals and Entities
 	Principals: Person / application who can call for an action or operation in a resource
 		. It is authenticated as a root user or an IAM Entity
 
@@ -214,3 +213,115 @@ In order to remove a member account from an organization ,
     .. Enable IAM user access to billing in the member account
     .. Make sure it has the required information to operate as a standaolne account.
 
+
+
+
+
+```mermaid
+
+sequenceDiagram
+    
+    
+    Browser->IDP: Username | Password
+    IDP->LDAP: Validate
+    LDAP->IDP: Credential
+    IDP->Browser:SAML Assertion
+    Browser->SSO:SAML Assertion
+    SSO->STS:Create Token
+    SSO->Browser:Redirect 
+
+
+```
+
+
+
+    . IAM
+        .. Identity Access Management.
+        .. Authentication, Authorization, and Accountability
+
+        .. Users
+            ... Is a person, who will receive access to specific resources.
+        .. Principal
+            ... An IAM entity who has access
+        .. Root
+            ... The main user created with the account
+        .. Group
+            ... Means to create a policy for a certain set of people.
+        .. Roles
+            ... Almost always, is a system ( service account ).
+            ... Can be assumed by others systems and persons
+            ... Short term credentials
+            ... Can be Cross-Account / Federated.
+                :> Be the most granular possible.
+
+        .. Tokens
+            ... Temporary. from 6 minutes to 36 hours
+            ... Longer duration means better performance, but lower security.
+            ...  
+
+        .. Single Sign On
+            ... Auth to multiple places using a single set of credentials
+
+
+___
+
+.. Cognito
+            ... Synchronize Identity management
+            ... Can use Facebook or google, etc
+            ... Can use with guest accounts as well
+            ... Use Logs into Identity provider, which returns a Session Key. Application sends a getId, and cognitio validates it. If irs valid, cognito returns a unique identifier. Sending it , it will be validated against the ;
+
+        .. AWS Directory Service ( Managed AD. )
+
+        .. Authentication
+            ... User name and Password
+            ... Access Key ( usually via API )
+            ... Access Key + Session Token
+        .. Authorization
+            ... Policies ( User, Groups , Roles )
+                :> THey have an implicit deny. 
+                :> What is the best way to do it? 
+                :> AWS has some good managed policies
+                    ::> Provides some 'pre-set' common use cases.
+                :> Can create your own policies
+                    ::> Copy and tune a pre-existing
+                    ::> Policy Generator
+                    ::>  
+
+
+
+
+
+
+AWS COGNITO
+
+	Provides authentication and authorization for web and moible app
+
+	Identity Provider , define users, allow users to perform actions
+	Users can sign in with a user name and paswword or via third party such as google and facebook,
+	Create user pools or identity pools.
+
+	User Pools:
+		. Service automatically provides signup and signin services
+		. Users buildtin UI for sign in
+		. User other signin providers
+		. Directory management and user profile management
+		. Enable MFA
+
+
+___
+
+Cognito : Identity Pools vs User pools
+
+...
+
+
+
+...
+
+https://aws.amazon.com/identity/federation/
+Identity Federation is a system of trust between two parties for the purpose of authenticating users and conveying information needed to authorize their access to resources. In this system, an identity provider is responsible for user authentication, and a service provider controls access to resources. By agreement and configutarion the SP trusts the IdP to authenticate users . After authenticating a user, the idp sends the sp a message ( called an ssertion ) containing the uyser's sign-in name and other attributes that the SP needs to stablish a session with the user and to determine the scope of resource access that the SP should grant. 
+
+
+
+...

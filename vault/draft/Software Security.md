@@ -64,3 +64,21 @@ ___
 
 
 
+
+
+Securing against attacks
+	
+[[MitM]]
+* Configure DNSSec in [[Route53]]
+* Use [[SSL]] certificates in application load balancer
+			
+
+[[DDOS]]
+
+* Enable AWS Shield Advanced: It provides a AWS DDoS Response Team, as well as a Global Threat Environment of the attacks
+* Use Larger Instances and swallow the requests. Use 25 gb network interfaces and enhanced networking.
+* Use Load Balancers, Ensuring that only well formed web requests are routed.
+* Use CloudFront to distribute content, accepting only  well formed connections and using Edge locations to reduce load
+
+* Use the Web Application Firewall: Integrates with CloudFront and Load Balancers. 
+

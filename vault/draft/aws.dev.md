@@ -1,5 +1,3 @@
-
-
 AWS Code Commit
     - VCS Control service
     Primarily used by developers to store and version their code
@@ -34,9 +32,6 @@ CodePipeline
     Source ( CodeCommit )
     Build ( CodeBuild )
     Deploy ( CodeDeploy )
-
-
-
 
 
 Blue Green Deployments
