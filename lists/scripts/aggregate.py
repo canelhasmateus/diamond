@@ -54,5 +54,12 @@ def generate_aggregate():
 
     
 if __name__ == "__main__":
-    generate_aggregate()
+    try:
+
+        generate_aggregate()
+    
+    except Exception as e:
+        print( e )
+    
+    input()
     
