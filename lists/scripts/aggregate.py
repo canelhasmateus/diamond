@@ -1,3 +1,4 @@
+from traceback import format_exc, print_exc
 import pandas as pd
 import pathlib
 import json
@@ -6,10 +7,10 @@ from tqdm.auto import tqdm
 
 sys.path.append( "." )
 from previews import getPreviewFromUrl
-from lists import articles, aggregates, urls
 
 def iterate_history_kinds( path ):
-    df = pd.read_csv( path , sep="\t")
+    
+    df = pd.read_csv( path , sep="\t" ,  engine = "python")
     df = df.sort_values( ["date" , "time"] )
     df = df.drop_duplicates("url" , keep="last")
     
@@ -20,7 +21,6 @@ def iterate_history_kinds( path ):
 
         subsection = subsection[["date", "url"]]
         yield kind , subsection
-        
 
 def normalize_url( url ):
     return url.strip()
@@ -37,12 +37,17 @@ def download_missing_previews( df ) :
                             position= 0 , leave = True):
         url = row["url"]
         if url not in previews:
-            previews[ url ] = getPreviewFromUrl( url )
+            try:
+                previews[ url ] = getPreviewFromUrl( url )
+            except Exception as e:
+                pass
+                # print( e )
+                
 
     json.dump( previews, open( preview_path, "w" ) )
     return previews
 
-def generate_aggregate():
+def generate_aggregate( articles , urls , aggregates ):
         
     for kind , df in iterate_history_kinds( articles ):
         download_missing_previews( df )
@@ -52,14 +57,4 @@ def generate_aggregate():
         download_missing_previews( df )
         df.to_csv( aggregates / f"urls{kind}.tsv" , sep="\t" , index=False)
 
-    
-if __name__ == "__main__":
-    try:
-
-        generate_aggregate()
-    
-    except Exception as e:
-        print( e )
-    
-    input()
     
