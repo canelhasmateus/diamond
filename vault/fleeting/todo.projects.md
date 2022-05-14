@@ -1,19 +1,17 @@
 # Projects
 
-
-Terminal    
+Terminal
     Powershell
     Alacrity
 
 Environment
-    Linux 
+    Linux
     Vim
 
 Self
     Quantified
     AWS
     Zettelkasten
-
 
 # Random
 

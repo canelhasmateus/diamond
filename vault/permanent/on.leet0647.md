@@ -1,4 +1,4 @@
-https://leetcode.com/problems/palindromic-substrings/
+<https://leetcode.com/problems/palindromic-substrings/>
 
 647\. Palindromic Substrings
 
@@ -30,16 +30,14 @@ Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 
 **Constraints:**
 
--   `1 <= s.length <= 1000`
--   `s` consists of lowercase English letters.
+- `1 <= s.length <= 1000`
+- `s` consists of lowercase English letters.
 
+This is a problem in which we'll explore structure.
+there are multiple ways to use structure to solve problems.
 
-This is a problem in which we'll explore structure. 
-there are multiple ways to use structure to solve problems. 
-
-A very common one, however, is using composition: 
+A very common one, however, is using composition:
 > Break down a large structure into smaller blocks.
-
 
 <style>
 
@@ -64,23 +62,22 @@ A very common one, however, is using composition:
 Breaking big problems into smaller ones, then solving them separately is the essence of dynamic programming.
 </div>
 
-
-Note, however, that we can do the exact opposite, that is:   
-> Assemble a large structure starting from its components. 
+Note, however, that we can do the exact opposite, that is:
+> Assemble a large structure starting from its components.
 
 <br></br>
 
 <div class="alert alert-success">
-In general, recognize a terminal case , and build from there. 
+In general, recognize a terminal case , and build from there.
 </div>
 
-
-This is what we're going to explore in this problem. 
+This is what we're going to explore in this problem.
 <br></br>
 
 #
 
-## 
+##
+
 A palindrome is always composed of other palidromes:
 <br></br>
 
@@ -173,18 +170,18 @@ That means that the only way to get an palyndrome is to add letters around a sin
 We can visualize this as a matrix of "Reachability".
 
 Consider each row as a 'starting index' and each
-column as a 'ending index'. 
+column as a 'ending index'.
 Each entry will hold a boolean value , denoting if the substring formed by indexing the source word with the corresponding indexes is a palyndrome or not.
 
-
 The main diagonal of this matrix will refer to each
-individual letter and hold the value true, since a single letter is a palyndrome. 
+individual letter and hold the value true, since a single letter is a palyndrome.
 
-# 
+#
+
 <div>
 
 <style type="text/css">
-    /* Main Diag */
+    /*Main Diag*/
     .reachability tbody tr:nth-child(1) td:nth-child(2),
     .reachability tbody tr:nth-child(2) td:nth-child(3),
     .reachability tbody tr:nth-child(3) td:nth-child(4),
@@ -197,12 +194,11 @@ individual letter and hold the value true, since a single letter is a palyndrome
         background-color: rgb(150, 50, 50);
     }
 
-    /* Off Diag */
+    /*Off Diag*/
 
     .reachability tbody tr:nth-child(4) td:nth-child(7) {
         background-color: rgb(125, 50, 75);
     }
-
 
     .reachability tbody tr:nth-child(3) td:nth-child(8) {
         background-color: rgba(100, 50, 100);
@@ -212,18 +208,16 @@ individual letter and hold the value true, since a single letter is a palyndrome
         background-color: rgba(75, 50, 125);
     }
 
-
     .reachability tbody tr:nth-child(1) td:nth-child(10) {
 
         background-color: rgb(50, 50, 150);
     }
 
-    /*  Borders */
+    /*Borders*/
     .reachability,
     .reachability thead tr th,
     .reachability tbody tr td {
 
-        
         border: 1px solid rgba(255, 255, 255, 0.1);
         text-align: center;
 
@@ -236,8 +230,7 @@ individual letter and hold the value true, since a single letter is a palyndrome
 
     td {
         height: 7vw;
-        /* width: 8vw; */
-
+        /*width: 8vw;*/
 
     }
 </style>
@@ -370,9 +363,7 @@ individual letter and hold the value true, since a single letter is a palyndrome
 </table>
 </div>
 
-
 #
-
 
 Note that because every palyndrome MUST be made by
 adding letters around a pre-existing palyndrome,
@@ -382,11 +373,10 @@ checking all possible palyndromes amounts to checking every neighbor ( top, righ
 
 What makes this process possibly complicated, however, is the manner in which we choose to check these neighbors. Note that some cells are neighboring many entries, and would be counted twice is a naive approach.
 
-
 Here we paint in gray all the cells that are checked. With dotted white borders are the cells that would be checked twice: at the same time, they're above and to the right of a existing palyndrome.
 
 <style type="text/css">
-    /* Main Diag */
+    /*Main Diag*/
     .reachability2 tbody tr:nth-child(1) td:nth-child(2),
     .reachability2 tbody tr:nth-child(2) td:nth-child(3),
     .reachability2 tbody tr:nth-child(3) td:nth-child(4),
@@ -400,11 +390,9 @@ Here we paint in gray all the cells that are checked. With dotted white borders 
         background-color: rgb(150, 50, 50);
     }
 
-
     .reachability2 tbody tr:nth-child(4) td:nth-child(7) {
         background-color: rgb(125, 50, 75);
     }
-
 
     .reachability2 tbody tr:nth-child(3) td:nth-child(8) {
         background-color: rgba(100, 50, 100);
@@ -413,7 +401,6 @@ Here we paint in gray all the cells that are checked. With dotted white borders 
     .reachability2 tbody tr:nth-child(2) td:nth-child(9) {
         background-color: rgba(75, 50, 125);
     }
-
 
     .reachability2 tbody tr:nth-child(1) td:nth-child(10) {
 
@@ -447,15 +434,13 @@ Here we paint in gray all the cells that are checked. With dotted white borders 
         background-color: rgb(255, 255, 255, 0.2);
     }
 
-    /* Off Diag */
+    /*Off Diag*/
 
-
-    /*  Borders */
+    /*Borders*/
     .reachability2,
     td,
     th {
 
-        
         text-align: center;
 
     }
@@ -467,7 +452,6 @@ Here we paint in gray all the cells that are checked. With dotted white borders 
 
     td {
         height: 8vw;
-
 
     }
 </style>
@@ -603,9 +587,8 @@ Here we paint in gray all the cells that are checked. With dotted white borders 
 To avoid this double checking, instead of looking at the top, right and diag, we look only at the diag. This makes us miss the palydromes to the right, so we explicitly check for them.
 Since the whole grid can be tiled by the combination of these two diagonals, we can be sure that we covered every possibility.
 
-
 <style type="text/css">
-    /* Main Diag */
+    /*Main Diag*/
     .reachability4 tbody tr:nth-child(1) td:nth-child(2),
     .reachability4 tbody tr:nth-child(2) td:nth-child(3),
     .reachability4 tbody tr:nth-child(3) td:nth-child(4),
@@ -619,8 +602,8 @@ Since the whole grid can be tiled by the combination of these two diagonals, we 
         background-color: rgb(150, 50, 50);
     }
 
-    /* Block paint */
-    
+    /*Block paint*/
+
     .reachability4 tbody tr:nth-child(1) td:nth-child(4),
     .reachability4 tbody tr:nth-child(2) td:nth-child(5),
     .reachability4 tbody tr:nth-child(3) td:nth-child(6),
@@ -628,25 +611,25 @@ Since the whole grid can be tiled by the combination of these two diagonals, we 
     .reachability4 tbody tr:nth-child(5) td:nth-child(8),
     .reachability4 tbody tr:nth-child(6) td:nth-child(9),
     .reachability4 tbody tr:nth-child(7) td:nth-child(10) {
-        
+
         background-color: rgb(255, 255, 255, 0.2);
 
     }
-    
+
     .reachability4 tbody tr:nth-child(1) td:nth-child(6),
     .reachability4 tbody tr:nth-child(2) td:nth-child(7),
     .reachability4 tbody tr:nth-child(3) td:nth-child(8),
     .reachability4 tbody tr:nth-child(4) td:nth-child(9),
     .reachability4 tbody tr:nth-child(5) td:nth-child(10){
-        
+
         background-color: rgb(255, 255, 255, 0.05);
 
     }
-    
+
     .reachability4 tbody tr:nth-child(1) td:nth-child(8),
     .reachability4 tbody tr:nth-child(2) td:nth-child(9),
     .reachability4 tbody tr:nth-child(3) td:nth-child(10){
-    
+
         background-color: rgb(255, 255, 255, 0.01);
 
     }
@@ -661,7 +644,6 @@ Since the whole grid can be tiled by the combination of these two diagonals, we 
     .reachability4 tbody tr:nth-child(8) td:nth-child(10)
      {
         border: 2px dotted rgba(255, 255, 255, 1);
-        
 
     }
 
@@ -673,7 +655,6 @@ Since the whole grid can be tiled by the combination of these two diagonals, we 
     .reachability4 tbody tr:nth-child(6) td:nth-child(10)
      {
         border: 2px dotted rgba(255, 255, 255, 0.5);
-        
 
     }
     .reachability4 tbody tr:nth-child(1) td:nth-child(7),
@@ -682,28 +663,23 @@ Since the whole grid can be tiled by the combination of these two diagonals, we 
     .reachability4 tbody tr:nth-child(4) td:nth-child(10)
      {
         border: 2px dotted rgba(255, 255, 255, 0.3);
-        
 
     }
     .reachability4 tbody tr:nth-child(1) td:nth-child(9),
     .reachability4 tbody tr:nth-child(2) td:nth-child(10)
      {
         border: 2px dotted rgba(255, 255, 255, 0.2);
-        
 
     }
 
-    
+    /*Off Diag*/
 
-    /* Off Diag */
-
-
-    /*  Borders */
+    /*Borders*/
     .reachability4,
     td,
     th {
 
-        /* border-collapse: collapse; */
+        /*border-collapse: collapse;*/
         border: 1px solid rgba(255, 255, 255, 0.1);
         text-align: center;
 
@@ -717,7 +693,6 @@ Since the whole grid can be tiled by the combination of these two diagonals, we 
 
     td {
         height: 8vw;
-
 
     }
 </style>
@@ -849,12 +824,8 @@ Since the whole grid can be tiled by the combination of these two diagonals, we 
     </tbody>
 </table>
 
-
 #
 
 There are parallels that can be traced to laplacian methods, in which we translate the original problem into coordinates that inately satisfy the bounds when transformed back.
 
 This can be seen as a coordinate transformation ( from row : column to evenness:radius , where evenness denotes if we're in a even or odd diagonal. )
-
-
-    

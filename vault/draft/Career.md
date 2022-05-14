@@ -1,8 +1,7 @@
 
 hat recruiters really look for in a backend engineer
 
-
-the hype trains usually die very quickly , around a year or two 
+the hype trains usually die very quickly , around a year or two
     , learning it just to get hired means you're not passionate about that specific topic
 
     proxy / reverse proxy / load balancers
@@ -18,4 +17,3 @@ the hype trains usually die very quickly , around a year or two
     haproxy
         active - active?
         keep-alive?
- 

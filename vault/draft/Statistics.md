@@ -1,5 +1,4 @@
-Dirichlet distribution 
-
+Dirichlet distribution
 
 A distribution over probability distributions
     kinda like a generalized multinomial distribution?
@@ -8,15 +7,13 @@ prior distribution over pmfs
 
 ___
 
-
-
 Kernel Methods
 
-a class of algorithms for pattern analysis. 
-    . Find and study general types of relations 
-    . usually, the raw data is explicitly transformed into a feature vector via a user-specified feature map. Kernel methods require only a user-specified kernel, that is, a similarity function over pair of data points in raw representation. 
+a class of algorithms for pattern analysis.
+    . Find and study general types of relations
+    . usually, the raw data is explicitly transformed into a feature vector via a user-specified feature map. Kernel methods require only a user-specified kernel, that is, a similarity function over pair of data points in raw representation.
 
-Kernel functions operate in a high-dimensional , implicit feature space without ever computing that space, but rather, the inner products between the images of all pairs of data in the feature space. This is called the Kernel Trick. 
+Kernel functions operate in a high-dimensional , implicit feature space without ever computing that space, but rather, the inner products between the images of all pairs of data in the feature space. This is called the Kernel Trick.
     . Gaussian Proccesses
     . PCA
     . Spectral Clustering
@@ -25,15 +22,14 @@ Kernel functions operate in a high-dimensional , implicit feature space without 
     . Inverse distance weighting
     Usually based on convex optimizatoin and eigenproblems, are statiscially well founded
         . rademacher complexity?
-        . Mercer's condition?  > associates a inner product to any positive definite matrix? 
+        . Mercer's condition?  > associates a inner product to any positive definite matrix?
         . counting measure?
 
-            
 "Rather than learning some fixed set of parameters corresponding to the features of their inputs, they instead "remwember" the ith training example and learn for it a corresponding weight. predicition, them is treated by the application of a similarity function ( kernel ) between the unlabeled input and each of the trainin inputs
     . Isn't this what K-neighbors does??
 
-Gram Matrix ( sometimes called a kernel matrix ) must be apositive semi-definite ; 
-    . If the kernel function is also a covariance function as used in gaussian processes, the gram matrix can also be called a covariance matrix. 
+Gram Matrix ( sometimes called a kernel matrix ) must be apositive semi-definite ;
+    . If the kernel function is also a covariance function as used in gaussian processes, the gram matrix can also be called a covariance matrix.
     Examples
         Fisher Kernels
         Graph Kernels
@@ -44,15 +40,14 @@ Gram Matrix ( sometimes called a kernel matrix ) must be apositive semi-definite
         neural tangent kernel
         neural network gaussian process kernel
 
-
 Usually, inner products produce a scalar output. What if we make it return a vector ionput?
-    . Kernel methods for vector output. 
-    . Can them compose then. 
+    . Kernel methods for vector output.
+    . Can them compose then.
     Examples
-        co-krigin . 
+        co-krigin .
     "Multi-label classification can be interpreted as mapping inputs to binary coding vectors with length equal to the number of classes."
     In gaussian processes ,multiple output functions correspond to considering multiple processes
-    
+
     * Reproducing kernelk hilbert space?? 
     * . ATikhonov regularization?
 
@@ -60,42 +55,38 @@ Usually, inner products produce a scalar output. What if we make it return a vec
         minimizer {\displaystyle f^{*}}f^{*} of a regularized empirical risk functional defined over a reproducing kernel Hilbert space can be represented as a finite linear combination of kernel products evaluated on the input points in the training set data.
         ??
 
-
 Cover's theorem is a statement in computational learning theory and is one of the primary theoretical motivations for the use of non-linear kernel methods in machine learning applications. The theorem states that given a set of training data that is not linearly separable, one can with high probability transform it into a training set that is linearly separable by projecting it into a higher-dimensional space via some non-linear transformation. The theorem is named after the information theorist Thomas M. Cover who stated it in 1965. Roughly, the theorem may be stated as:
 
 A complex pattern-classification problem, cast in a high-dimensional space nonlinearly, is more likely to be linearly separable than in a low-dimensional space, provided that the space is not densely populated.
 
 __
 
-
-https://www.anishathalye.com/2015/03/07/designing-a-better-judging-system/
-
+<https://www.anishathalye.com/2015/03/07/designing-a-better-judging-system/>
 
 Most judging methods are themselves flawed
     . There are constraints in the numbers of judges, and the amount of time there is for judging to take place; Given the constraints, how we produce the highest quality judging results possible?
         .. Isn't this what i'm doing with my read laters?
-    
+
     . Instead of juding producing absolute scores, perform pairwise copmarisons. 
-     
-. Average 
+
+. Average
     Judge A gives X a 7/ 10 ; Judge B gives a 4/10. What does that mean? is x objectively better than y? or is judge b harsher than a?
 . Normalizing
     Improvement over average by normalizing judges scores ( by mean and std ).
-        . Judges look at a tiny fraction of the entries. 
+        . Judges look at a tiny fraction of the entries.
 
 assigning numerical scores to entries is not a task that people are good at.
-    . Judging the first entry, judges have no context and nothing to compare it to when assigning a score. After many entries, judges outlook may change - results aren't independent of the order they're judged. 
+    . Judging the first entry, judges have no context and nothing to compare it to when assigning a score. After many entries, judges outlook may change - results aren't independent of the order they're judged.
 
-Pairwise comparison, on the otherhand, is something we're good at. 
-    . We won't necessarily have a copmarison data between every pair of entries . We just do not want disjoint sets of entries that are never even indirectly compare to each other. 
+Pairwise comparison, on the otherhand, is something we're good at.
+    . We won't necessarily have a copmarison data between every pair of entries . We just do not want disjoint sets of entries that are never even indirectly compare to each other.
 
     . Luce's choice axiom ???
 
     . How to turn the measurements into judging reults?
 
-
-"Any pair of entries may be compared with each other zero or more times, and jusges may have conflicting opinions about the comparative quality of entries. " 
-    . We can think of the measuresments as a directed graph on nodes , having non-negative integer edge weights derived from the number of times End was judged better than Ej -> Arrows point to better entries. 
+"Any pair of entries may be compared with each other zero or more times, and jusges may have conflicting opinions about the comparative quality of entries. "
+    . We can think of the measuresments as a directed graph on nodes , having non-negative integer edge weights derived from the number of times End was judged better than Ej -> Arrows point to better entries.
 
     . Can also think of representation of the data that follows from the graph representation. 
 
@@ -119,14 +110,7 @@ Pairwise comparison, on the otherhand, is something we're good at.
         . "Instead of dispatching judges randomly, it assigns judges in such a way that maxizes expected information gain ; also updates rankinns efficiently in an online manner, taking o(1) to process single votes and O(n) to tell a judge where to go next 
         https://www.anishathalye.com/2015/11/09/implementing-a-scalable-judging-system/"
 
-
-
-
-
-
 ___
-
-
 
 Sampling methods
 
@@ -157,22 +141,13 @@ Sampling methods
                 . ( What are good samples ? )
             Too Easy - Overused / used innapropriately
                 . Not a cure all elixir.
-            
-                
-
-
 
 ___
 
-
-
-
-
 Variational inference
 
-
-Latent Varibles are hidden and cannot be observed. 
-    . Intelligence 
+Latent Varibles are hidden and cannot be observed.
+    . Intelligence
     . Health
 However, we can infer latent variables by exploiting the observed variables.
     . Raven's Progressive Matrices
@@ -182,40 +157,36 @@ However, we can infer latent variables by exploiting the observed variables.
 
 Considering latent variables Z and observed variables X. ]
 We suppose that the latent variable causes the observed variable, that is: Z -> X.
-    . In a bayesian treatment, we would imply that latent variables govern the distribution of the data. 
+    . In a bayesian treatment, we would imply that latent variables govern the distribution of the data.
     . In particular, we would draw the latent variables from a prior density P(z) and relate them to the observations through the likelihood P( X|Z)
 
-
-Our goal is to perform inference, that is. Estimate Some hIdden variable given some observation. 
+Our goal is to perform inference, that is. Estimate Some hIdden variable given some observation.
     Infer Health given medical examinations
-    Infer Inteligence given tests. 
+    Infer Inteligence given tests.
 More Formally, we want to infer
-    P( Z|X) => P( Z , X) / P( X ) 
+    P( Z|X) => P( Z , X) / P( X )
         . Why is this the case? WHat is the intuition of each of these terms? [[expand]]
         . How is this calculated? Isn't Z unobserved? [[expand]]
 
 This is not always possible. P( X ) = Integral ( P(Z,X) * dZ)
-    . Integrate over all the configurations of the latent variables, which has excponential cost in regards to the number of variables, becoming intractable very quickly. 
-
+    . Integrate over all the configurations of the latent variables, which has excponential cost in regards to the number of variables, becoming intractable very quickly.
 
 Variational Bayesian Methods
 
-Since P( X ) is intractable, we can approximate the true posterior P( Z | X ) by using a variational distribution Q(Z) 
-    . Also called guide. 
+Since P( X ) is intractable, we can approximate the true posterior P( Z | X ) by using a variational distribution Q(Z)
+    . Also called guide.
     . We use P to denote the true distribution and Q to denote the approximated distribution
 
-Define a Family of distributions Q from with we are going to pick the ideal candidate, that better fits the true distribution P. 
-We usually use a friendly distribution family, such as gaussians to simplify our life. 
-Its Parameters are grouped in a vector Theta, so in practice we're looking for a Theta* that minimies the discrepance between Q* and P. 
-Tehta and Z are often grouped toegher and called unobvserved variables. 
+Define a Family of distributions Q from with we are going to pick the ideal candidate, that better fits the true distribution P.
+We usually use a friendly distribution family, such as gaussians to simplify our life.
+Its Parameters are grouped in a vector Theta, so in practice we're looking for a Theta*that minimies the discrepance between Q* and P.
+Tehta and Z are often grouped toegher and called unobvserved variables.
 How to fide the best Q*?
     . Need a measure of similarity between p and q that we can use as a metric during our search
         .. We Use the Killabck-Leibler Divergence
 
+The KL Div can be used to measure the smimilarity between tw distribitutions.
 
-
-The KL Div can be used to measure the smimilarity between tw distribitutions. 
-    
     . Non Negative
     . Not Symetric. 
         .. Doesn't satisfy the triangle inequality
@@ -229,35 +200,26 @@ The KL Div can be used to measure the smimilarity between tw distribitutions.
 
 How can we measure the similarity between KL( Q( Z ) , P(Z|X)) if we can't estimate P( Z | X ) in the first plance?
 
-
-We can rewrite this equation such that 
+We can rewrite this equation such that
     KL( Q( Z ) , P(Z|X)) = Eq[ log( q(z)) - log*p(x,z)] + log( p ( x ))
 which means
     Eq[ log( p(x,z) ) -  log( q(z))  ] = log( p( x )) - KL( Q( Z ) , P(Z|X))
 
-we can then just maximize the tractable quantity on the left.  This means we're maximizing log( p(x)) while minimizing KL( ... ). 
+we can then just maximize the tractable quantity on the left.  This means we're maximizing log( p(x)) while minimizing KL( ... ).
 
-Since KL( ... ) is always positive, the quantity we're maximizing is a lower-bound for the log-evidence. We call this the Evidence Lower Bound. 
-    
+Since KL( ... ) is always positive, the quantity we're maximizing is a lower-bound for the log-evidence. We call this the Evidence Lower Bound.
+
     ELBO( Q ) = Eq[ log( p( x, z)) - log( q(z))] = Eq[     log( p(x,z)  / q(z))   ]
-
-
-
 
 Variational Inference focuses on optimization instead of integration, and can be applied to many probabilistic models. Is numerally stable and fast to converge.
 
-            
-        
-
-
-
-https://mpatacchiola.github.io/blog/2021/01/25/intro-variational-inference.html
-https://www.shakirm.com/papers/VITutorial.pdf
+<https://mpatacchiola.github.io/blog/2021/01/25/intro-variational-inference.html>
+<https://www.shakirm.com/papers/VITutorial.pdf>
 
 #
 
 Statistical Inference
-    Any mechanism by which we deduce the probabilities in our model based on data. 
+    Any mechanism by which we deduce the probabilities in our model based on data.
 
     Inference links the observced data with our statiscal assumptions adn allows us to ask questions of our data: predicitions visualizatrion and model selection. 
 
@@ -286,11 +248,7 @@ Inference Methods
     Cavity Methods
     Variational Methods
 
-
-
-
 ____
-
 
 The golem has more power than its creator. It can do for them what they cannot do for themselves. But it has no itent of its own, and unless you're extremly precise with your instructions, they can be dangerous.
 
@@ -299,62 +257,53 @@ The golem has more power than its creator. It can do for them what they cannot d
 No causes in ; No causes out
 ...
 
-
 Causal Inference
-	
-	More Than association between variables
+ 
+ More Than association between variables
 
-		Prediction of intervention
-		Imputation of Missing Observations ( unobserved conterfactual outcomes )
+  Prediction of intervention
+  Imputation of Missing Observations ( unobserved conterfactual outcomes )
 ...
-
 
 What Function describes these points?
-	( Fitting, compression )
+ ( Fitting, compression )
 What function explains these points?
-	( Causal Inference )
-What would happen if we change a points mass 
-	( Intervention )
+ ( Causal Inference )
+What would happen if we change a points mass
+ ( Intervention )
 What is the next observation from the same proccess?
-	( prediction )
-
+ ( prediction )
 
 Importance Sampling
-	. Improbable points contribute more information
-	. Tends to be unreliable, has high variance
-	. Pareto-smoothed importance sampling ( PSIS ) mopre stable
-	. Useful diagnostics 
-	. Identifies important ( high leverage ) points ( "outliers" )
+ . Improbable points contribute more information
+ . Tends to be unreliable, has high variance
+ . Pareto-smoothed importance sampling ( PSIS ) mopre stable
+ . Useful diagnostics
+ . Identifies important ( high leverage ) points ( "outliers" )
 
 Akaike information criterion
-	. Estimate Information-theoretic measure of predictive accuracy ( K-L Distance)
+ . Estimate Information-theoretic measure of predictive accuracy ( K-L Distance)
 
-	. For flat priors and large samples:
-		AIC = ( -2 ) x lppd + 2*k
-				|		|	   |---> Number of parameters
-				|       |
-				|		|----------> Log Pointwise predictive density.
-				|
-				|------------------> Scaling parameter
+ . For flat priors and large samples:
+  AIC = ( -2 ) x lppd + 2*k
+    |  |    |---> Number of parameters
+    |       |
+    |  |----------> Log Pointwise predictive density.
+    |
+    |------------------> Scaling parameter
 
 Widely applicable Information criteria
-	. AIC of historical interest now 
-	. Very similar to PSIS score, but no automatic diagnostics
+ . AIC of historical interest now
+ . Very similar to PSIS score, but no automatic diagnostics
 
 ...
-
 
 Dropping outliers is bad: Just ignores the problem; predictions are still bad!
 
 It's the model that's wrong, not the data
-	First, quantify influence of each point
-	Second, use a mixture model ( robust regression )
-
-
+ First, quantify influence of each point
+ Second, use a mixture model ( robust regression )
 
 "you'd find that their tails are much much ticker than the normal distribution  expects. And thats because the distribution is not homogenous, there a lot of different distributions , with different variances, that we observe as one single distribution " -> Stundent T.
 
 Unobserverd heterogeneity => Mixture of Gaussians
-
-
-

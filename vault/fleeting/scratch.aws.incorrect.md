@@ -8,34 +8,29 @@ Attempt 1
 
 All knowledge areas
 
--   All knowledge areas
-    
--   Domain - Continuous Improvement for Existing Solutions
-    
--   Domain - Design for New Solutions
-    
--   Domain - Design for Organizational Complexity
-    
--   Domain - Migration Planning
-    
--   Domain - Cost Control
-    
+- All knowledge areas
+
+- Domain - Continuous Improvement for Existing Solutions
+
+- Domain - Design for New Solutions
+
+- Domain - Design for Organizational Complexity
+
+- Domain - Migration Planning
+
+- Domain - Cost Control
 
 Incorrect
 
--   All questions
-    
--   Correct
-    
--   Incorrect
-    
--   Skipped
-    
--   Marked for review
-    
+- All questions
 
+- Correct
 
+- Incorrect
 
+- Skipped
+
+- Marked for review
 
 # Question 4: Incorrect
 
@@ -43,18 +38,17 @@ A company stores confidential files on an Amazon S3 bucket. There was a recent p
 
 Which of the following options should the solutions architect implement to meet the above requirements with MINIMAL effort?
 
--   Set up AWS Organizations and create a new Service Control Policy (SCP) that will deny public objects from being uploaded to the Amazon S3 bucket. Attach the SCP to the AWS account.
-    
--   Enable Amazon S3 Block Public Access in the S3 bucket.
-    
+- Set up AWS Organizations and create a new Service Control Policy (SCP) that will deny public objects from being uploaded to the Amazon S3 bucket. Attach the SCP to the AWS account.
+
+- Enable Amazon S3 Block Public Access in the S3 bucket.
+
     (Correct)
-    
--   Set up a policy that restricts all `s3:PutObject` actions of the user to have a `private` canned ACL only which prohibits any public access to the uploaded objects.
-    
--   Use the `s3-bucket-public-read-prohibited` and `s3-bucket-public-write-prohibited` managed rules in AWS Config to restrict all users from uploading publicly accessible and writable files to the S3 bucket.
-    
+
+- Set up a policy that restricts all `s3:PutObject` actions of the user to have a `private` canned ACL only which prohibits any public access to the uploaded objects.
+
+- Use the `s3-bucket-public-read-prohibited` and `s3-bucket-public-write-prohibited` managed rules in AWS Config to restrict all users from uploading publicly accessible and writable files to the S3 bucket.
+
     (Incorrect)
-    
 
 Explanation
 
@@ -76,15 +70,11 @@ The option that says: **Use the** `**s3-bucket-public-read-prohibited**` **and**
 
 The option that says: **Set up AWS Organizations and create a new Service Control Policy (SCP) that will deny public objects from being uploaded to the Amazon S3 bucket, then attaching the SCP to the AWS account** is incorrect. Although you can satisfy the requirement using a service control policy (SCP), it still entails a lot of effort to implement. Remember that the scenario asks you to meet the requirements with minimal effort. Enabling the Amazon S3 Block Public Access in the S3 bucket is still the easiest one to implement. An SCP is primarily used to determine what services and actions can be delegated by administrators to the users and roles in the accounts that the SCP is applied to.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-block-public-access.html](https://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-block-public-access.html)
 
 [https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html)
-
-  
 
 **Check out this Amazon S3 Cheat Sheet:**
 
@@ -94,22 +84,21 @@ The option that says: **Set up AWS Organizations and create a new Service Contro
 
 A financial company is building a new online document portal system that allows its employees and developers to upload yearly and bi-annual corporate earnings report files to a private S3 bucket in which other confidential corporate files will also be stored. You are working as a Solutions Architect and you were instructed to create the private S3 bucket as well as the IAM users for the application developers to start their work. You assigned the required policies in IAM to the developers that allows them read and write access to the S3 bucket. After a few weeks, they have completed the new online portal and hosted it on a fleet of Spot EC2 instances. One of the application developers created a pre-signed URL that points to the correct S3 bucket and after a few testing, he has successfully uploaded the files from his laptop using the generated URL. He then made the necessary code change to the online portal to generate the pre-signed URL to upload the files in S3. However, after a few days, the development team complained that they cannot upload the files anymore using the online portal.   Which of the following options are valid reasons for this behavior? (Select TWO.)
 
--   The required AWS credentials in the `~/.aws/credentials` configuration file located on the EC2 instances of the online portal is missing and hence, it does not generate the pre-signed URL properly.
-    
+- The required AWS credentials in the `~/.aws/credentials` configuration file located on the EC2 instances of the online portal is missing and hence, it does not generate the pre-signed URL properly.
+
     (Correct)
-    
--   The ACL of the S3 bucket blocks the online portal and prevents the developers from uploading any files.
-    
--   The expiration date of the pre-signed URL is incorrectly set to expire too quickly and thus, may have already expired when they used it.
-    
+
+- The ACL of the S3 bucket blocks the online portal and prevents the developers from uploading any files.
+
+- The expiration date of the pre-signed URL is incorrectly set to expire too quickly and thus, may have already expired when they used it.
+
     (Correct)
-    
--   The application developers do not have access to either read or upload objects to the S3 bucket.
-    
--   There was a recent change in the S3 bucket that allows object versioning which invalidates all presigned URLs.
-    
+
+- The application developers do not have access to either read or upload objects to the S3 bucket.
+
+- There was a recent change in the S3 bucket that allows object versioning which invalidates all presigned URLs.
+
     (Incorrect)
-    
 
 Explanation
 
@@ -129,15 +118,11 @@ The options that says: **The application developers do not have access to either
 
 The option that says: **The ACL of the S3 bucket blocks the online portal and prevents the developers from uploading any files** is incorrect based on the fact that one developer has managed to successfully upload one file in the S3 bucket. The S3 ACL of the bucket is not an issue here.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/AmazonS3/latest/dev/PresignedUrlUploadObject.html](https://docs.aws.amazon.com/AmazonS3/latest/dev/PresignedUrlUploadObject.html)
 
 [https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/s3-example-presigned-urls.html](https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/s3-example-presigned-urls.html)
-
-  
 
 **Check out this Amazon S3 Cheat Sheet:**
 
@@ -149,22 +134,21 @@ A leading financial company owns multiple AWS accounts that are consolidated und
 
 Which of the following options are the recommended actions to achieve the company requirements? (Select TWO.)
 
--   Set up the CloudFormation Resource Tags property to apply tags to certain resource types upon creation.
-    
+- Set up the CloudFormation Resource Tags property to apply tags to certain resource types upon creation.
+
     (Correct)
-    
--   Set up AWS Systems Manager Automation to automatically add tags to your provisioned resources.
-    
--   Set up AWS Service Catalog to tag the provisioned resources with corresponding unique identifiers for portfolio, product, and users.
-    
+
+- Set up AWS Systems Manager Automation to automatically add tags to your provisioned resources.
+
+- Set up AWS Service Catalog to tag the provisioned resources with corresponding unique identifiers for portfolio, product, and users.
+
     (Correct)
-    
--   Set up AWS generated tags by activating it in the Billing and Cost Management console of the member account.
-    
+
+- Set up AWS generated tags by activating it in the Billing and Cost Management console of the member account.
+
     (Incorrect)
-    
--   Set up AWS Config to add the corresponding tags to your resources right from the very moment that they are created.
-    
+
+- Set up AWS Config to add the corresponding tags to your resources right from the very moment that they are created.
 
 Explanation
 
@@ -190,15 +174,11 @@ The option that says: **Set up AWS generated tags by activating it in the Billin
 
 The option that says: **Set up AWS Systems Manager Automation to automatically add tags to your provisioned resources** is incorrect because you cannot automatically add tags to your provisioned resources using AWS Systems Manager Automation.
 
-  
-
 **References:**
 
 [https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf](https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf)
 
 [https://aws.amazon.com/about-aws/whats-new/2018/03/aws-service-catalog-announces-autotags-for-automatic-tagging-of-provisioned-resources/](https://aws.amazon.com/about-aws/whats-new/2018/03/aws-service-catalog-announces-autotags-for-automatic-tagging-of-provisioned-resources/)
-
-  
 
 **Check out this AWS Service Catalog Cheat Sheet:**
 
@@ -210,18 +190,17 @@ A company has scheduled to launch a promotional sale on its e-commerce platform.
 
 Which of the following options is the recommended solution for this scenario?
 
--   Decouple the application and database tier by creating an Amazon SQS queue between them. Create an AWS Lambda function that picks up the messages on the SQS queue and writes them into the database.
-    
+- Decouple the application and database tier by creating an Amazon SQS queue between them. Create an AWS Lambda function that picks up the messages on the SQS queue and writes them into the database.
+
     (Correct)
-    
--   Create an Amazon ElastiCache for Memcached cluster between the application and database tier. The cache will temporarily store the user submissions until the database is able to commit those entries.
-    
--   Instead of using Amazon RDS, migrate the database to an Amazon DynamoDB table instead. Utilize the built-in automatic scaling in DynamoDB to scale the database based on user traffic.
-    
--   To minimize any changes on the application or the current infrastructure, manually scale the current DB instance to a significantly larger instance size before the event. Choose a larger instance size depending on the anticipated user traffic, and scale down after the event is completed.
-    
+
+- Create an Amazon ElastiCache for Memcached cluster between the application and database tier. The cache will temporarily store the user submissions until the database is able to commit those entries.
+
+- Instead of using Amazon RDS, migrate the database to an Amazon DynamoDB table instead. Utilize the built-in automatic scaling in DynamoDB to scale the database based on user traffic.
+
+- To minimize any changes on the application or the current infrastructure, manually scale the current DB instance to a significantly larger instance size before the event. Choose a larger instance size depending on the anticipated user traffic, and scale down after the event is completed.
+
     (Incorrect)
-    
 
 Explanation
 
@@ -247,8 +226,6 @@ The option that says: **Instead of using Amazon RDS, migrate the database to an 
 
 The option that says: **Create an Amazon ElastiCache for Memcached cluster between the application and database tier. The cache will temporarily store the user submissions until the database is able to commit those entries** is incorrect. Amazon ElastiCache is designed for caching frequent requests to the database and not for holding data that is waiting to be written to the database.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html)
@@ -256,8 +233,6 @@ The option that says: **Create an Amazon ElastiCache for Memcached cluster betwe
 [https://aws.amazon.com/blogs/architecture/application-integration-using-queues-and-messages/](https://aws.amazon.com/blogs/architecture/application-integration-using-queues-and-messages/)
 
 [https://aws.amazon.com/sqs/faqs/](https://aws.amazon.com/sqs/faqs/)
-
-  
 
 **Check out the Amazon SQS Cheat Sheet:**
 
@@ -271,32 +246,25 @@ A multinational corporation has recently acquired a smaller company. The solutio
 {"Version": "2012-10-17","Statement": [  {    "Effect": "Allow",    "Action": "cloudtrail:*",    "Resource": "*"  },  {    "Effect": "Allow",    "Action": "iam:*",    "Resource": "*"  } ]}
 ```
 
-  
-
 Each IAM user of the account has the following IAM policy attached:
-
-  
 
 ```
 {"Version": "2012-10-17","Statement": [  {    "Effect": "Allow",    "Action": "s3:*",    "Resource": [     "arn:aws:s3:::*"]},  {    "Effect": "Deny",    "NotAction": "s3:*",    "NotResource": [     "arn:aws:s3:::*"   ]  } ]}
 ```
 
-  
-
 Based on the provided SCP and IAM policy, which of the following options could be the possible root cause of this problem?
 
--   The IAM policy is the root cause because you have denied user permissions to execute any S3-related actions.
-    
+- The IAM policy is the root cause because you have denied user permissions to execute any S3-related actions.
+
     (Incorrect)
-    
--   The SCP is the root cause because it does not support whitelisting actions of the AWS resources.
-    
--   Both the IAM policy and the SCP are the problem. The SCP should explicitly allow S3 bucket creation in its policy and the IAM policy should exactly match the permissions of the SCP.
-    
--   The SCP is the root cause since it does not explicitly allow the required action that would enable the account to create an S3 bucket.
-    
+
+- The SCP is the root cause because it does not support whitelisting actions of the AWS resources.
+
+- Both the IAM policy and the SCP are the problem. The SCP should explicitly allow S3 bucket creation in its policy and the IAM policy should exactly match the permissions of the SCP.
+
+- The SCP is the root cause since it does not explicitly allow the required action that would enable the account to create an S3 bucket.
+
     (Correct)
-    
 
 Explanation
 
@@ -316,15 +284,11 @@ The option that says: **The IAM policy is the root cause because you have denied
 
 The option that says: **Both the IAM policy and the SCP are the problem. The SCP should explicitly allow S3 bucket creation in its policy and the IAM policy should exactly match the permissions of the SCP** is incorrect. The IAM policy does not necessarily need to match the service control policy. Although it is true that you would have to explicitly allow S3 bucket creation on the SCP, an SCP does not grant any permissions. Users and roles must still be granted permissions with appropriate IAM permission policies. A user without any IAM permission policies has no access at all, even if the applicable SCPs allow all services and all actions.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/organizations/latest/userguide/orgs\_manage\_policies\_about-scps.html](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_about-scps.html)
 
 [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference\_policies\_examples\_s3\_deny-except-bucket.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_s3_deny-except-bucket.html)
-
-  
 
 **Service Control Policies (SCP) vs IAM Policies:**
 
@@ -336,26 +300,25 @@ A data analytics company is running simulations on a high-performance computing 
 
 Which of the following options are the recommended actions to achieve this? (Select THREE.)
 
--   Improve the storage performance by implementing Amazon FSx for Lustre instead of using Amazon EFS.
-    
+- Improve the storage performance by implementing Amazon FSx for Lustre instead of using Amazon EFS.
+
     (Correct)
-    
--   Improve the network performance of each node by using Amazon EC2 instances with an Elastic Fabric Adapter (EFA) network interface.
-    
+
+- Improve the network performance of each node by using Amazon EC2 instances with an Elastic Fabric Adapter (EFA) network interface.
+
     (Correct)
-    
--   Improve the storage performance by using Amazon EBS Throughput Optimized volumes configured on RAID 0 mode. This allows for much higher IOPS compared to Amazon EFS.
-    
+
+- Improve the storage performance by using Amazon EBS Throughput Optimized volumes configured on RAID 0 mode. This allows for much higher IOPS compared to Amazon EFS.
+
     (Incorrect)
-    
--   Improve the performance and scalability of the HPC cluster by spreading the Amazon EC2 instances into multiple Availability Zones. Improve the storage performance by using Amazon EBS volumes configured on RAID 0 mode. This allows for much higher IOPS compared to Amazon EFS.
-    
--   Improve the performance by placing all the compute nodes as close to each other. Re-launch all the Amazon EC2 instances within a single Availability Zone in a cluster placement group.
-    
+
+- Improve the performance and scalability of the HPC cluster by spreading the Amazon EC2 instances into multiple Availability Zones. Improve the storage performance by using Amazon EBS volumes configured on RAID 0 mode. This allows for much higher IOPS compared to Amazon EFS.
+
+- Improve the performance by placing all the compute nodes as close to each other. Re-launch all the Amazon EC2 instances within a single Availability Zone in a cluster placement group.
+
     (Correct)
-    
--   Improve the network performance of each node by attaching multiple network interfaces to the Amazon EC2 instances. This ensures that the network bandwidth is not a bottleneck.
-    
+
+- Improve the network performance of each node by attaching multiple network interfaces to the Amazon EC2 instances. This ensures that the network bandwidth is not a bottleneck.
 
 Explanation
 
@@ -393,8 +356,6 @@ The option that says: **Improve the performance and scalability of the HPC clust
 
 The option that says: **Improve the storage performance by using Amazon EBS Throughput Optimized volumes configured on RAID 0 mode. This allows for much higher IOPS compared to Amazon EFS** is incorrect. The cluster relies on shared storage across all the compute nodes. A Throughput Optimized EBS volume cannot be shared between EC2 instances. The Amazon EBS Multi-Attach feature is only applicable for Provisioned IOPS SSD volumes.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)
@@ -404,8 +365,6 @@ The option that says: **Improve the storage performance by using Amazon EBS Thro
 [https://aws.amazon.com/fsx/lustre/](https://aws.amazon.com/fsx/lustre/)
 
 [https://docs.aws.amazon.com/fsx/latest/LustreGuide/what-is.html](https://docs.aws.amazon.com/fsx/latest/LustreGuide/what-is.html)
-
-  
 
 **Check out the Amazon FSx Cheat Sheet:**
 
@@ -417,18 +376,17 @@ A leading insurance firm has several new members in its development team. The so
 
 Which of the following should the solutions architect implement to follow the standard security advice of granting the least privilege?
 
--   Attach the `PowerUserAccess` AWS managed policy to the IAM users.
-    
+- Attach the `PowerUserAccess` AWS managed policy to the IAM users.
+
     (Correct)
-    
--   Attach the `AdministratorAccess` AWS managed policy to the IAM users.
-    
--   Create a new IAM role and attach the `AdministratorAccess` AWS managed policy to it. Assign the IAM Role to the IAM users.
-    
--   Create a new IAM role and attach the `SystemAdministrator` AWS managed policy to it. Assign the IAM Role to the IAM users.
-    
+
+- Attach the `AdministratorAccess` AWS managed policy to the IAM users.
+
+- Create a new IAM role and attach the `AdministratorAccess` AWS managed policy to it. Assign the IAM Role to the IAM users.
+
+- Create a new IAM role and attach the `SystemAdministrator` AWS managed policy to it. Assign the IAM Role to the IAM users.
+
     (Incorrect)
-    
 
 Explanation
 
@@ -448,15 +406,11 @@ The options that say: **Attach the AdministratorAccess AWS managed policy to the
 
 The option that says: **Create a new IAM role and attach the** `**SystemAdministrator**` **AWS managed policy to it. Assign the IAM Role to the IAM users** is incorrect because the SystemAdministrator managed policy does not have AWS Organizations permissions to view information about the user's organization such as the master account email or the organization limitations. In this scenario, you have to use PowerUserAccess instead.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/IAM/latest/UserGuide/access\_policies\_managed-vs-inline.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html)
 
 [https://docs.aws.amazon.com/IAM/latest/UserGuide/access\_policies\_job-functions.html?shortFooter=true#access\_policies\_job-functions\_create-policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html?shortFooter=true#access_policies_job-functions_create-policies)
-
-  
 
 **Check out this AWS IAM Cheat Sheet:**
 
@@ -468,18 +422,17 @@ A company runs a finance-related application on a fleet of Amazon EC2 instances 
 
 Which of the following options should the solutions architect implement to meet the company requirements?
 
--   Create a new AWS web ACL with blank rules and a default “Allow” action. Associate the ALB to this web ACL. Enable logging on web ACL and send them to Amazon CloudWatch Logs for analysis.
-    
--   Go to the Amazon VPC console and create a VPC flow log. Set the destination of flow log data to an Amazon S3 bucket for analysis.
-    
+- Create a new AWS web ACL with blank rules and a default “Allow” action. Associate the ALB to this web ACL. Enable logging on web ACL and send them to Amazon CloudWatch Logs for analysis.
+
+- Go to the Amazon VPC console and create a VPC flow log. Set the destination of flow log data to an Amazon S3 bucket for analysis.
+
     (Incorrect)
-    
--   Configure Traffic Mirroring on the elastic network interface of the EC2 instances. Send the mirrored traffic to a monitoring appliance for storage and inspection.
-    
+
+- Configure Traffic Mirroring on the elastic network interface of the EC2 instances. Send the mirrored traffic to a monitoring appliance for storage and inspection.
+
     (Correct)
-    
--   Go to the Amazon EC2 console and enable “Access logs” for the ALB. Send the ALB access logs to an Amazon S3 bucket for analysis.
-    
+
+- Go to the Amazon EC2 console and enable “Access logs” for the ALB. Send the ALB access logs to an Amazon S3 bucket for analysis.
 
 Explanation
 
@@ -505,8 +458,6 @@ The option that says: **Go to the Amazon EC2 console and enable “Access logs�
 
 The option that says: **Create a new AWS web ACL with blank rules and a default “Allow” action. Associate the ALB to this web ACL. Enable logging on web ACL and send them to Amazon CloudWatch Logs for analysis** is incorrect. You can capture information about the web requests that are evaluated by AWS WAF, however, you can only send the logs to Amazon Kinesis Firehose, not CloudWatch Logs.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/vpc/latest/mirroring/what-is-traffic-mirroring.html](https://docs.aws.amazon.com/vpc/latest/mirroring/what-is-traffic-mirroring.html)
@@ -514,8 +465,6 @@ The option that says: **Create a new AWS web ACL with blank rules and a default 
 [https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-how-it-works.html](https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-how-it-works.html)
 
 [https://docs.aws.amazon.com/vpc/latest/mirroring/tm-example-inbound-tcp.html](https://docs.aws.amazon.com/vpc/latest/mirroring/tm-example-inbound-tcp.html)
-
-  
 
 **Check out this Amazon VPC Cheat Sheet:**
 
@@ -527,18 +476,17 @@ An enterprise has several development and production AWS accounts managed under 
 
 Which of the following options is the recommended strategy to meet the company requirements?
 
--   Tag all existing resources in bulk using the Tag Editor. On the Billing and Cost Management page, create new cost allocation tags for the cost center and project ID. Wait for at least 24 hours to allow AWS to propagate the tags and gather cost reports.
-    
--   Tag all existing resources in bulk using the Tag Editor. On the Billing and Cost Management page, create new cost allocation tags for the cost center and project ID. Apply an SCP on the organizational unit that denies users from creating resources that do not have the cost center and project ID tags.
-    
+- Tag all existing resources in bulk using the Tag Editor. On the Billing and Cost Management page, create new cost allocation tags for the cost center and project ID. Wait for at least 24 hours to allow AWS to propagate the tags and gather cost reports.
+
+- Tag all existing resources in bulk using the Tag Editor. On the Billing and Cost Management page, create new cost allocation tags for the cost center and project ID. Apply an SCP on the organizational unit that denies users from creating resources that do not have the cost center and project ID tags.
+
     (Correct)
-    
--   Create an AWS Config rule to check for any untagged resource and send a notification email to the finance team. Write a Lambda function that has a cross-account role to tag all RDS databases and DynamoDB resources on all accounts under the organization. Schedule this function to run every hour.
-    
--   On the Billing and Cost Management page, create new cost allocation tags for the cost center and project ID. Wait for at least 24 hours to allow AWS to propagate the tags and gather cost reports. Update existing federated roles to deny users from creating resources that do not have the cost center and project ID tags.
-    
+
+- Create an AWS Config rule to check for any untagged resource and send a notification email to the finance team. Write a Lambda function that has a cross-account role to tag all RDS databases and DynamoDB resources on all accounts under the organization. Schedule this function to run every hour.
+
+- On the Billing and Cost Management page, create new cost allocation tags for the cost center and project ID. Wait for at least 24 hours to allow AWS to propagate the tags and gather cost reports. Update existing federated roles to deny users from creating resources that do not have the cost center and project ID tags.
+
     (Incorrect)
-    
 
 Explanation
 
@@ -562,8 +510,6 @@ The option that says: **Create an AWS Config rule to check for any untagged reso
 
 The option that says: **On the Billing and Cost Management page, create new cost allocation tags for the cost center and project ID. Wait for at least 24 hours to allow AWS to propagate the tags and gather cost reports. Update existing federated roles to deny users from creating resources that do not have the cost center and project ID tags** is incorrect. This may be possible but it will be cumbersome to edit all IAM policies across all the company AWS accounts. It is better to use an SCP applied at the organization unit level to enforce the tagging policy.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/organizations/latest/userguide/orgs\_manage\_policies\_scps\_examples.html#example-require-tag-on-create](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_examples.html#example-require-tag-on-create)
@@ -573,8 +519,6 @@ The option that says: **On the Billing and Cost Management page, create new cost
 [https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html)
 
 [https://docs.aws.amazon.com/ARG/latest/userguide/tag-editor.html](https://docs.aws.amazon.com/ARG/latest/userguide/tag-editor.html)
-
-  
 
 **Check out this AWS Billing and Cost Management Cheat Sheet:**
 
@@ -586,22 +530,21 @@ A company runs a suite of web applications in AWS. The application is hosted in 
 
 Which of the following options are valid solutions to meet the above requirements? (Select TWO.)
 
--   Create a new CloudFront web distribution and configure it to serve HTTPS requests using dedicated IP addresses in order to associate your alternate domain names with a dedicated IP address in each CloudFront edge location.
-    
+- Create a new CloudFront web distribution and configure it to serve HTTPS requests using dedicated IP addresses in order to associate your alternate domain names with a dedicated IP address in each CloudFront edge location.
+
     (Correct)
-    
--   Use a wildcard certificate to handle multiple sub-domains and different domains.
-    
+
+- Use a wildcard certificate to handle multiple sub-domains and different domains.
+
     (Incorrect)
-    
--   Use a Classic Load Balancer instead of an Application Load Balancer. Upload all SSL certificates of the domains and use Server Name Indication (SNI).
-    
--   Add a Subject Alternative Name (SAN) for each additional domain to your certificate.
-    
--   Upload all SSL certificates of the domains in the ALB using the console and bind multiple certificates to the same secure listener on your load balancer. ALB will automatically choose the optimal TLS certificate for each client using Server Name Indication (SNI).
-    
+
+- Use a Classic Load Balancer instead of an Application Load Balancer. Upload all SSL certificates of the domains and use Server Name Indication (SNI).
+
+- Add a Subject Alternative Name (SAN) for each additional domain to your certificate.
+
+- Upload all SSL certificates of the domains in the ALB using the console and bind multiple certificates to the same secure listener on your load balancer. ALB will automatically choose the optimal TLS certificate for each client using Server Name Indication (SNI).
+
     (Correct)
-    
 
 Explanation
 
@@ -623,8 +566,6 @@ The option that says: **Add a Subject Alternative Name (SAN) for each additional
 
 The option that says: **Use a Classic Load Balancer instead of an Application Load Balancer. Upload all SSL certificates of the domains and use Server Name Indication (SNI)** is incorrect because a Classic Load Balancer does not support SNI.
 
-  
-
 **References:**
 
 [https://aws.amazon.com/blogs/aws/new-application-load-balancer-sni/](https://aws.amazon.com/blogs/aws/new-application-load-balancer-sni/)
@@ -633,19 +574,13 @@ The option that says: **Use a Classic Load Balancer instead of an Application Lo
 
 [https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html)
 
-  
-
 **Check out this Amazon CloudFront Cheat Sheet:**
 
 [https://tutorialsdojo.com/amazon-cloudfront/](https://tutorialsdojo.com/amazon-cloudfront/?src=udemy)
 
-  
-
 **SNI Custom SSL vs Dedicated IP Custom SSL:**
 
 [https://tutorialsdojo.com/sni-custom-ssl-vs-dedicated-ip-custom-ssl/](https://tutorialsdojo.com/sni-custom-ssl-vs-dedicated-ip-custom-ssl/?src=udemy)
-
-  
 
 **Comparison of AWS Services Cheat Sheets:**
 
@@ -657,22 +592,21 @@ A company is hosting its three-tier web application on the us-east-1 region of A
 
 Which of the following options should the Solution Architect implement to achieve the company requirements in a cost-effective manner? (Select TWO.)
 
--   Use AWS Backup to create a backup job that will copy the EC2 EBS volumes and RDS data to an Amazon S3 bucket in another region. Restore the backups in case of a disaster in the primary region.
-    
--   For a quick recovery time, set up a hot-standby of web and application tier on the backup region. Redirect the traffic to the backup region in case of a disaster in the primary region.
-    
+- Use AWS Backup to create a backup job that will copy the EC2 EBS volumes and RDS data to an Amazon S3 bucket in another region. Restore the backups in case of a disaster in the primary region.
+
+- For a quick recovery time, set up a hot-standby of web and application tier on the backup region. Redirect the traffic to the backup region in case of a disaster in the primary region.
+
     (Incorrect)
-    
--   Set up a cross-Region read replica of the Amazon Aurora database to the backup region. Promote this read replica as the master database in case of a disaster in the primary region.
-    
+
+- Set up a cross-Region read replica of the Amazon Aurora database to the backup region. Promote this read replica as the master database in case of a disaster in the primary region.
+
     (Correct)
-    
--   Configure an automated snapshot of the Amazon Aurora database every 5 minutes. Quickly restore the database on the backup region in case of a disaster in the primary region.
-    
--   Schedule a daily snapshot of the Amazon EC2 instances for the web and application tier. Copy the snapshot to the backup region. Restore the backups in case of a disaster in the primary region.
-    
+
+- Configure an automated snapshot of the Amazon Aurora database every 5 minutes. Quickly restore the database on the backup region in case of a disaster in the primary region.
+
+- Schedule a daily snapshot of the Amazon EC2 instances for the web and application tier. Copy the snapshot to the backup region. Restore the backups in case of a disaster in the primary region.
+
     (Correct)
-    
 
 Explanation
 
@@ -698,8 +632,6 @@ The option that says: **Configure an automated snapshot of the Amazon Aurora dat
 
 The option that says: **Use AWS Backup to create a backup job that will copy the EC2 EBS volumes and RDS data to an Amazon S3 bucket in another region. Restore the backups in case of a disaster in the primary region** is incorrect. This may be possible, but the restoration time from the RDS backup may take more time than the required 30 minutes of RTO. The highest backup frequency in AWS Backup is every 12 hours only and not every 5-minutes. Thus, it can only provide a maximum RPO of 12 hours. A better solution is to use a Read Replica with a replication latency of only about a few minutes, providing a higher RPO.
 
-  
-
 **References:**
 
 [https://aws.amazon.com/premiumsupport/knowledge-center/aurora-mysql-slow-snapshot-restore/](https://aws.amazon.com/premiumsupport/knowledge-center/aurora-mysql-slow-snapshot-restore/)
@@ -709,8 +641,6 @@ The option that says: **Use AWS Backup to create a backup job that will copy the
 [https://aws.amazon.com/about-aws/whats-new/2016/06/amazon-aurora-now-supports-cross-region-replication/](https://aws.amazon.com/about-aws/whats-new/2016/06/amazon-aurora-now-supports-cross-region-replication/)
 
 [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-copy-snapshot.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-copy-snapshot.html)
-
-  
 
 **Check out these Amazon EBS and Amazon RDS Cheat Sheets:**
 
@@ -724,18 +654,17 @@ A company is running its main web service in a fleet of Amazon EC2 instances in 
 
 Which of the following steps should be implemented next to achieve the above requirements?
 
--   Migrate the database from the Amazon EC2 instance to an Amazon Aurora global database. Set the us-east-1 region as the primary database and the us-west-2 region as the secondary database. Configure Amazon Route 53 DNS entry with health checks and failover routing policy to the us-west-2 region.
-    
+- Migrate the database from the Amazon EC2 instance to an Amazon Aurora global database. Set the us-east-1 region as the primary database and the us-west-2 region as the secondary database. Configure Amazon Route 53 DNS entry with health checks and failover routing policy to the us-west-2 region.
+
     (Correct)
-    
--   Create a snapshot of the current Amazon EC2 database instance and restore the snapshot to the us-west-2 region. Configure the new EC2 instance as MySQL standby database of the us-east-1 instance. Configure Amazon Route 53 DNS entry with failover routing policy to the us-west-2 region.
-    
--   Migrate the database from the Amazon EC2 instance to an Amazon RDS for MySQL instance. Enable Multi-AZ deployment for this database. Configure Amazon Route 53 DNS entry with failover routing policy to the us-west-2 region.
-    
--   Migrate the database from the Amazon EC2 instance to an Amazon RDS for MySQL instance. Set the us-east-1 region database as the master and configure a cross-Region read replica to the us-west-2 region. Configure Amazon Route 53 DNS entry with health checks and failover routing policy to the us-west-2 region.
-    
+
+- Create a snapshot of the current Amazon EC2 database instance and restore the snapshot to the us-west-2 region. Configure the new EC2 instance as MySQL standby database of the us-east-1 instance. Configure Amazon Route 53 DNS entry with failover routing policy to the us-west-2 region.
+
+- Migrate the database from the Amazon EC2 instance to an Amazon RDS for MySQL instance. Enable Multi-AZ deployment for this database. Configure Amazon Route 53 DNS entry with failover routing policy to the us-west-2 region.
+
+- Migrate the database from the Amazon EC2 instance to an Amazon RDS for MySQL instance. Set the us-east-1 region database as the master and configure a cross-Region read replica to the us-west-2 region. Configure Amazon Route 53 DNS entry with health checks and failover routing policy to the us-west-2 region.
+
     (Incorrect)
-    
 
 Explanation
 
@@ -763,8 +692,6 @@ The option that says: **Migrate the database from the Amazon EC2 instance to an 
 
 The option that says: **Create a snapshot of the current Amazon EC2 database instance and restore the snapshot to the us-west-2 region. Configure the new EC2 instance as MySQL standby database of the us-east-1 instance. Configure Amazon Route 53 DNS entry with failover routing policy to the us-west-2 region** is incorrect. Although this is a possible solution, the requirement is to use the available AWS services for lower operational overhead. This requires extra management effort to set up, configure and manage the database on the EC2 instance, instead of using a managed Amazon RDS database. Moreover, it won't be able to satisfy the requirement of providing a 1-minute RPO and 5-minute RTO.
 
-  
-
 **References:**
 
 [https://aws.amazon.com/rds/aurora/global-database/](https://aws.amazon.com/rds/aurora/global-database/)
@@ -772,8 +699,6 @@ The option that says: **Create a snapshot of the current Amazon EC2 database ins
 [https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html)
 
 [https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)
-
-  
 
 **Check out these Amazon Aurora Cheat Sheets:**
 
@@ -787,22 +712,21 @@ A company is running hundreds of Linux-based Amazon EC2 instances launched with 
 
 Which of the following steps should the Solutions Architect implement to achieve the security requirements? (Select TWO.)
 
--   Check AWS CloudTrail logs to determine the Amazon EC2 instance IDs that were launched from the AMIs that need scanning. Use AWS Config managed rule to run CVE assessment and remediation on the instances.
-    
--   Write a Lambda function that will create automatic approval rules. Create a parameter on AWS SSM Parameter Store to save the list of all security-approved AMI. Set up a managed rule on AWS Config to continuously scan all running EC2 instances. For any detected vulnerability, run the designated SSM Automation document.
-    
--   Create an Assessment template on Amazon Inspector to target the EC2 instances. Run a detailed CVE assessment scan on all running Amazon EC2 instances launched from the AMIs that need scanning.
-    
+- Check AWS CloudTrail logs to determine the Amazon EC2 instance IDs that were launched from the AMIs that need scanning. Use AWS Config managed rule to run CVE assessment and remediation on the instances.
+
+- Write a Lambda function that will create automatic approval rules. Create a parameter on AWS SSM Parameter Store to save the list of all security-approved AMI. Set up a managed rule on AWS Config to continuously scan all running EC2 instances. For any detected vulnerability, run the designated SSM Automation document.
+
+- Create an Assessment template on Amazon Inspector to target the EC2 instances. Run a detailed CVE assessment scan on all running Amazon EC2 instances launched from the AMIs that need scanning.
+
     (Correct)
-    
--   Install the AWS Systems Manager (SSM) agent on all EC2 instances. With the agent running, run a detailed CVE assessment scan on the EC2 instances launched from the AMIs that need scanning.
-    
+
+- Install the AWS Systems Manager (SSM) agent on all EC2 instances. With the agent running, run a detailed CVE assessment scan on the EC2 instances launched from the AMIs that need scanning.
+
     (Incorrect)
-    
--   Develop a Lambda function that will create automatic approval rules. Create a parameter on AWS SSM Parameter Store to save the list of all security-approved AMI. Set up a 30-day interval cron rule on Amazon EventBridge to trigger an AWS SSM Automation document run on all EC2 instances.
-    
+
+- Develop a Lambda function that will create automatic approval rules. Create a parameter on AWS SSM Parameter Store to save the list of all security-approved AMI. Set up a 30-day interval cron rule on Amazon EventBridge to trigger an AWS SSM Automation document run on all EC2 instances.
+
     (Correct)
-    
 
 Explanation
 
@@ -834,8 +758,6 @@ The option that says: **Write a Lambda function that will create automatic appro
 
 The option that says: **Check AWS CloudTrail logs to determine the Amazon EC2 instance IDs that were launched from the AMIs that need scanning. Use AWS Config managed rule to run CVE assessment and remediation on the instances** is incorrect. Although it is possible to parse the EC2 instance IDs from CloudTrail and determine the vulnerable instances, you still cannot run the CVE assessment in AWS Config for your Amazon EC2 instances. Using Amazon Inspector is the most suitable service to use in running the CVE assessment.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/inspector/latest/userguide/inspector\_walkthrough.html](https://docs.aws.amazon.com/inspector/latest/userguide/inspector_walkthrough.html)
@@ -843,8 +765,6 @@ The option that says: **Check AWS CloudTrail logs to determine the Amazon EC2 in
 [https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html)
 
 [https://docs.aws.amazon.com/eventbridge/latest/userguide/scheduled-events.html](https://docs.aws.amazon.com/eventbridge/latest/userguide/scheduled-events.html)
-
-  
 
 **Check out the AWS Systems Manager and AWS Inspector Cheat Sheet:**
 
@@ -858,18 +778,17 @@ A major telecommunications company is planning to set up a disaster recovery sol
 
 Which of the following is the most suitable solution to meet these requirements and to make its architecture highly available?
 
--   Develop a scheduled job using AWS Lambda which will regularly take a snapshot of the Redshift cluster and copy it to another region.
-    
--   In your Redshift cluster, enable the cross-region snapshot copy feature to copy snapshots to another region.
-    
+- Develop a scheduled job using AWS Lambda which will regularly take a snapshot of the Redshift cluster and copy it to another region.
+
+- In your Redshift cluster, enable the cross-region snapshot copy feature to copy snapshots to another region.
+
     (Incorrect)
-    
--   Create a new AWS CloudFormation stack that will deploy the cluster in another region and will regularly back up the data to an S3 bucket, configured with cross-region replication. In case of an outage in the primary region, just use the snapshot from the S3 bucket and then start the cluster.
-    
--   Set up a `snapshot copy grant` for a master key in the destination region and enable cross-region snapshots in your Redshift cluster to copy snapshots of the cluster to another region.
-    
+
+- Create a new AWS CloudFormation stack that will deploy the cluster in another region and will regularly back up the data to an S3 bucket, configured with cross-region replication. In case of an outage in the primary region, just use the snapshot from the S3 bucket and then start the cluster.
+
+- Set up a `snapshot copy grant` for a master key in the destination region and enable cross-region snapshots in your Redshift cluster to copy snapshots of the cluster to another region.
+
     (Correct)
-    
 
 Explanation
 
@@ -889,21 +808,15 @@ The option that says: **Develop a scheduled job using AWS Lambda which will regu
 
 The option that says: **In your Redshift cluster, enable the cross-region snapshot copy feature to copy snapshots to another region** is incorrect. Although it is right to use the cross-region snapshot copy feature, you still have to configure a snapshot copy grant for a master key in the destination region so that Amazon Redshift can perform encryption operations in the destination region.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/redshift/latest/mgmt/managing-snapshots-console.html#snapshot-crossregioncopy-configure](https://docs.aws.amazon.com/redshift/latest/mgmt/managing-snapshots-console.html#snapshot-crossregioncopy-configure)
 
 [https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshots.html](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshots.html)
 
-  
-
 **Check out this Amazon Redshift Cheat Sheet:**
 
 [https://tutorialsdojo.com/amazon-redshift/](https://tutorialsdojo.com/amazon-redshift/?src=udemy)
-
-  
 
 **Tutorials Dojo's AWS Certified Solutions Architect Professional Exam Study Guide:**
 
@@ -923,22 +836,21 @@ A retail company has several subsidiaries with offices located in different coun
 
 Which of the following actions should the Solutions Architect take in order to fulfill the requirements? (Select TWO.)
 
--   Define service quotas that will restrict services and features depending on the permissions set by the parent company policy. Apply this service quota to each subsidiary AWS account.
-    
--   Create an AWS account for the parent company and create an AWS organization for each of the subsidiaries. Invite each of the subsidiary AWS Accounts to join their respective AWS organization on the parent company.
-    
--   Create an AWS Organization on the parent company's AWS account and invite all the subsidiary AWS accounts. On the AWS Billing and Cost Management console of the parent account, ensure that consolidated billing is enabled.
-    
+- Define service quotas that will restrict services and features depending on the permissions set by the parent company policy. Apply this service quota to each subsidiary AWS account.
+
+- Create an AWS account for the parent company and create an AWS organization for each of the subsidiaries. Invite each of the subsidiary AWS Accounts to join their respective AWS organization on the parent company.
+
+- Create an AWS Organization on the parent company's AWS account and invite all the subsidiary AWS accounts. On the AWS Billing and Cost Management console of the parent account, ensure that consolidated billing is enabled.
+
     (Correct)
-    
--   Create an AWS account for the parent company and create a single AWS Organization with the Consolidated Billing features set. Invite each of the subsidiary AWS accounts to join the AWS Organization of the parent company.
-    
+
+- Create an AWS account for the parent company and create a single AWS Organization with the Consolidated Billing features set. Invite each of the subsidiary AWS accounts to join the AWS Organization of the parent company.
+
     (Incorrect)
-    
--   Define Service Control Policy (SCP) documents to only allow services and features defined by the parent company policy. Apply the necessary SCP for each subsidiary AWS account.
-    
+
+- Define Service Control Policy (SCP) documents to only allow services and features defined by the parent company policy. Apply the necessary SCP for each subsidiary AWS account.
+
     (Correct)
-    
 
 Explanation
 
@@ -978,8 +890,6 @@ The option that says: **Define service quotas that will restrict services and fe
 
 The option that says: **Create an AWS account for the parent company and create a single AWS Organization with the Consolidated Billing features set. Invite each of the subsidiary AWS accounts to join the AWS Organization of the parent company** is incorrect. Although creating an AWS organization is necessary, using only the Consolidated Billing features set is not enough to satisfy the requirements. Even though "All Features" is enabled by default, this will be overridden if you enable only the "Consolidated Billing" feature. This means that you cannot use the SCP to your member AWS accounts anymore. You need to enable "All features" on the AWS Organization to be able to create and apply SCP for each subsidiary.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html)
@@ -990,12 +900,9 @@ The option that says: **Create an AWS account for the parent company and create 
 
 [https://docs.aws.amazon.com/organizations/latest/userguide/orgs\_manage\_org\_support-all-features.html](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_org_support-all-features.html)
 
-  
-
 **Check out this AWS Organizations Cheat Sheet:**
 
 [https://tutorialsdojo.com/aws-organizations/](https://tutorialsdojo.com/aws-organizations/?src=udemy)
-
 
 ## AWS Solutions Architect Professional Practice Test 2 - Results
 
@@ -1007,31 +914,29 @@ Attempt 1
 
 All knowledge areas
 
--   All knowledge areas
-    
--   Domain - Design for New Solutions
-    
--   Domain - Continuous Improvement for Existing Solutions
-    
--   Domain - Design for Organizational Complexity
-    
--   Domain - Cost Control
-    
--   Domain - Migration Planning
-    
+- All knowledge areas
+
+- Domain - Design for New Solutions
+
+- Domain - Continuous Improvement for Existing Solutions
+
+- Domain - Design for Organizational Complexity
+
+- Domain - Cost Control
+
+- Domain - Migration Planning
 
 Incorrect
 
--   All questions
-    
--   Correct
-    
--   Incorrect
-    
--   Skipped
-    
--   Marked for review
-    
+- All questions
+
+- Correct
+
+- Incorrect
+
+- Skipped
+
+- Marked for review
 
 # Question 1: Incorrect
 
@@ -1039,18 +944,17 @@ A startup is running its customer support application in the AWS cloud. The appl
 
 What is the most cost-efficient and flexible way to integrate the new video chat module in AWS?
 
--   Create two AWS OpsWorks stacks, each with two layers, and two custom recipes.
-    
+- Create two AWS OpsWorks stacks, each with two layers, and two custom recipes.
+
     (Incorrect)
-    
--   Create an AWS OpsWorks stack, with two layers, and one custom recipe.
-    
+
+- Create an AWS OpsWorks stack, with two layers, and one custom recipe.
+
     (Correct)
-    
--   Create an AWS OpsWorks stack, with one layer, and one custom recipe.
-    
--   Create two AWS OpsWorks stacks, each with two layers, and one custom recipe.
-    
+
+- Create an AWS OpsWorks stack, with one layer, and one custom recipe.
+
+- Create two AWS OpsWorks stacks, each with two layers, and one custom recipe.
 
 Explanation
 
@@ -1078,21 +982,15 @@ These options are incorrect because two OpsWorks stacks are unnecessary since th
 
 The option that says: **Create an AWS OpsWorks stack with one layer and one custom recipe** is incorrect. It would be a better solution to create two separate layers: one customer support web servers and one for the video chat feature.
 
-  
-
 **References**:
 
 [https://aws.amazon.com/opsworks/stacks/faqs](https://aws.amazon.com/opsworks/stacks/faqs)
 
 [https://docs.aws.amazon.com/opsworks/latest/userguide/workinglayers.html](https://docs.aws.amazon.com/opsworks/latest/userguide/workinglayers.html)
 
-  
-
 **Check out this AWS OpsWorks Cheat Sheet:**
 
 [https://tutorialsdojo.com/aws-opsworks/](https://tutorialsdojo.com/aws-opsworks/?src=udemy)
-
-  
 
 **Tutorials Dojo's AWS Certified Solutions Architect Professional Exam Study Guide:**
 
@@ -1104,18 +1002,17 @@ A leading commercial bank has multiple AWS accounts that are consolidated using 
 
 Which of the following options would satisfy the company requirements?
 
--   Set up a Service Control Policy (SCP) that authorizes access to the certificate store only for the cybersecurity team and then add a configuration to terminate the SSL on the ELB.
-    
+- Set up a Service Control Policy (SCP) that authorizes access to the certificate store only for the cybersecurity team and then add a configuration to terminate the SSL on the ELB.
+
     (Incorrect)
-    
--   Upload the X.509 certificate to an S3 bucket owned by the cybersecurity team and accessible only by the IAM role of the EC2 instances. Use the Systems Manager Session Manager as the HTTPS session manager for the application.
-    
--   Configure an IAM policy that authorizes access to the certificate store only for the cybersecurity team and then add a configuration to terminate the SSL on the ELB.
-    
+
+- Upload the X.509 certificate to an S3 bucket owned by the cybersecurity team and accessible only by the IAM role of the EC2 instances. Use the Systems Manager Session Manager as the HTTPS session manager for the application.
+
+- Configure an IAM policy that authorizes access to the certificate store only for the cybersecurity team and then add a configuration to terminate the SSL on the ELB.
+
     (Correct)
-    
--   Use the AWS Config service to configure the EC2 instances to retrieve the X.509 certificate upon boot from a CloudHSM that is managed by the cybersecurity team.
-    
+
+- Use the AWS Config service to configure the EC2 instances to retrieve the X.509 certificate upon boot from a CloudHSM that is managed by the cybersecurity team.
 
 Explanation
 
@@ -1135,23 +1032,17 @@ The option that says: **Upload the X.509 certificate to an S3 bucket owned by th
 
 The option that says: **Set up a Service Control Policy (SCP) that authorizes access to the certificate store only for the cybersecurity team and then adding a configuration to terminate the SSL on the ELB** is incorrect. A service control policy (SCP) simply determines what services and actions can be delegated by administrators to the users and roles in the accounts that the SCP is applied to. It does not grant any permissions, unlike an IAM Policy.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/IAM/latest/APIReference/API\_UploadServerCertificate.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UploadServerCertificate.html)
 
 [https://aws.amazon.com/blogs/aws/elastic-load-balancer-support-for-ssl-termination/](https://aws.amazon.com/blogs/aws/elastic-load-balancer-support-for-ssl-termination/)
 
-  
-
 **Check out these AWS Elastic Load Balancing (ELB) and IAM Cheat Sheets:**
 
 [https://tutorialsdojo.com/aws-elastic-load-balancing-elb/](https://tutorialsdojo.com/aws-elastic-load-balancing-elb/)
 
 [https://tutorialsdojo.com/aws-identity-and-access-management-iam/](https://tutorialsdojo.com/aws-identity-and-access-management-iam/)
-
-  
 
 **Service Control Policies (SCP) vs IAM Policies:**
 
@@ -1163,18 +1054,17 @@ An e-commerce company is having their annual sale event where buyers will be abl
 
 Which of the following is the MOST scalable solution that they should use?
 
--   Combine an Elastic Load balancer in front of an Auto Scaling group of web servers with CloudFront for fast delivery. The web servers will first authenticate the users by logging into their social media accounts which are integrated in Amazon Cognito, then process the user's purchases and store them into an SQS queue using IAM Roles for EC2 Instances to gain permissions to the queue. Finally, the items from the queue are retrieved by a set of application servers and stored into a DynamoDB table.
-    
+- Combine an Elastic Load balancer in front of an Auto Scaling group of web servers with CloudFront for fast delivery. The web servers will first authenticate the users by logging into their social media accounts which are integrated in Amazon Cognito, then process the user's purchases and store them into an SQS queue using IAM Roles for EC2 Instances to gain permissions to the queue. Finally, the items from the queue are retrieved by a set of application servers and stored into a DynamoDB table.
+
     (Correct)
-    
--   Combine an Elastic Load balancer in front of an Auto Scaling group of web servers with CloudFront for fast delivery. The web servers will first authenticate the users by logging into their social media accounts which are integrated in Amazon Lex, then process the user's purchases and store the cart into a Multi-AZ RDS database.
-    
--   Combine an Elastic Load balancer in front of multiple web servers with CloudFront for fast delivery. The web servers will first authenticate the users by logging into their social media accounts which are integrated in Amazon Cognito. The web servers will process the user's purchases and store them in a DynamoDB table. Use an IAM Role to gain permissions to the DynamoDB table.
-    
+
+- Combine an Elastic Load balancer in front of an Auto Scaling group of web servers with CloudFront for fast delivery. The web servers will first authenticate the users by logging into their social media accounts which are integrated in Amazon Lex, then process the user's purchases and store the cart into a Multi-AZ RDS database.
+
+- Combine an Elastic Load balancer in front of multiple web servers with CloudFront for fast delivery. The web servers will first authenticate the users by logging into their social media accounts which are integrated in Amazon Cognito. The web servers will process the user's purchases and store them in a DynamoDB table. Use an IAM Role to gain permissions to the DynamoDB table.
+
     (Incorrect)
-    
--   Use the static website hosting feature of Amazon S3 with the Javascript SDK to authenticate the user login with Amazon Cognito. Set up AWS Global Accelerator to deliver the static content stored in the S3 bucket. Store user purchases in a DynamoDB table and use an IAM Role for managing permissions.
-    
+
+- Use the static website hosting feature of Amazon S3 with the Javascript SDK to authenticate the user login with Amazon Cognito. Set up AWS Global Accelerator to deliver the static content stored in the S3 bucket. Store user purchases in a DynamoDB table and use an IAM Role for managing permissions.
 
 Explanation
 
@@ -1198,8 +1088,6 @@ The option that says: **Combine an Elastic Load balancer in front of multiple we
 
 [https://aws.amazon.com/blogs/database/dynamodb-streams-use-cases-and-design-patterns/](https://aws.amazon.com/blogs/database/dynamodb-streams-use-cases-and-design-patterns/)
 
-  
-
 **Check out this Amazon DynamoDB Cheat Sheet:**
 
 [https://tutorialsdojo.com/amazon-dynamodb/](https://tutorialsdojo.com/amazon-dynamodb/?src=udemy)
@@ -1210,24 +1098,23 @@ A leading call center company has its headquarters in Seattle. Its corporate web
 
 Which of the following options should the solutions architect implement in AWS to meet the company requirements? (Select TWO.)
 
--   Create an identity broker that assumes an IAM role, and retrieve temporary AWS security credentials via IAM Security Token Service (STS). The application gets the AWS temporary security credentials from the identity broker to gain access to the appropriate S3 bucket.
-    
+- Create an identity broker that assumes an IAM role, and retrieve temporary AWS security credentials via IAM Security Token Service (STS). The application gets the AWS temporary security credentials from the identity broker to gain access to the appropriate S3 bucket.
+
     (Incorrect)
-    
--   The application first authenticates against LDAP, and then uses the LDAP credentials to log in to IAM service. Finally, it can now use the IAM temporary credentials to access the appropriate S3 bucket.
-    
+
+- The application first authenticates against LDAP, and then uses the LDAP credentials to log in to IAM service. Finally, it can now use the IAM temporary credentials to access the appropriate S3 bucket.
+
     (Incorrect)
-    
--   Use a Direct Connect Gateway instead of a single Direct Connect connection. Set up a Transit VPC which will authenticate against their on-premises LDAP server.
-    
--   Authenticate against LDAP using an identity broker you created, and have it call IAM Security Token Service (STS) to retrieve IAM federated user credentials. The application then gets the IAM federated user credentials from the identity broker to access the appropriate S3 bucket.
-    
+
+- Use a Direct Connect Gateway instead of a single Direct Connect connection. Set up a Transit VPC which will authenticate against their on-premises LDAP server.
+
+- Authenticate against LDAP using an identity broker you created, and have it call IAM Security Token Service (STS) to retrieve IAM federated user credentials. The application then gets the IAM federated user credentials from the identity broker to access the appropriate S3 bucket.
+
     (Correct)
-    
--   The application first authenticates against LDAP to retrieve the name of an IAM role associated with the user. It then assumes that role via a call to IAM Security Token Service (STS). Afterward, the application can now use the temporary credentials from the role to access the appropriate S3 bucket.
-    
+
+- The application first authenticates against LDAP to retrieve the name of an IAM role associated with the user. It then assumes that role via a call to IAM Security Token Service (STS). Afterward, the application can now use the temporary credentials from the role to access the appropriate S3 bucket.
+
     (Correct)
-    
 
 Explanation
 
@@ -1255,8 +1142,6 @@ The option that says: **The application first authenticates against LDAP, and th
 
 The option that says: **Use a Direct Connect Gateway instead of a single Direct Connect connection. Set up a Transit VPC which will authenticate against their on-premises LDAP server** is incorrect because using a Direct Connect Gateway will only improve the availability of your on-premises network connection and using a transit VPC is just a common strategy for connecting multiple, geographically disperse VPCs and remote networks in order to create a global network transit center. These two things will not meet the requirement.
 
-  
-
 **References**:
 
 [https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_roles\_common-scenarios\_federated-users.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_common-scenarios_federated-users.html)
@@ -1264,8 +1149,6 @@ The option that says: **Use a Direct Connect Gateway instead of a single Direct 
 [https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_roles\_providers.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html)
 
 [https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_roles\_common-scenarios\_federated-users.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_common-scenarios_federated-users.html)
-
-  
 
 **Check out this AWS IAM Cheat Sheet:**
 
@@ -1277,18 +1160,17 @@ A shipping firm runs its web applications on its on-premises data center. The se
 
 Which of the following backup solutions would be most appropriate to meet the above requirements?
 
--   Use Amazon Glacier as the target for your data backups.
-    
--   Provision Gateway Cached Volumes from AWS Storage Gateway.
-    
+- Use Amazon Glacier as the target for your data backups.
+
+- Provision Gateway Cached Volumes from AWS Storage Gateway.
+
     (Correct)
-    
--   Use Amazon S3 as the target for your data backups.
-    
--   Provision Gateway Stored Volumes from AWS Storage Gateway.
-    
+
+- Use Amazon S3 as the target for your data backups.
+
+- Provision Gateway Stored Volumes from AWS Storage Gateway.
+
     (Incorrect)
-    
 
 Explanation
 
@@ -1310,13 +1192,9 @@ The option that says: **Use Amazon S3 as the target for your data backups** is i
 
 [https://docs.aws.amazon.com/storagegateway/latest/userguide/StorageGatewayConcepts.html](https://docs.aws.amazon.com/storagegateway/latest/userguide/StorageGatewayConcepts.html)
 
-  
-
 **Check out this AWS Storage Gateway Cheat Sheet:**
 
 [https://tutorialsdojo.com/aws-storage-gateway/](https://tutorialsdojo.com/aws-storage-gateway/?src=udemy)
-
-  
 
 **Tutorials Dojo's AWS Certified Solutions Architect Professional Exam Study Guide:**
 
@@ -1328,18 +1206,17 @@ A hospital chain in London uses an online central hub for its doctors and nurses
 
 Which of the following options should the solutions architect implement to meet the above requirements?
 
--   Run the web and application tiers in stateful instances in an autoscaling group, using CloudWatch for monitoring. Run the database tier using RDS with Multi-AZ enabled.
-    
--   Run the web and application tiers in stateless instances in an autoscaling group, using Elasticache Memcached for tier synchronization and CloudWatch for monitoring. Run the database tier using RDS with Multi-AZ enabled.
-    
+- Run the web and application tiers in stateful instances in an autoscaling group, using CloudWatch for monitoring. Run the database tier using RDS with Multi-AZ enabled.
+
+- Run the web and application tiers in stateless instances in an autoscaling group, using Elasticache Memcached for tier synchronization and CloudWatch for monitoring. Run the database tier using RDS with Multi-AZ enabled.
+
     (Incorrect)
-    
--   Run the web and application tiers in stateless instances in an autoscaling group, using Elasticache Memcached for tier synchronization and CloudWatch for monitoring. Run the database tier using RDS with read replicas.
-    
+
+- Run the web and application tiers in stateless instances in an autoscaling group, using Elasticache Memcached for tier synchronization and CloudWatch for monitoring. Run the database tier using RDS with read replicas.
+
     (Correct)
-    
--   Run the web and application tiers in stateful instances in an autoscaling group, using CloudWatch for monitoring. Run the database tier using RDS with read replicas.
-    
+
+- Run the web and application tiers in stateful instances in an autoscaling group, using CloudWatch for monitoring. Run the database tier using RDS with read replicas.
 
 Explanation
 
@@ -1359,8 +1236,6 @@ The option that says: **Run the web and application tiers in stateful instances 
 
 The option that says: **Run the web and application tiers in stateless instances in an autoscaling group, using Elasticache Memcached for tier synchronization and CloudWatch for monitoring. Run the database tier using RDS with Multi-AZ enabled** is incorrect because multi-AZ RDS only improves Availability, not read performance.
 
-  
-
 **References**:
 
 [https://aws.amazon.com/elasticache/](https://aws.amazon.com/elasticache/)
@@ -1368,8 +1243,6 @@ The option that says: **Run the web and application tiers in stateless instances
 [https://aws.amazon.com/rds/details/read-replicas/](https://aws.amazon.com/rds/details/read-replicas/)
 
 [https://d1.awsstatic.com/whitepapers/AWS\_Cloud\_Best\_Practices.pdf](https://d1.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf)
-
-  
 
 **Check out these AWS Cheat Sheets:**
 
@@ -1383,18 +1256,17 @@ A company has several NFS shares in its on-premises data center that contains mi
 
 Which of the following options are the likely cause of the slow transfer speed and the recommended solution?
 
--   The file interface of the Snowball Edge is limited by the network interface speed. Connect the device directly using a high-speed USB 3.0 interface instead to maximize the copying throughput.
-    
+- The file interface of the Snowball Edge is limited by the network interface speed. Connect the device directly using a high-speed USB 3.0 interface instead to maximize the copying throughput.
+
     (Incorrect)
-    
--   This is due to encryption overhead when copying files to the Snowball Edge device. Open multiple sessions to the Snowball Edge device and initiate parallel copy jobs to improve the overall copying throughput.
-    
+
+- This is due to encryption overhead when copying files to the Snowball Edge device. Open multiple sessions to the Snowball Edge device and initiate parallel copy jobs to improve the overall copying throughput.
+
     (Correct)
-    
--   Ingesting millions of files has saturated the processing power of the Snowball Edge. Request for another Snowball Edge device and cluster them together to increase the ingest throughput.
-    
--   The file interface of the Snowball Edge has reached its throughput limit. Change the interface to an S3 Adapter instead for a significantly faster transfer speed.
-    
+
+- Ingesting millions of files has saturated the processing power of the Snowball Edge. Request for another Snowball Edge device and cluster them together to increase the ingest throughput.
+
+- The file interface of the Snowball Edge has reached its throughput limit. Change the interface to an S3 Adapter instead for a significantly faster transfer speed.
 
 Explanation
 
@@ -1424,8 +1296,6 @@ The option that says: **The file interface of the Snowball Edge has reached its 
 
 The option that says: **The file interface of the Snowball Edge is limited by the network interface speed. Connect the device directly using a high-speed USB 3.0 interface instead to maximize the copying throughput** is incorrect. Although some revisions of USB 3.0 or USB 3.1 can support up to 5 Gbps to 10 Gbps speeds, the network interface on the Snowball Edge supports up to 100 Gbps. You can maximize throughput by issuing multiple copy commands to the Snowball device.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/snowball/latest/developer-guide/batching-small-files.html](https://docs.aws.amazon.com/snowball/latest/developer-guide/batching-small-files.html)
@@ -1436,13 +1306,9 @@ The option that says: **The file interface of the Snowball Edge is limited by th
 
 [https://docs.aws.amazon.com/snowball/latest/developer-guide/using-adapter.html](https://docs.aws.amazon.com/snowball/latest/developer-guide/using-adapter.html)
 
-  
-
 **Check out this AWS Snowball Edge Cheat Sheet:**
 
 [https://tutorialsdojo.com/aws-snowball-edge/](https://tutorialsdojo.com/aws-snowball-edge/?src=udemy)
-
-  
 
 **AWS Snow Family Overview:**
 
@@ -1454,18 +1320,17 @@ A company has built an application that allows painters to upload photos of thei
 
 Which of the following is the best solution to improve the image upload process?
 
--   Enable multipart upload on Amazon S3 and redeploy the application to support it. This allows the transmitting of separate parts of the image in parallel.
-    
+- Enable multipart upload on Amazon S3 and redeploy the application to support it. This allows the transmitting of separate parts of the image in parallel.
+
     (Incorrect)
-    
--   Increase the upload capacity by converting the Amazon EC2 instances to an Auto Scaling Group that can scale automatically based on the users' traffic.
-    
--   Enable Amazon S3 Transfer Acceleration on the central S3 bucket. Use the s3-accelerate endpoint to upload the images.
-    
+
+- Increase the upload capacity by converting the Amazon EC2 instances to an Auto Scaling Group that can scale automatically based on the users' traffic.
+
+- Enable Amazon S3 Transfer Acceleration on the central S3 bucket. Use the s3-accelerate endpoint to upload the images.
+
     (Correct)
-    
--   Set the centralized Amazon S3 bucket as the custom origin on an Amazon CloudFront distribution. This will use CloudFront’s global edge network to improve the upload speed.
-    
+
+- Set the centralized Amazon S3 bucket as the custom origin on an Amazon CloudFront distribution. This will use CloudFront’s global edge network to improve the upload speed.
 
 Explanation
 
@@ -1505,8 +1370,6 @@ The option that says: **Set the centralized Amazon S3 bucket as the custom origi
 
 The option that says: **Increase the upload capacity by converting the Amazon EC2 instances to an Auto Scaling Group that can scale automatically based on the users' traffic** is incorrect because the images are directly being uploaded to the S3 bucket so increasing the number of EC2 instances does not necessarily improve the S3 upload speeds. Even if the application is configured to use the EC2 instance as a temporary storage for the images, the upload experience of the users will not improve because they are uploading from a different continent.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/AmazonS3/latest/dev/transfer-acceleration.html](https://docs.aws.amazon.com/AmazonS3/latest/dev/transfer-acceleration.html)
@@ -1516,8 +1379,6 @@ The option that says: **Increase the upload capacity by converting the Amazon EC
 [https://docs.aws.amazon.com/AmazonS3/latest/dev/uploadobjusingmpu.html](https://docs.aws.amazon.com/AmazonS3/latest/dev/uploadobjusingmpu.html)
 
 [https://aws.amazon.com/premiumsupport/knowledge-center/s3-upload-large-files/](https://aws.amazon.com/premiumsupport/knowledge-center/s3-upload-large-files/)
-
-  
 
 **Check out this AWS Transfer Acceleration Comparison Cheat Sheet:**
 
@@ -1529,26 +1390,25 @@ A company is running thousands of virtualized Linux and Microsoft Windows server
 
 Which of the following should the Solutions Architect do to effectively plan the cloud migration? (Select THREE.)
 
--   Use AWS X-Ray to analyze the applications running in the servers and identify possible errors that may be encountered during the migration.
-    
--   Use the AWS Cloud Adoption Readiness Tool (CART) to generate a migration assessment report to identify gaps in organizational skills and processes.
-    
+- Use AWS X-Ray to analyze the applications running in the servers and identify possible errors that may be encountered during the migration.
+
+- Use the AWS Cloud Adoption Readiness Tool (CART) to generate a migration assessment report to identify gaps in organizational skills and processes.
+
     (Correct)
-    
--   Use AWS Migration Hub to discover and track the status of the application migration across AWS and partner solutions.
-    
+
+- Use AWS Migration Hub to discover and track the status of the application migration across AWS and partner solutions.
+
     (Correct)
-    
--   Use Amazon Inspector to scan and assess the applications deployed on the on-premises virtual machines and save the generated report to an Amazon S3 bucket.
-    
--   Use AWS Application Discovery Service to gather information about the running virtual machines and running applications inside the servers.
-    
+
+- Use Amazon Inspector to scan and assess the applications deployed on the on-premises virtual machines and save the generated report to an Amazon S3 bucket.
+
+- Use AWS Application Discovery Service to gather information about the running virtual machines and running applications inside the servers.
+
     (Correct)
-    
--   Use AWS Server Migration Service (SMS) to automate the migration of the on-premises virtual machines to the AWS Cloud.
-    
+
+- Use AWS Server Migration Service (SMS) to automate the migration of the on-premises virtual machines to the AWS Cloud.
+
     (Incorrect)
-    
 
 Explanation
 
@@ -1582,8 +1442,6 @@ The option that says: **Use AWS X-Ray to analyze the applications running in the
 
 The option that says: **Use Amazon Inspector to scan and assess the applications deployed on the on-premises virtual machines and save the generated report to an Amazon S3 bucket** is incorrect because Amazon Inspector is simply an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. This is not helpful for assessing the applications on the on-premises data center.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html](https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html)
@@ -1591,8 +1449,6 @@ The option that says: **Use Amazon Inspector to scan and assess the applications
 [https://cloudreadiness.amazonaws.com/#/cart](https://cloudreadiness.amazonaws.com/#/cart)
 
 [https://docs.aws.amazon.com/migrationhub/latest/ug/getting-started.html](https://docs.aws.amazon.com/migrationhub/latest/ug/getting-started.html)
-
-  
 
 **AWS Migration Services Overview:**
 
@@ -1608,18 +1464,17 @@ A multinational healthcare company plans to launch a new MedTech information web
 
 Which of the following options will allow the application instances access to the DynamoDB tables without exposing API credentials?
 
--   Create an IAM Role and assign the required permissions to read and write from the DynamoDB table. Have the instance profile property of the application instance reference the role.
-    
+- Create an IAM Role and assign the required permissions to read and write from the DynamoDB table. Have the instance profile property of the application instance reference the role.
+
     (Correct)
-    
--   Have the user enter the access and secret keys of an existing IAM User that has permissions to read and write from the DynamoDB table instead of using the Parameter section in the CloudFormation template.
-    
--   Create an IAM Role that grants access to the DynamoDB table. Use the `AWS::SSM::Parameter` resource that creates an SSM parameter in AWS Systems Manager Parameter Store containing the Amazon Resource Name of the IAM role. Have the instance profile property of the application instance reference the role.
-    
+
+- Have the user enter the access and secret keys of an existing IAM User that has permissions to read and write from the DynamoDB table instead of using the Parameter section in the CloudFormation template.
+
+- Create an IAM Role that grants access to the DynamoDB table. Use the `AWS::SSM::Parameter` resource that creates an SSM parameter in AWS Systems Manager Parameter Store containing the Amazon Resource Name of the IAM role. Have the instance profile property of the application instance reference the role.
+
     (Incorrect)
-    
--   Create an IAM User in the CloudFormation template and assign permissions to read and write from the DynamoDB table. Then retrieve the values of the access and secret keys using CloudFormation's GetAtt function, and pass them to the application instance through user-data.
-    
+
+- Create an IAM User in the CloudFormation template and assign permissions to read and write from the DynamoDB table. Then retrieve the values of the access and secret keys using CloudFormation's GetAtt function, and pass them to the application instance through user-data.
 
 Explanation
 
@@ -1645,8 +1500,6 @@ The option that says: **Have the user enter the access and secret keys of an exi
 
 [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html)
 
-  
-
 **Check out this AWS IAM Cheat Sheet:**
 
 [https://tutorialsdojo.com/aws-identity-and-access-management-iam/](https://tutorialsdojo.com/aws-identity-and-access-management-iam/?src=udemy)
@@ -1657,22 +1510,21 @@ An international insurance company has clients all across the globe. The company
 
 Which of the following options is a valid solution that meets the above requirements? (Select TWO.)
 
--   Use CloudFront Signed Cookies to ensure that only their client can access the files. Enable HTTPS in your CloudFront distribution.
-    
+- Use CloudFront Signed Cookies to ensure that only their client can access the files. Enable HTTPS in your CloudFront distribution.
+
     (Incorrect)
-    
--   Create a new S3 bucket in US West (N. California) region and upload the files. Use S3 pre-signed URLs to ensure that only their client can access the files. Remove permission to use Amazon S3 URLs to read the files for anyone else.
-    
+
+- Create a new S3 bucket in US West (N. California) region and upload the files. Use S3 pre-signed URLs to ensure that only their client can access the files. Remove permission to use Amazon S3 URLs to read the files for anyone else.
+
     (Correct)
-    
--   Use CloudFront signed URLs to ensure that only their client can access the files. Enable field-level encryption in your CloudFront distribution.
-    
--   Use CloudFront signed URLs to ensure that only their client can access the files. Create an origin access identity (OAI) and give it permission to read the files in the bucket. Remove permission to use Amazon S3 URLs to read the files for anyone else.
-    
+
+- Use CloudFront signed URLs to ensure that only their client can access the files. Enable field-level encryption in your CloudFront distribution.
+
+- Use CloudFront signed URLs to ensure that only their client can access the files. Create an origin access identity (OAI) and give it permission to read the files in the bucket. Remove permission to use Amazon S3 URLs to read the files for anyone else.
+
     (Correct)
-    
--   Create a new S3 bucket in US West (N. California) region and upload the files. Set up an origin access identity (OAI) and give it permission to read the files in the bucket. Enable HTTPS in your CloudFront distribution.
-    
+
+- Create a new S3 bucket in US West (N. California) region and upload the files. Set up an origin access identity (OAI) and give it permission to read the files in the bucket. Enable HTTPS in your CloudFront distribution.
 
 Explanation
 
@@ -1694,27 +1546,19 @@ The option that says: **Use CloudFront signed URLs to ensure that only their cli
 
 The option that says: **Create a new S3 bucket in US West (N. California) region and upload the files. Set up an origin access identity (OAI) and give it permission to read the files in the bucket. Enable HTTPS in your CloudFront distribution** is incorrect. An Origin Access Identity (OAI) will only require your client to only access the files by using the CloudFront URL and not through a direct S3 URL. This can be a possible solution if it mentions the use of Signed URL or Signed Cookies.
 
-  
-
 **References**:
 
 [https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html)
 
 [https://docs.aws.amazon.com/AmazonS3/latest/dev/PresignedUrlUploadObject.html](https://docs.aws.amazon.com/AmazonS3/latest/dev/PresignedUrlUploadObject.html)
 
-  
-
 **Check out this Amazon CloudFront Cheat Sheet:**
 
 [https://tutorialsdojo.com/amazon-cloudfront/](https://tutorialsdojo.com/amazon-cloudfront/?src=udemy)
 
-  
-
 **S3 Pre-signed URLs vs CloudFront Signed URLs vs Origin Access Identity (OAI)**
 
 [https://tutorialsdojo.com/s3-pre-signed-urls-vs-cloudfront-signed-urls-vs-origin-access-identity-oai/](https://tutorialsdojo.com/s3-pre-signed-urls-vs-cloudfront-signed-urls-vs-origin-access-identity-oai/?src=udemy)
-
-  
 
 **Comparison of AWS Services Cheat Sheets:**
 
@@ -1726,18 +1570,17 @@ An analytics company plans to create a self-service solution that will provide a
 
 Which of the following solutions will meet the company requirements with the LEAST amount of operational overhead?
 
--   Write an AWS CloudFormation template that contains the `AWS::SageMaker::NotebookInstance` resource type to launch a Jupyter notebook instance with a preconfigured AWS KMS key. Create Mappings on the CloudFormation to map simpler parameter names for instance sizes such as Small, Medium, Large. Reference the URL of the notebook instance on the Outputs section of the template. Create a portfolio in AWS Service Catalog and upload the template to be shared with the IAM role of the data scientists.
-    
+- Write an AWS CloudFormation template that contains the `AWS::SageMaker::NotebookInstance` resource type to launch a Jupyter notebook instance with a preconfigured AWS KMS key. Create Mappings on the CloudFormation to map simpler parameter names for instance sizes such as Small, Medium, Large. Reference the URL of the notebook instance on the Outputs section of the template. Create a portfolio in AWS Service Catalog and upload the template to be shared with the IAM role of the data scientists.
+
     (Correct)
-    
--   Write a custom AWS CLI script that will take step-by-step instructions of the input parameters from the data scientist for the requested Jupyter notebook instance with the pre-configured AWS KMS key. Upload this script to a shared Amazon S3 bucket for distribution with the data scientists. Have the data scientists execute the script locally on their computers.
-    
--   Write an AWS CloudFormation template that contains the `AWS::SageMaker::NotebookInstance` resource type to launch a Jupyter notebook instance with a preconfigured AWS KMS key. On the Outputs section of the CloudFormation template, reference the URL of the notebook instance. Rename this template to be more user-friendly and upload it to a shared Amazon S3 bucket for distribution to the data scientists.
-    
--   Create an Amazon S3 bucket with website hosting enabled. Create a simple form as a front-end website hosted on the S3 bucket that allows the data scientist to input their request for Jupyter notebook creation. Send the request to an Amazon API Gateway that will invoke an AWS Lambda function with an IAM role permission to create the Jupyter notebook instance with a preconfigured AWS KMS key. Have the Lambda function reply the URL of the notebook instance for display on the front-end website.
-    
+
+- Write a custom AWS CLI script that will take step-by-step instructions of the input parameters from the data scientist for the requested Jupyter notebook instance with the pre-configured AWS KMS key. Upload this script to a shared Amazon S3 bucket for distribution with the data scientists. Have the data scientists execute the script locally on their computers.
+
+- Write an AWS CloudFormation template that contains the `AWS::SageMaker::NotebookInstance` resource type to launch a Jupyter notebook instance with a preconfigured AWS KMS key. On the Outputs section of the CloudFormation template, reference the URL of the notebook instance. Rename this template to be more user-friendly and upload it to a shared Amazon S3 bucket for distribution to the data scientists.
+
+- Create an Amazon S3 bucket with website hosting enabled. Create a simple form as a front-end website hosted on the S3 bucket that allows the data scientist to input their request for Jupyter notebook creation. Send the request to an Amazon API Gateway that will invoke an AWS Lambda function with an IAM role permission to create the Jupyter notebook instance with a preconfigured AWS KMS key. Have the Lambda function reply the URL of the notebook instance for display on the front-end website.
+
     (Incorrect)
-    
 
 Explanation
 
@@ -1759,8 +1602,6 @@ The option that says: **Write an AWS CloudFormation template that contains the**
 
 The option that says: **Write a custom AWS CLI script that will take step-by-step instructions of the input parameters from the data scientist for the requested Jupyter notebook instance with the pre-configured AWS KMS key. Upload this script to a shared Amazon S3 bucket for distribution with the data scientists. Have the data scientists execute the script locally on their computers** is incorrect. This is also possible, however, this is not very user-friendly and does not meet the company requirement of a self-service portal solution.
 
-  
-
 **References:**
 
 [https://aws.amazon.com/blogs/mt/enable-self-service-secured-data-science-using-amazon-sagemaker-notebooks-and-aws-service-catalog/](https://aws.amazon.com/blogs/mt/enable-self-service-secured-data-science-using-amazon-sagemaker-notebooks-and-aws-service-catalog/)
@@ -1768,8 +1609,6 @@ The option that says: **Write a custom AWS CLI script that will take step-by-ste
 [https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)
 
 [https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html)
-
-  
 
 **Check out these Amazon SageMaker and AWS Service Catalog Cheat Sheets:**
 
@@ -1783,22 +1622,21 @@ An electric utility company deploys smart meters for its customers to easily tra
 
 Which combination of the following actions will resolve these issues? (Select TWO.)
 
--   The new metrics being collected requires more processing power from the Lambda functions. Adjust the memory allocation for the Lambda function to accommodate the surge.
-    
--   Process the data in batches to avoid reaching the write limits to the DynamoDB table. Group the requests from API Gateway by streaming the data into an Amazon Kinesis data stream.
-    
+- The new metrics being collected requires more processing power from the Lambda functions. Adjust the memory allocation for the Lambda function to accommodate the surge.
+
+- Process the data in batches to avoid reaching the write limits to the DynamoDB table. Group the requests from API Gateway by streaming the data into an Amazon Kinesis data stream.
+
     (Correct)
-    
--   Set up an Amazon SQS FIFO queue to handle the burst of the data stream from the smart metrics. Trigger the Lambda function to run whenever a message is received on the queue.
-    
+
+- Set up an Amazon SQS FIFO queue to handle the burst of the data stream from the smart metrics. Trigger the Lambda function to run whenever a message is received on the queue.
+
     (Incorrect)
-    
--   As more customers are sending data, adjust the Write Capacity Unit (WCU) of the DynamoDB table to be able to accommodate all the write requests being processed by the Lambda functions.
-    
+
+- As more customers are sending data, adjust the Write Capacity Unit (WCU) of the DynamoDB table to be able to accommodate all the write requests being processed by the Lambda functions.
+
     (Correct)
-    
--   Since the Lambda functions are being overwhelmed with too many requests, increase the payload size from the meters but send the data less frequently to avoid reaching the concurrency limit.
-    
+
+- Since the Lambda functions are being overwhelmed with too many requests, increase the payload size from the meters but send the data less frequently to avoid reaching the concurrency limit.
 
 Explanation
 
@@ -1826,8 +1664,6 @@ The option that says: **Since the Lambda functions are being overwhelmed with to
 
 The option that says: **Set up an Amazon SQS FIFO queue to handle the burst of the data stream from the smart metrics. Trigger the Lambda function to run whenever a message is received on the queue** is incorrect. This action is not recommended because an SQS FIFO queue can only handle 3000 messages per second. The customer base is constantly growing so it is recommended to use Amazon Kinesis to scale beyond this.
 
-  
-
 **References:**
 
 [https://aws.amazon.com/premiumsupport/knowledge-center/lambda-troubleshoot-throttling/](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-troubleshoot-throttling/)
@@ -1837,8 +1673,6 @@ The option that says: **Set up an Amazon SQS FIFO queue to handle the burst of t
 [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.Errors.html](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.Errors.html)
 
 [https://docs.aws.amazon.com/apigateway/latest/developerguide/integrating-api-with-aws-services-kinesis.html](https://docs.aws.amazon.com/apigateway/latest/developerguide/integrating-api-with-aws-services-kinesis.html)
-
-  
 
 **Check out these AWS Lambda and Amazon DynamoDB Cheat Sheet:**
 
@@ -1852,18 +1686,17 @@ A company wants to improve data protection for the sensitive information stored 
 
 Which of the following best describes how Amazon S3-Managed Keys (SSE-S3) encryption method works?
 
--   In SSE-S3, you will be able to manage the customer master keys (CMKs) and Amazon S3 manages the encryption for reading and writing objects in your S3 bucket.
-    
--   SSE-S3 provides separate permissions to use an API key that provides added protection against unauthorized access of your objects in S3.
-    
--   SSE-S3 provides strong multi-factor encryption in which each object is encrypted with a unique key. It also encrypts the key itself with a master key that it rotates regularly.
-    
+- In SSE-S3, you will be able to manage the customer master keys (CMKs) and Amazon S3 manages the encryption for reading and writing objects in your S3 bucket.
+
+- SSE-S3 provides separate permissions to use an API key that provides added protection against unauthorized access of your objects in S3.
+
+- SSE-S3 provides strong multi-factor encryption in which each object is encrypted with a unique key. It also encrypts the key itself with a master key that it rotates regularly.
+
     (Correct)
-    
--   In SSE-S3, a randomly generated data encryption key is returned which is used by the client to encrypt the object data.
-    
+
+- In SSE-S3, a randomly generated data encryption key is returned which is used by the client to encrypt the object data.
+
     (Incorrect)
-    
 
 Explanation
 
@@ -1883,8 +1716,6 @@ The option that says: **In SSE-S3, you will be able to manage the customer maste
 
 The option that says: **In SSE-S3, a randomly generated data encryption key is returned which is used by the client to encrypt the object data** is incorrect. SSE-S3 does not use a randomly generated data encryption key.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html)
@@ -1892,8 +1723,6 @@ The option that says: **In SSE-S3, a randomly generated data encryption key is r
 [https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html)
 
 [https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-encryption.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-encryption.html)
-
-  
 
 **Check out this Amazon S3 Cheat Sheet:**
 
@@ -1905,18 +1734,17 @@ A company is using Microsoft Active Directory to manage all employee accounts an
 
 Which of the following options is the recommended way to extend the current Active Directory domain to AWS?
 
--   Use Amazon Cognito to authorize users to your applications using direct sign-in or through third-party apps, and access your apps' backend resources in AWS.
-    
--   Use IAM Roles to set up cross-account access and delegate access to resources that are in your AWS account.
-    
--   Use AWS Directory Service to integrate your AWS resources with the existing Active Directory using trust relationship. Enable single sign-on using Managed Microsoft AD.
-    
+- Use Amazon Cognito to authorize users to your applications using direct sign-in or through third-party apps, and access your apps' backend resources in AWS.
+
+- Use IAM Roles to set up cross-account access and delegate access to resources that are in your AWS account.
+
+- Use AWS Directory Service to integrate your AWS resources with the existing Active Directory using trust relationship. Enable single sign-on using Managed Microsoft AD.
+
     (Correct)
-    
--   Create users and groups with AWS Single Sign-On along with AWS Organizations to help you manage SSO access and user permissions across all the AWS accounts.
-    
+
+- Create users and groups with AWS Single Sign-On along with AWS Organizations to help you manage SSO access and user permissions across all the AWS accounts.
+
     (Incorrect)
-    
 
 Explanation
 
@@ -1934,21 +1762,15 @@ The option that says: **Creating users and groups with AWS Single Sign-On along 
 
 The option that says: **Use IAM Roles to set up cross-account access and delegate access to resources that are in your AWS account** is incorrect because setting up cross-account access allows you to share resources in one AWS account with users in a different AWS account. Since the company is already using Microsoft AD then the better choice to use here is the AWS Directory Service.
 
-  
-
 **References:**
 
 [https://aws.amazon.com/directoryservice/](https://aws.amazon.com/directoryservice/)
 
 [https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-your-directory-connected.html](https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-your-directory-connected.html)
 
-  
-
 **AWS Identity Services Overview:**
 
 [https://youtu.be/AIdUw0i8rr0](https://youtu.be/AIdUw0i8rr0)
-
-  
 
 **Check out this AWS Directory Service Cheat Sheet:**
 
@@ -1960,20 +1782,19 @@ A company implements best practices and mandates that all of the cloud-related d
 
 What does this code snippet do in CloudFormation?
 
-`    "SNSTopic" : {   "Type" : "AWS::SNS::Topic",   "Properties" : {   "Subscription" : [{   "Protocol" : "sqs",   "Endpoint" : { "Fn::GetAtt" : [ "TutorialsDojoQueue", "Arn" ] }   }]   }    `
+`"SNSTopic" : {   "Type" : "AWS::SNS::Topic",   "Properties" : {   "Subscription" : [{   "Protocol" : "sqs",   "Endpoint" : { "Fn::GetAtt" : [ "TutorialsDojoQueue", "Arn" ] }   }]   }`
 
--   Creates an SNS topic which allows SQS subscription endpoints.
-    
+- Creates an SNS topic which allows SQS subscription endpoints.
+
     (Incorrect)
-    
--   Creates an SNS topic and then invokes the call to create an SQS queue with a logical resource name of TutorialsDojoQueue.
-    
--   Creates an SNS topic and then adds a subscription using the ARN attribute name for the SQS resource, which is created under the logical name TutorialsDojoQueue.
-    
+
+- Creates an SNS topic and then invokes the call to create an SQS queue with a logical resource name of TutorialsDojoQueue.
+
+- Creates an SNS topic and then adds a subscription using the ARN attribute name for the SQS resource, which is created under the logical name TutorialsDojoQueue.
+
     (Correct)
-    
--   Creates an SNS topic which allows SQS subscription endpoints to be added as a parameter on the template.
-    
+
+- Creates an SNS topic which allows SQS subscription endpoints to be added as a parameter on the template.
 
 Explanation
 
@@ -1996,15 +1817,11 @@ The following options are all incorrect because these options incorrectly descri
 
 **\- Creates an SNS topic and then invokes the call to create an SQS queue with a logical resource name of TutorialsDojoQueue.**
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html)
 
 [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
-
-  
 
 **Check out this AWS CloudFormation Cheat Sheet:**
 
@@ -2016,18 +1833,17 @@ A company is planning to migrate its workload to the AWS cloud. The solutions ar
 
 Which of the following is the most cost-effective migration strategy that should be implemented to meet the above requirement?
 
--   Refactor / Re-architect
-    
+- Refactor / Re-architect
+
     (Incorrect)
-    
--   Repurchase
-    
--   Rehost
-    
--   Replatform
-    
+
+- Repurchase
+
+- Rehost
+
+- Replatform
+
     (Correct)
-    
 
 Explanation
 
@@ -2065,8 +1881,6 @@ Therefore, the correct answer is: **Replatform.** This strategy is done by makin
 
 [https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-database-migration/planning-phase.html](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-database-migration/planning-phase.html)
 
-  
-
 **Tutorials Dojo's AWS Certified Solutions Architect Professional Exam Study Guide:**
 
 [https://tutorialsdojo.com/aws-certified-solutions-architect-professional/](https://tutorialsdojo.com/aws-certified-solutions-architect-professional/?src=udemy)
@@ -2077,22 +1891,21 @@ A company that manages hundreds of AWS client accounts has created a central log
 
 Which of the following solutions will most likely resolve the issue? (Select TWO.)
 
--   Ensure that the security group attached to the EC2 instances hosting the logging service allows inbound traffic from the NLB subnet IPs.
-    
+- Ensure that the security group attached to the EC2 instances hosting the logging service allows inbound traffic from the NLB subnet IPs.
+
     (Correct)
-    
--   Ensure that the NACL associated with the logging service subnet allows communication to and from the NLB subnets. Ensure that the NACL associated with the NLB subnets allows communication to and from the EC2 instances subnets running the logging service.
-    
+
+- Ensure that the NACL associated with the logging service subnet allows communication to and from the NLB subnets. Ensure that the NACL associated with the NLB subnets allows communication to and from the EC2 instances subnets running the logging service.
+
     (Correct)
-    
--   Ensure that the security group attached to the EC2 instances hosting the logging service allows inbound traffic from the IP address block of the clients.
-    
--   Ensure that the NACL associated with the logging service subnets allows communication to and from the interface endpoint. Ensure that the NACL associated with the interface endpoint subnet allows communication to and from the EC2 instances running the logging service.
-    
--   Ensure that the security group attached to the NLB allows inbound traffic from the interface endpoint subnet.
-    
+
+- Ensure that the security group attached to the EC2 instances hosting the logging service allows inbound traffic from the IP address block of the clients.
+
+- Ensure that the NACL associated with the logging service subnets allows communication to and from the interface endpoint. Ensure that the NACL associated with the interface endpoint subnet allows communication to and from the EC2 instances running the logging service.
+
+- Ensure that the security group attached to the NLB allows inbound traffic from the interface endpoint subnet.
+
     (Incorrect)
-    
 
 Explanation
 
@@ -2126,8 +1939,6 @@ The option that says: **Ensure that the security group attached to the EC2 insta
 
 The option that says: **Ensure that the security group attached to the NLB allows inbound traffic from the interface endpoint subnet** is incorrect because Network Load Balancers do not have associated security groups. The security groups for your targets must use IP addresses to allow traffic from the load balancer.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-troubleshooting.html](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-troubleshooting.html)
@@ -2137,8 +1948,6 @@ The option that says: **Ensure that the security group attached to the NLB allow
 [https://aws.amazon.com/premiumsupport/knowledge-center/security-group-load-balancer/](https://aws.amazon.com/premiumsupport/knowledge-center/security-group-load-balancer/)
 
 [https://docs.aws.amazon.com/elasticloadbalancing/latest/network/target-group-register-targets.html#target-security-groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/target-group-register-targets.html#target-security-groups)
-
-  
 
 **Application Load Balancer vs Network Load Balancer vs Classic Load Balancer:**
 
@@ -2150,26 +1959,25 @@ A company has an on-premises identity provider (IdP) used for authenticating emp
 
 Which of the following options must be checked to ensure the proper configuration of identity federation? (Select THREE.)
 
--   Ensure that the ARN of the SAML provider, the ARN of the created IAM role, and SAML assertion from the IdP are all included when the federated identity web portal calls the AWS STS `AssumeRoleWithSAML` API.
-    
+- Ensure that the ARN of the SAML provider, the ARN of the created IAM role, and SAML assertion from the IdP are all included when the federated identity web portal calls the AWS STS `AssumeRoleWithSAML` API.
+
     (Correct)
-    
--   Check the company’s IdP to ensure that the users are all part of the default `AWSFederatedUser` IAM group which is readily available in AWS.
-    
--   Ensure that the IAM policy for that user has “Allow” permissions to use SAML federation.
-    
+
+- Check the company’s IdP to ensure that the users are all part of the default `AWSFederatedUser` IAM group which is readily available in AWS.
+
+- Ensure that the IAM policy for that user has “Allow” permissions to use SAML federation.
+
     (Incorrect)
-    
--   Ensure that the trust policy of the IAM roles created for the federated users or groups has set the SAML provider as principal.
-    
+
+- Ensure that the trust policy of the IAM roles created for the federated users or groups has set the SAML provider as principal.
+
     (Correct)
-    
--   Ensure that the resources on the AWS environment VPC can reach the on-premises IdP using its DNS hostname.
-    
--   Ensure that the appropriate IAM roles are mapped to company users and groups in the IdP’s SAML assertions.
-    
+
+- Ensure that the resources on the AWS environment VPC can reach the on-premises IdP using its DNS hostname.
+
+- Ensure that the appropriate IAM roles are mapped to company users and groups in the IdP’s SAML assertions.
+
     (Correct)
-    
 
 Explanation
 
@@ -2215,15 +2023,11 @@ The option that says: **Check the company’s IdP to ensure that the users are a
 
 The option that says: **Ensure that the resources on the AWS environment VPC can reach the on-premises IdP using its DNS hostname** is incorrect as this is not a requirement for the identity federation to work.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_roles\_providers\_saml.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html)
 
 [https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_roles\_providers\_enable-console-saml.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_enable-console-saml.html)
-
-  
 
 **Check out these AWS Security and Identity Services Cheat Sheet:**
 
@@ -2235,18 +2039,17 @@ The AWS resources in your production account are shared among various business u
 
 Which of the following is the most suitable multi-account strategy that you should implement?
 
--   Use AWS Organizations to centrally manage all of your accounts. Group your accounts, which belong to a specific business unit, to an individual Organization Unit (OU). Create a Service Control Policy in the production account for each business unit which has a policy that allows access to the EC2 instances including resource-level permission to terminate the instances that it owns. Provide the cross-account access and the SCP to the individual member accounts to tightly control who can terminate the EC2 instances.
-    
--   Use AWS Organizations to centrally manage all of your accounts. Group your accounts, which belong to a specific business unit, to individual Organization Units (OU). Create an IAM Role in the production account which has a policy that allows access to the EC2 instances including resource-level permission to terminate the instances owned by a particular business unit. Provide the cross-account access and the IAM policy to every member accounts of the OU.
-    
+- Use AWS Organizations to centrally manage all of your accounts. Group your accounts, which belong to a specific business unit, to an individual Organization Unit (OU). Create a Service Control Policy in the production account for each business unit which has a policy that allows access to the EC2 instances including resource-level permission to terminate the instances that it owns. Provide the cross-account access and the SCP to the individual member accounts to tightly control who can terminate the EC2 instances.
+
+- Use AWS Organizations to centrally manage all of your accounts. Group your accounts, which belong to a specific business unit, to individual Organization Units (OU). Create an IAM Role in the production account which has a policy that allows access to the EC2 instances including resource-level permission to terminate the instances owned by a particular business unit. Provide the cross-account access and the IAM policy to every member accounts of the OU.
+
     (Correct)
-    
--   Use AWS Organizations to centrally manage all of your accounts. Group your accounts, which belong to a specific business unit, to an individual Organization Unit (OU). Create an IAM Role in the production account for each business unit which has a policy that allows access to the EC2 instances including resource-level permission to terminate the instances that it owns. Create an `AWSServiceRoleForOrganizations` service-linked role for the individual member accounts of the OU to enable trusted access.
-    
+
+- Use AWS Organizations to centrally manage all of your accounts. Group your accounts, which belong to a specific business unit, to an individual Organization Unit (OU). Create an IAM Role in the production account for each business unit which has a policy that allows access to the EC2 instances including resource-level permission to terminate the instances that it owns. Create an `AWSServiceRoleForOrganizations` service-linked role for the individual member accounts of the OU to enable trusted access.
+
     (Incorrect)
-    
--   Use AWS Organizations to centrally manage all of your accounts. Group your accounts, which belong to a specific business unit, to an individual Organization Unit (OU). Create a Service Control Policy in the production account which has a policy that allows access to the EC2 instances including resource-level permission to terminate the instances owned by a particular business unit. Provide the cross-account access and the SCP to the OUs, which will then be automatically inherited by its member accounts.
-    
+
+- Use AWS Organizations to centrally manage all of your accounts. Group your accounts, which belong to a specific business unit, to an individual Organization Unit (OU). Create a Service Control Policy in the production account which has a policy that allows access to the EC2 instances including resource-level permission to terminate the instances owned by a particular business unit. Provide the cross-account access and the SCP to the OUs, which will then be automatically inherited by its member accounts.
 
 Explanation
 
@@ -2274,8 +2077,6 @@ The following options are incorrect because an SCP policy simply specifies the s
 
 SCPs are similar to IAM permission policies except that they don't grant any permissions.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/organizations/latest/userguide/orgs\_manage\_ous.html](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html)
@@ -2284,25 +2085,17 @@ SCPs are similar to IAM permission policies except that they don't grant any per
 
 [https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial\_cross-account-with-roles.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html)
 
-  
-
 **Check out this AWS Organizations Cheat Sheet:**
 
 [https://tutorialsdojo.com/aws-organizations/](https://tutorialsdojo.com/aws-organizations/?src=udemy)
-
-  
 
 **Service Control Policies (SCP) vs IAM Policies:**
 
 [https://tutorialsdojo.com/service-control-policies-scp-vs-iam-policies/](https://tutorialsdojo.com/service-control-policies-scp-vs-iam-policies/?src=udemy)
 
-  
-
 **Comparison of AWS Services Cheat Sheets:**
 
 [https://tutorialsdojo.com/comparison-of-aws-services/](https://tutorialsdojo.com/comparison-of-aws-services/?src=udemy)
-
-
 
 # Question 4: Incorrect
 
@@ -2310,18 +2103,17 @@ A company is planning to build its new customer relationship management (CRM) po
 
 Which of the following provides the MOST secure configuration for the CRM portal?
 
--   Use the `awsvpc` network mode in the task definition in your Amazon ECS Cluster. Attach security groups to the ECS tasks then use IAM roles for tasks to access other resources.
-    
+- Use the `awsvpc` network mode in the task definition in your Amazon ECS Cluster. Attach security groups to the ECS tasks then use IAM roles for tasks to access other resources.
+
     (Correct)
-    
--   Use the `bridge` network mode in the task definition in your Amazon ECS Cluster. Attach security groups to the ECS tasks then use IAM roles for tasks to access other resources.
-    
+
+- Use the `bridge` network mode in the task definition in your Amazon ECS Cluster. Attach security groups to the ECS tasks then use IAM roles for tasks to access other resources.
+
     (Incorrect)
-    
--   Use the `bridge` network mode in the task definition in your Amazon ECS Cluster. Attach security groups to Amazon EC2 instances then use IAM roles for EC2 instances to access other resources.
-    
--   Use the `awsvpc` network mode in the task definition in your Amazon ECS Cluster. Attach security groups to the ECS tasks then pass IAM credentials into the container at launch time to access other AWS resources.
-    
+
+- Use the `bridge` network mode in the task definition in your Amazon ECS Cluster. Attach security groups to Amazon EC2 instances then use IAM roles for EC2 instances to access other resources.
+
+- Use the `awsvpc` network mode in the task definition in your Amazon ECS Cluster. Attach security groups to the ECS tasks then pass IAM credentials into the container at launch time to access other AWS resources.
 
 Explanation
 
@@ -2351,21 +2143,15 @@ The option that says: **Use the** `**bridge**` **network mode in the task defini
 
 The option that says: **Use the** `**awsvpc**` **network mode in the task definition in your Amazon ECS Cluster. Attach security groups to the ECS tasks then pass IAM credentials into the container at launch time to access other AWS resources** is incorrect. Although it uses the correct network mode, you have to use an IAM Role instead. It is a security risk to pass the IAM credentials into the container as it could be potentially exposed.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-networking.html](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-networking.html)
 
 [https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task\_definition\_parameters.html#network\_mode](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#network_mode)
 
-  
-
 **Check out this Amazon ECS Cheat Sheet:**
 
 [https://tutorialsdojo.com/amazon-elastic-container-service-amazon-ecs/](https://tutorialsdojo.com/amazon-elastic-container-service-amazon-ecs/?src=udemy)
-
-  
 
 **AWS Container Services Overview:**
 
@@ -2377,18 +2163,17 @@ A company has created multiple accounts in AWS to support the rapid growth of it
 
 Which is the most suitable solution that you should implement with the LEAST amount of complexity?
 
--   Provide access to externally authenticated users via Identity Federation. Set up an IAM role to specify permissions for users from each department whose identity is federated from your organization or a third-party identity provider.
-    
--   Connect all departments by setting up cross-account access to each of the AWS accounts of the company. Create and attach IAM policies to your resources based on their respective departments to control access.
-    
--   Set up AWS Organizations and Organizational Units (OU) to connect all AWS accounts of each department. Create a custom IAM Policy to allow or deny the use of certain AWS services for each account.
-    
+- Provide access to externally authenticated users via Identity Federation. Set up an IAM role to specify permissions for users from each department whose identity is federated from your organization or a third-party identity provider.
+
+- Connect all departments by setting up cross-account access to each of the AWS accounts of the company. Create and attach IAM policies to your resources based on their respective departments to control access.
+
+- Set up AWS Organizations and Organizational Units (OU) to connect all AWS accounts of each department. Create a custom IAM Policy to allow or deny the use of certain AWS services for each account.
+
     (Incorrect)
-    
--   Use AWS Organizations and Service Control Policies to control the list of AWS services that can be used by each member account.
-    
+
+- Use AWS Organizations and Service Control Policies to control the list of AWS services that can be used by each member account.
+
     (Correct)
-    
 
 Explanation
 
@@ -2412,8 +2197,6 @@ The option that says: **Connecting all departments by setting up cross-account a
 
 The option that says: **Providing access to externally authenticated users via Identity Federation and setting up an IAM role to specify permissions for users from each department whose identity is federated from your organization or a third-party identity provider** is incorrect. This option is focused on the Identity Federation authentication set up for your AWS accounts but not the IAM policy management for multiple AWS accounts. A combination of AWS Organizations and Service Control Policies (SCPs) is a better choice compared to this option.
 
-  
-
 **References:**
 
 [https://aws.amazon.com/organizations/](https://aws.amazon.com/organizations/)
@@ -2421,8 +2204,6 @@ The option that says: **Providing access to externally authenticated users via I
 [https://aws.amazon.com/premiumsupport/knowledge-center/iam-policy-service-control-policy/](https://aws.amazon.com/premiumsupport/knowledge-center/iam-policy-service-control-policy/)
 
 [https://docs.aws.amazon.com/organizations/latest/userguide/orgs\_introduction.html](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
-
-  
 
 **Check out this AWS Organizations Cheat Sheet:**
 
@@ -2434,18 +2215,17 @@ An electronics company has an on-premises network as well as a cloud infrastruct
 
 How can you satisfy the requirement for this scenario?
 
--   Use a Cached volume gateway to retain low-latency access to your entire data set as well as your frequently accessed data.
-    
+- Use a Cached volume gateway to retain low-latency access to your entire data set as well as your frequently accessed data.
+
     (Incorrect)
-    
--   Create an S3 bucket and use the `sync` command to synchronize the data to and from your on-premises file server.
-    
--   In AWS Storage Gateway, create a File gateway that enables you to store and retrieve objects in Amazon S3 using industry-standard file protocols such as Network File System (NFS) and Server Message Block (SMB).
-    
--   Use a Stored Volume Gateway to provide cloud-backed storage volumes that you can mount as Internet Small Computer System Interface (iSCSI) devices from your on-premises application servers.
-    
+
+- Create an S3 bucket and use the `sync` command to synchronize the data to and from your on-premises file server.
+
+- In AWS Storage Gateway, create a File gateway that enables you to store and retrieve objects in Amazon S3 using industry-standard file protocols such as Network File System (NFS) and Server Message Block (SMB).
+
+- Use a Stored Volume Gateway to provide cloud-backed storage volumes that you can mount as Internet Small Computer System Interface (iSCSI) devices from your on-premises application servers.
+
     (Correct)
-    
 
 Explanation
 
@@ -2463,15 +2243,11 @@ Hence, the correct answer is the option that says: **Use a Stored Volume Gateway
 
 The option that says: **In AWS Storage Gateway, create a File gateway that enables you to store and retrieve objects in Amazon S3 using industry-standard file protocols such as Network File System (NFS) and Server Message Block (SMB)** is incorrect because a File gateway does not provide you the required low-latency access to the entire dataset that the application needs.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/storagegateway/latest/userguide/StorageGatewayConcepts.html#volume-gateway-concepts](https://docs.aws.amazon.com/storagegateway/latest/userguide/StorageGatewayConcepts.html#volume-gateway-concepts)
 
 [https://docs.aws.amazon.com/storagegateway/latest/userguide/WhatIsStorageGateway.html](https://docs.aws.amazon.com/storagegateway/latest/userguide/WhatIsStorageGateway.html)
-
-  
 
 **Check out this AWS Storage Gateway Cheat Sheet:**
 
@@ -2483,18 +2259,17 @@ A company is using AWS Organizations to manage their multi-account and multi-reg
 
 In this scenario, what could be a simple and effective solution that would allow the service to perform its tasks on the organization accounts on the moderator's behalf?
 
--   Use trusted access by running the `enable-sharing-with-aws-organization` command in the AWS RAM CLI. Mirror the configuration changes that was performed by the account that previously managed this service.
-    
+- Use trusted access by running the `enable-sharing-with-aws-organization` command in the AWS RAM CLI. Mirror the configuration changes that was performed by the account that previously managed this service.
+
     (Correct)
-    
--   Configure a service-linked role for AWS RAM and modify the permissions policy to specify what the role can and cannot do. Lastly, modify the trust policy of the role so that other processes can utilize AWS RAM.
-    
--   Attach an IAM role on the service detailing all the allowed actions that it will be able to perform. Install an SSM agent in each of the worker VMs. Use AWS Systems Manager to build automation workflows that involve the daily key processes.
-    
+
+- Configure a service-linked role for AWS RAM and modify the permissions policy to specify what the role can and cannot do. Lastly, modify the trust policy of the role so that other processes can utilize AWS RAM.
+
+- Attach an IAM role on the service detailing all the allowed actions that it will be able to perform. Install an SSM agent in each of the worker VMs. Use AWS Systems Manager to build automation workflows that involve the daily key processes.
+
     (Incorrect)
-    
--   Enable cross-account access with AWS Organizations in the Resource Access Manager Console. Mirror the configuration changes that was performed by the account that previously managed this service.
-    
+
+- Enable cross-account access with AWS Organizations in the Resource Access Manager Console. Mirror the configuration changes that was performed by the account that previously managed this service.
 
 Explanation
 
@@ -2516,8 +2291,6 @@ The option that says: **Configure a service-linked role for AWS RAM and modify t
 
 The option that says: **Enable cross-account access with AWS Organizations in the Resources Access Manager Console. Mirror the configuration changes that was performed by the account that previously managed this service** is incorrect because you should enable trusted access to AWS RAM, not cross-account access.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/organizations/latest/userguide/orgs\_integrate\_services.html](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html)
@@ -2525,8 +2298,6 @@ The option that says: **Enable cross-account access with AWS Organizations in th
 [https://docs.aws.amazon.com/organizations/latest/userguide/services-that-can-integrate-ram.html](https://docs.aws.amazon.com/organizations/latest/userguide/services-that-can-integrate-ram.html)
 
 [https://aws.amazon.com/blogs/security/introducing-an-easier-way-to-delegate-permissions-to-aws-services-service-linked-roles/](https://aws.amazon.com/blogs/security/introducing-an-easier-way-to-delegate-permissions-to-aws-services-service-linked-roles/)
-
-  
 
 **Check out this AWS Resource Access Manager Cheat Sheet:**
 
@@ -2548,18 +2319,17 @@ A company has several virtual machines on its on-premises data center hosting it
 
 Which of the following options is the recommended solution to meet the company requirements?
 
--   Leverage both AWS Application Discovery Service and AWS Migration Hub to group the on-premises VMs as an application. Write an AWS CLI script that uses VM Import/Export to import the VMs as AMIs. Schedule the script to run at regular intervals to synchronize the changes from the on-premises environment to AWS. Launch Amazon EC2 instances based on the images created from VM Import/Export. After successful testing, perform a final virtual machine import before the cutover. Launch new instances based on the updated AMIs.
-    
--   Create a job on AWS Server Migration Service (SMS) to migrate the virtual machines to AWS. Create a replication job for each application tier to sync the changes from the on-premises environment to AWS. Launch Amazon EC2 instances based on the images created from AWS SMS. After successful testing, perform a final replication before the cutover and launch new instances based on the updated AMIs.
-    
+- Leverage both AWS Application Discovery Service and AWS Migration Hub to group the on-premises VMs as an application. Write an AWS CLI script that uses VM Import/Export to import the VMs as AMIs. Schedule the script to run at regular intervals to synchronize the changes from the on-premises environment to AWS. Launch Amazon EC2 instances based on the images created from VM Import/Export. After successful testing, perform a final virtual machine import before the cutover. Launch new instances based on the updated AMIs.
+
+- Create a job on AWS Server Migration Service (SMS) to migrate the virtual machines to AWS. Create a replication job for each application tier to sync the changes from the on-premises environment to AWS. Launch Amazon EC2 instances based on the images created from AWS SMS. After successful testing, perform a final replication before the cutover and launch new instances based on the updated AMIs.
+
     (Correct)
-    
--   Create a job on AWS Server Migration Service (SMS) to migrate the root volumes of the virtual machines to AWS. Import the data volumes using the AWS CLI import-snapshot command. Launch Amazon EC2 instances based on the images created from AWS SMS and attach the imported data volumes. After successful testing, perform a final replication before the cutover. Launch new instances based on the updated AMIs and attach the corresponding data volumes.
-    
+
+- Create a job on AWS Server Migration Service (SMS) to migrate the root volumes of the virtual machines to AWS. Import the data volumes using the AWS CLI import-snapshot command. Launch Amazon EC2 instances based on the images created from AWS SMS and attach the imported data volumes. After successful testing, perform a final replication before the cutover. Launch new instances based on the updated AMIs and attach the corresponding data volumes.
+
     (Incorrect)
-    
--   Write an AWS CLI script that uses VM Import/Export to migrate the virtual machines. Schedule the script to run at regular intervals to synchronize the changes from the on-premises environment to AWS. Launch Amazon EC2 instances based on the images created from VM Import/Export. After successful testing, re-run the script to perform a final replication before the cutover. Launch new instances based on the updated AMIs.
-    
+
+- Write an AWS CLI script that uses VM Import/Export to migrate the virtual machines. Schedule the script to run at regular intervals to synchronize the changes from the on-premises environment to AWS. Launch Amazon EC2 instances based on the images created from VM Import/Export. After successful testing, re-run the script to perform a final replication before the cutover. Launch new instances based on the updated AMIs.
 
 Explanation
 
@@ -2589,8 +2359,6 @@ The option that says: **Create a job on AWS Server Migration Service (SMS) to mi
 
 The option that says: **Leverage both AWS Application Discovery Service and AWS Migration Hub to group the on-premises VMs as an application. Write an AWS CLI script that uses VM Import/Export to import the VMs as AMIs. Schedule the script to run at regular intervals to synchronize the changes from the on-premises environment to AWS. Launch Amazon EC2 instances based on the images created from VM Import/Export. After successful testing, perform a final virtual machine import before the cutover. Launch new instances based on the updated AMIs** is incorrect. The AWS Application Discovery Service plans migration projects by gathering information about the on-premises data center and all discovered data are stored in your AWS Migration Hub. This is similar to the other option for VM Import/Export as you will need to import the VM again as a whole after you make changes on the on-premises environment.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/server-migration-service/latest/userguide/server-migration.html](https://docs.aws.amazon.com/server-migration-service/latest/userguide/server-migration.html)
@@ -2599,13 +2367,9 @@ The option that says: **Leverage both AWS Application Discovery Service and AWS 
 
 [https://docs.aws.amazon.com/server-migration-service/latest/userguide/application-migration.html](https://docs.aws.amazon.com/server-migration-service/latest/userguide/application-migration.html)
 
-  
-
 **Check out this AWS Server Migration Service Cheat Sheet:**
 
 [https://tutorialsdojo.com/aws-server-migration-service-sms/](https://tutorialsdojo.com/aws-server-migration-service-sms/?src=udemy)
-
-  
 
 **AWS Migration Services Overview:**
 
@@ -2617,18 +2381,17 @@ A company regularly processes large product catalogs for its online retail platf
 
 Which of the following solutions will allow the company to visualize and control the state of every workflow with the LEAST amount of effort?
 
--   Create a queue per workflow stage on Amazon SQS and trigger an Amazon CloudWatch Alarm based on the message visibility on each queue. Send messages using Amazon SNS to trigger the AWS Lambda functions that process the next step. Visualize the Lambda processing logs for each workflow state using Amazon Elasticsearch and Kibana.
-    
--   Run a Lambda function to regularly poll for status changes in an Amazon RDS database that stores the workflow information. Create worker Lambda functions that will then process the next workflow steps. Visualize the workflow states using Amazon QuickSight on the Amazon RDS database.
-    
--   Create a workflow on Amazon SWF that will handle a single batch of catalog records. Create multiple worker tasks that will extract and transform the data before sending it through Amazon Mechanical Turk. To visualize the workflow states, process the logs using AWS Lambda functions and use Amazon Elasticsearch and Kibana.
-    
+- Create a queue per workflow stage on Amazon SQS and trigger an Amazon CloudWatch Alarm based on the message visibility on each queue. Send messages using Amazon SNS to trigger the AWS Lambda functions that process the next step. Visualize the Lambda processing logs for each workflow state using Amazon Elasticsearch and Kibana.
+
+- Run a Lambda function to regularly poll for status changes in an Amazon RDS database that stores the workflow information. Create worker Lambda functions that will then process the next workflow steps. Visualize the workflow states using Amazon QuickSight on the Amazon RDS database.
+
+- Create a workflow on Amazon SWF that will handle a single batch of catalog records. Create multiple worker tasks that will extract and transform the data before sending it through Amazon Mechanical Turk. To visualize the workflow states, process the logs using AWS Lambda functions and use Amazon Elasticsearch and Kibana.
+
     (Correct)
-    
--   With AWS Step Functions, create a workflow that will orchestrate multiple concurrent workflows. Visualize each workflow status on the AWS Management Console and write the historical data on an Amazon S3 bucket. Use Amazon QuickSight to visualize the data on the S3 bucket.
-    
+
+- With AWS Step Functions, create a workflow that will orchestrate multiple concurrent workflows. Visualize each workflow status on the AWS Management Console and write the historical data on an Amazon S3 bucket. Use Amazon QuickSight to visualize the data on the S3 bucket.
+
     (Incorrect)
-    
 
 Explanation
 
@@ -2650,8 +2413,6 @@ The option that says: **Run a Lambda function to regularly poll for status chang
 
 The option that says: **With AWS Step Functions, create a workflow that will orchestrate multiple concurrent workflows. Visualize each workflow status on the AWS Management Console, and write the historical data on an Amazon S3 bucket. Use Amazon QuickSight to visualize the data on the S3 bucket** is incorrect because Step Functions do not directly support Mechanical Turk. You will need to use Amazon SWF for this scenario.
 
-  
-
 **References:**
 
 [https://aws.amazon.com/swf/faqs/](https://aws.amazon.com/swf/faqs/)
@@ -2662,11 +2423,9 @@ The option that says: **With AWS Step Functions, create a workflow that will orc
 
 [https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkGettingStartedGuide/NextSteps.html](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkGettingStartedGuide/NextSteps.html)
 
-  
-
 **Check out these Cheat Sheets:**
 
-[https://tutorialsdojo.com/amazon-simple-workflow-amazon-swf/](https://tutorialsdojo.com/amazon-simple-workflow-amazon-swf/ ?src=udemy)
+[https://tutorialsdojo.com/amazon-simple-workflow-amazon-swf/](<https://tutorialsdojo.com/amazon-simple-workflow-amazon-swf/> ?src=udemy)
 
 [https://tutorialsdojo.com/amazon-mechanical-turk/](https://tutorialsdojo.com/amazon-mechanical-turk/?src=udemy)
 
@@ -2676,18 +2435,17 @@ A multinational financial company has a suite of web applications hosted in mult
 
 In this scenario, which of the following options is the best solution to use?
 
--   Create a new AWS CloudTrail trail in a new S3 bucket using the AWS CLI and also pass the --no-include-global-service-events and --is-multi-region-trail parameter then encrypt log files using KMS encryption. Enable Multi-Factor Authentication (MFA) Delete on the S3 bucket and ensure that only authorized users can access the logs by configuring the bucket policies.
-    
--   Create a new Amazon CloudWatch trail in a new S3 bucket using the AWS CLI and also pass both the --is-multi-region-trail and --include-global-service-events parameters then encrypt log files using KMS encryption. Enable Multi-Factor Authentication (MFA) Delete on the S3 bucket and ensure that only authorized users can access the logs by configuring the bucket policies.
-    
+- Create a new AWS CloudTrail trail in a new S3 bucket using the AWS CLI and also pass the --no-include-global-service-events and --is-multi-region-trail parameter then encrypt log files using KMS encryption. Enable Multi-Factor Authentication (MFA) Delete on the S3 bucket and ensure that only authorized users can access the logs by configuring the bucket policies.
+
+- Create a new Amazon CloudWatch trail in a new S3 bucket using the AWS CLI and also pass both the --is-multi-region-trail and --include-global-service-events parameters then encrypt log files using KMS encryption. Enable Multi-Factor Authentication (MFA) Delete on the S3 bucket and ensure that only authorized users can access the logs by configuring the bucket policies.
+
     (Incorrect)
-    
--   Create a new Amazon CloudWatch trail in a new S3 bucket using the AWS CLI and also pass the --include-global-service-events parameter then encrypt log files using KMS encryption. Enable Multi-Factor Authentication (MFA) Delete on the S3 bucket and ensure that only authorized users can access the logs by configuring the bucket policies.
-    
--   Create a new AWS CloudTrail trail in a new S3 bucket using the AWS CLI and also pass both the --is-multi-region-trail and --include-global-service-events parameters then encrypt log files using KMS encryption. Enable Multi-Factor Authentication (MFA) Delete on the S3 bucket and ensure that only authorized users can access the logs by configuring the bucket policies.
-    
+
+- Create a new Amazon CloudWatch trail in a new S3 bucket using the AWS CLI and also pass the --include-global-service-events parameter then encrypt log files using KMS encryption. Enable Multi-Factor Authentication (MFA) Delete on the S3 bucket and ensure that only authorized users can access the logs by configuring the bucket policies.
+
+- Create a new AWS CloudTrail trail in a new S3 bucket using the AWS CLI and also pass both the --is-multi-region-trail and --include-global-service-events parameters then encrypt log files using KMS encryption. Enable Multi-Factor Authentication (MFA) Delete on the S3 bucket and ensure that only authorized users can access the logs by configuring the bucket policies.
+
     (Correct)
-    
 
 Explanation
 
@@ -2703,8 +2461,6 @@ The option that says: **Create a new Amazon CloudWatch trail in a new S3 bucket 
 
 The option that says: **Create a new AWS CloudTrail trail in a new S3 bucket using the AWS CLI and also pass the --no-include-global-service-events and --is-multi-region-trail parameter then encrypt log files using KMS encryption. Enable Multi-Factor Authentication (MFA) Delete on the S3 bucket and ensure that only authorized users can access the logs by configuring the bucket policies** is incorrect. The --is-multi-region-trail is not enough as you also need to add the --include-global-service-events parameter to track the global service events. The --no-include-global-service-events parameter actually prevents CloudTrail from publishing events from global services such as IAM to the log files.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.html#cloudtrail-concepts-global-service-events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.html#cloudtrail-concepts-global-service-events)
@@ -2712,8 +2468,6 @@ The option that says: **Create a new AWS CloudTrail trail in a new S3 bucket usi
 [http://docs.aws.amazon.com/IAM/latest/UserGuide/cloudtrail-integration.html](http://docs.aws.amazon.com/IAM/latest/UserGuide/cloudtrail-integration.html)
 
 [https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail-by-using-the-aws-cli.html](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail-by-using-the-aws-cli.html)
-
-  
 
 **Check out this AWS CloudTrail Cheat Sheet:**
 
@@ -2725,18 +2479,17 @@ A media company has a suite of internet-facing web applications hosted in US Wes
 
 Which of the following approach should the Architect implement to ensure that all HTTPS services will continue to work without interruption?
 
--   In each new AWS Region, request for SSL/TLS certificates using the AWS Certificate Manager for each FQDN. Associate the new certificates to the corresponding Application Load Balancer of the same AWS Region.
-    
+- In each new AWS Region, request for SSL/TLS certificates using the AWS Certificate Manager for each FQDN. Associate the new certificates to the corresponding Application Load Balancer of the same AWS Region.
+
     (Correct)
-    
--   Use the AWS Certificate Manager service in the US West (N. California) region to request for SSL/TLS certificates for each FQDN which will be used to all regions. Associate the new certificates to the new Application Load Balancer on each new AWS Region that the Architect will add.
-    
+
+- Use the AWS Certificate Manager service in the US West (N. California) region to request for SSL/TLS certificates for each FQDN which will be used to all regions. Associate the new certificates to the new Application Load Balancer on each new AWS Region that the Architect will add.
+
     (Incorrect)
-    
--   In each new AWS Region, request for SSL/TLS certificates using AWS KMS for each FQDN. Associate the new certificates to the corresponding Application Load Balancer of the same AWS Region.
-    
--   Use the AWS KMS in the US West (N. California) region to request for SSL/TLS certificates for each FQDN which will be used to all regions. Associate the new certificates to the new Application Load Balancer on each new AWS Region that the Architect will add.
-    
+
+- In each new AWS Region, request for SSL/TLS certificates using AWS KMS for each FQDN. Associate the new certificates to the corresponding Application Load Balancer of the same AWS Region.
+
+- Use the AWS KMS in the US West (N. California) region to request for SSL/TLS certificates for each FQDN which will be used to all regions. Associate the new certificates to the new Application Load Balancer on each new AWS Region that the Architect will add.
 
 Explanation
 
@@ -2756,8 +2509,6 @@ The option that says: **Use the AWS KMS in the US West (N. California) region to
 
 The option that says: **Use the AWS Certificate Manager service in the US West (N. California) region to request for SSL/TLS certificates for each FQDN which will be used to all regions. Associate the new certificates to the new Application Load Balancer on each new AWS Region that the Architect will add** is incorrect. You can only use the same SSL certificate from ACM in more than one AWS Region if you are attaching it to your CloudFront distribution only, and not to your Application Load Balancer. To use a certificate with Elastic Load Balancing for the same site (the same fully qualified domain name, or FQDN, or set of FQDNs) in a different Region, you must request a new certificate for each Region in which you plan to use it.
 
-  
-
 **References:**
 
 [https://aws.amazon.com/certificate-manager/faqs/](https://aws.amazon.com/certificate-manager/faqs/)
@@ -2765,8 +2516,6 @@ The option that says: **Use the AWS Certificate Manager service in the US West (
 [https://aws.amazon.com/premiumsupport/knowledge-center/associate-acm-certificate-alb-nlb/](https://aws.amazon.com/premiumsupport/knowledge-center/associate-acm-certificate-alb-nlb/)
 
 [https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-add-or-delete-listeners.html#add-listener-console](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-add-or-delete-listeners.html#add-listener-console)
-
-  
 
 **Check out these AWS Certificate Manager and Elastic Load Balancer Cheat Sheets:**
 
@@ -2780,18 +2529,17 @@ A media company hosts its entire infrastructure on the AWS cloud. There is a req
 
 Which of the following is the MOST suitable type of policy that you should use in this scenario?
 
--   Set up cross-account access with a resource-based Policy. Use AWS Config rules to periodically audit changes to the IAM policy and monitor the compliance of the configuration.
-    
+- Set up cross-account access with a resource-based Policy. Use AWS Config rules to periodically audit changes to the IAM policy and monitor the compliance of the configuration.
+
     (Correct)
-    
--   Set up a service-linked role with a service control policy. Use AWS Systems Manager rules to periodically audit changes to the IAM policy and monitor the compliance of the configuration.
-    
--   Set up a service-linked role with an identity-based policy. Use AWS Systems Manager rules to periodically audit changes to the IAM policy and monitor the compliance of the configuration.
-    
--   Set up cross-account access with a user-based policy configuration. Use AWS Config rules to periodically audit changes to the IAM policy and monitor the compliance of the configuration.
-    
+
+- Set up a service-linked role with a service control policy. Use AWS Systems Manager rules to periodically audit changes to the IAM policy and monitor the compliance of the configuration.
+
+- Set up a service-linked role with an identity-based policy. Use AWS Systems Manager rules to periodically audit changes to the IAM policy and monitor the compliance of the configuration.
+
+- Set up cross-account access with a user-based policy configuration. Use AWS Config rules to periodically audit changes to the IAM policy and monitor the compliance of the configuration.
+
     (Incorrect)
-    
 
 Explanation
 
@@ -2811,15 +2559,11 @@ The option that says: **Set up a service-linked role with an identity-based poli
 
 The option that says: **Set up a service-linked role with a service control policy. Use AWS Systems Manager rules to periodically audit changes to the IAM policy and monitor the compliance of the configuration** is incorrect because a service control policy is primarily used in AWS Organizations and not for cross-account access. Service-linked roles are predefined by the service and include all the permissions that the service requires to call other AWS services on your behalf. This is not suitable for providing access to your resources to other AWS accounts, unlike cross-account access. You should also use AWS Config, and not AWS Systems Manager, to periodically audit changes to the IAM policy.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_roles\_compare-resource-policies.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_compare-resource-policies.html)
 
 [https://aws.amazon.com/config/](https://aws.amazon.com/config/)
-
-  
 
 **Check out this AWS Config Cheat Sheet:**
 
@@ -2831,18 +2575,17 @@ A company provides big data services to enterprise clients around the globe. One
 
 Which of the following actions will satisfy the migration requirements of the company while keeping the costs low?
 
--   Create an AWS Snowball import job to request for a Snowball Edge device. Use the AWS Schema Conversion Tool (SCT) to process the on-premises data warehouse and load it to the Snowball Edge device. Install the extraction agent on a separate on-premises server and register it with AWS SCT. Once the Snowball Edge imports data to the S3 bucket, use AWS SCT to migrate the data to Amazon Redshift. Configure a local task and AWS DMS task to replicate the ongoing updates to the data warehouse. Monitor and verify that the data migration is complete.
-    
+- Create an AWS Snowball import job to request for a Snowball Edge device. Use the AWS Schema Conversion Tool (SCT) to process the on-premises data warehouse and load it to the Snowball Edge device. Install the extraction agent on a separate on-premises server and register it with AWS SCT. Once the Snowball Edge imports data to the S3 bucket, use AWS SCT to migrate the data to Amazon Redshift. Configure a local task and AWS DMS task to replicate the ongoing updates to the data warehouse. Monitor and verify that the data migration is complete.
+
     (Correct)
-    
--   Create an AWS Snowball Edge job using the AWS Snowball console. Export all data from the Oracle data warehouse to the Snowball Edge device. Once the Snowball device is returned to Amazon and data is imported to an S3 bucket, create an Oracle RDS instance to import the data. Create an AWS Schema Conversion Tool (SCT) project with AWS DMS task to migrate the Oracle database to Amazon Redshift. Copy the missing daily updates from Oracle in the data center to the RDS for Oracle database over the Internet. Monitor and verify if the data migration is complete before the cut-over.
-    
+
+- Create an AWS Snowball Edge job using the AWS Snowball console. Export all data from the Oracle data warehouse to the Snowball Edge device. Once the Snowball device is returned to Amazon and data is imported to an S3 bucket, create an Oracle RDS instance to import the data. Create an AWS Schema Conversion Tool (SCT) project with AWS DMS task to migrate the Oracle database to Amazon Redshift. Copy the missing daily updates from Oracle in the data center to the RDS for Oracle database over the Internet. Monitor and verify if the data migration is complete before the cut-over.
+
     (Incorrect)
-    
--   Create a new Oracle Database on Amazon RDS. Configure Site-to-Site VPN connection from the on-premises data center to the Amazon VPC. Configure replication from the on-premises database to Amazon RDS. Once replication is complete, create an AWS Schema Conversion Tool (SCT) project with AWS DMS task to migrate the Oracle database to Amazon Redshift. Monitor and verify if the data migration is complete before the cut-over.
-    
--   Since you have a 30-day window for migration, configure VPN connectivity between AWS and the company's data center by provisioning a 1 Gbps AWS Direct Connect connection. Launch an Oracle Real Application Clusters (RAC) database on an EC2 instance and set it up to fetch and synchronize the data from the on-premises Oracle database. Once replication is complete, create an AWS DMS task on an AWS SCT project to migrate the Oracle database to Amazon Redshift. Monitor and verify if the data migration is complete before the cut-over.
-    
+
+- Create a new Oracle Database on Amazon RDS. Configure Site-to-Site VPN connection from the on-premises data center to the Amazon VPC. Configure replication from the on-premises database to Amazon RDS. Once replication is complete, create an AWS Schema Conversion Tool (SCT) project with AWS DMS task to migrate the Oracle database to Amazon Redshift. Monitor and verify if the data migration is complete before the cut-over.
+
+- Since you have a 30-day window for migration, configure VPN connectivity between AWS and the company's data center by provisioning a 1 Gbps AWS Direct Connect connection. Launch an Oracle Real Application Clusters (RAC) database on an EC2 instance and set it up to fetch and synchronize the data from the on-premises Oracle database. Once replication is complete, create an AWS DMS task on an AWS SCT project to migrate the Oracle database to Amazon Redshift. Monitor and verify if the data migration is complete before the cut-over.
 
 Explanation
 
@@ -2862,8 +2605,6 @@ The option that says: **Create an AWS Snowball Edge job using the AWS Snowball c
 
 The option that says: **Since you have a 30-day window for migration, configure VPN connectivity between AWS and the company's data center by provisioning a 1 Gbps AWS Direct Connect connection. Install Oracle database on an EC2 instance that is configured to synchronize with the on-premises Oracle database. Once replication is complete, create an AWS DMS task on an AWS SCT project to migrate the Oracle database to Amazon Redshift. Monitor and verify if the data migration is complete before the cut-over Since you have a 30-day window for migration, configure VPN connectivity between AWS and the company's data center by provisioning a 1 Gbps AWS Direct Connect connection. Launch an Oracle Real Application Clusters (RAC) database on an EC2 instance and set it up to fetch and synchronize the data from the on-premises Oracle database. Once replication is complete, create an AWS DMS task on an AWS SCT project to migrate the Oracle database to Amazon Redshift. Monitor and verify if the data migration is complete before the cut-over** is incorrect. Although this is possible, the company wants to keep the cost low. Using a Direct Connect connection for a one-time migration is not a cost-effective solution.
 
-  
-
 **References:**
 
 [https://aws.amazon.com/getting-started/hands-on/migrate-oracle-to-amazon-redshift/](https://aws.amazon.com/getting-started/hands-on/migrate-oracle-to-amazon-redshift/)
@@ -2871,8 +2612,6 @@ The option that says: **Since you have a 30-day window for migration, configure 
 [https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/agents.dw.html](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/agents.dw.html)
 
 [https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/agents.html](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/agents.html)
-
-  
 
 **Tutorials Dojo's AWS Certified Solutions Architect Professional Exam Study Guide:**
 
@@ -2884,22 +2623,21 @@ A small company has several AWS accounts that are used by multiple teams. To cen
 
 Which of the following options is the recommended solution for this issue? (Select TWO.)
 
--   On Account A, create an authorization to associate its private hosted zone to the new VPC in Account B.
-    
+- On Account A, create an authorization to associate its private hosted zone to the new VPC in Account B.
+
     (Correct)
-    
--   On Account B, create a new private hosted zone in Amazon Route 53. Associate this zone to the private hosted zone in Account A to allow replication between the AWS accounts.
-    
+
+- On Account B, create a new private hosted zone in Amazon Route 53. Associate this zone to the private hosted zone in Account A to allow replication between the AWS accounts.
+
     (Incorrect)
-    
--   On Account B, associate the VPC to the private hosted zone in Account A. Delete the association authorization after the association is created.
-    
+
+- On Account B, associate the VPC to the private hosted zone in Account A. Delete the association authorization after the association is created.
+
     (Correct)
-    
--   Create a VPC peering between the Account A VPC and Account B VPC. Configure the Amazon EC2 instances on Account B to use the DNS resolver IPs in Account A to resolve the Amazon RDS endpoint.
-    
--   Create custom AMI for the Amazon EC2 instances that have an updated /etc/resolv.conf file containing the Amazon RDS endpoint to private IP address mapping.
-    
+
+- Create a VPC peering between the Account A VPC and Account B VPC. Configure the Amazon EC2 instances on Account B to use the DNS resolver IPs in Account A to resolve the Amazon RDS endpoint.
+
+- Create custom AMI for the Amazon EC2 instances that have an updated /etc/resolv.conf file containing the Amazon RDS endpoint to private IP address mapping.
 
 Explanation
 
@@ -2935,8 +2673,6 @@ The option that says: **Create custom AMI for the Amazon EC2 instances that have
 
 The option that says: **On Account B, create a new private hosted zone in Amazon Route 53. Associate this zone to the private hosted zone in Account A to allow replication between the AWS accounts** is incorrect. This is not possible as you can't have replication between Route 53 in separate accounts.
 
-  
-
 **References:**
 
 [https://aws.amazon.com/premiumsupport/knowledge-center/private-hosted-zone-different-account/](https://aws.amazon.com/premiumsupport/knowledge-center/private-hosted-zone-different-account/)
@@ -2944,8 +2680,6 @@ The option that says: **On Account B, create a new private hosted zone in Amazon
 [https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zone-private-associate-vpcs.html](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zone-private-associate-vpcs.html)
 
 [https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zone-private-associate-vpcs-different-accounts.html](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zone-private-associate-vpcs-different-accounts.html)
-
-  
 
 **Check out the Amazon Route 53 Cheat Sheet:**
 
@@ -2957,18 +2691,17 @@ A company has production, development, and test environments in its software dev
 
 Using the AWS Systems Manager service, how should you perform this task with the least amount of effort?
 
--   Tag each instance based on its OS. Create a patch baseline in AWS Systems Manager Patch Manager for each environment. Categorize EC2 instances based on their tags using Patch Groups and then apply the patches specified in the corresponding patch baseline to each Patch Group. Afterward, verify that the patches have been installed correctly using Patch Compliance. Record the changes to patch and association compliance statuses using AWS Config.
-    
+- Tag each instance based on its OS. Create a patch baseline in AWS Systems Manager Patch Manager for each environment. Categorize EC2 instances based on their tags using Patch Groups and then apply the patches specified in the corresponding patch baseline to each Patch Group. Afterward, verify that the patches have been installed correctly using Patch Compliance. Record the changes to patch and association compliance statuses using AWS Config.
+
     (Incorrect)
-    
--   Schedule a maintenance period in AWS Systems Manager Maintenance Windows for each environment, where the period is after business hours so as not to affect daily operations. During the maintenance period, Systems Manager will execute a cron job that will install the required patches for each EC2 instance in each environment. After that, verify in Systems Manager Managed Instances that your environments are fully patched and compliant.
-    
--   Tag each instance based on its environment and OS. Create various shell scripts for each environment that specifies which patch will serve as its baseline. Using AWS Systems Manager Run Command, place the EC2 instances into Target Groups and execute the script corresponding to each Target Group.
-    
--   Tag each instance based on its environment and OS. Create a patch baseline in AWS Systems Manager Patch Manager for each environment. Categorize EC2 instances based on their tags using Patch Groups and apply the patches specified in the corresponding patch baseline to each Patch Group.
-    
+
+- Schedule a maintenance period in AWS Systems Manager Maintenance Windows for each environment, where the period is after business hours so as not to affect daily operations. During the maintenance period, Systems Manager will execute a cron job that will install the required patches for each EC2 instance in each environment. After that, verify in Systems Manager Managed Instances that your environments are fully patched and compliant.
+
+- Tag each instance based on its environment and OS. Create various shell scripts for each environment that specifies which patch will serve as its baseline. Using AWS Systems Manager Run Command, place the EC2 instances into Target Groups and execute the script corresponding to each Target Group.
+
+- Tag each instance based on its environment and OS. Create a patch baseline in AWS Systems Manager Patch Manager for each environment. Categorize EC2 instances based on their tags using Patch Groups and apply the patches specified in the corresponding patch baseline to each Patch Group.
+
     (Correct)
-    
 
 Explanation
 
@@ -2988,15 +2721,11 @@ The option that says: **Tag each instance based on its OS. Create a patch baseli
 
 The option that says: **Schedule a maintenance period in AWS Systems Manager Maintenance Windows for each environment, where the period is after business hours so as not to affect daily operations. During the maintenance period, Systems Manager will execute a cron job that will install the required patches for each EC2 instance in each environment. After that, verify in Systems Manager Managed Instances that your environments are fully patched and compliant** is incorrect because this is not the simplest way to address the issue using AWS Systems Manager. The AWS Systems Manager Maintenance Windows feature lets you define a schedule for when to perform potentially disruptive actions on your instances such as patching an operating system, updating drivers, or installing software or patches. Each Maintenance Window has a schedule, a maximum duration, a set of registered targets (the instances that are acted upon), and a set of registered tasks. Although this solution may work, it entails a lot of configuration and effort to implement.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html)
 
 [https://aws.amazon.com/blogs/mt/patching-your-windows-ec2-instances-using-aws-systems-manager-patch-manager/](https://aws.amazon.com/blogs/mt/patching-your-windows-ec2-instances-using-aws-systems-manager-patch-manager/)
-
-  
 
 **Check out this AWS Systems Manager Cheat Sheet:**
 
@@ -3008,58 +2737,57 @@ A company has a hybrid set up for its mobile application. The on-premises data c
 
 Which of the following solutions should the Solutions Architect implement to reduce the overall cost?
 
--   1\. Provision an AWS Direct Connect connection from the on-premises data  
+- 1\. Provision an AWS Direct Connect connection from the on-premises data  
         center to Amazon VPC instead of a VPN to significantly reduce the  
         network latency to the MySQL server.
-    
+
     2\. Configure caching on the mobile application to reduce the overall AWS  
         Lambda function calls.
-    
+
     3\. Gradually lower the timeout and memory properties of the Lamdba  
         functions without increasing the execution time.
-    
+
     4\. Add an Amazon Elasticache cluster in front of DynamoDB to cache the  
         frequently accessed records.
-    
--   1\. Provision an AWS Direct Connect connection from the on-premises data  
+
+- 1\. Provision an AWS Direct Connect connection from the on-premises data  
         center to Amazon VPC instead of a VPN to significantly reduce the  
         network latency to the MySQL server.
-    
+
     2\. Create a CloudFront distribution with the API Gateway as the origin to  
         cache the API responses and reduce the Lambda invocations.
-    
+
     3\. Convert the Lambda functions to run them on Amazon EC2 Reserved  
         Instances. Use Auto Scaling on peak time with a combination of Spot  
         instances to further reduce costs.
-    
+
     4\. Configure Auto Scaling on Amazon DynamoDB to automatically adjust  
         the capacity with user traffic.
-    
--   1\. Migrate the on-premises MySQL database server to Amazon RDS for MySQL. Enable Multi-AZ to ensure high availability.
-    
+
+- 1\. Migrate the on-premises MySQL database server to Amazon RDS for MySQL. Enable Multi-AZ to ensure high availability.
+
     2\. Configure API caching on Amazon API Gateway to reduce the overall number of invocations to the Lambda functions.
-    
+
     3\. Gradually lower the timeout and memory properties of the Lamdba functions without increasing the execution time.
-    
+
     4\. Configure Auto Scaling on Amazon DynamoDB to automatically adjust the capacity based on user traffic.
-    
+
     (Correct)
-    
--   1\. Migrate the on-premises MySQL database server to Amazon RDS for  
+
+- 1\. Migrate the on-premises MySQL database server to Amazon RDS for  
         MySQL. Enable Multi-AZ to ensure high availability.
-    
+
     2\. Create a CloudFront distribution with the API Gateway as the origin to  
         cache the API responses and reduce the Lambda invocations.
-    
+
     3\. Gradually lower the timeout and memory properties of the Lamdba  
         functions without increasing the execution time.
-    
+
     4\. Configure Auto Scaling on Amazon DynamoDB to automatically adjust  
         the capacity with user traffic and enable DynamoDB Accelerator to cache  
         frequently accessed records.
-    
+
     (Incorrect)
-    
 
 Explanation
 
@@ -3125,8 +2853,6 @@ The following option is incorrect:
 
 Caching the API requests should be done on the API Gateway, and not on CloudFront. DynamoDB Accelerator is used for caching requests if you need response times in microseconds. This is very expensive.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-caching.html](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-caching.html)
@@ -3136,8 +2862,6 @@ Caching the API requests should be done on the API Gateway, and not on CloudFron
 [https://aws.amazon.com/blogs/aws/new-auto-scaling-for-amazon-dynamodb/](https://aws.amazon.com/blogs/aws/new-auto-scaling-for-amazon-dynamodb/)
 
 [https://aws.amazon.com/lambda/pricing/](https://aws.amazon.com/lambda/pricing/)
-
-  
 
 **Check out these Amazon API Gateway, Amazon DynamoDB, and AWS Lambda Cheat Sheets:**
 
@@ -3153,18 +2877,17 @@ A multinational consumer goods corporation structured their AWS accounts to use 
 
 Which of the following options is the most suitable solution for this scenario?
 
--   Set the Reserved Instance (RI) sharing to private on the AWS account of the Baby products business unit.
-    
+- Set the Reserved Instance (RI) sharing to private on the AWS account of the Baby products business unit.
+
     (Incorrect)
-    
--   Remove the AWS account of the Baby products business unit out of the AWS Organization.
-    
--   Turn off the Reserved Instance (RI) sharing on the master account for all of the member accounts in the Baby products business unit.
-    
+
+- Remove the AWS account of the Baby products business unit out of the AWS Organization.
+
+- Turn off the Reserved Instance (RI) sharing on the master account for all of the member accounts in the Baby products business unit.
+
     (Correct)
-    
--   Since the Baby product business unit is part of an AWS Organization, the Reserved Instances will always be shared across other member accounts. There is no way to disable this setting.
-    
+
+- Since the Baby product business unit is part of an AWS Organization, the Reserved Instances will always be shared across other member accounts. There is no way to disable this setting.
 
 Explanation
 
@@ -3182,15 +2905,11 @@ The option that says: **Remove the AWS account of the Baby products business uni
 
 The option that says: **Since the Baby product business unit is part of an AWS Organization, the Reserved Instances will always be shared across other member accounts. There is no way to disable this setting is** incorrect because this statement is false. There is certainly a way to disable the current setting by simply turning off RI sharing.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ri-turn-off.html](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ri-turn-off.html)
 
 [https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ri-turn-off-process.html](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ri-turn-off-process.html)
-
-  
 
 **Check out this AWS Billing and Cost Management Cheat Sheet:**
 
@@ -3202,18 +2921,17 @@ A company has several development teams using AWS CodeCommit to store their sour
 
 Which of the following options will meet the company requirements?
 
--   Write a custom AWS Lambda function to search for credentials on new code submissions. Set the function trigger as AWS CodeCommit push events. If credentials are found, notify the user of the violation, and disable the IAM keys.
-    
+- Write a custom AWS Lambda function to search for credentials on new code submissions. Set the function trigger as AWS CodeCommit push events. If credentials are found, notify the user of the violation, and disable the IAM keys.
+
     (Correct)
-    
--   Download and scan the source code from AWS CodeCommit using a custom AWS Lambda function. Schedule this Lambda function to run daily. If credentials are found, notify the user of the violation, generate new IAM credentials and store them in AWS KMS for encryption.
-    
--   Scan the CodeCommit repositories for IAM credentials using Amazon Macie. Using machine learning, Amazon Macie can scan your repository for security violations. If violations are found, invoke an AWS Lambda function to notify the user and delete the IAM keys.
-    
+
+- Download and scan the source code from AWS CodeCommit using a custom AWS Lambda function. Schedule this Lambda function to run daily. If credentials are found, notify the user of the violation, generate new IAM credentials and store them in AWS KMS for encryption.
+
+- Scan the CodeCommit repositories for IAM credentials using Amazon Macie. Using machine learning, Amazon Macie can scan your repository for security violations. If violations are found, invoke an AWS Lambda function to notify the user and delete the IAM keys.
+
     (Incorrect)
-    
--   Using a development instance, use the AWS Systems Manager Run Command to scan the AWS CodeCommit repository for IAM credentials on a daily basis. If credentials are found, rotate them using AWS Secrets Manager. Notify the user of the violation.
-    
+
+- Using a development instance, use the AWS Systems Manager Run Command to scan the AWS CodeCommit repository for IAM credentials on a daily basis. If credentials are found, rotate them using AWS Secrets Manager. Notify the user of the violation.
 
 Explanation
 
@@ -3243,8 +2961,6 @@ The option that says: **Download and scan the source code from AWS CodeCommit us
 
 The option that says: **Scan the CodeCommit repositories for IAM credentials using Amazon Macie. Using machine learning, Amazon Macie can scan your repository for security violations. If violations are found, invoke an AWS Lambda function to notify the user and delete the IAM keys** is incorrect. Amazon Macie is designed to use machine learning and pattern matching to discover and protect your sensitive data in AWS. Macie primarily scans Amazon S3 buckets for data security and data privacy.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-notify-lambda.html](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-notify-lambda.html)
@@ -3252,8 +2968,6 @@ The option that says: **Scan the CodeCommit repositories for IAM credentials usi
 [https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-notify-sns.html](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-notify-sns.html)
 
 [https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-notify.html](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-notify.html)
-
-  
 
 **Check out the AWS CodeCommit Cheat Sheet:**
 
@@ -3265,22 +2979,21 @@ A company uses Lightweight Directory Access Protocol (LDAP) for its employee aut
 
 Which of the following options should the Solutions Architect implement to enable authentication and authorization for the application? (Select TWO.)
 
--   Build a custom OpenID Connect-compatible solution in combination with AWS Single Sign-On (SSO) to create authentication and authorization functionality for the application.
-    
--   Build a custom OpenID Connect-compatible solution for the user authentication functionality. Use Amazon Cognito Identity Pools for authorizing access to AWS resources.
-    
+- Build a custom OpenID Connect-compatible solution in combination with AWS Single Sign-On (SSO) to create authentication and authorization functionality for the application.
+
+- Build a custom OpenID Connect-compatible solution for the user authentication functionality. Use Amazon Cognito Identity Pools for authorizing access to AWS resources.
+
     (Correct)
-    
--   Build a custom SAML-compatible solution for user authentication. Leverage AWS Single Sign-On (SSO) for authorizing access to AWS resources.
-    
+
+- Build a custom SAML-compatible solution for user authentication. Leverage AWS Single Sign-On (SSO) for authorizing access to AWS resources.
+
     (Incorrect)
-    
--   Build a custom LDAP connector using Amazon API Gateway with AWS Lambda function for user authentication. Use Amazon DynamoDB to store user authorization tokens. Write another Lambda function that will validate user authorization requests based on the token stored on DynamoDB.
-    
--   Build a custom SAML-compatible solution to handle authentication and authorization. Configure the solution to use LDAP for user authentication and use SAML assertion to perform authorization to the IAM identity provider.
-    
+
+- Build a custom LDAP connector using Amazon API Gateway with AWS Lambda function for user authentication. Use Amazon DynamoDB to store user authorization tokens. Write another Lambda function that will validate user authorization requests based on the token stored on DynamoDB.
+
+- Build a custom SAML-compatible solution to handle authentication and authorization. Configure the solution to use LDAP for user authentication and use SAML assertion to perform authorization to the IAM identity provider.
+
     (Correct)
-    
 
 Explanation
 
@@ -3322,8 +3035,6 @@ The option that says: **Build a custom LDAP connector using Amazon API Gateway w
 
 The option that says: **Build a custom OpenID Connect-compatible solution in combination with AWS Single Sign-On (SSO) to create authentication and authorization functionality for the application** is incorrect. AWS SSO supports only SAML 2.0–based applications so an OpenID Connect-compatible solution will not work for this scenario.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_roles\_providers\_enable-console-saml.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_enable-console-saml.html)
@@ -3334,11 +3045,7 @@ The option that says: **Build a custom OpenID Connect-compatible solution in com
 
 [https://aws.amazon.com/single-sign-on/faqs/](https://aws.amazon.com/single-sign-on/faqs/)
 
-  
-
 **AWS Identity Services Overview:**
-
-  
 
 **Check out these Amazon Cognito Cheat Sheets:**
 
@@ -3352,22 +3059,21 @@ A clinic runs its medical record system using a fleet of Windows-based Amazon EC
 
 Which of the following should the solutions architect implement to protect and monitor all of your instances as required above? (Select TWO.)
 
--   Create an IAM policy that will restrict the developers from launching EC2 instances with an unapproved AMI.
-    
--   Set up Amazon GuardDuty that continuously monitors your instances if the latest security patches are installed and if there is an instance that is using an unapproved AMI. Use CloudWatch Alarms to notify you if there are any non-compliant instances running in your VPC.
-    
+- Create an IAM policy that will restrict the developers from launching EC2 instances with an unapproved AMI.
+
+- Set up Amazon GuardDuty that continuously monitors your instances if the latest security patches are installed and if there is an instance that is using an unapproved AMI. Use CloudWatch Alarms to notify you if there are any non-compliant instances running in your VPC.
+
     (Incorrect)
-    
--   Use AWS Shield Advanced to automatically patch all of your EC2 instances and detect uncompliant EC2 instances which do not use approved AMIs.
-    
--   Set up a patch baseline that defines which patches are approved for installation on your instances using AWS Systems Manager Patch Manager.
-    
+
+- Use AWS Shield Advanced to automatically patch all of your EC2 instances and detect uncompliant EC2 instances which do not use approved AMIs.
+
+- Set up a patch baseline that defines which patches are approved for installation on your instances using AWS Systems Manager Patch Manager.
+
     (Correct)
-    
--   Use the AWS Config Managed Rule which automatically checks whether your running EC2 instances are using approved AMIs. Set up CloudWatch Alarms to notify you if there are any non-compliant instances running in your VPC.
-    
+
+- Use the AWS Config Managed Rule which automatically checks whether your running EC2 instances are using approved AMIs. Set up CloudWatch Alarms to notify you if there are any non-compliant instances running in your VPC.
+
     (Correct)
-    
 
 Explanation
 
@@ -3393,8 +3099,6 @@ The option that says: **Set up Amazon GuardDuty that continuously monitors your 
 
 **Using AWS Shield Advanced to automatically patch all of your EC2 instances and detecting uncompliant EC2 instances which do not use approved AMIs** is incorrect. The AWS Shield Advanced service is most suitable to prevent DDoS attacks in your AWS resources. It cannot check the specific AMIs that your EC2 instances are using.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html)
@@ -3402,8 +3106,6 @@ The option that says: **Set up Amazon GuardDuty that continuously monitors your 
 [https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config\_use-managed-rules.html](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_use-managed-rules.html)
 
 [https://docs.aws.amazon.com/config/latest/developerguide/approved-amis-by-id.html](https://docs.aws.amazon.com/config/latest/developerguide/approved-amis-by-id.html)
-
-  
 
 **Check out these cheat sheets on AWS Config and AWS Systems Manager:**
 
@@ -3417,18 +3119,17 @@ A leading media company has a hybrid architecture where its on-premises data cen
 
 Which of the following options provides a solution which uses the LEAST amount of ongoing management overhead and will cause MINIMAL disruption to the existing system?
 
--   Migrate all of the media files from the on-premises library into an EBS volume mounted on a large EC2 instance. Install an open-source facial recognition tool in the instance like OpenFace or OpenCV. Process the media files to retrieve the metadata and push this information into the MAM solution. Lastly, copy the media files to an S3 bucket.
-    
--   Use Amazon Kinesis Video Streams to set up a video ingestion stream and with Amazon Rekognition, build a collection of faces. Stream the media files from the MAM solution into Kinesis Video Streams and configure the Amazon Rekognition to process the streamed files. Launch a stream consumer to retrieve the required metadata, and push the metadata into the MAM solution. Finally, configure the stream to store the files in an S3 bucket.
-    
--   Integrate the file system of your local data center to AWS Storage Gateway by setting up a file gateway appliance on-premises. Utilize the MAM solution to extract the media files from the current data store and send them into the file gateway. Build a collection using Amazon Rekognition by populating a catalog of faces from the processed media files. Use an AWS Lambda function to invoke Amazon Rekognition Javascript SDK to have it fetch the media file from the S3 bucket which is backing the file gateway, retrieve the needed metadata, and finally, persist the information into the MAM solution.
-    
+- Migrate all of the media files from the on-premises library into an EBS volume mounted on a large EC2 instance. Install an open-source facial recognition tool in the instance like OpenFace or OpenCV. Process the media files to retrieve the metadata and push this information into the MAM solution. Lastly, copy the media files to an S3 bucket.
+
+- Use Amazon Kinesis Video Streams to set up a video ingestion stream and with Amazon Rekognition, build a collection of faces. Stream the media files from the MAM solution into Kinesis Video Streams and configure the Amazon Rekognition to process the streamed files. Launch a stream consumer to retrieve the required metadata, and push the metadata into the MAM solution. Finally, configure the stream to store the files in an S3 bucket.
+
+- Integrate the file system of your local data center to AWS Storage Gateway by setting up a file gateway appliance on-premises. Utilize the MAM solution to extract the media files from the current data store and send them into the file gateway. Build a collection using Amazon Rekognition by populating a catalog of faces from the processed media files. Use an AWS Lambda function to invoke Amazon Rekognition Javascript SDK to have it fetch the media file from the S3 bucket which is backing the file gateway, retrieve the needed metadata, and finally, persist the information into the MAM solution.
+
     (Correct)
-    
--   Set up a tape gateway appliance on-premises and connect it to your AWS Storage Gateway. Configure the MAM solution to fetch the media files from the current archive and push them into the tape gateway in the AWS Cloud. Using Amazon Rekognition, build a collection from the catalog of faces. Utilize a Lambda function which invokes the Rekognition Javascript SDK to have Amazon Rekognition process the video directly from the tape gateway in real-time, retrieve the required metadata, and push the metadata into the MAM solution.
-    
+
+- Set up a tape gateway appliance on-premises and connect it to your AWS Storage Gateway. Configure the MAM solution to fetch the media files from the current archive and push them into the tape gateway in the AWS Cloud. Using Amazon Rekognition, build a collection from the catalog of faces. Utilize a Lambda function which invokes the Rekognition Javascript SDK to have Amazon Rekognition process the video directly from the tape gateway in real-time, retrieve the required metadata, and push the metadata into the MAM solution.
+
     (Incorrect)
-    
 
 Explanation
 
@@ -3450,21 +3151,15 @@ The option that says: **Set up a tape gateway appliance on-premises and connect 
 
 The option that says: **Use Amazon Kinesis Video Streams to set up a video ingestion stream and with Amazon Rekognition, build a collection of faces. Stream the media files from the MAM solution into Kinesis Video Streams and configure the Amazon Rekognition to process the streamed files. Launch a stream consumer to retrieve the required metadata, and push the metadata into the MAM solution. Finally, configure the stream to store the files in an S3 bucket** is incorrect. You won't be able to connect your tape gateway directly to your Kinesis Video Streams service. You need to use AWS Storage Gateway first.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/rekognition/latest/dg/collections.html](https://docs.aws.amazon.com/rekognition/latest/dg/collections.html)
 
 [https://aws.amazon.com/storagegateway/file/](https://aws.amazon.com/storagegateway/file/)
 
-  
-
 **Check out this Amazon Rekognition Cheat Sheet:**
 
 [**https://tutorialsdojo.com/amazon-rekognition/**](https://tutorialsdojo.com/amazon-rekognition/?src=udemy)
-
-  
 
 **Tutorials Dojo's AWS Certified Solutions Architect Professional Exam Study Guide:**
 
@@ -3476,18 +3171,17 @@ A company wants to implement a multi-account strategy that will be distributed a
 
 Which of the following solutions has the LEAST complex DNS architecture and allows all VPCs to resolve the needed domain names?
 
--   On AWS Resource Access Manager (RAM), set up a shared services VPC on your central account. Create a peering from this VPC to each VPC on the other accounts. On Amazon Route 53, create a private hosted zone associated with the shared services VPC. Manage all domains and subdomains on this hosted zone. On each of the other AWS Accounts, create a Route 53 private hosted zone and configure the Name Server entry to use the DNS of the central account.
-    
--   On AWS Resource Access Manager (RAM), set up a shared services VPC on your central account. Set up VPC peering from this VPC to each VPC on the other accounts. On Amazon Route 53, create a private hosted zone associated with the shared services VPC. Manage all domains and subdomains on this zone. Programmatically associate the VPCs from other accounts with this hosted zone.
-    
+- On AWS Resource Access Manager (RAM), set up a shared services VPC on your central account. Create a peering from this VPC to each VPC on the other accounts. On Amazon Route 53, create a private hosted zone associated with the shared services VPC. Manage all domains and subdomains on this hosted zone. On each of the other AWS Accounts, create a Route 53 private hosted zone and configure the Name Server entry to use the DNS of the central account.
+
+- On AWS Resource Access Manager (RAM), set up a shared services VPC on your central account. Set up VPC peering from this VPC to each VPC on the other accounts. On Amazon Route 53, create a private hosted zone associated with the shared services VPC. Manage all domains and subdomains on this zone. Programmatically associate the VPCs from other accounts with this hosted zone.
+
     (Correct)
-    
--   Set up a VPC peering connection among the VPC of each account. Ensure that the each VPC has the attributes `enableDnsHostnames` and `enableDnsSupport` set to “TRUE”. On Amazon Route 53, create a private hosted zone associated with the central account’s VPC. Manage all domains and subdomains on this hosted zone. On each of the other AWS Accounts, create a Route 53 private hosted zone and configure the Name Server entry to use the DNS of the central account.
-    
+
+- Set up a VPC peering connection among the VPC of each account. Ensure that the each VPC has the attributes `enableDnsHostnames` and `enableDnsSupport` set to “TRUE”. On Amazon Route 53, create a private hosted zone associated with the central account’s VPC. Manage all domains and subdomains on this hosted zone. On each of the other AWS Accounts, create a Route 53 private hosted zone and configure the Name Server entry to use the DNS of the central account.
+
     (Incorrect)
-    
--   Set up Direct Connect connections among the VPCs of each account using private virtual interfaces. Ensure that each VPC has the attributes `enableDnsHostnames` and `enableDnsSupport` set to “FALSE”. On Amazon Route 53, create a private hosted zone associated with the central account’s VPC. Manage all domains and subdomains on this hosted zone. Programmatically associate the VPCs from other accounts with this hosted zone.
-    
+
+- Set up Direct Connect connections among the VPCs of each account using private virtual interfaces. Ensure that each VPC has the attributes `enableDnsHostnames` and `enableDnsSupport` set to “FALSE”. On Amazon Route 53, create a private hosted zone associated with the central account’s VPC. Manage all domains and subdomains on this hosted zone. Programmatically associate the VPCs from other accounts with this hosted zone.
 
 Explanation
 
@@ -3527,8 +3221,6 @@ The option that says: **Set up a VPC peering connection among the VPC of each ac
 
 The option that says: **On AWS Resource Access Manager (RAM), set up a shared services VPC on your central account. Create a peering from this VPC to each VPC on the other accounts. On Amazon Route 53, create a private hosted zone associated with the shared services VPC. Manage all domains and subdomains on this hosted zone. On each of the other AWS Accounts, create a Route 53 private hosted zone and configure the Name Server entry to use the DNS of the central account** is incorrect. Although creating the shared services VPC is a good solution, configuring Route 53 Name Server (NS) records to point to the shared services VPC’s Route 53 is not enough. You need to associate the VPCs from other accounts to the hosted zone on the central account.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html)
@@ -3536,8 +3228,6 @@ The option that says: **On AWS Resource Access Manager (RAM), set up a shared se
 [https://aws.amazon.com/blogs/networking-and-content-delivery/vpc-sharing-a-new-approach-to-multiple-accounts-and-vpc-management/](https://aws.amazon.com/blogs/networking-and-content-delivery/vpc-sharing-a-new-approach-to-multiple-accounts-and-vpc-management/)
 
 [https://aws.amazon.com/blogs/security/simplify-dns-management-in-a-multiaccount-environment-with-route-53-resolver/](https://aws.amazon.com/blogs/security/simplify-dns-management-in-a-multiaccount-environment-with-route-53-resolver/)
-
-  
 
 **Check out these Amazon VPC and Route 53 Cheat Sheets:**
 
@@ -3551,18 +3241,17 @@ A company runs hundreds of Windows-based Amazon EC2 instances on AWS. The Soluti
 
 Which of the following will meet the above requirements?
 
--   Create a Patch Group with unique tags that you will assign to all of your EC2 Windows Instances. Associate the predefined `AWS-DefaultPatchBaseline` baseline on both patch groups. Create a CloudWatch Events rule configured to use a cron expression to automate the execution of patching in a given schedule using the AWS Systems Manager Run command. Set up an AWS Systems Manager State Manager document to define custom commands which will be executed during patch execution.
-    
--   Create two Patch Groups with unique tags that you will assign to all of your EC2 Windows Instances. Associate the predefined `AWS-DefaultPatchBaseline` baseline on both patch groups. Create two CloudWatch Events rules which are configured to use a cron expression to automate the execution of patching for the two Patch Groups using the AWS Systems Manager Run command. Set up an AWS Systems Manager State Manager document to define custom commands which will be executed during patch execution.
-    
--   Create a Patch Group with unique tags that you will assign to all of your EC2 Windows Instances. Associate the predefined `AWS-DefaultPatchBaseline` baseline on your patch group. Set up a maintenance window and associate it with your patch group. Assign the `AWS-RunPatchBaseline` document as a task within your maintenance window.
-    
+- Create a Patch Group with unique tags that you will assign to all of your EC2 Windows Instances. Associate the predefined `AWS-DefaultPatchBaseline` baseline on both patch groups. Create a CloudWatch Events rule configured to use a cron expression to automate the execution of patching in a given schedule using the AWS Systems Manager Run command. Set up an AWS Systems Manager State Manager document to define custom commands which will be executed during patch execution.
+
+- Create two Patch Groups with unique tags that you will assign to all of your EC2 Windows Instances. Associate the predefined `AWS-DefaultPatchBaseline` baseline on both patch groups. Create two CloudWatch Events rules which are configured to use a cron expression to automate the execution of patching for the two Patch Groups using the AWS Systems Manager Run command. Set up an AWS Systems Manager State Manager document to define custom commands which will be executed during patch execution.
+
+- Create a Patch Group with unique tags that you will assign to all of your EC2 Windows Instances. Associate the predefined `AWS-DefaultPatchBaseline` baseline on your patch group. Set up a maintenance window and associate it with your patch group. Assign the `AWS-RunPatchBaseline` document as a task within your maintenance window.
+
     (Incorrect)
-    
--   Create two Patch Groups with unique tags that you will assign to all of your EC2 Windows Instances. Associate the predefined `AWS-DefaultPatchBaseline` baseline on both patch groups. Set up two non-overlapping maintenance windows and associate each with a different patch group. Using Patch Group tags, register targets with specific maintenance windows and lastly, assign the `AWS-RunPatchBaseline` document as a task within each maintenance window which has a different processing start time.
-    
+
+- Create two Patch Groups with unique tags that you will assign to all of your EC2 Windows Instances. Associate the predefined `AWS-DefaultPatchBaseline` baseline on both patch groups. Set up two non-overlapping maintenance windows and associate each with a different patch group. Using Patch Group tags, register targets with specific maintenance windows and lastly, assign the `AWS-RunPatchBaseline` document as a task within each maintenance window which has a different processing start time.
+
     (Correct)
-    
 
 Explanation
 
@@ -3592,8 +3281,6 @@ The option that says: **Create two Patch Groups with unique tags that you will a
 
 The option that says: **Create a Patch Group with unique tags that you will assign to all of your EC2 Windows Instances. Associate the predefined** `**AWS-DefaultPatchBaseline**` **baseline on both patch groups. Create a CloudWatch Events rule configured to use a cron expression to automate the execution of patching in a given schedule using the AWS Systems Manager Run command. Set up an AWS Systems Manager State Manager document to define custom commands which will be executed during patch execution** is incorrect. Just as what is mentioned in the above, you have to use Maintenance Windows for scheduling the patches and you also need to set up two Patch Groups in this scenario instead of one.
 
-  
-
 **References:**
 
 [https://aws.amazon.com/blogs/mt/patching-your-windows-ec2-instances-using-aws-systems-manager-patch-manager/](https://aws.amazon.com/blogs/mt/patching-your-windows-ec2-instances-using-aws-systems-manager-patch-manager/)
@@ -3601,8 +3288,6 @@ The option that says: **Create a Patch Group with unique tags that you will assi
 [https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager-ssm-documents.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager-ssm-documents.html)
 
 [https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-patch-scheduletasks.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-patch-scheduletasks.html)
-
-  
 
 **Check out this AWS Systems Manager Cheat Sheet:**
 
@@ -3614,18 +3299,17 @@ A top university has launched its serverless online portal using Lambda and API 
 
 Which of the following is the most suitable and cost-effective solution to avoid another SQL Injection attack against their infrastructure in AWS?
 
--   Use AWS WAF to add a web access control list (web ACL) in front of the Lambda functions to block requests that contain malicious SQL code. Use AWS Firewall Manager, to track changes to your web access control lists (web ACLs) such as the creation and deletion of rules including the updates to the WAF rule configurations.
-    
--   Block the IP address of the attacker in the Network Access Control List of your VPC and then set up a CloudFront distribution. Set up AWS WAF to add a web access control list (web ACL) in front of the CloudFront distribution to block requests that contain malicious SQL code. Use AWS Config to track changes to your web access control lists (web ACLs) such as the creation and deletion of rules including the updates to the WAF rule configurations.
-    
--   Create a new Application Load Balancer (ALB) and set up AWS WAF in the load balancer. Place the API Gateway behind the ALB and configure a web access control list (web ACL) in front of the ALB to block requests that contain malicious SQL code. Use AWS Firewall Manager to track changes to your web access control lists (web ACLs) such as the creation and deletion of rules including the updates to the WAF rule configurations.
-    
+- Use AWS WAF to add a web access control list (web ACL) in front of the Lambda functions to block requests that contain malicious SQL code. Use AWS Firewall Manager, to track changes to your web access control lists (web ACLs) such as the creation and deletion of rules including the updates to the WAF rule configurations.
+
+- Block the IP address of the attacker in the Network Access Control List of your VPC and then set up a CloudFront distribution. Set up AWS WAF to add a web access control list (web ACL) in front of the CloudFront distribution to block requests that contain malicious SQL code. Use AWS Config to track changes to your web access control lists (web ACLs) such as the creation and deletion of rules including the updates to the WAF rule configurations.
+
+- Create a new Application Load Balancer (ALB) and set up AWS WAF in the load balancer. Place the API Gateway behind the ALB and configure a web access control list (web ACL) in front of the ALB to block requests that contain malicious SQL code. Use AWS Firewall Manager to track changes to your web access control lists (web ACLs) such as the creation and deletion of rules including the updates to the WAF rule configurations.
+
     (Incorrect)
-    
--   Use AWS WAF to add a web access control list (web ACL) in front of the API Gateway to block requests that contain malicious SQL code. Use AWS Config to track changes to your web access control lists (web ACLs) such as the creation and deletion of rules including the updates to the WAF rule configurations.
-    
+
+- Use AWS WAF to add a web access control list (web ACL) in front of the API Gateway to block requests that contain malicious SQL code. Use AWS Config to track changes to your web access control lists (web ACLs) such as the creation and deletion of rules including the updates to the WAF rule configurations.
+
     (Correct)
-    
 
 Explanation
 
@@ -3643,21 +3327,15 @@ The option that says: **Block the IP address of the attacker in the Network Acce
 
 The option that says: **Create a new Application Load Balancer (ALB) and set up AWS WAF in the load balancer. Place the API Gateway behind the ALB and configure a web access control list (web ACL) in front of the ALB to block requests that contain malicious SQL code. Use AWS Firewall Manager to track changes to your web access control lists (web ACLs) such as the creation and deletion of rules including the updates to the WAF rule configurations** is incorrect. Launching a new Application Load Balancer entails additional cost and is not cost-effective. In addition, AWS Firewall manager is primarily used to manage your Firewall across multiple AWS accounts under your AWS Organizations. Using AWS Config is much more suitable for tracking changes to WAF web access control lists.
 
-  
-
 **References:**
 
 [https://aws.amazon.com/waf/](https://aws.amazon.com/waf/)
 
 [https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html)
 
-  
-
 **Check out this AWS WAF Cheat Sheet:**
 
 [https://tutorialsdojo.com/aws-waf/](https://tutorialsdojo.com/aws-waf/?src=udemy)
-
-  
 
 **AWS Security Services Overview - WAF, Shield, CloudHSM, KMS:**
 
@@ -3669,18 +3347,17 @@ A leading financial company is planning to launch its MERN (MongoDB, Express, Re
 
 How should the Architect automate the deployment process of the application in the MOST secure manner?
 
--   Upload the database credentials with a Secure String data type in AWS Systems Manager Parameter Store. Install the AWS SSM agent on all servers. Set up a new IAM role that enables access and decryption of the database credentials from SSM Parameter Store. Attach this IAM policy to the instance profile for CodeDeploy-managed EC2 instances. Associate the same policy as well to the on-premises instances. Using AWS CodeDeploy, launch the application packages to the Amazon EC2 instances and on-premises servers.
-    
+- Upload the database credentials with a Secure String data type in AWS Systems Manager Parameter Store. Install the AWS SSM agent on all servers. Set up a new IAM role that enables access and decryption of the database credentials from SSM Parameter Store. Attach this IAM policy to the instance profile for CodeDeploy-managed EC2 instances. Associate the same policy as well to the on-premises instances. Using AWS CodeDeploy, launch the application packages to the Amazon EC2 instances and on-premises servers.
+
     (Incorrect)
-    
--   Upload the database credentials with a Secure String data type in AWS Systems Manager Parameter Store. Install the AWS SSM agent on all servers. Set up a new IAM role that enables access and decryption of the database credentials from SSM Parameter Store. Associate this role to the EC2 instances. Create an IAM Service Role that will be associated with the on-premises servers. Deploy the application packages to the EC2 instances and on-premises servers using AWS CodeDeploy.
-    
+
+- Upload the database credentials with a Secure String data type in AWS Systems Manager Parameter Store. Install the AWS SSM agent on all servers. Set up a new IAM role that enables access and decryption of the database credentials from SSM Parameter Store. Associate this role to the EC2 instances. Create an IAM Service Role that will be associated with the on-premises servers. Deploy the application packages to the EC2 instances and on-premises servers using AWS CodeDeploy.
+
     (Correct)
-    
--   Upload the database credentials with key rotation in AWS Secrets Manager. Install the AWS SSM agent on all servers. Set up a new IAM role that enables access and decryption of the database credentials from SSM Parameter Store. Associate this role to all on-premises servers and EC2 instances. Use Elastic Beanstalk to host and manage the application on both on-premises servers and EC2 instances. Deploy the succeeding application revisions to AWS and on-premises servers using Elastic Beanstalk.
-    
--   Upload the database credentials with a Secure String data type in AWS Systems Manager Parameter Store. Install the AWS SSM agent on all servers. Set up a new IAM role that enables access and decryption of the database credentials from SSM Parameter Store. Associate this role to all on-premises servers and EC2 instances. Use Elastic Beanstalk to host and manage the application on both on-premises servers and EC2 instances. Deploy the succeeding application revisions to AWS and on-premises servers using Elastic Beanstalk.
-    
+
+- Upload the database credentials with key rotation in AWS Secrets Manager. Install the AWS SSM agent on all servers. Set up a new IAM role that enables access and decryption of the database credentials from SSM Parameter Store. Associate this role to all on-premises servers and EC2 instances. Use Elastic Beanstalk to host and manage the application on both on-premises servers and EC2 instances. Deploy the succeeding application revisions to AWS and on-premises servers using Elastic Beanstalk.
+
+- Upload the database credentials with a Secure String data type in AWS Systems Manager Parameter Store. Install the AWS SSM agent on all servers. Set up a new IAM role that enables access and decryption of the database credentials from SSM Parameter Store. Associate this role to all on-premises servers and EC2 instances. Use Elastic Beanstalk to host and manage the application on both on-premises servers and EC2 instances. Deploy the succeeding application revisions to AWS and on-premises servers using Elastic Beanstalk.
 
 Explanation
 
@@ -3706,8 +3383,6 @@ The option that says: **Upload the database credentials with a Secure String dat
 
 The option that says: **Upload the database credentials with key rotation in AWS Secrets Manager. Install the AWS SSM agent on all servers. Set up a new IAM role that enables access and decryption of the database credentials from SSM Parameter Store. Associate this role to all on-premises servers and EC2 instances. Use Elastic Beanstalk to host and manage the application on both on-premises servers and EC2 instances. Deploy the succeeding application revisions to AWS and on-premises servers using Elastic Beanstalk** is incorrect. Although you can store the database credentials to AWS Secrets Manager, you still can't deploy an application to your on-premises servers using Elastic Beanstalk.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)
@@ -3717,8 +3392,6 @@ The option that says: **Upload the database credentials with key rotation in AWS
 [https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-managedinstances.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-managedinstances.html)
 
 [https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-service-role.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-service-role.html)
-
-  
 
 **Check out this AWS Systems Manager Cheat Sheet:**
 
@@ -3730,22 +3403,21 @@ A retail company hosts its web application on an Auto Scaling group of Amazon EC
 
 Which of the following options should the Solution Architect implement to prevent this from happening again and allow the application to handle more traffic in the future? (Select TWO.)
 
--   Create an Amazon CloudWatch alarm to monitor the Amazon RDS MySQL instance if it has a high-load or in impaired status. Set the alarm action to recover the RDS instance. This will automatically reboot the database to reset the queries.
-    
--   Reduce the load on the database tier by creating an Amazon ElastiCache cluster to cache frequently requested database queries. Configure the application to use this cache when querying the RDS MySQL instance.
-    
+- Create an Amazon CloudWatch alarm to monitor the Amazon RDS MySQL instance if it has a high-load or in impaired status. Set the alarm action to recover the RDS instance. This will automatically reboot the database to reset the queries.
+
+- Reduce the load on the database tier by creating an Amazon ElastiCache cluster to cache frequently requested database queries. Configure the application to use this cache when querying the RDS MySQL instance.
+
     (Correct)
-    
--   Reduce the load on the database tier by creating multiple read replicas for the Amazon RDS MySQL Multi-AZ cluster. Configure the web application to use the single reader endpoint of RDS for all read operations.
-    
+
+- Reduce the load on the database tier by creating multiple read replicas for the Amazon RDS MySQL Multi-AZ cluster. Configure the web application to use the single reader endpoint of RDS for all read operations.
+
     (Incorrect)
-    
--   Change the target group health check to a simple HTML page instead of a page that queries the database. Create an Amazon Route 53 health check for the database dummy item web page to ensure that the application works as expected. Set up an Amazon CloudWatch alarm to send a notification to Admins when the health check fails.
-    
+
+- Change the target group health check to a simple HTML page instead of a page that queries the database. Create an Amazon Route 53 health check for the database dummy item web page to ensure that the application works as expected. Set up an Amazon CloudWatch alarm to send a notification to Admins when the health check fails.
+
     (Correct)
-    
--   Change the target group health check to use a TCP check on the EC2 instances instead of a page that queries the database. Create an Amazon Route 53 health check for the database dummy item web page to ensure that the application works as expected. Set up an Amazon CloudWatch alarm to send a notification to Admins when the health check fails.
-    
+
+- Change the target group health check to use a TCP check on the EC2 instances instead of a page that queries the database. Create an Amazon Route 53 health check for the database dummy item web page to ensure that the application works as expected. Set up an Amazon CloudWatch alarm to send a notification to Admins when the health check fails.
 
 Explanation
 
@@ -3787,8 +3459,6 @@ The option that says: **Change the target group health check to use a TCP check 
 
 The option that says: **Create an Amazon CloudWatch alarm to monitor the Amazon RDS MySQL instance if it has a high-load or in impaired status. Set the alarm action to recover the RDS instance. This will automatically reboot the database to reset the queries** is incorrect. Recovering the database instance results in downtime. If you have the Multi-AZ enabled, the standby database will shoulder all the load causing it to crash too. It is better to scale the database by creating read replicas or adding an ElastiCache cluster in front of it.
 
-  
-
 **References:**
 
 [https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)
@@ -3798,8 +3468,6 @@ The option that says: **Create an Amazon CloudWatch alarm to monitor the Amazon 
 [https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/health-checks-types.html](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/health-checks-types.html)
 
 [https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/WhatIs.html](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/WhatIs.html)
-
-  
 
 **Check out these Amazon ElastiCache and Amazon RDS Cheat Sheets:**
 

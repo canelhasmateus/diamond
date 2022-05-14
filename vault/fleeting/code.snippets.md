@@ -1,5 +1,4 @@
 
-
 using Pkg;
 Pkg.add("PkgTemplates")
 using PkgTemplates;
@@ -17,6 +16,3 @@ template = Template(;
     ]
 )
 generate("dixie" , template)
-
- 
- 

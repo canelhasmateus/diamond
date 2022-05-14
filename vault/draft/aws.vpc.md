@@ -1,410 +1,353 @@
 VPC
-	Virtual Private CLoud
-	Private Netwrok
+ Virtual Private CLoud
+ Private Netwrok
 
-	Specify address range , add subnet associate security groups provide route tables etc
+ Specify address range , add subnet associate security groups provide route tables etc
 
-	The associate degree has more infos,
+ The associate degree has more infos,
 
-		Customer Gateway
-		ELastic Netwrodk adapter
-		endpoints
-		internet gateway
-		router
-		virtual private gateway
-		elastic network interface
-		nat gateway
-		flow logs
-		network access control lilst
-		vpn connection
-		peering
+  Customer Gateway
+  ELastic Netwrodk adapter
+  endpoints
+  internet gateway
+  router
+  virtual private gateway
+  elastic network interface
+  nat gateway
+  flow logs
+  network access control lilst
+  vpn connection
+  peering
 
+ typical vpc setup
 
+  Region
 
-	typical vpc setup
+   VPC ( CIDR / IPV4 range )
 
-		Region
+    Public subnet
+     NACL
 
+     Subgroup 
+      EC2 
 
-			VPC ( CIDR / IPV4 range )
+    Private subnet
+     NACL
 
-				Public subnet
-					NACL
+     Subgroup 
+      EC2
 
-					Subgroup 
-						EC2 
+    Internet Gateway encopasses both subnets
+    Create a public route table to enable internet to access the internet
 
-				Private subnet
-					NACL
+ NAT INstance vs Nat GAteway
+  . Instances are customizable, But users need to manage
+  . Instances can become a single point of failure
+  . INstances can be used as a bastion server ( ssh bridge )
+  . Instances support port forward
+  . Suports reassembly of ip fragmented packets for the udp, tcp, icmp
 
-					Subgroup 
-						EC2
+ VPC Peering
 
-			 Internet Gateway encopasses both subnets
-			 Create a public route table to enable internet to access the internet
+  . Network connection between two vpcs, enabling access between them using private addresses
+  . Must manually add a route to the route tables
+  . Does not support Transitive Peering.
 
+ VPC Endpoints
 
-	NAT INstance vs Nat GAteway
-		. Instances are customizable, But users need to manage
-		. Instances can become a single point of failure
-		. INstances can be used as a bastion server ( ssh bridge )
-		. Instances support port forward
-		. Suports reassembly of ip fragmented packets for the udp, tcp, icmp
+  . Endpoints are virtual devices to enable private connection from the vpc to the supported services , without requiring Open-Internet connection
+  . The instancers in the vpc does not require public ip addresses to communicate with amazon services
+  . The traffic never leaves amazon network
+  . Horizontally scalable, redundant, HA.
 
-
-	VPC Peering
-
-		. Network connection between two vpcs, enabling access between them using private addresses
-		. Must manually add a route to the route tables
-		. Does not support Transitive Peering.
-
-	VPC Endpoints
-
-		. Endpoints are virtual devices to enable private connection from the vpc to the supported services , without requiring Open-Internet connection
-		. The instancers in the vpc does not require public ip addresses to communicate with amazon services
-		. The traffic never leaves amazon network
-		. Horizontally scalable, redundant, HA.
-
-	VPN
-		. Virtual Private Network
-		. Secure and private tunnel from our device to the aws cloud
-		. Can extend the on-pmreise vpn
-		. Site 2 Site VPn Conmnection
-		. Contains a Virtual Virtual and A Customer Gateway
-
-
+ VPN
+  . Virtual Private Network
+  . Secure and private tunnel from our device to the aws cloud
+  . Can extend the on-pmreise vpn
+  . Site 2 Site VPn Conmnection
+  . Contains a Virtual Virtual and A Customer Gateway
 
 ___
 
-
 Aws Networking
-	
-	VPN 
-		
 
-	MidSize workloads 
-		-> VPN with dedicated tunnel
-			. 10s MB to 1s GB / s
-	Large workloads require DirectConnect
+ VPN
+  
+ MidSize workloads
+  -> VPN with dedicated tunnel
+   . 10s MB to 1s GB / s
+ Large workloads require DirectConnect
 
-	AWS Site-to-Site VPN
-		. IPSec VPN Connection between your vpc and your remote network
-			.. Suite of crypto secure communication
-		. Virtual Private Gateway
-			. On the aws side
-		. Customer Gateway
-			.  On the remote side of the site to site
+ AWS Site-to-Site VPN
+  . IPSec VPN Connection between your vpc and your remote network
+   .. Suite of crypto secure communication
+  . Virtual Private Gateway
+   . On the aws side
+  . Customer Gateway
+   .  On the remote side of the site to site
 
-	AWS Client VPN
-		. Another option to connect securely from organization
-		. Managed service.
+ AWS Client VPN
+  . Another option to connect securely from organization
+  . Managed service.
 
-	CloudHub
-		. Multiple site-to-site
+ CloudHub
+  . Multiple site-to-site
 
-
-	Direct Connect
-		. Link Internal to aws direct connect location.
-		. Then, create virtual interfaces to access aws servicees.
-		. When using this virtual interface, this uses the aws backbone network and bypasses the internet.
+ Direct Connect
+  . Link Internal to aws direct connect location.
+  . Then, create virtual interfaces to access aws servicees.
+  . When using this virtual interface, this uses the aws backbone network and bypasses the internet.
 
 Environment Setup
-	. Setting up a test environment
-	. Create a VPC With a public subnet
-	. Create some windows servers
-	. Add some html files to the windows servers
-	. Create an ubuntu server.
-
+ . Setting up a test environment
+ . Create a VPC With a public subnet
+ . Create some windows servers
+ . Add some html files to the windows servers
+ . Create an ubuntu server.
 
 VPC Peering
-	
-	. connection between two vpc
-	. Traffic can be routed across them
-	. Vpc's can be from different accounts, and even regions.
 
-	. One must request, and them the other must Accept.
-	. Routes must be added to the route tables to ensure traffic can be routed
-	. Allow Security Groups to allow incoming traffics.
+ . connection between two vpc
+ . Traffic can be routed across them
+ . Vpc's can be from different accounts, and even regions.
 
-	. Does not support transitive relationship.
+ . One must request, and them the other must Accept.
+ . Routes must be added to the route tables to ensure traffic can be routed
+ . Allow Security Groups to allow incoming traffics.
 
-	. Cannot have overlapping CIDR blocks.
-	. If one of the vpc has one of the below connections, you cannot extend the peering relationship to that connection:
-		. VPN connection, or AWS Direct Connect
-		. Internet connection via an Internet Gateway
-		. Internet Connection in a private subnet via a nat device
-		. A gateway vpc waypoint.
+ . Does not support transitive relationship.
 
-	What if some there are two vpcs peering a third one , and these two have overlapping cirds blocks. 
-		How would we add routes to the route tables?
-			. Add more specific routes, such as 10.0.0.0/16 vs 10.0.0.0/24
+ . Cannot have overlapping CIDR blocks.
+ . If one of the vpc has one of the below connections, you cannot extend the peering relationship to that connection:
+  . VPN connection, or AWS Direct Connect
+  . Internet connection via an Internet Gateway
+  . Internet Connection in a private subnet via a nat device
+  . A gateway vpc waypoint.
 
+ What if some there are two vpcs peering a third one , and these two have overlapping cirds blocks.
+  How would we add routes to the route tables?
+   . Add more specific routes, such as 10.0.0.0/16 vs 10.0.0.0/24
 
 Security Groups and Network ACL
-	
-	Security Groups are basically firewalls for resources.
 
-	By default, 
-		. no inbound rules are configured for the security groups.
-		. all outbound traffic is allowed.
+ Security Groups are basically firewalls for resources.
 
-	Always open the least possible avenues:
-		.Specific types, specific protocols,  specific  inbound 
+ By default,
+  . no inbound rules are configured for the security groups.
+  . all outbound traffic is allowed.
 
-	Security Groups are stateful!
-		. Request / Response pairs occur over the same channel.
+ Always open the least possible avenues:
+  .Specific types, specific protocols,  specific  inbound
 
-	NACL
-		. These do not act on the compute layer. They act at the subnet layer ( one level higher )
-		. Whatever rules are applied here, are applied to all the resources in the subnet.
+ Security Groups are stateful!
+  . Request / Response pairs occur over the same channel.
 
-		Every VPC comes with a default NACL, that allows all inbound and outbound traffic.
-		Includes a rules with a * rule number: This means that this rules is followed if the request does not match any other numbered  ( a fallback )
-		Every rule is tested in the order of the rule number, returning early on any match.
-		Best practices say to leave the default nacl alone, and create another nacl , and apply these to the subnets
+ NACL
+  . These do not act on the compute layer. They act at the subnet layer ( one level higher )
+  . Whatever rules are applied here, are applied to all the resources in the subnet.
 
-		. NACL are STATELESS
-			# requests and responses do not follow the same channel
+  Every VPC comes with a default NACL, that allows all inbound and outbound traffic.
+  Includes a rules with a * rule number: This means that this rules is followed if the request does not match any other numbered  ( a fallback )
+  Every rule is tested in the order of the rule number, returning early on any match.
+  Best practices say to leave the default nacl alone, and create another nacl , and apply these to the subnets
 
-		Suppose you do a SSH request to port 22 to a compute instance inside a NACL.
+  . NACL are STATELESS
 
-			If the inbound traffic is allowed on port 22, then the request goes through.
-			However, the response wont!
-				. Requests and responses do ont follow the same channel
-			In this case, for the response to flow through, we would need a outbound traffic allowed, 
-			specifying the originating port of the request
-				. Ephemeral Port Range
-				. Linux uses 32768 - 61000
-				. Elastic Load Balancing use ports 1024 - 65535
-				. Windows server 2003~  uses 1025-5000
-				. Windows server 2008 and later uses 49152~65535
-				. NAT gateway uses 1024 - 65535
+# requests and responses do not follow the same channel
 
-	Some differences between groups and nacl:
+  Suppose you do a SSH request to port 22 to a compute instance inside a NACL.
 
-		Secuity groups are statefull, NACL are not.
-		Security groups are applied at the resource level, NACL are applied at the subnet level.
-		A resource can have multiple security groups, but a subnet can only have one nacl.
-		Security groups rules are allow only, while nacl hgave allow / deny
-		Security groups are mandatory for any copmute resources - withotu security groups, no traffic is allowed by default ; Meanwhile subnets come wiht default network acl which allows both inbound and outbound traffic by default.
+   If the inbound traffic is allowed on port 22, then the request goes through.
+   However, the response wont!
+    . Requests and responses do ont follow the same channel
+   In this case, for the response to flow through, we would need a outbound traffic allowed,
+   specifying the originating port of the request
+    . Ephemeral Port Range
+    . Linux uses 32768 - 61000
+    . Elastic Load Balancing use ports 1024 - 65535
+    . Windows server 2003~  uses 1025-5000
+    . Windows server 2008 and later uses 49152~65535
+    . NAT gateway uses 1024 - 65535
 
+ Some differences between groups and nacl:
 
-	Considerations:
-		Users in the internet would want to acess ec2 instances. The flow would be:
+  Secuity groups are statefull, NACL are not.
+  Security groups are applied at the resource level, NACL are applied at the subnet level.
+  A resource can have multiple security groups, but a subnet can only have one nacl.
+  Security groups rules are allow only, while nacl hgave allow / deny
+  Security groups are mandatory for any copmute resources - withotu security groups, no traffic is allowed by default ; Meanwhile subnets come wiht default network acl which allows both inbound and outbound traffic by default.
 
-			.	User > Internet gateway > VPC > Subnet > Ec2 Instance
-			. Here we would use both NACL and security groups.
+ Considerations:
+  Users in the internet would want to acess ec2 instances. The flow would be:
 
-		Data center would want to access ec2 instances. The flow would be:
-			. Data Center > VPN > VPC > Subnet > ec2 instance.
-			. Here we would use both NACL and security groups.
+   . User > Internet gateway > VPC > Subnet > Ec2 Instance
+   . Here we would use both NACL and security groups.
 
-		Within the same subnet, an ec2 and a lambda function would want to access an rds.
-			. Here security groups alone are good enough.
+  Data center would want to access ec2 instances. The flow would be:
+   . Data Center > VPN > VPC > Subnet > ec2 instance.
+   . Here we would use both NACL and security groups.
+
+  Within the same subnet, an ec2 and a lambda function would want to access an rds.
+   . Here security groups alone are good enough.
 
 VPC Endpoint
 
-	Take a usecase scenario: A Vpc with a public and a private subnet.
+ Take a usecase scenario: A Vpc with a public and a private subnet.
 
-	Suppose that the private subnet needs to reach de S3.
-	Being a public service, this request must be routed through the internet.
+ Suppose that the private subnet needs to reach de S3.
+ Being a public service, this request must be routed through the internet.
 
-	The way to do this would to be use a VPC Endpoint. This way the traffic would be routed through the amazon backbone network.
+ The way to do this would to be use a VPC Endpoint. This way the traffic would be routed through the amazon backbone network.
 
-		Endpoints are virtual devices, horizontally scaled, and redundant and HA>
-		THere are 2 types of endpoints: Interface and Gatway.
-		The gateway endoint is used to connect to s3 and DunamoDB;
-		The interface is used for the rest.
+  Endpoints are virtual devices, horizontally scaled, and redundant and HA>
+  THere are 2 types of endpoints: Interface and Gatway.
+  The gateway endoint is used to connect to s3 and DunamoDB;
+  The interface is used for the rest.
 
-	# To create a vpc with a public and a private subnet, we need a elastic ip , something something NAT GAteway.
+# To create a vpc with a public and a private subnet, we need a elastic ip , something something NAT GAteway
 
-	# WHat is a subnet, really?
+# WHat is a subnet, really?
 
 Transit Gateway
-	
-	What is a transit gateway
-		. Suppose we have lots of vpc.
-		. We need ec2 instances to access other instances in other vpc.
-		. We could create lots of peering connections. 
-		. A better alternative is to use a transit gateway ( HUB and Spoke )
 
-		. Connects vpcs;
-		. Can also connect to the on-pmreise networks
-		. THere is also a route table defined within the transit gateway.
-			.. It allows for both ipv4 and ipv6 cidr and tragers
-		. support static and dynamic routing between vpc and vpn connections.
+ What is a transit gateway
+  . Suppose we have lots of vpc.
+  . We need ec2 instances to access other instances in other vpc.
+  . We could create lots of peering connections.
+  . A better alternative is to use a transit gateway ( HUB and Spoke )
 
+  . Connects vpcs;
+  . Can also connect to the on-pmreise networks
+  . THere is also a route table defined within the transit gateway.
+   .. It allows for both ipv4 and ipv6 cidr and tragers
+  . support static and dynamic routing between vpc and vpn connections.
 
-	how do we work with transit Gateway
+ how do we work with transit Gateway
 
-		. Create the gateway
-		. Then define attachments ( VPCS )
-		. Modify route tables to allow traffic.
-
+  . Create the gateway
+  . Then define attachments ( VPCS )
+  . Modify route tables to allow traffic.
 
 ___
-
-
 
 VPC Gateway endpoints are only accessible form ec2 instances inside a vpc. In csae you are running it from your local on0promise, you will have to run it via a proxy that redirects to vpc based resource and then toward the endpoint.
 
 ...
 
-
 gateway endpoint vs interface endpoint ????
-
-
 
 ...
 
 NAT gateway is IPv4 only. For iPv6, egress-only internet gateway shhould be used.
 
-https://docs.aws.amazon.com/vpc/latest/userguide/egress-only-internet-gateway.html
+<https://docs.aws.amazon.com/vpc/latest/userguide/egress-only-internet-gateway.html>
 
 ___
 
-
 IpSec is not E2E security:
-	It requires that both source and destination be IPSecAware
+ It requires that both source and destination be IPSecAware
 Also it operates at network layer, thus it does not provide identity authentication
 
-https://techgenix.com/securing_data_in_transit_with_ipsec/
-https://www.firewall.cx/networking-topics/protocols/870-ipsec-modes.html
+<https://techgenix.com/securing_data_in_transit_with_ipsec/>
+<https://www.firewall.cx/networking-topics/protocols/870-ipsec-modes.html>
 
 ...
-
-
 
 a securtity group cannot filter requests based on url and you cannot specify deny ruls. Security groups are used only for IP's and Not for static DNS names.
 
 Routing Tables inside a subnet can provide filtering logic.
 
-https://aws.amazon.com/articles/using-squid-proxy-instances-for-web-service-access-in-amazon-vpc-another-example-with-aws-codedeploy-and-amazon-cloudwatch/
-https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html
+<https://aws.amazon.com/articles/using-squid-proxy-instances-for-web-service-access-in-amazon-vpc-another-example-with-aws-codedeploy-and-amazon-cloudwatch/>
+<https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html>
 
 ...
 
 ...
-
-
 
 What is a NAT gateway , even?
 
-
-
 ...
 
-
 Network Redundancy
-	
 
-	AWS VPN
+ AWS VPN
 
+  Customer Gateway ----VPN Connection>> VPN Gateway  > VPC > Private Subnets
 
-		Customer Gateway ----VPN Connection>> VPN Gateway  > VPC > Private Subnets
+  By default, each VPN connection has 2 tunnels ( redundant.)
+  To add more redundancy, we can create more customer gateways.
 
-		By default, each VPN connection has 2 tunnels ( redundant.)
-		To add more redundancy, we can create more customer gateways.
+ AWS Directy Connect
 
+  Customer Gateway ----Direct Connect Location>> VPN Gateway  > VPC > Private Subnets
 
-	AWS Directy Connect
+  Add more redundancy by:
+   Adding customer gateways
+   Connect the customer gateway to multiple direct connect locations
 
-		Customer Gateway ----Direct Connect Location>> VPN Gateway  > VPC > Private Subnets
+ We can have the VPN as a backup connection for the direct connect
 
-		Add more redundancy by:
-			Adding customer gateways
-			Connect the customer gateway to multiple direct connect locations
-
-	We can have the VPN as a backup connection for the direct connect
-
-	We can have multiple direct connect connections in a redundant fashion along with AWS VPN in a redundant fashion as well.
-
-
-
+ We can have multiple direct connect connections in a redundant fashion along with AWS VPN in a redundant fashion as well.
 
 Network Devices
-	
-	Elastic IP
-		For an instance, need a Elastic IP to do a connection to the outside world.
-		We can assign a secondary instance: 
-			If the primary instance goes down, the elastic IP starts to point to the secondary instance.
-			Make sure to do this to different Availability Zones
 
+ Elastic IP
+  For an instance, need a Elastic IP to do a connection to the outside world.
+  We can assign a secondary instance:
+   If the primary instance goes down, the elastic IP starts to point to the secondary instance.
+   Make sure to do this to different Availability Zones
 
-	Nat Instances
-		We can do the same for Nat Instances
+ Nat Instances
+  We can do the same for Nat Instances
 
-	Nat gateways
-		Nat gateway is a Managed Nat Instance.
-
-
+ Nat gateways
+  Nat gateway is a Managed Nat Instance.
 
 Network Devices
-	
-	Elastic IP
-		For an instance, need a Elastic IP to do a connection to the outside world.
-		We can assign a secondary instance: 
-			If the primary instance goes down, the elastic IP starts to point to the secondary instance.
-			Make sure to do this to different Availability Zones
 
+ Elastic IP
+  For an instance, need a Elastic IP to do a connection to the outside world.
+  We can assign a secondary instance:
+   If the primary instance goes down, the elastic IP starts to point to the secondary instance.
+   Make sure to do this to different Availability Zones
 
-	Nat Instances
-		We can do the same for Nat Instances
+ Nat Instances
+  We can do the same for Nat Instances
 
-	Nat gateways
-		Nat gateway is a Managed Nat Instance.
-
-
-
+ Nat gateways
+  Nat gateway is a Managed Nat Instance.
 
 Improving Network performance
-	
-	Enhanced Networking
-		Feature that can be used for ec2 instances to provide higher bandwidgth and higher packet per second
-		Also used to provide lower inter - instance latencies
-		Up to 100 GBS via enhanced network
 
-	Placement Groups
-		Place instaces close together
-		Might have a requirements that an aplication that is making use of multiple ec2 instances and a lot of communication between them
-		Lower network latency, higher network throuput
+ Enhanced Networking
+  Feature that can be used for ec2 instances to provide higher bandwidgth and higher packet per second
+  Also used to provide lower inter - instance latencies
+  Up to 100 GBS via enhanced network
 
+ Placement Groups
+  Place instaces close together
+  Might have a requirements that an aplication that is making use of multiple ec2 instances and a lot of communication between them
+  Lower network latency, higher network throuput
 
-
-
-
-
-Direct Connect is ideal for clients who want to establish private connectivity between their om-prem network and aws for some locatoion -> Not the right solution for moving files from multiple locations. 
-
-
-
-
+Direct Connect is ideal for clients who want to establish private connectivity between their om-prem network and aws for some locatoion -> Not the right solution for moving files from multiple locations.
 
 AWS Direct Connect is useless when there is no on-premise datacenter involved.
 
-
 VPCs with overlapping CIDR cannot peer.
-https://docs.aws.amazon.com/vpc/latest/userguide/vpc-peering.html
+<https://docs.aws.amazon.com/vpc/latest/userguide/vpc-peering.html>
 
-
-AWS Support IpUnicast ; 
-
-
+AWS Support IpUnicast ;
 
 You cannot modify DHCP options of a VPC.
 
 We can have multiple vpc serving various departments, and use tags to define them and have one billing accounts. The tags associated with the bpc will distinguid each deparment or environment.
-VPCs help segregate and organize your resources as per the functionality or domain, thus enabling the account owner to get insight into the resources costing within the logical grouping of the resources. 
+VPCs help segregate and organize your resources as per the functionality or domain, thus enabling the account owner to get insight into the resources costing within the logical grouping of the resources.
 
 ...
 
-
-what is ip multicast ( https://aws.amazon.com/articles/overlay-multicast-in-amazon-virtual-private-cloud/ )
-
+what is ip multicast ( <https://aws.amazon.com/articles/overlay-multicast-in-amazon-virtual-private-cloud/> )
 
 ...
-
-
 
 Aws Cloud
     REgions
@@ -413,11 +356,9 @@ Aws Cloud
         AZ
         Local Zones:
             Not all applications can tolerate latency. Thats what Local Zones are for.
-            Inside a region, they extend the region to your geographic metro-area network 
+            Inside a region, they extend the region to your geographic metro-area network
             ( Opt-in to a local zone. Inside it you can create your vpc and resources )
         Edge Locations
-
-
 
 Local Zone
     . Enable Local Zone
@@ -429,31 +370,18 @@ Local Zone
 Edge Locations
     . Access cloudfront
 
-
 "
 A local zone is where you place your computers ( designed for computing ).
 A Edge Locations is where you access your CDN.
 "
 
-
-
-
 VPC
     . A Virtualized Datacenter.
-
-
-
-
-
-
 
 AWS only have 100 routes. in the table
 All interfaces in AWS are automatically assigned an ipv6 global address.
 AWS takes 5 addresses for each subnet ( instead of 2 that every else would do.)
     . You might run out of ip addresses when designing small networks when using autoscaling
-
-    
-
 
 AWS says their vpns are Highly Available.
     They're using a virtual router with somewhat redundancy.
@@ -461,7 +389,7 @@ AWS says their vpns are Highly Available.
         . Still a single point of failure
         Recommended by AWS:
             Set up one active and one passive.
-    
+
     When using Multiple Links:
         You must always have at least 2. And 3 is better than 2.
         You can Load Share.
@@ -470,9 +398,8 @@ AWS says their vpns are Highly Available.
                     Set a most specific route in one, and a most specific and other, send a summary route to both.
 
     Not good enough.
-    
 
-VPN in cloud 
+VPN in cloud
     Determine the aws virtugla Gateway
     Take your method   ( Static / BGP )
     Choose your tunnels ( default or custom )
@@ -480,14 +407,11 @@ VPN in cloud
 
 Remote Access VPN
     Market Placefssqq
-    
 
 What if We use a Multi-Site  vpn connection?
     AWS assumes you do not have the knowledge to control transitive networks
     You can link everyone with everyone else ( Very Inelegant, O[ N * ( N - 1 ) ] )
     Need to use another solution: Cloud Hub.
-
-
 
 Internet is not a given
     . Use Direct Connection ( Garanteed bandwitdh )
@@ -497,42 +421,33 @@ Internet is not a given
         . Take Multiple Links in a bundle, so they feel like a single link.
         . Take 4 10gbps and have a 40gbps.
 
-
-
-Direct Connect 
+Direct Connect
     Point of presence
-        Cross Connect: Cable from your router to the aws switch ( Layer 2 ) . 
+        Cross Connect: Cable from your router to the aws switch ( Layer 2 ) .
 ]
 Above 100m:
-    Cant use copper. Need fiber. 
-    
+    Cant use copper. Need fiber.
+
     Multi Mode Fiber ( Long )
 
-Bidirectional Link Location 
+Bidirectional Link Location
     If either side gets termination, the connection gets down ; so you have a direct connection or vpn backup.
-
-
 
     On Prem                                                                 AWS Account
             Wan     -> Direct COnnection Location  ->  aws backbone     ->
             Wan    -> Direct Connect Localtion ->       aws backbone    ->
 
-
-
 What if we do not need all the bandwitdh?
     . Direct Connection Partner: Rate Limit
 
-While Connecting, you need VLAN 802.1q Tags 
-
+While Connecting, you need VLAN 802.1q Tags
 
 Virtual Lan :
     Take a switch and you chop it up.
     If it has 100 ports, take the first 25 into vlan A , the next 25 into vlan b
     Why?
-        Segregate Traffic as much as possible. 
+        Segregate Traffic as much as possible.
     802.1q Tags makes it so you can connect between switches using 1 cable while  maintaining vlan segregation
-
-
 
 Private Virtual Interaface
     . You can connect here when using direct connect.
@@ -552,9 +467,6 @@ direct connect gateway
                                     AWS Direct Connect Routers      =>      Private Virtual Interface           EU-WEST-1
                                                                                 | => Direct Connect Gateway =< 
                                                                                                                 EU-EAST-1  
-
-
-
 
 High Availability Connections
     Redudancy
@@ -724,119 +636,96 @@ High Availability Connections
         . Virtual Fabric Adaptor
             .. Better network performance
 
-
-
 Elastic Network Interface allows for fixed MAC addresses , as well as re-attachment to a failover instance.
-
 
 Elastic Network Interfaces does not help in increasing the network bandwidth
 
-
-
-
-
 Remember that Security Groups and NACL:
-	groups operate at the individual instance level,
-	NACL operates at the submet level
+ groups operate at the individual instance level,
+ NACL operates at the submet level
 
-	NACL by default allow traffic.
-	Groups by default deny traffic.
+ NACL by default allow traffic.
+ Groups by default deny traffic.
 
-	Groups cannot deny port access. You can open access for a particular IP address or range.
+ Groups cannot deny port access. You can open access for a particular IP address or range.
 
-	You cannoy deny access to particular IP Addresses using security groups.
-
-
-
-
-
-
-
+ You cannoy deny access to particular IP Addresses using security groups.
 
 On DDos
 
-https://d0.awsstatic.com/whitepapers/Security/DDoS_White_Paper.pdf
+<https://d0.awsstatic.com/whitepapers/Security/DDoS_White_Paper.pdf>
 
 ...
 
-
-
-VPC Peering connections allow access to part of the CIDR block, a specific CIDR block or a specific instance within the peer vpc. 
-
-
+VPC Peering connections allow access to part of the CIDR block, a specific CIDR block or a specific instance within the peer vpc.
 
 ___
 
-
 Client side certificates
 
-https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/https-tcp-passthrough.html
+<https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/https-tcp-passthrough.html>
 
 ...
-
 
 ___
 
 Private Hosted Zones
-	
-	What is
-		. A container that can be defined within route 53.
-		. This can allow route 53 to response to dns queries for a domain and its subdomains from within a vpc.
-		. when you create a private hosted zone, you need to associate that zone with a vpc.
-		. you can then create resource records in the hosted zone.
 
-	How to implement private hosted zones
+ What is
+  . A container that can be defined within route 53.
+  . This can allow route 53 to response to dns queries for a domain and its subdomains from within a vpc.
+  . when you create a private hosted zone, you need to associate that zone with a vpc.
+  . you can then create resource records in the hosted zone.
 
-		# How to they deal with DNS Conflicting Names?
+ How to implement private hosted zones
 
+# How to they deal with DNS Conflicting Names?
 
 Route 53 Routing Policies
-	
-	# What is alias vs A vs AA vs CNAME . . . . 
 
-	What are the routings policies?
-		. Simple:
-			.. Just ensures a request is directed to a particular resource.
-		. Failover Routing Policy.
-			.. Confiure an active failover scenario.
-			.. Configure the Primary / Secondary resource 
-			.. Based on the failover it will be directed
-			.. # How to define a failover?
-		. Latency Routing Policy
-			.. Here traffic will be routed based on least latency.
-			.. Users will be directed to either instance based on the least latency.
-		. Weighted Routing Policy
-			.. Users will be directed to either instances based on the weights. 
-		. Geolocation Routing Policy
-			.. Here traffic is routed based on the location of the user.
-		. Multivaslue answer routing Policy
-			.. Multiple records are sent back to the user.
-			.. The browser will then make a connection to any of the addresses.
+# What is alias vs A vs AA vs CNAME . . .
 
-	Example:
+ What are the routings policies?
+  . Simple:
+   .. Just ensures a request is directed to a particular resource.
+  . Failover Routing Policy.
+   .. Confiure an active failover scenario.
+   .. Configure the Primary / Secondary resource
+   .. Based on the failover it will be directed
+   .. # How to define a failover?
+  . Latency Routing Policy
+   .. Here traffic will be routed based on least latency.
+   .. Users will be directed to either instance based on the least latency.
+  . Weighted Routing Policy
+   .. Users will be directed to either instances based on the weights.
+  . Geolocation Routing Policy
+   .. Here traffic is routed based on the location of the user.
+  . Multivaslue answer routing Policy
+   .. Multiple records are sent back to the user.
+   .. The browser will then make a connection to any of the addresses.
+
+ Example:
 
 GeoProximity Routing Policy
-	
-	How is it different from the	Geolocation ROuting Policy?
 
-	Traffic is rouyted based on the location of the resources and optionally shift traffic from resources in one location to resoucres in another.
+ How is it different from the Geolocation ROuting Policy?
 
-	. Assign a bias for each region
+ Traffic is rouyted based on the location of the resources and optionally shift traffic from resources in one location to resoucres in another.
 
-	Scenarios: 
+ . Assign a bias for each region
 
-		One region may have more resources than another, or some users in the middle.
+ Scenarios:
 
-	. Change bias in small increments to prevent resource exhaustion.
+  One region may have more resources than another, or some users in the middle.
 
-	. In order to use it, you must use route 53 traffic flow
-	. Provides visual editor to create complex configuration of the record set.
+ . Change bias in small increments to prevent resource exhaustion.
+
+ . In order to use it, you must use route 53 traffic flow
+ . Provides visual editor to create complex configuration of the record set.
 
 Complex Network Configurations
-	
-	... # Come back here
 
-
+ ... # Come back here
 
         . Route 53
             .. Uses AnyCast
@@ -869,33 +758,29 @@ Complex Network Configurations
             .. Resolver
                 ... Route53 for on-prem
 
-
-
-
 Routing Strategies
-	
-	Elastic Loading Balancer
-		- Distribute incoming traffic across EC2 INstances
-		- Increase availability of the entire application
-		- Listeners listen to incoming request and route those to the ec2 targets
-		- Network works at Layer4, and Application works at Later 7.
 
-	Route 53
-		- Daomin Name system Web Service
-		- Domain Registration, DNS Routing , health checking
+ Elastic Loading Balancer
 
+- Distribute incoming traffic across EC2 INstances
+- Increase availability of the entire application
+- Listeners listen to incoming request and route those to the ec2 targets
+- Network works at Layer4, and Application works at Later 7.
 
-	What are we going to do?
+ Route 53
 
-		Route 53 routes to load balancer.
-		Load Balancer routes the requests across multiple ec2 instances.
+- Daomin Name system Web Service
+- Domain Registration, DNS Routing , health checking
 
+ What are we going to do?
 
-	### What are all the routing policies inside the route53?
+  Route 53 routes to load balancer.
+  Load Balancer routes the requests across multiple ec2 instances.
+
+### What are all the routing policies inside the route53?
 
 ___
 
-
 Network
-    . Traffic Monitoring is a thing. 
+    . Traffic Monitoring is a thing.
     . VPC Flow logs only contain layer 4 information.

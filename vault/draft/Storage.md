@@ -1,11 +1,10 @@
 
-Durability is the guarantee that data can be accesses after a failure. It is not a vinary property, but should be defined as the "kinds" of failures you want your data to survive. 
+Durability is the guarantee that data can be accesses after a failure. It is not a vinary property, but should be defined as the "kinds" of failures you want your data to survive.
     . Usually, there is some performance penalty for durability;
-    . Rarely testing - involves cutting power, which is distruptiver and hard to automate. 
-
+    . Rarely testing - involves cutting power, which is distruptiver and hard to automate.
 
 nvme
-    writes of a single logicval block *must* be atomic. 
+    writes of a single logicval block *must* be atomic.
     block? sector? journal? raid | write cache?s
 
     . Commands rare submitted to devices using a set of queues. 
@@ -17,61 +16,51 @@ nvme
     In the case of concurrent writes to overlapping ranges, what are the permitted results? 
         . Not specified ;  weak ordering, sematics similar to memory in multithreading. 
 
-
 ___
 
-
-
-https://www.youtube.com/watch?v=wMbTHFXImzI
+<https://www.youtube.com/watch?v=wMbTHFXImzI>
 
 postgres 13
 
 duplicate data in b-tree indexes  
 incremental sorting?
 
-
 ___
 
-
-https://www.youtube.com/watch?v=edB-_JnhoRY
+<https://www.youtube.com/watch?v=edB-_JnhoRY>
 
 Content Persistence
 
-
-
-
 ___
 
-https://www.youtube.com/watch?v=CjUdp1UY3uM
+<https://www.youtube.com/watch?v=CjUdp1UY3uM>
 
 SSD is a block device. You can only read and write in blocks - Usually 4k bytes sizes.
-
 
 Blocks are a storage of pages.
 
 How do we know the address of those blocks?
     . The application could just send a "update block 10" -> The ssd moves stuff around all the time
     . So, we use the Logical Block Addressing - The ssd internally creates and maintain a mapping from logical to physical block.
-        .. the Flash Translation Layer is what does this mapping. 
-        .. Where does it store the mapping? DRAM 
+        .. the Flash Translation Layer is what does this mapping.
+        .. Where does it store the mapping? DRAM
         .. This mapping can be smaller if we use a coarser block size, and vice-versa
-            ... If we do a page-level addressing, it requires large amounts of ram. 
+            ... If we do a page-level addressing, it requires large amounts of ram.
     .. WHy does it needs it anyway??
 
 Erase Unit
-    .. To write to a block, we must first erase its previous contents. 
-    .. We could send a a Erase and then a Write - But then things egt slow, since we're doing 2 operations. 
+    .. To write to a block, we must first erase its previous contents.
+    .. We could send a a Erase and then a Write - But then things egt slow, since we're doing 2 operations.
     .. Erasing is expensive at ssd - so we do it in large units
     .. To erase, a physical larger current is applied to the cell - Over time , this wears the cell down
-    
+
 Namespaces
     Helps with multi-tenancy
 
-
 SSDs do Garbage Collection
     . There is no guarantees about the contiguity of data from each file
-    . When writing and updating files, the blocks aren't immediately erased, just marked as invalid. 
-    . At some point, every block is in use or invalid, so we must clean the space somehow. 
+    . When writing and updating files, the blocks aren't immediately erased, just marked as invalid.
+    . At some point, every block is in use or invalid, so we must clean the space somehow.
     . We must them, clean an erase unit - but it isn't completely invalid, it contain good blocks.
     . So, we must pick the good data and place it temporally to some place - but the ssd is full, so -
     . we place it in an area called over-provisioning -> It is dedicated for the system.  -> Paid , but not used
@@ -79,23 +68,18 @@ SSDs do Garbage Collection
     . During this garbage collection time, reads to file which contains blocks at the erase unit are blocked ;
 
 Wear Leveling
-    . Data access is not uniform - There are places that are cold and others that are hot. 
-    . Therefore, the hot cells wear out first. 
-    . The ssd then moves cold and hot data around to level the wear out. 
-
-
-
-
+    . Data access is not uniform - There are places that are cold and others that are hot.
+    . Therefore, the hot cells wear out first.
+    . The ssd then moves cold and hot data around to level the wear out.
 
 # Cloud
-
 
 Storage on the cloud.
     What is storage
         Where a organization keep its data
             . Volatile
-                Something that goes away when you reboot. Storage that is attached to your instance: 
-                When your instance is terminated, you lose all of this data. 
+                Something that goes away when you reboot. Storage that is attached to your instance:
+                When your instance is terminated, you lose all of this data.
 
             . Non-Volatile
                 Survives a reboot. Hard disk.
@@ -119,12 +103,8 @@ Storage on the cloud.
         . In your computer, we have a hard drive. Into it we put files. 
         . Think 'Drives' 
 
-
-
-
 ___
 
-
     Raid
         . Redundant Array of Inexpensive Disks
         . Improve disk size and performance in the most cost-effective way
@@ -186,10 +166,6 @@ ___
         . Raid-10
             .. Basically only opiton in the cloud to get the necessary IOPS. 
             .. Very expensive, since you need double the number of drives
-
-
-
-
 
 ___
 
@@ -220,21 +196,16 @@ ___
             .. A repository that enables  
                 ...
 
-
 ___
 
+Databases are mission critical and are different from traditional applications, because they are stateful.
 
+When working with no-sql databases, its easier to scale out, since its possible to partition the data.
 
-Databases are mission critical and are different from traditional applications, because they are stateful. 
-
-
-When working with no-sql databases, its easier to scale out, since its possible to partition the data. 
-
-Different process for relation databases. They are scaled out in a unique manner. Its easy to scale up. However, its not always possible. Then you need to scale out. 
-
+Different process for relation databases. They are scaled out in a unique manner. Its easy to scale up. However, its not always possible. Then you need to scale out.
 
 .. Reducing Read Load
-    ... Read Replica: Read-Only identical copy. Any read operation is redirected to this read replica. 
+    ... Read Replica: Read-Only identical copy. Any read operation is redirected to this read replica.
     ... We can also implement a caching system to lower the read load, both on master and replica ( ElastiCache )
     ... Redis
 .. Reducing Write Load

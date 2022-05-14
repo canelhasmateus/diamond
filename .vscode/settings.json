@@ -8,5 +8,11 @@
         "posix",
         "wireshark",
         "Zettelkasten"
+    ],
+    "grammarly.selectors": [
+        {
+            "language": "markdown",
+            "scheme": "file"
+        }
     ]
 }

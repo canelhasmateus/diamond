@@ -1,21 +1,19 @@
 # Minis
 
-
-
 vpn concentrations
 internet routing architectures
 server virtualization
 storage
 networkings
-    dns, bgp, routers, switches, 
+    dns, bgp, routers, switches,
 dns record types
 Need to better understand storage gateway , POSIX based block storage
-markdown autocomplete 
-https://franklinjl.org/workflow/
+markdown autocomplete
+<https://franklinjl.org/workflow/>
 ASLR? Address Space Layout Randomization
 big ip system?
 check aws whitepapers
-check https://haxe.org/
+check <https://haxe.org/>
 check scratch.io
 enable oid resolution?
 go over the windows default firewall rules and understand them.
@@ -32,10 +30,11 @@ why am i asking so much for 192.168.15.2?
 wireshark only use the profile "hosts" file?
 wireshark statistics
 
-]~> Do parametric types beats virtual types? 
-    . wtf does this even mean. 
+]~> Do parametric types beats virtual types?
+    . wtf does this even mean.
 
 Intellij
+
 * Intentions -> Grok into where / how intentions are made.
 * Language Injections -> Grok
 * Run Targets

@@ -1,6 +1,3 @@
-https://www.youtube.com/watch?v=uekdj1MxNAg
+<https://www.youtube.com/watch?v=uekdj1MxNAg>
 
-Comparing traditional vs grammar of graphics 
-
-
-
+Comparing traditional vs grammar of graphics

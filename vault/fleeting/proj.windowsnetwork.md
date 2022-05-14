@@ -1,7 +1,7 @@
 AllJoynRouter?
 App Installer?
 CAptive Portal Flow
-Cloud Identity? 
+Cloud Identity?
 
 Cortana
 Desktop App Web Viewwer
@@ -20,8 +20,6 @@ Microsoft Dticky Notes
 Narrator
 NcsiUwpApp
 Network Disovery
-
-
 
 LLMNE-UDP-OUT?
 NB-Datagram-out?
@@ -62,55 +60,45 @@ your account
 
 source 0.0.0.0 to 255.255.255.255 ( dhcp discover )
 
-source desktop-05AI9DR.local to ff02::16 
-	ICMP v6 ( Multicast LIstener Report Message )
-	ICMP v6 ( Neighbor SOlicitation )
-	ICMP v6 ( Neighbor Advertisement )
+source desktop-05AI9DR.local to ff02::16
+ ICMP v6 ( Multicast LIstener Report Message )
+ ICMP v6 ( Neighbor SOlicitation )
+ ICMP v6 ( Neighbor Advertisement )
 
-source desktop-05AI9DR.local to ff02::16 
-	IGMP v2 ( Membership Report group )
-
-
+source desktop-05AI9DR.local to ff02::16
+ IGMP v2 ( Membership Report group )
 
 source desktop-05AI9DR.local to ff02::1:3
-	LLMNR Standard query ANY DESKTOP-05ai
-
-
+ LLMNR Standard query ANY DESKTOP-05ai
 
 source desktop.local fe80 for DNS => Very quick we get a response
 
-
 several ARP
 
-
 Several QUIC to google.
-	SEVERAL.
-	WHY
-
+ SEVERAL.
+ WHY
 
 DHCP v6 to ff02::1:2 => UDP port 547
-	Solicit, folowwed by advertise. 
-		IA address given, alogside DNS recursive name server
-			fe80 9a7e
+ Solicit, folowwed by advertise.
+  IA address given, alogside DNS recursive name server
+   fe80 9a7e
 
-	What is DUID??
+ What is DUID??
 
-	who gives me an ipv6 address??
-
+ who gives me an ipv6 address??
 
 chatting with wns.notify.trafficmanager
-	. Where did it get its ip from?
+ . Where did it get its ip from?
 
 lookups for some domains
-	msftconnecttest
-	skydrive
-	
+ msftconnecttest
+ skydrive
 
 tcp handshake and http chat with  4-c-0003.c-msedge.net
 
 More membership reports via igmp
 more multicasts via icmpv6
-
 
 who is investus_3b:b7:d0
 

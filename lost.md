@@ -1,6 +1,6 @@
 
- Https migration 
-    
+ Https migration
+
     Why take so long to migrate everything?
 
     Unknwons : 
@@ -14,27 +14,21 @@
         . Needed the change to be made at the same time  ; why ?[[expand ]]
         
         . Affected the display of advertisements, which would mean a meaningful impact on revenenue. 
-    
-Strategies: 
-    
+
+Strategies:
+
     . Started rolling to logged in users first, since it would not affect engine crawling. 
     . Wrote tests to catch mixed content warning or http links on the page. 
     . Migration page by page, behind a toggle that served https pages only to logged in users. 
         .. several users still had stale pages , from cachee, so needed to support http urls for a period after the flip. 
 
-
 Around 150% increased requests only;
 Some distruptionb because of the way the cache headers were setup:
-    . http was being cached, and https was not. 
-
-
+    . http was being cached, and https was not.
 
 ___
 
-
-
-
-https://www.youtube.com/watch?v=6cncmSaRqzQ
+<https://www.youtube.com/watch?v=6cncmSaRqzQ>
 
 Turning HTTP 2 was a mistake
 
@@ -62,14 +56,13 @@ Turning HTTP 2 was a mistake
 
     Intercepting and decrypting https traffic with wireshar
 
+SSLKEYLOGFILE environment variable is a path of textfile we can acces.
+Software that implements tls with typically write keys and others tls secrets to this file. This applies to curl chrome firefox and other desktop apps that use opensll libs.
 
-SSLKEYLOGFILE environment variable is a path of textfile we can acces. 
-Software that implements tls with typically write keys and others tls secrets to this file. This applies to curl chrome firefox and other desktop apps that use opensll libs. 
+We can configure wireshark to read this file and decrypt the intercepted tls packets.
 
-We can configure wireshark to read this file and decrypt the intercepted tls packets. 
-
-https://www.trickster.dev/post/decrypting-your-own-https-traffic-with-wireshark/
+<https://www.trickster.dev/post/decrypting-your-own-https-traffic-with-wireshark/>
 
 ___
 
-https://www.youtube.com/watch?v=qpC1YH0FhuY
+<https://www.youtube.com/watch?v=qpC1YH0FhuY>

@@ -3,6 +3,7 @@
 Welcome to Foam templates.
 
 What you see in the heading is a placeholder
+
 - it allows you to quickly move through positions of the new note by pressing TAB, e.g. to easily fill fields
 - a placeholder optionally has a default value, which can be some text or, as in this case, a [variable](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_variables)
   - when landing on a placeholder, the default value is already selected so you can easily replace it

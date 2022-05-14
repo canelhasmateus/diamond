@@ -1,6 +1,5 @@
 # Load Balancer Invisible Buffering
 
-
 possible problems
         using HAproxy is easy, but it silently introduces a new tcp buffer
             the cache spits out payload as quickly as possible, and the server sends data frames with the highest stream priority first
@@ -14,5 +13,3 @@ possible problems
 
 
     https://calendar.perfplanet.com/2018/http2-hol-waterfall/
-
-

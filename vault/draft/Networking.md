@@ -1,58 +1,49 @@
 
-
 Port forward
 
 Can be done in the router.
-    . Ugly, 
+    . Ugly,
 
 iptables
-     
-
-    
 
 nat
 
-
-
 transparent proxying
 
-
 why don't we just run the app in port 80?
-    . ports 0 to 1024, these are system ports, 
+    . ports 0 to 1024, these are system ports,
     . cant listen on then unless root
-        -> Security concerns. 
+        -> Security concerns.
 
-insert rows in the nat table. 
+insert rows in the nat table.
     . "please forward to me , on this other port"
-    . uses iptables -> System call , need sudo 
+    . uses iptables -> System call , need sudo
         -> sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 192.168.254.47:8080
 
     |> needs to be a ip, cant be dns
-when routing to another machine, we need to use maskarade 
+when routing to another machine, we need to use maskarade
     . sudo iptables -t nat -A postrouting -p tcp --dport 80 -j MASQUERADE --to-destination ....
 
 these are session only. to persist,  need to use apt-get install iptables-persistent
 
 clearing
     sudo iptables -t nat -F
-    
-# 
 
+#
 
 your router is the one who has the public ip address
     . How does it knows to forward the requests?
 
     . There are many, for example
         .. Port Forwarding
-    
+
 Port Forward is a table configured inside the router, which allows it to forward the requests
-    . However, your ip must be static , because the ip in the table is static. 
+    . However, your ip must be static , because the ip in the table is static.
 
-
-# 
+#
 
 Network Address Translation
-    
+
     Maps a ip address to another ip address
         ( or a ip_address:port pair to another one )
     
@@ -65,32 +56,30 @@ Network Address Translation
 
     devices inside the same network can communicate directly by finding each other mac addresses using arp
 
-
-check if its in the same subnet, does an arp request 
+check if its in the same subnet, does an arp request
 else, it calls its default gateway
     when rounting a request, the router will:
         check if its an unroutable ip addresses.
 
-if 
+if
 router vs switches?
-
 
 can use to do more things
     . Instead of having root access to listen on port 80.
 
     . load balancing: takes the packets coming, and create a virtual ip addresses ( VIP ). the vip gets an entry in the nat table  
-        
-DNS 
+
+DNS
     . Can point to ip:ports via SRV records
 
+#
 
-# 
 ARP
 
-Maps Ip addreses to mac addresses 
+Maps Ip addreses to mac addresses
 
 Why?
-        
+
         we need mac to send frames ( layer 2 )
 
         Most of the time, we know the ip address , but not the mac. 
@@ -98,7 +87,7 @@ Why?
         this process is expensive, so its cached locally, in an ARP table 
 
 Network Frames
-    
+
     encapsules the ip packet
 
     ![](2022-04-03-12-13-24.png)
@@ -107,32 +96,29 @@ Network Frames
 
     in this case , the application sends an arp request looking for a default gateway. then, it builds the network frame and sends it. 
 
+#
 
-# 
+Osi model
 
-Osi model 
- 
 open system interconnections
-
 
 layer 7 applicatoin
 layer 6 presentatoin -> Encrypt if necessary
-layer 5 Session -> Establish session ; tag it. 
+layer 5 Session -> Establish session ; tag it.
 Layer 4 Transport -> Add ports/seq ; Break into segments;
-Layer 3 Network -> Adds IP ; Now, called a packet. 
-Layer 2 Data Link -> Breaks packets and adds the Target Mac ADdresses  ; Now Called Frames, have basic error detection 
+Layer 3 Network -> Adds IP ; Now, called a packet.
+Layer 2 Data Link -> Breaks packets and adds the Target Mac ADdresses  ; Now Called Frames, have basic error detection
 Layer 1 Physical -> Tranforms into 1 and 0, into electric / optical / radio waves
 
-frames are fixed size 
-frames are received by everyone in the same broadcast domain, but the network card just discards it ( unless its a broadcast or multicase addressed) . It can be configured to not do so, and forward every packet: This is called promiscuous mode. 
+frames are fixed size
+frames are received by everyone in the same broadcast domain, but the network card just discards it ( unless its a broadcast or multicase addressed) . It can be configured to not do so, and forward every packet: This is called promiscuous mode.
 
 where does the tcp buffer enter her?? [[expand]]
 
+#
 
-# 
+TCP Tunneling is the proccess of encapsulating content from a protocol A to a protocol B , usually because A is unnavailably.
 
-TCP Tunneling is the proccess of encapsulating content from a protocol A to a protocol B , usually because A is unnavailably. 
-    
     .. Isn't this just IPSEC?
     .. Or proxying 
 
@@ -143,14 +129,11 @@ Applications
     SOCKS proxy ( dynamic port )
 
 This can cause TCP meltdown ( tcp over tcp )
-    tcp isn't a lightweight protocol 
-        congestion control, retransmission, garantee delivered, checksumming, 
+    tcp isn't a lightweight protocol
+        congestion control, retransmission, garantee delivered, checksumming,
     doing a tcd inside a tcp inside a tcp ... can slowdown everything
 
-
-
 ___
-
 
 Similarly one may ask, what is loopback used for?
 
@@ -158,30 +141,21 @@ Similarly one may ask, what is loopback used for?
 
 is not sent through a real network interface , even if sent to an address on one of the machine network adapters;
 
-
 windows does not implement a network loopback interface ;
 
-
-
 SSDP is a zero-configuration networking protocol designed to allow nodes to be added and removed from a network without any involvement from a central service such as DNS or by assigning static IP addresses to specific nodes. This decentralised, dynamic approach is possible because SSDP uses UDP as it's underlying transportation protocol which allows for multicast communication.
-
 
 PSH Flag in TCP
 The Push flag usually means that data has been sent whilst overriding an in-built TCP efficiency delay, such as Nagle’s Algorithm or Delayed Acknowledgements.
 
 These delays make TCP networking more efficient at the cost of some latency (usually around a few tens of milliseconds). A latency-sensitive application does not want to wait around for TCP’s efficiency delays so the application will usually disable them, causing data to be sent as quickly as possible with a Push flag set.
 
-
 tcp buffers?
-
-
 
 __
 
 ICMP and IGMP are both used for multicast management
 IGMP for ipv4, and ICMP for ipv6
-
-
 
 IGMP Messages:
 
@@ -189,32 +163,33 @@ General Memeberip queries
 Group specific queries
 groupo and source specific queires
 membership reports
-    
+
 leave group messages
 
 This was sent to 224.0.0.252. Why?
     . 224.0.0.22, and 224.0.0.241 are in my arp table.
-    d. 239.244.255.250 is also. 
+    d. 239.244.255.250 is also.
     . 224.0.0.22 does not go away when flushing my arp tables.
-    . It is also the one i semd my first IGMPv3 too. 
+    . It is also the one i semd my first IGMPv3 too.
     what is an inet_address?
-# 
+
+#
 
 In DHCP, i was the one requesting the address. Why? Is this always the case? How do i know that i correctly received that ip address?
     Where is the parameter request response?
-        . Now that i flushed my caches, the responses came in a following ack request. 
-            .. Later i'll try again without flushing. 
+        . Now that i flushed my caches, the responses came in a following ack request.
+            .. Later i'll try again without flushing.
     Is the destination always 255.255.255.255?
     It seems that the client is the one that initiates a ip proposal. Is it the case? Can the server reject it?
-    
+
     It seems that dhcpv6 does things similarly. However, it sends to ff02::1:2
     
     It seems that following the dhcp request, our pc asks over the broadcast "Who is 192.168.1.1 - the router / domain name server / dhcp server"
-    
-After this is complete, it seems we start to contact via IGMP and ICMP. 
-    . It sends IGMP to 224.0.0.22 , which is the entry that wasn't flushed with arp -d. 
+
+After this is complete, it seems we start to contact via IGMP and ICMP.
+    . It sends IGMP to 224.0.0.22 , which is the entry that wasn't flushed with arp -d.
         .. It starts with a report / join group for any sources ( 224.0.0.252 and 224.0.0.251)
-    then a leave group 
+    then a leave group
     . It also Sends ICMP to ff02::16
 
     In ICMP, the first request was sent to ff02::16 - A multicast listener report message. Why?
@@ -232,53 +207,37 @@ among these mdns, why are we asking for ourselves?
 
     many many times, actually. 
 
-# 
+#
 
 how do i display my dns cache?
     ipconfig /displaydns.
 
 What is LLMNR?
 
-
 msftconnecttest.com ( A, AAAA )
 skydrive.wns.windows.com ( A , AAAA )
 lincensing.mp.microsoft.com
 
-
 what is a arp probe?
-
-
 
 port 3702 ws-discovery
 tcp wsapi
 
-
-i *really* don't like what i see. 
+i *really* don't like what i see.
 
 Name Resolution
 
-
-
 ___
-
-
 
 if you'reinterested in how chrome sees priority you can right click in the network panels table and add the priority column .
 
-
-
-Priorization is a big deal. As ur apps gets bigger and more complex we need mechanisms to handle that. 
+Priorization is a big deal. As ur apps gets bigger and more complex we need mechanisms to handle that.
 
 Avoid Locking the main thread - this is something that csr does;
-SSR however, creates an uncanny valley of pixels that aren't really interactive 
-progressive boot would be the best approach, but its not the easiest to use inside frameworks 
-
-
-
+SSR however, creates an uncanny valley of pixels that aren't really interactive
+progressive boot would be the best approach, but its not the easiest to use inside frameworks
 
 ___
-
-
 
 {
     "Version": "2012-10-17",
@@ -298,29 +257,16 @@ ___
     ]
 }
 
-
-
 vpc-0691a9ac7de08ed78
 
-
-
-
-
 20.0.0.102
-
-
-
-
-
 
 Application ( FTP, SMTP, SNMP )
 Transport ( TCP , UDP )
 Internetwork ( IP, ICMP , IGMP )
 Link ( Ethernet, X.25, ARP, OSPF, NDP )
 
-
 Ip defines Five Addresses Classes:
-    
 
     A, B, C Consist of unicast IP Addressesd
         
@@ -339,8 +285,6 @@ Ip defines Five Addresses Classes:
     Only 126 class A network exists, and 161777214 possible hosts in each of them.
     16384 class B network exists and 65534 hosts in each of them
     More than 2 million class C network exist, with a maximum of 254 hosts in each of them
-
-
 
 Regional INternet Registries are the organizations responsible for the allocation of address spaec within specific geographical areas
     ( LACNIC ) for Latin America
@@ -361,7 +305,6 @@ BGP
     As of 2018, there are approx 64000 asn in use worldwide
     ASNs are like "IP addresses" - assign them to routers
 
-
 Scenarios of Multi-Homing
     Single Link - Multiple Ip Addresses
     Multiple Interfaces - An Ip Address per interface
@@ -378,7 +321,6 @@ Private Addressing
         These include the IANA, its member agencies and ISP
         Defines a way to assign public ip addresses, worldwide, to allow route aggregation or route summarization
         Allows RIR's and ISP's to reduce waste by assigning  a subset of a classful network to a single customer, eg.
-
 
             ISPs customer A needs only 10 ip addresses and Customer B needs 25 ip addresses
                 . Assign Customer A CIDR block 198.8.3.16/28 - This has 14 assignable addresses , 198.8.3.17 to 198.3.30
@@ -438,70 +380,52 @@ DHCP
         3 . Client sends out a DHCP Request ( Accepting the offer )
         4 . Server then sends a DHCP Ack
 
-
 Unicast
 BroadCast
     Receivers validate if they're intended receivers
 
-MultiCast 
+MultiCast
     Ip class D
 
-
-
-
 Ipv6
-    
+
     Ipv4 only has 32vit -> 4 billion addresses ( not enough )
     Extends 32bit ip address to 128 bits, allowing up to 2^128
-    
-
 
 ___
-
-
 
 #
+
 Intercepting and decrypting https traffic with wireshar
 
+SSLKEYLOGFILE environment variable is a path of textfile we can acces.
+Software that implements tls with typically write keys and others tls secrets to this file. This applies to curl chrome firefox and other desktop apps that use opensll libs.
 
-SSLKEYLOGFILE environment variable is a path of textfile we can acces. 
-Software that implements tls with typically write keys and others tls secrets to this file. This applies to curl chrome firefox and other desktop apps that use opensll libs. 
+We can configure wireshark to read this file and decrypt the intercepted tls packets.
 
-We can configure wireshark to read this file and decrypt the intercepted tls packets. 
-
-https://www.trickster.dev/post/decrypting-your-own-https-traffic-with-wireshark/
-
-
-
+<https://www.trickster.dev/post/decrypting-your-own-https-traffic-with-wireshark/>
 
 ___
 
-
-
-https://www.youtube.com/watch?v=6dDtN1wk5Qc
+<https://www.youtube.com/watch?v=6dDtN1wk5Qc>
 
 gRPC is a protocol built on top of http2 to support bmultiplexing, to  become language neutral
     . If i wanna communicate in a certain protocol, you need to understand that protocol, such as http, http2, postgres protocol
-
 
 why not use one connection , instead of the connection pool in the database?
     head of line blocking
     how to know what packet is for who?
 
-
-
 ___
 
+<https://www.youtube.com/watch?v=B5Vw6H3oSD8>
 
-https://www.youtube.com/watch?v=B5Vw6H3oSD8
-
-
-DNS has 
-    Udp Header 
+DNS has
+    Udp Header
         Source Port
         Destination Port
         Metadata
-        
+
     DNS Data
         Query Id
         Metadata
@@ -510,11 +434,7 @@ DNS has
 tcp half open?
 reflection attacks
 
-
-
 ___
-
-
 
 # Layer 4
 
@@ -522,73 +442,42 @@ ALso knwon as the transport layer
 
 # Layer 6
 
-Also known as the presentation layer 
-
+Also known as the presentation layer
 
 # Layer 7
 
-
-Also knwon as the application layer. 
-
-
-
-
+Also knwon as the application layer.
 
 ____
 
-
-
 # Communication Protocol
 
-
-
-
-
-# Http 
-
+# Http
 
 # UDP
 
-
-
 # TCP
-
 
 # IP
 
-
-
 # ICMP
-
 
 # FTP
 
-
-
+___
 
 ___
 
+<https://www.youtube.com/watch?v=o5S0-_vniiM>
 
-
-___
-
-
-https://www.youtube.com/watch?v=o5S0-_vniiM
-
-ip has a protocol header, added after the fact as metadata  for better performance / blocking ; 
-
+ip has a protocol header, added after the fact as metadata  for better performance / blocking ;
 
 there are multiple path from a source to another destination
     . its possible a packet takes one route, and another takes a second path
 
-the ip 
-
-
-
-
+the ip
 
 ___
-
 
 OSI Model
     Every Network provider uses the same system, which helps troubleshooting.
@@ -616,31 +505,22 @@ OSI Model
             C: 253 hosts
             D: Multicast reserved
 IPV4: 32bit.
-IPV6: 128bit  -> 
-
-
-
-
+IPV6: 128bit  ->
 
 Subnetting:
     Breaking down networks into smaller ones or group smaller network
     CIDR
-What if we wanted  to create greater subnets (aggregating small ones) ? 
+What if we wanted  to create greater subnets (aggregating small ones) ?
     This is called supernetting
     Can be used to do network summarization
         Good to create smaller routes
 
-
-
-
-
 __- # CLoud
-
 
 Types of CLoud ARch
     Private CLoud
         . Running Independently
-        . OpenStack Ansible 
+        . OpenStack Ansible
         .. You have the benefits of the cloud inside your own data center
         .. You gotta manage your own cloud
 
@@ -657,7 +537,7 @@ Types of CLoud ARch
         . Very agile
         .. Organization > AWS Direct Connect > Customer VPC  > VPC
     Public CLoud
-    
+
 Why extend private cloud to the public?
     . Our data center cannot handle peak loads such as christmas
     . Offload some of those things
@@ -666,9 +546,6 @@ Why extend private cloud to the public?
 Public cloud:
     . Everything inside a provider ( GCP , AWS , Azure  , ... )
 
-
-
-
 Connectivity
     Over the Internet with a VPN
         Providing a private network over  a public network
@@ -676,9 +553,9 @@ Connectivity
             Internet is not secure.
                 . You'll get hacked
             Take care of routing
-                . 
+                .
             Internet routing is *very* complex
-                . 
+                .
             Can't take Private ip addresses and connect them via public internet . They are non-routable.
         Why not?
             VPN's depend on the internet.
@@ -696,9 +573,8 @@ Connectivity
                 . So valuable that you can use them in public connections.
             Logical
                 Data Center > VPN ( IPSEC ) > Cloud
-        
+
     Pseudo-Wire to the cloud
-        
 
 WHen you set a vpn between your data center and your vpc, its usually a site-to-site vpn.
 There also exists a Multi-Site VPN.

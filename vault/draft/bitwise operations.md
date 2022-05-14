@@ -1,7 +1,6 @@
 # bitwise operations
 
- 
-when working with numbers, we can assign a maximum and 
+when working with numbers, we can assign a maximum and
 
 # XOR
 
@@ -29,5 +28,3 @@ when working with numbers, we can assign a maximum and
         Ref: https://leetcode.com/problems/maximum-xor-for-each-query/
         
     Thinking in "Two's complements"
-
-

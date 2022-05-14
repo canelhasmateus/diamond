@@ -1,44 +1,39 @@
 
 Machine Learning tools
-	
 
-	Use Case
-		Objects store in a S3 bucket.
-			User uploads images to the bucket.
+ Use Case
+  Objects store in a S3 bucket.
+   User uploads images to the bucket.
 
-		Upload triggers lambda that call Recognition.
-			Recognition takes the metadata and stores it in dynamoDB.
+  Upload triggers lambda that call Recognition.
+   Recognition takes the metadata and stores it in dynamoDB.
 
+ SageMaker
 
-	SageMaker
+  Fully managed machine learning service
+   .. DS and developers
+   .. Build and Train ML Models. They can then be deployed to production based environment
+   .. Also have access to jupyer notebooks that can be used to explore sources
+   .. Common ML Algos that can be used against large data sets
 
-		Fully managed machine learning service
-			.. DS and developers
-			.. Build and Train ML Models. They can then be deployed to production based environment
-			.. Also have access to jupyer notebooks that can be used to explore sources
-			.. Common ML Algos that can be used against large data sets
+ Rekognition
 
-	Rekognition
+  Image recognition service.
+  Detect Objects within an image.
+  Detec Similar faces in a collection of images
+  Detec Attributes of a face -> Are eyes Open?
+  Detect explicit content.
 
-		Image recognition service.
-		Detect Objects within an image.
-		Detec Similar faces in a collection of images
-		Detec Attributes of a face -> Are eyes Open?
-		Detect explicit content.
+ Amazon Comprehend
 
-	Amazon Comprehend
+  Extract insight about the contents of documents
+  UTF-8 text files
+  detect entities, key pgrases, language, sentiments, and other elements
+  social feeds or product mentions
 
-		Extract insight about the contents of documents
-		UTF-8 text files
-		detect entities, key pgrases, language, sentiments, and other elements
-		social feeds or product mentions
+ Aamzon Machine Learning service
 
-
-	Aamzon Machine Learning service
-
-		Visu tools and wizard in this service to create models without the need to learn complex ML Algos
-
-
+  Visu tools and wizard in this service to create models without the need to learn complex ML Algos
 
 QuickSight
 
@@ -47,7 +42,4 @@ QuickSight
     prepare data before
     create different types of visualizations
 
-
 ...
-
-

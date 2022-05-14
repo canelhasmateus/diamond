@@ -1,5 +1,5 @@
 HIve
-    
+
     Query Interface to hadoop ( HDFS)
         . Query ENgine
         . Metastore
@@ -12,13 +12,12 @@ HIve
     Yarn -> Kubernetes
     Query Engine -> Presto / Trino
 
-
 When saving new data, we register it into hive metastore
     . Maps a set of objects in the objsect store to a table exposed by hive
         .. Schema of the table held in the file, with metadata
-    . Leads to 
+    . Leads to
         .. Virtualization
-        When using sql, not interested in the detail of object stora. 
+        When using sql, not interested in the detail of object stora.
 
         .. Discoverability
         Becomes a catalog of all the collections held in object storage 
@@ -37,8 +36,7 @@ POssible replacements
     . Difficult to install and maintain
     . Not architected cloud-native, complicating managed service implementations
     . Scalability 5restrictions from relational db relianceow
-    . No direct, but  . .. | specially because the metastore is a general interface supported by all applications. 
-    
+    . No direct, but  . .. | specially because the metastore is a general interface supported by all applications.
 
 Open Table Formats
     . Iceberg
@@ -48,7 +46,7 @@ Open Table Formats
     . delta lkae
         mutability
         schema enforcement and evolution
-    
+
 Data Catalogs
     Many open source discovery tools
         acryl
@@ -76,39 +74,35 @@ Data Catalogs
         zeenea
 Observability
     monitoring the quality of the data pipelines oeprationally, or the data itself
-        . Databand 
-        
+        . Databand
+
         . great expectations
         . monte carlo ( https://www.montecarlodata.com/ )
 
-
 ___
-
 
 Windowing Model
 
-	Splits dataset into smaller groups for processing
-	Unbounded Data: 
-		Windowind is required for some operations like aggreation , outer joins, and time-bounded operations
-	Bounded Data:
-		Optional
+ Splits dataset into smaller groups for processing
+ Unbounded Data:
+  Windowind is required for some operations like aggreation , outer joins, and time-bounded operations
+ Bounded Data:
+  Optional
 
-	Windowing is time based over a logical time domain
-		Elements have
-	Aligned or unaligned:
-		???
+ Windowing is time based over a logical time domain
+  Elements have
+ Aligned or unaligned:
+  ???
 
-	Kinds:
+ Kinds:
 
-		Fixed Windows:
-			Static window size ( hourly, daily ) 
-			Also called Tumbling Windows
-		Sliding Windows
-			Defined by a window size and slide period ( hourly windows stating every minute )
-		Sessions:
-			Windows that capture some period of acitvity over a subset of the data, in this case per key
-
-
+  Fixed Windows:
+   Static window size ( hourly, daily )
+   Also called Tumbling Windows
+  Sliding Windows
+   Defined by a window size and slide period ( hourly windows stating every minute )
+  Sessions:
+   Windows that capture some period of acitvity over a subset of the data, in this case per key
 
 Triggering Model
 Incremental Model
@@ -116,356 +110,316 @@ Stateful Model
 Scalable
 Portable
 
-
-
 Event Time vs Processing Time
 
+ Triggers
+ Mechanism for stimulating the production of resultsi n respoinse to internal or external signals
+ Provide a way to control how multiple panes for the same window relate to each other, bua three modes:
+  Discarding
+   Window contents are discarded, and later results bear no results to previous results
+  Accumulating
+   Windows contets are left intact in persistent state, and later results become a refined of previous results
+  Accumulating and Rectracting
+   In adiction to acumulating, a copy of the emitted value is also stored in persistent state
 
-
-
-	Triggers
-	Mechanism for stimulating the production of resultsi n respoinse to internal or external signals
-	Provide a way to control how multiple panes for the same window relate to each other, bua three modes:
-		Discarding
-			Window contents are discarded, and later results bear no results to previous results
-		Accumulating
-			Windows contets are left intact in persistent state, and later results become a refined of previous results
-		Accumulating and Rectracting
-			In adiction to acumulating, a copy of the emitted value is also stored in persistent state
-
-	Complementary to the windowing model
-		Windowing determines where in event time data are grouped together for processing 
-		Triggering determines when in processing time the ersults of groupings are emitted as panes.
+ Complementary to the windowing model
+  Windowing determines where in event time data are grouped together for processing
+  Triggering determines when in processing time the ersults of groupings are emitted as panes.
 
 Stateful Model
 
-	Operations like transform are stateful
-	THe staete is partitioned by key and per window
+ Operations like transform are stateful
+ THe staete is partitioned by key and per window
 
 PipeLine Questions
-	What results are being computed
-	Where in event time they are being computed
-	When in processing time they are materialized
-	How earlier results relate to later refinements
+ What results are being computed
+ Where in event time they are being computed
+ When in processing time they are materialized
+ How earlier results relate to later refinements
 
 Runners
-	
-	The beam pipeline runners translate the data processing pipeline
-	Need to specify an appropriate runner for the back-end where you want to execture your pipeline
-	
-	Individual capabilities are grouped by their corresponding what / where when how question
 
-	Capability Matrix
+ The beam pipeline runners translate the data processing pipeline
+ Need to specify an appropriate runner for the back-end where you want to execture your pipeline
 
+ Individual capabilities are grouped by their corresponding what / where when how question
+
+ Capability Matrix
 
 Runner Matrix
-	
-	What
 
+ What
 
-		ParDo
-		GroupBYKey
-		Flatten
-		Combine
-		Composite Transforms
-		Side Inputs
-		Source API
-		Splittable DoFn ( SDF )
-		Metrics 
-		Stateful Processing
+  ParDo
+  GroupBYKey
+  Flatten
+  Combine
+  Composite Transforms
+  Side Inputs
+  Source API
+  Splittable DoFn ( SDF )
+  Metrics
+  Stateful Processing
 
-	Where ( in event time )
+ Where ( in event time )
 
-		Global  Windowsw
-		Fixed Windows
-		Slideing WIndows
-		Session WIndows
-		Custom WIndows
-		Custom mergin windows
-		Timestamp control
+  Global  Windowsw
+  Fixed Windows
+  Slideing WIndows
+  Session WIndows
+  Custom WIndows
+  Custom mergin windows
+  Timestamp control
 
-	When ( in processing time )
+ When ( in processing time )
 
-		Configurable triggering
-		Event-time triggers
-		processing time triggers
-		count triggers
-		[Meta]data drive triggers
-		composite triggers
-		allowed lateness
-		Timers
+  Configurable triggering
+  Event-time triggers
+  processing time triggers
+  count triggers
+  [Meta]data drive triggers
+  composite triggers
+  allowed lateness
+  Timers
 
-	How ( do definements fo result relate )
+ How ( do definements fo result relate )
 
-		Discarding
-		Accumulating
-		Accumulating & Retracting
-
+  Discarding
+  Accumulating
+  Accumulating & Retracting
 
 Competing Architectures
-	
 
-	Lambda
-		Good for batch , but poses problems for event data
-		Hybrid Layers
-			Batch 
-				Large Scale Analytics or Historical Data
-			Speed
-				Low Latency Processing of newly arrived data 
-				Can also be seen as approximate results
-			Serving
-				Provide Query capabilities that unifies the Batch and Speed layers.
+ Lambda
+  Good for batch , but poses problems for event data
+  Hybrid Layers
+   Batch
+    Large Scale Analytics or Historical Data
+   Speed
+    Low Latency Processing of newly arrived data
+    Can also be seen as approximate results
+   Serving
+    Provide Query capabilities that unifies the Batch and Speed layers.
 
-	Kappa	
-		Modified architecture where everything is seen as a stream
-		Most popular among these engine are all open-source apache projects:
+ Kappa
+  Modified architecture where everything is seen as a stream
+  Most popular among these engine are all open-source apache projects:
 
-			Apex
-			Beam
-			Flink
-			Storm
-			Spark
+   Apex
+   Beam
+   Flink
+   Storm
+   Spark
 
 Steps
-	
-	Design
-		Plan the pipeline strucyture
-		choose transform to apply
-		Determine input and output methods
-	Create
-		Use the classes in the Beam SDK
-	Test
-		Test to minimize debugging a pipeline remote execution
-	Deploy
-		Use one of the supported Runners
+
+ Design
+  Plan the pipeline strucyture
+  choose transform to apply
+  Determine input and output methods
+ Create
+  Use the classes in the Beam SDK
+ Test
+  Test to minimize debugging a pipeline remote execution
+ Deploy
+  Use one of the supported Runners
 
 Why beam
-	
-	Unified batch and streaming
-	Layered Abstraction
-	Runner portability
-	Stateful Processing
-	GCP integration
 
-
+ Unified batch and streaming
+ Layered Abstraction
+ Runner portability
+ Stateful Processing
+ GCP integration
 
 Programming Model
-	
-	PCollections
-	Transforms
-	Pipeline I/O
-	Data Encoding
-	Windowing
-	Triggers
-	Metrics
+
+ PCollections
+ Transforms
+ Pipeline I/O
+ Data Encoding
+ Windowing
+ Triggers
+ Metrics
 ___
 
+Data Analytics
 
-Data Analytics 
-	
-	Define
-	Interpret
-	Clean and Transform
-	Enhance
-	Analyze
-	Visualize
+ Define
+ Interpret
+ Clean and Transform
+ Enhance
+ Analyze
+ Visualize
 
-	- - Repeat - - 
-
-
-
+  - - Repeat - -
 
 Determnine the operational characteristics of the collection system
-	Streaming operational compoenents
-		Kinesis Data Streams
-			. Ec2
-			. Kinesis Data Analytics
-			. Lambda
+ Streaming operational compoenents
+  Kinesis Data Streams
+   . Ec2
+   . Kinesis Data Analytics
+   . Lambda
 
-				.. Quick Sight
+    .. Quick Sight
 
+ Fault tolerance and data persistence
+   . Kinesis Producer Library
 
-	Fault tolerance and data persistence
-			. Kinesis Producer Library
-
-			. Kinesis Consumer Library
+   . Kinesis Consumer Library
 
 Select a collection system that handles the frequency, volume and source of data
-	Batch,  Streaming and transactional
+ Batch,  Streaming and transactional
 
-
-	Compaare data collection sysmtem
+ Compaare data collection sysmtem
 
 Select a collection system that addresses the key properties of data, such as order, format and compression.
-	Order,  Duplication
+ Order,  Duplication
 
-	Transform
-	Filtering
+ Transform
+ Filtering
 
+ Fault tolerance and data persistence
+   . Kinesis Producer Library
 
+    Retries: Can send a group of multiple recrods in each request
+     . If a record fails, its put cback into the kpl buffer for a retry
+     . One record failure doesn't fail a whole set of recrods
+     . Also has rate limit
+       Limits per-shard throughput sent from a single producer, helps with excessive retries.
 
+    . Kinesis Data Stream
+     . Replicates data synchronously across three az in one region
+     . Don't use for protracted data persistence
+     . Data is retained by 24 hours ( can extend to 7 days )
 
+    Firehose streams your data directly to a data destination
+     . Data flows through it directly to its destinations
+     . No persistence
+     . S3 Redshift, elastic search, splunk, kinesis data analystics
+     . Can transform your data, using a lambda function, prior to delivering the data.
 
+   . Kinesis Consumer Library
+    Retrieves Records from the stream
+    Uses Checkpoint ( through DynamoDB ) to track which records have been read from a shar
+    If a read fails, the consumer uses this checkpoinnt to resume at the failed record
+     Need Unique names for your applications in the kcl, since dynamodb tables use name
+     Watch out for provisioning throughput exception in dynamodb.
+      Many shard, or frequent checkpointing
 
-	Fault tolerance and data persistence
-			. Kinesis Producer Library
+   Alternatives
+    Kinesis API
+     . Fastest Processing time
+      . KPL use a seeting ( RecordMaxBufferedTime ) to delay processing to accomodate aggregation
 
-				Retries: Can send a group of multiple recrods in each request
-					. If a record fails, its put cback into the kpl buffer for a retry
-					. One record failure doesn't fail a whole set of recrods
-					. Also has rate limit
-							Limits per-shard throughput sent from a single producer, helps with excessive retries.
+    Kinesis Agent
+     . Installs on the ec2 instances
+     . Monitors files, such as log files, and streams new data to your kinesis stream
+     . Emits CloudWatch metrics to help with  motnitoring and error handling
 
-				. Kinesis Data Stream
-					. Replicates data synchronously across three az in one region
-					. Don't use for protracted data persistence
-					. Data is retained by 24 hours ( can extend to 7 days )
-
-				Firehose streams your data directly to a data destination
-					. Data flows through it directly to its destinations
-					. No persistence
-					. S3 Redshift, elastic search, splunk, kinesis data analystics
-					. Can transform your data, using a lambda function, prior to delivering the data.
-
-			. Kinesis Consumer Library
-				Retrieves Records from the stream
-				Uses Checkpoint ( through DynamoDB ) to track which records have been read from a shar
-				If a read fails, the consumer uses this checkpoinnt to resume at the failed record
-					Need Unique names for your applications in the kcl, since dynamodb tables use name
-					Watch out for provisioning throughput exception in dynamodb. 
-						Many shard, or frequent checkpointing
-
-			Alternatives
-				Kinesis API
-					. Fastest Processing time 
-						. KPL use a seeting ( RecordMaxBufferedTime ) to delay processing to accomodate aggregation 
-
-				Kinesis Agent
-					. Installs on the ec2 instances
-					. Monitors files, such as log files, and streams new data to your kinesis stream
-					. Emits CloudWatch metrics to help with  motnitoring and error handling
-
-	The characteristics of your data streaming workload guide you in the seelction of your streaming components
-	The two key components to remember:
-		Fault Tolerance 
-		Data Persistence
-	Kinesis Data Stream vs Kinesis Data Firehose
-		. Up to 7 days Persistence vs No Persistence 
-	Kinesis Producer LIbrary vs Kinesis API
-		. Fault tolerance and approapriate tool for your data collection problem
-
-
-
-
+ The characteristics of your data streaming workload guide you in the seelction of your streaming components
+ The two key components to remember:
+  Fault Tolerance
+  Data Persistence
+ Kinesis Data Stream vs Kinesis Data Firehose
+  . Up to 7 days Persistence vs No Persistence
+ Kinesis Producer LIbrary vs Kinesis API
+  . Fault tolerance and approapriate tool for your data collection problem
 
 ---
 
-
-
 For Kinesis Firehose
-	
-	When sending to Redshift  , it delivers first for S3, and then redshift does a copy command
 
+ When sending to Redshift  , it delivers first for S3, and then redshift does a copy command
 
-	ElasticSearch
-		Can backup to S3 concurrently
+ ElasticSearch
+  Can backup to S3 concurrently
 
-	Splunk
-		Can backup to S3 concurrently
-
-
+ Splunk
+  Can backup to S3 concurrently
 
 4 Ingestious Services
-	
-	Kinesis Data Streams
-		Needing custom processing and different stream processing frameweords where sub-second processing latency is needed
 
-	Kinesis Data Firehose
-		Managed Service Streaming to S3, RedShift, Elasticsearch, or splunk, where data latency of 60 seconds or higher is acceptable
+ Kinesis Data Streams
+  Needing custom processing and different stream processing frameweords where sub-second processing latency is needed
 
-	AWS Database Migration Service
+ Kinesis Data Firehose
+  Managed Service Streaming to S3, RedShift, Elasticsearch, or splunk, where data latency of 60 seconds or higher is acceptable
 
-		One-time migration and / or continuous replication of database records adn dsturctures to aws services
+ AWS Database Migration Service
 
-	AWWS GLue
+  One-time migration and / or continuous replication of database records adn dsturctures to aws services
 
-		ETL Batch-oriented jobs where scheduling of ETL jobs is required
-		Uses Apache Spark when loading data to destination
-		Allocate Data Processing Units to ETL jobs
+ AWWS GLue
 
-
+  ETL Batch-oriented jobs where scheduling of ETL jobs is required
+  Uses Apache Spark when loading data to destination
+  Allocate Data Processing Units to ETL jobs
 
 3 Types of Data
-	
-	Batch
-		Examples
-			Application logs
-			Video files
-			Audio FIles
 
-		Larger Event payloads ingested an hourly, daily, or weekly basis
-		Ingested in interval from aggregated data 
+ Batch
+  Examples
+   Application logs
+   Video files
+   Audio FIles
 
+  Larger Event payloads ingested an hourly, daily, or weekly basis
+  Ingested in interval from aggregated data
 
-		Data is usually colder, and can be processed on less frequent intervals
-		Use Aws Batch oriented services like
-			Glue
-			EMR
-		Latency is minutes to hours
-		Complex analysis across big datasets
+  Data is usually colder, and can be processed on less frequent intervals
+  Use Aws Batch oriented services like
+   Glue
+   EMR
+  Latency is minutes to hours
+  Complex analysis across big datasets
 
+ Streaming
+  Example
+   Click-Stream
+   IOT
+   StockTicker
+  Large Amounts of small records continuosly and in real-time
+  Continuosly ingested from live events
+  Often bounded by time or event sets in oreder to produce real-time outcomes
 
+  Usually hot, arriving in high frequency
+   Individual Records or aggreagated micro-batches
 
-	Streaming
-		Example
-			Click-Stream
-			IOT
-			StockTicker
-		Large Amounts of small records continuosly and in real-time
-		Continuosly ingested from live events
-		Often bounded by time or event sets in oreder to produce real-time outcomes
+  Usually using Data Stream, Firehose , Kinesis analytics
+  Can load into data lake or data warehouse
+  Latency is milliseconds
+  Simples analytics
+   Rolling Metrics
+   Aggregations
 
-		Usually hot, arriving in high frequency
-			Individual Records or aggreagated micro-batches
+ Transactional
+  Initially load and receive continous update from data stores used as operational business databases
+  Similar to batch data but with a cotinuous update flow
 
-		Usually using Data Stream, Firehose , Kinesis analytics
-		Can load into data lake or data warehouse
-		Latency is milliseconds
-		Simples analytics 
-			Rolling Metrics
-			Aggregations
+  Data stored at low latency and quickly accessible
+  Usually when we want to migrate environment
 
-
-
-	Transactional
-		Initially load and receive continous update from data stores used as operational business databases
-		Similar to batch data but with a cotinuous update flow
-
-		Data stored at low latency and quickly accessible
-		Usually when we want to migrate environment
-
-			Load data from a database on-prem or in aws
-			Use DMS
-			Can load data from relational databases data wareghouyses and nosql databases
-			can convert to different database systems using the aws schema conversion tool ( AWS SCT ) 			then use  DMS to migrate your data
-
+   Load data from a database on-prem or in aws
+   Use DMS
+   Can load data from relational databases data wareghouyses and nosql databases
+   can convert to different database systems using the aws schema conversion tool ( AWS SCT )    then use  DMS to migrate your data
 
 AWS Glue
 
-	Aws glue
-		Crawls a datastore
-			S3
-			JDBC
-			DynamoDB
+ Aws glue
+  Crawls a datastore
+   S3
+   JDBC
+   DynamoDB
 
-		builds a data catalog
+  builds a data catalog
 
-		create a transformation script that extracts from a datasource, and load it into a different s3
+  create a transformation script that extracts from a datasource, and load it into a different s3
 
-		There are a lot of encryption settings
-            
-        
-		You can't use a nosql database as a datasource for the transformation job, but you can use dynamodb as a datastore for the crawler
+  There are a lot of encryption settings
+
+  You can't use a nosql database as a datasource for the transformation job, but you can use dynamodb as a datastore for the crawler
             DataStore ( Crawl ) vs DataSource ( Transformation )
 
         DataStores are
@@ -475,298 +429,276 @@ AWS Glue
 
         S3 contains 
             Exclude Patterns
-			
-		Use prefix to add tables to the s3 bucket 
-		group s3 data 
-			( group compatible schemas into a single table definition accross all s3 objects under the provided include path )
-		A single 
+
+  Use prefix to add tables to the s3 bucket
+  group s3 data
+   ( group compatible schemas into a single table definition accross all s3 objects under the provided include path )
+  A single
 
         A crawler Needs an IAM role
             It has permission to access the datastore ( S3, Dynamo )
         
         Frequency
-			Many options ( Including custom )
-		
-		Configuration options
-			When the crawler detects schema changes in the data store, how should glue handle table updates in the data catalog?
-				Add new columns only
-				Update the datable def in the catalog
-				Ingore the change
-				Update all new and existing partitioin with metadata from the table
-		
-			How shoul daws glue handle deleted objects in the data store?
-				Delete tables and partition from the data catalog
-				ignore the change and don't update the table in the data catalog
-				mark the  table as deprecated in the data catalog
-				
-	Run the crawler 
-		Populates the data catalog
-	
-	Glue Transformation Job
-		Name
+   Many options ( Including custom )
+  
+  Configuration options
+   When the crawler detects schema changes in the data store, how should glue handle table updates in the data catalog?
+    Add new columns only
+    Update the datable def in the catalog
+    Ingore the change
+    Update all new and existing partitioin with metadata from the table
+  
+   How shoul daws glue handle deleted objects in the data store?
+    Delete tables and partition from the data catalog
+    ignore the change and don't update the table in the data catalog
+    mark the  table as deprecated in the data catalog
 
-		IAM Role
-			Needs access to  
-				. DataSource
-				. Targets
-				. Temporary directorty
-				. Scripts
-				. Libraries used during
+ Run the crawler
+  Populates the data catalog
 
-		Type
-			Spark
-			Spark Streaming
-			Python Shell
+ Glue Transformation Job
+  Name
 
-		Glue Version 
-			Pick (Spark | Python) Version
-		
-		Runs:
-			A proposed sript generated byt aws glue
-			An existing script that you provide
-			A new script to be authrored by you
-		
-		Script File Name
-			S3 Path where the Script is stored
-			Temporary directory
-		
-		Advanced properties
-			Bookmarks
-				( Checkpointing for failures)
-			Monitoring
-				Job Metrics
-				Continuous Loggings
-				Spark UI
-		
-		Security Configuration
-			Server side Encryption
-		
-		Worker Type:
-			Standard
-			G.1X ( Memory Intensive )
-			G.2X ( ML Transform )
-		
-		Maximum Capacity  ( DPU )
-		Max Concurrency
-		Timeout
-		Notification after Delay ( Minutes )
-		Retries
-		Parameters
+  IAM Role
+   Needs access to  
+    . DataSource
+    . Targets
+    . Temporary directorty
+    . Scripts
+    . Libraries used during
 
-		Use Glue data catalog as the Hive Metastore
+  Type
+   Spark
+   Spark Streaming
+   Python Shell
 
-	Transform Type
-		Change schema
-		Find Matching Records ( ML Transform )
-			Remove Dupes 
-	Target
-		Create tables in your data Target
-		Use tables in the data tcatalog and update your data target
+  Glue Version
+   Pick (Spark | Python) Version
+  
+  Runs:
+   A proposed sript generated byt aws glue
+   An existing script that you provide
+   A new script to be authrored by you
+  
+  Script File Name
+   S3 Path where the Script is stored
+   Temporary directory
+  
+  Advanced properties
+   Bookmarks
+    ( Checkpointing for failures)
+   Monitoring
+    Job Metrics
+    Continuous Loggings
+    Spark UI
+  
+  Security Configuration
+   Server side Encryption
+  
+  Worker Type:
+   Standard
+   G.1X ( Memory Intensive )
+   G.2X ( ML Transform )
+  
+  Maximum Capacity  ( DPU )
+  Max Concurrency
+  Timeout
+  Notification after Delay ( Minutes )
+  Retries
+  Parameters
 
-		Data store
-			JDBC | S3
-		Format
-			JSON
-			CSV
-			Avro
-			Parquet
-			ORC
-		Compression
-			GZIP
-			BZIP
-	
+  Use Glue data catalog as the Hive Metastore
+
+ Transform Type
+  Change schema
+  Find Matching Records ( ML Transform )
+   Remove Dupes
+ Target
+  Create tables in your data Target
+  Use tables in the data tcatalog and update your data target
+
+  Data store
+   JDBC | S3
+  Format
+   JSON
+   CSV
+   Avro
+   Parquet
+   ORC
+  Compression
+   GZIP
+   BZIP
 
 Comparing Data Collection systems
-	Understand how each ingestion approach is best used 
-	
-	Use Cases
-		Data Streams:
-			Use when you need custom producers and consumers
-			that reqiuire sub-second processing
-			that require unlimited bandwidth
-		FireHose:
-			Deliver Directly
-				S3, Redshift, openSearch, splunk
-			Can tolerate 60 seconds or greater of latency
-			Transform or convert the data format
-			At Least once delivery semantics
+ Understand how each ingestion approach is best used
 
-		Database Migration Service
-			when you need to migrate data from one database to another
-			need to migrate a database to a different database engine
-		
-		Glue
-			Batch Oriented cases where you need to perform an Extract Load Process
-		
-	Throughput, Bandwidth and Scalability
-		
-		Data Streams:
-			Each shard can handle up to 1000 put records per second
-				. Or 1 MB / S for input or 2 MB / S for output 
-			Can increase the number of shards in a steram without limit
-		FireHose
-			Automatically Scales to accomodate the throughtput of your Stream
-		Database Migreation Service
-			EC2 Instances used for the replication Instance
-			You need to scale your replication instance to accomodate your throughput
-		Glue
-			Runs in a scale out apache spark environment to move data to target system
-			Scales via DataProcessingUnits ( DPUS )
-		
-		
+ Use Cases
+  Data Streams:
+   Use when you need custom producers and consumers
+   that reqiuire sub-second processing
+   that require unlimited bandwidth
+  FireHose:
+   Deliver Directly
+    S3, Redshift, openSearch, splunk
+   Can tolerate 60 seconds or greater of latency
+   Transform or convert the data format
+   At Least once delivery semantics
 
-	Availability and fault tolerance
-		Data Streams:
-			synchronously replicates shard data across 3 az
-		Firehose
-			synchronously replicates shard data across 3 Az. Different Behaviour for each target
-				For S3 target, retries 24H for retries, after that, your data is lost
-				For reshift and OpenSearch you can specify a retry duration from 0 to 7200s
-				For Splunk use a retry duration. After that, backs data up to S3
-			Retries may cause duplication 
-		DMS
-			Can use Multi-AZ for replication that gives fault tolerance
-		Glue
-			Retries 3 times before marking an error condition
-			Create a cloudwatch alert for failures that triggers an SNS message
-		
-	Delivery Frequency
-		
-		Data Streams:
-			Depends on the Buffer Size and buffer interval configured in the streams
-		FireHose:
-			Differs for each destination
-			
-			S3
-				Depends on the Buffer Size and buffer interval configured in the streams
-			RedShift
-				Depends on how fast the cluster can do the copy command.
-			OpenSearch
-				Depends on the Buffer Size and buffer interval configured in the streams
-			Splunk
-				Buffers - 5Mb or 60 seconds.
-	
-				
+  Database Migration Service
+   when you need to migrate data from one database to another
+   need to migrate a database to a different database engine
+  
+  Glue
+   Batch Oriented cases where you need to perform an Extract Load Process
+  
+ Throughput, Bandwidth and Scalability
+  
+  Data Streams:
+   Each shard can handle up to 1000 put records per second
+    . Or 1 MB / S for input or 2 MB / S for output
+   Can increase the number of shards in a steram without limit
+  FireHose
+   Automatically Scales to accomodate the throughtput of your Stream
+  Database Migreation Service
+   EC2 Instances used for the replication Instance
+   You need to scale your replication instance to accomodate your throughput
+  Glue
+   Runs in a scale out apache spark environment to move data to target system
+   Scales via DataProcessingUnits ( DPUS )
+  
+ Availability and fault tolerance
+  Data Streams:
+   synchronously replicates shard data across 3 az
+  Firehose
+   synchronously replicates shard data across 3 Az. Different Behaviour for each target
+    For S3 target, retries 24H for retries, after that, your data is lost
+    For reshift and OpenSearch you can specify a retry duration from 0 to 7200s
+    For Splunk use a retry duration. After that, backs data up to S3
+   Retries may cause duplication
+  DMS
+   Can use Multi-AZ for replication that gives fault tolerance
+  Glue
+   Retries 3 times before marking an error condition
+   Create a cloudwatch alert for failures that triggers an SNS message
+  
+ Delivery Frequency
+  
+  Data Streams:
+   Depends on the Buffer Size and buffer interval configured in the streams
+  FireHose:
+   Differs for each destination
 
-	Cost
-		Data Streams
-			Extended data retention and enhanced fanout incur additional costs
-			Pay per shard hour and PUT payload unit
-					ShardHour ( US WEST )
-						$ 0.015
-					Payload Unit ( 1 Million , 25KB )
-						$ 0.014
-					Enhanced FanOUt ( Per GB )
-						$ 0.013
-					Enhanced FanOUt ( Per Consumer-Shard-Hour )
-						$ 0.015
-					Extended Data Retention ( per Shard Hour )
-						$ 0.02
-	
-		FireHose
-			Pay for the volume of data ingested
-			Pay for data conversion
+   S3
+    Depends on the Buffer Size and buffer interval configured in the streams
+   RedShift
+    Depends on how fast the cluster can do the copy command.
+   OpenSearch
+    Depends on the Buffer Size and buffer interval configured in the streams
+   Splunk
+    Buffers - 5Mb or 60 seconds.
 
-				Data Ingested First 500 TB / Month 
-					$ 0.029
-				Data Format Conversion, per GB 
-					$ 0.018
-				Per GB processed to VPC 
-					$ 0.01
-				Per Hour, per AZ for VPC delivery
-					$ 0.01
-		DMS
-			Pay for ec2 instances
-			Pay for Storage
-			Pay for data Transfer
-		Glue
-			Pay an hourly rate  for dpu
-			Monthly for storing and accesing data in your glue data catalog
-				
-				DPU Hour:
-					$0.44 per DPU hour, billed per second, with a x-minute minimum
-				
-				Data Catalog
-					Free for first 1 million
-					$1.00 per 100k objects
-				Requests
-					Free for first 1 Million
-					$1.00 per 1M request
-				Crawlers
-					$0.44 per DPU-hour, billed per second, with a 10 minute minimum per run
-				 
-				
+ Cost
+  Data Streams
+   Extended data retention and enhanced fanout incur additional costs
+   Pay per shard hour and PUT payload unit
+     ShardHour ( US WEST )
+      $ 0.015
+     Payload Unit ( 1 Million , 25KB )
+      $ 0.014
+     Enhanced FanOUt ( Per GB )
+      $ 0.013
+     Enhanced FanOUt ( Per Consumer-Shard-Hour )
+      $ 0.015
+     Extended Data Retention ( per Shard Hour )
+      $ 0.02
+
+  FireHose
+   Pay for the volume of data ingested
+   Pay for data conversion
+
+    Data Ingested First 500 TB / Month 
+     $ 0.029
+    Data Format Conversion, per GB 
+     $ 0.018
+    Per GB processed to VPC 
+     $ 0.01
+    Per Hour, per AZ for VPC delivery
+     $ 0.01
+  DMS
+   Pay for ec2 instances
+   Pay for Storage
+   Pay for data Transfer
+  Glue
+   Pay an hourly rate  for dpu
+   Monthly for storing and accesing data in your glue data catalog
+
+    DPU Hour:
+     $0.44 per DPU hour, billed per second, with a x-minute minimum
+    
+    Data Catalog
+     Free for first 1 million
+     $1.00 per 100k objects
+    Requests
+     Free for first 1 Million
+     $1.00 per 1M request
+    Crawlers
+     $0.44 per DPU-hour, billed per second, with a 10 minute minimum per run
 
 Managing Data Order, Format and Compression
-	
-	Problems:
-		Data that is out of order
-		Data that is duplicated
-		Data that we need to change the format
-		Data that need to be compressed
-		Unwanted Format
 
-	Methods:
-		Use ingetion services that has guaranteed ordering
-			Kinesis Data Streams
-			DynamoDb Streams
+ Problems:
+  Data that is out of order
+  Data that is duplicated
+  Data that we need to change the format
+  Data that need to be compressed
+  Unwanted Format
 
-		Use ingetion services that has guaranteed no dupes
-			DynamoDB Streams
-			! Data Streams can dupe. To cope with that you can
-				Embed a primary key in data records and remove duplicates later when processing
-			! Firehose can dupe. To cope with that you can
-				Crawl target data with glueML FindMatches Transform
-			
-		Use conversion feature of ingestion service
-			For Kinesis DataStreams:
+ Methods:
+  Use ingetion services that has guaranteed ordering
+   Kinesis Data Streams
+   DynamoDb Streams
 
-				. Can use a Lambda Consumer to format or Compress
-				. Can use a KCL application 
-			For Knesis Firehose
-				. Can use conversion feature if data in json
-				. Use Lambda transform to preprocess format conversion feature if data not json
+  Use ingetion services that has guaranteed no dupes
+   DynamoDB Streams
+   ! Data Streams can dupe. To cope with that you can
+    Embed a primary key in data records and remove duplicates later when processing
+   ! Firehose can dupe. To cope with that you can
+    Crawl target data with glueML FindMatches Transform
 
-		Use compression feature of ingestion service
-			. Use S3 compression 
-				GZIP
-				Snappy
-				ZIP
-			. Use GZip COPy Redshift compression 
-		
-		Transformation
-			Lambda Functions
-			Database Migration Service
-				Has its owns transformations
-				 
+  Use conversion feature of ingestion service
+   For Kinesis DataStreams:
 
-		
-		
+    . Can use a Lambda Consumer to format or Compress
+    . Can use a KCL application 
+   For Knesis Firehose
+    . Can use conversion feature if data in json
+    . Use Lambda transform to preprocess format conversion feature if data not json
+
+  Use compression feature of ingestion service
+   . Use S3 compression
+    GZIP
+    Snappy
+    ZIP
+   . Use GZip COPy Redshift compression
+  
+  Transformation
+   Lambda Functions
+   Database Migration Service
+    Has its owns transformations
+
 Examples:
-		
-		Producer ( KCL )
-			|> Kinesis Data Streams
-				|> Firehose 
-					|> S3 ( GZIP Compression )
-
-
-
-
-
-				
-	
-
+  
+  Producer ( KCL )
+   |> Kinesis Data Streams
+    |> Firehose
+     |> S3 ( GZIP Compression )
 
 ___
 
-
-
-Big data 
-https://www.youtube.com/watch?v=VYLWyS8UNm8
-
+Big data
+<https://www.youtube.com/watch?v=VYLWyS8UNm8>
 
 Logging and metrics tools
-
 
     . Difficult to feel the system 
     Best Practices
@@ -784,7 +716,7 @@ dimensions in tool space
         . Logs tend to be unstructured - Metrics are structured
         . Logs support drill-down analysis - Metrics Leans towards dashboards and alerts
         . Logs will vary in volume - metrics have a fixed volume rate
-        . Logs tend to be high volume - metrics tend to be low volme 
+        . Logs tend to be high volume - metrics tend to be low volme
 
     Historic vs real-time
         . Historic is good for incident response and audits ; real time are good for alerts and dashboards
@@ -800,7 +732,6 @@ dimensions in tool space
         schema-based systems addresses knwon issues to look ou for ; adhoc enables to dig into new unkown issues
         schema <> index, but they often go hand in hand
             . trade offs between effort on write or effort on read. 
-    
 
 Log analytics sweet spot
     record everything
@@ -810,7 +741,7 @@ Log analytics sweet spot
     affordable
 
 product team practtices
-    
+
     Monitors with graphs 
         . Gives a sense of normality
         
@@ -840,11 +771,9 @@ product team practtices
     
     Don't waste hardware
         . The most amazing achievement of the computer software industry is its continuin cancellation of the steady and staggering gains made by the computer hardware industry
-            
-
 
 careful engineering - data processing engine
-    
+
     Events pass through either two paths 
 
     State Machine 
@@ -855,34 +784,28 @@ careful engineering - data processing engine
 
 Aggregates
 
-| Function | State | Step | Merge | Result  | 
-count | n | n + 1 | n1 + n2 | n 
+| Function | State | Step | Merge | Result  |
+count | n | n + 1 | n1 + n2 | n
 sum | ( n , s) | ( n+1 , s + value ) | ( n1 + n2 , s1 + s2) | s/n
-stddev ( n , s , q ) | ( n  + 1 , s + value , q + value^2 ) | ( n1 + n2 , s1 + s2 , q1 + q2) | ( sqrt( n*q - s^2 ) / n ) 
+stddev ( n , s , q ) | ( n  + 1 , s + value , q + value^2 ) | ( n1 + n2 , s1 + s2 , q1 + q2) | ( sqrt( n*q - s^2 ) / n )
 
 > ring buffers
-
 
 Event store : Fast filters
     . "Build minimal index and compress data"
         .. Can hold it in memory
-    
+
 Fast grep for filtering events
-    
 
-Start-time, end-time, metadata 
-    
-
-
+Start-time, end-time, metadata
 
 ____
 
-
-https://towardsdatascience.com/data-analysts-primer-to-slowly-changing-dimensions-d087c8327e08
+<https://towardsdatascience.com/data-analysts-primer-to-slowly-changing-dimensions-d087c8327e08>
 
 Slowly changing dimensions
 
-Data warehouusing concept 
+Data warehouusing concept
 Type 0 : Never Changes
 Type 1 : Only the latest snapshot is recorded, without historical records
 Type 2 : Entire Change history is recorded, through adding rows

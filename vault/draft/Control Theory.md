@@ -1,9 +1,6 @@
 # Control Theory
 
-
-
 Control Schemes
-
 
     Proportional Control
 
@@ -13,14 +10,9 @@ Zeros
 
 S Plane
 
-
 Root Locus
 
-
-
-
 Control Theory
-
 
     Sketch a root locus
 
@@ -35,14 +27,11 @@ Control Theory
             if nPoles > nZeroes, the extra poles goes to infinity
             if nPoles < nZeroes, the extra zeros comes from infinity
 
+<https://www.youtube.com/watch?v=eTVddYCeiKI>
 
-https://www.youtube.com/watch?v=eTVddYCeiKI
-        
+###
 
-
-### 
-
-Control system 
+Control system
     Root Locus Method
 
     System
@@ -69,6 +58,4 @@ Control system
 
     A system is characterized by both its zeroes and poles, but only the poles dictate the behaviour to unforced responses
 
-https://www.youtube.com/watch?v=CRvVDoQJjYI
-
-
+<https://www.youtube.com/watch?v=CRvVDoQJjYI>
