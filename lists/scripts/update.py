@@ -71,14 +71,14 @@ def generate_html( project_root ):
 	print( f"Generated HTML." )
 
 
-def load_queued( aggregates ):
-	queued_articles = [ i for i in aggregates.glob( "*Queue.tsv" ) ][ 0 ]
+def load_aggregate( aggregates , glob ):
+	queued_articles = [ i for i in aggregates.glob( glob) ][ 0 ]
 	return pd.read_csv( queued_articles, sep="\t" )
 
 
-def choose_articles( df, previews ):
+def choose_articles( df, previews , n = 300 ):
 	results = [ ]
-	for _, row in df.sample( n=300 ).iterrows():
+	for _, row in df.sample( n = n  ).iterrows():
 		try:
 			article = row[ "url" ]
 			preview = previews[ article ]
@@ -114,7 +114,7 @@ if __name__ == '__main__':
 	listRoot = here.parent.parent
 	articles = [ i for i in (listRoot / "stream").glob( "articles.tsv" ) ][ 0 ]
 	JS_ROOT = "C:/Users/Mateus/Desktop/workspace/leet/canHome"
-	JS_DESTINATION = pathlib.Path( JS_ROOT ) / "src/lists/readlistA.ts"
+	
 
 	PREVIEW_PATH = r"C:/Users/Mateus/OneDrive/Assets/previews.json"
 	AGG_DESTINATION = listRoot / "aggregate"
@@ -123,9 +123,16 @@ if __name__ == '__main__':
 
 		try:
 			split_stream( articles, AGG_DESTINATION, previews )
-			queued = load_queued( AGG_DESTINATION )
-			chosen = choose_articles( queued, previews )
-			save_as_js( chosen, JS_DESTINATION )
+			
+			for glob,dest in [ 
+				( "*Queue.tsv" , "src/lists/queue.ts") ,
+				( "*Tool.tsv" , "src/lists/tool.ts") 
+				]:
+				js_destination = pathlib.Path( JS_ROOT ) / dest
+				queued = load_aggregate( AGG_DESTINATION , glob)
+				chosen = choose_articles( queued, previews , n = 100)
+				save_as_js( chosen, js_destination )
+			
 			generate_html( JS_ROOT )
 
 		except Exception as e:
