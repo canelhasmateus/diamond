@@ -16,3 +16,11 @@ template = Template(;
     ]
 )
 generate("dixie" , template)
+
+
+___
+
+
+<https://raisedbyturtles.org/view-unlabeled-gmail#label-manager>
+
+-has:userlabels -in:sent -in:chat -in:draft -in:inbox

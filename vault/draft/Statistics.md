@@ -258,7 +258,7 @@ No causes in ; No causes out
 ...
 
 Causal Inference
- 
+
  More Than association between variables
 
   Prediction of intervention
@@ -307,3 +307,72 @@ It's the model that's wrong, not the data
 "you'd find that their tails are much much ticker than the normal distribution  expects. And thats because the distribution is not homogenous, there a lot of different distributions , with different variances, that we observe as one single distribution " -> Stundent T.
 
 Unobserverd heterogeneity => Mixture of Gaussians
+
+___
+
+<https://www.youtube.com/watch?v=WZNmlT-arF0>
+
+analise de sobrevivencia
+
+metodologias relacionadas a prever o tempo ate um evento acontecer
+
+    Event  - What you want to predict
+
+    Time - Period taken to see the event
+
+    Censoring - occurs when we don't know the time until the event. 
+
+Survival Function
+Hazard Function - The instantaneous potential per unit of time for the event to occur , given that the individual has survived up to time T.
+
+Goals
+    Estimate and interpret survivor functions from data
+    Compare survivor and or hazard functions
+    Assess the relationship of explanatory variables to survival time.
+
+Cox Model
+    -> Baseline function  ;
+    -> Supposes hazard function has form L( T | X ) = L0*T* exp( phi(x )), where P = x'*B
+
+Concordance Index
+    ->  People with higher hazard should take less time until event
+
+Consider using when
+    . Tim eis related to the target definition
+    . Dealing with censoring
+    . Have a small quantity of data
+    . Recent data is very important for your problem
+
+___
+
+<https://betanalpha.github.io/assets/case_studies/probabilistic_computation.html>
+
+Quadrature methods:
+    Just discretize using a grid lol
+        . The construction of sophisticated grids to minimize errors is a core topic of the quase-monte carlo literature
+        . The interpolation scheme is also configurable.
+
+    Not great because any attempt to exhaustively quantify a space to estimate expectation values is largely limited to one or two-dimensional problems. In order to scale, we need need to be smarter, and identify exactly where in the ambient space we should be focusing that computation.
+        . The answer is obfuscated by the counterintuitive behaviors of high-dimensional spaces:
+
+Welford accumulators?
+
+typical sets
+
+___
+
+<https://www.youtube.com/watch?v=a7ZZCdm40Ik>
+
+Marketing <-> Effect studies
+
+. Simple A/B test
+    ->
+. Uplift Modeling
+    causalml
+    pylift
+    Causal Inference and uplift modeliling: A review of the literature
+. Difference in Differences
+
+. CausalImpact
+    . Dafiti's causalimpact
+    . Inferring CAusal Impact Using Bayesian Structural Time-Series Models.

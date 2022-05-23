@@ -1,5 +1,28 @@
 # Minis
 
+Better new tab:
+
+* Tools of the day?
+* Good / Premium Reminders?
+* what else?
+
+what do i want to do with this canHome thing?
+
+But what is the Origin of these nulls to begin with?
+
+Also, want to solve the encoding issues.
+Also, want to add "Time estimates"
+Also, want to progress with Analysis.
+
+Which others sections do we have?
+ Tools.
+ Premium
+ Good
+ Explore / Partial
+
+___
+
+
 vpn concentrations
 internet routing architectures
 server virtualization

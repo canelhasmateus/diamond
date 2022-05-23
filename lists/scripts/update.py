@@ -46,7 +46,7 @@ def split_stream( articles, aggregates, previews ):
 	print( f"Generating aggregation." )
 	downloaded = 0
 	for kind, df in iterate_stream_kind( articles ):
-		df.to_csv( aggregates / f"articles{kind}.tsv", sep="\t", index=False )
+		df.to_csv( aggregates / f"articles{kind}.tsv", sep="\t", index=False , encoding="utf-8")
 
 		for row in iterate_row( df ):
 			downloaded += download_preview( row, previews )

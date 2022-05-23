@@ -811,3 +811,31 @@ Type 1 : Only the latest snapshot is recorded, without historical records
 Type 2 : Entire Change history is recorded, through adding rows
 Type 3 : Changes are recorded through adding column ( Rare )
 Type 4 : Current record and history are in separated tables ( )
+
+
+___
+
+
+<https://www.youtube.com/watch?v=_UiWGP2lj8Y>
+
+data warehouse - Kimball
+loss: tight coupling microservices and bi / ml models
+
+DA impact
+
+Data Modeling
+    . Less chaos and more 'central' datasets that decouple backend architecture from BA/DS/MLE
+Data CLarity
+    . Source of Truth
+    . Documentation
+Tackling the data gap
+    . Through DA squads have support to solve their data challenge
+
+
+___
+
+airflow
+argo
+mlflow
+kubeflow
+logstash / vetur
