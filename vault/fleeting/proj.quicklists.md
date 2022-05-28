@@ -1,3 +1,60 @@
+
+plugins:
+
+    ace jump
+    codeglance
+    partial navigation
+    pathhide
+    rainbow brackets
+    rainbown brackets
+    shortcut stats
+    sonar lint
+    tabnine
+    wakatime
+
+
+
+to do / discover / learn:
+    
+
+    analyze dependencies
+    analyze, watchpoints
+    arrangement rules
+    code cleanup
+    dependency structure matrx
+    edit property value
+    edit property value
+    fill paragraph
+    locate duplicates
+    macros
+    next parameter
+    quick definition
+    quick lists ( abbreviations )
+    scroll shortcuts
+    set intellij run from docker
+    shortcut for add
+    show quick actions popup
+    surround with live template
+    task management
+    type migration    
+    usage view grouping
+    view breakpoints ( shortcuts )
+    
+get better at:
+
+
+    Bookmaps
+    Breadcrumbs
+    abbreviations
+    better shortcuts for find ->   next | Previous | select all | add selection for next ocurrence | find Usages
+    hippie completion
+    live templates
+    postfix completions)
+    quick documentation
+    quick type definition
+
+___
+
     File Menu
 
         Open Recent

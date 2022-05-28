@@ -278,8 +278,8 @@ if __name__ == '__main__':
 			seen_content = content.has_source( url )
 			if not seen_content:
 				info = browser.get( url )
-				if info:	
-					content.put_source( info ) 
+				if info:
+					content.put_source( info )
 				else:
 					content.put_date( { "url" : url } )
 					
