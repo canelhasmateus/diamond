@@ -1,22 +1,22 @@
 from __future__ import annotations
 
 import itertools
-import json
 import pathlib
 import re
 from typing import Mapping
 
+import lxml.html
 import requests
 from lxml import etree
-from tqdm import tqdm
 
 RESULT_PATH = pathlib.Path( __file__ ).parent.joinpath( "content.json" )
 
 myList = [
-"https://blog.acolyer.org/2015/03/20/out-of-the-tar-pit/"
-		]
+	"https://blog.acolyer.org/2015/03/20/out-of-the-tar-pit/"
+]
 String = str
 regex = re.compile( r"(.+?)(?=/|$)" )
+
 
 
 def toText( e ):
@@ -34,12 +34,12 @@ def first( *args ):
 	return ""
 
 
-def getDuration(html : etree._Element):
+def getDuration( html: etree._Element ):
 	duration = toAttrib( "content",
-	                      html.xpath( "//meta[@name='duration']" ) )
-
+	                     html.xpath( "//meta[@name='duration']" ) )
 
 	return first( duration )
+
 
 def getTitle( html: etree._Element ) -> String:
 	ogTitle = toAttrib( "content",
@@ -54,8 +54,8 @@ def getTitle( html: etree._Element ) -> String:
 	titleFromAnywhere = toText( html.xpath( "//title" ) )
 
 	return first(
-			ogTitle, twitterTitle, itemProp,
-			articleTitle, titleFromHead, titleFromAnywhere )
+		ogTitle, twitterTitle, itemProp,
+		articleTitle, titleFromHead, titleFromAnywhere )
 
 
 def getDescription( html: etree._Element ) -> String:
@@ -104,15 +104,24 @@ def getDomain( response, html ):
 	return re.search( regex, url ).group( 0 )
 
 
+def getMain( html : etree._Element) -> etree._Element:
+	return html
+
+def getText( html : etree._Element) -> String:
+	return " ".join( html.itertext())
+
+def asHtml( source : String ) -> etree._Element:
+	return lxml.html.fromstring( source )
+
 def getHtmlPreview( response ) -> Mapping[ String, String ]:
 	html: etree._Element = etree.HTML( response.content )
 	preview = {
-			"title"      : getTitle( html ),
-			"description": getDescription( html ),
-			"image"      : getImage( html ),
-			"domain"     : getDomain( response, html ),
-			"url"        : response.url,
-			}
+		"title": getTitle( html ),
+		"description": getDescription( html ),
+		"image": getImage( html ),
+		"domain": getDomain( response, html ),
+		"url": response.url,
+	}
 	return preview
 
 
@@ -142,21 +151,21 @@ def testPreview( url, preview ):
 	expected = None
 	if url == 'https://www.atomiccommits.io/information-theory-with-monica-from-friends':
 		expected = {
-				"title"      : 'Information Theory with Monica from Friends',
-				"description": 'I am a blog',
-				"image"      : "/ships-lineal/png/007-barque.png",
-				"domain"     : "atomiccommits.io",
-				"url"        : url
-				}
+			"title": 'Information Theory with Monica from Friends',
+			"description": 'I am a blog',
+			"image": "/ships-lineal/png/007-barque.png",
+			"domain": "atomiccommits.io",
+			"url": url
+		}
 	if url == '12 Atomic Experiments in Deep Learning [Notebook]':
 		expected = {
-				"title"      : 'What Inception Net Doesn\'t See',
-				"description": "Deep learning-based comuter vision models like Inception Net have achieved state-of-the-art performance on image recognition. However, that doesn't mean that they "
-				               "don't have blindspots and biases. Here's a few of them, along with interactive aplications for you to try it out yourself.",
-				"image"      : "https://abidlabs.github.io/images/posts/2021-02-12/geese1.png",
-				"domain"     : 'abidlabs.github.io',
-				"url"        : url
-				}
+			"title": 'What Inception Net Doesn\'t See',
+			"description": "Deep learning-based comuter vision models like Inception Net have achieved state-of-the-art performance on image recognition. However, that doesn't mean that they "
+			               "don't have blindspots and biases. Here's a few of them, along with interactive aplications for you to try it out yourself.",
+			"image": "https://abidlabs.github.io/images/posts/2021-02-12/geese1.png",
+			"domain": 'abidlabs.github.io',
+			"url": url
+		}
 
 	if expected:
 		assert isEqual( preview, expected )
@@ -170,15 +179,15 @@ def getPreview( response ):
 		return getHtmlPreview( response )
 	else:
 		return {
-				"url": response.url
-				}
+			"url": response.url
+		}
 
 
 def getPreviewFromUrl( url ):
-	doIt = lambda: requests.get( url, headers = {
-			"user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36 RuxitSynthetic/1.0 "
-			              "v4483641760525505621 t4157550440124640339"
-			} )
+	doIt = lambda: requests.get( url, headers={
+		"user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36 RuxitSynthetic/1.0 "
+		              "v4483641760525505621 t4157550440124640339"
+	} )
 
 	response = retry( doIt, 3 )
 
@@ -186,3 +195,9 @@ def getPreviewFromUrl( url ):
 	if response:
 		res = getPreview( response )
 	return res
+
+
+
+
+
+
