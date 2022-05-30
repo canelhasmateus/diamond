@@ -116,7 +116,7 @@ if __name__ == '__main__':
 	JS_ROOT = "C:/Users/Mateus/Desktop/workspace/leet/canHome"
 	
 
-	PREVIEW_PATH = r"C:/Users/Mateus/OneDrive/Assets/previews.json"
+	PREVIEW_PATH = r"C:/Users/Mateus/OneDrive/state/assets/previews.json"
 	AGG_DESTINATION = listRoot / "aggregate"
 
 	with JsonFrame( PREVIEW_PATH ) as previews:

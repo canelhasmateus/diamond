@@ -1,15 +1,15 @@
-SumatraPDF: Default 
 IntelliJ: QuickList for File ( alt + m -> q)
 NimSkull Test Rename
 Fp In Scala
 Gnosis
+Gnosis - Youtube Video Transcript
 Typing
 Quantified-Self
 ZettelKasten
-PDF-Viewer and Scripted Install
+Genesis - AutoInstall SumatraPDF
+Genesis - Default PDF-Viewer
 Open Knots
 Books
 AHK Workspace first load.
 AHK Flowtime Reload State
 Powershell Ctrl-Arrow navigation
-Youtube Video Transcript

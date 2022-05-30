@@ -19,7 +19,7 @@ sys.path.append( "." )
 class Paths:
 	HERE = pathlib.Path( __file__ )
 	LIST_DIR = HERE.parent.parent
-	CONTENT = "C:/Users/Mateus/OneDrive/Assets/contents.db"
+	CONTENT = "C:/Users/Mateus/OneDrive/state/assets/contents.db"
 	ARTICLE = [ i for i in (LIST_DIR / "stream").glob( "articles.tsv" ) ][ 0 ]
 	JS_ROOT = "C:/Users/Mateus/Desktop/workspace/leet/canHome"
 
