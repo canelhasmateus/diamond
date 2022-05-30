@@ -1,6 +1,15 @@
-Keyboarding
+SumatraPDF: Default 
+IntelliJ: QuickList for File ( alt + m -> q)
+NimSkull Test Rename
+Fp In Scala
 Gnosis
-Open Knots
-ZettelKasten
+Typing
 Quantified-Self
-Intelli-Dives
+ZettelKasten
+PDF-Viewer and Scripted Install
+Open Knots
+Books
+AHK Workspace first load.
+AHK Flowtime Reload State
+Powershell Ctrl-Arrow navigation
+Youtube Video Transcript

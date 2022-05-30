@@ -1,1 +1,16 @@
-Mode	Task	Start	End	Status
+Action	Task	Time	Comment
+
+
+WorkStart	Typing	2022/05/29 13:35:50	None
+WorkEnd	Typing	2022/05/29 13:35:56	None
+BreakEnd	Typing	2022/05/29 13:36:55	None
+WorkStart	Typing	2022/05/29 13:48:14	None
+WorkEnd	Typing	2022/05/29 14:07:15	Mind is a bit scattered. 
+BreakEnd	Typing	2022/05/29 14:12:24	None
+WorkStart	Fp In Scala	2022/05/29 14:15:46	None
+WorkEnd	Fp In Scala	2022/05/29 14:52:18	Not immediately productive. But i believe i'm removing Barriers by doing this.
+BreakEnd	Fp In Scala	2022/05/29 14:57:26	None
+WorkStart	Gnosis	2022/05/29 15:11:27	None
+WorkEnd	Gnosis	2022/05/29 15:31:20	Better date Rng for frontier.
+WorkStart	NimSkull Test Rename	2022/05/29 16:55:17	None
+WorkEnd	NimSkull Test Rename	2022/05/29 17:35:00	None
