@@ -8,6 +8,7 @@ Quantified-Self
 ZettelKasten
 Genesis - AutoInstall SumatraPDF
 Genesis - Default PDF-Viewer
+Genesis - IntelliJ Plugins
 Open Knots
 Books
 AHK Workspace first load.
