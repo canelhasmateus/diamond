@@ -1,16 +1,21 @@
-IntelliJ: QuickList for File ( alt + m -> q)
+Genesis - Default PDF-Viewer
+Genesis - IntelliJ AutoInstall Plugins
+Gnosis - Type Scaffolding
+Gnosis - Youtube Video Transcript
+Powershell Ctrl-Arrow navigation
+Flowtime - Issue with breakLength when restarting
+-----
 NimSkull Test Rename
 Fp In Scala
-Gnosis
-Gnosis - Youtube Video Transcript
+-----
 Typing
-Quantified-Self
 ZettelKasten
-Genesis - AutoInstall SumatraPDF
-Genesis - Default PDF-Viewer
-Genesis - IntelliJ Plugins
-Open Knots
 Books
-AHK Workspace first load.
-AHK Flowtime Reload State
-Powershell Ctrl-Arrow navigation
+altgr + f - Go to file location if .lnk
+Vscode - Replace in selection
+Flowtime - Publish
+Better way to navigate my common directories
+Personal website
+
+Watch more of that guy CS videos
+Change flowtime column order

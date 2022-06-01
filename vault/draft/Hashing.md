@@ -5,7 +5,7 @@ This is usually an irreversible process, which means it is well suited for vario
 ___
 Applications:
 
-[[software.implementation.hashtables]]
+[[hash.collisions]]
 [[Sharding]]
 [[Partitioning]]
 

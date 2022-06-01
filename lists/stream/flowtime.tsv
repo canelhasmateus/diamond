@@ -1,22 +1,43 @@
-Action	Task	Time	Comment
-
-
-WorkStart	Typing	2022/05/29 13:35:50	None
-WorkEnd	Typing	2022/05/29 13:35:56	None
-BreakEnd	Typing	2022/05/29 13:36:55	None
-WorkStart	Typing	2022/05/29 13:48:14	None
-WorkEnd	Typing	2022/05/29 14:07:15	Mind is a bit scattered. 
-BreakEnd	Typing	2022/05/29 14:12:24	None
-WorkStart	Fp In Scala	2022/05/29 14:15:46	None
-WorkEnd	Fp In Scala	2022/05/29 14:52:18	Not immediately productive. But i believe i'm removing Barriers by doing this.
-BreakEnd	Fp In Scala	2022/05/29 14:57:26	None
-WorkStart	Gnosis	2022/05/29 15:11:27	None
-WorkEnd	Gnosis	2022/05/29 15:31:20	Better date Rng for frontier.
-WorkStart	NimSkull Test Rename	2022/05/29 16:55:17	None
-WorkEnd	NimSkull Test Rename	2022/05/29 17:35:00	None
-WorkStart	Typing 2022/05/30 08:11:34	None
-WorkEnd	Typing 2022/05/30 09:23:34	Productive, able to hit 50 wpm. Waking up early is great.
-WorkStart	NimSkull Test Rename 2022/05/30 09:29:01	None
-WorkEnd	NimSkull Test Rename 2022/05/30 10:13:22	Unable to progress due to intelliJ environment errors.
-BreakEnd	NimSkull Test Rename 2022/05/30 10:14:02	None
-
+Action	Task	Datetime	Comment
+Fork	Typing	2022/05/29 13:35:50	None
+Join	Typing	2022/05/29 13:35:56	None
+Fork	Typing	2022/05/29 13:48:14	None
+Join	Typing	2022/05/29 14:07:15	Mind is a bit scattered. 
+Fork	Fp In Scala	2022/05/29 14:15:46	None
+Join	Fp In Scala	2022/05/29 14:52:18	Not immediately productive. But i believe i'm removing Barriers by doing this.
+Fork	Gnosis	2022/05/29 15:11:27	None
+Join	Gnosis	2022/05/29 15:31:20	Better date Rng for Akri.
+Fork	NimSkull Test Rename	2022/05/29 16:55:17	None
+Join	NimSkull Test Rename	2022/05/29 17:35:00	None
+Fork	Typing 2022/05/30 08:11:34	None
+Join	Typing 2022/05/30 09:23:34	Productive, able to hit 50 wpm. Waking up early is great.
+Fork	NimSkull Test Rename 2022/05/30 09:29:01	None
+Join	NimSkull Test Rename 2022/05/30 10:13:22	Unable to progress due to intelliJ environment errors.
+Fork	Leet	2022/05/31 11:40:10	None
+Join	Leet	2022/05/31 11:54:05	a little bit rusty
+Fork	NimSkull Test Rename	2022/05/31 11:58:33	None
+Join	NimSkull Test Rename	2022/05/31 11:58:42	None
+Fork	Typing	2022/05/31 13:00:05	None
+Join	Typing	2022/05/31 13:27:23	A bit slow. Not sure why, but my eyelids are heavy
+Fork	Fixing Akri	2022/05/31 13:45:16	None
+Join	Fixing Akri	2022/05/31 14:08:05	I lost 3 days of links. I really need to be more careful with these changes.
+Fork	NimSkull Test Rename	2022/05/31 14:19:44	None
+Join	NimSkull Test Rename	2022/05/31 14:37:54	N/A
+Fork	Ajuda Leo	2022/05/31 14:38:28	None
+Join	Ajuda Leo	2022/05/31 15:08:33	N/A
+Fork	IntelliJ: QuickList for File ( alt + m -> q)	2022/05/31 15:23:27	None
+Join	IntelliJ: QuickList for File ( alt + m -> q)	2022/05/31 15:25:53	I already had done this lol
+Fork	AHK Workspace first load.	2022/05/31 15:30:51	None
+Join	AHK Workspace first load.	2022/05/31 15:34:53	N/A
+Fork	Genesis - AutoInstall SumatraPDF	2022/05/31 15:35:44	None
+Fork	Genesis - Link sublime py scripts	2022/05/31 15:37:06	None
+Fork	Genesis - Remove winvind from startup	2022/05/31 15:42:30	None
+Join	Genesis - AutoInstall SumatraPDF	2022/05/31 15:48:19	None
+Join	Genesis - AutoInstall SumatraPDF	2022/05/31 15:48:24	None
+Join	Genesis - AutoInstall SumatraPDF	2022/05/31 15:48:42	I have the attention span of a labrador puppy.
+Fork	Akri - Start Repo	2022/05/31 15:57:48	None
+Join	Akri - Start Repo	2022/05/31 16:06:03	Still need to fix pipelines
+Fork	Gnosis - Type Scaffolding	2022/05/31 17:43:55	None
+Join	Gnosis - Type Scaffolding	2022/05/31 19:39:21	Ended up going way beyond what i expected. But its good to make things right.
+Fork	ZettelKasten	2022/05/31 20:38:51	None
+Join	ZettelKasten	2022/05/31 22:27:22	upkeeping is pretty zen. I should do it more often, specially closer to night.

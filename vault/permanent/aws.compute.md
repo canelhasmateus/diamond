@@ -1,16 +1,11 @@
 # Elastic Compute Cloud
 
-Primary compute engine on the AWS Platform. It is a Virtual Machine, running on top of a Hypervisor. It runs an AMI - that is - a file that contains the necessary data to launch a virtual machine.
+Primary compute engine on the [[AWS]] Platform. It is a Virtual Machine, running on top of a Hypervisor. It runs an [[AMI]] - that is - a file that contains the necessary data to launch a [[virtual machine]].
 
-* These can be created, or prebuilt - either from AWS or from the marketplaces.
+* These can be created, or prebuilt - either from AWS or from the [[marketplaces]].
 * Examples of use of marketplaces image are in the security stack: [[Firewalls]] and [[ VPN ]] concentrators.
 * Can be copied Cross-Region, and are very useful in [[ Disaster Recover ]] scenarios.
 * (?... )AMI
-  Information Required to launch a instance
-  How to unse?
-  How to share it
-  How to copy to diff regions
-  How to register / encrypt
 
 ___
 

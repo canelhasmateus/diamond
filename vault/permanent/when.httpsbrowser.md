@@ -1,14 +1,12 @@
-# Browsers and default https
+# Browsers and default HTTPS
 
-<https://www.youtube.com/watch?v=XrlfX0duLKQ>&
+<https://www.youtube.com/watch?v=XrlfX0duLKQ>
 
-Usually, when specifying a schemaless origin, ( no http:// or https://), browsers default to using http://, for historical reasons.
+Usually, when specifying a schemaless origin, ( no HTTP:// or HTTPS://), [[browsers]] default to using HTTP://, for historical reasons.
 
-To deal with this, service providers usually implement Redirection Chains.
-This is not performatic, since it requires the stablishment of multiple connections, along with multiple round trips.
+To deal with this, service providers usually implement [[Redirection]] Chains.
+This is not the best approach, since it requires establishing multiple connections, alongside multiple round trips.
 
-It is also not secure, since for at least one request we're not using https.
+It is also not secure, since for at least one request we're not using [[HTTPS]]. This opens an opportunity for [[MITM]] Attacks, since the first request can be intercepted by "bad" parties, and redirected to [[phishing]] domains.
 
-This opens a opportunity for Man In the Middle Attacks, since the first request can be intercepted by "bad" parties, and redirected to phishing domains.
-
-Recently, browsers have decided to default to https.
+Recently, browsers have decided to default to HTTPS.
