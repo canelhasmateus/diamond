@@ -1,21 +1,29 @@
-Genesis - Default PDF-Viewer
-Genesis - IntelliJ AutoInstall Plugins
-Gnosis - Type Scaffolding
-Gnosis - Youtube Video Transcript
-Powershell Ctrl-Arrow navigation
+Ormos - Default PDF-Viewer
+Ormos - IntelliJ AutoInstall Plugins
+Roi - Understand the D.E space.
+Roi - Youtube Video Transcript
+
 Flowtime - Issue with breakLength when restarting
------
-NimSkull Test Rename
-Fp In Scala
------
-Typing
-ZettelKasten
-Books
+Powershell Ctrl-Arrow navigation
 altgr + f - Go to file location if .lnk
 Vscode - Replace in selection
 Flowtime - Publish
 Better way to navigate my common directories
+-----
+NimSkull Test Rename
+Fp In Scala
+Typing
+ZettelKasten
+Books
 Personal website
-
 Watch more of that guy CS videos
-Change flowtime column order
+
+___
+
+Ormos - Windows Application Dark Mode
+Ormos - Alt+Tab edge
+Ormos - "Mostrar a experiencia de boas-vindas do windows após atualizações ..." , notificações e ações.
+Ormos - "Sugerir como posso concluir a configuração ... " , notificações e ações.
+Ormos - Opções de energia.
+Ormos - Set-Workspace Login with GitHub.
+Ormos - Set Language
