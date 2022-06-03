@@ -1,22 +1,15 @@
-Ormos - Default PDF-Viewer
-Ormos - IntelliJ AutoInstall Plugins
-Roi - Understand the D.E space.
-Roi - Youtube Video Transcript
-
 Flowtime - Issue with breakLength when restarting
-altgr + f - Go to file location if .lnk
 Vscode - Replace in selection
-Flowtime - Publish
+Powershell - Pretty Terminal
 Better way to navigate my common directories
 -----
 NimSkull Test Rename
 Fp In Scala
 Typing
 ZettelKasten
-Books
 Personal website
 Watch more of that guy CS videos
-
+Books ; School Of SRE
 ___
 
 Ormos - Windows Application Dark Mode
@@ -30,6 +23,10 @@ Ormos - Set Project Manager Defaults
 Ormos - Set Browser AutoInstall / Parameters /"q":javascript
 Ormos - Remove Windows Animations
 Ormos - Multi-Monitor Taskbar Off
-Powershell - Pretty Terminal
+Ormos - Default PDF-Viewer
+Ormos - IntelliJ AutoInstall Plugins
+Ormos - AHK Go to file location if .lnk
 Ormos - Remove Alt + Shift language-choice
-luanaaa
+Flowtime - Publish
+Roi - Youtube Video Transcript
+Powershell - alacritty check url launcher
