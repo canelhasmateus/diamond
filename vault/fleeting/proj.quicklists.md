@@ -1,19 +1,3 @@
-
-plugins:
-
-    ace jump
-    codeglance
-    partial navigation
-    pathhide
-    rainbow brackets
-    rainbown brackets
-    shortcut stats
-    sonar lint
-    tabnine
-    wakatime
-
-
-
 to do / discover / learn:
     
 
