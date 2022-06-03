@@ -45,3 +45,27 @@ Datetime	Action	Task	Comment
 2022/06/01 09:29:30	Join	Typing	decent
 2022/06/01 09:51:20	Fork	Change flowtime column order	None
 2022/06/01 10:04:58	Join	Change flowtime column order	N/A
+2022/06/01 14:53:04	Fork	NimSkull Test Rename	None
+2022/06/01 15:05:31	Fork	IntelliJ Configurations	None
+2022/06/01 15:50:33	Fork	Powershell Configurations	None
+2022/06/01 16:16:11	Gather	N/A	0 nimskull work done, due to task drifting
+2022/06/01 16:19:55	Fork	ajuda Leo	None
+2022/06/01 17:02:21	Join	ajuda Leo	N/A
+2022/06/01 17:26:22	Fork	Akti public host 	None
+2022/06/01 18:47:26	Join	Akti public host 	Enabling S3 OAI disables the default object redirect 
+2022/06/02 10:00:17	Fork	Typing	None
+2022/06/02 10:43:32	Join	Typing	getting better at colemak. today i hit 60 wpm
+2022/06/02 10:51:05	Fork	NimSkull Test Rename	None
+2022/06/02 11:38:29	Join	NimSkull Test Rename	Lots of regressions tests here should be specified directly in the spec
+2022/06/02 13:06:54	Fork	Personal website	None
+2022/06/02 14:29:19	Join	Personal website	SvelteKit is great
+2022/06/02 14:48:24	Fork	Fp In Scala	None
+2022/06/02 15:57:09	Join	Fp In Scala	Again, very low output - At least i learned a lot about IJ configuring
+2022/06/02 17:18:24	Fork	Roi - Understand the D.E space.	None
+2022/06/02 18:37:24	Join	Roi - Understand the D.E space.	not sure what i'll do yet. Probably prefect or dagster
+2022/06/02 21:09:15	Fork	exemplo	None
+2022/06/02 21:10:17	Fork	exemplo2	None
+2022/06/02 21:10:35	Fork	exemplo3	None
+2022/06/02 21:11:04	Join	exemplo3	None
+2022/06/02 21:11:09	Join	exemplo2	None
+2022/06/02 21:11:40	Join	exemplo	N/A

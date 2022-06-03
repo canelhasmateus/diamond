@@ -4,7 +4,6 @@ Roi - Understand the D.E space.
 Roi - Youtube Video Transcript
 
 Flowtime - Issue with breakLength when restarting
-Powershell Ctrl-Arrow navigation
 altgr + f - Go to file location if .lnk
 Vscode - Replace in selection
 Flowtime - Publish
@@ -26,4 +25,11 @@ Ormos - "Mostrar a experiencia de boas-vindas do windows após atualizações ..
 Ormos - "Sugerir como posso concluir a configuração ... " , notificações e ações.
 Ormos - Opções de energia.
 Ormos - Set-Workspace Login with GitHub.
-Ormos - Set Language
+Ormos - Set Windows Language
+Ormos - Set Project Manager Defaults
+Ormos - Set Browser AutoInstall / Parameters /"q":javascript
+Ormos - Remove Windows Animations
+Ormos - Multi-Monitor Taskbar Off
+Powershell - Pretty Terminal
+Ormos - Remove Alt + Shift language-choice
+luanaaa
