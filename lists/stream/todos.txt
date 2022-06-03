@@ -1,7 +1,6 @@
 Flowtime - Issue with breakLength when restarting
 Vscode - Replace in selection
-Powershell - Pretty Terminal
-Better way to navigate my common directories
+Roi - Youtube Video Transcript
 -----
 NimSkull Test Rename
 Fp In Scala
@@ -11,22 +10,22 @@ Personal website
 Watch more of that guy CS videos
 Books ; School Of SRE
 ___
-
-Ormos - Windows Application Dark Mode
+Ormos - Remove Alt + Shift language-choice
 Ormos - Alt+Tab edge
-Ormos - "Mostrar a experiencia de boas-vindas do windows após atualizações ..." , notificações e ações.
-Ormos - "Sugerir como posso concluir a configuração ... " , notificações e ações.
-Ormos - Opções de energia.
+Ormos - Windows Application Dark Mode
+Ormos - IntelliJ AutoInstall Plugins
 Ormos - Set-Workspace Login with GitHub.
+Ormos - Set Browser AutoInstall / Parameters /"q":javascript
+Ormos - Opções de energia.
 Ormos - Set Windows Language
 Ormos - Set Project Manager Defaults
-Ormos - Set Browser AutoInstall / Parameters /"q":javascript
 Ormos - Remove Windows Animations
 Ormos - Multi-Monitor Taskbar Off
 Ormos - Default PDF-Viewer
-Ormos - IntelliJ AutoInstall Plugins
+Ormos - "Mostrar a experiencia de boas-vindas do windows após atualizações ..." , notificações e ações.
+Ormos - "Sugerir como posso concluir a configuração ... " , notificações e ações.
+
 Ormos - AHK Go to file location if .lnk
-Ormos - Remove Alt + Shift language-choice
+
 Flowtime - Publish
-Roi - Youtube Video Transcript
 Powershell - alacritty check url launcher
