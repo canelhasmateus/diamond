@@ -13972,7 +13972,7 @@ datetime	kind	url
 2022-05-13 21:08:06	Revisit	https://david-salazar.github.io/2020/06/03/bayesian-instrumental-variable-regression/
 2022-05-13 21:10:35	Good	https://erikbern.com/2014/11/22/optimizing-things-everything-is-a-proxy-for-a-proxy-for-a-proxy.html
 2022-05-13 21:13:25	Bad	https://serokell.io/blog/is-self-supervised-learning-future-of-ai
-2022-05-13 21:58:19	Queue	https://www.youtube.com/watch?v=qq7fssF9ymM&t=150s
+2022-05-13 21:58:19	Queue	https://www.youtube.com/watch?v=qq7fssF9ymM
 2022-05-13 21:58:21	Queue	https://www.youtube.com/watch?v=RUjVeT7DPmU
 2022-05-13 21:58:23	Queue	https://www.youtube.com/watch?v=RUjVeT7DPmU
 2022-05-13 21:58:25	Queue	https://www.youtube.com/watch?v=42bs_A4U2uo
@@ -14004,8 +14004,8 @@ datetime	kind	url
 2022-05-13 21:58:56	Queue	https://www.youtube.com/watch?v=t7UjVh4d52Y
 2022-05-13 21:58:57	Queue	https://www.youtube.com/watch?v=sDp-tKt3NAw
 2022-05-13 21:58:58	Queue	https://www.youtube.com/watch?v=z3QEtxYPYb4
-2022-05-13 21:58:59	Queue	https://www.youtube.com/watch?v=dbOtXiOp-0Q&t=48s
-2022-05-13 21:59:05	Queue	https://www.youtube.com/watch?v=dbOtXiOp-0Q&t=48s
+2022-05-13 21:58:59	Queue	https://www.youtube.com/watch?v=dbOtXiOp-0Q
+2022-05-13 21:59:05	Queue	https://www.youtube.com/watch?v=dbOtXiOp-0Q
 2022-05-13 21:59:06	Queue	https://www.youtube.com/watch?v=M4U_SsaCCdA
 2022-05-13 21:59:07	Queue	https://www.youtube.com/watch?v=j_yH9RVqr-s
 2022-05-13 21:59:08	Queue	https://www.youtube.com/watch?v=QBRilhtqZyw
@@ -14100,7 +14100,6 @@ datetime	kind	url
 2022-05-14 16:01:14	Queue	https://dm13450.github.io/2018/02/21/Custom-Distributions-Conjugate.html
 2022-05-14 19:47:42	Bad	https://dm13450.github.io/2019/04/03/Goodreads.html
 2022-05-14 19:47:44	Bad	https://dm13450.github.io/2019/04/03/Goodreads.html
-2022-05-14 19:52:54	Bad	https://github.com/nim-works/nimskull/issues/211
 2022-05-14 19:53:05	History	https://en.wikipedia.org/wiki/Worse_is_better
 2022-05-14 19:55:35	History	https://stackoverflow.blog/2019/10/01/building-knowledge-into-your-devops-practices/
 2022-05-14 19:59:38	Tool	https://github.com/grpc-ecosystem/grpc-gateway
@@ -14510,7 +14509,7 @@ datetime	kind	url
 2022-05-27 11:01:49	Queue	https://forum.numer.ai/t/model-diagnostics-feature-exposure/899
 2022-05-27 11:03:18	Queue	https://en.wikipedia.org/wiki/Markov_property
 2022-05-27 11:03:29	Queue	https://brilliant.org/wiki/poisson-distribution/
-2022-05-27 11:03:38	Queue	https://en.wikipedia.org/wiki/Floyd�Warshall_algorithm
+2022-05-27 11:03:38	Queue	https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm
 2022-05-27 11:03:48	Queue	https://en.wikipedia.org/wiki/Topological_sorting
 2022-05-27 11:03:56	Queue	https://en.wikipedia.org/wiki/Translation_lookaside_buffer
 2022-05-27 11:04:04	Queue	https://en.wikipedia.org/wiki/Write_amplification
@@ -14518,9 +14517,9 @@ datetime	kind	url
 2022-05-27 11:04:27	Queue	https://en.wikipedia.org/wiki/Cache_prefetching
 2022-05-27 11:04:37	Queue	https://en.wikipedia.org/wiki/Cointegration
 2022-05-27 11:04:45	Queue	https://en.wikipedia.org/wiki/Survivorship_bias
-2022-05-27 11:04:59	Queue	https://en.wikipedia.org/wiki/Savitzky�Golay_filter
+2022-05-27 11:04:59	Queue	https://en.wikipedia.org/wiki/Savitzky%E2%80%93Golay_filter
 2022-05-27 11:05:12	Queue	https://en.wikipedia.org/wiki/Newsvendor_model
-2022-05-27 11:05:19	Queue	https://en.wikipedia.org/wiki/Count�min_sketch
+2022-05-27 11:05:19	Queue	https://en.wikipedia.org/wiki/Count%E2%80%93min_sketch
 2022-05-27 11:05:30	Queue	https://en.wikipedia.org/wiki/Atomic_broadcast
 2022-05-27 11:05:38	Queue	https://en.wikipedia.org/wiki/Queueing_theory
 2022-05-27 11:06:58	Queue	http://nicolas.kruchten.com/content/2016/04/ml-meets-economics2/
@@ -14591,7 +14590,7 @@ datetime	kind	url
 2022/06/02 19:39:29	Good	https://www.startdataengineering.com/post/choose-tools-dp/
 2022/06/02 20:51:03	Queue	https://www.youtube.com/watch?v=eisuQefYw_o
 2022/06/02 21:23:36	Queue	https://www.academia.edu/2679322/Agile_Formality_A_Mole_of_Software_Engineering_Practices?email_work_card=title
-2022/06/03 11:35:02	Queue	http://www.ats-lang.org
+2022/06/03 11:35:02	Queue	http://www.ats-lang.org 
 2022/06/03 15:24:32	Queue	https://www.researchgate.net/publication/349798432_Compacting_Deep_Neural_Networks_for_Internet_of_Things_Methods_and_Applications
 2022/06/03 17:19:37	Bad	https://www.allendowney.com/blog/2021/01/24/the-retreat-from-religion-continues/
 2022/06/04 12:05:54	Good	https://degoes.net/articles/newtypes-suck
@@ -14599,5 +14598,16 @@ datetime	kind	url
 2022/06/04 12:52:18	Queue	https://kataskeue.com/gdp.pdf
 2022/06/04 12:54:42	Good	https://tech.freckle.com/2020/10/26/tagged-is-not-a-newtype/
 2022/06/04 12:55:41	Revisit	https://blog.quantinsti.com/linear-discriminant-analysis-quantitative-portfolio-management/
-2022/06/04 14:39:05	Hs	https://hirrolot.github.io/posts/rust-is-hard-or-the-misery-of-mainstream-programming.html
 2022/06/04 14:39:09	History	https://hirrolot.github.io/posts/rust-is-hard-or-the-misery-of-mainstream-programming.html
+2022/06/05 09:35:21	Tool	https://www.trypyjion.com
+2022/06/05 09:45:05	Tool	https://pyjion.readthedocs.io/en/latest/
+2022/06/05 09:45:07	Tool	https://nuitka.net
+2022/06/05 10:38:09	Queue	https://www.academia.edu/28049818/Automatic_Test_Generation_for_Data_Flow_Reactive_Systems_with_time_constraints_?email_work_card=view-paper
+2022/06/05 10:38:14	Queue	https://www.academia.edu/18698546/D7_1_Evaluation_of_existing_methods_and_principles?email_work_card=title
+2022/06/05 10:47:13	Queue	https://www.academia.edu/2832882/Testing_Planning_Domains_without_Model_Checkers_1?email_work_card=title
+2022/06/05 17:58:17	Explore	https://wellarchitectedlabs.com
+2022/06/05 17:58:35	Bookmark	https://rawgit.com/darcyparker/1886716/raw/vimModeStateDiagram.svg
+2022/06/06 08:04:46	Queue	https://www.youtube.com/watch?v=aBuERMIJhZk
+2022/06/06 14:25:40	History	https://www.arp242.net/yaml-config.html
+2022/06/06 15:21:38	Tool	https://github.com/evilC/AutoHotInterception
+2022/06/06 16:25:41	Tool	https://nemo.apache.org

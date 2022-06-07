@@ -1,15 +1,16 @@
 Flowtime - Issue with breakLength when restarting
 Vscode - Replace in selection
 Roi - Youtube Video Transcript
+Watch more of that guy CS videos
+Personal website
 -----
-NimSkull Test Rename
-Fp In Scala
 Typing
 ZettelKasten
-Personal website
-Watch more of that guy CS videos
+Fp In Scala
+NimSkull Test Rename
 Books ; School Of SRE
 ___
+Flowtime - Publish
 Ormos - Remove Alt + Shift language-choice
 Ormos - Alt+Tab edge
 Ormos - Windows Application Dark Mode
@@ -24,8 +25,5 @@ Ormos - Multi-Monitor Taskbar Off
 Ormos - Default PDF-Viewer
 Ormos - "Mostrar a experiencia de boas-vindas do windows após atualizações ..." , notificações e ações.
 Ormos - "Sugerir como posso concluir a configuração ... " , notificações e ações.
-
 Ormos - AHK Go to file location if .lnk
-
-Flowtime - Publish
-Powershell - alacritty check url launcher
+Ormos - Alacritty check url launcher
