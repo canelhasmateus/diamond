@@ -1,3 +1,4 @@
+
 Flowtime - Issue with breakLength when restarting
 Vscode - Replace in selection
 Roi - Youtube Video Transcript
@@ -9,6 +10,7 @@ ZettelKasten
 Fp In Scala
 NimSkull Test Rename
 Books ; School Of SRE
+IdeaVim;
 ___
 Flowtime - Publish
 Ormos - Remove Alt + Shift language-choice
@@ -27,3 +29,4 @@ Ormos - "Mostrar a experiencia de boas-vindas do windows após atualizações ..
 Ormos - "Sugerir como posso concluir a configuração ... " , notificações e ações.
 Ormos - AHK Go to file location if .lnk
 Ormos - Alacritty check url launcher
+Ormos - Deduplicate 
