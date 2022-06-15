@@ -388,3 +388,194 @@ As a tangential point, increasing release cadence can definitely decrease your l
 ___
 
 The atomic unit of developer productivity ought then to be one iteration of the inner loop. The appropriate unit is not code quantity, but iteration frequency. We might call this unit of quantity developer hertz.
+
+___
+
+
+calligaris
+
+porque -> como
+
+como experienciar momentos de tristeza -> edaí? -> de fato perspassa por esse viés de afetividade -> certo, mas é satisfatório
+
+como se sente esgotado frente a situação de não experienciar uma situação afetiva ou emocional?
+como que o mateus se sente frente as possibilidades do futuro
+
+não é a régua do outro
+
+as cordas não são o cone.
+quais poderiam ser as cordas (pensando que uma corda poderia ser pra você qualquer coisa que teriam minimamente um volume)
+
+mapa mental ->
+
+não avaliar desejos, avaliar processos pelos quais acontecem ou não acontecem
+
+como essas experiencias (lutas vs jogos) aconteceram pra mim?
+
+    -> uma eu penso em prazer
+    -> na outra não
+
+            -> Objetivos
+            -> Expectativas
+            -> Percepção
+
+Ter expectativas maiores com relação aos jogos me faz construir objetivos mais especificos
+    -> Significação mínima
+
+Pontuar vontades mínimas e o desencadeamento delas
+    -> "algo relacionado a videogames se aproximou de uma vontade" -> "como perceber que isso se configura como uma vontade?"
+    "a competetividade me levava a tentar ser o melhor entre meus amigos"
+    "isso me levou a dedicar ais temp jogando, comprar mais jogos, trocar deia com pessoas que jogava, coisas que podem ter sido mobilizadas a partir desse desejo"
+
+     We Need To Talk boook
+
+eu tenho essa percepçao racional (parcialidade de responsabilidade)
+    -> tão enraizado que percepções sempre perspassam pelo critério de exclusão
+    -> (empatia reflexiva)
+
+    -> am imnha observação diz respeito ao lugar que eu ocupo e da minha experiencia em primeiro plano e não necessariamente eu preciso ter vivido essa experiência
+
+    ->
+
+o exemplo do cara dos 4 elementos
+    -> pensando nas relações interpessoais, do que tudo pode ser composto? indepentende de relativização, percepções, etc...
+        -> "relações interpessoais" : psicologia -> O que causam movimentação possíveis nessas relações.
+
+    -> perguntar da braba
+
+experiencias fisicas satisfatorias (que perspassa pelo outro)
+
+porque não ?
+    -> substituir porque porque nao?
+
+a braba é : existe um componente de desejo (de alguma forma)
+fato de continuar fazendo terapia?
+
+___
+
+* Ho to deal with archival in GnoSys?
+* What is the difference between full article and siplified article in feedly web clipper
+* Archival  > Indexing > Remembrance ( Gnosys )
+
+residential app
+faster way to develop (remote? inside docker? hot reload)
+SETAR ESPAÇO DE CRIATIVIDADE
+unidades logicas vs unidades funcionais
+
+
+___
+
+Self Licensing
+    . Happens when people allow themselves to indulge after doing something positive at first.
+    . Eg. Drinking a diet soda -> then greasy hamburger.
+
+___
+
+<https://eugeneyan.com/writing/reading-note-taking-writing/>
+
+“Writing is not what follows research, learning, or studying. It is the medium of all this work” - How to Take Smart Notes (Sönke Ahrens)
+
+"Read with the intention to write; What are the open ideas for exploration?"
+
+"Writing is not the outcome of thinking. It __IS__ thinking. "
+
+
+____
+
+
+20 hours tu break the frustration barriers
+Outliers by gladwell: 10k hours until expert
+Great people get at most 3 qnd a half hours of deliberate practice a day
+
+What about "capacity" instead of "expertise"?
+20 hours of rápid skill acquisition
+
+Deconstuction
+Lean each subskill
+Remove barriers ( physical, emocional)
+Practice the important subskills
+
+Desire for instante gratificação is what keep us from learning
+
+15 years in 1 month
+Academic learning and cred3ntialing has little tô do with rapid skill acquisition
+
+Language acquisition is different from language learning:
+
+The monitor hypothesis:
+
+Running vs a maraton  == learning vs training
+
+Certification are often at odds with learning
+Practice in context
+Mindset the new... os success
+Fixed mindset vs growth mindset
+
+Three stage model
+Cognitive or early- understanding
+Associative or mid
+The autonomous
+
+10 principles
+Cultivate a temporary obsession
+
+1 choose a loveable project
+2 Focus on 1hours skill at a time
+3 Define a target performance level
+4 Deconstruct subskill
+5 Obtain critical tools
+6 Eleminitae barriers tô practice
+7 Define dedicated time
+8 Create Fast feedback loops
+9 Practice by the clock in short bursts
+10 Empathize quantity and speed
+
+Carl popper on loveable problems
+
+A problem well stated is a problem half solved
+
+What tools,  components and environments do you need to practice efficiently?
+
+Identify low value blocks of time and cut them
+
+Pre commit into investing 20hours hours or choose another skill to acquire
+
+Autohotkeys pomodoro : 3 or 4 practice sections
+
+Power law of practice
+
+In general,  immersion works- you cant walk away from the early training - but dont count on it
+
+
+___
+
+
+Criação de habito
+
+* Gatilhos
+  * "Seja uma boa formiguinha, leve pro estoque uma caixinha -> Pegue um 1 bis"
+* Recompensa Imediata
+  * "Bis"
+* Remoção de barreiras
+  * Mentais
+  * Emocionais --
+  * Fisicas
+* Incrementalidade:
+  * Bagunça "Interna"
+  * Nao precisa fazer tudo agora
+  
+-> Balcao
+-> "Bagunça Interna"
+-> "Arrumado Final" -> Petisco
+
+Formalizar esses processos
+
+```mermaid
+stateDiagram
+    [*] --> Estoque
+    Estoque --> Balcão
+    Balcão --> Bancada
+    Bancada --> Organizar
+    Organizar --> Petisco
+    Petisco --> Estoque
+```

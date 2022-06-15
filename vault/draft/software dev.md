@@ -14,9 +14,7 @@ Other decompositional techniques
 
 Evolutionary architecture
 
-
 ___
-
 
 <https://www.youtube.com/watch?v=jwbKSiqG0DI>
 
@@ -36,7 +34,6 @@ Nullable Infrastructure
     . Tracks state when needed
     . Implemented with embedded stubs
 
-
 ___
 
 Implicits
@@ -47,9 +44,7 @@ Uses
     . Implicit Conversions
         .. Add Methods to existing types over which we don't have control.
 
-
 ___
-
 
 Functional languages are actually quite a bit simpler than many conventional languages. Comparing Haskell to Java, for example, Java has a lot of accidental complexity that Haskell avoids. For example, primitive vs. reference types, instance vs. class methods, type erasure in the implementation of generics, implementation inheritance and its interaction with the four different visibilities, the interaction of coercion, casting, and overloading, and so forth. I’ve also found that surprisingly many students have a hard time wrapping their heads around the impact of mutation of shared (aliased) objects. Functional languages have fewer such complications. That’s not to say that functional languages are easier to learn, but once you know them, they are simpler than many conventional languages.
 
@@ -68,7 +63,6 @@ The expression problem
 
 ___
 
-
 <https://codecraft.co/2015/04/08/a-grumble-about-buckets/#more-6049>
 
 "
@@ -77,10 +71,7 @@ I'm grumbling about my choice of buckets, but in the end, its not the bucket men
 What bugs me is that software with poorly chosen buckets also tends to be software that - either by intent or carelessness - provides no way whatsoever for its creators to find out if they've got the buckets wrong.
 "
 
-
 ___
-
-
 
 <https://www.youtube.com/watch?v=oSpx2ROVfd0>
 
@@ -111,9 +102,7 @@ We can solve it with a "Deffered-Acceptance Algo"
             . Unmatch ( Dprev , H)
             . Match ( D , H)
 
-
 ___
-
 
 Laziness lets us separate the description of an expression from the evaluation of
 that expression. This gives us a powerful ability — we may choose to describe a
@@ -169,10 +158,7 @@ design process won't always be this easy. You will need to choose data types and
 functions that facilitate this compositional structure, and this is what makes
 functional design both challenging and interesting
 
-
-
 ___
-
 
 thinking about how to push more safety into the type system.
 
@@ -233,8 +219,6 @@ My questions are 2:
 * What is the name of this?
 * Is there a way to satisfy our requirements?
 
-
-
 ___
 
 Here they are:
@@ -257,8 +241,6 @@ And the Markdown:
 [![This project is considered stable](https://img.shields.io/badge/Status-stable-green.svg)](https://www.arp242.net/status/stable)
 [![This project is considered finished](https://img.shields.io/badge/Status-finished-green.svg)](https://www.arp242.net/status/finished)
 [![This project is archived](https://img.shields.io/badge/Status-archived-red.svg)](https://www.arp242.net/status/archived)
-
-
 
 ___
 
@@ -303,3 +285,59 @@ Rolling Deploymnets
  CloudFormation
   You can use AutoScalingRollingUpdate Policy to define how rolling updates are handled when aws cludformation is used to deploy an autoscaling group
   Here instruct wheter the updates need to be done in batches or all at once.
+
+___
+
+<https://www.youtube.com/watch?v=a4L9GhldTHo>
+
+On technical documentation
+
+Problems:
+
+* Rots quickly
+* Nobody can find it
+
+Tools:
+
+* Jira
+* Confluence
+* BookStack ( Self-Hosted )
+
+What is good documentation?
+
+You should strive to have the bare minimum - it is a cost, and it loses value very quickly.
+
+____
+
+I wonder how much backward compatibility hurts progress.
+
+* comparing hardware, for example, in which you don't have a compatibility between a motherboard and the next-gen processor.
+* Is this why they can be so fast/efficient?
+  * This and having a common universal language - physics.
+
+____
+
+
+"
+There are a bunch of approaches that you can use to encode this into various type systems, so no one answer. The approach would change the name, one way would be phantom types.
+
+Aside, I'd say this is a good topic for main.
+The other thing I'd suggest is that correct by construction here isn't the right approach for many of the requirements.
+
+Simply put a we're trying to apply static guarantees to non-static parts of a system (permissions could change any time, drive could fail, cosmic rays, ...).
+Instead, I'd say effect handling is where the focus should be.
+Whether a path is well formed can be asserted statically, but whether it is valid is dynamic in nature.
+
+So do the happy action and for the dynamic aspects handle lack of permissions, missing file, io processing isn't total, and so on. Then handle those bits.
+Simple approach is wrap this stuff in a try at least from a correctness point of view, think checked exceptions but less suck.
+
+With structured concurrency approaches one could also tackle some/most of the liveness issues too.
+Just my two cents
+"
+
+
+___
+
+<https://tech.freckle.com/2020/10/26/tagged-is-not-a-newtype/>
+
+"Programming is both the process of automation and the encoding of assumptions. "

@@ -66,3 +66,11 @@ We can configure wireshark to read this file and decrypt the intercepted tls pac
 ___
 
 <https://www.youtube.com/watch?v=qpC1YH0FhuY>
+
+___
+
+<https://www.youtube.com/watch?v=kxMKnx__uso>
+
+write about this talk;
+
+Book: How complex systems fail

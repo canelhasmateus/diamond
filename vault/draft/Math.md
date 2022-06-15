@@ -104,3 +104,20 @@ Gray level co-occurence matrices
         7 * 4 = 28 numerical features
 
 ___
+
+
+Langlands
+    Number Theory -Functoriality> Harmonic Analysis
+
+    Elliptic Curves
+
+
+
+    Equations that don't have rational solutions may have modular solutions
+
+
+    "Every elliptic curve is intimately related with a modular form"
+
+    Algebraic Geometry
+    Representation Theory
+

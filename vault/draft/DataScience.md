@@ -17,7 +17,6 @@ Can we Make any paralells with th NaturalGradientForets?
 
 <https://github.com/stanfordmlgroup/ngboost>
 
-
 ___
 
 <https://www.youtube.com/watch?v=i536yu9_rJg>
@@ -43,16 +42,13 @@ Design Of Experiments
 
 ___
 
-
 Confidence Based Performance Estimation caqn enable us to reliably predict the expectedf performance ( area under ROC ) of a machine learning model when the ground truth is not available
 
 <https://towardsdatascience.com/predict-your-models-performance-without-waiting-for-the-control-group-3f5c9363a7da>
 
 <https://docs.nannyml.com/latest/deep_dive/performance_estimation.html>
 
-
 ___
-
 
 Detecting Near-DUplicates
     . Locality Sensitive Hashing
@@ -125,10 +121,7 @@ learned something by interacting with the world). In this case, D(p k q) represe
 information gained. Another operational definition: D(p k q) is the expected number of extra bits
 needed to encode a sample from p given a code that was optimized for q
 
-
-
 ___
-
 
 <https://www.youtube.com/watch?v=68kE96zRfSM>
 
@@ -194,3 +187,115 @@ Data Quality
 Mirrored Histograms
 
  DataSources => Feature Processing => Feature Store ( Tecton / Feast ) -> Build a Model => Model Store ( MLFlow , Weights and Biases ) => Model Serving ( KubeFlow / Algorithmia ) => Online Porudction Logs -> Evaliation / Inference Store ( Arize )
+
+___
+
+DS Google
+data integrity
+ duplication
+
+sample size , random sampling
+
+Ask -> Prepare
+Process -> Analyze
+=> Share act
+
+Specific
+Measurable
+Action-oriented
+Relevant
+Timebounded
+
+leading questions
+close ended
+vagueness and context-lack
+
+quantitative -> (the what , how many, how often)
+qualitative -> ( why )
+
+dirty:
+ inconsistent format
+ blank field
+ duplicates
+ incomplete
+ incorrect
+ outdated
+
+percentage null
+
+___
+
+<http://nadbordrozd.github.io/blog/2020/09/07/embedding-sets-of-vectors-with-emde/>
+ "Think of preferences as probability density functions defined on the manifold."
+ Paralelos com
+  Count Sketch
+  Locality-Sensitive Hashing
+  Probability Density Function
+
+___
+
+Regressão em cima de uma função Z = ceil(x + y)
+This Should vê a diagonal staircase and a rotation Should help decision Forest.
+
+___
+
+<https://engineering.fb.com/2021/02/09/developer-tools/minesweeper/>
+
+PrefixSpan is an algorithmn which is well known for being highly efficcient at sequential pattern mining.
+
+Facebook uses it in its Root Cause Analysis automation , called Minesweeper.
+It finds patterns with good Precision , Recall , F1 between  Bug and Bug-free traces. It also tries to remove redundant Patterns.
+
+
+___
+
+<https://www.youtube.com/watch?v=sDMJr0h5_xw>
+
+"GeoRanging tweets"
+
+* Based on a set of local influencers ( schools, museums, politicians, local celebrities ), discover if an account is used by someone linked to a geo
+K-means
+
+LDA
+
+* Assume a topic is a distribution of words
+* Assume a document is a distribution of topics
+* Update every word assignment according to our terrible model
+* Repeat until convergence
+
+The combination gives you a way to model a corpus.
+
+Non-Negative Matrix Factorization
+
+* ?
+  
+Community Detection
+
+* Louvain ?
+  * Modularity
+  * How many of the edges reside in the comunities
+  * How unique are these communities to this graph
+  * -> Very Fast. Allows tuning K on the fly.
+"""
+
+* Define word co-occurrence ( two words in the same tweet)
+* COnstruct graph where words are nodes and edges are co-occurrence relationship
+* Filter out low information words by high frequency and low pairings
+* Pick Heaviest edges
+* Run Community detection
+
+How to find representative tweets?
+"Summarization techniques"
+
+* for each cluster, look for the closest tweets: Cosine similarity between
+
+Future
+
+* Overlapping communities
+* Conductance ( Modularity suffers from a tendency to ignore very small clusters )
+* Optimization Metrics
+* Reducing Word Noise ( co-occurrence distribution )
+* Better sentence segmentation
+* Bi-Partite Graphs
+  * Tweets on the left, words on the right, look for words
+* User-Defined sensitivity

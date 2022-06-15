@@ -84,3 +84,15 @@ Very little attention is paid to the formation of a hypothesis, resulting in a w
     . Testing without any theory pertaining to the cause of the bug.
 
 <https://queue.acm.org/detail.cfm?id=3068754>
+
+
+
+___
+
+An important part of solving problems is looking at them the right way.
+
+* The read-list situation becomes easier to manage when looking at it as a stream.
+* Thinking of it as a stream lends itself to be handled just like any other stream.
+    Thinking of it as an application of data engineering buys us the scheduling, composition and error handling of the processes in the space.
+* The same goes for the flowtime situation: Thinking of it as a scheduling problem looks like the right abstraction since Gantt charts fit these visualizations perfectly.
+* The same goes for the whole Gnosis mentality. Working with text and locally buys us the simplicity, flexibility and ease of use necessary to embed this as part of our life, instead of being a source of stress and emotional pain that most chores give us.

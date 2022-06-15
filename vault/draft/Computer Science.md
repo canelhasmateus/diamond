@@ -347,3 +347,39 @@ Dynamic Programming
 * Divide into sub-problems
 * Solve sub-problem recursively
 * On each recursive call, Start by checking if it is already solved, finishing by caching into the table.
+
+
+___
+
+<https://engineering.fb.com/2019/04/25/developer-tools/f14/>
+
+Faceboko has their own implementation of hashtables, called F14 , embbedded inside Folly , their open source C++ library.
+
+It tries to be a good default usage, when considering questions such as
+
+* "How long are the references kept"
+* "Do you care more about cpu or memory"
+* How big are the ekys
+* How big are your tables
+* How much do your insert / search / iterate
+  
+It improves the practice of hashing by using vector instructs, and providing multiple memory layouts.
+
+The problem with hash tables comes from collisions. The possibility of collisions creates unpredictable control flow, requring extra memory accesses, and being hard to branch-predict and cpu-pipeline.
+
+F14 works around this by pointing the kep to a block of slots, instead of to a single slots, then searching withing the chunk in parallel using vector instructions.
+
+Other problem with probing is that they keep looking until they fiund a empty slot: that makes erasing keys tricky: since the same keys must be produced, the algo must leave a tombnstone ( a empty slot that doesn't terminate the probe search ) or slide down the later keys in the problem sequence.
+
+___
+
+Binary trees can have multiple types:
+
+* A __root__ binary tree has a root node, and every node has at most two children.
+* A __full__ ( or proper ) is a tree in which every node has either 0 or 2 children.
+* A __perfect__ - all interior nodes have two children and all leaves have the same depth
+* a __complete__ , in which all levels ( except the last ) is completely filled, and all nodes in the last level are as far left as possible: A perfect tree is always complete, but a complete tree is not necessarily perfect. A complete binary tree can be efficiently represented using an array.
+  * A heap is a specialized complete tree, that satisfies the HEAP PROPERTY. Its one maximilalyl efficient implementation of an abstract data type called a priority queue.
+* A __balanced__ binary tree is a binary tree structure in which the left anr right substrees of every node differ in height by no more than 1.
+* A __degenerate__ tree is where each paretn node has only one associated child node, which means the tree will behave like a linked list.
+t
