@@ -1,4 +1,4 @@
-# Reverse Proxies
+# ReverseProxies
 
 In a common [[ proxy ]], the server ends up not knowing the originating client. We can, however, invert this situation, making [[client]] unaware of the destination [[server]].
 
@@ -29,7 +29,7 @@ It can, afterward, establish a TCP request to the downstream server and send the
 
 * It is very common to "[[tamper]]" the requests when doing this, e.g add requests [[headers]].
 
-* Since it is operating at Layer 7 via http - a stateless protocol - it is very possible that further requests establish a new TCP connection with the same server, or even other servers.
+* Since it is operating at Layer 7 via HTTP - a stateless protocol - it is very possible that further requests establish a new TCP connection with the same server or even other servers.
 
 ```mermaid
 

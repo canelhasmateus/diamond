@@ -6,7 +6,7 @@ MITM
 
 Examples
 
-[[security.hsts]]
+[[HSTS]]
 
 # ...
 

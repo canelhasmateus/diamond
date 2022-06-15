@@ -1,5 +1,5 @@
 
-# Demoing and Expectation Management
+# OnDemoing
 
 Its frequent, in the process of [[Product Building]] and conceptualization to create demos and mvps.
 
@@ -14,7 +14,7 @@ Its very possible that what is shown is simply not possible. Even if it is, its 
 Managing these expectations is good for both you and your peers.
 There is an subtle issue that people inconsciusly calibrate their criticism base on their impression of where you are in the development process, even if you repeatedly remind them that the design is just an early sketch.
 
-A highly polished image that may look like a screen shot of an implemented UI, or at least the result of many weeks' will lead to [[psy.implicitAssumptions|assumptions]] that only small details can be changed at this point.
+A highly polished image that may look like a screen shot of an implemented UI, or at least the result of many weeks' will lead to [[PatternImplicitAssumption|assumptions]] that only small details can be changed at this point.
 
 Show them something pretty, and you'll get feedback on font sizes - they never suggesting anything so bold as starting over.
 

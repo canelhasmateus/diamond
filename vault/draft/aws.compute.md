@@ -13,15 +13,9 @@ On Connectivity
 
 Connectivity is provided to the instances in the form of [[ENI|Elastic Network Interfaces]]. These are virtual network cards, which are attached to instances. An instance can have multiple network interfaces, as long as each one is in a different subnet.
 
-When going up , an instance gets an EC2-DNS name, a private CNAME that is attached to a certain network interface. To be available in the internet, it needs a public address. This can be achieved by means of [[Elastic IP Addresses]], which can be attached to the network interfaces.
+When going up, an instance gets an EC2-DNS name, a private [[CNAME]] that is attached to a certain network interface. To be available on the internet, it needs a public address. This can be achieved using [[Elastic IP Addresses]], which can be attached to the network interfaces.
 
 ___
-
-On Storage
-
-By itself, EC2 offers only the so called Instance Storage. THese are Temporary [[Block Storage]] that are saved on disks, directly attached to the instances. They are the fastest storage offering, but offer very little durability, being available only during the lifetime of instances - Saved between restarts and lost on Stop and Terminations.
-
-The most usual solution is to use attached [[EBS]] volumes or [[EFS]] in the case of Block Level Storage, and S3 buckets for object storage.
 
 ___
 

@@ -12,7 +12,7 @@ Proxies have a variety of use cases:
 
 > :bulb: This is an realization of [[ Zero-Sum ]].
 
-* [[Logging]]:  Being a funneling channel, the proxy can log requests. This can be useful in the context of [[Microservices]], to provide [[observability]], [[Circuit Breakers]] and [[Http]] upgrading. This can be seen as a form of [[ segregation]] and [[modularity]]. A [[separation of concerns]]
+* [[Logging]]:  Being a funneling channel, the proxy can log requests. This can be useful in the context of [[Microservices]], to provide [[SoftwareObservability]], [[Circuit Breakers]] and [[Http]] upgrading. This can be seen as a form of [[ segregation]] and [[modularity]]. A [[separation of concerns]]
 
 ___
 

@@ -382,4 +382,3 @@ Binary trees can have multiple types:
   * A heap is a specialized complete tree, that satisfies the HEAP PROPERTY. Its one maximilalyl efficient implementation of an abstract data type called a priority queue.
 * A __balanced__ binary tree is a binary tree structure in which the left anr right substrees of every node differ in height by no more than 1.
 * A __degenerate__ tree is where each paretn node has only one associated child node, which means the tree will behave like a linked list.
-t

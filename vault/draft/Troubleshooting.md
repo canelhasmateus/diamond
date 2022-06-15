@@ -14,7 +14,7 @@ Sometimes a solution must be applied very quickly. Without enough time ( or disp
 
 # Root Cause Analysis
 
-A form of [[psy.problemSolving#Question the Premises]]
+A form of [[PracticeProblemSolving#Question the Premises]]
 
 ___
 
