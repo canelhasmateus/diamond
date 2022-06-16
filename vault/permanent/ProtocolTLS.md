@@ -1,38 +1,37 @@
 # TLSProtocol
 
-The Transport Layer Security is a [[Cryptography]] [[Protocol]]. It is designed to provide secure communications over a network and is the successor of the Secure Sockets Layer (SSL).
+The Transport Layer Security is a #Cryptography #Protocol. It is designed to provide secure communications over a network and is the successor of the Secure Sockets Layer ([[SSL]]).
 
-It prevents [[Eavesdropping]] and [[Tampering]] by using [[Certificates]] between the communicating computer applications.
+It prevents [[Eavesdropping]] and #Tampering by using [[TLSCertificate]]s between the communicating computer applications.
 
 Since communication can be done without TLS, the client must request that the server set up a secure connection.
 
-Usually, separation is achieved by using a different [[port]] number for TLS connections, usually __Port 80__ for [[ProtocolHTTP]] and __Port 443__ for [[HTTPS]].
+Usually, separation is achieved by using a different [[Port]] number for TLS connections, usually __Port 80__ for [[ProtocolHTTP]] and __Port 443__ for #HTTPS.
 
 ___
 
-The [[Handshake ]] is the mechanism used to establish a stateful [[connection]]. The goal of this procedure is to establish agreed encryption [[cipher suite]] to be used alongside the [[ProtocolTCP]] connection
+The [[ThreeWayHandshake]] is the mechanism used to establish a #stateful #connection The goal of this procedure is to establish agreed encryption [[cipher suite]] to be used alongside the [[ProtocolTCP]] connection
 
 1. The client begins by requesting a secure connection and its supported cipher suites.
 
 2. From this pool, the server picks one that he also supports and notifies the client of the decision.
 
 3. In the sequence, the server provides identification in the form of a digital certificate, which contains
-    * [[Server Name]]
-    * [[Certificate Authority]]
-    * [[Public Encryption Key]]
+    * [[ServerName]]
+    * [[CertificateAuthority]]
+    * [[PublicEncryptionKey]]
 
 4. The client then confirms the validity of this information.
 
-    ```todo
-    How? [[ expand ]]
-    ```
-
 5. The client and server then agree to a session secret. This can be done using different mechanisms:
 
-* [[Diffie Hellman]]
-* Encrypting a randomly generated number with the public key sent by the server, which will be able to be decrypted only with its [[private key]].
+* [[DiffieHellman]]
+* Encrypting a randomly generated number with the public key sent by the server, which will be able to be decrypted only with its [[PrivateKey]].
 
 ```todo
+
+How does a client confirm the validity of server-sent information?? [[ expand ]]
+
 create a sequence diagram for tls.
 ```
 
@@ -40,7 +39,7 @@ ___
 
 ## Considerations
 
-TLS does not fit cleanly in the [[OSI Model]] Layers.
+TLS does not fit cleanly in the [[ModelOSI]] Layers.
 
 Normally, encryption would be the responsibility of Layer 6.
 

@@ -1,21 +1,25 @@
 # HashTables
 
-Hash Tables, also known as  HashMaps, [[dictionaries]] and Associative Arrays, are a kind of [[ Data Structure ]].
+Hash Tables, also known as  #HashMaps, dictionaries and Associative Arrays, are a kind of [[DataStructure]].
 
-It works by creating an [[hash]] of a key, which is transformed into an array index, usually by the means of [[ modular arithmetic ]] against the array size. Then, a [array] lookup is used to look up the associated value.
-The cost of this lookup depends on the [[architecture ]] of the system -  [[NUMA]] vs [[UMA]], for example - but can be largely considered constant.
+It works by creating an [[Hashing]] of a key, which is transformed into an array index. Then, an #array lookup is used to look up the associated value.
 
-Limitations:
+> This second transformation usually happen by the means of [[ModularArithmetic]] against the array size.
 
-[[Collisions]].
+The cost of this lookup depends on the #architecture of the system -  [[NUMA]] vs [[UMA]], for example - but can be largely considered constant.
 
-Size:
+___
 
-Since it uses an underlying array, the hash tables rely heavily on the use of [[Byte Addressability]]. This makes it hard to work in settings where it doesn't fit cleanly into memory, such as serialization and hard disks.
-    . WHy? How? [[ expand ]]
+There exists many limitations when using hash tables:
 
-[[Mutability]]:
+* [[HashCollisions]].
+* Size:
+  * Since it uses an underlying array, the hash tables rely heavily on the use of [[ByteAddressability]]. This makes it hard to work in settings where it doesn't fit cleanly into memory, such as serialization and hard disks.
 
-When adding or removing values, we may need to increase the underlying storage size. This prompts a process - So-called [[ReHashing]] - that remaps the indexes. This can be expensive, and very hard to work within some applications.
+* [[Mutability]]:
+  * When adding or removing values, we may need to increase the underlying storage size. This triggers an expensive [[ReHashing]] process that remaps the indexes.
+  * In settings such as [[SystemsDistributed]] applications, rehashes can be difficult to work with. This challenge can be alleviated by [[ConsistentHashing]] schemes such as [[HashRings]], as implemented by [[RingPop]].
 
-In settings such as [[distributed]] applications, these can be alleviated by [[Consistent Hashing]], schemes such as [[HashRings]], as implemented by [[RingPop]].
+```todo
+. About the seriazibility: WHy? How? [[ expand ]]
+```

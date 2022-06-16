@@ -823,9 +823,6 @@ Since the whole grid can be tiled by the combination of these two diagonals, we 
         </tr>
     </tbody>
 </table>
+Some parallels can be traced to laplacian methods, in which we translate the original problem into coordinates that innately satisfy the bounds when transformed back.
 
-#
-
-There are parallels that can be traced to laplacian methods, in which we translate the original problem into coordinates that inately satisfy the bounds when transformed back.
-
-This can be seen as a coordinate transformation ( from row : column to evenness:radius , where evenness denotes if we're in a even or odd diagonal. )
+This can be seen as a coordinate transformation ( from row: column to evenness: radius, where evenness denotes if we're in an even or odd diagonal. )

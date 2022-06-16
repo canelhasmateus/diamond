@@ -1,4 +1,4 @@
-## OnImmutableGarbage
+# OnImmutableGarbage
 
 [[Immutable]] Objects can be gentler to generational [[GarbageCollection]].
 

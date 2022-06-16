@@ -1,26 +1,24 @@
-# Hash Collisions
+# HashCollisions
 
-Since the underlying array has a finite number of entries, [[collisions]] are bound to happen.
-There exists various kind of procedures to deal with hash collisions, but they mostly fall into two different buckets:
+Since the underlying #array has a finite number of entries, collisions are bound to happen. There exists various kind of procedures to deal with hash collisions, but they mostly fall into two different buckets:
 
-[[Open Hashing]]
+[[OpenHashing]], Also known and [[SeparateChaining]].
 
-Also known as [[separate chaining]]. Instead of embedding the value directly in the array, we embed a collection - such as a [[linked list]] or a [[binary tree]] - in the array instead, and put the value inside this collection.
+* Instead of embedding the value directly in the array, we embed a collection - such as a [[LinkedList]] or a [[BinaryTree]] -  and put the value inside this collection.
+* When fetching, we search #exhaustively inside the associated collection. Of course, this has #O(n) worst-case #complexity.
 
-When fetching, we search exhaustively inside the associated collection. Of course, this has [[O( n )]] worst-case complexity.
+[[OpenAddressing]], Also known as [[ClosedHashing]] or [[Probing]].
 
-[[Open Addressing ]]
+* in the case of collision, we simply look for another entry to place the value. All that is needed is a #policy to #deterministically generate the same candidates given a seed hash.
 
-Also known as [[closed hashing]].
+Various implementations of such policies can be devised, such as
 
-in the case of collision, we simply look for another entry to place the value. All that is needed is a policy to deterministically generate the same candidates given a seed hash.
+* [[LinearProbing]]
+* [[QuadraticProbing]]
+* [[DoubleHashing]]
 
-Various such policies can be devised, such as
-
-[[Linear Probing]]
-[[Quadratic Probing]]
-[[Double Hashing]]
+___
 
 References:
 
-* <https://www.youtube.com/watch?v=hxdT_QgHUSg>
+1. <https://www.youtube.com/watch?v=hxdT_QgHUSg>

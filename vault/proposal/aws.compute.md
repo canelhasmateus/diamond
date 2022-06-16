@@ -170,6 +170,14 @@ AWS Batch is another component of the AWS [[Data Science]] stack.
 
 Runs Batch computing workloads. These can be be Shell scripts, Linux executables or Docker container images.
 
+___
+___
+
+```todo
+Using only 1 Availability Zone , its possible to achieve 99.9% Availability. With 2 Availability Zones, 99.99% is achievable, and for more availability, even more are necessary.
+Always use at least 2 Availability Zones
+```
+
 # References
 
 EMR for dynamo and s3:
@@ -177,3 +185,5 @@ EMR for dynamo and s3:
 <https://aws.amazon.com/articles/using-dynamodb-with-amazon-elastic-mapreduce/?tag=articles%23keywords%23elastic-mapreduce>
 
 <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html>
+
+

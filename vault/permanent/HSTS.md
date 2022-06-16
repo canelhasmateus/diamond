@@ -1,27 +1,26 @@
 # HSTS
 
-[[HTTP]] Strict Transport [[Security]] is a policy mechanism that helps protect against [[Software Attacks]]:
+The HTTP Strict Transport [[Security]] is a #policy mechanism that helps protect against [[SoftwareAttacks]], such as
 
 * [[MITM]]
-* [[Protocol Downgrade]]
-* [[Cookie Hijacking]].
+* [[ProtocolDowngrade]]
+* [[CookieHijacking]].
 
-It allows web servers, browsers and other complying user agents to automatically interact with some [[domains]] in a secure-only manner.
+It allows web #servers, #browsers and other complying user agents to automatically interact with some #domains in a secure-only manner.
 
-A server implements HSTS policy by supplying [[headerd]] over a [[Https]] connection, which specifies that future requests to that domain must be made via [[https]] for the agreed period.
+A server implements HSTS policy by supplying #headers over an [[ProtocolHTTP]]s connection, which specifies that future requests to that domain must be made via HTTPS for the agreed period.
 
-```example
-Strict-Transport-Security: max-age=31536000.
-```
+> Strict-Transport-Security: max-age=31536000.
 
-when receiving such a header, a user agent  must do the following:
+when receiving such a header, a user agent #must do the following:
 
 1. Turn Insecure links that reference that domain into secure ones *before* accessing the server.
 2. If the secure connection can't be established for whatever reason, the connection must be terminated, without any user recourse.
 
-Problems:
+___
+There are #limitations and #problems to this policy.
 
-* Since it is [[time-limited]], it is sensitive to attacks involving time shifting the vicitim computer, such as using false [[NTP]] Packets.
+* Since it is #time related, it is sensitive to attacks involving time shifting the victim computer, such as using false [[NTP]] Packets.
 * Since the header must be supplied during the first visit, the victim is still vulnerable before then.
 
 ___
