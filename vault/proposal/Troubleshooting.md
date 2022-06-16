@@ -14,7 +14,7 @@ Sometimes a solution must be applied very quickly. Without enough time ( or disp
 
 # Root Cause Analysis
 
-A form of [[ExploitTrackingSteps#Question the Premises]]
+A form of [[TipTrackingSteps#Question the Premises]]
 
 ___
 

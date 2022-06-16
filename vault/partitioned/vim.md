@@ -107,3 +107,12 @@ nnoremap ,u :action Rerun<CR>
 nnoremap ,f :action RerunFailedTests<CR>
 
 ___
+
+
+Unquote a word that's enclosed in single quotes  
+`di'hPl2x`
+
+- `di'` - Delete the word enclosed by single quotes.
+- `hP` - Move the cursor left one place (on top of the opening quote) and put the just deleted text before the quote.
+- `l` - Move the cursor right one place (on top of the opening quote).
+- `2x` - Delete the two quotes.

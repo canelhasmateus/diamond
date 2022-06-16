@@ -6,7 +6,7 @@ We often are tempted to make them look as good as possible, out of professionali
 
 > Visuals are very helpful in conveying meaning and #context, as seen in [[DataViz]].  
 
-However, it is important to be #transparent when doing so: __The appearance of the presentation should reflect the level of polishness of the results__. Very often, what is shown is simply not feasible, and even when they are, these artifacts build [[PatternExpectations]], and you look silly when you aren't able to meet them.
+However, it is important to be #transparent when doing so: __The appearance of the presentation should reflect the level of polishing of the results__. Very often, what is shown is simply not feasible, and even when they are, these artifacts build [[EffectExpectations]], and you look silly when you aren't able to meet them.
 
 Managing these #expectations is good for both you and your peers. People unconsciously calibrate their criticism based on their impression of position in the development - even when repeatedly reminded that the design is just an early sketch.
 

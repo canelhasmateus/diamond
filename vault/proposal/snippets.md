@@ -2,7 +2,9 @@ ___
 
 Its possible to decompile scala to java in IJ, by right-clicking the .class generated.
 
- Simply add 'ext:nix' to google query and you should be good.
+___
+
+Simply add 'ext:nix' to google query and you should be good.
 
 ___
 
@@ -14,24 +16,11 @@ I have fear that the cathartic pessimism we sometimes enjoy ironically is turnin
 
 ___
 
-
 <https://raisedbyturtles.org/view-unlabeled-gmail#label-manager>
 
 -has:userlabels -in:sent -in:chat -in:draft -in:inbox
 
 ___
-
-Unquote a word that's enclosed in single quotes  
-`di'hPl2x`
-
-- `di'` - Delete the word enclosed by single quotes.
-- `hP` - Move the cursor left one place (on top of the opening quote) and put the just deleted text before the quote.
-- `l` - Move the cursor right one place (on top of the opening quote).
-- `2x` - Delete the two quotes.
-
-
-
-
 ___
 
 using Pkg;
@@ -54,19 +43,43 @@ generate("dixie" , template)
 
 ___
 
-
-"
 Transparency isn't a blanket for forgiveness.
-"
-
 
 
 ___
 
+Regressão em cima de uma função Z = ceil(x + y)
+This Should vê a diagonal staircase and a rotation Should help decision Forest.
 
-SSLKEYLOGFILE environment variable is a path of textfile we can acces.
-Software that implements tls with typically write keys and others tls secrets to this file. This applies to curl chrome firefox and other desktop apps that use opensll libs.
+___
 
-We can configure wireshark to read this file and decrypt the intercepted tls packets.
+ "A kernel is an operator on a hilbert space"
 
-<https://www.trickster.dev/post/decrypting-your-own-https-traffic-with-wireshark/>
+
+___
+
+<https://www.youtube.com/watch?v=uxykI30fS54>
+
+The Trugh about a city's aspirations isn't found on its vision, its found on its budget
+
+___
+
+<https://www.youtube.com/watch?v=qT3x9FqcR-U>
+
+cheemz mindset
+
+___
+
+    You're not   stuck in traffic, you're traffic.
+___
+
+Talk and Move Slower
+Talk Less
+Sharpen up Physically
+Don't always be available
+
+___
+
+<https://andersource.dev/2022/04/19/dk-autocorrelation.html>
+
+"For year i thought myself relatively immune to this. Of course, i'm not - All it tookk was the right trigger."

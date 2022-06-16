@@ -8,6 +8,8 @@ If we update a MutableHolder, we have created a situation where an older object 
 
 If an object that lives in the old generation is mutated, all the objects on the card that contain it must be scanned for old-to-young references at the next minor collection.
 
+___
+
 References:
 
 1. <https://stackoverflow.com/questions/35384393/how-do-immutable-objects-help-decrease-overhead-due-to-garbage-collection>

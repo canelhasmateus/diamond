@@ -1,4 +1,3 @@
-
 # Little's Law
 
     N = XR 

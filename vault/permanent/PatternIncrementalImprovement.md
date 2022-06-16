@@ -1,6 +1,6 @@
 # PatternIncrementalImprovement
 
-Can we start with a #baseline and improve from there?
+Can we start with a #baseline and #improve from there?
 
 There are some examples of such Behaviour, as is seen in the [[TracerBullets]] example of the [[BookPragmaticProgrammer]].
 

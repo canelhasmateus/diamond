@@ -1,7 +1,6 @@
 # ProblemFrames
 
-. [[problem 1020]] can also be implemented in a different manner, by constructing an [[adjacency matrix]] for each of the islands, and exponentiating it ( to simulate [[random walks]]) enough times to reach any border.
+Examples
 
-We can then, check how many squares have a 0 in the adjacency [[matrix]] entry that connects it to the borders.
-
-Is there any way to explore the structure of the adjacency matrix to make this better? [[expand.md]]
+* [[OnLeet1020]] can also be implemented differently, by constructing a [[AdjacencyMatrix]] for each of the islands, and exponentiating several times, simulating [[RandomWalks]].
+    By doing it enough times to reach any border, we can confidently state that any not-reached island is unreachable. Of course, this approach is not algorithmically efficient.
