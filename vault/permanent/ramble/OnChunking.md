@@ -18,6 +18,6 @@ It may be natural, after some time in the typing process, to start chunking word
 However, chunking it into `lett` and `ing` has a far better effect:
 Since `ing` is a very common suffix this second chunking is far more #generalizable.
 
-Parallels can be drawn to [[AllSoftwareSystem]] creation and [[SoftwareTesting]]. We start by creating small #implementations - that is, chunks - that #compose into bigger ones.
+Parallels can be drawn to #software creation and [[SoftwareTesting]]. We start by creating small #implementations - that is, chunks - that #compose into bigger ones.
 
 > The #process of chunking software implementations into testable, reproducible, and #reusable parts, is analogous to finding out the best character chunks for a keyboard layout.

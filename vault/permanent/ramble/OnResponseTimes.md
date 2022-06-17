@@ -1,4 +1,4 @@
-# ResponseTimes
+# OnResponseTimes
 
 There often is a disconnection between `Service time` and `Response Time`.
 

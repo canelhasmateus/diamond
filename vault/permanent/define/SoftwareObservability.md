@@ -5,7 +5,7 @@ The capability of gathering information about the inner workings of a [[AllSoftw
 * [[Logs]] are textual descriptions, written by the application, to indicate notable #events such as start, updates and completion of current operations, as well as the parameters and current #state of the program.
 
 * [[Metrics]] are numbers that describe the functionality of a system in regards to some common axes, such as #performance and #health.
-  * [[ResponseTimes]]
+  * [[OnResponseTimes]]
   * #Cpu Usage
   * [[Network]] Usage
   * Network #Throughput
