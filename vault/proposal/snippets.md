@@ -1,4 +1,3 @@
-___
 
 Its possible to decompile scala to java in IJ, by right-clicking the .class generated.
 
@@ -20,7 +19,6 @@ ___
 
 -has:userlabels -in:sent -in:chat -in:draft -in:inbox
 
-___
 ___
 
 using Pkg;
@@ -48,25 +46,11 @@ Transparency isn't a blanket for forgiveness.
 
 ___
 
-Regressão em cima de uma função Z = ceil(x + y)
-This Should vê a diagonal staircase and a rotation Should help decision Forest.
-
-___
-
- "A kernel is an operator on a hilbert space"
-
-
-___
-
 <https://www.youtube.com/watch?v=uxykI30fS54>
 
 The Trugh about a city's aspirations isn't found on its vision, its found on its budget
 
 ___
-
-<https://www.youtube.com/watch?v=qT3x9FqcR-U>
-
-cheemz mindset
 
 ___
 
@@ -83,3 +67,15 @@ ___
 <https://andersource.dev/2022/04/19/dk-autocorrelation.html>
 
 "For year i thought myself relatively immune to this. Of course, i'm not - All it tookk was the right trigger."
+
+
+
+___
+
+DNS
+    . Can point to ip:ports via SRV records
+
+
+___
+
+

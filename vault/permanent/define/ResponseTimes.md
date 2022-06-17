@@ -21,7 +21,7 @@ The chance of none of this being bad is 0.95^200 = 0.00035
 
 > The usual way of setting thresholds is just [[PatternWishfulThinking]].
 
-In this light, it makes more sense to [[ExploitSwapConstraints]] and set the necessary metric levels accordingly to the wanted customer experience:
+In this light, it makes more sense to tackle the [[PatternDuality]] problem, and set the necessary metric levels accordingly to the wanted customer experience:
 
 ```example
 If a typicial user session involves 5 page loads, averaging 40 resources per page, what http response percentile will be experienced by  95% of users? What about 99%? 

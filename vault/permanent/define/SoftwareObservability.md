@@ -15,7 +15,7 @@ The capability of gathering information about the inner workings of a [[AllSoftw
 
 > Metrics are an just a proxy of the software health. Don't forget about [[PatternMapsAndTerritories]]
 
-By the continuous and constant monitoring of such artifacts, we can gather #knowledge about the State and health of the software, which allows for [[PatternIncrementalImprovement]] and #interventions.
+By the continuous and constant monitoring of such artifacts, we can gather #knowledge about the State and health of the software, which allows for [[PatternIncrementality]] and #interventions.
 
 ```todo
 on these interventions: how? when? why? 
@@ -26,9 +26,9 @@ ___
 Common problems regarding #observability are:
 
 * __Instrumentation__ of applications
-  * how to ensure the correct #measurement of interesting values while avoiding #pitfalls such as [[EntryCoordinatedOmission]].
+  * how to ensure the correct #measurement of interesting values while avoiding #pitfalls such as [[CoordinatedOmission]].
 
-* [[Storage]]
+* [[CloudStorage]]
   * The __storage__ and update of these metrics can also be a problem. By their nature, logs and metrics are voluminous in size, incurring high #storage and network __#costs__.
 
 * As with any high-data system, we can also expect troubles in regards to efficient #__querying__ and [[InformationRetrieval]], required to build efficient plans of intervention.

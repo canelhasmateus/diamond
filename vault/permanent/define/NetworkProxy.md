@@ -55,7 +55,7 @@ ___
     Yes, this is called a [[ServiceMesh]].
     It is very common in [[SoftwareMicroservices]] architectures to build the #network features of the application in the proxy, instead of making the application worry about [[timeouts]] and [[CircuitsBreaking]].
 
-* Can I use a proxy instead of [[VPN]]s for anonymity?
+* Can I use a proxy instead of [[VirtualPrivateNetwork]]s for anonymity?
   
   Yes, but usually VPNs are more secure since they operate at a Lower Level ([[IPSec]])and can see only your #domain. Some proxies can see more than the domain if they do [[TLSTermination]]
   
