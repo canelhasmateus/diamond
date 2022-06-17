@@ -133,3 +133,10 @@ ___
 
 
 a securtity group cannot filter requests based on url and you cannot specify deny ruls. Security groups are used only for IP's and Not for static DNS names.
+
+
+
+* [[System Manager Parameter Store]]
+  * When we have lots of passwords
+  * Completely Managed
+  * Use it alongside [[KMS]]

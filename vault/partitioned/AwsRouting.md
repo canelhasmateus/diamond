@@ -125,3 +125,34 @@ Route 53 Health Checks
  Examples
 
   Use health checks along with the failover routing policy
+
+
+___
+
+In [[AWS]]
+   Create Record in Route53 using Weighted Routing Policy
+
+about canary and blue green deployments
+
+ <https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/comparison-of-blue-green-deployment-techniques.html>
+ <https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/clone-a-stack-in-aws-opsworks-and-update-dns.html>
+ <https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/when-bluegreen-deployments-are-not-recommended.html>
+
+
+___
+
+Elastic Beanstalk
+
+  Suppose : Load Balancer + several ec2 instances
+
+ AWS Lambda
+
+  Within lambda, a new version of the function is created
+  The system then automatically routes traffic slowly to the new application version
+  The configuration can be done using AWSCodeDeploy and AWS SAM
+
+ CloudFormation
+  You can use AutoScalingRollingUpdate Policy to define how rolling updates are handled when aws cludformation is used to deploy an autoscaling group
+  Here instruct wheter the updates need to be done in batches or all at once.
+
+___
