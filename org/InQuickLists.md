@@ -1,3 +1,15 @@
+IntelliDives
+
+* Intentions -> Grok into where / how intentions are made.
+* Language Injections -> Grok
+* Run Targets
+* Startup Tasks
+* TextMate Bundles
+* What is Code Cleanup?
+
+___
+
+
 to do / discover / learn:
     
 

@@ -1,3 +1,13 @@
+<https://erikbern.com/2015/06/05/the-hardest-challenge-about-becoming-a-manager.html>
+I think what happens in your brain is you create all these proxies for accomplishments that take years to retrain. I would be incredibly costly if every action was judged in terms of its benefits amortized over your entire life time. Instead, we humans have an ability to invent pretty arbitrary proxies, such as getting high scores on exams, or in my case, write shitloads of code.
+
+Proxies are great because they let you make decisions much quicker.
+
+After a few years of doing something very consciously (programming is good because I can build this cool game and show it to my friends) you build up this great rewards system (kind of like Pavlov's dogs?) that makes you feel good about it in itself (programming is cool because I feel good when I do it).
+
+The problem is when your ultimate goal changes and your old proxies are still in effect.
+
+____
 <https://joeblu.com/blog/2022_05_okrs/>
 
  think a lot of people's introduction to OKRs is John Doerr's book "Measure What Matters". That's where I learned about them.
@@ -28,7 +38,5 @@ If they are trying to have engineering take full ownership of a shared OKR, that
 > We were to going to increase our release cadence 10x. We were also going to reduce production issues by 100%. That's right, our objective was 0 production issues whilst massively increasing our release cadence with 0 extra resources.
 
 As a tangential point, increasing release cadence can definitely decrease your long-term rate of issues (see "Continuous Delivery" by Humble[1]) -- this forces you to automate manual processes, and manual processes are one of the main places that errors creep in. Though I think "count of issues" is a very poor metric, you're better off with an uptime metric. And "100%" is the only strictly-incorrect number to pick for uptime, because it is literally impossible; my (super-unscientific, don't hold me to this) rule of thumb for business people is "every extra 9 costs you 10x". So do you need 99.9% uptime or 99.99%?
-
-___
 
 ___

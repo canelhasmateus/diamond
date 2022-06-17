@@ -1,3 +1,11 @@
+Windows
+
+* windows default firewall rules and understand them.
+* why am i asking so much for 192.168.15.2?
+
+___
+
+
 AllJoynRouter?
 App Installer?
 CAptive Portal Flow
