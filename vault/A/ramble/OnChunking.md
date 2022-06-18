@@ -1,15 +1,13 @@
 # Chunking
 
-tWhen [[Learning]] to type in a new keyboard #layout configuration,
+When [[Learning]] to type in a new keyboard #layout configuration,
 
 1. Start by pecking a single key
 2. Slowly expand to type more advanced sequences, such as common [[WordBigrams]],
 3. Then, entire syllables
 4. Finally, Entire words and phrases.
 
-```todo
-Are there any parallels to [[prefix trees]] and [[monte-carlo search]]? [[todo]]
-```
+> #todo Are there any parallels to [[prefix trees]] and [[monte-carlo search]]?
 
 establishing the #boundaries in which to chunk is a very important and hard #process. Almost an #art.
 

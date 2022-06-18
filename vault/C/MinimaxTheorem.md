@@ -8,6 +8,5 @@ When Both players play a minimax strategy, the expected utility for player 1 is 
 
 * It is a unique number
 
-```todo
-    . So what? [[expand]]
-```
+> #todo
+    . So what?

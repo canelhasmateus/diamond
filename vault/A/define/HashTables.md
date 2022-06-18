@@ -20,6 +20,4 @@ There are many limitations when using hash tables:
   * When adding or removing values, we may need to increase the underlying storage size. This triggers an expensive [[ReHashing]] process that remaps the indexes.
   * In settings such as [[SystemsDistributed]] applications, rehashes can be difficult to work with. This challenge can be alleviated by [[ConsistentHashing]] schemes such as [[HashRings]], as implemented by [[RingPop]].
 
-```todo
-. About the seriazibility: WHy? How? [[ expand ]]
-```
+> #todo About the seriazibility: WHy? How?

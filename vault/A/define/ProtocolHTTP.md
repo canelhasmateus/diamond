@@ -8,11 +8,12 @@ To implement the stateless protocol, the original creators of the HTTP protocol 
 
 > This was necessary for #abstraction: the underlying transport protocol doesn't necessarily support multiple requests at the same time.
 
-```todo
+___
+> #todo
 This Was  also done to save [[memory]], since long running [[ProtocolTCP]] connections take up memory
      Is this true?
     .. only long running? why? [[expand]]
-```
+___
 
 > This is #inefficient: the usual transport used - [[ProtocolTCP]] - offers big amounts of #bandwidth, which ends up #underutilized.
 
@@ -33,12 +34,12 @@ ___
 First, it is #secure by default, and enables protocol negotiation during the [[ProtocolTLS]], utilizing [[ALPN]].
 
 > This means that the upgrade to http2 happens during the [[TLSNegotiation]], which saves a round trip.
-
-```todo
+___
+> #todo
 How, why? [[expand]]
 What is [[Hpack]]? [[ expand]]
 we tried to solve the streams with "[[pipeling]]", but what the hell is that?[[expand]]
-```
+___
 
 It also supports Binary [[compression]] for #headers, decreasing the necessary bandwidth.
 
@@ -49,14 +50,14 @@ This allows multiple requests to be done using the same TCP connection, bypassin
 This decreases #latency since the usual #overheads of establishing TCP connections, such as [[ThreeWayHandshake]] and [[TLSNegotiation]] are not necessary to be done multiple times.
 
 This is achieved by adding #headers to each #Ethernet frame, which contains a  [[StreamNumber]], alongside additional data. By interleaving different stream frames, this number enables the sending of #data in either direction, better utilizing the TCP bandwidth.
-
-```todo
+___
+> #todo
 why compression was not possible before? [[expand]]
 
 Does this mean that http2 is not stateless anymore? [[expand]]
 
 Where is this data added? How? At which [[OSI Model]] layer level? does it hurt or change compatiblity in any way? [[expand]]
-```
+___
 
 One of the pieces of data that are added is a so-called [[StreamWeight]], and [[ParentStream]].
 
@@ -67,9 +68,10 @@ Of course, this requires more #cpu, since we need to #sort these packets into th
 
 Http2 doesn't solve everything. For example, it still suffers from [[HeadOfLineBlocking]], this time at the TCP level.
 
-```todo
+___
+> #todo
 Google http 2 cpu and http 1 slow start?  [[expand]]
-```
+___
 
 [[ServerPush]] is also a #feature of http2.
 

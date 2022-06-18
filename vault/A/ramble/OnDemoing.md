@@ -24,9 +24,9 @@ References:
 
 3. <https://anvil.works/blog/xkcd-style-apps>
 
-```todo
-    Is it possible to make web UI's look crude, with the napkin  look and feel?
-    https://9elements.github.io/fancy-border-radius/
-    https://border-image.com/
-    http://thenewcode.com/438/CSS-Border-Image-Explained
-```
+> #todo
+
+Is it possible to make web UI's look crude, with the napkin  look and feel?
+https://9elements.github.io/fancy-border-radius/
+https://border-image.com/
+http://thenewcode.com/438/CSS-Border-Image-Explained

@@ -12,14 +12,10 @@ I find it effective to supplement this with ways to learn more passively:
 * [[RSS]] feeds
 * Reading Lists
 
-```todo
+> #todo
 Establishing #relationships is a very good way to remember , [[associate and expand]] ( [[analogies]], for example )
 
-```
-
-
 ___
-
 
 Learning to learn
 
@@ -33,7 +29,6 @@ Brain Modes of Operation ( pinball analogy )
 
 Salvador Dali and Edson techniques for accessing diffused mode:
     . holding a metal can and sitting down , letting the mind go. When he fell asleep, the can would drop, producing sound and immediately waking him up.
-
 
 ___
 

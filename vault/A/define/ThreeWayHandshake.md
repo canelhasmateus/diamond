@@ -21,6 +21,4 @@ It also has a length.
 
 An Ack response contains the sum of the sequence number and the length of the acknowledged packet.
 
-```todo
-create sequence diagram
-```
+> #todo create sequence diagram

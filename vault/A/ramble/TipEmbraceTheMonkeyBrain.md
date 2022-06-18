@@ -18,8 +18,9 @@ By #embracing the monkey brain, we practice [[PsychologicalSympathy]] towards ou
 
 ___
 
-```todo
-. Can this be linked to <https://www.youtube.com/watch?v=jiIhOgpOWcA> | HealthyGamerGG Dopaministic Activities? [[ expand ]]
+> #todo
+
+Can this be linked to <https://www.youtube.com/watch?v=jiIhOgpOWcA> | HealthyGamerGG Dopaministic Activities? [[ expand ]]
 
 
 What kinds of activities are there? [[expand]]
@@ -29,4 +30,3 @@ What kinds of activities are there? [[expand]]
             Multi-Taskable | Requires sole atention;
             ...
 
-```

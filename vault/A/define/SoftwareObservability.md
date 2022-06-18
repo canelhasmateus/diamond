@@ -17,9 +17,7 @@ The capability of gathering information about the inner workings of a [[Software
 
 By the continuous and constant monitoring of such artifacts, we can gather #knowledge about the State and health of the software, which allows for [[PatternIncrementality]] and #interventions.
 
-```todo
-on these interventions: how? when? why? 
-```
+> #todo on these interventions: how? when? why?
 
 ___
 

@@ -65,14 +65,14 @@ ___
   
   Yes, there are multiple types of proxy, like [[SocksProxy]], used for [[Tunneling]].
 
-```todo
-> [[:research:]]
+___
+
+> #todo
 
 * How does a reverse proxy react to an SYN?
 
   * Does it merely forwards the request?
   * Does the RP itself reply while establishing a TCP between itself and the backend in the background?
-```
 
 ___
 

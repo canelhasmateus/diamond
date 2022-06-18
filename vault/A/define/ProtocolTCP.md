@@ -26,9 +26,9 @@ Each received packet has to be acknowledged by the server. If this doesn't happe
 
 Since each packet already has a monotonically increasing identifier, we can use it to provide proper re-ordering of packets.
 
-```todo
+> #todo
+
 What about other interferences, such as bit flipping? How are these kind of errors handled by the transmission mechanism?
-```
 
 ___
 

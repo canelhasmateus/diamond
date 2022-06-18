@@ -28,12 +28,11 @@ The [[ThreeWayHandshake]] is the mechanism used to establish a #stateful #connec
 * [[DiffieHelman]]
 * Encrypting a randomly generated number with the public key sent by the server, which will be able to be decrypted only with its [[PrivateKey]].
 
-```todo
+> #todo
 
 How does a client confirm the validity of server-sent information?? [[ expand ]]
 
 create a sequence diagram for tls.
-```
 
 ___
 
