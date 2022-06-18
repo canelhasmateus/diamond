@@ -1,6 +1,6 @@
 # SoftwareObservability
 
-The capability of gathering information about the inner workings of a [[AllSoftwareSystem]], usually in the form of logs and metrics.
+The capability of gathering information about the inner workings of a [[SoftwareSystem]], usually in the form of logs and metrics.
 
 * [[Logs]] are textual descriptions, written by the application, to indicate notable #events such as start, updates and completion of current operations, as well as the parameters and current #state of the program.
 

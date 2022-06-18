@@ -1,4 +1,4 @@
-# AllProblemSolving
+# ProblemSolving
 
 Various patterns can be applied to solve problems.
 

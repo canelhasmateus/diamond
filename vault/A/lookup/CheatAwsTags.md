@@ -1,5 +1,7 @@
 # TemplateAwsTags
 
+While using [[AWS]], Tags can be used in a variety of ways:
+
 * Technical Tags:
   * Name
   * Application Id

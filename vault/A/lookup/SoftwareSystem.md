@@ -1,4 +1,4 @@
-# EntrySoftwareSystem
+# SoftwareSystem
 
 ## Software Architecture
 

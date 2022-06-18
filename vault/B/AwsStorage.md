@@ -51,9 +51,7 @@ ___
 
 On Performance
 
-Basic [[RAID]] Configurations can be setup for EBS.
+Basic [[RAID]] Configurations can be set up for EBS.
 
-* RAID 0: For when performance is more desirable than fault tolerance. Ideal for the ec2 instances are hosting databases
-* RAID 1: When Fault tolerance is a more desirable property. Since data is written to multiple volumes at a time, more bandwidth is required between Ec2 and ebs.
-
-___
+* #RAID0: For when performance is more desirable than fault tolerance. Ideal for the ec2 instances are hosting databases
+* #RAID1: When Fault tolerance is a more desirable property. Since data is written to multiple volumes at a time, more bandwidth is required between Ec2 and ebs.

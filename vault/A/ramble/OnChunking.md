@@ -1,6 +1,6 @@
 # Chunking
 
-When learning to type in a new keyboard #layout configuration,
+tWhen [[Learning]] to type in a new keyboard #layout configuration,
 
 1. Start by pecking a single key
 2. Slowly expand to type more advanced sequences, such as common [[WordBigrams]],
