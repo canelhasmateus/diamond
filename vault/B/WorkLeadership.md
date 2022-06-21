@@ -18,4 +18,7 @@ Invent and simplify
 * Humble enough to accept their own limitations and adopt solutions from others.
 
 
+
+> The minimum amount of authority required. 
+
 decisionMaking pendulum

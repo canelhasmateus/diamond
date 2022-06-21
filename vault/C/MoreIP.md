@@ -106,3 +106,28 @@ Private Addressing
             ISPs customer A needs only 10 ip addresses and Customer B needs 25 ip addresses
                 . Assign Customer A CIDR block 198.8.3.16/28 - This has 14 assignable addresses , 198.8.3.17 to 198.3.30
                 . Assign customer B CIDR block 198.3.32/27 - This has 30 assignable addresses, 198.8.33 to 198.8.3.62
+
+
+    Ip Address:
+        Needed for every device that wants to communicate in an network.
+
+        IPV4 / IPV6 : Mostly PCs vs Mostly Mobiles
+            . IPV4  have very few addresses. Which is why private ip addresses were created. 
+            They occur at the 10.0.0/8 ;  140~172.0.0.0/16; 192.168.0.0/16 
+                > Not Routable. Can use internally but not externally
+        We used to have a idea of these Class address.
+            A: Each subnet would handle 16M.
+            B: 65k hosts
+            C: 253 hosts
+            D: Multicast reserved
+IPV4: 32bit.
+IPV6: 128bit  ->
+
+Subnetting:
+    Breaking down networks into smaller ones or group smaller network
+    CIDR
+What if we wanted  to create greater subnets (aggregating small ones) ?
+    This is called supernetting
+    Can be used to do network summarization
+        Good to create smaller routes
+
