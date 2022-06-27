@@ -5,3 +5,12 @@ I'm grumbling about my choice of buckets, but in the end, its not the bucket men
 
 What bugs me is that software with poorly chosen buckets also tends to be software that - either by intent or carelessness - provides no way whatsoever for its creators to find out if they've got the buckets wrong.
 "
+
+
+
+
+____
+
+todo: add sapolksy take ion buckets
+
+<https://www.youtube.com/watch?v=NNnIGh9g6fA>

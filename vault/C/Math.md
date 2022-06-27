@@ -50,7 +50,7 @@ ___
 ___
 
 Langlands
-    
+
     Number Theory -Functoriality> Harmonic Analysis
     Elliptic Curves
 
@@ -63,3 +63,13 @@ Langlands
 
     Algebraic Geometry
     Representation Theory
+
+___
+
+    <https://www.youtube.com/watch?v=nnx825ezoI8>
+
+visible points in an integer lattice
+
+numbers m, n are coprime if gcd( m , n ) == 1
+
+euler product -> Zetta( 2 )
