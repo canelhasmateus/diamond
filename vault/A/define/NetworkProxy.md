@@ -33,7 +33,7 @@ Also known as #stream or #byte proxies. They're usually less #flexible but #fast
 Being restricted to use only [[ModelOSI]] Layer 4 #information, the proxy has only two pieces of data to work with:
 
 * [[IpAddress]]
-* [[Port]] Number
+* [[IpPort]] Number
 
 This can happen by #design, or because the application layer content is #encrypted due to mechanisms such as [[ProtocolTLS]].
 
@@ -41,29 +41,29 @@ A Layer 4 proxy will look at TLS requests and transparently forward them. Of cou
 
 There exist several software tools that implement proxying functionality.
 
-* [[HAProxy]]
-* [[Envoy]]
-* [[Nginx]]
-* [[Istio]]
-* [[Linkerd]]
-* [[Caddy]]
+* [[ToolHAProxy]]
+* [[ToolEnvoy]]
+* [[ToolNgix]]
+* [[ToolIstio]]
+* [[ToolLinkerd]]
+* [[ToolCaddy]]
 
 ___
 
 * Can a proxy and a [[ReverseProxy]] be used at the same time?
 
     Yes, this is called a [[ServiceMesh]].
-    It is very common in [[SoftwareMicroservices]] architectures to build the #network features of the application in the proxy, instead of making the application worry about [[timeouts]] and [[CircuitsBreaking]].
+    It is very common in [[SoftwareMicroservices]] architectures to build the #network features of the application in the proxy, instead of making the application worry about [[NetworkTimeout]] and [[CircuitBreakers]].
 
 * Can I use a proxy instead of [[VirtualPrivateNetwork]]s for anonymity?
   
-  Yes, but usually VPNs are more secure since they operate at a Lower Level ([[IPSec]])and can see only your #domain. Some proxies can see more than the domain if they do [[TLSTermination]]
+  Yes, but usually VPNs are more secure since they operate at a Lower Level ([[ProtocolIPSec]])and can see only your #domain. Some proxies can see more than the domain if they do [[TLSTermination]]
   
   > To verify, go to the #browser padlock and see that the content is being served by the final destination, not the proxy.
   
 * Can I proxy traffic other than [[ProtocolHTTP]]?
   
-  Yes, there are multiple types of proxy, like [[SocksProxy]], used for [[Tunneling]].
+  Yes, there are multiple types of proxy, like [[SocksProxy]], used for [[NetworkTunneling]].
 
 ___
 

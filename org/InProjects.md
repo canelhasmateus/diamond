@@ -37,3 +37,9 @@ Workflow
   <http://www.oblita.com/interception>
   <https://github.com/idleberg/Paraiso.tmTheme>
   faster way to develop (remote? inside docker? hot reload)
+
+* <https://plugins.jetbrains.com/docs/intellij/github-template.html>
+
+* <https://www.jetbrains.com/help/idea/creating-custom-inspections.html>
+
+* <https://stackoverflow.com/questions/17357175/how-to-deploy-war-file-to-jboss-as-7-server-using-maven>

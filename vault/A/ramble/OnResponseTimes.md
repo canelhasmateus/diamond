@@ -31,7 +31,7 @@ The answer is: 99.97 and 99.995
 
 Also of note: Latency does not live in #isolation, we need to look at it in the #context of #load.
 
-When comparing systems using #tools such as [[LoadCharts]], looking at how systems behave when pushed past the [[SaturationPoint]] is useless: you have already crashed your car.
+When comparing systems using #tools such as [[VizLoadCharts]], looking at how systems behave when pushed past the [[SaturationPoint]] is useless: you have already crashed your car.
 
 > This can be seen as the [[PatternImplicitAssumption]] that your normal operation load is past the point of saturation ( 100% load ). This is very often not the case.
 

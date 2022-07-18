@@ -30,26 +30,26 @@ The browser is a confused deputy.
 
 ___
 
-# [[Syn Attack]]
+# [[AttackSyn]]
 
-# [[Replay Attack]]
+# [[AttackReplay]]
 
-# [[DDOS]]
+# [[AttackDDoS]]
 
-# [[Connection Hijacking]]
+# [[AttackConnectionHijacking]]
 
-# [[TCP Veto]]
+# [[AttackTCPVeto]]
 
-# [[Reset Attack]]
+# [[AttackReset]]
 
 Securing against attacks
  
-[[MitM]]
+[[AttackMitM]]
 
-* Configure DNSSec in [[Route53]]
-* Use [[SSL]] certificates in application load balancer
+* Configure DNSSec in [[AwsRoute53]]
+* Use [[ProtocolSSL]] certificates in application load balancer
    
-[[DDOS]]
+[[AttackDDoS]]
 
 * Enable AWS Shield Advanced: It provides a AWS DDoS Response Team, as well as a Global Threat Environment of the attacks
 * Use Larger Instances and swallow the requests. Use 25 gb network interfaces and enhanced networking.
@@ -57,3 +57,11 @@ Securing against attacks
 * Use CloudFront to distribute content, accepting only  well formed connections and using Edge locations to reduce load
 
 * Use the Web Application Firewall: Integrates with CloudFront and Load Balancers.
+
+
+___
+
+
+ALG Application layer gateway
+nat slipstreaming
+arp spoofing attack

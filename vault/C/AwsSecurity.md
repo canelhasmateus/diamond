@@ -120,12 +120,12 @@ ____
 
 On Security
 
-EC2 offers different mechanisms to secure instances. [[Firewall]]s can be used, either using [[WAF]]  or the marketplace. The same can be said about [[ IDS]] and [[IPS]] systems (?? What is ids service offered by amazon?).  [[DDOS]] protection is also a common concern, which can be mitigated by [[AWS Shield]] and marketplace offerings.
+EC2 offers different mechanisms to secure instances. [[Firewall]]s can be used, either using [[AwsWaf]]  or the marketplace. The same can be said about [[IDS]] and [[IPS]] systems (?? What is ids service offered by amazon?).  [[AttackDDoS]] protection is also a common concern, which can be mitigated by [[AWSShield]] and marketplace offerings.
 
-As far as traffic goes, these can be configured by means of [[Access Control Lists]] in the routers. EC2 also support host based "firewalls", named [[Security Groups]].
+As far as traffic goes, these can be configured by means of [[AccessControlLists]] in the routers. EC2 also support host based "firewalls", named [[AwsSecurityGroup]]s.
 Security Groups are stateful, which means that they somehow keep tabs about the traffic on their boundaries. A consequence of this is that they automatically allow traffic of responses from outgoing requests - there is no need to apply the security rule in both outgoing and incoming directions.
 
-There are many ways of provisioning and managing these machines. These include [[ CloudFormation]] , the EC2 [[ Console ]], host-based [[SSH]] and [[RDP]], and the [[SDK API]].
+There are many ways of provisioning and managing these machines. These include [[AWSCloudFormation]] , the EC2 [[Console]], host-based [[ProtocolSSH]] and [[ProtocolRDP]], and the SDK API.
 
 
 
@@ -136,7 +136,7 @@ a securtity group cannot filter requests based on url and you cannot specify den
 
 
 
-* [[System Manager Parameter Store]]
+* [[AwsParameterStore]]
   * When we have lots of passwords
   * Completely Managed
-  * Use it alongside [[KMS]]
+  * Use it alongside [[AwsKms]]

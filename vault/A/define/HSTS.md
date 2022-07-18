@@ -2,9 +2,9 @@
 
 The HTTP Strict Transport [[security]] is a #policy mechanism that helps protect against [[SoftwareAttacks]], such as
 
-* [[MITM]]
-* [[ProtocolDowngrade]]
-* [[CookieHijacking]].
+* [[AttackMitM]]
+* [[AttackProtocolDowngrade]]
+* [[AttackCookieHijacking]].
 
 It allows web #servers, #browsers and other complying user agents to automatically interact with some #domains in a secure-only manner.
 
@@ -20,7 +20,7 @@ when receiving such a header, a user agent #must do the following:
 ___
 There are #limitations and #problems to this policy.
 
-* Since it is #time related, it is sensitive to attacks involving time shifting the victim computer, such as using false [[NTP]] Packets.
+* Since it is #time related, it is sensitive to attacks involving time shifting the victim computer, such as using false [[ProtocolNTP]] Packets.
 * Since the header must be supplied during the first visit, the victim is still vulnerable before then.
 
 ___

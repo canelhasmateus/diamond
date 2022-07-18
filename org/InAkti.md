@@ -8,3 +8,10 @@
   * Premium
   * Good
   * Explore / Partial
+
+
+Now that we have the processing going on "end-to-end", what is it that i need?
+* Remove __all__ errors
+* Need to , somehow , keep track of what was already tried, what errored, and why.
+* Graph index it. Possibly link it to my limni notes. I want a graph visualization that links sites, themes, words and notes.
+* 

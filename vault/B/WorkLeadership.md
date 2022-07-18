@@ -17,8 +17,6 @@ Invent and simplify
 * push the boundaries of what can be created
 * Humble enough to accept their own limitations and adopt solutions from others.
 
-
-
-> The minimum amount of authority required. 
+> The minimum amount of authority required.
 
 decisionMaking pendulum

@@ -3,7 +3,7 @@ Dynamo DB
 Fully managed NoSql database service
 Fast Access , SSD, automatically replicated across AZ ( redundant, HA )
 
-[[NoSQL]] database
+[[DatabaseNoSql]] database
 
 Uses:
 

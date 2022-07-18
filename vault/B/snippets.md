@@ -1,3 +1,19 @@
+Though I think "count of issues" is a very poor metric, you're better off with an uptime metric. And "100%" is the only strictly-incorrect number to pick for uptime, because it is literally impossible
+
+my (super-unscientific, don't hold me to this) rule of thumb for business people is "every extra 9 costs you 10x". So do you need 99.9% uptime or 99.99%?
+
+<https://joeblu.com/blog/2022_05_okrs/>
+
+___
+
+<http://trevorjim.com/attack-is-on-defense/>
+
+However, novelty is not the same as an advance in knowledge, and making novelty a requirement for publication actually harms the advance of knowledge.
+
+___
+If self delusion is our biggest sin, learned helplessness is probably number two.
+
+___
 
 Its possible to decompile scala to java in IJ, by right-clicking the .class generated.
 

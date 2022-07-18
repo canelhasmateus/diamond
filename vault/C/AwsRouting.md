@@ -129,7 +129,7 @@ Route 53 Health Checks
 
 ___
 
-In [[AWS]]
+In [[IndexAws]]
    Create Record in Route53 using Weighted Routing Policy
 
 about canary and blue green deployments

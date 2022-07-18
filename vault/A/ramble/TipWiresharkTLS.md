@@ -2,9 +2,9 @@
 
 The `SSLKEYLOGFILE` #EnvironmentVariable is commonly used by #software that implements [[ProtocolTLS]]. They typically write keys and other TLS #secrets to this file.
 
-This applies to [[Curl]], [[Chrome]], [[Firefox]] and other desktop apps that use [[OpenSSL]] libs.
+This applies to [[Curl]], [[Chrome]], [[Firefox]] and other desktop apps that use [[ToolOpenSSL]] libs.
 
-We can configure [[Wireshark]] to read this file and #decrypt the intercepted TLS packets.
+We can configure [[ToolWireshark]] to read this file and #decrypt the intercepted TLS packets.
 
 ___
 

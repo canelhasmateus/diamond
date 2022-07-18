@@ -4,42 +4,35 @@ HTTP is a #stateless #protocol - that is - it does not store anything anywhere.
 
 ## Http1
 
-To implement the stateless protocol, the original creators of the HTTP protocol implemented the [[OneOutstandingRequest]] rule. It establishes that only one #request must be in flight for each underlying transport #connection.
+Http 1 started with a simple premise: a new TCP connection must be established for each request-reponse cycle.
 
-> This was necessary for #abstraction: the underlying transport protocol doesn't necessarily support multiple requests at the same time.
+This proved to be an mistake, and the 1.1 version came right after.
 
-___
-> #todo
-This Was  also done to save [[memory]], since long running [[ProtocolTCP]] connections take up memory
-     Is this true?
-    .. only long running? why? [[expand]]
-___
+> This is inefficient: the usual transport used - [[ProtocolTCP]] - offers big amounts of #bandwidth, which ends up underutilized.
 
-> This is #inefficient: the usual transport used - [[ProtocolTCP]] - offers big amounts of #bandwidth, which ends up #underutilized.
+> The [[HeadOfLineBlocking]], alongside the 6 maximum per-host connections, resulted in a form of [[PhenomenaCooperativeThrottling]]
+
+## Http1.1
+
+In this version, we keep persistent TCP connections, but implement the [[OneOutstandingRequest]] rule: It establishes that only one #request must be in flight for each underlying transport #connection.
+
+> This was necessary for abstraction: the underlying transport protocol doesn't necessarily support multiple requests at the same time.
+
+>> #todo
+     This Was  also done to save [[memory]], since long running [[ProtocolTCP]] connections take up memory.
+     Is this true? only long running? why? [[MetaExpand]]
 
 [[Browsers]] try to work around this OneOutstandingRequest rule, by creating an [[ResourcePooling]] of usually 6 to 10 TCP connections.
 
 This allows some degree of #concurrency, speeding up the loading of pages. However, any more additional requests must be #queued at the client-side, leading to the classical waterfall look at [[DevTools]] network tab.
 
-> The [[HeadOfLineBlocking]], alongside the 6 maximum per-host connections, resulted in a form of [[PatternCooperativeThrottling]]
-
-[[Http 1.1]]
-
-Http 1.1 came soon after the first implementation. This was necessary to maintain #persistent TCP connections: otherwise, a new connection is needed for each request-response cycle
-
 ___
 
-[[Http 2]] offers various improvements over the previous generations.
+## Http2
 
-First, it is #secure by default, and enables protocol negotiation during the [[ProtocolTLS]], utilizing [[ALPN]].
+It is #secure by default, and enables protocol negotiation during the [[ProtocolTLS]], utilizing [[ALPN]].
 
 > This means that the upgrade to http2 happens during the [[TLSNegotiation]], which saves a round trip.
-___
-> #todo
-How, why? [[expand]]
-What is [[Hpack]]? [[ expand]]
-we tried to solve the streams with "[[pipeling]]", but what the hell is that?[[expand]]
-___
 
 It also supports Binary [[compression]] for #headers, decreasing the necessary bandwidth.
 
@@ -50,14 +43,11 @@ This allows multiple requests to be done using the same TCP connection, bypassin
 This decreases #latency since the usual #overheads of establishing TCP connections, such as [[ThreeWayHandshake]] and [[TLSNegotiation]] are not necessary to be done multiple times.
 
 This is achieved by adding #headers to each #Ethernet frame, which contains a  [[StreamNumber]], alongside additional data. By interleaving different stream frames, this number enables the sending of #data in either direction, better utilizing the TCP bandwidth.
-___
-> #todo
-why compression was not possible before? [[expand]]
 
-Does this mean that http2 is not stateless anymore? [[expand]]
-
-Where is this data added? How? At which [[OSI Model]] layer level? does it hurt or change compatiblity in any way? [[expand]]
-___
+>> #todo
+    why compression was not possible before? 
+    Does this mean that http2 is not stateless anymore? 
+    Where is this data added? How? At which [[ModelOSI]] layer level? does it hurt or change compatiblity in any way? [[MetaExpand]]
 
 One of the pieces of data that are added is a so-called [[StreamWeight]], and [[ParentStream]].
 
@@ -70,22 +60,10 @@ Http2 doesn't solve everything. For example, it still suffers from [[HeadOfLineB
 
 ___
 > #todo
-Google http 2 cpu and http 1 slow start?  [[expand]]
-___
+    Google http 2 cpu and http 1 slow start?  [[MetaExpand]]
+    What is [[ProtocolHpack]]? [[MetaExpand]]
 
-[[ServerPush]] is also a #feature of http2.
-
-It enables the server to send yet-unrequested information, that is usually fetched together.
-
-* Server push can be abused when configured incorrectly, as it needs a server-push-aware client.
-
-```example
-The server can send both index.html, main.js and global.css when requested for index.html.
-```
-
-___
-
-## [[Http 3]]
+## Http3
 
 [[HeadOfLineBlocking]] is a fundamental #limitation of the TCP Protocol.
 
@@ -100,9 +78,43 @@ This means that it has serious #performance issues when compared with in-kernel 
 It does not implement any form of [[NetworkFairness]] and [[CongestionControl]]. As such, it can easily throttle down competing TCP sessions.
 
 ___
+## ServerPush
+
+[[ServerPush]] is also a #feature of http2.
+
+It enables the server to send yet-unrequested information, that is usually fetched together.
+
+* Server push can be abused when configured incorrectly, as it needs a server-push-aware client.
+
+```example
+The server can send both index.html, main.js and global.css when requested for index.html.
+```
+
+## Server-Sent Events
+
+Offers a uni-directional stream of data, from the server to the client. To create:
+
+1. client sends : HTTP Get { Content-Type = text/event-stream }
+2. server returns : { Content-Type = event-stream ; Transfer-encoding = chunked }
+
+Use Cases:
+
+* Live feeds
+* Showing client progress
+* Logging
+
+## Websockets
+
+Offer full duplex channels. To create one:
+
+1. client sends an HTTP Get 1.1 --upgrade
+2. Server return returns with 101 such as switching protocol.
+
+___
 
 References
 
 1. <https://www.youtube.com/shorts/Fbmru6iSee8>
 2. <https://www.youtube.com/watch?v=6cncmSaRqzQ>
-3. <https://www.youtube.com/watch?v=6cncmSaRqzQ>
+3. <https://www.youtube.com/watch?v=FUL_Buud7jY>
+4. <https://www.youtube.com/watch?v=4HlNv1qpZFY>

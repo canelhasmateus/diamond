@@ -6,10 +6,10 @@ An idea brought from electrical engineering, where [[CircuitBreakers]] are used 
 
 It prevents meltdown by simply stopping everything just before hitting [[CriticalConditions]].
 
-Implemented by tools such as [[Hystrix]], [[istio]], [[conduit]], [[linkerd]] , [[consul]].
+Implemented by tools such as [[ToolHystrix]], [[ToolIstio]], [[ToolConduit]], [[ToolLinkerd]] , [[ToolConsul]].
 
 ___
 
 ## Backpressure
 
-[[ Backpressure ]]
+[[Backpressure]]

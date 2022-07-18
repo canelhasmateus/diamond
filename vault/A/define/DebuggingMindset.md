@@ -2,7 +2,7 @@
 
 A huge amount of time is spent #validating and #debugging #software.
 
-Many #teams hyperfocus on the elimination of bugs during development. That mentality is counterproductive and programmers should embrace debugging as an exercise in [[ProblemSolving]]
+Many #teams hyperfocus on the elimination of bugs during development. That mentality is counterproductive and programmers should embrace debugging as an exercise in [[IndexProblemSolving]]
 
 `Bugs occur as a result of chains of cognitive breakdown formed over the course of programming activity`
 

@@ -9,3 +9,9 @@ Priorization is a big deal. As ur apps gets bigger and more complex we need mech
 Avoid Locking the main thread - this is something that csr does;
 SSR however, creates an uncanny valley of pixels that aren't really interactive
 progressive boot would be the best approach, but its not the easiest to use inside frameworks
+
+
+___
+
+References
+1. [[Performance]]

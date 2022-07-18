@@ -1,6 +1,6 @@
 # ElasticBlockStorage
 
-EBS is an #implementation of [[BlockStorage]], that is - it takes your data and breaks it down into #blocks.
+EBS is an #implementation of [[StorageBlock]], that is - it takes your data and breaks it down into #blocks.
 
 When considering [[Storage]] #systems there are important aspects to consider
 
@@ -14,15 +14,15 @@ When considering [[Storage]] #systems there are important aspects to consider
 
 Properties
 
-* It is designed to act, look and feel like a virtual [[HardDrive]].
-* These can be attached and re-attached to different [[ElasticComputeCloud]] #Instances.
+* It is designed to act, look and feel like a virtual [[StorageHardDrive]].
+* These can be attached and re-attached to different [[AwsEc2]] #Instances.
 
 * Volumes __ARE__ deleted on instance termination by default.
 * volumes __ARE NOT__ #encrypted by default,
     This can be done by using its encryption properties, as well as using native data encryption drivers at the file system level.
 * Volumes __ARE NOT__ physically attached
     Their latency and throughput are bottlenecked by the #network.
-* __CAN__ be shared between up to 16 [[AWS]] nitro system based #EC2 within the SAME availability zone.
+* __CAN__ be shared between up to 16 [[IndexAws]] nitro system based #EC2 within the SAME availability zone.
 
 ___
 
@@ -30,7 +30,7 @@ On SnapShots
 
 These are Point in Time backup of the data inside the volume: 100% copies of the Hard-Drive.
 
-Snapshots are very useful in cases of [[ Disaster Recovery ]], since they contain all of the necessary information to boot. Comparing with traditional tape backups, which require an OS installation before being able to recover, Snapshots can recover way more quickly.
+Snapshots are very useful in cases of [[DisasterRecovery]], since they contain all of the necessary information to boot. Comparing with traditional tape backups, which require an OS installation before being able to recover, Snapshots can recover way more quickly.
 
 An optimization to snapshots is that they are incremental , that is: Only the blocks that changed get saved - like git patches.
 

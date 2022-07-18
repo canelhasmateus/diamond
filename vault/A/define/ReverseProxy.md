@@ -5,15 +5,15 @@ In a common [[NetworkProxy]], the server ends up not knowing the originating cli
 This has several use cases, many prevalent in [[SoftwareMicroservices]] and [[SystemsDistributed]] architectures, such as:
 
 * [[Caching]]
-* [[LoadBalancing]]
+* [[LoadBalancer]]
 * [[Ingress]]
-* Canary [[AllSoftwareDeployment]]
+* Canary [[IndexSoftwareDeploy]]
 * Ingress:
   * Hey, you talk to me sir,  and if you wanna access the pictures API, I can route requests.
 
 As a reverse proxy, when receiving a [[ProtocolTLS]] handshake #request, we can choose to act in several ways.
 
-The first one is to respond to the client with the proxy's own [[TLSCertificate]] and TLS Parameters. This is called [[TLSTermination]]. This necessitates, however, that the [[PrivateKey]] and certificate be in the reverse proxy. This raises major concerns:
+The first one is to respond to the client with the proxy's own [[TLSCertificate]] and TLS Parameters. This is called [[TLSTermination]]. This necessitates, however, that the Private[[EncryptionKey]] and certificate be in the reverse proxy. This raises major concerns:
 
 * The proxy has the ability to #decode the underlying contents
 * The proxy can act as a representative of the certificate holder.
@@ -90,12 +90,12 @@ ___
 
 ## Tools
 
-* [[HAProxy]]
-* [[Envoy]]
-* [[Nginx]]
-* [[Istio]]
-* [[Linkerd]]
-* [[Caddy]]
+* [[ToolHAProxy]]
+* [[ToolEnvoy]]
+* [[ToolNgix]]
+* [[ToolIstio]]
+* [[ToolLinkerd]]
+* [[ToolCaddy]]
 
 ___
 

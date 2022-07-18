@@ -15,3 +15,16 @@ When encountering a hard problem, we can either think of a new solution, or tran
 
 QOI
     . Comparable to png, up to 50x faster
+
+
+___
+
+<https://www.youtube.com/watch?v=goOa3DGezUA>
+
+lz 77
+lempol zivv
+compression scheme
+
+kind of a 'dictionary of words' approach, but replacing a word with a 2-byte pointer : < j, l>
+
+j refers to a word back in the text, and the l is the length.

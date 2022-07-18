@@ -16,3 +16,5 @@ Randos
 * ]~> Do parametric types beats virtual types? . wtf does this even mean.
 
 
+memory mapped files
+memory allocators

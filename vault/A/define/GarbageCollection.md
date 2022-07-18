@@ -2,7 +2,7 @@
 
 Garbage Collection is a #technique for [[MemoryManagement]].
 
-> It sits in contrast with [[ManualMemoryManagement]], usually implemented by closer-to-metal #languages, such as [[LanguageC]].
+> It sits in contrast with [[MemoryManualManagement]], usually implemented by closer-to-metal #languages, such as [[LanguageC]].
 
 This is the problem with Memory Management:
 

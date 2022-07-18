@@ -1,10 +1,19 @@
 # HeadOfLineBlocking
 
-Head-of-line-Blocking is a fundamental #limitation of the [[ProtocolTCP]] and the first #version of the [[ProtocolHTTP]].
+Head of line blocking is a phenomena that happens whenever the first element of a queue blocks progress of other elements.
 
+It is commonly associated with internet transmission protocols.
 ___
 
-In TCP, it happens because of the #retransmission mechanisms.
+## Http 1.1
+
+For the 1.1 version of http, HOL happens because of the [[OneOutstandingRequest]] rule. For the second request to go, the first one has to be answered first.
+
+This is somewhat mitigated by [[HttpPipelining]], but not fully. Since compliant user-agents are required to send pipelined responses in the same order of requests, it is very possible for slow first-requests to block later requests done.
+
+## Http 2
+
+For the 2 version of HTTP, HOL happens because of fundamental mechanisms of the [[ProtocolTCP]]:
 
 Requests are translated as a #stream of bytes ( few packets ) in the #client #server TCP connection.
 
@@ -12,7 +21,7 @@ The server will then assemble the packets into a request, but only after every p
 
 > This happens so the client can resend it in case of lost packets
 
-When using Http2 [[[Multiplexing]]], the underlying TCP connection cannot differentiate the bytes from different streams when assembling the requests.
+When using Http2 [[Multiplexing]], the underlying TCP connection cannot differentiate the bytes from different streams when assembling the requests.
 
 This can make unrelated requests wait for each other.
 
@@ -23,3 +32,20 @@ Suppose also, that all of the second request packet's get acknowledgeded, but a 
 
 Since the underlying tcp connection can't differentiate between these two packets, the second request gets stalled until the lost packet from the first (unrelated) request gets acknowledged. 
 ```
+
+## TLS
+
+TLS can introduce HOL blocking if used to encrypt larger amounts of data:
+
+* TLS can encrypt up to 16KB of data. This is enough to fill about 11 typical TCP packets.
+* If the first 10 packets get through, but the last one gets lost, browsers still need to wait for the last one to arrive before starting processing.
+
+
+There is also an interaction between TCP [[CongestionControl]] and HTTP implementation.
+
+
+___
+
+References
+
+1. <https://calendar.perfplanet.com/2020/head-of-line-blocking-in-quic-and-http-3-the-details/>

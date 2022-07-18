@@ -1,8 +1,8 @@
 # SoftwareObservability
 
-The capability of gathering information about the inner workings of a [[SoftwareSystem]], usually in the form of logs and metrics.
+The capability of gathering information about the inner workings of a [[IndexSoftwareSystem]], usually in the form of logs and metrics.
 
-* [[Logs]] are textual descriptions, written by the application, to indicate notable #events such as start, updates and completion of current operations, as well as the parameters and current #state of the program.
+* [[Log]]s are textual descriptions, written by the application, to indicate notable #events such as start, updates and completion of current operations, as well as the parameters and current #state of the program.
 
 * [[Metrics]] are numbers that describe the functionality of a system in regards to some common axes, such as #performance and #health.
   * [[OnResponseTimes]]

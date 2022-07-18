@@ -12,7 +12,7 @@ This means that a server must be listening for connection #requests from clients
 
 TCP also provides [[CongestionControl]].
 
-It suffers from some vulnerabilities, such as [[DDOS]], [[ConnectionHijacking]] , [[TCPVeto ]] and [[ResetAttack]]
+It suffers from some vulnerabilities, such as [[AttackDDoS]], [[AttackConnectionHijacking]] , [[AttackTCPVeto ]] and [[AttackReset]]
 
 ![[ThreeWayHandshake]]
 
@@ -29,6 +29,18 @@ Since each packet already has a monotonically increasing identifier, we can use 
 > #todo
 
 What about other interferences, such as bit flipping? How are these kind of errors handled by the transmission mechanism?
+
+___
+
+## `PSH` Flag
+
+The Push flag usually means that data has been sent whilst overriding an in-built TCP efficiency delay, such as [[NagleAlgorithm]] or Delayed Acknowledgements.
+
+These delays make TCP networking more efficient at the cost of some latency (usually around a few tens of milliseconds).
+
+> [[PatternTradeoff]]
+
+A latency-sensitive application does not want to wait around for TCP’s efficiency delays so the application will usually disable them, causing data to be sent as quickly as possible with a Push flag set.
 
 ___
 

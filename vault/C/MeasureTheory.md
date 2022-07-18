@@ -9,13 +9,13 @@ These seemingly distinct concepts have many similarities and can often be treate
 As a motivation, consider the banachi-tarksi paradox:
 . By assuming only the ZFC axioms, it can prove that , by dividing a sphere in some pieces, it can, after only rigid transformations, assemble two of them
 . This leads us to two choices:
-.. Reject the [[Axiom of Choice]]  ( why should we not do this?[[expand]])
+.. Reject the [[AxiomOfChoice]]  ( why should we not do this?[[MetaExpand]])
 
 .. Formalize the ( until now implict ) assumption of what a "[[Measure]]" is, and the way that it can and can't be combined and what can and can't be preserved under operations.
 
 There exists some fundamental concepts in measure theory, for example:
 
-A [[Sigma Algebra]]
+A [[SigmaAlgebra]]
     . A sigma algebra on a set X is a collection of subsets of X, such that:
     . Closed under complements : if E in A => E^c is in A
     . Closed under countable unions: E1 , E2, ... in A => Union< E1, E2, ... En> in A.

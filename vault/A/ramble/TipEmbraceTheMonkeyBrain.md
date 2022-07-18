@@ -20,10 +20,10 @@ ___
 
 > #todo
 
-Can this be linked to <https://www.youtube.com/watch?v=jiIhOgpOWcA> | HealthyGamerGG Dopaministic Activities? [[ expand ]]
+Can this be linked to <https://www.youtube.com/watch?v=jiIhOgpOWcA> | HealthyGamerGG Dopaministic Activities? [[MetaExpand]]
 
 
-What kinds of activities are there? [[expand]]
+What kinds of activities are there? [[MetaExpand]]
 . SO we could [[categorize]] each activity into some number of axes. For example:
             Long/Short term gains: Dopaministic vs the other one
             Active/Passive action:

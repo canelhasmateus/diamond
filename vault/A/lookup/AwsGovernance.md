@@ -27,5 +27,5 @@ ___
 
 [[AwsTags]]
 
-* [[Aws]] offers a variety of tools to help you implement proactive #tag governance by ensuring that tags are consistently applied when #resources are created
+* [[IndexAws]] offers a variety of tools to help you implement proactive #tag governance by ensuring that tags are consistently applied when #resources are created
 * [[AwsCloudformation]] has the Resource Tags Properties.

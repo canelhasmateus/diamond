@@ -2,7 +2,7 @@
 
 As an [[KeyExchange]] algorithm, DH enables the exchange of keys without middle parts knowing
 
-Usual [[PublicKey]] #encryption schemes can be [[MITM]]. DiffieHelman deals with it by using [[TLSCertificates]]
+Usual Public[[EncryptionKey]] #encryption schemes can be [[AttackMitM]]. DiffieHelman deals with it by using [[TLSCertificate]]
 
 ___
 

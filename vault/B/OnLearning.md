@@ -9,11 +9,11 @@ It is possible to prime yourself - using some kind of #trigger - to evoke the in
 
 I find it effective to supplement this with ways to learn more passively:
 
-* [[RSS]] feeds
+* [[ProtocolRSS]] feeds
 * Reading Lists
 
 > #todo
-Establishing #relationships is a very good way to remember , [[associate and expand]] ( [[analogies]], for example )
+Establishing #relationships is a very good way to remember , [[categorize]] ( [[analogies]], for example )
 
 ___
 

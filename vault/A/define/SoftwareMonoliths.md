@@ -1,6 +1,6 @@
 # SoftwareMonoliths
 
-The whole of your [[SoftwareSystem]] is served as a single "software application". It might have and encompass the behavior of multiple modules, but the final #product would be a single [[SoftwareArtifact]], such as a #jar
+The whole of your [[IndexSoftwareSystem]] is served as a single "software application". It might have and encompass the behavior of multiple modules, but the final #product would be a single [[SoftwareArtifact]], such as a #jar
 
 This is great in regards to [[Complexity]]:
 
@@ -13,7 +13,7 @@ However, it also has problems in #scalability.
 * On the human side, it also scales worse since more developers need to compete for __limited #resources__:
 
 * build #pipelines
-* [[AllSoftwareDeployment]] slots
+* [[IndexSoftwareDeploy]] slots
 * [[database]] tables
 * source code #changes.
 

@@ -6,7 +6,7 @@ It works by creating an [[Hashing]] of a key, which is transformed into an array
 
 > This second transformation usually happen by the means of [[ModularArithmetic]] against the array size.
 
-The cost of this lookup depends on the #architecture of the system -  [[NUMA]] vs [[UMA]], for example - but can be largely considered constant.
+The cost of this lookup depends on the #architecture of the system -  [[MemoryNUMA]] vs [[MemoryUMA]], for example - but can be largely considered constant.
 
 ___
 
@@ -18,6 +18,6 @@ There are many limitations when using hash tables:
 
 * [[Mutability]]:
   * When adding or removing values, we may need to increase the underlying storage size. This triggers an expensive [[ReHashing]] process that remaps the indexes.
-  * In settings such as [[SystemsDistributed]] applications, rehashes can be difficult to work with. This challenge can be alleviated by [[ConsistentHashing]] schemes such as [[HashRings]], as implemented by [[RingPop]].
+  * In settings such as [[SystemsDistributed]] applications, rehashes can be difficult to work with. This challenge can be alleviated by [[ConsistentHashing]] schemes such as [[HashRings]], as implemented by [[ToolRingPop]].
 
 > #todo About the seriazibility: WHy? How?

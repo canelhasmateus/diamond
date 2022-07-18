@@ -18,7 +18,7 @@ This comes with a cost - more moving parts mean more [[Complexity]].
 Another common point of friction for microservices is the challenge of [[SoftwareObservability]].
 
 
-> #todo This led to the creation of techniques such as [[CircuitBreakers]], [[Backpressure]] and  [[LoadBalancing]] - practices often related to such architectures.
+> #todo This led to the creation of techniques such as [[CircuitBreakers]], [[Backpressure]] and  [[LoadBalancer]] - practices often related to such architectures.
 
 References
 

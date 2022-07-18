@@ -7,7 +7,7 @@ When [[Learning]] to type in a new keyboard #layout configuration,
 3. Then, entire syllables
 4. Finally, Entire words and phrases.
 
-> #todo Are there any parallels to [[prefix trees]] and [[monte-carlo search]]?
+> #todo Are there any parallels to [[prefix trees]] and [[MonteCarloSearch]]?
 
 establishing the #boundaries in which to chunk is a very important and hard #process. Almost an #art.
 

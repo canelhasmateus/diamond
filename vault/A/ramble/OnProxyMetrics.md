@@ -6,7 +6,7 @@ Instead, we humans invent pretty arbitrary #proxies, such as getting high scores
 
 Proxies are great because they let you make decisions #quicker.
 
-After a few years of doing something very #consciously, you build up this great #rewards #system that makes you feel good about it by itself.
+After a few years of doing something very consciously, you build up this great #RewardSystem that makes you feel good about it by itself.
 
 ```mermaid
 
@@ -28,6 +28,11 @@ end note
 
 __The problem is when your ultimate goal changes and your old proxies are still in effect.__
 
+___
+
 References:
 
 1. <https://erikbern.com/2015/06/05/the-hardest-challenge-about-becoming-a-manager.html>
+2. [[ProxyMetrics]]
+___
+
