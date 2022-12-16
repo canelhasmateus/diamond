@@ -1,0 +1,38 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../nisi"
+		}
+	],
+	f"settings": {
+		"grammarly.selectors": [
+			{
+				"language": "markdown",
+				"scheme": "file"
+			}
+		],
+		"files.defaultLanguage": "markdown",
+		"foam.edit.linkReferenceDefinitions": "off",
+		"pasteImage.path": "${projectRoot}/vault/public",
+		"pasteImage.showFilePathConfirmInputBox": true,
+		"foam.files.ignore": [
+			"**vault/journal/*",
+			"**vault/public/*",
+			"**limni/org/*"
+		],
+		"foam.orphans.exclude": [
+			"**vault/journal/*",
+			"**vault/public/*",
+			"**limni/org/*"
+		],
+		"foam.graph.style": {},
+		"foam.placeholders.exclude": [
+			"**/expand*",
+			"**/*expand*",
+			"expand*"
+		]
+	}
+}
