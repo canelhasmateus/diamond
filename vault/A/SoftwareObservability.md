@@ -47,3 +47,7 @@ Looking at it hides the fact that, for a given threshold to be reached, there ar
 Worse still is the monitoring and reporting of averages, which are non-sensical in the context of highly skewed distributions
 
 >Using the mean is an [[PatternImplicitAssumption]] of normality.
+
+## References
+
+#todo

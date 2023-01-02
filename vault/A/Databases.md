@@ -1,3 +1,8 @@
+---
+tags:
+    - software
+    - concept
+---
 # Databases
 
 Databases are mission critical and are different from traditional applications, because they are stateful.
@@ -37,3 +42,7 @@ Smooth out writes with queues
 
 * [[AwsSqs]]
 * [[ToolRabbitMq]]
+
+## References
+
+#todo

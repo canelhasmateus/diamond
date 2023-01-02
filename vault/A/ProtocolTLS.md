@@ -50,3 +50,7 @@ However, applications generally use TLS as if it were a Transport layer - even t
 There are mechanisms for revocation of SSL:
 
 * OCSP
+
+## References
+
+#todo

@@ -21,4 +21,4 @@ in the minds of its creators is missing.
 
 ## References
 
-1. [Why People Are Part of A Software Architecture – Codecraft](https://codecraft.co/2008/06/25/why-people-are-part-of-a-software-architecture)
+* [Why People Are Part of A Software Architecture – Codecraft](https://codecraft.co/2008/06/25/why-people-are-part-of-a-software-architecture)

@@ -56,3 +56,4 @@ ___
 2. [The Biggest Flaw of HTTP 1.0 in 60 Seconds #shorts_hussein](https://www.youtube.com/watch?v=6cncmSaRqzQ)
 3. [Wiresharking Server-Sent Events](https://www.youtube.com/watch?v=FUL_Buud7jY)
 4. [Server-Sent Events Crash Course](https://www.youtube.com/watch?v=4HlNv1qpZFY)
+

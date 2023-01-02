@@ -26,5 +26,5 @@ Another common point of friction for microservices is the challenge of [[Softwar
 
 ## References
 
-1. [The Evolutionary Architect - Building Microservices](https://candost.blog/the-evolutionary-architect/)
-2. [Microservices and Their Benefits](https://candost.blog/microservices-and-their-benefits/)
+* [The Evolutionary Architect - Building Microservices](https://candost.blog/the-evolutionary-architect/)
+* [Microservices and Their Benefits](https://candost.blog/microservices-and-their-benefits/)

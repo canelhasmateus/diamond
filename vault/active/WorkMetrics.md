@@ -35,4 +35,4 @@ ___
 
 ## References
 
-<https://joeblu.com/blog/2022_05_okrs/>
+* [Thoughts on OKRs - joe blubaugh](https://joeblu.com/blog/2022_05_okrs/)

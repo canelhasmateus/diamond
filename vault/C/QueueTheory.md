@@ -9,12 +9,6 @@
 # Capacity Planning
 
 ___
-References
-
-    ( 1. )[https://www.youtube.com/watch?v=m64SWl9bfvk]
-        .. Implements Rate limits by means of Little's Law. It shows that Limiting concurrent requests acts the same as limiting requests per period when the load is reasonable, but introduces backpressure when the service is overwhelming. 
-        .. Since this limit is  dynamically calculated based on load, we can provide better utilization of services.
-        .. Uses the same principles of [[TCP]], of [[Patterns#Additive Increase, Multiplicative Decrease]]
 
 ___
 
@@ -29,3 +23,10 @@ throughput != capacity
             TCP congestion avoidance control 
                 . Additive Increase
                 . Multiplicative decrease
+
+## References
+
+1. ["Stop Rate Limiting! Capacity Management Done Right" by Jon Moore](https://www.youtube.com/watch?v=m64SWl9bfvk)
+Implements Rate limits by means of Little's Law. It shows that Limiting concurrent requests acts the same as limiting requests per period when the load is reasonable, but introduces backpressure when the service is overwhelming.
+Since this limit is  dynamically calculated based on load, we can provide better utilization of services.
+Uses the same principles of [[TCP]], of [[Patterns#Additive Increase, Multiplicative Decrease]]

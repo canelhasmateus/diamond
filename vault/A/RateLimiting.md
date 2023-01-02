@@ -14,3 +14,7 @@ However, the naive implementation leads to some interesting ramifications.
 * If the [[RateLimiting]] is aggressive, we end up wasting resources: We could have handled the request, but pre-emptively refused to.
 
 This comes from the static nature of this implementation. Better implementations can be devised by application of [[QueueTheory]] and [[CapacityPlanning]].
+
+## References
+
+#todo

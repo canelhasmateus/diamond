@@ -44,7 +44,7 @@ When comparing systems using tools such as [[VizLoadCharts]], looking at how sys
 
 ___
 
-References
+## References
 
 1. ["How NOT to Measure Latency" by Gil Tene](https://www.youtube.com/watch?v=lJ8ydIuPFeU)
 2. [YOW! 2019 - Gil Tene - How I learned to stop worrying and love Misery](https://www.youtube.com/watch?v=nS0QgxgUYSA)

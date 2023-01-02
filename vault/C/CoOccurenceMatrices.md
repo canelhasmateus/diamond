@@ -1,4 +1,4 @@
-<https://towardsdatascience.com/glcms-a-great-tool-for-your-ml-arsenal-7a59f1e45b65>
+[GLCMs — a Great Tool for Your ML Arsenal - Towards Data Science](https://towardsdatascience.com/glcms-a-great-tool-for-your-ml-arsenal-7a59f1e45b65)
 
 Gray level co-occurence matrices
 

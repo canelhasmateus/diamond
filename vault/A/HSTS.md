@@ -33,6 +33,6 @@ There are limitations and problems to this policy.
 
 ___
 
-References:
+## References
 
-1. [Why you shouldn’t use google.com to search Google](https://www.youtube.com/watch?v=U_RKc2UoMTY)
+* [Why you shouldn’t use google.com to search Google](https://www.youtube.com/watch?v=U_RKc2UoMTY)

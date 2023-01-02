@@ -25,6 +25,6 @@ Various implementations of such policies can be devised, such as
 
 ___
 
-References:
+## References
 
-1. [The cost of Hash Tables - The Backend Engineering Show](https://www.youtube.com/watch?v=hxdT_QgHUSg)
+* [The cost of Hash Tables - The Backend Engineering Show](https://www.youtube.com/watch?v=hxdT_QgHUSg)

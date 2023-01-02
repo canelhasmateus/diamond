@@ -1,3 +1,8 @@
+---
+tags:
+    - algo 
+    - fact
+---
 1020\. Number of Enclaves
 
 Medium

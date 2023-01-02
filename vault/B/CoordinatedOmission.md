@@ -1,3 +1,9 @@
+---
+tags:
+    - network
+    - metrics
+    - concept
+---
 # CoordinatedOmission
 
 Coordinated Omission is a phenomenon in software.
@@ -16,5 +22,6 @@ Notice that any delay outside of the timing window isn't measured at all. See [[
 
 Very few tools deal with it correctly. For example, WRK.
 
-> #todo "vertical rises in the latency tend to indicate omission"
+> #todo "vertical rises in the latency tend to indicate omission" 
 > check HdrHistogram
+

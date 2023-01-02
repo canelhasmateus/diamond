@@ -22,3 +22,8 @@ ___
 > [[ConsistentHashing]]
 > Use hash ids to provide unguessable ids in your apis
 > [GUIDs and UUIDs are cool, but this is cooler](https://www.youtube.com/watch?utm_source=pocket_mylist&v=tSuwe7FowzE)
+
+
+## References
+
+#todo

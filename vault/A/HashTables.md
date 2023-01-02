@@ -26,3 +26,7 @@ There are many limitations when using hash tables:
   * In settings such as [[SystemsDistributed]] applications, rehashes can be difficult to work with. This challenge can be alleviated by [[ConsistentHashing]] schemes such as [[HashRings]], as implemented by [[ToolRingPop]].
 
 > #todo About the seriazibility: WHy? How?
+
+## References
+
+#todo

@@ -18,8 +18,12 @@ However, it also has problems in scalability.
 * On the human side, it also scales worse since more developers need to compete for __limited resources__:
 
 * build pipelines
-* [[IndexSoftwareDeploy]] slots
+* [[IndexSoftware##SoftwareDeploy]] slots
 * [[database]] tables
 * source code changes.
 
 > This requires lots of communication and coordination,  which can become a bottleneck, specially in bigger teams.
+
+## References
+
+#todo
