@@ -1,3 +1,8 @@
+---
+tags:
+    - network
+    - fact
+---
 # ThreeWayHandshake
 
 To Provide its features, [[ProtocolTCP]] needs some amount of coordination. Both client and server must agree to an initial [[SequenceNumber]].

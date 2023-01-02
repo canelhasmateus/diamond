@@ -1,3 +1,8 @@
+---
+tags:
+  - fact
+  - software
+---
 # SoftwareMicroservices
 
 The whole of the product is described by the interaction between multiple *independent* systems.
@@ -17,10 +22,9 @@ This comes with a cost - more moving parts mean more [[Complexity]].
 * Resilience
 Another common point of friction for microservices is the challenge of [[SoftwareObservability]].
 
-
 > #todo This led to the creation of techniques such as [[CircuitBreakers]], [[Backpressure]] and  [[LoadBalancer]] - practices often related to such architectures.
 
-References
+## References
 
-1. <https://candost.blog/the-evolutionary-architect/>
-2. <https://candost.blog/microservices-and-their-benefits/>
+1. [The Evolutionary Architect - Building Microservices](https://candost.blog/the-evolutionary-architect/)
+2. [Microservices and Their Benefits](https://candost.blog/microservices-and-their-benefits/)

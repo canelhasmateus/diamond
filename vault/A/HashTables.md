@@ -1,3 +1,8 @@
+---
+tags:
+    - software
+    - fact
+---
 # HashTables
 
 Hash Tables, also known as  HashMaps, dictionaries and Associative Arrays, are a kind of [[DataStructure]].

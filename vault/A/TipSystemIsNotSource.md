@@ -1,5 +1,9 @@
 ---
 kind: ramble
+tags: 
+    - psychology
+    - software
+    - thought
 ---
 
 # TipSystemIsNotSource
@@ -15,6 +19,6 @@ in the minds of its creators is missing.
 
 > [[PatternMentalModels]]
 
-Reference
+## References
 
-1. <https://codecraft.co/2008/06/25/why-people-are-part-of-a-software-architecture>
+1. [Why People Are Part of A Software Architecture – Codecraft](https://codecraft.co/2008/06/25/why-people-are-part-of-a-software-architecture)

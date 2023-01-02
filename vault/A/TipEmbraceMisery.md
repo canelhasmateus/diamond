@@ -1,5 +1,8 @@
 ---
 kind: ramble
+tags:
+    - psychology
+    - thought 
 ---
 
 # TipEmbraceMisery

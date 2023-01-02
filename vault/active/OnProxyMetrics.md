@@ -1,5 +1,8 @@
 ---
-kind: ramble
+tags:
+    - optimization
+    - psychology
+    - thought
 ---
 
 # OnProxyMetrics

@@ -1,6 +1,11 @@
+---
+tags:
+    - fact
+    - software
+---
 # SoftwareMonoliths
 
-The whole of your [[IndexSoftwareSystem]] is served as a single "software application". It might have and encompass the behavior of multiple modules, but the final product would be a single [[SoftwareArtifact]], such as a jar
+The whole of your [[IndexSoftware]] is served as a single "software application". It might have and encompass the behavior of multiple modules, but the final product would be a single [[SoftwareArtifact]], such as a jar
 
 This is great in regards to [[Complexity]]:
 

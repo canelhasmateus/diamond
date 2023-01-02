@@ -1,3 +1,8 @@
+---
+tags:
+    - general 
+    - fact 
+---
 # PatternDuality
 
 This is a common situation: given a constraint, maximize some utility.

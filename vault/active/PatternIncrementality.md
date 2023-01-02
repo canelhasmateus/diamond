@@ -1,3 +1,8 @@
+---
+tags:
+    - general 
+    - fact 
+---
 # PatternIncrementality
 
 Can we start with a baseline and improve from there?

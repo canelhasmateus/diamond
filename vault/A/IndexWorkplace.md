@@ -1,5 +1,7 @@
 ---
-kind: lookup
+tags: 
+    - professional
+    - fact
 ---
 # Workplace
 

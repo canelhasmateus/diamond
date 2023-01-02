@@ -1,3 +1,9 @@
+---
+tags:
+    - learning
+    - software
+    - concept
+---
 # DebuggingMindset
 
 A huge amount of time is spent validating and debugging software.
@@ -35,3 +41,7 @@ Debugging is not taught as a specific course in universities. Individuals must b
 The goal here is to make programming easier by reducing the scope of the mental model the programmer must maintain. When bugs occur in these execution environments, you're left with a complete gap in understanding.
 
 You might solve this by understanding more about the execution environment, but then, what is the point of that [[PatternLeakyAbstraction]]? Such runtime environments are not a panacea, you still need to understand how they behave.
+
+## References
+
+* [The Debugging Mindset - ACM Queue](https://queue.acm.org/detail.cfm?id=3068754)

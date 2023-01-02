@@ -1,5 +1,8 @@
 ---
-kind: ramble
+tags:
+    - network
+    - security
+    - fact
 ---
 
 # Browsers and default HTTPS
@@ -15,4 +18,4 @@ Recently, browsers have decided to default to HTTPS.
 
 ## References
 
-<https://www.youtube.com/watch?v=XrlfX0duLKQ>
+* [Chrome 90 will use HTTPS (port 443) by Default](https://www.youtube.com/watch?v=XrlfX0duLKQ)

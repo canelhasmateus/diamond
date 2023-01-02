@@ -1,3 +1,8 @@
+---
+tags:
+    - general
+    - fact
+---
 # PatternDecomposition
 
 [[OnLeet0647]] implements this, by taking advantage of the compositionality of palindromes.

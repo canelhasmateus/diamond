@@ -1,8 +1,9 @@
 ---
-kind: ramble
+tags:
+    - thought
 ---
 
-<https://leetcode.com/problems/palindromic-substrings/>
+[Palindromic Substrings - LeetCode](https://leetcode.com/problems/palindromic-substrings/)
 
 647\. Palindromic Substrings
 

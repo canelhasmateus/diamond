@@ -1,5 +1,8 @@
 ---
-kind: ramble
+tags:
+    - network
+    - security
+    - fact
 ---
 
 # TipWiresharkTLS
@@ -12,6 +15,6 @@ We can configure [[ToolWireshark]] to read this file and decrypt the intercepted
 
 ___
 
-References
+## References
 
-1. <https://www.trickster.dev/post/decrypting-your-own-https-traffic-with-wireshark/>
+1. [Decrypting your own HTTPS traffic with Wireshark – Trickster Dev](https://www.trickster.dev/post/decrypting-your-own-https-traffic-with-wireshark/)

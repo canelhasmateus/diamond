@@ -1,3 +1,8 @@
+---
+tags:
+  - network
+  - concept
+---
 # NetworkProxy
 
 A proxy is a piece of software that makes an request on behalf of a client.
@@ -50,7 +55,7 @@ There exist several software tools that implement proxying functionality.
 
 ___
 
-* Can a proxy and a [[ReverseProxy]] be used at the same time?
+* Can a proxy and a [[NetworkReverseProxy]] be used at the same time?
 
     Yes, this is called a [[ServiceMesh]].
     It is very common in [[SoftwareMicroservices]] architectures to build the network features of the application in the proxy, instead of making the application worry about [[NetworkTimeout]] and [[CircuitBreakers]].
@@ -76,9 +81,8 @@ ___
 
 ___
 
-References
+## References
 
-1. <https://www.youtube.com/watch?v=iLHhL-vAPqo>
-2. <https://www.youtube.com/watch?v=SqqrOspasag>
-3. <https://www.youtube.com/watch?v=ylkAc9wmKhc>
-https://www.youtube.com/watch?v=dOa_XfOvp9Q
+1. [TLS Passthrough Explained](https://www.youtube.com/watch?v=iLHhL-vAPqo)
+2. [Proxy vs Reverse Proxy Server Explained](https://www.youtube.com/watch?v=SqqrOspasag)
+3. [Layer 4 vs Layer 7 Proxying In Details Explained with Examples](https://www.youtube.com/watch?v=ylkAc9wmKhc)

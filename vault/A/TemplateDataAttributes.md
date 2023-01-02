@@ -1,5 +1,7 @@
 ---
-kind: lookup
+tags:
+    - template
+    - data
 ---
 # DataAttributes
 
@@ -70,4 +72,3 @@ ___
 
 1. [[DataEngineering]]
 
-2.

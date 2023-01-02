@@ -1,3 +1,9 @@
+---
+tags:
+    - software
+    - fact
+---
+
 # DeployRolling
 
 Rolling Deployment is a technique to upgrade software versions.

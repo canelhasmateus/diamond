@@ -1,6 +1,12 @@
+---
+tags:
+  - concept
+  - software
+---
+
 # SoftwareObservability
 
-The capability of gathering information about the inner workings of a [[IndexSoftwareSystem]], usually in the form of logs and metrics.
+The capability of gathering information about the inner workings of a [[IndexSoftware]], usually in the form of logs and metrics.
 
 * [[Log]]s are textual descriptions, written by the application, to indicate notable events such as start, updates and completion of current operations, as well as the parameters and current state of the program.
 

@@ -1,3 +1,9 @@
+---
+tags: 
+    - software
+    - optimization
+    - concept
+---
 # GarbageCollection
 
 Garbage Collection is a technique for [[MemoryManagement]].

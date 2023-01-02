@@ -1,3 +1,9 @@
+---
+tags:
+  - learning
+  - psychology
+  - concept
+---
 # IncrementalTheory
 
 Individuals fall somewhere on a spectrum of self theories. Entity theorists on one end to the incremental theorists on the other.

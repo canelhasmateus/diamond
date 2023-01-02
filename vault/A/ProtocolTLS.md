@@ -1,3 +1,8 @@
+---
+tags:
+    - network
+    - fact
+---
 # TLSProtocol
 
 The Transport Layer Security is a Cryptography Protocol. It is designed to provide secure communications over a network and is the successor of the Secure Sockets Layer ([[ProtocolSSL]]).

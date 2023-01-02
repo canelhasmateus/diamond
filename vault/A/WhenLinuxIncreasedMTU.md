@@ -1,5 +1,7 @@
 ---
-kind: ramble
+tags:
+    - software
+    - fact
 ---
 
 # WhenLinuxIncreasedMTU
@@ -25,4 +27,4 @@ The packet size is determined by the MTU and is around 1500 bytes for [[Ethernet
 
 ## References
 
-<https://www.youtube.com/watch?v=llRX_34X8WY>
+* [Linux Big TCP might change the game for Google (and other cloud providers)](https://www.youtube.com/watch?v=llRX_34X8WY)

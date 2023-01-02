@@ -1,5 +1,7 @@
 ---
-kind: ramble
+tags:
+    - network
+    - fact
 ---
 
 # Lucid Charts and Http2
@@ -18,4 +20,5 @@ Lucid charts opted to do [[RateLimiting]], which solves the problem, although no
 
 ## References
 
-<https://www.youtube.com/watch?v=6cncmSaRqzQ>
+* [The Biggest Flaw of HTTP 1.0 in 60 Seconds #shorts_hussein](https://www.youtube.com/watch?v=6cncmSaRqzQ)
+* [They Turned on HTTP/2 and Regretted it, Let us discuss the Lucidchart Article](https://www.youtube.com/watch?v=gejfT1h6LBo)

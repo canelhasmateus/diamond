@@ -1,5 +1,7 @@
 ---
-kind: ramble
+tags:
+    - software
+    - thought
 ---
 
 # OnCorrectnessByConstruction

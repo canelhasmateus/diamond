@@ -1,5 +1,8 @@
 ---
 kind: ramble
+tags:
+    - professional
+    - fact
 ---
 
 # OnMeetingRoleplays

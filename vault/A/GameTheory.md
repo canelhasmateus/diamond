@@ -1,3 +1,8 @@
+---
+tags:
+  - math
+  - fact
+---
 # GameTheory
 
 The study of mathematical models of strategic interactions between rational agents.
@@ -23,10 +28,8 @@ A game is consists of
 > When there are finite choices, we can analyze then as a payoff matrix.
 > Finite games, as well as well-behaved continuous ones can be solved by [[LinearProgramming]]
 
-
-
 ___
 
 Examples of Games:
 
-1. Silent Duels: <https://jeremykun.com/2018/12/31/silent-duels-and-an-old-paper-of-restrepo/>
+1. Silent Duels: [Silent Duels and an Old Paper of Restrepo – Math ∩ Programming](https://jeremykun.com/2018/12/31/silent-duels-and-an-old-paper-of-restrepo/)

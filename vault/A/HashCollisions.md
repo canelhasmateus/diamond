@@ -1,3 +1,9 @@
+---
+tags:
+    - algo
+    - fact
+---
+
 # HashCollisions
 
 Since the underlying array has a finite number of entries, collisions are bound to happen. There exists various kind of procedures to deal with hash collisions, but they mostly fall into two different buckets:
@@ -21,4 +27,4 @@ ___
 
 References:
 
-1. <https://www.youtube.com/watch?v=hxdT_QgHUSg>
+1. [The cost of Hash Tables - The Backend Engineering Show](https://www.youtube.com/watch?v=hxdT_QgHUSg)

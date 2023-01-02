@@ -1,4 +1,9 @@
-# ReverseProxies
+---
+tags:
+  - network
+  - concept
+---
+# NetworkReverseProxies
 
 In a common [[NetworkProxy]], the server ends up not knowing the originating client. We can, however, invert this situation, making client unaware of the destination server.
 
@@ -101,6 +106,6 @@ ___
 
 ## References
 
-* <https://www.youtube.com/watch?v=iLHhL-vAPqo>
-* <https://www.youtube.com/watch?v=SqqrOspasag>
-* <https://www.youtube.com/watch?v=ylkAc9wmKhc>
+* [TLS Passthrough Explained](https://www.youtube.com/watch?v=iLHhL-vAPqo)
+* [Proxy vs Reverse Proxy Server Explained](https://www.youtube.com/watch?v=SqqrOspasag)
+* [Layer 4 vs Layer 7 Proxying In Details Explained with Examples](https://www.youtube.com/watch?v=ylkAc9wmKhc)

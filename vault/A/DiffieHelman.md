@@ -1,3 +1,9 @@
+---
+tags:
+    - security
+    - software
+    - fact
+---
 # DiffieHelman
 
 As an [[KeyExchange]] algorithm, DH enables the exchange of keys without middle parts knowing
@@ -19,9 +25,10 @@ The process goes as follows
 > #todo
 > there is something to do with another variable used to take the modulo that makes it impossible to derive x back from G and G ^ x.
 > make sequence diagram
+> use mathjax
 __
 
-References
+## References
 
-1. <https://www.youtube.com/watch?v=IE0QLCcOr0I>
-2. <https://www.youtube.com/watch?v=rKVCTVAHK7k>
+1. [TLS 1.3 Handshake Explained In Details (with Math) - YouTube](https://www.youtube.com/watch?v=IE0QLCcOr0I)
+2. [- YouTube](https://www.youtube.com/watch?v=rKVCTVAHK7k)

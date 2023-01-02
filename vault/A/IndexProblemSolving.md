@@ -1,5 +1,8 @@
 ---
-kind: lookup
+tags:
+    - index
+    - general
+    - fact
 ---
 # ProblemSolving
 

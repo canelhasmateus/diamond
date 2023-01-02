@@ -1,5 +1,8 @@
 ---
 kind: ramble
+tags:
+    - psychology
+    - thought
 ---
 
 # Embrace the monkey brain
@@ -24,8 +27,7 @@ ___
 
 > #todo
 
-Can this be linked to <https://www.youtube.com/watch?v=jiIhOgpOWcA> | HealthyGamerGG Dopaministic Activities? [[MetaExpand]]
-
+Can this be linked to [Why Do You Only Get Motivated After Midnight?](https://www.youtube.com/watch?v=jiIhOgpOWcA)  HealthyGamerGG Dopaministic Activities? [[MetaExpand]]
 
 What kinds of activities are there? [[MetaExpand]]
 . SO we could [[categorize]] each activity into some number of axes. For example:
@@ -33,4 +35,3 @@ What kinds of activities are there? [[MetaExpand]]
             Active/Passive action:
             Multi-Taskable | Requires sole atention;
             ...
-

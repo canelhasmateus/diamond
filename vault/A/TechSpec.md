@@ -1,8 +1,11 @@
+---
+tags:
+    - software
+    - fact
+---
 # TechSpec
 
 A document, usually written by an engineer, that describes how a feature, project, or service will work from a technical perspective.
-
-[[PatternPareto]]: Some uses of time are more efficient than others. Tech spec are not exceptions. You should strive to have the bare minimum - it is a cost, and it loses value very quickly.
 
 ___
 
@@ -49,6 +52,6 @@ ___
 
 ## References
 
-1. <https://www.youtube.com/watch?v=a4L9GhldTHo>
-2. <https://eng.lyft.com/awesome-tech-specs-86eea8e45bb9>
+1. [Writing technical documentation](https://www.youtube.com/watch?v=a4L9GhldTHo)
+2. [How to Write Awesome Tech Specs](https://eng.lyft.com/awesome-tech-specs-86eea8e45bb9)
 3. [[TemplateTechSpec]]

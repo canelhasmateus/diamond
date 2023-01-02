@@ -1,3 +1,8 @@
+---
+tags:
+    - network
+    - fact
+---
 # ProtocolTCP
 
 The Transmission Control Protocol is a communication protocol.
@@ -44,6 +49,6 @@ A latency-sensitive application does not want to wait around for TCP’s efficie
 
 ___
 
-References
+## References
 
-1. <https://www.youtube.com/watch?v=bW_BILl7n0Y>
+1. [What is the TCP 3-Way Handshake and Why Backend Engineers should understand it](https://www.youtube.com/watch?v=bW_BILl7n0Y)

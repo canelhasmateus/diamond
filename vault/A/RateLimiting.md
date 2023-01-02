@@ -1,3 +1,9 @@
+---
+tags:
+    - queue
+    - network
+    - concept
+---
 # RateLimiting
 
 A simple premise: avoid competition between clients, by predefining usage quotas. The usual implementation is simple: Limit the number of requests a client can do in a specified period.

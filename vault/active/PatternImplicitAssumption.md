@@ -1,3 +1,9 @@
+---
+tags:
+    - general 
+    - fact 
+---
+
 # PatternImplicitAssumption
 
 Alongside [[PatternOversimplification]], implicit assumptions are a common psychological and mathematical phenomenon, frequently a source of problems since many solutions undisclosed rely on facts that may not be true.

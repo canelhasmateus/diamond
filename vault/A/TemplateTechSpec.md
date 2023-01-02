@@ -1,5 +1,7 @@
 ---
-kind: lookup
+tags: 
+    - template
+    - software
 ---
 # TemplateTechSpec
 

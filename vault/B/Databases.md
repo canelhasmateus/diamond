@@ -35,5 +35,5 @@ Caching Systems
 
 Smooth out writes with queues
 
-* [[AwsSQS]]
+* [[AwsSqs]]
 * [[ToolRabbitMq]]

@@ -1,5 +1,7 @@
 ---
-kind: ramble
+tags: 
+    - learning
+    - thought
 ---
 
 # Chunking

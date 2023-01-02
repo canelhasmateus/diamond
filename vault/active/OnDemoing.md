@@ -1,5 +1,8 @@
 ---
-kind: ramble
+tags:
+    - professional
+    - psychology
+    - thought
 ---
 
 # OnDemoing
@@ -31,6 +34,6 @@ References:
 > #todo
 
 Is it possible to make web UI's look crude, with the napkin  look and feel?
-https://9elements.github.io/fancy-border-radius/
-https://border-image.com/
-http://thenewcode.com/438/CSS-Border-Image-Explained
+<https://9elements.github.io/fancy-border-radius/>
+<https://border-image.com/>
+<http://thenewcode.com/438/CSS-Border-Image-Explained>

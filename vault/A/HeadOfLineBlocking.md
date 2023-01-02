@@ -1,3 +1,9 @@
+---
+tags:
+    - software
+    - network
+    - concept
+---
 # HeadOfLineBlocking
 
 Head of line blocking is a phenomena that happens whenever the first element of a queue blocks progress of other elements.
@@ -7,13 +13,13 @@ ___
 
 ## Http 1.1
 
-For the 1.1 version of http, HOL happens because of the [[OneOutstandingRequest]] rule. For the second request to go, the first one has to be answered first.
+For [[HTTP1]], HOL happens because of the [[OneOutstandingRequest]] rule. For the second request to go, the first one has to be answered first.
 
 This is somewhat mitigated by [[HttpPipelining]], but not fully. Since compliant user-agents are required to send pipelined responses in the same order of requests, it is very possible for slow first-requests to block later requests done.
 
 ## Http 2
 
-For the 2 version of HTTP, HOL happens because of fundamental mechanisms of the [[ProtocolTCP]]:
+For [[HTTP2]], HOL happens because of fundamental mechanisms of the [[ProtocolTCP]]:
 
 Requests are translated as a stream of bytes ( few packets ) in the client server TCP connection.
 
@@ -35,17 +41,15 @@ Since the underlying tcp connection can't differentiate between these two packet
 
 ## TLS
 
-TLS can introduce HOL blocking if used to encrypt larger amounts of data:
+[[ProtocolTLS]] can introduce HOL blocking if used to encrypt larger amounts of data:
 
 * TLS can encrypt up to 16KB of data. This is enough to fill about 11 typical TCP packets.
 * If the first 10 packets get through, but the last one gets lost, browsers still need to wait for the last one to arrive before starting processing.
 
-
 There is also an interaction between TCP [[CongestionControl]] and HTTP implementation.
-
 
 ___
 
-References
+## References
 
-1. <https://calendar.perfplanet.com/2020/head-of-line-blocking-in-quic-and-http-3-the-details/>
+* [Web Performance Calendar  Head-of-Line Blocking in QUIC and HTTP/3: The Details](https://calendar.perfplanet.com/2020/head-of-line-blocking-in-quic-and-http-3-the-details/)

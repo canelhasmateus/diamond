@@ -1,3 +1,8 @@
+---
+tags:
+    - software
+    - fact
+---
 # DeployBlueGreen
 
 Two identical environments run different versions of the software.
@@ -13,5 +18,3 @@ Properties
 * Quickly rollback changes
 
 This switch is usually done at the [[ProtocolDNS]] level or other similar routing means.
-
-
