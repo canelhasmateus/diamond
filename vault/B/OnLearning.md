@@ -1,8 +1,8 @@
 # OnLearning
 
-Learning is a very active #process and requires #attention to what is being learned.
+Learning is a very active process and requires attention to what is being learned.
 
-It is possible to prime yourself - using some kind of #trigger - to evoke the intended reaction when studying.
+It is possible to prime yourself - using some kind of trigger - to evoke the intended reaction when studying.
 
 * [[Akti]]
 * Typing and flow.
@@ -13,7 +13,7 @@ I find it effective to supplement this with ways to learn more passively:
 * Reading Lists
 
 > #todo
-Establishing #relationships is a very good way to remember , [[categorize]] ( [[analogies]], for example )
+Establishing relationships is a very good way to remember , [[categorize]] ( [[analogies]], for example )
 
 ___
 

@@ -11,7 +11,6 @@ We can secure IP ( IPSec ) : A negotiation protocol between hosts. Once they exc
 To get around addressability, we put this encrypted packet inside another ip packet, addressed to the host ( VPN )
 
 IPSec is easily identifiable.
-    does this means isp's could block vpns? [[expand
-    ]]
+    does this means isp's could block vpns? [[expand ]]
 
 why we can't use mac addresses? because mac addreses are random, that is: there are no routability to them. To send a request to a mac address you'd need to scan the entire internet.

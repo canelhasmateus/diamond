@@ -2,7 +2,7 @@
 
 An important part of solving problems is looking at them the right way.
 
-* The `read-list` situation becomes easier to manage when looking at it as a #stream.
+* The `read-list` situation becomes easier to manage when looking at it as a stream.
 * Thinking of it as a stream lends itself to be handled just like any other stream.
     Thinking of it as an application of [[DataEngineering]] buys us the scheduling, composition and error handling of the processes in the space.
 * The same goes for the flowtime situation: Thinking of it as a scheduling problem looks like the right abstraction since [[VizGanttCharts]] fit this application perfectly.

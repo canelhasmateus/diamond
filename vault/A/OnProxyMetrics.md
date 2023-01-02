@@ -4,13 +4,13 @@ kind: ramble
 
 # OnProxyMetrics
 
-It would be incredibly #costly if every action was judged in terms of its benefits amortized over your entire lifetime.
+It would be incredibly costly if every action was judged in terms of its benefits amortized over your entire lifetime.
 
-Instead, we humans invent pretty arbitrary #proxies, such as getting high scores on exams, or in my case, writing shitloads of #code.
+Instead, we humans invent pretty arbitrary proxies, such as getting high scores on exams, or in my case, writing shitloads of code.
 
-Proxies are great because they let you make decisions #quicker.
+Proxies are great because they let you make decisions quicker.
 
-After a few years of doing something very consciously, you build up this great #RewardSystem that makes you feel good about it by itself.
+After a few years of doing something very consciously, you build up this great RewardSystem that makes you feel good about it by itself.
 
 ```mermaid
 

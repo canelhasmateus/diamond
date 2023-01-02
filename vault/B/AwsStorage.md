@@ -1,28 +1,28 @@
 # ElasticBlockStorage
 
-EBS is an #implementation of [[StorageBlock]], that is - it takes your data and breaks it down into #blocks.
+EBS is an implementation of [[StorageBlock]], that is - it takes your data and breaks it down into blocks.
 
-When considering [[Storage]] #systems there are important aspects to consider
+When considering [[Storage]] systems there are important aspects to consider
 
 * Ephemerality: EBS Volumes don't go away with a reboot.
-* #Availability: 5 minutes of downtime per year.
-* #Scalability: EBS volumes scale to whatever size is needed.
-* #Throughput: EBS is designed for high transactional workload
-* #Durability: Provides #Redundancy in its [[AvailabilityRegion]] ( #Replicated Intra-Zone).
-* #Throughput:
-* #Latency:
+* Availability: 5 minutes of downtime per year.
+* Scalability: EBS volumes scale to whatever size is needed.
+* Throughput: EBS is designed for high transactional workload
+* Durability: Provides Redundancy in its [[AvailabilityRegion]] ( Replicated Intra-Zone).
+* Throughput:
+* Latency:
 
 Properties
 
 * It is designed to act, look and feel like a virtual [[StorageHardDrive]].
-* These can be attached and re-attached to different [[AwsEc2]] #Instances.
+* These can be attached and re-attached to different [[AwsEc2]] Instances.
 
 * Volumes __ARE__ deleted on instance termination by default.
-* volumes __ARE NOT__ #encrypted by default,
+* volumes __ARE NOT__ encrypted by default,
     This can be done by using its encryption properties, as well as using native data encryption drivers at the file system level.
 * Volumes __ARE NOT__ physically attached
-    Their latency and throughput are bottlenecked by the #network.
-* __CAN__ be shared between up to 16 [[IndexAws]] nitro system based #EC2 within the SAME availability zone.
+    Their latency and throughput are bottlenecked by the network.
+* __CAN__ be shared between up to 16 [[IndexAws]] nitro system based EC2 within the SAME availability zone.
 
 ___
 
@@ -53,5 +53,5 @@ On Performance
 
 Basic [[RAID]] Configurations can be set up for EBS.
 
-* #RAID0: For when performance is more desirable than fault tolerance. Ideal for the ec2 instances are hosting databases
-* #RAID1: When Fault tolerance is a more desirable property. Since data is written to multiple volumes at a time, more bandwidth is required between Ec2 and ebs.
+* RAID0: For when performance is more desirable than fault tolerance. Ideal for the ec2 instances are hosting databases
+* RAID1: When Fault tolerance is a more desirable property. Since data is written to multiple volumes at a time, more bandwidth is required between Ec2 and ebs.

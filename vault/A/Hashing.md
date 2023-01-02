@@ -1,6 +1,6 @@
 # Hashing
 
-Hashing is a #process in which a #value of any kind is #deterministically transformed into a #number or a fixed-length #string.
+Hashing is a process in which a value of any kind is deterministically transformed into a number or a fixed-length string.
 
 Applications:
 
@@ -8,7 +8,7 @@ Applications:
 * [[HashTables]]
 * [[Sharding]]
 * [[Partitioning]]
-* [[SoftwareSecurity]], due to usually being an #irreversible process
+* [[SoftwareSecurity]], due to usually being an irreversible process
 
 ___
 

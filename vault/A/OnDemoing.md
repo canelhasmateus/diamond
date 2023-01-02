@@ -8,11 +8,11 @@ Demos and MVPs are frequently created during [[ProductBuilding]] and conceptuali
 
 We often are tempted to make them look as good as possible, out of professionalism and zeal, as there is an obvious force in the visually engaging nature of beautiful imagery.
 
-> Visuals are very helpful in conveying meaning and #context, as seen in [[DataViz]].  
+> Visuals are very helpful in conveying meaning and context, as seen in [[DataViz]].  
 
-However, it is important to be #transparent when doing so: __The appearance of the presentation should reflect the level of polishing of the results__. Very often, what is shown is simply not feasible, and even when they are, these artifacts build [[EffectExpectations]], and you look silly when you aren't able to meet them.
+However, it is important to be transparent when doing so: __The appearance of the presentation should reflect the level of polishing of the results__. Very often, what is shown is simply not feasible, and even when they are, these artifacts build [[EffectExpectations]], and you look silly when you aren't able to meet them.
 
-Managing these #expectations is good for both you and your peers. People unconsciously calibrate their criticism based on their impression of position in the development - even when repeatedly reminded that the design is just an early sketch.
+Managing these expectations is good for both you and your peers. People unconsciously calibrate their criticism based on their impression of position in the development - even when repeatedly reminded that the design is just an early sketch.
 
 * Highly polished images - that may look like a screenshot of an already implemented [[GUI]] or at least the result of many weeks of work - will lead to [[PatternImplicitAssumption]] that only small details can be changed at this point. Show them something pretty, and you'll get feedback on font sizes - they will never suggest anything so bold as starting over.
 

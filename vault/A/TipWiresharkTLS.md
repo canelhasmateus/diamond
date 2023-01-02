@@ -4,11 +4,11 @@ kind: ramble
 
 # TipWiresharkTLS
 
-The `SSLKEYLOGFILE` #EnvironmentVariable is commonly used by #software that implements [[ProtocolTLS]]. They typically write keys and other TLS #secrets to this file.
+The `SSLKEYLOGFILE` EnvironmentVariable is commonly used by software that implements [[ProtocolTLS]]. They typically write keys and other TLS secrets to this file.
 
 This applies to [[Curl]], [[Chrome]], [[Firefox]] and other desktop apps that use [[ToolOpenSSL]] libs.
 
-We can configure [[ToolWireshark]] to read this file and #decrypt the intercepted TLS packets.
+We can configure [[ToolWireshark]] to read this file and decrypt the intercepted TLS packets.
 
 ___
 

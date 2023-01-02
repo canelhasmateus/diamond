@@ -1,14 +1,14 @@
 # ProtocolTCP
 
-The Transmission Control Protocol is a communication #protocol.
+The Transmission Control Protocol is a communication protocol.
 
-It provides reliable, ordered and error-checked delivery of a stream of bytes ( octets ) on hosts communicating through an IP #network.
+It provides reliable, ordered and error-checked delivery of a stream of bytes ( octets ) on hosts communicating through an IP network.
 
 Its main features, the [[ThreeWayHandshake]],  [[PacketRetransmission]] and [[ErrorDetection]] provides reliability, but increases latency.
 
-A #connection must be established between the #client and the #server before #data can be sent contrary to connectionless protocols such as [[ProtocolUDP]].
+A connection must be established between the client and the server before data can be sent contrary to connectionless protocols such as [[ProtocolUDP]].
 
-This means that a server must be listening for connection #requests from clients.
+This means that a server must be listening for connection requests from clients.
 
 TCP also provides [[CongestionControl]].
 

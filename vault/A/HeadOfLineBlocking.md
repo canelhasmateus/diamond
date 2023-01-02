@@ -15,7 +15,7 @@ This is somewhat mitigated by [[HttpPipelining]], but not fully. Since compliant
 
 For the 2 version of HTTP, HOL happens because of fundamental mechanisms of the [[ProtocolTCP]]:
 
-Requests are translated as a #stream of bytes ( few packets ) in the #client #server TCP connection.
+Requests are translated as a stream of bytes ( few packets ) in the client server TCP connection.
 
 The server will then assemble the packets into a request, but only after every packet is acknowledged.
 
@@ -28,7 +28,7 @@ This can make unrelated requests wait for each other.
 ```example
 Suppose we send 2 requests, while Http-multiplexing.
 
-Suppose also, that all of the second request packet's get acknowledgeded, but a single #packet from the first #requests doesnt.
+Suppose also, that all of the second request packet's get acknowledgeded, but a single packet from the first requests doesnt.
 
 Since the underlying tcp connection can't differentiate between these two packets, the second request gets stalled until the lost packet from the first (unrelated) request gets acknowledged. 
 ```

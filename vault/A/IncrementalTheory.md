@@ -4,7 +4,7 @@ Individuals fall somewhere on a spectrum of self theories. Entity theorists on o
 
 Entity theorists tend to view intelligence as innate and fixed, and fundamentally believe that not much can be done to increase intelligence.  
 
-* Fixed #mindset.
+* Fixed mindset.
 * more likely to be motivated by appearance than performance
 * less likely to collaborate
 * hero worship
@@ -14,7 +14,7 @@ Entity theorists tend to view intelligence as innate and fixed, and fundamentall
 An incremental theorist believes that challenging problems are a core party of the learning process and that intelligence is malleable
 
 * It can be increased through hard work.  
-* #Growth mindset
+* Growth mindset
 
 Individuals can have one theory in regards to an area and another when talking about another area: these do not imply global views.
 
@@ -24,12 +24,12 @@ ___
 
 ## Moving into the malleable perspective
 
-Bugs present themselves as problems, and because problems tend to be perceived by the entity theorist as fundamental #limits on ability, the focus here should be on moving students, peers and co-workers toward a more malleable view of intelligence.
+Bugs present themselves as problems, and because problems tend to be perceived by the entity theorist as fundamental limits on ability, the focus here should be on moving students, peers and co-workers toward a more malleable view of intelligence.
 
 Bugs should not be interpreted as failures of individual programmers.
 People should instead be praised for their efforts in practicing the [[DebuggingMindset]] and solving bugs.
 
-In all cases, solving bugs is part of the #learning process. There are ways of promoting that:
+In all cases, solving bugs is part of the learning process. There are ways of promoting that:
 
 [[EffectFraming]] of information
 
@@ -44,22 +44,22 @@ In all cases, solving bugs is part of the #learning process. There are ways of p
     Flash Cards
     [[Ankhi]]
 
-Segmented #study
+Segmented study
 
 * The idea of giving one or two additional and unrelated tasks to switch to throughout an activity
 * Our brains are not tuned to focus on specific tasks for hours on end
-* Switching gears and taking #breaks are effective methods for making progress when you're stuck
+* Switching gears and taking breaks are effective methods for making progress when you're stuck
 
 > [[TipEmbraceTheMonkeyBrain]]
 
 A general Approach
 
-* Develop a general #theory of the __problem__
-* Ask __questions__ leading to a #hypothesis
+* Develop a general theory of the __problem__
+* Ask __questions__ leading to a hypothesis
   Very little attention is paid to the formation of a hypothesis, that is,
   Testing without any theory on the cause of the bug. That is a wasted effort.
 * Form a __hypothesis__
-* Gather and test __#data__ against the hypothesis
+* Gather and test __data__ against the hypothesis
 * Repeat
 
 References

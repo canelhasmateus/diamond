@@ -1,8 +1,8 @@
 # CoordinatedOmission
 
-Coordinated Omission is a #phenomenon in software.
+Coordinated Omission is a phenomenon in software.
 
-It occurs frequently in #measuring and #benchmarking.
+It occurs frequently in measuring and benchmarking.
 
 ```example
 def measure( fn ):

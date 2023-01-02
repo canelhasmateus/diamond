@@ -1,16 +1,16 @@
 # TLSProtocol
 
-The Transport Layer Security is a #Cryptography #Protocol. It is designed to provide secure communications over a network and is the successor of the Secure Sockets Layer ([[ProtocolSSL]]).
+The Transport Layer Security is a Cryptography Protocol. It is designed to provide secure communications over a network and is the successor of the Secure Sockets Layer ([[ProtocolSSL]]).
 
-It prevents [[Eavesdropping]] and #Tampering by using [[TLSCertificate]]s between the communicating computer applications.
+It prevents [[Eavesdropping]] and Tampering by using [[TLSCertificate]]s between the communicating computer applications.
 
 Since communication can be done without TLS, the client must request that the server set up a secure connection.
 
-Usually, separation is achieved by using a different [[IPPort]] number for TLS connections, usually __Port 80__ for [[ProtocolHTTP]] and __Port 443__ for #HTTPS.
+Usually, separation is achieved by using a different [[IPPort]] number for TLS connections, usually __Port 80__ for [[ProtocolHTTP]] and __Port 443__ for HTTPS.
 
 ___
 
-The [[ThreeWayHandshake]] is the mechanism used to establish a #stateful #connection The goal of this procedure is to establish agreed encryption [[CipherSuite]] to be used alongside the [[ProtocolTCP]] connection
+The [[ThreeWayHandshake]] is the mechanism used to establish a stateful connection The goal of this procedure is to establish agreed encryption [[CipherSuite]] to be used alongside the [[ProtocolTCP]] connection
 
 1. The client begins by requesting a secure connection and its supported cipher suites.
 
