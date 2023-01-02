@@ -37,3 +37,19 @@ ___
 
 
 <https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry>
+
+___
+
+What are the projects that i currently have opened?
+
+* Lvim / Nvim
+* Slick
+* Canopy
+* Glyphogen
+* J2MMD
+* Arduino  / Embedded stuff
+* Handmade ( codecraft )
+  * Redis
+  * PingServer
+* Gnosis Learning
+* Custom colorscheme ( IJ + gruvbox )

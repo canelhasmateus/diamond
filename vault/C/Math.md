@@ -73,3 +73,17 @@ visible points in an integer lattice
 numbers m, n are coprime if gcd( m , n ) == 1
 
 euler product -> Zetta( 2 )
+
+___
+
+Prime factorization
+
+* Achieve gret speed ups through wheel factorization
+  " To produce numbers that are not multiples of two, we beging at three and keep adding two
+  to avoid multiples of boh two and three, we begin at five and alternatively add two and four
+  "
+
+* how tto generalize this behaviour ? For the 2,3,5 wheel:
+* find all values between 7 and 37 [ starting point, circunference + starting point ] that are not divisible by 2,3,5
+* In this case, 7, 11, 13, 17, 19, 32, 31, 37
+* their consecutive differences are 4,2,4,2,4,6,2,6 : this is the cycle taken to skip over non-primes

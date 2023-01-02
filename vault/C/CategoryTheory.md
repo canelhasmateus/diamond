@@ -151,3 +151,29 @@ Linear recursion is a special case of divide-and-conquer
     .. Recursion Types
 
 Writing traversals separates the concern of how to iterate over a data structure from the concern of what to do with the elements of the data structure.
+
+___
+
+Category
+
+* Set of objects that can relate to each other ( via morphisms ) in sensible ways , such as compoasition and associativity
+
+name | objects | morphism
+
+set | sets | functions  
+group | groups | group homorphisms
+top | topological spaces | continuous functions  
+vectK | vector spaces over a field k | linear transformations
+MEAS | measurable spaces | measurable functions
+poset | Partially ordered sets | order preserving functions
+man | smooth manifold | smooth maps
+
+* mathematical objects are determined - and understood - by the network of relationships they enjoy with all the other objects of its species
+
+                    A category 
+    ||                                        ||
+    ||  ------- A Natural transformations >   ||
+    v A Functor                               v A Functor
+                    A category
+
+* every good analogy is yearning to become a functor

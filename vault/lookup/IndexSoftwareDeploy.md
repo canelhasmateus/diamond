@@ -1,7 +1,0 @@
-# SoftwareDeploy
-
-![[DeployCanary]]
-
-![[DeployBlueGreen]]
-
-![[DeployRolling]]

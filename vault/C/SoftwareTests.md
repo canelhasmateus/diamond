@@ -25,3 +25,9 @@ ___
 The whole idea of automated tests is to make changes hard. That's logical: you don't want to add errors to your application. Unfortunately, most tests freeze the implementation instead of the behavior.
 
 <https://www.beyondjava.net/playwright>
+
+___
+
+<https://blog.thecodewhisperer.com/permalink/when-is-it-safe-to-introduce-test-doubles>
+
+> Never mock values, sometimes mock entities, but mock services freely.
