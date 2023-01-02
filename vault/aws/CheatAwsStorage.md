@@ -13,9 +13,9 @@ Be aware of necessary latency and throughput requirements when choosing them.
 
 |            | HDD    | On-Prem SSD | SC1 | GP2                          | ST1                                           | Provisioned |
 |------------|--------|-------------|-----|------------------------------|-----------------------------------------------|-------------|
-| Hardware   | HDD    | [[StorageSSD]]         |     | SSD                          | Hdd [[Raid]]                                      | [[StorageNVME]]        |
+| Hardware   | HDD    | [[StorageSSD]]         |     | SSD                          | Hdd [[Raid]]                                      | [[C/Storage]]        |
 | Latency    |        | 1M IOPS     |     | 16k                          |                                               | 64k         |
 | Throughput | 180 MB | 560 MB      |     | 200 MB                       |                                               | 1000        |
-| Uses       |        |             |     | Boot Volumes, Dev/Test Envs. | [[Log]] Files, Sequential Reads Sequential Writes | [[Databases]]   |
+| Uses       |        |             |     | Boot Volumes, Dev/Test Envs. | [[Log]] Files, Sequential Reads Sequential Writes | [[IndexDatabases]]   |
 
 > Storage latency and throughput are some of the downsides of the cloud. [[IndexAws]] fastest volume offers 64K IOPS, while a $100 Drive from best-buy can offer up to 1M IOPS.

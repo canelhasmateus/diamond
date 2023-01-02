@@ -46,7 +46,7 @@ Since the underlying tcp connection can't differentiate between these two packet
 * TLS can encrypt up to 16KB of data. This is enough to fill about 11 typical TCP packets.
 * If the first 10 packets get through, but the last one gets lost, browsers still need to wait for the last one to arrive before starting processing.
 
-There is also an interaction between TCP [[CongestionControl]] and HTTP implementation.
+There is also an interaction between TCP [[Pattern]] and HTTP implementation.
 
 ___
 

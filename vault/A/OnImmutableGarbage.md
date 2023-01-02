@@ -18,4 +18,4 @@ ___
 
 References:
 
-1. [How do Immutable Objects help decrease overhead due to Garbage Collection? - Stack Overflow](https://stackoverflow.com/questions/35384393/how-do-immutable-objects-help-decrease-overhead-due-to-garbage-collection)
+* [How do Immutable Objects help decrease overhead due to Garbage Collection? - Stack Overflow](https://stackoverflow.com/questions/35384393/how-do-immutable-objects-help-decrease-overhead-due-to-garbage-collection)

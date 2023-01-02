@@ -6,7 +6,7 @@ tags:
 
 # Lucid Charts and Http2
 
-[[LucidCharts]] switched to [[ProtocolHTTP]]2. They noticed an increased load in the backend servers, which slowed it to a crawl.
+[[LucidCharts]] switched to [[HTTP2]]. They noticed an increased load in the backend servers, which slowed it to a crawl.
 
 This is a possibility: Since http2 will use a single [[ProtocolTCP]] connection to send multiple requests, it will no longer be limited by the usual 6 connections by the browser, increasing concurrent load.
 

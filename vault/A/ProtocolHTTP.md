@@ -52,8 +52,8 @@ ___
 
 ## References
 
-1. [HTTP in 60 Seconds - Hypertext Transfer Protocol #shorts_hussein](https://www.youtube.com/shorts/Fbmru6iSee8)
-2. [The Biggest Flaw of HTTP 1.0 in 60 Seconds #shorts_hussein](https://www.youtube.com/watch?v=6cncmSaRqzQ)
-3. [Wiresharking Server-Sent Events](https://www.youtube.com/watch?v=FUL_Buud7jY)
-4. [Server-Sent Events Crash Course](https://www.youtube.com/watch?v=4HlNv1qpZFY)
+* [HTTP in 60 Seconds - Hypertext Transfer Protocol #shorts_hussein](https://www.youtube.com/shorts/Fbmru6iSee8)
+* [The Biggest Flaw of HTTP 1.0 in 60 Seconds #shorts_hussein](https://www.youtube.com/watch?v=6cncmSaRqzQ)
+* [Wiresharking Server-Sent Events](https://www.youtube.com/watch?v=FUL_Buud7jY)
+* [Server-Sent Events Crash Course](https://www.youtube.com/watch?v=4HlNv1qpZFY)
 

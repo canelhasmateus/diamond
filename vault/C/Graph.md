@@ -77,3 +77,15 @@ Three Algos:
 * Prim's Algorithm: Pick the cheapest that has a leg inside and a leg outside our boundaries.
 * Kruskal Algorithm: Pick the cheapest anywhere, as long as it does not create a cycle.
 * Reverse-Delete Algorithm: Remove the costliest, as long as it does not disconnect the components.
+
+___
+
+<https://www.youtube.com/watch?v=z3QEtxYPYb4>
+
+Disjoint Path
+
+* max size = N inNode to the destination
+
+Solve this problem by translating it into an instance of maxflow.
+
+1. Remove Edges into the origin or out of the destination

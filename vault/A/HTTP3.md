@@ -18,7 +18,7 @@ Since most of its features happen in userspace, it requires switching between us
 
 This means that it has serious performance issues when compared with in-kernel protocols, and high jitter under load.
 
-It does not implement any form of [[NetworkFairness]] and [[CongestionControl]]. As such, it can easily throttle down competing TCP sessions.
+It does not implement any form of [[NetworkFairness]] and [[Pattern]]. As such, it can easily throttle down competing TCP sessions.
 
 ## References
 

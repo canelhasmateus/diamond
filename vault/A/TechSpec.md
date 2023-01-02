@@ -52,6 +52,6 @@ ___
 
 ## References
 
-1. [Writing technical documentation](https://www.youtube.com/watch?v=a4L9GhldTHo)
-2. [How to Write Awesome Tech Specs](https://eng.lyft.com/awesome-tech-specs-86eea8e45bb9)
-3. [[TemplateTechSpec]]
+* [Writing technical documentation](https://www.youtube.com/watch?v=a4L9GhldTHo)
+* [How to Write Awesome Tech Specs](https://eng.lyft.com/awesome-tech-specs-86eea8e45bb9)
+* [[TemplateTechSpec]]

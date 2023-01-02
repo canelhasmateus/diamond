@@ -15,7 +15,7 @@ A connection must be established between the client and the server before data c
 
 This means that a server must be listening for connection requests from clients.
 
-TCP also provides [[CongestionControl]].
+TCP also provides [[Pattern]].
 
 It suffers from some vulnerabilities, such as [[AttackDDoS]], [[AttackConnectionHijacking]] , [[AttackTCPVeto ]] and [[AttackReset]]
 
@@ -51,4 +51,4 @@ ___
 
 ## References
 
-1. [What is the TCP 3-Way Handshake and Why Backend Engineers should understand it](https://www.youtube.com/watch?v=bW_BILl7n0Y)
+* [What is the TCP 3-Way Handshake and Why Backend Engineers should understand it](https://www.youtube.com/watch?v=bW_BILl7n0Y)
