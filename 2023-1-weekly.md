@@ -9,3 +9,11 @@ Getting back is hard. Need to peel at open threads to get back into form.
   * Tags
   * Folders
   * Contents
+
+What is `C`?
+
+* C is mess. It is a collection of notes divided in *coarse grained topics*.
+Usually, information aggregates here, until the some subset of the aggregation has enough *mass* or *cohesion* to warrant the creation of a `specific note` in folder `B` or `A`.
+
+* B is also a mess. It is a collection of notes divided in *fine grained topics*.
+Usually, topics sit here, until it is worked into a note *polished enough* to warrant move to folder `A`.

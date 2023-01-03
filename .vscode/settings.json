@@ -26,8 +26,14 @@
     "foam.edit.linkReferenceDefinitions": "off",
     "markdown.preview.breaks": true,
     "foam.files.ignore": [
-        "**vault/journal/*",
-        "**vault/public/*",
+        "journal",
+        ".foam",
+        ".vscode",
+        "**vault/assets/*",
+        "**vault/A/*",
+        "**vault/B/*",
+        "**vault/C/*",
+        "**vault/index/*",
         "**limni/org/*"
     ],
     "foam.orphans.exclude": [
