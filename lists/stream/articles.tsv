@@ -15814,7 +15814,6 @@ datetime	kind	url
 2022/12/15 20:46:38	Queue	https://candost.blog/the-power-of-ritualization-rituals-vs-routines/
 2022/12/15 20:47:18	Queue	https://quantpedia.com/stock-returns-vs-inflation-expectations/
 2022/12/15 20:47:21	Queue	https://engineering.linkedin.com/blog/2022/ocelot--scaling-observational-causal-inference-at-linkedin
-<<<<<<< Updated upstream
 2022/12/15 21:00:13	Queue	https://www.youtube.com/watch?v=anL-RGKz
 2023-01-03 00:25:47	false	https://apple.stackexchange.com/questions/175215/how-do-i-assign-a-keyboard-shortcut-to-an-applescript-i-wrot
 2023-01-03 00:32:49	false	https://apple.stackexchange.com/questions/175215/how-do-i-assign-a-keyboard-shortcut-to-an-applescript-i-wrot
@@ -15851,9 +15850,6 @@ datetime	kind	url
 2023-01-03 00:48:52	Queue	https://erikbern.com/2012/10/29/a-neat-little-trick-with-time-decay.htm
 2023-01-03 00:49:19	Queue	https://erikbern.com/2021/07/23/what-is-the-right-level-of-specialization.htm
 2023-01-03 00:51:32	Queue	https://erikbern.com/2018/10/08/the-hackers-guide-to-uncertainty-estimates.html
-||||||| Stash base
-2022/12/15 21:00:13	Queue	https://www.youtube.com/watch?v=anL-RGKz_Ak
-=======
 2022/12/15 21:00:13	Queue	https://www.youtube.com/watch?v=anL-RGKz_Ak
 2022/12/17 08:42:01	Queue	https://calendar.perfplanet.com/2022/an-html-first-mental-model/
 2022/12/17 08:51:57	Tool	https://vanilla-extract.style
@@ -15879,7 +15875,6 @@ datetime	kind	url
 2022/12/22 18:36:31	Queue	https://www.infoq.com/presentations/Y-Combinator/
 2022/12/22 18:45:22	History	https://www.youtube.com/watch?v=hxGOiiR9ZKg
 2022/12/22 18:45:59	Queue	https://www.youtube.com/watch?v=QdkS6ZjeR7Q
-2022/12/22 20:48:48	Premium	http:// 
 2022/12/23 14:33:03	History	https://www.youtube.com/watch?v=f53-Iw_5ucA
 2022/12/23 14:36:38	Queue	https://calendar.perfplanet.com/2022/http-3-prioritization-demystified/
 2022/12/23 14:37:57	History	https://www.youtube.com/watch?v=5o9ltH6YmtM
@@ -15897,8 +15892,6 @@ datetime	kind	url
 2022/12/25 19:55:30	Bad	https://blog.heroku.com/clocksource-tuning
 2022/12/25 19:58:17	Bad	https://blog.reverberate.org/2016/11/07/introducing-bloaty-mcbloatface.html
 2022/12/25 19:58:23	History	https://blog.reverberate.org/2016/11/07/introducing-bloaty-mcbloatface.html
-2022/12/25 20:15:10	History	http:// 
-2022/12/25 20:15:13	Good	http:// 
 2022/12/26 14:14:49	History	https://www.youtube.com/watch?v=vWMiBVkdJjA
 2022/12/26 14:27:07	History	https://www.youtube.com/watch?v=vQ5JPqeFitM
 2022/12/26 21:18:29	History	https://www.youtube.com/watch?v=G8ZRM0oo3OM
@@ -15926,4 +15919,4 @@ datetime	kind	url
 2023/01/02 21:57:46	History	https://brandur.org/fragments/deleted-record-insert
 2023/01/02 21:58:13	Queue	https://candost.blog/decisions-that-remove-other-decisions/
 2023/01/02 21:58:18	Queue	https://candost.blog/faucets-and-bad-ideas/
->>>>>>> Stashed changes
+2023-01-03 14:22:54	History	https://erikbern.com/2016/03/16/exploding-offers-are-bullshit.ht
