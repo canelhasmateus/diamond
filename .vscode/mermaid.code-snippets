@@ -1,0 +1,73 @@
+{
+
+	"MermaidEntity": {
+		"scope": "markdown",
+		"prefix": "mmder",
+		"description": "An Entity-Relationship Diagram",
+		"body": [
+			"```mermaid",
+			"erDiagram",
+			"    CUSTOMER }|..|{ DELIVERY-ADDRESS : has",
+			"    CUSTOMER ||--o{ ORDER : places",
+			"CUSTOMER ||--o{ INVOICE : \"liable for\"",
+			"\tDELIVERY-ADDRESS ||--o{ ORDER : receives",
+			"\tINVOICE ||--|{ ORDER : covers",
+			"\tORDER ||--|{ ORDER-ITEM : includes",
+			"\tPRODUCT-CATEGORY ||--|{ PRODUCT : contains",
+			"\tPRODUCT ||--o{ ORDER-ITEM : \"ordered in\"",
+			"```"
+		]
+	},
+	"MermaidGantt": {
+		"scope": "markdown",
+		"prefix": "mmdg",
+		"description": "An Gantt Diagram",
+		"body": [
+			"```mermaid",
+			"gantt",
+			"    title A Gantt Diagram",
+			"    dateFormat  YYYY-MM-DD",
+			"    section Section",
+			"    A task           :a1, 2014-01-01, 30d",
+			"    Another task     :after a1  , 20d",
+			"    section Another",
+			"    Task in sec      :2014-01-12  , 12d",
+			"    another task      : 24d",
+			"",
+			"```",
+			"",
+		]
+	},
+	"MermaidSequence": {
+		"scope": "markdown",
+		"prefix": "mmdseq",
+		"description": "An Sequence Diagram",
+		"body": [
+			"```mermaid",
+			"sequenceDiagram",
+			"    Alice->>+John: Hello John, how are you?",
+			"    Alice->>+John: John, can you hear me?",
+			"    John-->>-Alice: Hi Alice, I can hear you!",
+			"    John-->>-Alice: I feel great!",
+			" ```",
+			"",
+		]
+	},
+	"MermaidState": {
+		"scope": "markdown",
+		"prefix": "mmdstate",
+		"description": "An State Diagram",
+		"body": [
+			"```mermaid",
+			"",
+			"stateDiagram-v2",
+			"     ",
+			"[*] -->  IncomingPaymentAction",
+			"IncomingPaymentAction --> Database",
+			"IncomingPaymentAction --> CoreCallback ",
+			"CoreCallback --> CoreBankProcessor",
+			"    ",
+			"```",
+		]
+	},
+}
