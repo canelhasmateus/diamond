@@ -11,6 +11,7 @@
         "davidanson.vscode-markdownlint",
         "znck.grammarly",
         "neelyinnovations.note-macros",
-        "skn0tt.markdown-link-expander"
+        "skn0tt.markdown-link-expander",
+        "oijaz.unicode-latex"
     ]
 }

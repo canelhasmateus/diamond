@@ -101,3 +101,56 @@ Still not 100%. There are still a bit of data scattered through onedrive, everno
 ___
 
 Todo:
+
+___
+
+## UltraLearning
+
+Stempunk
+MiT challenge
+What tô learn and why
+Mwtalearning why what and how
+What: the expert interview method
+What: facts,  concepts,  procedures
+Concepts are understood
+Facts are memorized
+Procedures need tô be practiced
+Why: intrisic vs instrumental
+How: benchmarking vs emphasize exclude method
+Benchmarking
+Find how things are usually done and use it as default
+Universities are good for benchmarking
+Emphasize exclude
+Find some benchmark , and start doing modifications when you have knowledge of what is important
+Omit or delay things not important
+10% rule: use 10% of your expected learning time doing research
+Be Aware of the marginal improvements of meta vs actual learning and vice versa, recalibrate often
+
+___
+ things to do
+better orgmode
+neovim stuff
+leet code
+rust ocaml
+ultralearning researchh a project
+        stats
+        engineering
+        maths
+cat theory
+akti  limni gnosis
+residential automation embedded
+meditation
+yoga
+audiobooks
+study boks to learn, like a roadmap or something
+quantitified self
+set up a system to lookup possible / pending tasks to do whenever i feel bored / going to do other things.
+
+___
+Ultra learning harvard cs
+___
+
+Talk and Move Slower
+Talk Less
+Sharpen up Physically
+Don't always be available

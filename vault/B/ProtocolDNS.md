@@ -48,3 +48,6 @@ ___
 <https://www.youtube.com/watch?v=eNF9z5JNl-A>linked makes use of the layer 6 implementation?
 
 ___
+
+DNS
+    . Can point to ip:ports via SRV records

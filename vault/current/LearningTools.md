@@ -6,7 +6,6 @@ tags:
 
 # LearningTools
 
-
 <https://notes.andymatuschak.org/About_these_notes>
 <https://zettelkasten.de/posts/overview/>
 ___
@@ -63,7 +62,6 @@ Multimedia
 <https://github.com/phibr0/obsidian-charts>
 
 ___
-
 
 read:
 
@@ -157,10 +155,7 @@ Completion
     <https://github.com/tadashi-aikawa/obsidian-various-complements-plugin>
     <https://github.com/tth05/obsidian-completr>
 
-Classification is where things go Cataloging is what we call them
 
-Metadata defined Library of congress subject heading dewey decimal classification universal decimal classification
-
-MARC records dublin core title creator subject description publisher contributor date type format identifier source laugange relation coverage rights
 
 Resource Description and Access
+___

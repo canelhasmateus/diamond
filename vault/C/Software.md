@@ -1,12 +1,10 @@
 ## Code Review
-"hey, I appreciate the contribution! I found some things troublesome with it, so I put it on the back burner because I wanted to discuss it with you. Have some time for a chat? I have some ideas for improvement!"
 
+"hey, I appreciate the contribution! I found some things troublesome with it, so I put it on the back burner because I wanted to discuss it with you. Have some time for a chat? I have some ideas for improvement!"
 
 ## Debugging
 
  treating every edge case and bug as a problem to bne solved rather than a piece of information to use in your deisgn
-
-
 
 ## Dev
 
@@ -20,7 +18,6 @@ tar pit of immediacy
 proficiency fatalism
 
 strive to achieve the full range of ass
-
 
 ## Observability
 
@@ -101,6 +98,12 @@ It is vital that each service have a fine grained knob to slowly ramp up usage w
 
 <https://blog.acolyer.org/2016/09/12/on-designing-and-deploying-internet-scale-services/>
 <https://gist.github.com/acolyer/95ef23802803cb8b4eb5>
+___
+Though I think "count of issues" is a very poor metric, you're better off with an uptime metric. And "100%" is the only strictly-incorrect number to pick for uptime, because it is literally impossible
+
+my (super-unscientific, don't hold me to this) rule of thumb for business people is "every extra 9 costs you 10x". So do you need 99.9% uptime or 99.99%?
+
+<[Thoughts on OKRs :: joe blubaugh](https://joeblu.com/blog/2022_05_okrs/)>
 
 ___
 
@@ -128,8 +131,7 @@ ___
 
 "The prototypical OO model brings in some new ways of solivng old problems, in an more dynamic and expressive way. It also presents new and more powerful mode3ls for extensibility and code-reuse - it does not however, give you contracts. There are no static guarantees that an object will alqways have a given set of properties ... "
 
-
-## Complexity 
+## Complexity
 
 <https://blog.acolyer.org/2015/03/20/out-of-the-tar-pit/>
 
@@ -174,9 +176,7 @@ We should create syshtems that are aware of these concepts: They should allow fo
 
 ![](2022-04-01-14-34-23.png)
 
-
 ___
-
 
 ## Distributed Systems
 
@@ -187,3 +187,25 @@ push vs pull
 push is stateful
 
 client state information in the server doesnt scale
+
+___
+
+<[State drift · Erik Bernhardsson](https://erikbern.com/2016/09/08/state-drift.html)>
+
+How to build self-correction into systems?
+
+`state drift` -> two components that synchronize state ( like a producer and a consumer )-> If care isn't taken, the state in the observer will start to drift away from what it's supposed to be.
+
+Examples:
+
+* Service updates over email
+* Webhooks -> rarely redelivery guarantees
+  
+* If you lose a single delta, and there is no way to self-correct, it's game over.
+
+We can do full state reconciliation
+Examples:
+
+* Video compression and key frames
+
+Or we can have strong guarantees of the deltas , such as `Kafka`

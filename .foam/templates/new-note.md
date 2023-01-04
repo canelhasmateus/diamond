@@ -3,7 +3,7 @@ created_on: ${CURRENT_YEAR}/${CURRENT_MONTH}/${CURRENT_DATE} ${CURRENT_HOUR}:${C
 kind:
 tags:
 foam_template:
-    filepath: 'vault/C/$FOAM_TITLE.md'
+    filepath: 'vault/current/$FOAM_TITLE.md'
 ---
 
 # ${FOAM_TITLE}

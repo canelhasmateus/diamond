@@ -80,9 +80,9 @@ if __name__ == "__main__":
 
     for transition in state:
         content = json.dumps(transition.history)
-        key = transition.url
+        key = transition.url.strip()
         cursor.execute("""
-        replace into state( url, transitions) values ( ? , ? ) 
+        replace into state( url, transitions ) values ( ? , ? ) 
         """, (key, content))
         
     connection.commit() 

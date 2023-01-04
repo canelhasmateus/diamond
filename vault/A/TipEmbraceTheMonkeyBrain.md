@@ -13,9 +13,7 @@ An important realization: not all activities are the same.
 * Possibly work best when in different states of mind.
 
 We usually have a __set of__ - not one - goals.
-Instead of picking a task and forcing our brain into the required state to do it, we can pick the task accordingly to the current state.
-
-> [[PatternQuestionThePremise]], [[PatternDuality]]
+Instead of picking a task and forcing our brain into the required state to do it, we can pick the task accordingly to the current state. [[PatternQuestionThePremise]] [[PatternDuality]]
 
 By working on some activity, it is possible our minds get tired of being in that state. We usually notice that by the distinct lack of productivity and motivation.
 

@@ -91,6 +91,7 @@ Prime factorization
 ___
 
 ## Measure Theory
+
 The study of measures.
 Measures provide an generalization to the intuition of Length, Area, , volume, [[probability]].
 These seemingly distinct concepts have many similarities and can often be treated together in a single mathematical context.
@@ -160,7 +161,6 @@ Examples of measures:
 
 > #todo Integration with respect to a measure??
 
-
 ___
 
 # MinimaxTheorem
@@ -212,3 +212,60 @@ throughput != capacity
 Implements Rate limits by means of Little's Law. It shows that Limiting concurrent requests acts the same as limiting requests per period when the load is reasonable, but introduces backpressure when the service is overwhelming.
 Since this limit is  dynamically calculated based on load, we can provide better utilization of services.
 Uses the same principles of [[TCP]], of [[Patterns#Additive Increase, Multiplicative Decrease]]
+
+___
+
+<https://www.youtube.com/watch?v=jvPPXbo87ds>
+
+* This is a generalization of a weigheted sum called a `convex combination`
+
+___
+
+## Vector Algebra
+
+<https://www.youtube.com/watch?v=If8r7vo4uoU>
+
+One of the biggest breakthroughs in math came from stopping looking at things as objects and thinking in terms of properties
+
+* Instead of askings what *is* a vector, we should ask what *can we do* with vectors
+
+1. Add vectors
+2. Multipy by scalers
+
+( Form linear combination s- spans and basis )
+
+Thus, a vector is anything that can be added and scale that
+follows these 8 rules:
+
+...
+
+1. Summation Associativity
+2. Commutativity
+3. Existence of Identity under sum
+4. Inverses under sum
+5. Scalar Multiplication Associativity
+6. Existence of Identity under Multiplication
+7. Scalar multiplication Distributivity
+8.
+
+> A vector is a element of a Linear Space
+___
+
+<https://www.youtube.com/watch?v=2hBWCCAiCzQ&list=PLVuwZXwFua-0Ks3rRS4tIkswgUmDLqqRy&index=2>
+
+Geometric Algebra is a incredible powerful branch of mathematics that extends the usual operations on numbers to geometric shapes.
+
+natural way to transform geometric problems into algebraic ones
+
+History:
+
+Back in the 1800 many algebraic systems popped upp - vector algebra came up on top . It can describe many things, but it is not enough in some situations
+many people  started tacking new math ideas, but resulted i a massive kludge of math ideas.   --> Geo Algebra as a solution
+
+ hello, world
+
+ ___
+
+ <https://www.youtube.com/watch?v=zeGJRywjjKY&list=PLVuwZXwFua-0Ks3rRS4tIkswgUmDLqqRy&index=2>
+
+ what is the simpleset object that we can ndo algebra with?

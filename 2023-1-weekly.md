@@ -17,3 +17,9 @@ Usually, information aggregates here, until the some subset of the aggregation h
 
 * B is also a mess. It is a collection of notes divided in *fine grained topics*.
 Usually, topics sit here, until it is worked into a note *polished enough* to warrant move to folder `A`.
+
+<https://zettelkasten.de/posts/barbell-method-reading/>
+
+___
+
+Quantification!

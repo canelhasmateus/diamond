@@ -14,3 +14,8 @@ ____
 todo: add sapolksy take ion buckets
 
 <https://www.youtube.com/watch?v=NNnIGh9g6fA>
+
+___
+
+Classification is where things go
+Cataloging is what we call them

@@ -30,6 +30,67 @@ eg.
 
 ___
 
+<[Interviewing is a noisy prediction problem · Erik Bernhardsson](https://erikbern.com/2018/05/02/interviewing-is-a-noisy-prediction-problem.html)>
+
+Interviewing is a noisy prediction problem.
+
+* Should be thought of as information gathering
+* Consciously design the process to be the most predictive of future job performance.
+* High Sinal-to-noise ration, and low-correlation with each other.
+
+We end up with a matrix :
+
+ApplicantId | Algorithmns | System Design | Gradles | Portifolio | Actual performance
+
+How to measure job performance though? -> No way, find a proxy.
+
+* avoid unstructured interviews
+* avoid problems that rely on a single (insight | trick ) to solve.
+* candidate should talk as much as possible -> However, interviewewr keeps driving ( Opportunity Costs).
+* Certains signals can be good, but have a ton of false negatives -> Their presence is good, but their absence isn't a big deal.
+* Having *many* short interview questions that rely on knowing particular things.
+* Reading code ( java, unix, regex, sql ... ) can be valuable -> cover lots of ground, spending little time on each problem
+
+On modelling such:
+Regressing on the matrix is super noisy - noisy nature of the measuring devices , survivorship biases, low number of observations
+
+Separate trick for judgement:
+
+* What would i have to see in order for me to change my mind about this candidate? Both for positive and negative impressions.
+
+Going backwards is also possible:
+
+* Look at the current top perforamers at your company, and ask yourself: what type of interview would have selected these people?
+
+___
+
+<https://erikbern.com/2014/06/08/how-to-build-up-a-data-team-everything-i-ever-learned-about-recruiting.html>
+
+"Recruiting is a problem ... with this observation bias where you only see how well the people you hire are doing."
+
+___
+
+what recruiters really look for in a backend engineer
+
+the hype trains usually die very quickly , around a year or two
+    , learning it just to get hired means you're not passionate about that specific topic
+
+    proxy / reverse proxy / load balancers
+        . Layer 3 load balancers??
+
+        pick a taste of different technologies, and see what goes down. 
+    
+    x
+    go deep down in a stack
+    find your passion
+    talk about fundamentals the most you can 
+    
+    haproxy
+        active - active?
+        keep-alive?
+
+___
+
 ## Downleveling
 
 on downl-leveling
@@ -83,6 +144,15 @@ hyperbolic discounting
 ___
 
 ## Teamwork
+
+[Never attribute to stupidity that which is adequately explained by opportunity cost · Erik Bernhardsson](https://erikbern.com/2020/03/10/never-attribute-to-stupidity-that-which-is-adequately-explained-by-opportunity-cost.html)
+
+Ideas will be generated much faster than there's bandwidth to execute on them, so you're doing something right if your backlog is growing indefinitely. A negative person on a mediocre team will complain that there's never time to work on their favorite pet project X. I've often heard things like “our backlog of features keeps growing so fast, how are we ever going to have time to invest in paying down tech debt?".
+
+To me this reflects a misunderstanding of how product development should work. Backlogs should be growing indefinitely
+
+
+___
 
 Think about access
     - Not only credentials, but also *social access*
@@ -159,7 +229,7 @@ Decision making pendulum
 
 ___
 
-#
+
 
 Why can't this be done sooner
     . "Deeply understand the papraoch tou're taking, question it, find the gaps in your knowledge, and analyze the rists better so that you make an informative decision while moving faster. It doesn't ask yo reduce the orject quality or scope, its purely focused on undestanding the limitations.
@@ -175,7 +245,7 @@ Thinking in alternatives pushes us to focus on the problem rather than blidly lo
 
 <https://candost.blog/why-cant-this-be-done-sooner/>
 
-#
+
 
 #
 
@@ -301,32 +371,82 @@ Systems Leadership ( Ian Macdonald, Catherine Burke and Karl Stewart)
 
 If it hurts, do it more often
 
-
 ___
 
-## Recruiting
 
-<https://erikbern.com/2014/06/08/how-to-build-up-a-data-team-everything-i-ever-learned-about-recruiting.html>
+## Product Building
 
-"Recruiting is a problem ... with this observation bias where you only see how well the people you hire are doing."
+<[Optimizing for iteration speed · Erik Bernhardsson](https://erikbern.com/2017/07/06/optimizing-for-iteration-speed.html)>
 
-___
+"Mean time to recovery is more important than mean time between failures"
+"When optimizing for a tight feedback loop, cross-functional teams make more sense then skill-splits"
 
-what recruiters really look for in a backend engineer
+## Management 
 
-the hype trains usually die very quickly , around a year or two
-    , learning it just to get hired means you're not passionate about that specific topic
+<[The mathematical principles of management · Erik Bernhardsson](https://erikbern.com/2017/04/09/the-mathematical-principles-of-management.html)>
 
-    proxy / reverse proxy / load balancers
-        . Layer 3 load balancers??
+Topics that would be nice:
 
-        pick a taste of different technologies, and see what goes down. 
-    
-    x
-    go deep down in a stack
-    find your passion
-    talk about fundamentals the most you can 
-    
-    haproxy
-        active - active?
-        keep-alive?
+1. Decision making with perfect information
+    * Most basic case
+    * What is the breakeven time if we upgrade our widget making machine for $x so that it can make y more widgets per day
+    * Concepts:
+        * ROI
+        * Diminishing returns
+        * Marginal ROI vs average
+        * Price sensitivity
+        * Time allocation -> Lagrande multipliers and the principle of optimizing striving for equal marginal ROI
+        * Opportunity Cost
+        * Pipeline / Constraint thinking
+2. Decision making given uncertainty
+    * Concepts:
+        * Prior beliefes and bayes rules
+        * Explore vs exploid ( + Thompson sampling )
+        * Rapid iteration vs long term planning ( hardware vs software development )
+        * Proxy metrics
+        * A/B testing
+        * Known unknowns vs unknown unknowns
+3. People management
+    * Concepts :
+        * Marxism and the theory that history is a struggle beetween employers and employees
+        * Taylorism and the first wave of scientific management
+        * How performance bonuses incentivizes risk taking?
+        * Why it is so hard for companies to change?
+    * Information assymetry:
+        * Efficient meeting culture ( Think about it as a 1,000 person company where each person is a modem that can do like 30 baud. How do you organize to propagate information the fastest from top to bottom (and then back up?) )
+    * Bounded rationality
+4. Operating in a market
+    * Concepts:
+        * Completitive advantage
+        * Market of people ( recruiting )
+        * Moats: network effects ( Metcalfe's law) , scale advantages, proprietary technology, regulatory capture
+        * Collusion and defection
+        * Branding
+        * Suppliers and wholesale transfer pricing
+        * Induced Demand
+        * First mover advantage
+        * Case studies
+
+<[Why organizations fail · Erik Bernhardsson](https://erikbern.com/2016/04/18/why-organizations-fail.html)>
+
+"There is no intrinsic value of beautiful code and no intrinsic value of tech debt"
+Why can't everyone just come in in the bmorning and ask themselves 'what is the highest ROI thing i can do today?' and then just do it?
+
+1. Incentive problems
+2. Bounded rationality
+
+This makes management break down recursive:
+
+1. Make sure people interests are aligned with the company
+2. Make sure everyone in the team has the necessary information they need.
+
+____
+[σ-driven project management: when is the optimal time to give up? · Erik Bernhardsson](https://erikbern.com/2022/04/05/sigma-driven-project-management-when-is-the-optimal-time-to-give-up.html)
+
+Define the blowup factor to be the ratio of actual vs estimated.
+Blowup factors will follow a standard log-normal distribution, parametrized by σ.
+
+Its CDF It always passes the point ( 1, 0.5 ), but depending on σ , the distribution is very different:
+The thesis is that σ is an inherent property of the type of risk you have in your project Portifolio, and that different values for σ warrant very different types of project management
+
+[Why software projects take longer than you think: a statistical model · Erik Bernhardsson](https://erikbern.com/2019/04/15/why-software-projects-take-longer-than-you-think-a-statistical-model.html) very related
