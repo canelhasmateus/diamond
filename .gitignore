@@ -6,4 +6,6 @@
 
 **/__pycache__
 **/aggregate
-lists/state/
+.foam/custom/
+/node_modules
+/lists/state/
