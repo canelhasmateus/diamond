@@ -15919,6 +15919,7 @@ datetime	kind	url
 2023/01/02 21:57:46	History	https://brandur.org/fragments/deleted-record-insert
 2023/01/02 21:58:13	Queue	https://candost.blog/decisions-that-remove-other-decisions/
 2023/01/02 21:58:18	Queue	https://candost.blog/faucets-and-bad-ideas/
+<<<<<<< Updated upstream
 2023-01-03 14:22:54	History	https://erikbern.com/2016/03/16/exploding-offers-are-bullshit.h
 undefined	Queue	https://erikbern.com/2018/05/02/interviewing-is-a-noisy-prediction-problem.htm
 undefined	Queue	https://erikbern.com/2017/07/06/optimizing-for-iteration-speed.htm
@@ -16052,3 +16053,18 @@ undefined	Queue	https://erikbern.com/2020/03/10/never-attribute-to-stupidity-tha
 2023-01-04 06:38:57	History	https://zettelkasten.de/posts/reading-putting-it-all-together
 2023-01-04 07:20:46	Queue	https://zettelkasten.de/posts/ease-into-writing
 2023-01-04 12:57:43	Queue	https://procrastinus.com/piers-steel/theories-of-procrastination/
+||||||| Stash base
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+
+2023/01/02 22:26:16	History	https://www.youtube.com/watch?v=i3dDslo9ibw
+>>>>>>> Stashed changes
+
+2023/01/04 21:23:02	Queue	https://github.com/RustScan/RustScan
+2023/01/04 21:23:09	Queue	https://towardsdatascience.com/10-simple-things-you-can-do-to-improve-your-data-science-skills-in-2023-af274dc513da?source=rss----7f60cf5620c9--editors_pick
+2023/01/04 21:23:15	Queue	http://blogs.newardassociates.com/blog/2023/you-want-modules-not-microservices.html
+2023/01/04 21:24:16	Queue	https://reasonablypolymorphic.com/blog/abusing-constraints/index.html
+2023/01/04 21:24:35	Premium	https://reasonablypolymorphic.com/blog/generic-parallel-fp/index.html
+2023/01/04 21:25:03	Queue	https://shopify.engineering/monte-carlo-simulations-sampled-success-metrics
+2023/01/04 21:31:43	History	https://www.paolomainardi.com/posts/docker-performance-macos/
