@@ -2,17 +2,20 @@
     // See http://go.microsoft.com/fwlink/?LinkId=827846
     // for the documentation about the extensions.json format
     "recommendations": [
+        // base support 
+        "znck.grammarly",
         "foam.foam-vscode",
-        "yzhang.markdown-all-in-one",
-        "bierner.markdown-mermaid",
+        "usernamehw.errorlens",
+        "egomobile.vscode-powertools",
+        "davidanson.vscode-markdownlint",
+        // syntax support
         "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
         "hediet.vscode-drawio",
-        "usernamehw.errorlens",
-        "davidanson.vscode-markdownlint",
-        "znck.grammarly",
+        // goodies 
+        "yzhang.markdown-all-in-one",
+        "oijaz.unicode-latex",
+        // would love to remove
         "neelyinnovations.note-macros",
         "skn0tt.markdown-link-expander",
-        "oijaz.unicode-latex",
-        "egomobile.vscode-powertools"
     ]
 }

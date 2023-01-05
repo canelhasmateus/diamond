@@ -8,7 +8,7 @@ tags:
 # OnMeetingRoleplays
 
 I was recently thinking about the merits of role-based discussions.
-not limited to any place, but life in general - although it *does* seem more applicable in [[IndexWorkplace]] settings.
+not limited to any place, but life in general - although it *does* seem more applicable in [[AboutWorkplace]] settings.
 
 The premise is that many meetings and reunions suffer from a lack of tangible value-added because they are:
 

@@ -1,6 +1,5 @@
 # AboutLeadership
 
-
 [[LeadershipOwnership]]
 [[ActionBias]]
 [[LeadershipSimplify]]
