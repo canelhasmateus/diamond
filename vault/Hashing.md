@@ -14,7 +14,7 @@ Applications:
 * [[HashTables]]
 * [[Sharding]]
 * [[Partitioning]]
-* [[SoftwareSecurity]], due to usually being an irreversible process
+* [[Security]], due to usually being an irreversible process
 
 ___
 

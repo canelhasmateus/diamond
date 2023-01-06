@@ -6,7 +6,7 @@ The book explains how Andy Grove introduced the practice at Intel and it was ver
 
 I suspect that Andy Grove was probably an excellent manager and I think he could have succeeded with something other than OKRs.
 
-I think he understood that what was really important was to get everybody across the organization to focus on essentially one big goal.
+I think he understood that what was important was to get everybody across the organization to focus on essentially one big goal.
 
 He needed to make sure that everybody was pulling in the same direction and together, and OKRs provided a tool to do that.
 
@@ -20,7 +20,7 @@ As one of my coworkers says, the title of the book is "Measure What Matters", bu
 
 However, note that the process of implementing OKRs has caused the leadership team to write down their expectations, which previously might have been unspoken.
 
-> [[PatternImplicitAssumption]]
+> [[ImplicitAssumption]]
 
 * This is a first step towards resolving the problem.
 * The next step is for the CTO to push back, hard, on the bits of these that aren't actually realistic, and hopefully get the leadership team aligned on what can actually be done.

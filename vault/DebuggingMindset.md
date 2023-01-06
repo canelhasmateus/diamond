@@ -22,7 +22,7 @@ A mental model intends to allow programmers to reason accurately about the behav
 
 * The most sinister bugs occur when programmers falsely believe their mental models to be complete.
 
-    > [[PatternOversimplification]], [[PatternImplicitAssumption]]
+    > [[PatternOversimplification]], [[ImplicitAssumption]]
 
 * The most effective people in debugging draw from extensive experience and refined problem-solving skills. They also employ generalized strategies for problem-solving, instead of treating every individual bug as a new, specific case.
 

@@ -7,7 +7,7 @@ tags:
 
 In a common [[NetworkProxy]], the server ends up not knowing the originating client. We can, however, invert this situation, making client unaware of the destination server.
 
-This has several use cases, many prevalent in [[SoftwareMicroservices]] and [[SystemsDistributed]] architectures, such as:
+This has several use cases, many prevalent in [[Microservices]] and [[SystemsDistributed]] architectures, such as:
 
 * [[Caching]]
 * [[LoadBalancer]]
@@ -16,7 +16,7 @@ This has several use cases, many prevalent in [[SoftwareMicroservices]] and [[Sy
 * Ingress:
   * Hey, you talk to me sir,  and if you wanna access the pictures API, I can route requests.
 
-As a reverse proxy, when receiving a [[ProtocolTLS]] handshake request, we can choose to act in several ways.
+As a reverse proxy, when receiving a [[TLS]] handshake request, we can choose to act in several ways.
 
 The first one is to respond to the client with the proxy's own [[TLSCertificate]] and TLS Parameters. This is called [[TLSTermination]]. This necessitates, however, that the Private[[EncryptionKey]] and certificate be in the reverse proxy. This raises major concerns:
 
@@ -31,11 +31,11 @@ It can continue routing encrypted requests by means of [[ServerNameIndication]]
 
 A Layer7 proxy needs to understand the request, making it incapable of forwarding the packets as they come. It has to receive and acknowledge each one, and internally assemble the request to do its decisions.
 
-It can, afterward, establish a [[ProtocolTCP]] request to the downstream server and send the packets.
+It can, afterward, establish a [[TCP]] request to the downstream server and send the packets.
 
 * It is very common to `tamper` with the requests when doing this, e.g add requests headers
 
-* Since it is operating at Layer 7 via [[ProtocolHTTP]] - a stateless protocol - it is very possible that further requests establish a new TCP connection with the same server or even other servers.
+* Since it is operating at Layer 7 via [[HTTP]] - a stateless protocol - it is very possible that further requests establish a new TCP connection with the same server or even other servers.
 
 ```mermaid
 

@@ -19,7 +19,7 @@ Proxies have a variety of use cases:
 
 > This can be seen as [[PatternZeroSum]].
 
-* [[Log]]:  Being a funneling channel, the proxy can log requests. This can be useful in the context of [[SoftwareMicroservices]], to provide [[SoftwareObservability]], [[CircuitBreakers]] and [[ProtocolHTTP]] upgrading. This can be seen as a form of segregation and modularity.
+* [[Log]]:  Being a funneling channel, the proxy can log requests. This can be useful in the context of [[Microservices]], to provide [[Observability]], [[CircuitBreakers]] and [[HTTP]] upgrading. This can be seen as a form of segregation and modularity.
 
 ___
 
@@ -40,7 +40,7 @@ Being restricted to use only [[ModelOSI]] Layer 4 information, the proxy has onl
 * [[IpAddress]]
 * [[IpPort]] Number
 
-This can happen by design, or because the application layer content is encrypted due to mechanisms such as [[ProtocolTLS]].
+This can happen by design, or because the application layer content is encrypted due to mechanisms such as [[TLS]].
 
 A Layer 4 proxy will look at TLS requests and transparently forward them. Of course, this is only one of the implementations. It is also possible to do [[TLSTermination]]
 
@@ -58,15 +58,15 @@ ___
 * Can a proxy and a [[NetworkReverseProxy]] be used at the same time?
 
     Yes, this is called a [[ServiceMesh]].
-    It is very common in [[SoftwareMicroservices]] architectures to build the network features of the application in the proxy, instead of making the application worry about [[NetworkTimeout]] and [[CircuitBreakers]].
+    It is very common in [[Microservices]] architectures to build the network features of the application in the proxy, instead of making the application worry about [[NetworkTimeout]] and [[CircuitBreakers]].
 
-* Can I use a proxy instead of [[VirtualPrivateNetwork]]s for anonymity?
+* Can I use a proxy instead of [[VPN]]s for anonymity?
   
-  Yes, but usually VPNs are more secure since they operate at a Lower Level ([[ProtocolIPSec]])and can see only your domain. Some proxies can see more than the domain if they do [[TLSTermination]]
+  Yes, but usually VPNs are more secure since they operate at a Lower Level ([[IPSEC]])and can see only your domain. Some proxies can see more than the domain if they do [[TLSTermination]]
   
   > To verify, go to the browser padlock and see that the content is being served by the final destination, not the proxy.
   
-* Can I proxy traffic other than [[ProtocolHTTP]]?
+* Can I proxy traffic other than [[HTTP]]?
   
   Yes, there are multiple types of proxy, like [[SocksProxy]], used for [[NetworkTunneling]].
 

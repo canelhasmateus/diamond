@@ -3,10 +3,10 @@
 
 # Communication Protocol
 
-![[ProtocolHTTP]]
+![[HTTP]]
 ![[ProtocolUDP]]
-![[ProtocolTCP]]
-![[ProtocolIP]]
+![[TCP]]
+![[IP]]
 ![[ProtocolICMP]]
 ![[ProtocolFTP]]
 

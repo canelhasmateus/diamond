@@ -8,18 +8,14 @@ tags:
 
 ## Http3
 
-[[HeadOfLineBlocking]] is a fundamental limitation of the TCP Protocol.
+[[HTTP]] is implemented over the [[TCP]] protocol.
 
-Http3, also known as [[ProtocolQuic]], uses [[ProtocolUDP]] as an underlying transport mechanism.
+However, Http3 - also known as [[QUIC]] - uses [[UDP]] as an underlying transport mechanism to work around da fundamental limitation of TCP: [[HeadOfLineBlocking]].
 
 Of course, it also presents some problems:
 
-Since most of its features happen in userspace, it requires switching between user and kernel contexts
+* Requires switching between [[UserSpace]] and [[KernelSpace]]. This means that it has serious performance issues when compared with in-kernel protocols, and high jitter under load.
 
-This means that it has serious performance issues when compared with in-kernel protocols, and high jitter under load.
-
-It does not implement any form of [[NetworkFairness]] and [[Pattern]]. As such, it can easily throttle down competing TCP sessions.
+It does not implement any form of [[Fairness]] and [[CongestionControl]]. As such, it can easily throttle down competing TCP sessions.
 
 ## References
-
-#todo

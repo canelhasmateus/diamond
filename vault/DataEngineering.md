@@ -29,7 +29,7 @@ Spark/[[AwsEMR]]/Synapse/BigQuery
 
 Stream processing
 [[AwsKinesis]]
-[[ToolApacheBeam]]
+[[ApacheBeam]]
 [[ToolDataflow]]
 [[ToolFlink]]
 [[ToolKafka]]

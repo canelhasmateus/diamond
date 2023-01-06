@@ -56,7 +56,7 @@ Segmented study
 * Our brains are not tuned to focus on specific tasks for hours on end
 * Switching gears and taking breaks are effective methods for making progress when you're stuck
 
-> [[TipEmbraceTheMonkeyBrain]]
+> [[EmbraceMonkeyBrain]]
 
 A general Approach
 

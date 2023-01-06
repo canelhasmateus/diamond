@@ -1,3 +1,5 @@
+## NVME
+
 <https://www.youtube.com/watch?v=Fwv_85YRovQ>
 
 accessing ssd through tcp
@@ -19,11 +21,9 @@ nvme
     In the case of concurrent writes to overlapping ranges, what are the permitted results? 
         . Not specified ;  weak ordering, sematics similar to memory in multithreading. 
 
-
-
 ___
 
-
+## SSD
 
 <https://www.youtube.com/watch?v=CjUdp1UY3uM>
 
@@ -66,8 +66,7 @@ Wear Leveling
 
 ___
 
-
-## RAid 
+## RAid
 
     Raid
         . Redundant Array of Inexpensive Disks

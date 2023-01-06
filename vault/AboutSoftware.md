@@ -11,18 +11,8 @@ An software architecture refers to the topology and disposition of its software 
 
 Common architectures are:
 
-![[SoftwareMicroservices]]
+![[Microservices]]
 
-![[SoftwareMonoliths]]
+![[Monoliths]]
 
-## SoftwareDeploy
-
-Some strategies are frequently used to deploy software systems, be it for fault tolerance or downtime avoidance.
-
-Common Strategies are:
-
-![[DeployCanary]]
-
-![[DeployBlueGreen]]
-
-![[DeployRolling]]
+![[AboutDeploy]]

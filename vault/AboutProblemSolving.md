@@ -12,7 +12,7 @@ Various patterns can be applied to solve problems.
 
 ![[PatternDecomposition]]
 
-![[PatternIncrementality]]
+![[Incrementality]]
 
 ![[TipTrackingSteps]]
 

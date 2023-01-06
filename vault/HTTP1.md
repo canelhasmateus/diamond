@@ -8,25 +8,27 @@ tags:
 
 ## Http1
 
-Http 1 started with a simple premise: a new TCP connection must be established for each request-reponse cycle.
+The first version of the [[HTTP]] protocol established a `stateless` communication protocol.
+The first implementation over [[TCP]] *created a new connection for each request*.
+
+This was necessary for abstraction: the underlying transport protocol doesn't necessarily support multiple requests at the same time.
+
+> #todo
+     This Was  also done to save memory, since long running TCP connections take up memory.
+     Is this true? only long running? why?
 
 This proved to be an mistake, and the 1.1 version came right after.
 
-> This is inefficient: the usual transport used - [[ProtocolTCP]] - offers big amounts of bandwidth, which ends up underutilized.
+___
 
-> The [[HeadOfLineBlocking]], alongside the 6 maximum per-host connections, resulted in a form of [[PhenomenaCooperativeThrottling]]
+In this version of [[HTTP]], we keep persistent TCP connections, but implement the [[OneOutstandingRequest]]rule: It establishes that only one request must be in flight for each underlying transport connection.
 
-## Http1.1
+1. This is inefficient: the usual transport used - [[TCP]] - offers big amounts of bandwidth, which ends up underutilized.
+2. Is slow due to [[HeadOfLineBlocking]].
 
-In this version, we keep persistent TCP connections, but implement the [[OneOutstandingRequest]] rule: It establishes that only one request must be in flight for each underlying transport connection.
+> #todo The [[HeadOfLineBlocking]], alongside the 6 maximum per-host connections, resulted in a form of [[PhenomenaCooperativeThrottling]]??
 
-> This was necessary for abstraction: the underlying transport protocol doesn't necessarily support multiple requests at the same time.
-
->> #todo
-     This Was  also done to save [[memory]], since long running [[ProtocolTCP]] connections take up memory.
-     Is this true? only long running? why? [[MetaExpand]]
-
-[[Browsers]] try to work around this OneOutstandingRequest rule, by creating an [[ResourcePooling]] of usually 6 to 10 TCP connections.
+[[Browser]]s try to work around this rule by creating an [[ResourcePooling]] of usually 6 to 10 TCP connections.
 
 This allows some degree of concurrency, speeding up the loading of pages. However, any more additional requests must be queued at the client-side, leading to the classical waterfall look at [[DevTools]] network tab.
 

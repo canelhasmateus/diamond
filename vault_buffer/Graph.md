@@ -1,4 +1,3 @@
-
 Data Structures
 
 |E| ~ |V|^2 ( At most )

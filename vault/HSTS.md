@@ -7,7 +7,7 @@ tags:
 
 # HSTS
 
-The HTTP Strict Transport security is a policy mechanism that helps protect against [[SoftwareSecurity]] attacks, such as
+The HTTP Strict Transport security is a policy mechanism that helps protect against [[Security]] attacks, such as
 
 * [[AttackMitM]]
 * [[AttackProtocolDowngrade]]
@@ -15,7 +15,7 @@ The HTTP Strict Transport security is a policy mechanism that helps protect agai
 
 It allows web servers, browsers and other complying user agents to automatically interact with some domains in a secure-only manner.
 
-A server implements HSTS policy by supplying headers over an [[ProtocolHTTP]]s connection, which specifies that future requests to that domain must be made via HTTPS for the agreed period.
+A server implements HSTS policy by supplying headers over an [[HTTP]]s connection, which specifies that future requests to that domain must be made via HTTPS for the agreed period.
 
 > Strict-Transport-Security: max-age=31536000.
 

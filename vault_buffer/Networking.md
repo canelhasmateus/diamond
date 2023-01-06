@@ -9,7 +9,6 @@ why not use one connection , instead of the connection pool in the database?
     head of line blocking
     how to know what packet is for who?
 
-
 ## Ip
 
 Ip defines Five Addresses Classes:
@@ -155,8 +154,6 @@ however, that certificate is large, and rfc 8879 tries to compress it.
 
 ___
 
-#
-
 ## Network Address Translation
 
     Maps a ip address to another ip address
@@ -196,7 +193,6 @@ is not sent through a real network interface , even if sent to an address on one
 
 windows does not implement a network loopback interface ;
 
-
 ___
 
 ## TCP Buffer
@@ -223,9 +219,8 @@ References
 3.
 
 ___
- ## TCP Tunneling 
 
-#
+## TCP Tunneling
 
 TCP Tunneling is the proccess of encapsulating content from a protocol A to a protocol B , usually because A is unnavailably.
 
@@ -245,7 +240,7 @@ This can cause TCP meltdown ( tcp over tcp )
 
 ___
 
-## Port Forwarding 
+## Port Forwarding
 
 Port forward
 
@@ -277,8 +272,6 @@ these are session only. to persist,  need to use apt-get install iptables-persis
 clearing
     sudo iptables -t nat -F
 
-#
-
 your router is the one who has the public ip address
     . How does it knows to forward the requests?
 
@@ -288,10 +281,9 @@ your router is the one who has the public ip address
 Port Forward is a table configured inside the router, which allows it to forward the requests
     . However, your ip must be static , because the ip in the table is static.
 
-
 ___
 
-## ARP 
+## ARP
 
 ARP
 
@@ -315,7 +307,7 @@ Network Frames
 
     in this case , the application sends an arp request looking for a default gateway. then, it builds the network frame and sends it. 
 
-##  virtual ip
+## virtual ip
 
 <https://www.youtube.com/watch?v=Zgy1miPsTNs>
 
@@ -329,3 +321,78 @@ failover is a tech to switch to a redundant backup machine when one goes down.
 
 active active and active passive are two configurations that can be used to achieve high-availability and proper load balancing
 
+## Turning HTTP 2 was a mistake
+
+    Binary compression for headers
+    decreases latency by multiplexing requests
+    allows client to specify priorities for requests 
+    
+
+    In this case, they switched the protocol only at the client side of the load balancer , while the load balancer to cdn and cdn to backend was stilll on http 1
+    
+    usually, when on http1, the broswer opens 6-10 connections , which stablishes a upper limit of parallelism for request. Any further requests must tbe queueed at the client side. 
+
+    When the load balancer switched to http 2 ( at the front side ) , a sudden load appeared at the backend 
+        This means an single tcp connection can handle around 100 requests
+
+        Since the load balancer receives 100 requests, 
+            and the backend works with http1 , which requires a tcp connection for every request, 
+                the load balancer opens 100 tcp connections 
+    
+    logically speaking, sure , http2 will consume more resources ( cpu )
+        At the Application  level , it is reading packets and waiting for them to be assembled into streams 
+            -> Sorting and working with these streams can consume more resources
+            -> Google http 2 cpu and http 1 slow start? 
+    ___
+
+ Https migration
+
+    Why take so long to migrate everything?
+
+    Unknwons : 
+        . The numbers of request would increase; 
+            .. https redirections
+            .. increased crawl rates by engines 
+        . Since they didn't know how much, they done it slowly, while setting up monitoring. 
+            .. More 301's 
+     Blocking issues: 
+        . There were No tests for the transition;~
+        . Needed the change to be made at the same time  ; why ?[[expand ]]
+        
+        . Affected the display of advertisements, which would mean a meaningful impact on revenenue. 
+
+Strategies:
+
+    . Started rolling to logged in users first, since it would not affect engine crawling. 
+    . Wrote tests to catch mixed content warning or http links on the page. 
+    . Migration page by page, behind a toggle that served https pages only to logged in users. 
+        .. several users still had stale pages , from cachee, so needed to support http urls for a period after the flip. 
+
+Around 150% increased requests only;
+Some distruptionb because of the way the cache headers were setup:
+    . http was being cached, and https was not.
+
+___
+
+## Not sure
+
+Avoid Locking the main thread - this is something that csr does;
+SSR however, creates an uncanny valley of pixels that aren't really interactive
+progressive boot would be the best approach, but its not the easiest to use inside frameworks
+
+___
+
+References
+
+1. [[Performance]]
+
+
+## IPSEC
+
+            * IPSEc
+                . Encrypts the data
+                . Provides authentication of users on both sides.
+                    .. Ok to give critical information to authorized people.
+                . Ensure messages have not been modified ( Message Integrity ).
+                . Non-Repitiation ( Senders can't say they didn't send the message )
+                . So valuable that you can use them in public connections.

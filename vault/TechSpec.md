@@ -5,7 +5,7 @@ tags:
 ---
 # TechSpec
 
-A document, usually written by an engineer, that describes how a feature, project, or service will work from a technical perspective.
+A piece of [[Documentation]], usually written by an engineer, that describes how a feature, project, or service will work from a technical perspective.
 
 ___
 
