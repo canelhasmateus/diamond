@@ -5,7 +5,7 @@ tags:
 
 # HttpCongestionControl
 
- The most common way of doing congestion control is [[ExponentialBackoff]]
+The most common way of doing congestion control is [[ExponentialBackoff]]
 
 HTTP starts by sending a small amount of data ( 14kb )
 

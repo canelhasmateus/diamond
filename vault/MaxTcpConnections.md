@@ -13,7 +13,7 @@ To establish a connection all the following is necessary:
 However, the [[PacketTCP]] header assigns only 16 bits to port information.
 That means a client can only have 65k connections to a server.
 
-This also applies to [[NetworkProxy]] and [[NetworkReverseProxy]], since they are clients in regards to the backend serevr.
+This also applies to [[NetworkProxy]] and [[ReverseProxy]], since they are clients in regards to the backend serevr.
 
 > #todo can layer 4 proxies use the http2 multi-channelling?
 

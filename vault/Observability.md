@@ -6,7 +6,7 @@ tags:
 
 # Observability
 
-The capability of gathering information about the inner workings of a [[AboutSoftware]], usually in the form of logs and metrics.
+The capability of gathering information about the inner workings of a software, usually in the form of logs and metrics.
 
 * [[Log]]s are textual descriptions, written by the application, to indicate notable events such as start, updates and completion of current operations, as well as the parameters and current state of the program.
 
@@ -40,7 +40,7 @@ Common problems regarding observability are:
 * Even harder is the [[DataViz]] of such metrics. Due to its very high cardinality, dashboarding the raw data is often inviable, and Aggregation is often used.
   
 Consider the usual practice of looking at the 95% for response latencies. Why would the 95 percentile be important?
-> They aren't inherently. Remember to  [[PatternQuestionThePremise]].
+> They aren't inherently. Remember to [[FirstPrinciplesThinking]].
 
 Looking at it hides the fact that, for a given threshold to be reached, there are other 5% of responses that had to be worse.
 

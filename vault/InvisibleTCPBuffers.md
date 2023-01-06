@@ -1,6 +1,6 @@
 # OnInvisibleBuffering
 
-Using tools such as [[NetworkReverseProxy]] is easy, but it silently introduces a new [[TCP]] buffer. [[UnseenConsequences]]
+Using tools such as [[ReverseProxy]] is easy, but it silently introduces a new [[TCP]] buffer. [[UnseenConsequences]]
 
 Think of 
 The [[Cache]] spits out payload as quickly as possible, and the server sends data frames with the highest stream weight first. [[HTTP2]]

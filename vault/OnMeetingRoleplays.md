@@ -8,7 +8,7 @@ tags:
 # OnMeetingRoleplays
 
 I was recently thinking about the merits of role-based discussions.
-not limited to any place, but life in general - although it *does* seem more applicable in [[AboutWorkplace]] settings.
+not limited to any place, but life in general - although it *does* seem more applicable in [[WorkplaceRelations]] settings.
 
 The premise is that many meetings and reunions suffer from a lack of tangible value-added because they are:
 
@@ -24,7 +24,7 @@ Introducing structure may help. From [[SixThinkingHats]]:
 1. Set up a sequence of hats.
     Each hat corresponds to a kind of thought, that is
     Black is pessimistic, White is optimistic,
-    Gray is just the facts, Red is [[GutFeeling]]...
+    Gray is just the facts, Red is [[Intuition]]...
 2. For every hat in the sequence, the group
     __simultaneously__ wears it
     produces thoughts of that kind.
@@ -35,7 +35,7 @@ Introducing structure may help. From [[SixThinkingHats]]:
 Why do it this way, though? The main ideas are:
 
 * Encourages people to disengage themselves from their arguments.
-    [[ThinkAttachment]]
+    [[Attachment]]
 * The structure ensures that the issue under consideration is seen from many sides.
 * Prevents arguments by keeping everybody under the same hat at the same time
 

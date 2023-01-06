@@ -14,9 +14,7 @@ DNS has
 tcp half open?
 reflection attacks
 
-
 ___
-
 
 (?...)IP Fragmentation
 

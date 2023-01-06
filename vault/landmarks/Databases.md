@@ -12,7 +12,6 @@ Databases are mission critical and are different from traditional applications, 
 * [[DatabaseRelational]]
 * [[DatabaseNoSql]]
 * [[DatabaseWarehouse]]
-* [[Databases]]
 
 ## Scalability
 

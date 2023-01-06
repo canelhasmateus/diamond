@@ -12,9 +12,8 @@ Editing is mostly subtractive, though. You either move existing words around or 
 
 Doing both things at the same time wastes mental energy. It is a switch between creative and corrective work, like switching gears. This loses momentum and exhausts oneself. [[EmbraceMonkeyBrain]]
 
-> #todo how to compose / write better? are there any tips, systems, structures? 
+> #todo how to compose / write better? are there any tips, systems, structures?
 
 ## References
 
-* [[AboutLearning]]
 * [Composing and Revising – The Two Modes of Writing • Zettelkasten Method](https://zettelkasten.de/posts/writing-composing-revising/)

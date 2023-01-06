@@ -15,4 +15,4 @@ Common architectures are:
 
 ![[Monoliths]]
 
-![[AboutDeploy]]
+![[Deploys]]

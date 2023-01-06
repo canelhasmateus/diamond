@@ -15,7 +15,7 @@ The spec has a purpose. A tech spec without a purpose is a waste of time.
 
 * E.g <https://miro.medium.com/max/1400/1*fwG--JE_oyZQY1B4WPoMKw.png>
 
-> [[PatternFirstPrinciples]]
+> [[FirstPrinciplesThinking]]
 
 During implementation, it specifies exactly what work needs to be done. Exposes broad ideas and often low-level implementation details to a wide audience, maximizing the chance that a bug or regression will be caught sooner rather than later.
 

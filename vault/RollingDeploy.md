@@ -12,4 +12,4 @@ It is achieved by the servers of a cluster in a gradual manner, such as upgradin
 
 ## References
 
-#todo 
+# todo

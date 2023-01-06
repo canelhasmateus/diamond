@@ -7,27 +7,13 @@ tags:
 
 In a common [[NetworkProxy]], the server ends up not knowing the originating client. We can, however, invert this situation, making client unaware of the destination server.
 
-This has several use cases, many prevalent in [[Microservices]] and [[SystemsDistributed]] architectures, such as:
+This has several use cases, many prevalent in [[Microservices]] and [[DistributedSystems]] architectures, such as:
 
 * [[Caching]]
 * [[LoadBalancer]]
-* [[Ingress]]
-* Canary [[IndexSoftwareDeploy]]
+* [[CanaryDeploy]]
 * Ingress:
-  * Hey, you talk to me sir,  and if you wanna access the pictures API, I can route requests.
-
-As a reverse proxy, when receiving a [[TLS]] handshake request, we can choose to act in several ways.
-
-The first one is to respond to the client with the proxy's own [[TLSCertificate]] and TLS Parameters. This is called [[TLSTermination]]. This necessitates, however, that the Private[[EncryptionKey]] and certificate be in the reverse proxy. This raises major concerns:
-
-* The proxy has the ability to decode the underlying contents
-* The proxy can act as a representative of the certificate holder.
-
-We can circumvent such concerns by making the reverse proxy transparently forward the TLS request without decrypting its content. This makes it operate just like a [[ModelOSI]] Layer4 proxy
-
-> This is called [[TLSPassthrough]].
-
-It can continue routing encrypted requests by means of [[ServerNameIndication]]
+  Hey, you talk to me sir,  and if you wanna access the pictures API, I can route requests.
 
 A Layer7 proxy needs to understand the request, making it incapable of forwarding the packets as they come. It has to receive and acknowledge each one, and internally assemble the request to do its decisions.
 
@@ -63,9 +49,7 @@ A Layer 4 proxy doesn't need to wait to assemble the whole request:  it can imme
 
 Additionally, further requests re-utilize the same previously established TCP connection: TCP is NOT a stateless protocol.
 
-This means that Layer 4 proxies can be faster and more efficient than their counterparts.  This also means less flexibility: We can't do intelligent things while proxying blindly.
-
-> This is a realization of the [[PatternTradeoff]]
+This means that Layer 4 proxies can be faster and more efficient than their counterparts.  This also means less flexibility: We can't do intelligent things while proxying blindly. [[PatternTradeoff]]
 
 ```mermaid
 

@@ -16,6 +16,6 @@ Be aware of necessary latency and throughput requirements when choosing them.
 | Hardware   | HDD    | [[StorageSSD]]         |     | SSD                          | Hdd [[Raid]]                                      | [[vault_buffer/Storage]]        |
 | Latency    |        | 1M IOPS     |     | 16k                          |                                               | 64k         |
 | Throughput | 180 MB | 560 MB      |     | 200 MB                       |                                               | 1000        |
-| Uses       |        |             |     | Boot Volumes, Dev/Test Envs. | [[Log]] Files, Sequential Reads Sequential Writes | [[AboutDatabases]]   |
+| Uses       |        |             |     | Boot Volumes, Dev/Test Envs. | [[Log]] Files, Sequential Reads Sequential Writes | [[Databases]]   |
 
 > Storage latency and throughput are some of the downsides of the cloud. [[IndexAws]] fastest volume offers 64K IOPS, while a $100 Drive from best-buy can offer up to 1M IOPS.

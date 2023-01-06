@@ -6,8 +6,6 @@ tags:
 
 # ServerSentEvents
 
-## Server-Sent Events
-
 Offers a uni-directional stream of data, from the server to the client. To create:
 
 1. client sends : [[HTTP]] Get { Content-Type = text/event-stream }

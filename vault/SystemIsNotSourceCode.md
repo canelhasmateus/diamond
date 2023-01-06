@@ -13,7 +13,7 @@ I have seen less-technical executives repeatedly assume that `the source code of
 In other words, they think people are fungible and an architecture can be purchased and transferred *only* by shifting source code.
 
 Grab a wad of source and plop it down in front of people who have never worked with it before: The institutional knowledge that __contextualized__ the system in the minds of its creators is missing.
-[[ContextMatters]], [[MentalModels]]
+[[Context]], [[MentalModels]]
 
 ## References
 

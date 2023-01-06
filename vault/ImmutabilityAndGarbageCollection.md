@@ -6,7 +6,7 @@ tags:
 
 # OnImmutableGarbage
 
-Immutable Objects can be gentler to generational [[GarbageCollection]].
+Immutable Objects *can* be gentler to generational [[GarbageCollection]].
 
 Usually,  when a holder object is updated to reference a different object, the new referent is a young object.
 

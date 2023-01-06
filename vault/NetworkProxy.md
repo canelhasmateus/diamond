@@ -55,7 +55,7 @@ There exist several software tools that implement proxying functionality.
 
 ___
 
-* Can a proxy and a [[NetworkReverseProxy]] be used at the same time?
+* Can a proxy and a [[ReverseProxy]] be used at the same time?
 
     Yes, this is called a [[ServiceMesh]].
     It is very common in [[Microservices]] architectures to build the network features of the application in the proxy, instead of making the application worry about [[NetworkTimeout]] and [[CircuitBreakers]].

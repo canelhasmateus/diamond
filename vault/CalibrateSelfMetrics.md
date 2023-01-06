@@ -4,7 +4,7 @@ tags:
     - fact
 ---
 
-# ChangeProxyMetrics
+# CalibrateSelfMetrics
 
 [[ProxyMetrics]]
 
