@@ -6,9 +6,7 @@ tags:
 ---
 # HeadOfLineBlocking
 
-Head-of-line blocking is a phenomenon that happens whenever the first element of a [[Queue]] blocks the progress of other elements.
-
-It is commonly associated with [[Transmission protocols | AboutProtocols]].
+Head-of-line blocking is a phenomenon that happens whenever the first element of a [[Queue]] blocks the progress of other elements. It is commonly associated with transmission protocols.
 
 For [[HTTP1]], HOL happens because of the [[OneOutstandingRequest]] rule: For a second request to be sent, the previous one has to be answered first.
 

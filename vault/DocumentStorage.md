@@ -5,7 +5,6 @@ tags:
 
 # DocumentStorage
 
-
 * Breaks data into `objects`
     An object has an unique id, and metadata.
     Metadata enables interesting things, such as data lakes and running sql queries.
