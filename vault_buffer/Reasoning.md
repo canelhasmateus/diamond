@@ -6,7 +6,6 @@ tags:
 
 # Reasoning
 
-
 <https://www.youtube.com/watch?v=eGunohFHbK0>
 
 theory discover as program synthesis
