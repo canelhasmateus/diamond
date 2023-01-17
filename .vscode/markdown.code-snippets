@@ -1,0 +1,10 @@
+{
+	"MarkdownFooter": {
+		"scope": "markdown",
+		"prefix": ".f",
+		"description": "footer",
+		"body": [
+			"[^${1:1}]",
+		]
+	}
+}

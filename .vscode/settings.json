@@ -27,22 +27,18 @@
     "markdown.preview.breaks": true,
     "foam.files.ignore": [
         "journal",
+        "org",
+        "vault_buffer",
         ".foam",
-        ".vscode",
-        "**vault/assets/*",
-        "**limni/org/*"
+        ".vscode"
     ],
     "foam.orphans.exclude": [
-        "**vault/journal/*",
-        "**vault/public/*",
-        "**limni/org/*"
+        "journal",
+        "org",
+        "vault_buffer",
     ],
     "foam.graph.style": {},
-    "foam.placeholders.exclude": [
-        "**/expand*",
-        "**/*expand*",
-        "expand*"
-    ],
+    "foam.placeholders.exclude": [],
     "foam.preview.embedNoteInContainer": false,
     "note-macros": {
         "Weekly": [
