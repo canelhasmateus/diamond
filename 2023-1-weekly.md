@@ -15,7 +15,6 @@ ___
 Quantification!
 
   |-> this sounds like the key to the commitment: `stagnation is the main reason we fail`???
-
   ___
 
   [My Approach to Task/Time Management. Part 2: Tool set - Yury Zhauniarovich](https://zhauniarovich.com/post/2020/2020-01-my-approach-to-tm-p2/)
