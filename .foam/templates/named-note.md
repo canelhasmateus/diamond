@@ -1,5 +1,5 @@
 ---
-created_on: ${CURRENT_YEAR}/${CURRENT_MONTH}/${CURRENT_DATE} ${CURRENT_HOUR}:${CURRENT_MINUTE}
+created_on: ${FOAM_DATE_YEAR}/${FOAM_DATE_MONTH}/${FOAM_DATE_DATE} ${FOAM_DATE_HOUR}:${FOAM_DATE_MINUTE}
 kind:
 tags:
 foam_template:
