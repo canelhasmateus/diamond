@@ -1,6 +1,0 @@
----
-type: daily-note
-created_on: ${CURRENT_YEAR}/${CURRENT_MONTH}/${CURRENT_DATE} ${CURRENT_HOUR}:${CURRENT_MINUTE}
----
-    
-# ${CURRENT_YEAR}/${CURRENT_MONTH}/${CURRENT_DATE}

@@ -9,9 +9,7 @@ IntelliDives
 
 ___
 
-
 to do / discover / learn:
-    
 
     analyze dependencies
     analyze, watchpoints
@@ -35,9 +33,8 @@ to do / discover / learn:
     type migration    
     usage view grouping
     view breakpoints ( shortcuts )
-    
-get better at:
 
+get better at:
 
     Bookmaps
     Breadcrumbs
@@ -386,7 +383,6 @@ ___
 Exception.rthrow -> throw new RuntimeException( Exception );
 
 ___
-
 
 Create IntelliJ Plugin for code-generation
     -> Template Based,
