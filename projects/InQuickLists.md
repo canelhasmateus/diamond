@@ -39,11 +39,9 @@ to do / discover / learn:
 get better at:
 
 
-    Bookmaps
     Breadcrumbs
     abbreviations
     better shortcuts for find ->   next | Previous | select all | add selection for next ocurrence | find Usages
-    hippie completion
     live templates
     postfix completions)
     quick documentation
