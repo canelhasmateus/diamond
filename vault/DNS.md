@@ -1,15 +1,17 @@
 <https://www.youtube.com/watch?v=B5Vw6H3oSD8>
 
 DNS has
-    Udp Header
-        Source Port
-        Destination Port
-        Metadata
+Udp Header
+Source Port
+Destination Port
+Metadata
 
-    DNS Data
-        Query Id
-        Metadata
-        DNS  
+```
+DNS Data
+    Query Id
+    Metadata
+    DNS  
+```
 
 tcp half open?
 reflection attacks
@@ -19,9 +21,9 @@ ___
 (?...)IP Fragmentation
 
 Chrome overloads DNS servers
-*You search omnibar for something
-*This something could be a domain
-*Chrome doesn't know, so it tries to resolve it
+\*You search omnibar for something
+\*This something could be a domain
+\*Chrome doesn't know, so it tries to resolve it
 
 DNS are plain text, until DoH and DoT are more mainstream
 
@@ -48,4 +50,4 @@ ___
 ___
 
 DNS
-    . Can point to ip:ports via SRV records
+. Can point to ip:ports via SRV records

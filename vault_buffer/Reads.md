@@ -6,8 +6,6 @@ tags:
 
 # Reads
 
-
-
 <https://www.academia.edu/keypass/Z2poOVY2WWl5MVdPVkp3L3ltVkVBb29COGNCOGJtN2Q1UG95V1JQaTVkdz0tLUdSVFIxTFhGdU1EdEhuVXdVekt5TGc9PQ==--eff6cf37cf7fa5e5eb9f744898bae0fc38e8063d/t/qkosK-QCrN5c3-bcCyFL/resource/work/30943711/Empirical_evaluations_on_the_cost_effectiveness_of_state_based_testing_An_industrial_case_study>
 <https://www.academia.edu/keypass/WEdPclRZazVscURBbnpmdGhPZjNsb3A4c1RubVRuSkRNNGhJSldxME1QWT0tLWZ4YXoyTjluNHEvaUhtK29WbkEzNVE9PQ==--3d3767497bcd5accfe0ca1fc5dc92250603f6aa7/t/qkosK-QDaAbTC-bgYtDh/resource/work/454381/Specifying_Features_of_An_Evolving_Software_System>
 <https://www.academia.edu/keypass/VHFQdTZ2THNWdzZFOG5hVHBxUFNweUN2L1ZqUjZwemxTdDJzSEtkOWhqQT0tLUExTENsSk5hY0pBVDZxUnZZMjczR2c9PQ==--1b3e9b48323b260210bec50d45f8e8c90fad8f96/t/qkosK-QD9RFZ5-JyHWY/resource/work/2678401/Some_issues_in_the_software_engineering_of_verification_tools>

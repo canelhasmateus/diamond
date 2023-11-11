@@ -3,6 +3,7 @@ tags:
     - template
     - software
 ---
+
 # TemplateTechSpec
 
 ## Summary
@@ -15,10 +16,10 @@ The dog images are retrieved via a get call to dog api.
 
 ## Background
 
-* Why buid?
-* What is the motiviation?
-* What user problems are you attempting to solve?
-* What previouys efforts - if any - have been made to solve this problem?
+- Why buid?
+- What is the motiviation?
+- What user problems are you attempting to solve?
+- What previouys efforts - if any - have been made to solve this problem?
 
 ```text
 We are looking to exapnd our brand impint within the millenial setgment. 
@@ -34,7 +35,7 @@ Highlight all the outcames that you predict will result from your work, both pur
 
 Alongside the measurable impact, this is the yardstick by which you'll evaluate the success of your project.
 
-* Did we achieve our inteded goals and impact?
+- Did we achieve our inteded goals and impact?
 
 ```text
 Disrupt monotous twitter feeds with fun, unexpected and "on-brand" images ( subjective )
@@ -60,20 +61,20 @@ Configurable post times: In v1 dog photos will be posted at hardcoded chronologi
 
 ## Plan
 
- The longest part of your tech spec.
+The longest part of your tech spec.
 
-* Describe the engineering approach or list the approaches you're considering.
-* This enables reviewers help you choose.
+- Describe the engineering approach or list the approaches you're considering.
+- This enables reviewers help you choose.
 
 ## Measuring impact
 
 This section defines specific metrics that you expect your porject will impact.
 
-* At lyft, engineers collaborate with data scientists and product managers to define these metrics.
+- At lyft, engineers collaborate with data scientists and product managers to define these metrics.
 
 Can help answer difficult questions around prioritization and later, become the means of gauging the project success and identifying areas for improvement.
 
-* "Given our finite engieneering resources which feature is more important to build?"
+- "Given our finite engieneering resources which feature is more important to build?"
 
 ```text
 "Reach 2k twittewr followers within 2 months of launch via cross-account and cross-platform promotion"
@@ -109,4 +110,4 @@ Ask team mates for initial review before distributing your tech spec widely.
 
 Then send them to progressively wider audiencies, refining it along the way.
 
-* When an issue is resolved, note its redsolution explicitly in the comments : Engage with your readers and reviewers.
+- When an issue is resolved, note its redsolution explicitly in the comments : Engage with your readers and reviewers.

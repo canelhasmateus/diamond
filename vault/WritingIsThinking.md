@@ -10,7 +10,7 @@ tags:
 
 "Read with the intention to write; What are the open ideas for exploration?"
 
-"Writing is not the outcome of thinking. It __IS__ thinking. "
+"Writing is not the outcome of thinking. It **IS** thinking. "
 
 ## References
 

@@ -3,6 +3,7 @@ tags:
     - template
     - data
 ---
+
 # DataAttributes
 
 When building a data pipeline:
@@ -16,28 +17,28 @@ ___
 
 ## On Requirements
 
-| Requirement | Questions to ask | Usual choices |
-| :-- | --- | --- |
-| **`Real-time or Batch`** | Do you need data processed continuously or on a schedule (usually with frequency > 10m)?. | {Batch, Stream} |
-| **`Data size`** | What is the size of data to be processed per run? | {**Batch**: {MB, GB, TB, PB}, **Stream**: {records per second \* size per record}} |
-| **`Pipeline frequency`** | How frequently do you want the pipeline to run? This typically applies to batch pipelines. | {minutes, hours, days, months} |
-| **`Data processing speed`** | How quickly do you want the data to be processed? This should be lower than the `pipeline frequency` to prevent clogging your compute resources. | {seconds, minutes, hours} |
-| **`Latency requirements`** | What is an acceptable wait time for an end-user querying your destination system? Typically measured using mean & 95th percentile values. | {5ms, 1s, 10s, 1min, 10min, 30min} |
-| **`Query patterns`** | What types of queries will be run by the end-user? | {analytical, full text search, NoSQL, transactional, graph-based, combination} |
+| Requirement                 | Questions to ask                                                                                                                                 | Usual choices                                                                      |
+| :-------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
+| **`Real-time or Batch`**    | Do you need data processed continuously or on a schedule (usually with frequency > 10m)?.                                                        | {Batch, Stream}                                                                    |
+| **`Data size`**             | What is the size of data to be processed per run?                                                                                                | {**Batch**: {MB, GB, TB, PB}, **Stream**: {records per second \* size per record}} |
+| **`Pipeline frequency`**    | How frequently do you want the pipeline to run? This typically applies to batch pipelines.                                                       | {minutes, hours, days, months}                                                     |
+| **`Data processing speed`** | How quickly do you want the data to be processed? This should be lower than the `pipeline frequency` to prevent clogging your compute resources. | {seconds, minutes, hours}                                                          |
+| **`Latency requirements`**  | What is an acceptable wait time for an end-user querying your destination system? Typically measured using mean & 95th percentile values.        | {5ms, 1s, 10s, 1min, 10min, 30min}                                                 |
+| **`Query patterns`**        | What types of queries will be run by the end-user?                                                                                               | {analytical, full text search, NoSQL, transactional, graph-based, combination}     |
 
 ___
 
 ## On Components
 
-| function | Open source | Managed services |
-| --- | --- | --- |
-| Extract | Debezium or SQL script to pull to data | Stitch or fivetran |
-| Transform | Open source SQL/ Apache Spark | fivetran or dbt cloud |
-| Load | SQL script | Stitch or fivetran |
-| Dashboard | Metabase / graphana | AWS Quicksight or looker or tableau |
-| Monitor | Airflow | dbt cloud |
-| Alert | Airflow with custom logic | dbt cloud |
-| Schedule | Airflow | dbt cloud |
+| function  | Open source                            | Managed services                    |
+| --------- | -------------------------------------- | ----------------------------------- |
+| Extract   | Debezium or SQL script to pull to data | Stitch or fivetran                  |
+| Transform | Open source SQL/ Apache Spark          | fivetran or dbt cloud               |
+| Load      | SQL script                             | Stitch or fivetran                  |
+| Dashboard | Metabase / graphana                    | AWS Quicksight or looker or tableau |
+| Monitor   | Airflow                                | dbt cloud                           |
+| Alert     | Airflow with custom logic              | dbt cloud                           |
+| Schedule  | Airflow                                | dbt cloud                           |
 
 ___
 
@@ -58,17 +59,16 @@ ___
 
 ## Examples
 
-| Requirement | Source | Orchestrator | Scheduler | Executor | Destination | Monitor & Alert |
-| --- | --- | --- | --- | --- | --- | --- |
-| Batch w Pipeline Frequency: 1h | \- | Airflow (MWAA, Astronomer, Cloud composer), dbt, Dagster, Prefect, custom python | Airflow, dbt cloud, Databricks scheduler, Dagster, Prefect, cron | \- | \- | custom alerts, Datadog, newrelic, AWS cloudwatch, |
-| Data Size: 10GB | \- | \- | \- | Python, Airflow worker, k8s pod, Spark, Snowflake, Redshift, Dask, Databricks, AWS EMR, | \- | papertrail, datadog, newrelic |
-| Data processing speed: <=10m | \- | \- | \- | Python, Airflow operator, k8s pod, Spark, Snowflake, Redshift, Databricks, AWS EMR, | \- | papertrail, datadog, newrelic |
-| Query pattern: Analytical | \- | \- | \- | \- | Data warehouse, Redshift, Snowflake, Bigquery, Clickhouse, Delta lake, | Alerts on query failures |
-| Latency req: 10s | \- | \- | \- | \- | Data warehouse, Redshift, Snowflake, Bigquery, Clickhouse, Delta lake, | Alerts on query timeouts |
+| Requirement                    | Source | Orchestrator                                                                     | Scheduler                                                        | Executor                                                                                | Destination                                                            | Monitor & Alert                                   |
+| ------------------------------ | ------ | -------------------------------------------------------------------------------- | ---------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------- |
+| Batch w Pipeline Frequency: 1h | -      | Airflow (MWAA, Astronomer, Cloud composer), dbt, Dagster, Prefect, custom python | Airflow, dbt cloud, Databricks scheduler, Dagster, Prefect, cron | -                                                                                       | -                                                                      | custom alerts, Datadog, newrelic, AWS cloudwatch, |
+| Data Size: 10GB                | -      | -                                                                                | -                                                                | Python, Airflow worker, k8s pod, Spark, Snowflake, Redshift, Dask, Databricks, AWS EMR, | -                                                                      | papertrail, datadog, newrelic                     |
+| Data processing speed: <=10m   | -      | -                                                                                | -                                                                | Python, Airflow operator, k8s pod, Spark, Snowflake, Redshift, Databricks, AWS EMR,     | -                                                                      | papertrail, datadog, newrelic                     |
+| Query pattern: Analytical      | -      | -                                                                                | -                                                                | -                                                                                       | Data warehouse, Redshift, Snowflake, Bigquery, Clickhouse, Delta lake, | Alerts on query failures                          |
+| Latency req: 10s               | -      | -                                                                                | -                                                                | -                                                                                       | Data warehouse, Redshift, Snowflake, Bigquery, Clickhouse, Delta lake, | Alerts on query timeouts                          |
 
 ___
 
 ## References
 
-1. [[DataEngineering]]
-
+1. \[\[DataEngineering]]

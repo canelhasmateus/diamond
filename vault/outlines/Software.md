@@ -3,6 +3,7 @@ tags:
     - software
     - fact
 ---
+
 # SoftwareSystem
 
 ## Software Architecture
@@ -11,8 +12,8 @@ An software architecture refers to the topology and disposition of its software 
 
 Common architectures are:
 
-![[Microservices]]
+!\[\[Microservices]]
 
-![[Monoliths]]
+!\[\[Monoliths]]
 
-![[Deploys]]
+!\[\[Deploys]]

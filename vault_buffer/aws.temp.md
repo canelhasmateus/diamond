@@ -1,6 +1,6 @@
-> #todo
-Using only 1 Availability Zone , its possible to achieve 99.9% Availability. With 2 Availability Zones, 99.99% is achievable, and for more availability, even more are necessary.
-Always use at least 2 Availability Zones
+> \#todo
+> Using only 1 Availability Zone , its possible to achieve 99.9% Availability. With 2 Availability Zones, 99.99% is achievable, and for more availability, even more are necessary.
+> Always use at least 2 Availability Zones
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 postgres 13
 
-duplicate data in b-tree indexes  
+duplicate data in b-tree indexes\
 incremental sorting?
 
 ___
@@ -48,7 +48,7 @@ NAT gateway is IPv4 only. For iPv6, egress-only internet gateway shhould be used
 ___
 
 IpSec is not E2E security:
- It requires that both source and destination be IPSecAware
+It requires that both source and destination be IPSecAware
 Also it operates at network layer, thus it does not provide identity authentication
 
 <https://techgenix.com/securing_data_in_transit_with_ipsec/>

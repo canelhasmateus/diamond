@@ -11,7 +11,7 @@ Dynamic Programming
 - Divide into sub-problems
 - Solve sub-problem recursively
 - On each recursive call, Start by checking if it is already solved, finishing by caching into the
-table.
+  table.
 
 ## Problem Frames
 
@@ -32,7 +32,7 @@ Problem Analysis is an approach to be used when gathering requirements and creat
 
 - The best way to approach requirement analysis is through a process of parallel - not hierarchical - decomposition of user requirements.
 - User requirements are about relationships in the real word , not about the software or even the interface.
-  
+
 Tools for describing specific problems
 
 - phenomena ( of various kinds , including events )
@@ -88,7 +88,9 @@ ___
 
 Control Schemes
 
-    Proportional Control
+```
+Proportional Control
+```
 
 Poles
 
@@ -100,49 +102,53 @@ Root Locus
 
 Control Theory
 
-    Sketch a root locus
+```
+Sketch a root locus
 
-    Proportional COntroll is the simplest control
-        .Not necessarily solves all porbolems
-        .sometimes you can move root to the left half plane or have a negative real part
-        . interesting to understand how poles and zeros affect the root locus. 
-         
-         in transfer functions, the numerator controls the system behave different due to force inputs. 
-    
-        when nPoles <> nZeroes :
-            if nPoles > nZeroes, the extra poles goes to infinity
-            if nPoles < nZeroes, the extra zeros comes from infinity
+Proportional COntroll is the simplest control
+    .Not necessarily solves all porbolems
+    .sometimes you can move root to the left half plane or have a negative real part
+    . interesting to understand how poles and zeros affect the root locus. 
+     
+     in transfer functions, the numerator controls the system behave different due to force inputs. 
+
+    when nPoles <> nZeroes :
+        if nPoles > nZeroes, the extra poles goes to infinity
+        if nPoles < nZeroes, the extra zeros comes from infinity
+```
 
 <https://www.youtube.com/watch?v=eTVddYCeiKI>
 
 ###
 
 Control system
-    Root Locus Method
+Root Locus Method
 
-    System
-        Known Parameters
-        Unknown Parameter K
-            Changing this affects poles
-                Poles are the values of s that make the G(s) to blow up to infinity
+```
+System
+    Known Parameters
+    Unknown Parameter K
+        Changing this affects poles
+            Poles are the values of s that make the G(s) to blow up to infinity
+
+There are two questions here
     
-    There are two questions here
-        
-        Design
-            what value of K should we choose to meet my system performance requirements?
+    Design
+        what value of K should we choose to meet my system performance requirements?
 
-        Effect of variation
-            What are the effect of a variation?
-            How sensible is your system to slight deviations to k
+    Effect of variation
+        What are the effect of a variation?
+        How sensible is your system to slight deviations to k
 
-        
-    The S -plane is drawn in a x-y plane, with the real part in the x axis and the imaginary part in the Y axis. 
-    Each location in the s plane correspond to a waveform in the time domain, characterized by e^st
-        The left part of the plane cahacterizes exponential decay ; 
-        the right part of the plane characterizes exponential growth;
-        the vertical part characterizes the oscilation of the signal. 
+    
+The S -plane is drawn in a x-y plane, with the real part in the x axis and the imaginary part in the Y axis. 
+Each location in the s plane correspond to a waveform in the time domain, characterized by e^st
+    The left part of the plane cahacterizes exponential decay ; 
+    the right part of the plane characterizes exponential growth;
+    the vertical part characterizes the oscilation of the signal. 
 
-    A system is characterized by both its zeroes and poles, but only the poles dictate the behaviour to unforced responses
+A system is characterized by both its zeroes and poles, but only the poles dictate the behaviour to unforced responses
+```
 
 <https://www.youtube.com/watch?v=CRvVDoQJjYI>
 
@@ -158,7 +164,7 @@ Input
 - variables
 - objective
 - constraints
-Output: values for each xi that
+  Output: values for each xi that
 - Satisfies all constraints
 - Maximizes the objective
 
@@ -199,8 +205,8 @@ StandardForm:
 Converting to StandardForm:
 
 - Minimization: Multiply F by -1
-- >= contraints : Multiply F by -1
-- == constraints: split into <= and >=
+- > \= contraints : Multiply F by -1
+- \== constraints: split into <= and >=
 - LowerBound < 0 : X2 - Lb
 - Unbounded: ????
 
@@ -215,22 +221,26 @@ However, superb engineers have a capacity to see through the cloak of somebody e
 "Seeklcts meta qestions that tes assumptions or uncover misalignments as rapidly as possible"
 
 "Plenty opf problems don't merit deep t hinking. The zen master found time for our example iossue by judiciously ignoring others, even tih iportant issues, you don't have to think at all these levels all the time. just being aware of broader contexts and probing them ocasioanlly will bring benefits to your team.
-____
+
+___
+
 <https://codecraft.co/2013/03/05/are-you-losing-enough-battles/>
 
 "Once you have 40 to 70 percent information, go with your gut"
 
-____
+___
 
 Question Categories
 
-    . Unknown => Why is chocolate so awesome
-    .  Known => What is the popluation of bangladesh
-    . Discoverable => How can i sell more widgets to housewives between the ages of 25 and 40. 
+```
+. Unknown => Why is chocolate so awesome
+.  Known => What is the popluation of bangladesh
+. Discoverable => How can i sell more widgets to housewives between the ages of 25 and 40. 
+```
 
 "The Central value proposition of big data is inseparably connected to *discoverable* answers. These gems are fundamentally different from facts waiting to be sliced, they're rational guesses based on deduction and supported by rigorous data analysis
-    . Thats wyhy its called data science
-    . If we're not building big data solutions that hypothesize rather than report, we're underdelivering.
+. Thats wyhy its called data science
+. If we're not building big data solutions that hypothesize rather than report, we're underdelivering.
 
 "Enterprise search struggles, as an industry because its trrying to sell drill bits to customers who want holes, and it's forgotten that it's the hole, not the bit, that makes the customer passionate"
-    . I feel like this is deep and i'm not understanding it still.
+. I feel like this is deep and i'm not understanding it still.

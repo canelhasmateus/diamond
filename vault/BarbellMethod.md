@@ -19,7 +19,7 @@ The conclusion:
 1. We want to read a lot. We want to have a high influx of information.
 2. We want to direct our efforts at the best books (and articles) and invest only a necessary minimum of attention into the low-quality content.
 
-It is thus, necessary to navigate between multiple brain states and apply them consciously to the task at hand. [[ExplorationExploitation]] [[ThinkingFastAndSlow]] [[ComposingRevising]]
+It is thus, necessary to navigate between multiple brain states and apply them consciously to the task at hand. \[\[ExplorationExploitation]] \[\[ThinkingFastAndSlow]] \[\[ComposingRevising]]
 
 ## References
 

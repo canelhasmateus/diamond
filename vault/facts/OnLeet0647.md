@@ -9,7 +9,7 @@ tags:
 
 Medium
 
-Given a string `s`, return _the number of **palindromic substrings** in it_.
+Given a string `s`, return *the number of **palindromic substrings** in it*.
 
 A string is a **palindrome** when it reads the same backward as forward.
 
@@ -42,6 +42,7 @@ This is a problem in which we'll explore structure.
 there are multiple ways to use structure to solve problems.
 
 A very common one, however, is using composition:
+
 > Break down a large structure into smaller blocks.
 
 <style>
@@ -65,9 +66,11 @@ A very common one, however, is using composition:
 <div class="alert alert-success">
 
 Breaking big problems into smaller ones, then solving them separately is the essence of dynamic programming.
+
 </div>
 
 Note, however, that we can do the exact opposite, that is:
+
 > Assemble a large structure starting from its components.
 
 <br></br>
@@ -76,15 +79,13 @@ Note, however, that we can do the exact opposite, that is:
 In general, recognize a terminal case , and build from there.
 </div>
 
-This is what we're going to explore in this problem.
-<br></br>
+This is what we're going to explore in this problem. <br></br>
 
 #
 
 ##
 
-A palindrome is always composed of other palidromes:
-<br></br>
+A palindrome is always composed of other palidromes: <br></br>
 
 <table>
 <thead>
@@ -374,7 +375,7 @@ Note that because every palyndrome MUST be made by
 adding letters around a pre-existing palyndrome,
 checking all possible palyndromes amounts to checking every neighbor ( top, right and diagonal ) index of known palyndromes, marking it accordingly, and repeating the process until every entry is filled.
 
- Here we use other numbers, alongside the gradient, to denote the direction of propagation of the "palyndroness" checking
+Here we use other numbers, alongside the gradient, to denote the direction of propagation of the "palyndroness" checking
 
 What makes this process possibly complicated, however, is the manner in which we choose to check these neighbors. Note that some cells are neighboring many entries, and would be counted twice is a naive approach.
 
@@ -460,7 +461,9 @@ Here we paint in gray all the cells that are checked. With dotted white borders 
 
     }
 </style>
+
 <br></br>
+
 <table class="reachability2">
     <thead>
         <tr>
@@ -701,7 +704,9 @@ Since the whole grid can be tiled by the combination of these two diagonals, we 
 
     }
 </style>
+
 <br></br>
+
 <table class="reachability4">
     <thead>
         <tr>

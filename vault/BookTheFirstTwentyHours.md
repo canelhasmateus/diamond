@@ -1,4 +1,3 @@
-
 20 hours tu break the frustration barriers
 Outliers by gladwell: 10k hours until expert
 Great people get at most 3 qnd a half hours of deliberate practice a day
@@ -24,7 +23,7 @@ Running vs a maraton  == learning vs training
 
 Certification are often at odds with learning
 Practice in context
-Mindset the new... os success
+Mindset the new\... os success
 Fixed mindset vs growth mindset
 
 Three stage model
@@ -33,8 +32,8 @@ Associative or mid
 The autonomous
 
 10 principles
-Cultivate a temporary obsession: 
-[[TemplateSkillAcquisition]]
+Cultivate a temporary obsession:
+\[\[TemplateSkillAcquisition]]
 
 Carl popper on loveable problems
 

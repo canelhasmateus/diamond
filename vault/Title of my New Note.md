@@ -5,5 +5,3 @@ tags:
 ---
 
 # Title of my New Note
-
-

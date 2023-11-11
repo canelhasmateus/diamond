@@ -1,28 +1,32 @@
 # ElasticBlockStorage
 
-EBS is an implementation of [[StorageBlock]], that is - it takes your data and breaks it down into blocks.
+EBS is an implementation of \[\[StorageBlock]], that is - it takes your data and breaks it down into blocks.
 
-When considering [[Storage]] systems there are important aspects to consider
+When considering \[\[Storage]] systems there are important aspects to consider
 
-* Ephemerality: EBS Volumes don't go away with a reboot.
-* Availability: 5 minutes of downtime per year.
-* Scalability: EBS volumes scale to whatever size is needed.
-* Throughput: EBS is designed for high transactional workload
-* Durability: Provides Redundancy in its [[AvailabilityRegion]] ( Replicated Intra-Zone).
-* Throughput:
-* Latency:
+- Ephemerality: EBS Volumes don't go away with a reboot.
+- Availability: 5 minutes of downtime per year.
+- Scalability: EBS volumes scale to whatever size is needed.
+- Throughput: EBS is designed for high transactional workload
+- Durability: Provides Redundancy in its \[\[AvailabilityRegion]] ( Replicated Intra-Zone).
+- Throughput:
+- Latency:
 
 Properties
 
-* It is designed to act, look and feel like a virtual [[StorageHardDrive]].
-* These can be attached and re-attached to different [[AwsEc2]] Instances.
+- It is designed to act, look and feel like a virtual \[\[StorageHardDrive]].
 
-* Volumes __ARE__ deleted on instance termination by default.
-* volumes __ARE NOT__ encrypted by default,
-    This can be done by using its encryption properties, as well as using native data encryption drivers at the file system level.
-* Volumes __ARE NOT__ physically attached
-    Their latency and throughput are bottlenecked by the network.
-* __CAN__ be shared between up to 16 [[IndexAws]] nitro system based EC2 within the SAME availability zone.
+- These can be attached and re-attached to different \[\[AwsEc2]] Instances.
+
+- Volumes **ARE** deleted on instance termination by default.
+
+- volumes **ARE NOT** encrypted by default,
+  This can be done by using its encryption properties, as well as using native data encryption drivers at the file system level.
+
+- Volumes **ARE NOT** physically attached
+  Their latency and throughput are bottlenecked by the network.
+
+- **CAN** be shared between up to 16 \[\[IndexAws]] nitro system based EC2 within the SAME availability zone.
 
 ___
 
@@ -30,7 +34,7 @@ On SnapShots
 
 These are Point in Time backup of the data inside the volume: 100% copies of the Hard-Drive.
 
-Snapshots are very useful in cases of [[DisasterRecovery]], since they contain all of the necessary information to boot. Comparing with traditional tape backups, which require an OS installation before being able to recover, Snapshots can recover way more quickly.
+Snapshots are very useful in cases of \[\[DisasterRecovery]], since they contain all of the necessary information to boot. Comparing with traditional tape backups, which require an OS installation before being able to recover, Snapshots can recover way more quickly.
 
 An optimization to snapshots is that they are incremental , that is: Only the blocks that changed get saved - like git patches.
 
@@ -51,7 +55,7 @@ ___
 
 On Performance
 
-Basic [[RAID]] Configurations can be set up for EBS.
+Basic \[\[RAID]] Configurations can be set up for EBS.
 
-* RAID0: For when performance is more desirable than fault tolerance. Ideal for the ec2 instances are hosting databases
-* RAID1: When Fault tolerance is a more desirable property. Since data is written to multiple volumes at a time, more bandwidth is required between Ec2 and ebs.
+- RAID0: For when performance is more desirable than fault tolerance. Ideal for the ec2 instances are hosting databases
+- RAID1: When Fault tolerance is a more desirable property. Since data is written to multiple volumes at a time, more bandwidth is required between Ec2 and ebs.

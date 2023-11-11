@@ -11,4 +11,5 @@ tags:
 The desire to have all of the information of a text available made me collect files and papers and books: I had fallen for the Collector’s Fallacy.
 
 From there it follows that information is not a property of things in the world. Instead, information is part of our interpretation.
+
 ___

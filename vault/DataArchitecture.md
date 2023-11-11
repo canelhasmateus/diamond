@@ -1,33 +1,31 @@
 # DataArchitecture
 
-
 ## Lambda
 
 Lambda
-  Good for batch , but poses problems for event data
-  Hybrid Layers
-   Batch
-    Large Scale Analytics or Historical Data
-   Speed
-    Low Latency Processing of newly arrived data
-    Can also be seen as approximate results
-   Serving
-    Provide Query capabilities that unifies the Batch and Speed layers.
+Good for batch , but poses problems for event data
+Hybrid Layers
+Batch
+Large Scale Analytics or Historical Data
+Speed
+Low Latency Processing of newly arrived data
+Can also be seen as approximate results
+Serving
+Provide Query capabilities that unifies the Batch and Speed layers.
 
 ## Kappa
 
+Kappa
+Modified architecture where everything is seen as a stream
+Most popular among these engine are all open-source apache projects:
 
- Kappa
-  Modified architecture where everything is seen as a stream
-  Most popular among these engine are all open-source apache projects:
+Apex
+Beam
+Flink
+Storm
+Spark
 
-   Apex
-   Beam
-   Flink
-   Storm
-   Spark
-
-____
+___
 
 he Kappa Architecture is a software architecture used for processing streaming data. The main premise behind the Kappa Architecture is that you can perform both real-time and batch processing, especially for analytics, with a single technology stack. It is based on a streaming architecture in which an incoming series of data is first stored in a messaging engine like Apache Kafka. From there, a stream processing engine will read the data and transform it into an analyzable format, and then store it into an analytics database for end users to query.
 
@@ -38,15 +36,12 @@ The Kappa Architecture is considered a simpler alternative to the Lambda Archite
 What Is a Streaming Architecture?
 A streaming architecture is a defined set of technologies that work together to handle stream processing, which is the practice of taking action on a series of data at the time the data is created. In many modern deployments, Apache Kafka acts as the store for the streaming data, and then multiple stream processors can act on the data stored in Kafka to produce multiple outputs. Some streaming architectures include workflows for both stream processing and batch processing, which either entails other technologies to handle large-scale batch processing, or using Kafka as the central store as specified in the Kappa Architecture.
 
-
 How Do the Kappa and Lambda Architectures Compare?
 Both architectures handle real-time and historical analytics in a single environment. However, one major benefit of the Kappa Architecture over the Lambda Architecture is that it enables you to build your streaming and batch processing system on a single technology. This means you can build a stream processing application to handle real-time data, and if you need to modify your output, you update your code and then run it again over the data in the messaging engine in a batch manner. There is no separate technology to handle the batch processing, as is suggested by the Lambda Architecture.
 
 With a sufficiently fast stream processing engine (like Hazelcast Jet), you may not need a separate technology that is optimized for batch processing. You simply read the stored streaming data in parallel (assuming the data in Kafka is appropriately split into separate channels, or “partitions”) and transform the data as if it were from a streaming source. For some environments, you can potentially create the analyzable output on demand, so when a new query is submitted from an end user, the data can be transformed ad hoc to optimally answer that query. Again, this requires a high-speed stream processing engine to enable low latency in the processing.
 
 While the Lambda Architecture does not specify the technologies that must be used, the batch processing component is often done on a large-scale data platform like Apache Hadoop. The Hadoop Distributed File System (HDFS) can economically store the raw data that can then be transformed via Hadoop tools into an analyzable format. While Hadoop is used for the batch processing component of the system, a separate engine designed for stream processing is used for the real-time analytics component. One advantage of the Lambda Architecture, however, is that much larger data sets (in the petabyte range) can be stored and processed more efficiently in Hadoop for large-scale historical analysis.
-
-
 
 ___
 
@@ -81,12 +76,10 @@ User queries are required to be served on an ad-hoc basis using immutable data s
 Quick responses are required, and the system should handle various updates in new data streams.
 None of the stored records shall be erased, and it should allow the addition of updates and new data to the database.
 
-
 Kappa Architecture
 The Kappa architecture solves the redundant part of the Lambda architecture. It is designed with the idea of replaying data. Kappa architecture avoids maintaining two different code bases for the batch and speed layers. The key idea is to handle real-time data processing, and continuous data reprocessing using a single stream processing engine and avoid a multi-layered Lambda architecture while meeting the standard quality of service.
 
 Architecture Overview:
-
 
 Pros
 
@@ -109,6 +102,7 @@ Kappa is not a replacement for Lambda as some use-cases deployed using the Lambd
 When you seek an architecture that is more reliable in updating the data lake as well as efficient in training the machine learning models to predict upcoming events robustly, then use the Lambda architecture as it reaps the benefits of both the batch layer and speed layer to ensure few errors and speed.
 
 On the other hand, when you want to deploy big data architecture using less expensive hardware and require it to deal effectively with unique events occurring continuously, then select the Kappa architecture for your real-time data processing needs.
+
 ___
 
 Big Data, Internet of things (IoT), Machine learning models and various other modern systems are becoming an inevitable reality today. People from all walks of life have started to interact with data storages and servers as a part of their daily routine. Therefore we can say that dealing with big data in the best possible manner is becoming the main area of interest for businesses, scientists and individuals. For instance an application launched for achieving certain business goals will be more successful if it can efficiently handle the queries made by customers and serve their purpose well. Such applications need to interact with data storage and in this article we’ll try to explore two important data processing architectures that serve as the backbone of various enterprise applications known as Lambda and Kappa.
@@ -123,19 +117,19 @@ Event sourcing is a concept of using the events to make prediction as well as st
 Data processing deals with the event streams and most of the enterprise software that follow the Domain Driven Design use the stream processing method to predict updates for the basic model and store the distinct events that serve as a source for predictions in a live data system. To handle numerous events occurring in a system or delta processing, Lambda architecture enabling data processing by introducing three distinct layers. Lambda architecture comprises of Batch Layer, Speed Layer (also known as Stream layer) and Serving Layer.
 
 1. Batch layer
-New data keeps coming as a feed to the data system. At every instance it is fed to the batch layer and speed layer simultaneously. Any new data stream that comes to batch layer of the data system is computed and processed on top of a Data Lake. When data gets stored in the data lake using databases such as in memory databases or long term persistent one like NoSQL based storages batch layer uses it to process the data using MapReduce or utilizing machine-learning (ML) to make predictions for the upcoming batch views.
+   New data keeps coming as a feed to the data system. At every instance it is fed to the batch layer and speed layer simultaneously. Any new data stream that comes to batch layer of the data system is computed and processed on top of a Data Lake. When data gets stored in the data lake using databases such as in memory databases or long term persistent one like NoSQL based storages batch layer uses it to process the data using MapReduce or utilizing machine-learning (ML) to make predictions for the upcoming batch views.
 
 2. Speed Layer (Stream Layer)
-The speed layer uses the fruit of event sourcing done at the batch layer. The data streams processed in the batch layer result in updating delta process or MapReduce or machine learning model which is further used by the stream layer to process the new data fed to it. Speed layer provides the outputs on the basis enrichment process and supports the serving layer to reduce the latency in responding the queries. As obvious from its name the speed layer has low latency because it deals with the real time data only and has less computational load.
+   The speed layer uses the fruit of event sourcing done at the batch layer. The data streams processed in the batch layer result in updating delta process or MapReduce or machine learning model which is further used by the stream layer to process the new data fed to it. Speed layer provides the outputs on the basis enrichment process and supports the serving layer to reduce the latency in responding the queries. As obvious from its name the speed layer has low latency because it deals with the real time data only and has less computational load.
 
 3. Serving Layer
-The outputs from batch layer in the form of batch views and from speed layer in the form of near-real time views are forwarded to the serving layer which uses this data to cater the pending queries on ad-hoc basis.
+   The outputs from batch layer in the form of batch views and from speed layer in the form of near-real time views are forwarded to the serving layer which uses this data to cater the pending queries on ad-hoc basis.
 
 Here is a basic diagram of what Lambda Architecture model would look like:
 
 Let’s translate that to a functional equation which defines any query in big data domain. The symbols used in this equation are known as Lambda and the name for the Lambda architecture is also coined from the same equation. This function is widely known to those who are familiar with tidbits of big data analysis.
 
-Query = λ (Complete data) = λ (live streaming data) * λ (Stored data)
+Query = λ (Complete data) = λ (live streaming data) \* λ (Stored data)
 The equation means that all the data related queries can be catered in the Lambda architecture by combining the results from historical storage in the form of batches and live streaming with the help of speed layer.
 
 Applications of Lambda Architecture
@@ -161,7 +155,6 @@ In 2014 Jay Kreps started a discussion where he pointed out some discrepancies o
 
 Kappa Architecture cannot be taken as a substitute of Lambda architecture on the contrary it should be seen as an alternative to be used in those circumstances where active performance of batch layer is not necessary for meeting the standard quality of service. This architecture finds its applications in real-time processing of distinct events. Here is a basic diagram for the Kappa architecture that shows two layers system of operation for this data processing architecture.
 
-
 Let’s translate the operational sequencing of the kappa architecture to a functional equation which defines any query in big data domain.
 
 Query = K (New Data) = K (Live streaming data)
@@ -179,20 +172,22 @@ The above mentioned data scenarios are handled by exhausting Apache Kafka which 
 
 Pros and Cons of Kappa architecture
 Pros
-* Kappa architecture can be used to develop data systems that are online learners and therefore don’t need the batch layer.
-Re-processing is required only when the code changes.
-* It can be deployed with fixed memory.
-* It can be used for horizontally scalable systems.
-* Fewer resources are required as the machine learning is being done on the real time basis.
-Cons
-* Absence of batch layer might result in errors during data processing or while updating the database that requires having an exception manager to reprocess the data or reconciliation.
+
+- Kappa architecture can be used to develop data systems that are online learners and therefore don’t need the batch layer.
+  Re-processing is required only when the code changes.
+- It can be deployed with fixed memory.
+- It can be used for horizontally scalable systems.
+- Fewer resources are required as the machine learning is being done on the real time basis.
+  Cons
+- Absence of batch layer might result in errors during data processing or while updating the database that requires having an exception manager to reprocess the data or reconciliation.
 
 Conclusion
 In short the choice between Lambda and Kappa architectures seems like a tradeoff. If you seek you’re an architecture that is more reliable in updating the data lake as well as efficient in devising the machine learning models to predict upcoming events in a robust manner you should use the Lambda architecture as it reaps the benefits of batch layer and speed layer to ensure less errors and speed. On the other hand if you want to deploy big data architecture by using less expensive hardware and require it to deal effectively on the basis of unique events occurring on the runtime then select the Kappa architecture for your real-time data processing needs.
+
 ___
 
 ## References
 
 1. <https://hazelcast.com/glossary/kappa-architecture>
 2. <https://www.qlik.com/blog/lambda-or-kappa-the-need-for-a-new-data-processing-architecture>
-3. 
+3.

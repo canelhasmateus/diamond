@@ -1,15 +1,15 @@
 Functors, applicatives and monads
 
 Functors:
-    Values wrapped in contexts
-    Have an fMap to apply a function to the boxed value
+Values wrapped in contexts
+Have an fMap to apply a function to the boxed value
 Applicatives
-    What if the Function is wrapped in a context?
+What if the Function is wrapped in a context?
 Monads
-    Functors apply a functoin to a wrapped value.
-    Applicatives apply a wrapped function to a wrapped value
-    Monads apply a function that returns a wrapped value to a wrapped value
-    ![](2022-04-01-15-33-42.png)
+Functors apply a functoin to a wrapped value.
+Applicatives apply a wrapped function to a wrapped value
+Monads apply a function that returns a wrapped value to a wrapped value
+![](2022-04-01-15-33-42.png)
 
 <http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html>
 
@@ -23,11 +23,11 @@ State Monad
 
 ___
 
-The yoneda philosophy []
+The yoneda philosophy \[]
 
 Things are defined by their relationships with other things.
 "An generalization of cayley's theorem "
-    Every Group is isomorphic to a permutation group
+Every Group is isomorphic to a permutation group
 
 Each row and column contains all group elements -> Its a Latin Square
 
@@ -36,8 +36,7 @@ Each row and column contains all group elements -> Its a Latin Square
 "Numbers measure size,  groups measure simmetry"
 
 "Hormorphism is a map F from S -> T such that for all x, y \e S,
-        F( X )*F( Y ) = F( X* Y )
-
+F( X )*F( Y ) = F( X* Y )
 
 ___
 
@@ -49,16 +48,16 @@ Data Types a la carte
 most Functional patterns are derived from c ategory theroyd
 
 Free of Interpretation  -> Free Monads
-    -> No coupling to framework / runtime
+\-> No coupling to framework / runtime
 Composable Pieces -> CoProducts
 Dependency Injection / IOC -> Implicits & Kleisli
 Fault Tolerant -> Dependently tyuped checked exception
 
 Free Monad
-    . A monad on a custom algebra that can be run through an interpreter
+. A monad on a custom algebra that can be run through an interpreter
 
 What is an Application?
-    . A collection of algebras and the coproduct resulting from their interaction
+. A collection of algebras and the coproduct resulting from their interaction
 
 The first Algebra
 
@@ -86,34 +85,33 @@ The second Algebra
 
 An application is the CoProduct of its algebras
 Coyoneda can give functors for free for our algebras
-    "Lift the algebra into the coprpoduct space, so that you can use the coproduct like its composing monads "
+"Lift the algebra into the coprpoduct space, so that you can use the coproduct like its composing monads "
 
 Monadic function compoisition with Kleisli Arrows
 
-A => M[B]
-
+A => M\[B]
 
 ___
 
 On algebras
 
 In Vectors space
-    An algebra over a field is a vector space equipped with a bilinear vector product
+An algebra over a field is a vector space equipped with a bilinear vector product
 
 In Logic
-    An Relational Algebra in which a set of finitary relations that is closed under certain operators
+An Relational Algebra in which a set of finitary relations that is closed under certain operators
 In Measure THeory
-    Algebra over a set, a collection of sets closed under finite unions and complementation
+Algebra over a set, a collection of sets closed under finite unions and complementation
 In Category Theory
-    An F-Algebra generalizes an algebraic structure
-        algebraic streuctures consists of
-        . a nonempty set A
-        . A collection of operations [ of finite arity, tipically binary ] on A
-        . A finite set of identities, known as axioms, that these operations must satisfy.
+An F-Algebra generalizes an algebraic structure
+algebraic streuctures consists of
+. a nonempty set A
+. A collection of operations \[ of finite arity, tipically binary ] on A
+. A finite set of identities, known as axioms, that these operations must satisfy.
 
 A functor is a mapping between categories. That is    associates each object X in C to an Object F(X) in D,
-    Associates each morphism G: X -> Y in C to a morphism F( G ) : F(X) -> F(Y)
-        . must preserve identity morphism and composition of morphisms. 
+Associates each morphism G: X -> Y in C to a morphism F( G ) : F(X) -> F(Y)
+. must preserve identity morphism and composition of morphisms.
 
 A functor that maps a category to the same category is called a Endofunctor.
 
@@ -121,8 +119,9 @@ A Morphism is a map from one mathematical structure to another one of the same t
 
 <https://ncatlab.org/nlab/show/category>:
 
-    A category consists of a collection of things and binary relationships (or transitions) between them, such that these relationships can be combined and include the “identity” relationship “is the same as.”
-
+```
+A category consists of a collection of things and binary relationships (or transitions) between them, such that these relationships can be combined and include the “identity” relationship “is the same as.”
+```
 
 ___
 
@@ -133,22 +132,19 @@ Category Name | Its Objects | Its morphisms:
 Set | sets | functions
 Group | groups | group homomorphisms
 Top | topological spaces | continuous functions
-Vect_k | vector spaces over a field k | linear transformations
+Vect\_k | vector spaces over a field k | linear transformations
 Meas | Measurable spaces | measurable functions
 Poset | Partially ordered sets | order-preserving functions
 Man | smooth manifolds | smooth maps
 
-
-
 ___
-
 
 <http://raganwald.com/2016/11/30/anamorphisms-in-javascript.html>
 
 Anamorphisms are functions that map from some object to a more complex structure containing the type of the object. For example, mapping from an integer to a list of integers.
 
 Linear recursion is a special case of divide-and-conquer
-    .. Recursion Types
+.. Recursion Types
 
 Writing traversals separates the concern of how to iterate over a data structure from the concern of what to do with the elements of the data structure.
 
@@ -156,24 +152,27 @@ ___
 
 Category
 
-* Set of objects that can relate to each other ( via morphisms ) in sensible ways , such as compoasition and associativity
+- Set of objects that can relate to each other ( via morphisms ) in sensible ways , such as compoasition and associativity
 
 name | objects | morphism
 
-set | sets | functions  
+set | sets | functions\
 group | groups | group homorphisms
-top | topological spaces | continuous functions  
+top | topological spaces | continuous functions\
 vectK | vector spaces over a field k | linear transformations
 MEAS | measurable spaces | measurable functions
 poset | Partially ordered sets | order preserving functions
 man | smooth manifold | smooth maps
 
-* mathematical objects are determined - and understood - by the network of relationships they enjoy with all the other objects of its species
+- mathematical objects are determined - and understood - by the network of relationships they enjoy with all the other objects of its species
 
-                    A category 
-    ||                                        ||
-    ||  ------- A Natural transformations >   ||
-    v A Functor                               v A Functor
-                    A category
+  ```
+                A category 
+  ```
 
-* every good analogy is yearning to become a functor
+  ||                                        ||
+  ||  ------- A Natural transformations >   ||
+  v A Functor                               v A Functor
+  A category
+
+- every good analogy is yearning to become a functor

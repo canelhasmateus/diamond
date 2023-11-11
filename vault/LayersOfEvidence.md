@@ -14,5 +14,5 @@ In a Zettelkasten - if done correctly - there will emerge layers of evidence. Th
 2. Interpretation of descriptions and patterns
 3. Synthesis of patterns, descriptions and interpretation
 
-* Divide those layers
-* Read and learn with those layers in mind
+- Divide those layers
+- Read and learn with those layers in mind

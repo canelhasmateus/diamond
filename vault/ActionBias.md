@@ -8,4 +8,4 @@ tags:
 
 Bias For action
 
-* Ponder the consequences, but not be indecisive
+- Ponder the consequences, but not be indecisive

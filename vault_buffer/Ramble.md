@@ -35,7 +35,7 @@ ___
 
 <https://raisedbyturtles.org/view-unlabeled-gmail#label-manager>
 
--has:userlabels -in:sent -in:chat -in:draft -in:inbox
+\-has:userlabels -in:sent -in:chat -in:draft -in:inbox
 
 ___
 
@@ -60,7 +60,7 @@ ___
 ___
 
 Match Host 192.168.123.*,another-example.org,*.example.com
-    User myusername,myotherusername
-    ForwardAgent yes
-    PermitLocalCommand yes
-    LocalCommand rsync -L --exclude .netrwhist --exclude .git --exclude .config/iterm2/AppSupport/ --exclude .vim/bundle/youcompleteme/ -vRrlptze "ssh -o PermitLocalCommand=no" %d/./.screenrc %d/./.gitignore %d/./.bash_profile %d/./.ssh/git_ed25519.pub %d/./.ssh/authorized_keys %d/./.vimrc %d/./.zshrc %d/./.config/iterm2/ %d/./.vim/ %d/./bin/ %d/./.bash/ %r@%n:/home/%r
+User myusername,myotherusername
+ForwardAgent yes
+PermitLocalCommand yes
+LocalCommand rsync -L --exclude .netrwhist --exclude .git --exclude .config/iterm2/AppSupport/ --exclude .vim/bundle/youcompleteme/ -vRrlptze "ssh -o PermitLocalCommand=no" %d/./.screenrc %d/./.gitignore %d/./.bash\_profile %d/./.ssh/git\_ed25519.pub %d/./.ssh/authorized\_keys %d/./.vimrc %d/./.zshrc %d/./.config/iterm2/ %d/./.vim/ %d/./bin/ %d/./.bash/ %r@%n:/home/%r

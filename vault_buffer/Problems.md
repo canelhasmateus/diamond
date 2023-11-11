@@ -1,11 +1,11 @@
 # problem 1829
 
-> #todo
+> \#todo
 
 ___
 
+## Two Sum
 
-## Two Sum 
 <https://leetcode.com/problems/two-sum/>
 
 ```python
@@ -53,10 +53,6 @@ classic problem.
 the naive solution is just brute forcew, with complexity O( n^2 ).
 The better solution has linear complexity , and takes advantage of the complement / duality trick - "If the current number would be part of the answer, we know exactly what the other number would be. So the question becomes: given the current number, where (if any) have we seen the remaining difference?"
 
-
 ___
 
-
-
 ___
-

@@ -3,21 +3,22 @@
 Large amounts of historical data.
 Incredible Amounts of information -> Mine it -> Better decisions
 
-E.G [[AwsRedShift]]
+E.G \[\[AwsRedShift]]
+
 ___
 
 ## SlowlyChangingDimensions
 
 1. Type 0
-    Never Changes
+   Never Changes
 2. Type 1
-    Only the latest snapshot is recorded, without historical records
+   Only the latest snapshot is recorded, without historical records
 3. Type 2
-    Entire Change history is recorded, through adding rows
+   Entire Change history is recorded, through adding rows
 4. Type 3
-    Changes are recorded through adding column ( Rare )
+   Changes are recorded through adding column ( Rare )
 5. Type 4
-    Current record and history are in separated tables
+   Current record and history are in separated tables
 
 ___
 
@@ -27,12 +28,12 @@ loss: tight coupling microservices and bi / ml models
 DA impact
 
 Data Modeling
-    . Less chaos and more 'central' datasets that decouple backend architecture from BA/DS/MLE
+. Less chaos and more 'central' datasets that decouple backend architecture from BA/DS/MLE
 Data CLarity
-    . Source of Truth
-    . Documentation
+. Source of Truth
+. Documentation
 Tackling the data gap
-    . Through DA squads have support to solve their data challenge
+. Through DA squads have support to solve their data challenge
 
 ___
 

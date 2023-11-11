@@ -6,11 +6,9 @@ tags:
 
 # Websockets
 
-
 ## Websockets
 
-Offer full duplex channels over [[HTTP]]. To create one:
+Offer full duplex channels over \[\[HTTP]]. To create one:
 
 1. client sends an HTTP Get 1.1 --upgrade
 2. Server return returns with 101 such as switching protocol.
-

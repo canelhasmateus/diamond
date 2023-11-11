@@ -8,11 +8,10 @@ tags:
 
 Invent and simplify
 
-* Seek to improve
-* push the boundaries of what can be created
-* Humble enough to accept their own limitations and adopt solutions from others.
+- Seek to improve
+- push the boundaries of what can be created
+- Humble enough to accept their own limitations and adopt solutions from others.
 
 > The minimum amount of authority required.
 
 decisionMaking pendulum
-

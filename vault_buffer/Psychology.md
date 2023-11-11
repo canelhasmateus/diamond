@@ -1,4 +1,3 @@
-
 ## Framing
 
 Framing is a way of labeling something that changes how you feel about it, wityhout chaning the thing itself
@@ -7,8 +6,10 @@ ___
 
 ## Self Licensing
 
-    . Happens when people allow themselves to indulge after doing something positive at first.
-    . Eg. Drinking a diet soda -> then greasy hamburger.
+```
+. Happens when people allow themselves to indulge after doing something positive at first.
+. Eg. Drinking a diet soda -> then greasy hamburger.
+```
 
 ___
 
@@ -16,11 +17,11 @@ ___
 
 It seems that in order to achieve better productivity, there are a variety of things to consider, some of them being
 
-* context switching
-* multi-tasking
-* hyperfocus-ing
-* discipline
-* constancy  
+- context switching
+- multi-tasking
+- hyperfocus-ing
+- discipline
+- constancy
 
 ___
 
@@ -39,37 +40,41 @@ ___
 
 ## Meaning
 
-    On Sucess:
-        Atlas struggle becomes everyday more real.
-        Our real goal and fulfilment doesn't come from reach the summit, but from the pain of rolling the ball. Thus, suffering / struggle not only is necessary to reach our potential, it is the actual goal.
+```
+On Sucess:
+    Atlas struggle becomes everyday more real.
+    Our real goal and fulfilment doesn't come from reach the summit, but from the pain of rolling the ball. Thus, suffering / struggle not only is necessary to reach our potential, it is the actual goal.
+```
 
 The crisis of meaning (  Jung )
-    . The general neurosis of our times
-    . The lack of meaning is a soul-sickness whose full extent and import out age has not yet began to comprehend
+. The general neurosis of our times
+. The lack of meaning is a soul-sickness whose full extent and import out age has not yet began to comprehend
 
- Viktor Frankl
-    . Ever more people have the means to live, but no meaning to live for
+Viktor Frankl
+. Ever more people have the means to live, but no meaning to live for
 
 happiness is about the present moment, independentof other moments, whereas meaning links events across time, thus integrating past, present, and future ( IAIN McGilchrist)
 
 How can we discover a meaningful life message
-    . tap into the wisdom  of the old mythos
-    . what is the use of a religion withtout a mythos, since religion means, if anything at all, precisely that function which linkws us bgack to the eternal myth?
+. tap into the wisdom  of the old mythos
+. what is the use of a religion withtout a mythos, since religion means, if anything at all, precisely that function which linkws us bgack to the eternal myth?
 
-    . contains truthes about the human predicament and the nature of psyche expressed in narrative form. 
+```
+. contains truthes about the human predicament and the nature of psyche expressed in narrative form. 
 
-    both logos and mythos are realms to discovering truthts, but their truths are of a different nature
-        . logos teaches us how to cure a sickness
-        . mythos teaches us how to cope with loss and death
+both logos and mythos are realms to discovering truthts, but their truths are of a different nature
+    . logos teaches us how to cure a sickness
+    . mythos teaches us how to cope with loss and death
+```
 
 "
 Is not jesus a prototype of those who, trusting their inner experience, have gone their individual ways in defiance of the world?
 "
 
-____
+___
 
 Myth of arrival:
-    . The myth that we're going to a point of permanence, somehow.
+. The myth that we're going to a point of permanence, somehow.
 
 The mere participation in the activities becomes the reward itself.
 
@@ -77,36 +82,36 @@ it is the best approach for reaching the ideal situation whereby we can support 
 Many people dream of such a line, but few attain it due to the sole reason most people don't get very good at what they do.
 
 Struggle free life:
-    . Not a life the human organism is suited for
-    . We're restless creatures - tied by mortal nature - and cannot be tamed by external success
-    . Our restless can only be tamed through the continual exertion of effort towards ends we deem worthy.
+. Not a life the human organism is suited for
+. We're restless creatures - tied by mortal nature - and cannot be tamed by external success
+. Our restless can only be tamed through the continual exertion of effort towards ends we deem worthy.
 
-"We measure ourselves by many standards [ ... ] But deeper than all such things, and able to suffice unto itself without them, is the sense of the amount of effort we can put forth. He who can make none is but a shadow; He who can make much is a hero.
+"We measure ourselves by many standards \[ ... ] But deeper than all such things, and able to suffice unto itself without them, is the sense of the amount of effort we can put forth. He who can make none is but a shadow; He who can make much is a hero.
 "
 
 <https://www.youtube.com/watch?v=mYcR7Wkq1r8>
 
 ## Anxiety
 
-____
+___
 
 <https://www.youtube.com/watch?v=Y1ZyWaaCilM>
 
 "
 If we wish to escape from a life of passivity, stagnation and mediocrity, we must be willing to attend the 'School of Anxiety' - Has a demonic side that can ruin or life, but also a side that can guide us towards the development of a greater self.
-    - Which one shows, depends on a large degree to how we approach the anxiety inducing situation of our life.
-  
+\- Which one shows, depends on a large degree to how we approach the anxiety inducing situation of our life.
+
 "
 
 Unlike other creatures, who are ruled by instinct and necessity, we must "contend with our freedom."
-    . Choosing among the possible paths, and taking the steps towards actualizing these possibilities leads to self creation - the ultimate task of man.
-    .  "Man is a creature who is continually beckoned by possibility, who conceives of possibility, visualizes it, and by creative activity carries it into actuality. "
+. Choosing among the possible paths, and taking the steps towards actualizing these possibilities leads to self creation - the ultimate task of man.
+.  "Man is a creature who is continually beckoned by possibility, who conceives of possibility, visualizes it, and by creative activity carries it into actuality. "
 
 The trouble is choosing the path.
-    . Possibility means "I can" - In a logical system it is convenient enough to say that possibility passes over into actuality. In reality is is not so easy, and an intermediate determinant is necessary. This intermediate determinant is anxiety.
-    . Every step is patterned the same.
-        .. Envision possibility that could further our self creation
-        .. Experience the anxiety that accompanies the process of moving forward into a unpredictable and open ended future, but move forward regardless.
+. Possibility means "I can" - In a logical system it is convenient enough to say that possibility passes over into actuality. In reality is is not so easy, and an intermediate determinant is necessary. This intermediate determinant is anxiety.
+. Every step is patterned the same.
+.. Envision possibility that could further our self creation
+.. Experience the anxiety that accompanies the process of moving forward into a unpredictable and open ended future, but move forward regardless.
 
 The capacity to bear anxiety is important for the individuals self realization and for his conquest of his environment. Every person experiences continual shocks and threats to his existence, indeed, self-actualization occur only at the price of moving ahead despite such chocks. This indicates the constructive use of anxiety.
 
@@ -123,6 +128,7 @@ No one is coming ;
 to save me ; to make life right for me ; to solve my problems ;
 the dream of a rescuer who delivers us leaves us passive and powerless.
 "
+
 ___
 
 <https://www.youtube.com/watch?v=CP1YOeNnZac>
@@ -190,7 +196,7 @@ ___
 
 Most indivividuals, fearing the complex depths within, remain at the superficial and surfacer layer of their psyche ; industriouly mindful of their common comedy and not at of themselves
 
-"What he wanted was totality ; he disciplined himself to wholeness, he created himelf. ~~ about Goethe"
+"What he wanted was totality ; he disciplined himself to wholeness, he created himelf. \~\~ about Goethe"
 
 "
 the beast within
@@ -202,8 +208,8 @@ just as a raging river can be harnessed for its energy, so can the uncivilized l
 the most general picture of our essence is an association of drives ,with constant rivalry and particular alliances with each other.
 "
 like a city - numnerous conflicting subpersonalityies simultaneously live. how to harmonize the abundance of drives and impulses, and provide coordination between them? ->
-    Organizing idea ; A dominant master drive thast forms the living entre of the psyche, and co-opts all the other drives to act in subordination to its idea
-    ~ Is this an daemonic?
+Organizing idea ; A dominant master drive thast forms the living entre of the psyche, and co-opts all the other drives to act in subordination to its idea
+\~ Is this an daemonic?
 
 "
 There is a false saying: How can someone who can't save himself save others?

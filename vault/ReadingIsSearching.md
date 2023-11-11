@@ -19,6 +19,4 @@ Typology of items that serve as an epistemiologic amplifiers ( `elements of info
 `Now we have a small ontology of item types that are hidden in the various texts we read. If you read a text for your Zettelkasten you should search for items. This will deepen your knowledge work with the text and accelerate the reading process.
 `
 
-`
- introduce the 6 items Sascha lists here as a starting point to define & recognize elements of information in the student’s sources. At first they don’t think much of this, but soon recognize the power of having clear expectations: they can listen more selectively during class and improve the quality of their notes, and read selectively and thus speed up their research.
-`
+` introduce the 6 items Sascha lists here as a starting point to define & recognize elements of information in the student’s sources. At first they don’t think much of this, but soon recognize the power of having clear expectations: they can listen more selectively during class and improve the quality of their notes, and read selectively and thus speed up their research.`

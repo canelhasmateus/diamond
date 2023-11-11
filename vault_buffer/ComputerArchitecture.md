@@ -10,7 +10,7 @@ ___
 
 Digital Design and computer architecture
 
- When you are working at one level of
+When you are working at one level of
 abstraction, it is good to know something about the levels of abstraction
 immediately above and below where you are working. For example, a
 computer scientist cannot fully optimize code without understanding the
@@ -54,17 +54,17 @@ and outputs responding
 
 Sum of product vs Product of Sums Form
 
-* An fframewrok to Produce the necessary function that will output the given truth table.
+- An fframewrok to Produce the necessary function that will output the given truth table.
 
 ...
 
-| Number | Axiom | Dual | Name
-| ---| ---| --- | ---
-| A1  | B = 0 if B ≠ 1| B = 1 if B ≠ 0 | Binary field
-| A2 | 0 = 1 | 1 = 0 | NOT
-| A3 | 0 • 0 = 0 | 1 + 1 = 1 | AND/OR
-| A4 | 1 • 1 = 1 | 0 + 0 = 0 | AND/OR
-| A5 | 0 • 1 = 1 • 0 = 0 | 1 + 0 = 0 + 1 = 1 | AND/OR
+| Number | Axiom             | Dual              | Name         |
+| ------ | ----------------- | ----------------- | ------------ |
+| A1     | B = 0 if B ≠ 1    | B = 1 if B ≠ 0    | Binary field |
+| A2     | 0 = 1             | 1 = 0             | NOT          |
+| A3     | 0 • 0 = 0         | 1 + 1 = 1         | AND/OR       |
+| A4     | 1 • 1 = 1         | 0 + 0 = 0         | AND/OR       |
+| A5     | 0 • 1 = 1 • 0 = 0 | 1 + 0 = 0 + 1 = 1 | AND/OR       |
 
 These theorems have great practical significance, because they teach us how
 to simplify logic to produce smaller and less costly circuits.
@@ -75,20 +75,20 @@ to denote the dual of a statement
 
 ...
 
-| Number | Theorem | Dual | Name
-| --- | --- | --- | ---
-T1 | Β • 1 = Β | Β + 0 = Β |Identity
-T2 | Β • 0 = 0 | Β + 1 = 1 | Null Element
-T3 | Β • Β = Β | Β + Β = Β | Idempotency
-T4 | B' = Β | B  = B' | Involution
-T5 | Β • B' = 0 | Β + B' = 1 |Complements
-T6 | B • C = C • B T6′ Β + C = C + Β Commutativity
-T7 | (Β • C) • D = Β • (C • D) |(B + C) + D = B + (C + D) | Associativity
-T8 | (Β • C) + (Β • D) = Β • (C + D) | (B + C) • (B + D) = B + (C • D) | Distributivity
-T9 | Β • (Β + C) = Β | B + (B • C) = B | Covering
-T10 | (Β • C) + (B • C) = Β | (B + C) • (B + C) = B | Combining
-T11 | (Β • C) + (B • D) + (C • D)= B • C + B • D | (B + C) • (B + D) • (C + D) = (B + C) • (B + D) | Consensus
-T12 | B0 • B1 • B2... = ðB0 + B1 + B2...Þ | B0 + B1 + B2... = ðB0 • B1 • B2...Þ | De Morgan’s Theorem
+| Number | Theorem                                       | Dual                                            | Name                |
+| ------ | --------------------------------------------- | ----------------------------------------------- | ------------------- |
+| T1     | Β • 1 = Β                                     | Β + 0 = Β                                       | Identity            |
+| T2     | Β • 0 = 0                                     | Β + 1 = 1                                       | Null Element        |
+| T3     | Β • Β = Β                                     | Β + Β = Β                                       | Idempotency         |
+| T4     | B' = Β                                        | B  = B'                                         | Involution          |
+| T5     | Β • B' = 0                                    | Β + B' = 1                                      | Complements         |
+| T6     | B • C = C • B T6′ Β + C = C + Β Commutativity |                                                 |                     |
+| T7     | (Β • C) • D = Β • (C • D)                     | (B + C) + D = B + (C + D)                       | Associativity       |
+| T8     | (Β • C) + (Β • D) = Β • (C + D)               | (B + C) • (B + D) = B + (C • D)                 | Distributivity      |
+| T9     | Β • (Β + C) = Β                               | B + (B • C) = B                                 | Covering            |
+| T10    | (Β • C) + (B • C) = Β                         | (B + C) • (B + C) = B                           | Combining           |
+| T11    | (Β • C) + (B • D) + (C • D)= B • C + B • D    | (B + C) • (B + D) • (C + D) = (B + C) • (B + D) | Consensus           |
+| T12    | B0 • B1 • B2... = ðB0 + B1 + B2...Þ           | B0 + B1 + B2... = ðB0 • B1 • B2...Þ             | De Morgan’s Theorem |
 
 as shown in Figure 2.15, if one input of an AND gate is 0, we can replace the
 AND gate with a wire that is tied LOW (to 0). Likewise, if one input of an OR
@@ -164,7 +164,7 @@ tion with the theorems of Boolean algebra can take some trial and error.
 Section 2.7 describes a methodical technique called Karnaugh maps that
 makes the process easier.
 
- Karnaugh maps (K-maps) are a graphical method for simplifying
+Karnaugh maps (K-maps) are a graphical method for simplifying
 Boolean equations
 
 ...
@@ -185,18 +185,18 @@ ___
 set associative caches
 
 current arch caches are set-associative
-    . Broken into sets, and each set contains a specified number of elemnets , the so called associativity
-    . Each element is called a cache line or a cache block
-    . the cpu always communicates with ram and its caches in cache lines.
-    . currently, 64bytes
-    . Start of cache lines: 0x00 0x40 0x80 0xc0
+. Broken into sets, and each set contains a specified number of elemnets , the so called associativity
+. Each element is called a cache line or a cache block
+. the cpu always communicates with ram and its caches in cache lines.
+. currently, 64bytes
+. Start of cache lines: 0x00 0x40 0x80 0xc0
 
 The CPU uses a "Tagged Pointer" approach to find the cache and the offset.
-    . For example, in a 64 bits address, use the first 8 to encode the set, the next 8 to encode the tag.
+. For example, in a 64 bits address, use the first 8 to encode the set, the next 8 to encode the tag.
 
 When evicting, each cpu executes its Policy Eviction, which varies but is usually LRU.
 
- s
+s
 
 ___
 
@@ -204,17 +204,19 @@ ___
 
 How exactly does the whole 'core, process, variable, registers , slots and stacks' work?
 
-    Process Control Block
-        Process State 
-        Process Number
-        Process Counter
-        Registers
-        Memory Limits
-        List of open files
-        Signal Mask 
-        CPU Scheduling info
-    
-    Since a process is entirely described by a pcb, whenever we wanna fork a process, essentially al we have to do is copy a parent control lblock to a child process control blcok. 
+```
+Process Control Block
+    Process State 
+    Process Number
+    Process Counter
+    Registers
+    Memory Limits
+    List of open files
+    Signal Mask 
+    CPU Scheduling info
+
+Since a process is entirely described by a pcb, whenever we wanna fork a process, essentially al we have to do is copy a parent control lblock to a child process control blcok. 
+```
 
 ___
 
@@ -222,42 +224,44 @@ ___
 
 <https://blog.heroku.com/tidying-ruby-object-allocations>
 
-    We can gain speed by focusing on object allocatins
-        
-        . Take all allocations and put them in a pile where you can see them
-            .. Memory Profiling
-            .. ( Derailed benchmarks)
-        . COnsider each one: Does it spark joy? Keep only those.
-            .. Useful
-            .. Keeps your code clean
-            .. does not cause performance problems
-        
-        . Why?
-            "Malloc is slow"
-        
-
-    Can we replace allocation while maintaning correctness?
-
-
-    Important to talk abou tstatistics and their impacts when talking about benchmarks. 
-        . every time we measure a value, it could be because of randomness. 
-        . check for statistical significance
-            .. t 0test vs kolmogorov?
-
+```
+We can gain speed by focusing on object allocatins
+    
+    . Take all allocations and put them in a pile where you can see them
+        .. Memory Profiling
+        .. ( Derailed benchmarks)
+    . COnsider each one: Does it spark joy? Keep only those.
+        .. Useful
+        .. Keeps your code clean
+        .. does not cause performance problems
+    
+    . Why?
+        "Malloc is slow"
     
 
-    https://www.schneems.com/2019/11/07/why-does-my-apps-memory-usage-grow-asymptotically-over-time/
-        
+Can we replace allocation while maintaning correctness?
+
+
+Important to talk abou tstatistics and their impacts when talking about benchmarks. 
+    . every time we measure a value, it could be because of randomness. 
+    . check for statistical significance
+        .. t 0test vs kolmogorov?
+
+
+
+https://www.schneems.com/2019/11/07/why-does-my-apps-memory-usage-grow-asymptotically-over-time/
     
 
-    There is a range of topics you need for the full picture: object slots, slot versus heap allocation, generational GC, incremental GC, compacting memory, fragmentation due to malloc implementation, etc. But for now, this simplification is good enough.
+
+There is a range of topics you need for the full picture: object slots, slot versus heap allocation, generational GC, incremental GC, compacting memory, fragmentation due to malloc implementation, etc. But for now, this simplification is good enough.
+```
 
 <https://www.sitepoint.com/ruby-uses-memory/>
-    Minimize object allocation.
+Minimize object allocation.
 
 ___
 
-## UniKernels 
+## UniKernels
 
 Look Ma , no OS
 
@@ -267,47 +271,51 @@ Possibly the next step in the virtualization, after containers.
 
 Complexity comes into varities
 
-    Necessary complexity
-        Inherent because of the solving of hard problem 
-    Unnecessary
-        Lack of understanding of the problem
-        Organic growth over time
+```
+Necessary complexity
+    Inherent because of the solving of hard problem 
+Unnecessary
+    Lack of understanding of the problem
+    Organic growth over time
+```
 
 Usual microservices architectures are very hard to debug
-    . Very Hard to replicate the environment 1 to 1
+. Very Hard to replicate the environment 1 to 1
 
 <https://www.youtube.com/watch?v=W9F4pn9Lngc>
 
 Looking at the Application Stack
 
-    Ocaml 
-        Application Config
-        Application
+```
+Ocaml 
+    Application Config
+    Application
 
-    Docker
-        Language runtime
-        Shared Libraries
-        Docker RUntime
+Docker
+    Language runtime
+    Shared Libraries
+    Docker RUntime
 
-    Ubuntu
-        Os User Processes
-        OS Kernel
-        Virtual HW Drivers
+Ubuntu
+    Os User Processes
+    OS Kernel
+    Virtual HW Drivers
 
-    HyperV
-        Hypervisor
-        Hardware Drivers
-        Hardware
+HyperV
+    Hypervisor
+    Hardware Drivers
+    Hardware
+```
 
 Largely Redundant
-    Isolation provided by the docker runtime, by the user processes and the hypervisor.
+Isolation provided by the docker runtime, by the user processes and the hypervisor.
 That is all to run a single ap, in a single user in a single server
 This is unnecessarily complex
 
 From the developers perspective, there are many black box layers beneath the running application. Layers that the developers are not interacting explicitly: As far as they're concerned , its turtles all the way down.
 
 Overgeneralized systems
-    By designed, posix is very generalized
+By designed, posix is very generalized
 
 A very large amount of complexity in the kernel regards the necessity to run concurrent users and applications.
 Needless permission checks - a legacy of the timesharing computers of the past.
@@ -316,8 +324,8 @@ Efficiency and duplication: Lots of storage and ram for things we're not using, 
 This means we have a very large attack surface , in regards to security.
 
 How did we get here?
-    Natural eveolution
-    Decades of backwards compatibility
+Natural eveolution
+Decades of backwards compatibility
 
 Make it work -> Make it RIght -> Make it fast
 
@@ -325,32 +333,34 @@ What is a uni-kernel?
 
 Unnecessarily complexity
 
-        Service Metadata
-            zookeeper
-            consul
-            etcd
+```
+    Service Metadata
+        zookeeper
+        consul
+        etcd
 
-        Memory Storage
-            redis
-            memcached
-        
-        Object storage
-            swift stack
-            s3
-        RDBMS
-            Postgres
-            MariaDB
-        Document DB
-            COuchDB
-            MongoDB
+    Memory Storage
+        redis
+        memcached
+    
+    Object storage
+        swift stack
+        s3
+    RDBMS
+        Postgres
+        MariaDB
+    Document DB
+        COuchDB
+        MongoDB
 
-        COnfiguration Trget
-            Ansible
-            Puppet
-            chef
-        
-        ORchestration
-            Kubernetes
-            Mesos
-        Traffic Routing
-            Nginx HAPROXYUU
+    COnfiguration Trget
+        Ansible
+        Puppet
+        chef
+    
+    ORchestration
+        Kubernetes
+        Mesos
+    Traffic Routing
+        Nginx HAPROXYUU
+```

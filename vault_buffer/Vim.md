@@ -6,7 +6,9 @@ tags:
 
 # LearnVim
 
-    This plugin adds four main commands in normal mode
+```
+This plugin adds four main commands in normal mode
+```
 
 cs: To change the surroundings.
 ds: To delete the surroundings.
@@ -22,9 +24,7 @@ Plug 'terryma/vim-multiple-cursors'
 
 This plugin adds three main commands in normal mode
 
-<ALT-n>: Start multi cursor mode, select the current word, or select the next occurrence.
-<ALT-x>: deselect the current occurrence and go to the next one.
-<ALT-p>: deselect the current occurrence and go to the previous one.
+<ALT-n>: Start multi cursor mode, select the current word, or select the next occurrence. <ALT-x>: deselect the current occurrence and go to the next one. <ALT-p>: deselect the current occurrence and go to the previous one.
 C-c/Esc: to exit the mode
 
 ___
@@ -54,11 +54,13 @@ cxii: Exchange an indent level.
 dai: To delete an if statement and all its instructions.
 
 Plug 'vim-scripts/argtextobj.vim'
+
 ___
+
 Plug 'vim-scripts/ReplaceWithRegister'
-__
+\_\_
 Plug 'machakann/vim-highlightedyank'
-let g:highlightedyank_highlight_duration = DURATION_IN_MILLISECONDS
+let g:highlightedyank\_highlight\_duration = DURATION\_IN\_MILLISECONDS
 
 ___
 
@@ -69,7 +71,7 @@ set ideajoin
 set idearefactormode=keep
 vnoremap < <gv
 vnoremap > >gv
-nnoremap [[ :action MethodUp<CR>
+nnoremap \[\[ :action MethodUp<CR>
 nnoremap ]] :action MethodDown<CR>
 nnoremap zc :action CollapseRegion<CR>
 nnoremap zo :action ExpandRegion<CR>
@@ -116,7 +118,7 @@ nnoremap ,f :action RerunFailedTests<CR>
 
 ___
 
-Unquote a word that's enclosed in single quotes  
+Unquote a word that's enclosed in single quotes\
 `di'hPl2x`
 
 - `di'` - Delete the word enclosed by single quotes.
@@ -147,32 +149,33 @@ ___
 <https://github.com/JetBrains/ideavim/wiki/Emulated-plugins>
 
 here are no such commands as dd, yy, or cc. For example, dd is not a separate command for deleting the line, but a d command with a d motion.
-Wait, but there isn't a d motion in Vim! That’s right, and that’s why Vim has a dedicated set of commands for which it checks whether the command equals to motion and if so, it executes _motion instead.
-_ is an interesting motion that isn't even documented in vi, and it refers to the current line. So, commands like dd, yy, and similar ones are simply translated to d_, y_, etc. Here is the source of this knowledge.
+Wait, but there isn't a d motion in Vim! That’s right, and that’s why Vim has a dedicated set of commands for which it checks whether the command equals to motion and if so, it executes *motion instead.
+\_ is an interesting motion that isn't even documented in vi, and it refers to the current line. So, commands like dd, yy, and similar ones are simply translated to d*, y\_, etc. Here is the source of this knowledge.
 
 You can use g- or g+ to go between text-states. To go to a text state 1 minute earlier, you can use:
 
 Vim has some special marks which it sets automatically. Here are some of the most useful:
 
-| Command | Description |
-| --- | --- |
-| `` `. `` | jump to position where last change occurred in current buffer |
-| `` `" `` | jump to position where last exited current buffer |
-| `` `0 `` | jump to position in last file edited (when exited Vim) |
-| `` `1 `` | like `` `0 `` but the previous file (also `` `2 `` etc) |
-| `''` | jump back (to line in current buffer where jumped from) |
-| ` `` ` | jump back (to position in current buffer where jumped from) |
-| `` `[ `` or `` `] `` | jump to beginning/end of previously changed or yanked text |
-| `` `< `` or `` `> `` | jump to beginning/end of last visual selection |
+| Command              | Description                                                   |
+| -------------------- | ------------------------------------------------------------- |
+| `` `. ``             | jump to position where last change occurred in current buffer |
+| `` `" ``             | jump to position where last exited current buffer             |
+| `` `0 ``             | jump to position in last file edited (when exited Vim)        |
+| `` `1 ``             | like `` `0 `` but the previous file (also `` `2 `` etc)       |
+| `''`                 | jump back (to line in current buffer where jumped from)       |
+| ` `` `               | jump back (to position in current buffer where jumped from)   |
+| `` `[ `` or `` `] `` | jump to beginning/end of previously changed or yanked text    |
+| `` `< `` or `` `> `` | jump to beginning/end of last visual selection                |
 
-____
+___
 
 <https://www.reddit.com/r/vim/comments/o8k0xd/is_there_a_modification_to_make_the_dot_command/>
+
 ___
 
 <https://plugins.jetbrains.com/plugin/19162-ideavimmulticursor>
 
-____
+___
 
 todo:
 
@@ -185,8 +188,8 @@ ___
 WTF
 
 |gi|  change.insert.InsertAtPreviousInsertAction
-|c_CTRL-[|  com.maddyhome.idea.vim.ui.ex.EscapeCharAction
-|c_<Esc>|  com.maddyhome.idea.vim.ui.ex.EscapeCharAction
+|c\_CTRL-\[|  com.maddyhome.idea.vim.ui.ex.EscapeCharAction
+|c\_<Esc>|  com.maddyhome.idea.vim.ui.ex.EscapeCharAction
 |gn|  motion.gn.GnNextTextObject
 |gN|  motion.gn.GnPreviousTextObject
 |gn|  motion.gn.VisualSelectNextSearch
@@ -198,6 +201,7 @@ WTF
 Leader Key
 
 |<Space>|  motion.leftright.MotionRightWrapAction
+
 ___
 
 Text Nav
@@ -227,32 +231,32 @@ Text Nav
 |b|  motion.text.MotionWordLeftAction
 |w|  motion.text.MotionWordRightAction
 |v|  motion.visual.VisualToggleCharacterModeAction
-|cc| translated to c_
-|dd| translated to d_
-|yy| translated to y_
+|cc| translated to c\_
+|dd| translated to d\_
+|yy| translated to y\_
 
-____
+___
 
 Directionals
 
-|i_<NL>|  change.insert.InsertEnterAction
-|i_<CR>|  change.insert.InsertEnterAction
-|i_<Esc>|  change.insert.InsertExitModeAction
-|i_<Insert>|  change.insert.InsertInsertAction
-|i_<Down>|  editor.VimEditorDown
-|i_<Up>|  editor.VimEditorUp
+|i\_<NL>|  change.insert.InsertEnterAction
+|i\_<CR>|  change.insert.InsertEnterAction
+|i\_<Esc>|  change.insert.InsertExitModeAction
+|i\_<Insert>|  change.insert.InsertInsertAction
+|i\_<Down>|  editor.VimEditorDown
+|i\_<Up>|  editor.VimEditorUp
 |<Left>|  motion.leftright.MotionArrowLeftAction
 |<Right>|  motion.leftright.MotionArrowRightAction
 
-|i_<Left>|  motion.leftright.MotionLeftInsertModeAction
-|i_<Right>|  motion.leftright.MotionRightInsertAction
+|i\_<Left>|  motion.leftright.MotionLeftInsertModeAction
+|i\_<Right>|  motion.leftright.MotionRightInsertAction
 |<ESC>|  motion.select.SelectEscapeAction
 |<Left>|  motion.select.motion.SelectMotionLeftAction
 |<Right>|  motion.select.motion.SelectMotionRightAction
 |<C-Left>|  motion.text.MotionWordLeftAction
-|i_<C-Left>|  motion.text.MotionWordLeftInsertAction
+|i\_<C-Left>|  motion.text.MotionWordLeftInsertAction
 |<C-Right>|  motion.text.MotionWordRightAction
-|i_<C-Right>|  motion.text.MotionWordRightInsertAction
+|i\_<C-Right>|  motion.text.MotionWordRightInsertAction
 |g<Up>|  motion.updown.MotionUpNotLineWiseAction
 |gk|  motion.updown.MotionUpNotLineWiseAction
 
@@ -261,8 +265,8 @@ ___
 These are navigations that i'd rather have operate slightly different.
 |<End>|  motion.leftright.MotionEndAction
 |<Home>|  motion.leftright.MotionHomeAction
-|i_<Home>|  motion.leftright.MotionFirstColumnInsertModeAction
-|i_<End>|  motion.leftright.MotionLastColumnInsertAction
+|i\_<Home>|  motion.leftright.MotionFirstColumnInsertModeAction
+|i\_<End>|  motion.leftright.MotionLastColumnInsertAction
 |<S-End>|  motion.leftright.MotionShiftEndAction
 |<S-Home>|  motion.leftright.MotionShiftHomeAction
 |<S-Left>|  motion.leftright.MotionShiftLeftAction
@@ -273,24 +277,24 @@ These are navigations that i'd rather have operate slightly different.
 |<C-Up>|  motion.scroll.CtrlUpAction
 |CTRL-D|  motion.scroll.MotionScrollHalfPageDownAction
 |CTRL-U|  motion.scroll.MotionScrollHalfPageUpAction
-|i_<S-Down>|  motion.scroll.MotionScrollPageDownInsertModeAction
-|i_<S-Up>|  motion.scroll.MotionScrollPageUpInsertModeAction
-|i_<S-Left>|  motion.text.MotionWordLeftInsertAction
-|i_<S-Right>|  motion.text.MotionWordRightInsertAction
+|i\_<S-Down>|  motion.scroll.MotionScrollPageDownInsertModeAction
+|i\_<S-Up>|  motion.scroll.MotionScrollPageUpInsertModeAction
+|i\_<S-Left>|  motion.text.MotionWordLeftInsertAction
+|i\_<S-Right>|  motion.text.MotionWordRightInsertAction
 |<Down>|  motion.updown.MotionArrowDownAction
 |<Down>|  motion.updown.MotionArrowDownAction
 |<Up>|  motion.updown.MotionArrowUpAction
 |<Up>|  motion.updown.MotionArrowUpAction
 |<C-Home>|  motion.updown.MotionGotoLineFirstAction
-|i_<C-Home>|  motion.updown.MotionGotoLineFirstInsertAction
+|i\_<C-Home>|  motion.updown.MotionGotoLineFirstInsertAction
 |<C-End>|  motion.updown.MotionGotoLineLastEndAction
-|i_<C-End>|  motion.updown.MotionGotoLineLastEndInsertAction
+|i\_<C-End>|  motion.updown.MotionGotoLineLastEndInsertAction
 |<S-Down>|  motion.updown.MotionShiftDownAction
 |<S-Down>|  motion.updown.MotionShiftDownAction
 |<S-Up>|  motion.updown.MotionShiftUpAction
 |<S-Up>|  motion.updown.MotionShiftUpAction
 
-____
+___
 
 Search and Jump
 
@@ -308,41 +312,41 @@ Search and Jump
 |gstar|  motion.search.SearchWordForwardAction
 |%|  motion.updown.MotionPercentOrMatchAction
 
-____
+___
 
 Visual
 
-|v_<Esc>|  motion.visual.VisualExitModeAction
-|v_O|  motion.visual.VisualSwapEndsBlockAction
-|v_o|  motion.visual.VisualSwapEndsAction
-|v_p|  copy.PutVisualTextAfterCursorAction
-|v_P|  copy.PutVisualTextBeforeCursorAction
-|v_c|  change.change.ChangeVisualAction
-|v_d|  change.delete.DeleteVisualAction
-|v_y| copy.YankVisualAction
+|v\_<Esc>|  motion.visual.VisualExitModeAction
+|v\_O|  motion.visual.VisualSwapEndsBlockAction
+|v\_o|  motion.visual.VisualSwapEndsAction
+|v\_p|  copy.PutVisualTextAfterCursorAction
+|v\_P|  copy.PutVisualTextBeforeCursorAction
+|v\_c|  change.change.ChangeVisualAction
+|v\_d|  change.delete.DeleteVisualAction
+|v\_y| copy.YankVisualAction
 
 ___
 
 Meta
 
 |.|  change.RepeatChangeAction
-|:|  ExEntryAction
-|:map|  commands.mapping.MapCommand
-|:nmap| ...
-|:vmap| ...
-|:omap| ...
-|:imap| ...
-|:cmap| ...
-|:noremap| ...
-|:nnoremap| ...
-|:vnoremap| ...
-|:onoremap| ...
-|:inoremap| ...
-|:cnoremap| ...
+\|:|  ExEntryAction
+\|:map|  commands.mapping.MapCommand
+\|:nmap| ...
+\|:vmap| ...
+\|:omap| ...
+\|:imap| ...
+\|:cmap| ...
+\|:noremap| ...
+\|:nnoremap| ...
+\|:vnoremap| ...
+\|:onoremap| ...
+\|:inoremap| ...
+\|:cnoremap| ...
 
 ## Suboptimal
 
-____
+___
 
 These premium spots should not be 1 char.
 
@@ -363,30 +367,30 @@ More cohesive groups
 |zc|  fold.VimCollapseRegion
 |zo|  fold.VimExpandRegion
 |gq|  change.change.ReformatCodeMotionAction
-|v_gq|  change.change.ReformatCodeVisualAction
+|v\_gq|  change.change.ReformatCodeVisualAction
 |J|  change.delete.DeleteJoinLinesSpacesAction
 |gJ|  change.delete.DeleteJoinLinesAction
-|v_J|  change.delete.DeleteJoinVisualLinesSpacesAction
-|v_gJ|  change.delete.DeleteJoinVisualLinesAction
+|v\_J|  change.delete.DeleteJoinVisualLinesSpacesAction
+|v\_gJ|  change.delete.DeleteJoinVisualLinesAction
 
-____
+___
 
 ___
 
 ## Motions
 
-|[p|  copy.PutTextAfterCursorNoIndentAction
+|\[p|  copy.PutTextAfterCursorNoIndentAction
 |]p|  copy.PutTextAfterCursorNoIndentAction
-|[P|  copy.PutTextBeforeCursorNoIndentAction
+|\[P|  copy.PutTextBeforeCursorNoIndentAction
 |]P|  copy.PutTextBeforeCursorNoIndentAction
-|[p|  copy.PutVisualTextAfterCursorNoIndentAction
+|\[p|  copy.PutVisualTextAfterCursorNoIndentAction
 |]p|  copy.PutVisualTextAfterCursorNoIndentAction
-|[P|  copy.PutVisualTextBeforeCursorNoIndentAction
+|\[P|  copy.PutVisualTextBeforeCursorNoIndentAction
 |]P|  copy.PutVisualTextBeforeCursorNoIndentAction
-|v_iW|  motion.object.MotionInnerBigWordAction
-|v_i<|  motion.object.MotionInnerBlockAngleAction
-|v_i>|  motion.object.MotionInnerBlockAngleAction
-|v_i`|  motion.object.MotionInnerBlockBackQuoteAction
+|v\_iW|  motion.object.MotionInnerBigWordAction
+|v\_i<|  motion.object.MotionInnerBlockAngleAction
+|v\_i>|  motion.object.MotionInnerBlockAngleAction
+|v\_i`|  motion.object.MotionInnerBlockBackQuoteAction
 |v_iB|  motion.object.MotionInnerBlockBraceAction
 |v_i{|  motion.object.MotionInnerBlockBraceAction
 |v_i}|  motion.object.MotionInnerBlockBraceAction
@@ -405,54 +409,54 @@ ___
 |v_a<|  motion.object.MotionOuterBlockAngleAction
 |v_a>|  motion.object.MotionOuterBlockAngleAction
 |v_a`|  motion.object.MotionOuterBlockBackQuoteAction
-|v_aB|  motion.object.MotionOuterBlockBraceAction
-|v_a{|  motion.object.MotionOuterBlockBraceAction
-|v_a}|  motion.object.MotionOuterBlockBraceAction
-|v_a[|  motion.object.MotionOuterBlockBracketAction
-|v_a]|  motion.object.MotionOuterBlockBracketAction
-|v_aquote|  motion.object.MotionOuterBlockDoubleQuoteAction
-|v_a(|  motion.object.MotionOuterBlockParenAction
-|v_a)|  motion.object.MotionOuterBlockParenAction
-|v_ab|  motion.object.MotionOuterBlockParenAction
-|v_a'|  motion.object.MotionOuterBlockSingleQuoteAction
-|v_at|  motion.object.MotionOuterBlockTagAction
-|v_ap|  motion.object.MotionOuterParagraphAction
-|v_as|  motion.object.MotionOuterSentenceAction
-|v_aw|  motion.object.MotionOuterWordAction
+|v\_aB|  motion.object.MotionOuterBlockBraceAction
+|v\_a{|  motion.object.MotionOuterBlockBraceAction
+|v\_a}|  motion.object.MotionOuterBlockBraceAction
+|v\_a\[|  motion.object.MotionOuterBlockBracketAction
+|v\_a]|  motion.object.MotionOuterBlockBracketAction
+|v\_aquote|  motion.object.MotionOuterBlockDoubleQuoteAction
+|v\_a(|  motion.object.MotionOuterBlockParenAction
+|v\_a)|  motion.object.MotionOuterBlockParenAction
+|v\_ab|  motion.object.MotionOuterBlockParenAction
+|v\_a'|  motion.object.MotionOuterBlockSingleQuoteAction
+|v\_at|  motion.object.MotionOuterBlockTagAction
+|v\_ap|  motion.object.MotionOuterParagraphAction
+|v\_as|  motion.object.MotionOuterSentenceAction
+|v\_aw|  motion.object.MotionOuterWordAction
 |]b|  motion.text.MotionCamelEndLeftAction
 |]w|  motion.text.MotionCamelEndRightAction
-|[b|  motion.text.MotionCamelLeftAction
-|[w|  motion.text.MotionCamelRightAction
+|\[b|  motion.text.MotionCamelLeftAction
+|\[w|  motion.text.MotionCamelRightAction
 |]M|  motion.text.MotionMethodNextEndAction
-|[M|  motion.text.MotionMethodPreviousEndAction
+|\[M|  motion.text.MotionMethodPreviousEndAction
 |]m|  motion.text.MotionMethodNextStartAction
-|[m|  motion.text.MotionMethodPreviousStartAction
+|\[m|  motion.text.MotionMethodPreviousStartAction
 |}|  motion.text.MotionParagraphNextAction
 |{|  motion.text.MotionParagraphPreviousAction
-|[]|  motion.text.MotionSectionBackwardEndAction
-|[[|  motion.text.MotionSectionBackwardStartAction
-|][|  motion.text.MotionSectionForwardEndAction
+|\[]|  motion.text.MotionSectionBackwardEndAction
+|\[\[|  motion.text.MotionSectionBackwardStartAction
+|]\[|  motion.text.MotionSectionForwardEndAction
 |]]|  motion.text.MotionSectionForwardStartAction
 |g)|  motion.text.MotionSentenceNextEndAction
 |)|  motion.text.MotionSentenceNextStartAction
 |g(|  motion.text.MotionSentencePreviousEndAction
 |(|  motion.text.MotionSentencePreviousStartAction
 |]}|  motion.text.MotionUnmatchedBraceCloseAction
-|[{|  motion.text.MotionUnmatchedBraceOpenAction
+|\[{|  motion.text.MotionUnmatchedBraceOpenAction
 |])|  motion.text.MotionUnmatchedParenCloseAction
-|[(|  motion.text.MotionUnmatchedParenOpenAction
-|_|  motion.updown.MotionDownLess1FirstNonSpaceAction
+|\[(|  motion.text.MotionUnmatchedParenOpenAction
+|\_|  motion.updown.MotionDownLess1FirstNonSpaceAction
 
 ## ??? Whatever
 
 Good to know, but i use only during macros / mappings.
 
 |gu|  change.change.ChangeCaseLowerMotionAction
-|g~|  change.change.ChangeCaseToggleMotionAction
+|g\~|  change.change.ChangeCaseToggleMotionAction
 |gU|  change.change.ChangeCaseUpperMotionAction
 |gI|  change.insert.InsertLineStartAction
-|i_CTRL-A|  change.insert.InsertPreviousInsertAction
-|i_CTRL-@|  change.insert.InsertPreviousInsertExitAction
+|i\_CTRL-A|  change.insert.InsertPreviousInsertAction
+|i\_CTRL-@|  change.insert.InsertPreviousInsertExitAction
 |@|  macro.PlaybackRegisterAction
 |gN|  motion.gn.VisualSelectPreviousSearch
 |bar|  motion.leftright.MotionColumnAction
@@ -460,12 +464,12 @@ Good to know, but i use only during macros / mappings.
 |^|  motion.leftright.MotionFirstNonSpaceAction
 |g0|  motion.leftright.MotionFirstScreenColumnAction
 |g<Home>|  motion.leftright.MotionFirstScreenColumnAction
-|[[2022-07-31]]|  motion.leftright.MotionFirstScreenNonSpaceAction
+|\[\[2022-07-31]]|  motion.leftright.MotionFirstScreenNonSpaceAction
 |$|  motion.leftright.MotionLastColumnAction
-|g_|  motion.leftright.MotionLastNonSpaceAction
+|g\_|  motion.leftright.MotionLastNonSpaceAction
 |g$|  motion.leftright.MotionLastScreenColumnAction
 |g<End>|  motion.leftright.MotionLastScreenColumnAction
-|v_`|  motion.mark.MotionGotoFileMarkAction
+|v\_`|  motion.mark.MotionGotoFileMarkAction
 |v_'|  motion.mark.MotionGotoFileMarkLineAction
 |v_g'|  motion.mark.MotionGotoFileMarkLineNoSaveJumpAction
 |v_g`|  motion.mark.MotionGotoFileMarkNoSaveJumpAction
@@ -480,77 +484,77 @@ Good to know, but i use only during macros / mappings.
 |M|  motion.screen.MotionMiddleScreenLineAction
 |H|  motion.screen.MotionOpPendingFirstScreenLineAction
 |L|  motion.screen.MotionOpPendingLastScreenLineAction
-|g_CTRL-H|  motion.select.SelectEnableBlockModeAction
+|g\_CTRL-H|  motion.select.SelectEnableBlockModeAction
 |CTRL-N|  motion.updown.MotionDownCtrlNAction
 |+|  motion.updown.MotionDownFirstNonSpaceAction
 |gg|  motion.updown.MotionGotoLineFirstAction
 |G|  motion.updown.MotionGotoLineLastAction
 |CTRL-P|  motion.updown.MotionUpCtrlPAction
-|-|  motion.updown.MotionUpFirstNonSpaceAction
+\|-|  motion.updown.MotionUpFirstNonSpaceAction
 |gv|  motion.visual.VisualSelectPreviousAction
-|v_gv|  motion.visual.VisualSwapSelectionsAction
+|v\_gv|  motion.visual.VisualSwapSelectionsAction
 
-____
+___
 
 Not sure why these default exists, but whatever
 
-|i_CTRL-\_CTRL-N|  ResetModeAction
-|v_u|  change.change.ChangeCaseLowerVisualAction
-|v_U|  change.change.ChangeCaseUpperVisualAction
+|i\_CTRL-\_CTRL-N|  ResetModeAction
+|v\_u|  change.change.ChangeCaseLowerVisualAction
+|v\_U|  change.change.ChangeCaseUpperVisualAction
 |<Insert>|  change.insert.InsertBeforeCursorAction
-|c_CTRL-C|  com.maddyhome.idea.vim.ui.ex.CancelEntryAction
-|c_CTRL-J|  com.maddyhome.idea.vim.ui.ex.CompleteEntryAction
-|c_<CR>|  com.maddyhome.idea.vim.ui.ex.CompleteEntryAction
-|c_<NL>|  com.maddyhome.idea.vim.ui.ex.CompleteEntryAction
-|c_CTRL-H|  com.maddyhome.idea.vim.ui.ex.DeletePreviousCharAction
-|c_<BS>|  com.maddyhome.idea.vim.ui.ex.DeletePreviousCharAction
-|c_CTRL-W|  com.maddyhome.idea.vim.ui.ex.DeletePreviousWordAction
-|c_CTRL-U|  com.maddyhome.idea.vim.ui.ex.DeleteToCursorAction
-|c_<PageDown>|  com.maddyhome.idea.vim.ui.ex.HistoryDownAction
-|c_<S-Down>|  com.maddyhome.idea.vim.ui.ex.HistoryDownAction
-|c_CTRL-N|  com.maddyhome.idea.vim.ui.ex.HistoryDownAction
-|c_<Down>|  com.maddyhome.idea.vim.ui.ex.HistoryDownFilterAction
-|c_<PageUp>|  com.maddyhome.idea.vim.ui.ex.HistoryUpAction
-|c_<S-Up>|  com.maddyhome.idea.vim.ui.ex.HistoryUpAction
-|c_CTRL-P|  com.maddyhome.idea.vim.ui.ex.HistoryUpAction
-|c_<Up>|  com.maddyhome.idea.vim.ui.ex.HistoryUpFilterAction
-|c_CTRL-R|  com.maddyhome.idea.vim.ui.ex.InsertRegisterAction
-|c_<Insert>|  com.maddyhome.idea.vim.ui.ex.ToggleInsertReplaceAction
-|c_CTRL-M|  ex.ProcessExEntryAction
+|c\_CTRL-C|  com.maddyhome.idea.vim.ui.ex.CancelEntryAction
+|c\_CTRL-J|  com.maddyhome.idea.vim.ui.ex.CompleteEntryAction
+|c\_<CR>|  com.maddyhome.idea.vim.ui.ex.CompleteEntryAction
+|c\_<NL>|  com.maddyhome.idea.vim.ui.ex.CompleteEntryAction
+|c\_CTRL-H|  com.maddyhome.idea.vim.ui.ex.DeletePreviousCharAction
+|c\_<BS>|  com.maddyhome.idea.vim.ui.ex.DeletePreviousCharAction
+|c\_CTRL-W|  com.maddyhome.idea.vim.ui.ex.DeletePreviousWordAction
+|c\_CTRL-U|  com.maddyhome.idea.vim.ui.ex.DeleteToCursorAction
+|c\_<PageDown>|  com.maddyhome.idea.vim.ui.ex.HistoryDownAction
+|c\_<S-Down>|  com.maddyhome.idea.vim.ui.ex.HistoryDownAction
+|c\_CTRL-N|  com.maddyhome.idea.vim.ui.ex.HistoryDownAction
+|c\_<Down>|  com.maddyhome.idea.vim.ui.ex.HistoryDownFilterAction
+|c\_<PageUp>|  com.maddyhome.idea.vim.ui.ex.HistoryUpAction
+|c\_<S-Up>|  com.maddyhome.idea.vim.ui.ex.HistoryUpAction
+|c\_CTRL-P|  com.maddyhome.idea.vim.ui.ex.HistoryUpAction
+|c\_<Up>|  com.maddyhome.idea.vim.ui.ex.HistoryUpFilterAction
+|c\_CTRL-R|  com.maddyhome.idea.vim.ui.ex.InsertRegisterAction
+|c\_<Insert>|  com.maddyhome.idea.vim.ui.ex.ToggleInsertReplaceAction
+|c\_CTRL-M|  ex.ProcessExEntryAction
 |ga|  file.FileGetAsciiAction
 |g8|  file.FileGetHexAction
-|g_CTRL-G|  file.FileGetLocationInfoAction
+|g\_CTRL-G|  file.FileGetLocationInfoAction
 |ZZ|  file.FileSaveCloseAction
 |ZQ|  file.FileSaveCloseAction
-|c_<Left>|  javax.swing.text.DefaultEditorKit#backwardAction
-|c_CTRL-B|  javax.swing.text.DefaultEditorKit#beginLineAction
-|c_<Home>|  javax.swing.text.DefaultEditorKit#beginLineAction
-|c_<Del>|  javax.swing.text.DefaultEditorKit#deleteNextCharAction
-|c_CTRL-E|  javax.swing.text.DefaultEditorKit#endLineAction
-|c_<End>|  javax.swing.text.DefaultEditorKit#endLineAction
-|c_<Right>|  javax.swing.text.DefaultEditorKit#forwardAction
-|c_<C-Right>|  javax.swing.text.DefaultEditorKit#nextWordAction
-|c_<S-Right>|  javax.swing.text.DefaultEditorKit#nextWordAction
-|c_<C-Left>|  javax.swing.text.DefaultEditorKit#previousWordAction
-|c_<S-Left>|  javax.swing.text.DefaultEditorKit#previousWordAction
+|c\_<Left>|  javax.swing.text.DefaultEditorKit#backwardAction
+|c\_CTRL-B|  javax.swing.text.DefaultEditorKit#beginLineAction
+|c\_<Home>|  javax.swing.text.DefaultEditorKit#beginLineAction
+|c\_<Del>|  javax.swing.text.DefaultEditorKit#deleteNextCharAction
+|c\_CTRL-E|  javax.swing.text.DefaultEditorKit#endLineAction
+|c\_<End>|  javax.swing.text.DefaultEditorKit#endLineAction
+|c\_<Right>|  javax.swing.text.DefaultEditorKit#forwardAction
+|c\_<C-Right>|  javax.swing.text.DefaultEditorKit#nextWordAction
+|c\_<S-Right>|  javax.swing.text.DefaultEditorKit#nextWordAction
+|c\_<C-Left>|  javax.swing.text.DefaultEditorKit#previousWordAction
+|c\_<S-Left>|  javax.swing.text.DefaultEditorKit#previousWordAction
 |gm|  macro.MotionMiddleColumnAction
 |<PageDown>|  motion.scroll.MotionScrollPageDownAction
-|i_<PageDown>|  motion.scroll.MotionScrollPageDownInsertModeAction
+|i\_<PageDown>|  motion.scroll.MotionScrollPageDownInsertModeAction
 |<PageUp>|  motion.scroll.MotionScrollPageUpAction
-|i_<PageUp>|  motion.scroll.MotionScrollPageUpInsertModeAction
+|i\_<PageUp>|  motion.scroll.MotionScrollPageUpInsertModeAction
 |<BS>|  motion.select.SelectDeleteAction
 |<DEL>|  motion.select.SelectDeleteAction
 |gH|  motion.select.SelectEnableLineModeAction
 |<CR>|  motion.select.SelectEnterAction
 |<NL>|  motion.updown.MotionDownNotLineWiseAction
-|v_CTRL-\_CTRL-N|  motion.visual.VisualExitModeAction
-|gt|  window.tabs.NextTabAction
-|gT|  window.tabs.PreviousTabAction
-|i_<Insert>| IntelliJ editor toggle insert/replace
-|i_<F1>| IntelliJ help
+|v\_CTRL-\_CTRL-N|  motion.visual.VisualExitModeAction
+|gt|  window\.tabs.NextTabAction
+|gT|  window\.tabs.PreviousTabAction
+|i\_<Insert>| IntelliJ editor toggle insert/replace
+|i\_<F1>| IntelliJ help
 |<F1>| IntelliJ help
 
-____
+___
 
 Don't really use scrolling
 
@@ -568,21 +572,21 @@ Don't really use scrolling
 |z-|  motion.scroll.MotionScrollLastScreenLineStartAction
 |z.|  motion.scroll.MotionScrollMiddleScreenLineStartAction
 
-____
+___
 
 ## Harmful -
 
 Don't override my modifier keys with junk
 
-|i_CTRL-Y|  change.insert.InsertCharacterAboveCursorAction
-|i_CTRL-E|  change.insert.InsertCharacterBelowCursorAction
-|i_CTRL-U|  change.insert.InsertDeleteInsertedTextAction
-|i_CTRL-W|  change.insert.InsertDeletePreviousWordAction
-|i_CTRL-M|  change.insert.InsertEnterAction
-|i_CTRL-[|  change.insert.InsertExitModeAction
-|i_CTRL-D|  change.shift.ShiftLeftLinesAction
-|i_CTRL-T|  change.shift.ShiftRightLinesAction
-|i_<Tab>|  editor.VimEditorTab
+|i\_CTRL-Y|  change.insert.InsertCharacterAboveCursorAction
+|i\_CTRL-E|  change.insert.InsertCharacterBelowCursorAction
+|i\_CTRL-U|  change.insert.InsertDeleteInsertedTextAction
+|i\_CTRL-W|  change.insert.InsertDeletePreviousWordAction
+|i\_CTRL-M|  change.insert.InsertEnterAction
+|i\_CTRL-\[|  change.insert.InsertExitModeAction
+|i\_CTRL-D|  change.shift.ShiftLeftLinesAction
+|i\_CTRL-T|  change.shift.ShiftRightLinesAction
+|i\_<Tab>|  editor.VimEditorTab
 |CTRL-G|  file.FileGetFileInfoAction
 |CTRL-6|  file.FilePreviousAction
 |CTRL-H|  motion.leftright.MotionLeftWrapAction
@@ -591,29 +595,29 @@ Don't override my modifier keys with junk
 |CTRL-F|  motion.scroll.MotionScrollPageDownAction
 |CTRL-B|  motion.scroll.MotionScrollPageUpAction
 |CTRL-]|  motion.search.GotoDeclarationAction
-|v_CTRL-C|  motion.visual.VisualExitModeAction
-|i_CTRL-H| IntelliJ editor backspace
-|i_CTRL-I| IntelliJ editor tab
+|v\_CTRL-C|  motion.visual.VisualExitModeAction
+|i\_CTRL-H| IntelliJ editor backspace
+|i\_CTRL-I| IntelliJ editor tab
 
-____
+___
 
 Don't waste my keyboard space.
 
-|~|  change.change.ChangeCaseToggleCharacterAction
+|\~|  change.change.ChangeCaseToggleCharacterAction
 |r|  change.change.ChangeCharacterAction
 |s|  change.change.ChangeCharactersAction
 |S|  change.change.ChangeLineAction
-|v_s|  change.change.ChangeVisualAction
-|v_r|  change.change.ChangeVisualCharacterAction
-|v_R|  change.change.ChangeVisualLinesAction
-|v_S|  change.change.ChangeVisualLinesAction
+|v\_s|  change.change.ChangeVisualAction
+|v\_r|  change.change.ChangeVisualCharacterAction
+|v\_R|  change.change.ChangeVisualLinesAction
+|v\_S|  change.change.ChangeVisualLinesAction
 |X|  change.delete.DeleteCharacterLeftAction
 |x|  change.delete.DeleteCharacterRightAction
-|v_x|  change.delete.DeleteVisualAction
-|v_X|  change.delete.DeleteVisualLinesAction
+|v\_x|  change.delete.DeleteVisualAction
+|v\_X|  change.delete.DeleteVisualLinesAction
 |q|  macro.ToggleRecordingAction
 
-____
+___
 
 ## Harmful
 
@@ -625,11 +629,11 @@ Blocks from using ijkl instead of hjkl.
 |k|  motion.updown.MotionUpAction
 |l|  motion.leftright.MotionRightAction
 
-____
+___
 
 Pollute my registers. make them use the blackhole register.
 
-|i_<Del>|  editor.VimEditorDelete
+|i\_<Del>|  editor.VimEditorDelete
 |<Del>|  change.delete.DeleteCharacterAction
 |<BS>|  motion.leftright.MotionLeftWrapAction
 |<CR>|  motion.updown.EnterNormalAction
@@ -638,93 +642,93 @@ I Actively dislike these bindings.
 
 |C|  change.change.ChangeEndOfLineAction
 |R|  change.change.ChangeReplaceAction
-|v_C|  change.change.ChangeVisualLinesEndAction
+|v\_C|  change.change.ChangeVisualLinesEndAction
 |D|  change.delete.DeleteEndOfLineAction
-|v_D|  change.delete.DeleteVisualLinesEndAction
+|v\_D|  change.delete.DeleteVisualLinesEndAction
 |Y|  copy.YankLineAction
-|v_Y|  copy.YankVisualLinesAction
+|v\_Y|  copy.YankVisualLinesAction
 
 ## Get Better
 
 Ocasional Normal mode
 |CTRL-R|  change.RedoAction
-|v_=|  change.change.AutoIndentLinesVisualAction
+|v\_=|  change.change.AutoIndentLinesVisualAction
 |CTRL-X|  change.change.number.ChangeNumberDecAction
 |CTRL-A|  change.change.number.ChangeNumberIncAction
-|v_gCTRL-X|  change.change.number.ChangeVisualNumberAvalancheDecAction
-|v_gCTRL-A|  change.change.number.ChangeVisualNumberAvalancheIncAction
-|v_CTRL-X|  change.change.number.ChangeVisualNumberDecAction
-|v_CTRL-A|  change.change.number.ChangeVisualNumberIncAction
+|v\_gCTRL-X|  change.change.number.ChangeVisualNumberAvalancheDecAction
+|v\_gCTRL-A|  change.change.number.ChangeVisualNumberAvalancheIncAction
+|v\_CTRL-X|  change.change.number.ChangeVisualNumberDecAction
+|v\_CTRL-A|  change.change.number.ChangeVisualNumberIncAction
 |A|  change.insert.InsertAfterLineEndAction
 |I|  change.insert.InsertBeforeFirstNonBlankAction
 |O|  change.insert.InsertNewLineAboveAction
 |o|  change.insert.InsertNewLineBelowAction
-|i_CTRL-O|  change.insert.InsertSingleCommandAction
-|v_b_A|  change.insert.VisualBlockAppendAction
-|v_b_I|  change.insert.VisualBlockInsertAction
+|i\_CTRL-O|  change.insert.InsertSingleCommandAction
+|v\_b\_A|  change.insert.VisualBlockAppendAction
+|v\_b\_I|  change.insert.VisualBlockInsertAction
 |=|  change.shift.AutoIndentMotionAction
 |<|  change.shift.ShiftLeftMotionAction
-|v_<|  change.shift.ShiftLeftVisualAction
+|v\_<|  change.shift.ShiftLeftVisualAction
 |>|  change.shift.ShiftRightMotionAction
-|v_>|  change.shift.ShiftRightVisualAction
+|v\_>|  change.shift.ShiftRightVisualAction
 |zt|  motion.scroll.MotionScrollFirstScreenLineAction
 |zb|  motion.scroll.MotionScrollLastScreenLineAction
 |zz|  motion.scroll.MotionScrollMiddleScreenLineAction
-|v_CTRL-G|  motion.select.SelectToggleVisualMode
+|v\_CTRL-G|  motion.select.SelectToggleVisualMode
 |<C-G>|  motion.select.SelectToggleVisualMode
 |CTRL-V|  motion.visual.VisualToggleBlockModeAction
 |V|  motion.visual.VisualToggleLineModeAction
-|<<| translated to <_
-|==| translated to =_
-|>>| translated to >_
+|<<| translated to <\_
+|==| translated to =\_
+|>>| translated to >\_
 
 ___
 
-____
+___
 
 Experiment More
 
-|v_~|  change.change.ChangeCaseToggleVisualAction
-|CTRL-W_c|  window.CloseWindowAction
-|CTRL-W_S|  window.HorizontalSplitAction
-|CTRL-W_s|  window.HorizontalSplitAction
-|CTRL-W_v|  window.VerticalSplitAction
-|CTRL-W_j|  window.WindowDownAction
-|CTRL-W_<Down>|  window.WindowDownAction
-|CTRL-W_CTRL-J|  window.WindowDownAction
-|CTRL-W_h|  window.WindowLeftAction
-|CTRL-W_<Left>|  window.WindowLeftAction
-|CTRL-W_CTRL-H|  window.WindowLeftAction
-|CTRL-W_w|  window.WindowNextAction
-|CTRL-W_o|  window.WindowOnlyAction
-|CTRL-W_W|  window.WindowPrevAction
-|CTRL-W_l|  window.WindowRightAction
-|CTRL-W_<Right>|  window.WindowRightAction
-|CTRL-W_CTRL-L|  window.WindowRightAction
-|CTRL-W_k|  window.WindowUpAction
-|CTRL-W_<Up>|  window.WindowUpAction
-|CTRL-W_CTRL-K|  window.WindowUpAction
+|v\_\~|  change.change.ChangeCaseToggleVisualAction
+|CTRL-W\_c|  window\.CloseWindowAction
+|CTRL-W\_S|  window\.HorizontalSplitAction
+|CTRL-W\_s|  window\.HorizontalSplitAction
+|CTRL-W\_v|  window\.VerticalSplitAction
+|CTRL-W\_j|  window\.WindowDownAction
+|CTRL-W\_<Down>|  window\.WindowDownAction
+|CTRL-W\_CTRL-J|  window\.WindowDownAction
+|CTRL-W\_h|  window\.WindowLeftAction
+|CTRL-W\_<Left>|  window\.WindowLeftAction
+|CTRL-W\_CTRL-H|  window\.WindowLeftAction
+|CTRL-W\_w|  window\.WindowNextAction
+|CTRL-W\_o|  window\.WindowOnlyAction
+|CTRL-W\_W|  window\.WindowPrevAction
+|CTRL-W\_l|  window\.WindowRightAction
+|CTRL-W\_<Right>|  window\.WindowRightAction
+|CTRL-W\_CTRL-L|  window\.WindowRightAction
+|CTRL-W\_k|  window\.WindowUpAction
+|CTRL-W\_<Up>|  window\.WindowUpAction
+|CTRL-W\_CTRL-K|  window\.WindowUpAction
 
-____
+___
 
 Investigate
 
 |g@|  change.OperatorAction
-|v_g@|  change.VisualOperatorAction
-|i_CTRL-K|  change.insert.InsertCompletedDigraphAction
-|i_CTRL-V|  change.insert.InsertCompletedLiteralAction
-|i_CTRL-V_digit|  change.insert.InsertCompletedLiteralAction
-|i_CTRL-R|  change.insert.InsertRegisterAction
-|i_CTRL-N|  window.LookupDownAction
-|i_CTRL-P|  window.LookupUpAction
-|i_digraph| IdeaVim enter digraph
-|c_digraph| {char1} <BS> {char2}
+|v\_g@|  change.VisualOperatorAction
+|i\_CTRL-K|  change.insert.InsertCompletedDigraphAction
+|i\_CTRL-V|  change.insert.InsertCompletedLiteralAction
+|i\_CTRL-V\_digit|  change.insert.InsertCompletedLiteralAction
+|i\_CTRL-R|  change.insert.InsertRegisterAction
+|i\_CTRL-N|  window\.LookupDownAction
+|i\_CTRL-P|  window\.LookupUpAction
+|i\_digraph| IdeaVim enter digraph
+|c\_digraph| {char1} <BS> {char2}
 
 ___
 
 Vim Section Motion
 Vim file type based motions
-Vim create 'to-*-case' motioin
+Vim create 'to-\*-case' motioin
 vim usemore pipe operator ( :! )
 vim use moore operator pending mode
 vim investigate +- mottions
