@@ -6,9 +6,9 @@ tags:
 
 # CalibrateSelfMetrics
 
-\[\[ProxyMetrics]]
+[[ProxyMetrics]]
 
-After a few years of doing something very consciously, you build up this great \[\[RewardSystem]] that makes you feel good about it by itself, but it can take years to retrain.
+After a few years of doing something very consciously, you build up this great [[RewardSystem]] that makes you feel good about it by itself, but it can take years to retrain.
 
 ```mermaid
 
@@ -30,7 +30,7 @@ end note
 
 **The problem is when your ultimate goal changes and your old proxies are still in effect.**
 
-When such a thing happens, it is no longer useful to let your habits drive you. It is necessary to put the rational system on the wheel. \[\[ThinkingFastAndSlow]]
+When such a thing happens, it is no longer useful to let your habits drive you. It is necessary to put the rational system on the wheel. [[ThinkingFastAndSlow]]
 
 ## References
 

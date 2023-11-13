@@ -6,7 +6,7 @@ tags:
 
 # Http2ServerPush
 
-\[\[ServerPush]] is also a feature of \[\[HTTP2]]
+[[ServerPush]] is also a feature of [[HTTP2]]
 
 It enables the server to send yet-unrequested information, that is usually fetched together.
 

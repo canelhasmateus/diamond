@@ -19,7 +19,7 @@ def measure( fn ):
         return finish - start
 ```
 
-Notice that any delay outside of the timing window isn't measured at all. See \[\[ResponseAndServiceTimes]] for disambiguation on Response vs Service time.
+Notice that any delay outside of the timing window isn't measured at all. See [[ResponseAndServiceTimes]] for disambiguation on Response vs Service time.
 
 Very few tools deal with it correctly. For example, WRK.
 

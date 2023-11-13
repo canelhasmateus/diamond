@@ -6,10 +6,10 @@ tags:
 
 # HashCollisions
 
-Since the underlying array has a finite number of entries, collisions are bound to happen. There exists various kind of procedures to deal with \[\[Hash]] collisions, but they mostly fall into two different buckets:
+Since the underlying array has a finite number of entries, collisions are bound to happen. There exists various kind of procedures to deal with [[Hash]] collisions, but they mostly fall into two different buckets:
 
-!\[\[OpenHashing]]
-!\[\[HashProbing]]
+![[OpenHashing]]
+![[HashProbing]]
 
 ___
 

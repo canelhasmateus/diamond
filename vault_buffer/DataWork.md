@@ -100,7 +100,7 @@ Comparing traditional vs grammar of graphics
 
 ___
 
-- As humans, we like to \[\[look at pretty charts]].  Coupled with the fact that \[\[HumanPhenomena| We like to look at pretty charts]], pervasive problems can become masked.
+- As humans, we like to [[look at pretty charts]].  Coupled with the fact that [[HumanPhenomena| We like to look at pretty charts]], pervasive problems can become masked.
 
 ## Model Deployment
 

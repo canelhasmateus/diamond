@@ -6,7 +6,7 @@ tags:
 
 # IncrementalTheoryProblemApproach
 
-A general approach for problem-solving in light of \[\[IncrementalTheory]].
+A general approach for problem-solving in light of [[IncrementalTheory]].
 
 - Develop a general theory of the **problem**
 - Ask **questions** leading to a hypothesis

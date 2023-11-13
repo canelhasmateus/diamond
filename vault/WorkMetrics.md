@@ -10,17 +10,17 @@ I think he understood that what was important was to get everybody across the or
 
 He needed to make sure that everybody was pulling in the same direction and together, and OKRs provided a tool to do that.
 
-> \[\[ProxyMetrics]]
+> [[ProxyMetrics]]
 
-If the people implementing OKRs focus too much on the practice and not enough on the motivation, I think you just end up with \[\[CargoCult]]ing. The setting and tracking of KRs becomes the objective.
+If the people implementing OKRs focus too much on the practice and not enough on the motivation, I think you just end up with [[CargoCult]]ing. The setting and tracking of KRs becomes the objective.
 
 As one of my coworkers says, the title of the book is "Measure What Matters", but it's too easy to slide into "What Is Measured Is What Matters".
 
-> \[\[PatternMeansAndEnds]]
+> [[PatternMeansAndEnds]]
 
 However, note that the process of implementing OKRs has caused the leadership team to write down their expectations, which previously might have been unspoken.
 
-> \[\[ImplicitAssumption]]
+> [[ImplicitAssumption]]
 
 - This is a first step towards resolving the problem.
 - The next step is for the CTO to push back, hard, on the bits of these that aren't actually realistic, and hopefully get the leadership team aligned on what can actually be done.

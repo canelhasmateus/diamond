@@ -3,7 +3,7 @@
 Large amounts of historical data.
 Incredible Amounts of information -> Mine it -> Better decisions
 
-E.G \[\[AwsRedShift]]
+E.G [[AwsRedShift]]
 
 ___
 

@@ -5,7 +5,7 @@ MITM
 
 Examples
 
-\[\[HSTS]]
+[[HSTS]]
 
 # ...
 
@@ -29,26 +29,26 @@ this can be seem as a way to developing Capability-base security ( ??? )
 
 ___
 
-# \[\[AttackSyn]]
+# [[AttackSyn]]
 
-# \[\[AttackReplay]]
+# [[AttackReplay]]
 
-# \[\[AttackDDoS]]
+# [[AttackDDoS]]
 
-# \[\[AttackConnectionHijacking]]
+# [[AttackConnectionHijacking]]
 
-# \[\[AttackTCPVeto]]
+# [[AttackTCPVeto]]
 
-# \[\[AttackReset]]
+# [[AttackReset]]
 
 Securing against attacks
 
-\[\[AttackMitM]]
+[[AttackMitM]]
 
-- Configure DNSSec in \[\[AwsRoute53]]
-- Use \[\[ProtocolSSL]] certificates in application load balancer
+- Configure DNSSec in [[AwsRoute53]]
+- Use [[ProtocolSSL]] certificates in application load balancer
 
-\[\[AttackDDoS]]
+[[AttackDDoS]]
 
 - Enable AWS Shield Advanced: It provides a AWS DDoS Response Team, as well as a Global Threat Environment of the attacks
 

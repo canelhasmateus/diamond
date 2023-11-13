@@ -1,0 +1,3 @@
+[[ImplicitAssumption]]
+
+Permanence

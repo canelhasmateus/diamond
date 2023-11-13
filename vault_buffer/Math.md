@@ -100,23 +100,23 @@ ___
 ## Measure Theory
 
 The study of measures.
-Measures provide an generalization to the intuition of Length, Area, , volume, \[\[probability]].
+Measures provide an generalization to the intuition of Length, Area, , volume, [[probability]].
 These seemingly distinct concepts have many similarities and can often be treated together in a single mathematical context.
 
-\[\[Kolmogorov]] can be considered the father of modern  probabilty theory .
+[[Kolmogorov]] can be considered the father of modern  probabilty theory .
 
-\[\[Lebesgue]] can be considered the father of modern measure theory.
+[[Lebesgue]] can be considered the father of modern measure theory.
 
 As a motivation, consider the banachi-tarksi paradox:
 . By assuming only the ZFC axioms, it can prove that , by dividing a sphere in some pieces, it can, after only rigid transformations, assemble two of them
 . This leads us to two choices:
-.. Reject the \[\[AxiomOfChoice]]  ( why should we not do this?\[\[MetaExpand]])
+.. Reject the [[AxiomOfChoice]]  ( why should we not do this?[[MetaExpand]])
 
-.. Formalize the ( until now implict ) assumption of what a "\[\[Measure]]" is, and the way that it can and can't be combined and what can and can't be preserved under operations.
+.. Formalize the ( until now implict ) assumption of what a "[[Measure]]" is, and the way that it can and can't be combined and what can and can't be preserved under operations.
 
 There exists some fundamental concepts in measure theory, for example:
 
-A \[\[SigmaAlgebra]]
+A [[SigmaAlgebra]]
 . A sigma algebra on a set X is a collection of subsets of X, such that:
 . Closed under complements : if E in A => E^c is in A
 . Closed under countable unions: E1 , E2, ... in A => Union< E1, E2, ... En> in A.
@@ -180,7 +180,7 @@ ___
 
 # MinimaxTheorem
 
-The Minimax Theorem is a result in \[\[GameTheory]]. It states that every two-player zero-sum game has an optimal (possibly randomized) strategy for each player.
+The Minimax Theorem is a result in [[GameTheory]]. It states that every two-player zero-sum game has an optimal (possibly randomized) strategy for each player.
 
 - It may not necessarily be the best if your opponent is being dumb, but it maximizes your values without special knowledge or space to store information about past play.
 
@@ -230,7 +230,7 @@ throughput != capacity
 1. ["Stop Rate Limiting! Capacity Management Done Right" by Jon Moore](https://www.youtube.com/watch?v=m64SWl9bfvk)
    Implements Rate limits by means of Little's Law. It shows that Limiting concurrent requests acts the same as limiting requests per period when the load is reasonable, but introduces backpressure when the service is overwhelming.
    Since this limit is  dynamically calculated based on load, we can provide better utilization of services.
-   Uses the same principles of \[\[TCP]], of \[\[Patterns#Additive Increase, Multiplicative Decrease]]
+   Uses the same principles of [[TCP]], of [[Patterns#Additive Increase, Multiplicative Decrease]]
 
 ___
 

@@ -71,7 +71,7 @@ set ideajoin
 set idearefactormode=keep
 vnoremap < <gv
 vnoremap > >gv
-nnoremap \[\[ :action MethodUp<CR>
+nnoremap [[ :action MethodUp<CR>
 nnoremap ]] :action MethodDown<CR>
 nnoremap zc :action CollapseRegion<CR>
 nnoremap zo :action ExpandRegion<CR>
@@ -434,7 +434,7 @@ ___
 |}|  motion.text.MotionParagraphNextAction
 |{|  motion.text.MotionParagraphPreviousAction
 |\[]|  motion.text.MotionSectionBackwardEndAction
-|\[\[|  motion.text.MotionSectionBackwardStartAction
+|[[|  motion.text.MotionSectionBackwardStartAction
 |]\[|  motion.text.MotionSectionForwardEndAction
 |]]|  motion.text.MotionSectionForwardStartAction
 |g)|  motion.text.MotionSentenceNextEndAction
@@ -464,7 +464,7 @@ Good to know, but i use only during macros / mappings.
 |^|  motion.leftright.MotionFirstNonSpaceAction
 |g0|  motion.leftright.MotionFirstScreenColumnAction
 |g<Home>|  motion.leftright.MotionFirstScreenColumnAction
-|\[\[2022-07-31]]|  motion.leftright.MotionFirstScreenNonSpaceAction
+|[[2022-07-31]]|  motion.leftright.MotionFirstScreenNonSpaceAction
 |$|  motion.leftright.MotionLastColumnAction
 |g\_|  motion.leftright.MotionLastNonSpaceAction
 |g$|  motion.leftright.MotionLastScreenColumnAction

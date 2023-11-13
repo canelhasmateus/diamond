@@ -439,8 +439,8 @@ Infer Health given medical examinations
 Infer Inteligence given tests.
 More Formally, we want to infer
 P( Z|X) => P( Z , X) / P( X )
-. Why is this the case? WHat is the intuition of each of these terms? \[\[MetaExpand]]
-. How is this calculated? Isn't Z unobserved? \[\[MetaExpand]]
+. Why is this the case? WHat is the intuition of each of these terms? [[MetaExpand]]
+. How is this calculated? Isn't Z unobserved? [[MetaExpand]]
 
 This is not always possible. P( X ) = Integral ( P(Z,X) \* dZ)
 . Integrate over all the configurations of the latent variables, which has excponential cost in regards to the number of variables, becoming intractable very quickly.

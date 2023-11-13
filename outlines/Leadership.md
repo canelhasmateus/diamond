@@ -1,0 +1,5 @@
+# AboutLeadership
+
+[[LeadershipOwnership]]
+[[ActionBias]]
+[[LeadershipSimplify]]

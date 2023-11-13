@@ -73,7 +73,7 @@ ___
 
 Economic value is not the same as market price, nor is economic value the same thing as market value.
 
-> \[\[Value]] is linked to \[\[price]] through the mechanism of \[\[exchange]].
+> [[Value]] is linked to [[price]] through the mechanism of [[exchange]].
 
 market as collection / facilitator of exchanges
 
@@ -106,9 +106,9 @@ Economic values are expressed as "how much" of one desirable condition or commod
 
 ___
 
-First, economists tried to estimate the value of a good to an individual alone, and extend that definition to goods that can be exchanged. From this analysis came the concepts \[\[value in use]] and \[\[value in exchange]].
+First, economists tried to estimate the value of a good to an individual alone, and extend that definition to goods that can be exchanged. From this analysis came the concepts [[value in use]] and [[value in exchange]].
 
-When an economist observes an \[\[exchange]], two important value functions are revealed: those of the \[\[buyer]] and \[\[seller]].
+When an economist observes an [[exchange]], two important value functions are revealed: those of the [[buyer]] and [[seller]].
 
 Just as the buyer reveals what he is willing to pay for a certain amount of a good, so too does the seller reveal what it costs him to give up the good.
 
@@ -134,7 +134,7 @@ Examples are:
 
   > Things have value 'as is', by themselves.
 
-- \[\[ Labor theory ]] of value ( Classical Economics)
+- [[ Labor theory ]] of value ( Classical Economics)
 
   > the amount of labor necessary for the production of a marketable commodity, including the labor necessary for the development of any capital used in the production process
 
@@ -154,13 +154,13 @@ Examples are:
 
   leads to some interesting dilemmas: There is, however, a causality dilemma to their argument that has drawn criticism: power is based on the ability of firms to set monopoly prices yet the ability to set prices is based on firms possessing a degree of power in the market.
 
-- The \[\[ subjective theory ]] (William Stanley Jevons, Léon Walras, and Carl Menger )
+- The [[ subjective theory ]] (William Stanley Jevons, Léon Walras, and Carl Menger )
 
   > An item value depends on the consumer wants and needs. The consumer places a value on an item by determining the marginal utility or  additional satisfaction, and decides what that means to them.
 
-  Useful for explaining \[\[supply and demand]].
+  Useful for explaining [[supply and demand]].
 
-  Since the subjective theory takes into account the marginal utility of an item in order to put a value on it, \[\[marginalism]] can be applied to it. So, topics such as \[\[marginal utility]], \[\[marginal rate of substitution]], and \[\[opportunity costs]] are at play.
+  Since the subjective theory takes into account the marginal utility of an item in order to put a value on it, [[marginalism]] can be applied to it. So, topics such as [[marginal utility]], [[marginal rate of substitution]], and [[opportunity costs]] are at play.
 
 ___
 
@@ -174,9 +174,9 @@ ___
 
 ## Payment Methods
 
-!\[\[HistoryPayments.svg]]
+![[HistoryPayments.svg]]
 
-1. Barter is \[\[exchange]] of material goods or services for other goods or services.
+1. Barter is [[exchange]] of material goods or services for other goods or services.
 
 2. Coins: The use of coins escalated because barter sometimes posed difficulties for transactions, and certain forms of payment were perishable, so they could not be accumulated.
 

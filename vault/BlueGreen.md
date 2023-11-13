@@ -20,7 +20,7 @@ Properties
 - Near zero downtime
 - Quickly rollback changes
 
-This switch is usually done at the \[\[DNS]] level or other similar routing means.
+This switch is usually done at the [[DNS]] level or other similar routing means.
 
 ## References
 

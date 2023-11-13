@@ -5,7 +5,7 @@ tags:
 
 # TLSHeadOfLine
 
-\[\[TLS]] can introduce \[\[HeadOfLineBlocking]] blocking if used to encrypt larger amounts of data:
+[[TLS]] can introduce [[HeadOfLineBlocking]] blocking if used to encrypt larger amounts of data:
 
 - TLS can encrypt up to 16KB of data. This is enough to fill about 11 typical TCP packets.
 - If the first 10 packets get through, but the last one gets lost, browsers still need to wait for the last one to arrive before starting processing.

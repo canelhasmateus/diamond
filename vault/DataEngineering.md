@@ -9,47 +9,47 @@ ___
 
 ## Tools
 
-\[\[ToolAirflow]]
-\[\[ToolArgo]]
-\[\[ToolJinja]]
-\[\[ToolKubeflow]]
-\[\[ToolLogstash]]
-\[\[ToolMlflow]]
-\[\[ToolVetur]]
+[[ToolAirflow]]
+[[ToolArgo]]
+[[ToolJinja]]
+[[ToolKubeflow]]
+[[ToolLogstash]]
+[[ToolMlflow]]
+[[ToolVetur]]
 
 Workflow management/orchestration:
 
-- \[\[ToolAirflow]]
-- \[\[ToolLuigi]]
-- \[\[ToolNiFi]]
+- [[ToolAirflow]]
+- [[ToolLuigi]]
+- [[ToolNiFi]]
 
-Spark/\[\[AwsEMR]]/Synapse/BigQuery
+Spark/[[AwsEMR]]/Synapse/BigQuery
 
 : Amazon SQS, Azure Service Bus, GCP Pub/Sub
 
 Stream processing
-\[\[AwsKinesis]]
-\[\[ApacheBeam]]
-\[\[ToolDataflow]]
-\[\[ToolFlink]]
-\[\[ToolKafka]]
+[[AwsKinesis]]
+[[ApacheBeam]]
+[[ToolDataflow]]
+[[ToolFlink]]
+[[ToolKafka]]
 
 Service/message;bus
-\[\[AwsSqs]]
-\[\[AzureServiceBus]]
-\[\[GCPPubSub]]
+[[AwsSqs]]
+[[AzureServiceBus]]
+[[GCPPubSub]]
 
-\[\[ToolApacheDruid]]
-\[\[ToolArgo]]
-\[\[ToolDask]]
-\[\[ToolDatabricks]]
-\[\[ToolHadoop]]
-\[\[ToolMesos]]
-\[\[ToolminIo]] -> Bootleg s3
-\[\[ToolPrefect]]
-\[\[ToolRay]]
-\[\[ToolSpark]]
-\[\[ToolSpinnaker]]
+[[ToolApacheDruid]]
+[[ToolArgo]]
+[[ToolDask]]
+[[ToolDatabricks]]
+[[ToolHadoop]]
+[[ToolMesos]]
+[[ToolminIo]] -> Bootleg s3
+[[ToolPrefect]]
+[[ToolRay]]
+[[ToolSpark]]
+[[ToolSpinnaker]]
 
 ___
 

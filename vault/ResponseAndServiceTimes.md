@@ -26,9 +26,9 @@ There will be 40*5 = 200 total resources loaded. Each of these have a 0.95 chanc
 The chance of none of this being bad is 0.95^200 = 0.00035
 ```
 
-> The usual way of setting thresholds is just \[\[PatternWishfulThinking]].
+> The usual way of setting thresholds is just [[PatternWishfulThinking]].
 
-In this light, it makes more sense to tackle the \[\[Duality]] problem, and set the necessary metric levels accordingly to the wanted customer experience:
+In this light, it makes more sense to tackle the [[Duality]] problem, and set the necessary metric levels accordingly to the wanted customer experience:
 
 ```example
 If a typicial user session involves 5 page loads, averaging 40 resources per page, what http response percentile will be experienced by  95% of users? What about 99%? 
@@ -38,9 +38,9 @@ The answer is: 99.97 and 99.995
 
 Also of note: Latency does not live in isolation, we need to look at it in the context of load.
 
-When comparing systems using tools such as \[\[VizLoadCharts]], looking at how systems behave when pushed past the \[\[SaturationPoint]] is useless: you have already crashed your car.
+When comparing systems using tools such as [[VizLoadCharts]], looking at how systems behave when pushed past the [[SaturationPoint]] is useless: you have already crashed your car.
 
-> This can be seen as the \[\[ImplicitAssumption]] that your normal operation load is past the point of saturation ( 100% load ). This is very often not the case.
+> This can be seen as the [[ImplicitAssumption]] that your normal operation load is past the point of saturation ( 100% load ). This is very often not the case.
 
 ___
 

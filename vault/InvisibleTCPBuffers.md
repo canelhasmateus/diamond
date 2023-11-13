@@ -1,11 +1,11 @@
 # OnInvisibleBuffering
 
-Using tools such as \[\[ReverseProxy]] is easy, but it silently introduces a new \[\[TCP]] buffer. \[\[UnseenConsequences]]
+Using tools such as [[ReverseProxy]] is easy, but it silently introduces a new [[TCP]] buffer. [[UnseenConsequences]]
 
 Think of
-The \[\[Cache]] spits out payload as quickly as possible, and the server sends data frames with the highest stream weight first. \[\[HTTP2]]
+The [[Cache]] spits out payload as quickly as possible, and the server sends data frames with the highest stream weight first. [[HTTP2]]
 
-The \[\[LoadBalancer]] foils this, since, as long as its tcp buffer is not completely filled, the lb will accept more data from the server: This quickly drains the server buffer, but from there on out, the priorization does not work anymore.
+The [[LoadBalancer]] foils this, since, as long as its tcp buffer is not completely filled, the lb will accept more data from the server: This quickly drains the server buffer, but from there on out, the priorization does not work anymore.
 
 ```
     HOL blocking

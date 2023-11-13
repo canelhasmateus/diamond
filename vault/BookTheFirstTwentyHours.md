@@ -33,7 +33,7 @@ The autonomous
 
 10 principles
 Cultivate a temporary obsession:
-\[\[TemplateSkillAcquisition]]
+[[TemplateSkillAcquisition]]
 
 Carl popper on loveable problems
 

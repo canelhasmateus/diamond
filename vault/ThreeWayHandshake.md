@@ -6,9 +6,9 @@ tags:
 
 # ThreeWayHandshake
 
-To Provide its features, \[\[TCP]] needs some amount of \[\[Coordination]]: both client and server must agree to an initial `sequence number`.
+To Provide its features, [[TCP]] needs some amount of [[Coordination]]: both client and server must agree to an initial `sequence number`.
 
-We could initiate every connection with the same initial sequence number -such as 0 - but this opens the door to potential malicious activity, such as \[\[AttackReplay]] and \[\[AttackSyn]]. So, establishing the number safely is one of the main goals of the three-way handshake.
+We could initiate every connection with the same initial sequence number -such as 0 - but this opens the door to potential malicious activity, such as [[AttackReplay]] and [[AttackSyn]]. So, establishing the number safely is one of the main goals of the three-way handshake.
 
 1. In the first step of the handshake, the client sends a `SYN` request to the server, containing its sequence number.
 

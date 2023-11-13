@@ -8,7 +8,7 @@ tags:
 
 <https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/>
 
-\[\[TCP]] attempts to provide a complete abstraction of an underlying unreliable network, but sometimes, the network leaks through the abstraction and you feel the things that the abstraction can’t quite protect you from.
+[[TCP]] attempts to provide a complete abstraction of an underlying unreliable network, but sometimes, the network leaks through the abstraction and you feel the things that the abstraction can’t quite protect you from.
 
 This is but one example of what I’ve dubbed the Law of Leaky Abstractions:
 

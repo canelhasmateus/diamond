@@ -6,7 +6,7 @@ tags:
 
 # TCPErrorDetection
 
-To provide retransmission and reordering, every \[\[TCP]] packet is sent with a unique identifier, called a sequence number.
+To provide retransmission and reordering, every [[TCP]] packet is sent with a unique identifier, called a sequence number.
 
 Each received packet has to be acknowledged by the server. If this doesn't happen, the other party can then re-send the packets.
 

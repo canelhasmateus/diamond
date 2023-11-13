@@ -6,9 +6,9 @@ tags:
 
 # SoftwareMonoliths
 
-The whole of your \[\[Software]] is served as a single "software application". It might have and encompass the behavior of multiple modules, but the final product would be a single \[\[SoftwareArtifact]], such as a jar
+The whole of your [[Software]] is served as a single "software application". It might have and encompass the behavior of multiple modules, but the final product would be a single [[SoftwareArtifact]], such as a jar
 
-This is great in regards to \[\[Complexity]]:
+This is great in regards to [[Complexity]]:
 
 - No network partitioning means less errors.
 - Having fewer moving parts lessens the intellectual burden of *understanding* the entire system
@@ -21,9 +21,9 @@ However, it also has problems in scalability.
 
 - build pipelines
 
-- \[\[Deploys]] slots
+- [[Deploys]] slots
 
-- \[\[Databases]] tables
+- [[Databases]] tables
 
 - source code changes.
 
