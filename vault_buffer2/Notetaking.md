@@ -23,7 +23,7 @@ They should answer a single question
 
 They can lead to other questions, as well as mention other answers.
 
-> [[ZettelkastenCompass]]
+> [[_ZettelkastenCompass]]
 
 ## References
 

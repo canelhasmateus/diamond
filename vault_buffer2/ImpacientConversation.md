@@ -3,9 +3,9 @@
 The focus during a lecture should not be in understanding what they say.
 It should be in applying and simplifying.
 
-> [[BloomTaxonomy]]
+> [[BloomTaxonomy]], [[Encoding]]
 
-Sung coins the term `Impacient Conversation` -
+Sung coins the term `Impacient Conversation` [^1]
 Every lecturer sentence should be accompanied by a mental judgement:
 
 - "so what?"
@@ -17,4 +17,4 @@ Every lecturer sentence should be accompanied by a mental judgement:
 
 ## References
 
-[Only watch if you like being good at studying | STUDY CLINIC - YouTube](https://www.youtube.com/watch?v=79DPLMHYVjQ)
+[^1]: [Only watch if you like being good at studying | STUDY CLINIC - YouTube](https://www.youtube.com/watch?v=79DPLMHYVjQ)
